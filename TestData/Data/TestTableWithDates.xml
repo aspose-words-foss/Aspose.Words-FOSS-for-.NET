@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog>
+	<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:element name="root">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="zipCode" type="xs:string" />
+					<xs:element name="cellulare" type="xs:string"  />
+					<xs:element name="date1" type="xs:dateTime"  />
+					<xs:element name="date2" type="xs:dateTime"/>
+					<xs:element name="date3" type="xs:dateTime" />
+					<xs:element name="date4" type="xs:dateTime" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:schema>
+	<root>
+		<zipCode>11122233</zipCode>
+		<cellulare/>
+		<date1>1950-04-01T00:00:00+01:00</date1>
+		<date2>2002-01-01T00:00:00+01:00</date2>
+		<date3>2015-06-22T00:00:00+02:00</date3>
+		<date4>2015-06-26T00:00:00+02:00</date4>
+	</root>
+</catalog>

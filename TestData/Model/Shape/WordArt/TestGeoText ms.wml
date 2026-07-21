@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Author>q</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-19T12:44:00Z</o:Created>
+		<o:LastSaved>2011-10-19T12:44:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>1</o:Words>
+		<o:Characters>9</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>9</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="SimSun" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="SimSun">
+			<w:altName w:val="宋体" />
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="@SimSun">
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:doNotEmbedSystemFonts />
+		<w:proofState w:spelling="clean" w:grammar="clean" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:displayHorizontalDrawingGridEvery w:val="0" />
+		<w:displayVerticalDrawingGridEvery w:val="0" />
+		<w:useMarginsForDrawingGridOrigin />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:footnoteLayoutLikeWW8 />
+			<w:shapeLayoutLikeWW8 />
+			<w:alignTablesRowByRow />
+			<w:forgetLastTabAlignment />
+			<w:doNotUseHTMLParagraphAutoSpacing />
+			<w:layoutRawTableWidth />
+			<w:layoutTableRowsApart />
+			<w:useWord97LineBreakingRules />
+			<w:dontAllowFieldEndSelect />
+			<w:useWord2002TableStyleRules />
+			<w:useFELayout />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="007D1C4B" />
+			<wsp:rsid wsp:val="0064475B" />
+			<wsp:rsid wsp:val="007364FE" />
+			<wsp:rsid wsp:val="00767C0A" />
+			<wsp:rsid wsp:val="007D1C4B" />
+			<wsp:rsid wsp:val="007E0DEA" />
+			<wsp:rsid wsp:val="00A3386F" />
+			<wsp:rsid wsp:val="00A718C6" />
+			<wsp:rsid wsp:val="00AA4BBB" />
+			<wsp:rsid wsp:val="00C355FC" />
+			<wsp:rsid wsp:val="00CE622B" />
+			<wsp:rsid wsp:val="00D20E97" />
+			<wsp:rsid wsp:val="00DC557F" />
+			<wsp:rsid wsp:val="00DD4627" />
+			<wsp:rsid wsp:val="00DF1C4B" />
+			<wsp:rsid wsp:val="00DF6768" />
+			<wsp:rsid wsp:val="00E70EBC" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="007D1C4B" wsp:rsidRDefault="00E70EBC">
+			<w:r>
+				<w:pict>
+					<v:shapetype id="_x0000_t136" coordsize="21600,21600" o:spt="136" adj="10800" path="m@7,l@8,m@5,21600l@6,21600e">
+						<v:formulas>
+							<v:f eqn="sum #0 0 10800" />
+							<v:f eqn="prod #0 2 1" />
+							<v:f eqn="sum 21600 0 @1" />
+							<v:f eqn="sum 0 0 @2" />
+							<v:f eqn="sum 21600 0 @3" />
+							<v:f eqn="if @0 @3 0" />
+							<v:f eqn="if @0 21600 @1" />
+							<v:f eqn="if @0 0 @2" />
+							<v:f eqn="if @0 @4 21600" />
+							<v:f eqn="mid @5 @6" />
+							<v:f eqn="mid @8 @5" />
+							<v:f eqn="mid @7 @8" />
+							<v:f eqn="mid @6 @7" />
+							<v:f eqn="sum @6 0 @5" />
+						</v:formulas>
+						<v:path textpathok="t" o:connecttype="custom" o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800" o:connectangles="270,180,90,0" />
+						<v:textpath on="t" fitshape="t" />
+						<v:handles>
+							<v:h position="#0,bottomRight" xrange="6629,14971" />
+						</v:handles>
+						<o:lock v:ext="edit" text="t" shapetype="t" />
+					</v:shapetype>
+					<v:shape id="_x0000_i1025" type="#_x0000_t136" style="width:299.25pt;height:51pt" fillcolor="#000082">
+						<v:fill color2="#ff8200" rotate="t" angle="-90" colors="0 #000082;19661f #66008f;42598f #ba0066;58982f red;1 #ff8200" method="none" focus="100%" type="gradient" />
+						<v:shadow color="#868686" />
+						<v:textpath style="font-family:&quot;Arial Black&quot;;v-text-kern:t" trim="t" fitpath="t" string="Your Text 1" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00AA4BBB" wsp:rsidRDefault="00E70EBC">
+			<w:pPr>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_i1026" type="#_x0000_t136" style="width:127.5pt;height:23.25pt">
+						<v:shadow color="#868686" />
+						<v:textpath style="font-family:&quot;Times New Roman&quot;;font-size:20pt;font-style:italic;v-text-kern:t" trim="t" fitpath="t" string="Your Text 2" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00767C0A" wsp:rsidRDefault="00A3386F">
+			<w:r>
+				<w:pict>
+					<w:binData w:name="wordml://02000001.jpg" xml:space="preserve">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
+/9m=
+</w:binData>
+					<v:shape id="_x0000_i1027" type="#_x0000_t136" style="width:426.75pt;height:27.75pt" fillcolor="#060">
+						<v:fill src="wordml://02000001.jpg" o:title="Green marble" rotate="t" type="tile" />
+						<v:shadow color="#868686" />
+						<v:textpath style="font-family:&quot;Arial&quot;;font-size:24pt;font-weight:bold;v-text-spacing:58985f;v-same-letter-heights:t" trim="t" fitpath="t" string="Your Text 3" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="007D1C4B" wsp:rsidRDefault="00A3386F">
+			<w:r>
+				<w:pict>
+					<v:shapetype id="_x0000_t152" coordsize="21600,21600" o:spt="152" adj="9931" path="m0@0c7200@2,14400@1,21600,m0@5c7200@6,14400@6,21600@5e">
+						<v:formulas>
+							<v:f eqn="val #0" />
+							<v:f eqn="prod #0 3 4" />
+							<v:f eqn="prod #0 5 4" />
+							<v:f eqn="prod #0 3 8" />
+							<v:f eqn="prod #0 1 8" />
+							<v:f eqn="sum 21600 0 @3" />
+							<v:f eqn="sum @4 21600 0" />
+							<v:f eqn="prod #0 1 2" />
+							<v:f eqn="prod @5 1 2" />
+							<v:f eqn="sum @7 @8 0" />
+							<v:f eqn="prod #0 7 8" />
+							<v:f eqn="prod @5 1 3" />
+							<v:f eqn="sum @1 @2 0" />
+							<v:f eqn="sum @12 @0 0" />
+							<v:f eqn="prod @13 1 4" />
+							<v:f eqn="sum @11 14400 @14" />
+						</v:formulas>
+						<v:path textpathok="t" o:connecttype="custom" o:connectlocs="10800,@10;0,@9;10800,21600;21600,@8" o:connectangles="270,180,90,0" />
+						<v:textpath on="t" fitshape="t" xscale="t" />
+						<v:handles>
+							<v:h position="topLeft,#0" yrange="0,12169" />
+						</v:handles>
+						<o:lock v:ext="edit" text="t" shapetype="t" />
+					</v:shapetype>
+					<w:binData w:name="wordml://01000002.gif" xml:space="preserve">R0lGODdhCAAIAHcBACH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACwAAAAACAAIAID///8A
+AAACDYR/oRvA615DCcp2YygAOy==
+</w:binData>
+					<v:shape id="_x0000_i1028" type="#_x0000_t152" style="width:299.25pt;height:51pt" adj=",10800" fillcolor="#4f81bd">
+						<v:fill src="wordml://01000002.gif" o:title="Horizontal brick" color2="#e36c0a" type="pattern" />
+						<v:shadow color="#868686" />
+						<v:textpath style="font-family:&quot;Arial Black&quot;;v-text-spacing:1.5;v-text-kern:t" trim="t" fitpath="t" xscale="f" string="Your Text 4" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00DC557F" wsp:rsidRPr="007D1C4B" wsp:rsidRDefault="007364FE">
+			<w:pPr>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_i1029" type="#_x0000_t152" style="width:6in;height:255pt" adj=",10800" fillcolor="aqua" strokecolor="#36f">
+						<v:shadow color="#868686" />
+						<v:textpath style="font-family:&quot;Arial Black&quot;;font-size:20pt;font-weight:bold;font-style:italic;font-variant:small-caps;v-text-align:letter-justify;v-text-spacing:1.5;v-text-reverse:t;v-rotate-letters:t;v-text-kern:t;v-text-spacing-mode:tightening;v-same-letter-heights:t;mso-text-shadow:auto;text-decoration:line-through" fitshape="f" trim="t" fitpath="t" xscale="f" string="Your Text Here" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:sectPr wsp:rsidR="00DC557F" wsp:rsidRPr="007D1C4B">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

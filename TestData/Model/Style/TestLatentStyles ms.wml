@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Author>q</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-20T08:46:00Z</o:Created>
+		<o:LastSaved>2011-10-20T08:46:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>0</o:Words>
+		<o:Characters>0</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>0</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Calibri" w:fareast="SimSun" w:h-ansi="Calibri" w:cs="Arial" />
+		<w:font w:name="Arial">
+			<w:panose-1 w:val="020B0604020202020204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="SimSun">
+			<w:altName w:val="????????¡§?????" />
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E10002FF" w:usb-1="4000ACFF" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="@SimSun">
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="toc 1" />
+			<w:lsdException w:name="toc 2" />
+			<w:lsdException w:name="toc 3" />
+			<w:lsdException w:name="toc 4" />
+			<w:lsdException w:name="toc 5" />
+			<w:lsdException w:name="toc 6" />
+			<w:lsdException w:name="toc 7" />
+			<w:lsdException w:name="toc 8" />
+			<w:lsdException w:name="toc 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Default Paragraph Font" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Table Grid" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="006E3294" />
+			<w:pPr>
+				<w:spacing w:after="200" w:line="276" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Calibri" />
+				<w:sz w:val="22" />
+				<w:sz-cs w:val="22" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Calibri" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:val="full-page" w:percent="47" />
+		<w:doNotEmbedSystemFonts />
+		<w:defaultTabStop w:val="720" />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+			<w:useFELayout />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="004736E5" />
+			<wsp:rsid wsp:val="004736E5" />
+			<wsp:rsid wsp:val="006E3294" />
+			<wsp:rsid wsp:val="008514E3" />
+			<wsp:rsid wsp:val="008803ED" />
+			<wsp:rsid wsp:val="00A80F75" />
+			<wsp:rsid wsp:val="00BF6D52" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="006E3294" wsp:rsidRDefault="006E3294" />
+		<w:sectPr wsp:rsidR="006E3294" wsp:rsidSect="006E3294">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1134" w:right="850" w:bottom="1134" w:left="1701" w:header="708" w:footer="708" w:gutter="0" />
+			<w:cols w:space="708" />
+			<w:docGrid w:line-pitch="360" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

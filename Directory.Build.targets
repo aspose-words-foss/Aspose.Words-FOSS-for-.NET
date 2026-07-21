@@ -1,0 +1,48 @@
+<Project>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net30' Or '$(TargetFrameworkVersion)' == 'v3.0' ">
+    <DefineConstants>NET10;NET20;NET30;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net35' Or '$(TargetFrameworkVersion)' == 'v3.5' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net40' Or '$(TargetFrameworkVersion)' == 'v4.0' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net45' Or '$(TargetFrameworkVersion)' == 'v4.5' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net46' Or '$(TargetFrameworkVersion)' == 'v4.6' Or '$(TargetFramework)' == 'net462' Or '$(TargetFrameworkVersion)' == 'v4.6.2' Or '$(TargetFramework)' == 'net461' Or '$(TargetFrameworkVersion)' == 'v4.6.1' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net47' Or '$(TargetFramework)' == 'net472' ">
+	<DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NET47;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+	<DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE31;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;NET60;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+	<DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;NET60;NET70;NET80;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0' ">
+	<DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;NET60;NET70;NET80;NET90;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net10.0'">
+	<DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;NET60;NET70;NET80;NET90;NET100;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+</Project>

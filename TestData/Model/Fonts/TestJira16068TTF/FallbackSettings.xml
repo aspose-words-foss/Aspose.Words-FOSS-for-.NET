@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FontFallbackSettings xmlns="Aspose.Words">
+    <FallbackTable>
+        <Rule Ranges="20B9" FallbackFonts="Oriya Sangam MN"/>		
+    </FallbackTable>
+</FontFallbackSettings>

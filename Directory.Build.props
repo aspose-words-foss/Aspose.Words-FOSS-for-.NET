@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <DefaultFramework>net462</DefaultFramework>
+    <TestsFramework>net462</TestsFramework>
+    <TestsCoreFramework>net9.0</TestsCoreFramework>
+
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,75 @@
+﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
+// 02/04/2014 by Alexey Noskov
+
+namespace Aspose.Words.Drawing.Core.Dml.Scene3D
+{
+    /// <summary>
+    /// 20.1.10.46 ST_PresetCameraType (Preset Camera Type)
+    /// These enumeration values represent different algorithmic methods for setting all camera properties, including position.
+    /// </summary>
+    internal enum DmlPresetCameraType
+    {
+        LegacyObliqueTopLeft,
+        LegacyObliqueTop,
+        LegacyObliqueTopRight,
+        LegacyObliqueLeft,
+        LegacyObliqueFront,
+        LegacyObliqueRight,
+        LegacyObliqueBottomLeft,
+        LegacyObliqueBottom,
+        LegacyObliqueBottomRight,
+        LegacyPerspectiveTopLeft,
+        LegacyPerspectiveTop,
+        LegacyPerspectiveTopRight,
+        LegacyPerspectiveLeft,
+        LegacyPerspectiveFront,
+        LegacyPerspectiveRight,
+        LegacyPerspectiveBottomLeft,
+        LegacyPerspectiveBottom,
+        LegacyPerspectiveBottomRight,
+        OrthographicFront,
+        IsometricTopUp,
+        IsometricTopDown,
+        IsometricBottomUp,
+        IsometricBottomDown,
+        IsometricLeftUp,
+        IsometricLeftDown,
+        IsometricRightUp,
+        IsometricRightDown,
+        IsometricOffAxis1Left,
+        IsometricOffAxis1Right,
+        IsometricOffAxis1Top,
+        IsometricOffAxis2Left,
+        IsometricOffAxis2Right,
+        IsometricOffAxis2Top,
+        IsometricOffAxis3Left,
+        IsometricOffAxis3Right,
+        IsometricOffAxis3Bottom,
+        IsometricOffAxis4Left,
+        IsometricOffAxis4Right,
+        IsometricOffAxis4Bottom,
+        ObliqueTopLeft,
+        ObliqueTop,
+        ObliqueTopRight,
+        ObliqueLeft,
+        ObliqueRight,
+        ObliqueBottomLeft,
+        ObliqueBottom,
+        ObliqueBottomRight,
+        PerspectiveFront,
+        PerspectiveLeft,
+        PerspectiveRight,
+        PerspectiveAbove,
+        PerspectiveBelow,
+        PerspectiveAboveLeftFacing,
+        PerspectiveAboveRightFacing,
+        PerspectiveContrastingLeftFacing,
+        PerspectiveContrastingRightFacing,
+        PerspectiveHeroicLeftFacing,
+        PerspectiveHeroicRightFacing,
+        PerspectiveHeroicExtremeLeftFacing,
+        PerspectiveHeroicExtremeRightFacing,
+        PerspectiveRelaxed,
+        PerspectiveRelaxedModerately
+    }
+}

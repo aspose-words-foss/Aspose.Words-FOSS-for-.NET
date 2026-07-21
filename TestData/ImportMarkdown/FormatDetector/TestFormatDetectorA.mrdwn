@@ -1,0 +1,10 @@
+# Header1
+It's regular text with [link]() and ___emphasis___. Then HR:
+*****
+    `It's inline code`.
+
+## Code block:
+``` javascript
+    console.log('Hello World!')
+```
+> Quote 1

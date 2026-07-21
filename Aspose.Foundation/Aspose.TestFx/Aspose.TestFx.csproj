@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- Build settings -->
+		<OutputType>Library</OutputType>
+		<Configurations>Debug;Test;DebugNetStandard20;TestNetStandard20;DebugNetStandard20PyNet</Configurations>
+
+		<!-- Assembly metadata -->
+		<AssemblyName>Aspose.TestFx</AssemblyName>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<!-- Signing -->
+
+		<!-- Compiler settings -->
+		<LangVersion>6</LangVersion>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+
+		<!-- Analyzers and warnings -->
+		<RunAnalyzers>false</RunAnalyzers>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningLevel>4</WarningLevel>
+		<ErrorReport>prompt</ErrorReport>
+
+		<!-- Items control -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<OutputPath>bin\</OutputPath>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<OutputPath>bin\Test\</OutputPath>
+		<Optimize>true</Optimize>
+		<DefineConstants>TRACE;DEBUG;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<OutputPath>bin\</OutputPath>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20PyNet|AnyCPU'">
+	  <TargetFramework>$(TestsCoreFramework)</TargetFramework>
+	  <OutputPath>bin\</OutputPath>
+	  <Optimize>false</Optimize>
+	  <Prefer32Bit>false</Prefer32Bit>
+	  <DefineConstants>TRACE;DEBUG;DEBUG_ASSERT;PYNET</DefineConstants>
+	  <NoWarn>NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<OutputPath>bin\Test\</OutputPath>
+		<Optimize>true</Optimize>
+		<DefineConstants>TRACE;DEBUG;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>NU1900,NU1903</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\Tools\XMLUnit\bin\Release\XMLUnit.dll" />
+		<Reference Include="..\..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll"></Reference>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Management" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.Foundation.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="NUnit" version="4.2.2" />
+		<PackageReference Include="NUnit3TestAdapter" version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.cs" />
+		<Compile Include="GoldComparers\ComparisonPackage.cs" />
+		<Compile Include="GoldComparers\PackageEntryList.cs" />
+		<Compile Include="GoldComparers\Tools\Clients\ClientUtil.cs" />
+		<Compile Include="GoldComparers\Tools\Clients\ThreadPool.cs" />
+		<Compile Include="GoldComparers\Tools\Clients\WebToPngClient.cs" />
+		<Compile Include="GoldComparers\Tools\Clients\DiffClient.cs" />
+		<Compile Include="GoldComparers\Tools\EpsComparer.cs" />
+		<Compile Include="GoldComparers\Tools\MhtmlFileComparer.cs" />
+		<Compile Include="GoldComparers\Tools\RoundingXpsPagePartComparer.cs" />
+		<Compile Include="GoldComparers\Tools\XpsComparer.cs" />
+		<Compile Include="ExpectedExceptionAttribute.cs" />
+		<Compile Include="GlobalLock.cs" />
+		<Compile Include="GoldComparers\Factory\AbstractComparerFactory.cs" />
+		<Compile Include="GoldComparers\Factory\ComparerFactoryProducer.cs" />
+		<Compile Include="GoldComparers\Factory\RemoteComparersFactory.cs" />
+		<Compile Include="GoldComparers\Factory\WindowsComparersFactory.cs" />
+		<Compile Include="GoldComparers\Tools\ComparerParams.cs" />
+		<Compile Include="GoldComparers\Tools\DefaultPackagePartComparer.cs" />
+		<Compile Include="GoldComparers\FileComparisonStreamProvider.cs" />
+		<Compile Include="GoldComparers\Tools\EmfComparer.cs" />
+		<Compile Include="GoldComparers\Tools\ImageFileComparer.cs" />
+		<Compile Include="GoldComparers\Tools\RemoteComparer.cs" />
+		<Compile Include="GoldComparers\Tools\TextFileComparer.cs" />
+		<Compile Include="GoldComparers\Tools\WoffComparer.cs" />
+		<Compile Include="GoldComparers\IComparisonStreamProvider.cs" />
+		<Compile Include="GoldComparers\Tools\AbstractGoldComparer.cs" />
+		<Compile Include="GoldComparers\Tools\IPackagePartComparer.cs" />
+		<Compile Include="GoldComparers\Tools\PackageFileComparer.cs" />
+		<Compile Include="GoldComparers\Tools\Clients\XpsToPngClient.cs" />
+		<Compile Include="GoldComparers\Tools\ZipFileComparer.cs" />
+		<Compile Include="GoldComparers\ZipComparisonInfo.cs" />
+		<Compile Include="GoldComparers\ZipPackageReader.cs" />
+		<Compile Include="NetStandardAttribute.cs" />
+		<Compile Include="NetStandardIgnoreAttribute.cs" />
+		<Compile Include="IsNot.cs" />
+		<Compile Include="Pal\HttpClientPal.cs" />
+		<Compile Include="Public\TestImageUtil.cs" />
+		<Compile Include="Public\TestTxtUtil.cs" />
+		<Compile Include="SetUpFixture.cs" />
+		<Compile Include="TestEnvironment.cs" />
+		<Compile Include="GoldComparers\Comparables.cs" />
+		<Compile Include="GoldComparers\Tools\AsposeComparer.cs" />
+		<Compile Include="GoldComparers\ComparableFileType.cs" />
+		<Compile Include="GoldComparers\FailedTestCollector\FailedGoldTestCollector.cs" />
+		<Compile Include="GoldComparers\FailedTestCollector\FailedGoldTestInfo.cs" />
+		<Compile Include="GoldComparers\FailedTestCollector\FailedGoldTestStorageEngine.cs" />
+		<Compile Include="GoldComparers\FailedTestCollector\FailedGoldTestUtil.cs" />
+		<Compile Include="GoldComparers\FailedTestCollector\GoldTestFileType.cs" />
+		<Compile Include="GoldComparers\ComparerFormResult.cs" />
+		<Compile Include="GoldComparers\ComparisonInfo.cs" />
+		<Compile Include="GoldComparers\ComparisonStatus.cs" />
+		<Compile Include="GoldComparers\FileComparisonInfo.cs" />
+		<Compile Include="GoldComparers\GoldDifferenceException.cs" />
+		<Compile Include="GoldComparers\IToComparableConverter.cs" />
+		<Compile Include="GoldComparers\Tools\XmlComparer.cs" />
+		<Compile Include="GoldComparers\PackageComparisonInfo.cs" />
+		<Compile Include="GoldComparers\PackagePartComparisonInfo.cs" />
+		<Compile Include="GoldComparers\PackagePartComparisonInfoCollection.cs" />
+		<Compile Include="GoldComparers\PackageWhatFile.cs" />
+		<Compile Include="Pal\DBNullDataSet.cs" />
+		<Compile Include="SingleThreadTestGroup.cs" />
+		<Compile Include="TestFixtureSetUpAttribute.cs" />
+		<Compile Include="TestFixtureTearDownAttribute.cs" />
+		<Compile Include="TestFontProvider.cs" />
+		<Compile Include="TestSetting.cs" />
+		<Compile Include="TestSettings.cs" />
+		<Compile Include="TestFxUtil.cs" />
+		<Compile Include="Pal\TestUtilPal.cs" />
+		<Compile Include="Public\TestZipUtil.cs" />
+		<Compile Include="TestTableUtil.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="0ReadMe.txt" />
+	</ItemGroup>
+</Project>

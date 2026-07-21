@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<o:DocumentProperties>
+		<o:Author>user</o:Author>
+		<o:LastAuthor>user</o:LastAuthor>
+		<o:Revision>5</o:Revision>
+		<o:TotalTime>5</o:TotalTime>
+		<o:Created>2012-07-19T22:04:00Z</o:Created>
+		<o:LastSaved>2012-07-19T23:08:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>1</o:Words>
+		<o:Characters>8</o:Characters>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>8</o:CharactersWithSpaces>
+		<o:Version>12.0000</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Calibri" w:fareast="ＭＳ 明朝" w:h-ansi="Calibri" w:cs="Arial Narrow" />
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E10002FF" w:usb-1="4000ACFF" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="MS Mincho">
+			<w:altName w:val="ＭＳ 明朝" />
+			<w:panose-1 w:val="02020609040205080304" />
+			<w:charset w:val="80" />
+			<w:family w:val="Modern" />
+			<w:pitch w:val="fixed" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="6AC7FDFB" w:usb-2="00000012" w:usb-3="00000000" w:csb-0="0002009F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Arial Narrow">
+			<w:panose-1 w:val="020B0606020202030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000287" w:usb-1="00000800" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000009F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Berlin Sans FB">
+			<w:panose-1 w:val="020E0602020502020306" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="400004FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="MS Gothic">
+			<w:altName w:val="ＭＳ ゴシック" />
+			<w:panose-1 w:val="020B0609070205080204" />
+			<w:charset w:val="80" />
+			<w:family w:val="Modern" />
+			<w:pitch w:val="fixed" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="6AC7FDFB" w:usb-2="00000012" w:usb-3="00000000" w:csb-0="0002009F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Tahoma">
+			<w:panose-1 w:val="020B0604030504040204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E1002EFF" w:usb-1="C000605B" w:usb-2="00000029" w:usb-3="00000000" w:csb-0="000101FF" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267" />
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="00294D00" />
+			<w:pPr>
+				<w:spacing w:after="200" w:line="276" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Berlin Sans FB" w:h-ansi="Berlin Sans FB" />
+				<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading1">
+			<w:name w:val="heading 1" />
+			<wx:uiName wx:val="Heading 1" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:link w:val="Heading1Char" />
+			<w:rsid w:val="00294D00" />
+			<w:pPr>
+				<w:pStyle w:val="Heading1" />
+				<w:keepNext />
+				<w:keepLines />
+				<w:spacing w:before="480" w:after="0" />
+				<w:outlineLvl w:val="0" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Cambria" w:fareast="ＭＳ ゴシック" w:h-ansi="Cambria" w:cs="Times New Roman" />
+				<w:b />
+				<w:b-cs />
+				<w:color w:val="365F91" />
+				<w:sz w:val="28" />
+				<w:sz-cs w:val="28" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:semiHidden />
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="character" w:styleId="Heading1Char">
+			<w:name w:val="Heading 1 Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="Heading1" />
+			<w:rsid w:val="00294D00" />
+			<w:rPr>
+				<w:rFonts w:ascii="Cambria" w:fareast="ＭＳ ゴシック" w:h-ansi="Cambria" w:cs="Times New Roman" />
+				<w:b />
+				<w:b-cs />
+				<w:color w:val="365F91" />
+				<w:sz w:val="28" />
+				<w:sz-cs w:val="28" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="table" w:styleId="TableGrid">
+			<w:name w:val="Table Grid" />
+			<w:basedOn w:val="TableNormal" />
+			<w:rsid w:val="003533E1" />
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+			</w:pPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblBorders>
+					<w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+				</w:tblBorders>
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BalloonText">
+			<w:name w:val="Balloon Text" />
+			<w:basedOn w:val="Normal" />
+			<w:link w:val="BalloonTextChar" />
+			<w:semiHidden />
+			<w:rsid w:val="003533E1" />
+			<w:pPr>
+				<w:pStyle w:val="BalloonText" />
+				<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="BalloonTextChar">
+			<w:name w:val="Balloon Text Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="BalloonText" />
+			<w:semiHidden />
+			<w:rsid w:val="003533E1" />
+			<w:rPr>
+				<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+	</w:styles>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:val="best-fit" w:percent="160" />
+		<w:dontDisplayPageBoundaries />
+		<w:displayBackgroundShape />
+		<w:proofState w:spelling="clean" w:grammar="clean" />
+		<w:attachedTemplate w:val="" />
+		<w:trackRevisions />
+		<w:defaultTabStop w:val="720" />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:doNotEmbedSystemFonts />
+		<w:validateAgainstSchema />
+		<w:optimizeForBrowser />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+		</w:compat>
+	</w:docPr>
+	<w:body>
+		<wx:sect>
+			<w:tbl>
+				<w:tblPr>
+					<w:tblStyle w:val="TableGrid" />
+					<w:tblW w:w="0" w:type="auto" />
+					<w:tblInd w:w="288" w:type="dxa" />
+					<w:tblLook w:val="04A0" />
+				</w:tblPr>
+				<w:tblGrid>
+					<w:gridCol w:w="1440" />
+					<w:gridCol w:w="2700" />
+					<w:gridCol w:w="900" />
+					<w:gridCol w:w="360" />
+					<w:gridCol w:w="3883" />
+					<w:tblGridChange>
+						<w:tblGrid>
+							<w:gridCol w:w="1440" />
+							<w:gridCol w:w="1260" />
+							<w:gridCol w:w="1440" />
+							<w:gridCol w:w="1260" />
+							<w:gridCol w:w="3883" />
+						</w:tblGrid>
+					</w:tblGridChange>
+				</w:tblGrid>
+				<w:tr>
+					<w:tblPrEx>
+						<w:tblW w:w="0" w:type="auto" />
+						<w:tblInd w:w="288" w:type="dxa" />
+						<w:tblLook w:val="04A0" />
+					</w:tblPrEx>
+					<w:trPr>
+						<w:gridBefore w:val="2" />
+						<w:wBefore w:w="4140" w:type="dxa" />
+						<aml:annotation aml:id="0" aml:author="user" aml:createdate="2012-07-20T10:08:00Z" w:type="Word.Formatting">
+							<aml:content>
+								<w:gridBefore w:val="1" />
+								<w:wBefore w:w="1440" w:type="dxa" />
+							</aml:content>
+						</aml:annotation>
+					</w:trPr>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="900" w:type="dxa" />
+							<aml:annotation aml:id="1" aml:author="user" aml:createdate="2012-07-20T10:08:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="1260" w:type="dxa" />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="360" w:type="dxa" />
+							<aml:annotation aml:id="2" aml:author="user" aml:createdate="2012-07-20T10:08:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="2700" w:type="dxa" />
+									<w:gridSpan w:val="2" />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="3883" w:type="dxa" />
+							<aml:annotation aml:id="3" aml:author="user" aml:createdate="2012-07-20T10:08:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="3883" w:type="dxa" />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+				</w:tr>
+				<w:tr>
+					<w:tblPrEx>
+						<w:tblW w:w="0" w:type="auto" />
+						<w:tblInd w:w="288" w:type="dxa" />
+						<w:tblLook w:val="04A0" />
+					</w:tblPrEx>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="1440" w:type="dxa" />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="2700" w:type="dxa" />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="5143" w:type="dxa" />
+							<w:gridSpan w:val="3" />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+								<w:rPr>
+									<w:rFonts w:ascii="Berlin Sans FB" w:fareast="ＭＳ 明朝" w:h-ansi="Berlin Sans FB" w:cs="Arial Narrow" />
+									<w:lang w:val="EN-NZ" w:fareast="JA" w:bidi="AR-SA" />
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+					</w:tc>
+				</w:tr>
+			</w:tbl>
+			<w:p />
+			<w:sectPr>
+				<w:pgSz w:w="11906" w:h="16838" />
+				<w:pgMar w:top="1134" w:right="850" w:bottom="1134" w:left="1701" w:header="708" w:footer="708" w:gutter="0" />
+				<w:cols w:space="708" />
+				<w:docGrid w:line-pitch="360" />
+			</w:sectPr>
+		</wx:sect>
+	</w:body>
+</w:wordDocument>

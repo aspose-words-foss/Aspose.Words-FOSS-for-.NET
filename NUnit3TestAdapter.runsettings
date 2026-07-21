@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <RunConfiguration>
+    <MaxCpuCount>0</MaxCpuCount>
+    <TargetPlatform>x86</TargetPlatform>
+  </RunConfiguration>
+  <!-- FIX-22769 - NUnut3TestAdapter runs all tests from project instead of selected ones -->
+  <NUnit>
+    <AssemblySelectLimit>7000</AssemblySelectLimit>
+  </NUnit>
+</RunSettings>

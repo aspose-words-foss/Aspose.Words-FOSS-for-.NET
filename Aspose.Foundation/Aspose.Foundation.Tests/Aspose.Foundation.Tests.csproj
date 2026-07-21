@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- Build settings -->
+		<LangVersion>6</LangVersion>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+
+		<!-- Signing and metadata -->
+		<AssemblyName>Aspose.Foundation.Tests</AssemblyName>
+		<Configurations>Debug;Test;DebugNetStandard20;TestNetStandard20;DebugNetStandard20PyNet</Configurations>
+
+		<!-- Code analysis and attribute generation -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<SonarQubeExclude>true</SonarQubeExclude>
+		<RunAnalyzers>false</RunAnalyzers>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+
+		<!-- Errors and warnings -->
+		<ErrorReport>prompt</ErrorReport>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<!-- Build settings -->
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<NoWarn>NU1900</NoWarn>
+
+		<!-- Output -->
+		<OutputPath>bin\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+		<!-- Build settings -->
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<Optimize>true</Optimize>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<NoWarn>NU1900</NoWarn>
+
+		<!-- Output -->
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugNetStandard20|AnyCPU' ">
+		<!-- Build settings -->
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<NoWarn>NU1900</NoWarn>
+
+		<!-- Output -->
+		<OutputPath>bin\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20PyNet|AnyCPU'">
+	  <TargetFramework>$(TestsCoreFramework)</TargetFramework>
+	  <Optimize>false</Optimize>
+	  <Prefer32Bit>false</Prefer32Bit>
+	  <NoWarn>NU1900</NoWarn>
+	  <OutputPath>bin\</OutputPath>
+	  <DefineConstants>TRACE;DEBUG;DEBUG_ASSERT;PYNET</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'TestNetStandard20|AnyCPU' ">
+		<!-- Build settings -->
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<Optimize>true</Optimize>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<NoWarn>NU1900</NoWarn>
+
+		<!-- Output -->
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Reference Include="..\..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll"></Reference>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="NUnit" version="4.2.2" />
+		<PackageReference Include="NUnit3TestAdapter" version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.Foundation.csproj" />
+		<ProjectReference Include="..\Aspose.TestFx\Aspose.TestFx.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="Tests\Base\TestLocale.cs" />
+		<Compile Include="Tests\Base\TestRandomUtil.cs" />
+		<Compile Include="Tests\Base\TestBitBinaryWriter.cs" />
+		<Compile Include="Tests\Base\TestBitBinaryReader.cs" />
+		<Compile Include="Tests\Base\TestBitUtil.cs" />
+		<Compile Include="Tests\Base\TestBitWriter.cs" />
+		<Compile Include="Tests\Base\TestFailedGoldTestStorageEngine.cs" />
+		<Compile Include="Tests\Base\TestHashes.cs" />
+		<Compile Include="Tests\Base\TestHslColor.cs" />
+		<Compile Include="Tests\Base\TestMathUtil.cs" />
+		<Compile Include="Tests\Base\TestMiscUtil.cs" />
+		<Compile Include="Tests\Base\TestSortedShortListIntegerFallback.cs" />
+		<Compile Include="Tests\Base\TestSortedStringList.cs" />
+		<Compile Include="Tests\Base\TestUnicodeUtil.cs" />
+		<Compile Include="Tests\Collections\Generic\TestStringListGeneric.cs" />
+		<Compile Include="Tests\Base\TestStringUtil.cs" />
+		<Compile Include="Tests\Base\TestStringUtf32Enumerator.cs" />
+		<Compile Include="Tests\Collections\Auto\TestByteToUIntDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestLongToBoolDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestStringList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestStringToStringDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestUIntToByteDictionary.cs" />
+		<Compile Include="Tests\Collections\Generic\TestBigArray.cs" />
+		<Compile Include="Tests\Common\TestCssEscape.cs" />
+		<Compile Include="Tests\Common\TestLanguageOnly.cs" />
+		<Compile Include="Tests\Common\TestNullables.cs" />
+		<Compile Include="Tests\Crypto\TestCrc32.cs" />
+		<Compile Include="Tests\Collections\Generic\TestCaseInsensitiveHashSet.cs" />
+		<Compile Include="Tests\Collections\Generic\TestSortedIntegerListGeneric.cs" />
+		<Compile Include="Tests\Collections\Generic\TestHashSet2String.cs" />
+		<Compile Include="Tests\Collections\Generic\TestHashSet2Int.cs" />
+		<Compile Include="Tests\Collections\Generic\TestSortedStringList2Int.cs" />
+		<Compile Include="Tests\Common\TestSystemStringAdapters.cs" />
+		<Compile Include="Tests\Fonts\TestFontSubstitutionStrategyGeneral.cs" />
+		<Compile Include="Tests\Images\TestImageUtil.cs" />
+		<Compile Include="Tests\IO\TestStreamUtil.cs" />
+		<Compile Include="Tests\Pal\TestPalFont.cs" />
+		<Compile Include="Tests\Pal\TestPalZip.cs" />
+		<Compile Include="Tests\Pal\TestSystemPal.cs" />
+		<Compile Include="Tests\NetStandard\TestTiffReader.cs" />
+		<Compile Include="Tests\NetStandard\TestTiffWriter.cs" />
+		<None Include="App.config" />
+		<None Include="Tests\Collections\Auto\Templates\TestDictionary.cs" />
+		<None Include="Tests\Collections\Auto\Templates\TestList.cs" />
+		<None Include="Tests\Collections\Auto\Templates\TestStack.cs" />
+		<Compile Include="Tests\Bidi\TestBidiAlgorithm.cs" />
+		<Compile Include="Tests\Bidi\TestNBidi.cs" />
+		<Compile Include="Tests\Bidi\TestNBidiArabicShaping.cs" />
+		<Compile Include="Tests\Bidi\TestNBidiSimple.cs" />
+		<Compile Include="Tests\Bidi\TestBidiAlgorithmConformance.cs" />
+		<Compile Include="Tests\Bidi\TestUnicodeCharacterDataResolver.cs" />
+		<Compile Include="Tests\Collections\Auto\TestByteList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestCharList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestCharToObjDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestDoubleList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestDoubleStack.cs" />
+		<Compile Include="Tests\Collections\Auto\TestLongToObjDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestObjToDoubleDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestGuidToObjDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestGuidToIntDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestIntToCharDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestIntToObjDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestIntToIntDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestIntList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestIntStack.cs" />
+		<Compile Include="Tests\Collections\Auto\TestObjToIntDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestLongList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestPointFList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestPointList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestRectangleFList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestFloatList.cs" />
+		<Compile Include="Tests\Collections\Auto\TestStringToCharDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestStringToObjDictionary.cs" />
+		<Compile Include="Tests\Collections\Auto\TestStringToIntDictionary.cs" />
+		<Compile Include="Tests\Drawing\TestDrColorMatrix.cs" />
+		<Compile Include="Tests\Drawing\TestDrMatrix.cs" />
+		<Compile Include="Tests\Drawing\TestDrMatrixOptimizations.cs" />
+		<Compile Include="Tests\Fonts\OpenTypeFontsComparer.cs" />
+		<Compile Include="Tests\Fonts\TestEot.cs" />
+		<Compile Include="Tests\Fonts\TestExternalFontCache.cs" />
+		<Compile Include="Tests\Fonts\TestFontUtil.cs" />
+		<Compile Include="Tests\Fonts\TestSfnt.cs" />
+		<Compile Include="Tests\Fonts\TestTrueType.cs" />
+		<Compile Include="Tests\Pal\TestNumberFormatting.cs" />
+		<Compile Include="Tests\Pal\TestPalFormatter.cs" />
+		<Compile Include="Tests\Pal\TestPalXmlUtil.cs" />
+		<Compile Include="Tests\ServiceTests.cs" />
+		<Compile Include="Tests\Ss\TestMemoryStorageNameComparer.cs" />
+		<Compile Include="Tests\Ss\TestFileSystem.cs" />
+		<Compile Include="Tests\Ss\TestPropertySet.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="0ReadMe.txt" />
+		<Content Include="Tests\Collections\Auto\ReadMe.txt" />
+		<Content Include="Tests\Collections\Auto\Templates\ReadMe.txt" />
+	</ItemGroup>
+</Project>

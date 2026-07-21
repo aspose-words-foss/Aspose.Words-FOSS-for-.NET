@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Title> </o:Title>
+		<o:Author>q</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-20T08:44:00Z</o:Created>
+		<o:LastSaved>2011-10-20T08:44:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>2</o:Words>
+		<o:Characters>13</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>14</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="SimSun" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="SimSun">
+			<w:altName w:val="宋体" />
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="@SimSun">
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:doNotEmbedSystemFonts />
+		<w:proofState w:spelling="clean" w:grammar="clean" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:displayHorizontalDrawingGridEvery w:val="0" />
+		<w:displayVerticalDrawingGridEvery w:val="0" />
+		<w:useMarginsForDrawingGridOrigin />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:footnoteLayoutLikeWW8 />
+			<w:shapeLayoutLikeWW8 />
+			<w:alignTablesRowByRow />
+			<w:forgetLastTabAlignment />
+			<w:doNotUseHTMLParagraphAutoSpacing />
+			<w:layoutRawTableWidth />
+			<w:layoutTableRowsApart />
+			<w:useWord97LineBreakingRules />
+			<w:dontAllowFieldEndSelect />
+			<w:useWord2002TableStyleRules />
+			<w:useFELayout />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="004C6C9B" />
+			<wsp:rsid wsp:val="0004590B" />
+			<wsp:rsid wsp:val="0037541F" />
+			<wsp:rsid wsp:val="004C6C9B" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="004C6C9B" wsp:rsidRDefault="0037541F" wsp:rsidP="004C6C9B">
+			<w:r>
+				<w:t>Gif: </w:t>
+			</w:r>
+			<w:r wsp:rsidR="004C6C9B">
+				<w:pict>
+					<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+						<v:stroke joinstyle="miter" />
+						<v:formulas>
+							<v:f eqn="if lineDrawn pixelLineWidth 0" />
+							<v:f eqn="sum @0 1 0" />
+							<v:f eqn="sum 0 0 @1" />
+							<v:f eqn="prod @2 1 2" />
+							<v:f eqn="prod @3 21600 pixelWidth" />
+							<v:f eqn="prod @3 21600 pixelHeight" />
+							<v:f eqn="sum @0 0 1" />
+							<v:f eqn="prod @6 1 2" />
+							<v:f eqn="prod @7 21600 pixelWidth" />
+							<v:f eqn="sum @8 21600 0" />
+							<v:f eqn="prod @7 21600 pixelHeight" />
+							<v:f eqn="sum @10 21600 0" />
+						</v:formulas>
+						<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+						<o:lock v:ext="edit" aspectratio="t" />
+					</v:shapetype>
+					<w:binData w:name="wordml://03000001.png" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAewAAAATCAMAAABlR84qAAADAFBMVEXAwMAICAgQEBAYGBghISEp
+KSkxMTE5OTlCQkJKSkpSUlJaWlpjY2Nra2tzc3N7e3uEhISMjIyUlJScnJylpaWtra21tbW9vb3G
+xsbOzs7W1tbe3t7n5+fv7+/39/cYEBBKMTFzSkpaOTlCKSlSMTEpGBgQCAj/raXnnJTelIz3pZzW
+jISlc2u9hHu1e3PGhHutc2ula2OMWlKEWlKUY1r/taWMY1r3rZzvpZT/rZznnIzvrZxzUkrenIxr
+SkLOjHvGjHu9hHNjQjlSOTFCKSFaQjk5KSFaQjFrSjFzWkJKOSlCMSEhGBCUc1LerXu1jGPWpXOM
+a0qEY0JjSjEpIRjvvYTGnGvntXvOpXOlhFqce1K9lGPerXOUc0rvxoyEa0retXv/zox7Y0LWrXP3
+xoTOpWtzWjnOrXtjUjm9nGu1lGOtjFr/1pT3zoyUe1LnvXuMc0rOrXPGpWv/3pw5MSHnxoRrWjlj
+UjFKQjHOtXsxKRiMe1L/55xKQin/76VaWlIYGBBKSjEpMSkhKSFCUkKUvZSt3q1zlHOMtYw5Sjml
+1qVSa1JrjGuErYSczpxjhGNKY0qUxpQxQjF7pXtznHNCWkJae1oYIRgpOSk5UjkQGBAIEAgIGAgA
+CAC1772t57Wl3q2c1qWUzpw5c0KUxpyMvZSEtYxjvXMxYzmczqVznHt7rYRjjGtjtXMxWjkpUjEh
+SilarWtKlFpSpWNCjFJSc1pKa1IpSjFz3owhQilChFJjxnsQMRhae2NjvXtrzoQ5e0oYOSFatXNS
+rWsxa0JKnGMQKRgxY0IpWjk5UkIYMSEYQikIGBA5UkpCY1pjjISMvbV7raWMxr2c1s6Uzsac3tb3
+//8pMTEhKSlCUlJSa2trjIyEra1jhIRKY2OUxsat5+cxQkJ7paWl3t6Mvb1znJxCWlpae3trlJSt
+7+8pOTmUzs6l5+djjIxzpaU5UlIQGBgACAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAC/YQLVAAAAAXRSTlMAQObYZgAAAAFiS0dE/6UH8sUAAAAMY21QUEpDbXAwNzEy
+AAAAA0gAc7wAAA/zSURBVGhDxdqNW1NXmgDwe29CQgJEPkL4SoJTdjNBWiqjY1M6aWvd4oCIdoox
+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
+AAAASUVORK5CYIJ=
+</w:binData>
+					<v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:369pt;height:14.25pt">
+						<v:imagedata src="wordml://03000001.png" o:title="BD21313_" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="004C6C9B" wsp:rsidRDefault="004C6C9B" wsp:rsidP="004C6C9B" />
+		<w:p wsp:rsidR="004C6C9B" wsp:rsidRDefault="0037541F" wsp:rsidP="004C6C9B">
+			<w:proofErr w:type="spellStart" />
+			<w:r>
+				<w:t>Tif</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd" />
+			<w:r>
+				<w:t>: </w:t>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<w:binData w:name="wordml://03000002.png" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAewAAAATCAMAAABlR84qAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAwBQTFRF
+AAAAgAAAAIAAgIAAAACAgACAAICAwMDAwNzApsrwBAQECAgIDAwMERERFhYWHBwcIiIiKSkpVVVV
+TU1NQkJCOTk5/3yA/1BQ1gCTzOz/79bG5+fWramQMwAAZgAAmQAAzAAAADMAMzMAZjMAmTMAzDMA
+/zMAAGYAM2YAZmYAmWYAzGYA/2YAAJkAM5kAZpkAmZkAzJkA/5kAAMwAM8wAZswAmcwAzMwA/8wA
+Zv8Amf8AzP8AAAAzMwAzZgAzmQAzzAAz/wAzADMzMzMzZjMzmTMzzDMz/zMzAGYzM2YzZmYzmWYz
+zGYz/2YzAJkzM5kzZpkzmZkzzJkz/5kzAMwzM8wzZswzmcwzzMwz/8wzM/8zZv8zmf8zzP8z//8z
+AABmMwBmZgBmmQBmzABm/wBmADNmMzNmZjNmmTNmzDNm/zNmAGZmM2ZmZmZmmWZmzGZmAJlmM5lm
+ZplmmZlmzJlm/5lmAMxmM8xmmcxmzMxm/8xmAP9mM/9mmf9mzP9m/wDMzAD/AJmZmTOZmQCZzACZ
+AACZMzOZZgCZzDOZ/wCZAGaZM2aZZjOZmWaZzGaZ/zOZM5mZZpmZmZmZzJmZ/5mZAMyZM8yZZsxm
+mcyZzMyZ/8yZAP+ZM/+ZZsyZmf+ZzP+Z//+ZAADMMwCZZgDMmQDMzADMADOZMzPMZjPMmTPMzDPM
+/zPMAGbMM2bMZmaZmWbMzGbM/2aZAJnMM5nMZpnMmZnMzJnM/5nMAMzMM8zMZszMmczMzMzM/8zM
+AP/MM//MZv+Zmf/MzP/M///MMwDMZgD/mQD/ADPMMzP/ZjP/mTP/zDP//zP/AGb/M2b/ZmbMmWb/
+zGb//2bMAJn/M5n/Zpn/mZn/zJn//5n/AMz/M8z/Zsz/mcz/zMz//8z/M///Zv/Mmf//zP///2Zm
+Zv9m//9mZmb//2b/Zv//pQAhX19fd3d3hoaGlpaWy8vLsrKy19fX3d3d4+Pj6urq8fHx+Pj4//vw
+oKCkgICA/wAAAP8A//8AAAD//wD/AP//////WCJOtwAAABJ0RVh0U29mdHdhcmUASXJmYW5WaWV3
+ySYHFwAADFhJREFUaEPFmstu4zoShnvndFmi7k9Eb+y8ykiBFW3yGHYM2G2ggbxH8jKz9QWKZR8o
+O81fJEVJcdqnew4wU+diOzH166tiFclSvjXKLolz1u9+w95hl8H3RpS+/8ZA8xUeP/z2RYrqn4xv
+aHn6s/FDOeC//8/4/yn++foCx9/j/6ZjHck4vfZWXX8RgvOOYDv4pqpLPWY0TgRdebssy/YLg0uX
+PJ5H1u2QKpbkX8+W0Zf6zYnHH1i2bq+wTMi5uv0a+m9fTIEPdf/8i9pMWcana/6v9Q1/D/8G/xfy
+Fr/j/zN82fEbBy7d3+NXwb5ElG8+mmZvgmducUQUXCfMiZLZLKFRs4fqkb9aOuOfU7o07wN/Hfie
+aHmN64+z+3uMrClIdTqVtEjZ2UN99or8It+Ok9ksoKbaCyJfRfNIP+c+LrNXt2NMzUnxRbRJZtnM
+HzVNRBGgDT5d8QP/Bn+Hb/mH00Xx38JPLf+f4VPH3+IHv8evgl1ReLch4QqHOueMKHtehU5TCuF5
+QrnxXFXIq6QoinsSXlE8+SrD9pSvp2OMdylpXX1JxSvM2R0FzKNYebU6N5e42MIczy229yT5xyfa
+3W2cQ0oO2fQ+OZStnlcTqnBbwjFOgz5mBvSTsZDqNtT0TNz1euywfufvcwL5BX2ELO856hfn6tKc
+PR/yBW7J377EZPHdT/zAh77ht/gXy9/hd/wdfmP4B/iav8O3/BbfsfwWv+zxa/yZ5e/hf+Y/y46/
+xW/aYB835G3uciSsMQX7nNCSEimlp6p0TNT4Dotlkn39KDjWDDv/6dF0/VN47fClz7FG7lEQ4U2E
+xONUoveaFG2c4GWiE/dE6XGTI403gZ1rvsvyGcYnD6tV5qpoI9c/GoKbi5mMOdaeinWTiPk6gP5a
+V2dlO9ZXxSXe412QomT7FJxDmkH+KUmS7faHDE2wWX/Ar/FbfosfWv4O3/L38BvLb/BVFBV/h2/5
+LX6Xaxa/x2/wM8tv8fMr/h3HWvNb/ObbOaAk8jeSNhsAlyg+Hsf14GRgLTJkN145xS5vgu4LItYy
+9nhPYUhhMJ176/U6X/viEujlMFFaPUMKnYPtC6LPvtZWUBImFITwAauzPuTV4h2jrCjdlZZPMH5J
+9LiVJDr9bOZhsAg9wZHO1+PoHQI8ASsvHMgvCMEuiy2UHq3+9kcQ9/ENf4dv+S1+0ufX+B1/h3/F
+z04x/J18j9/gjyz/AF/xX+MXFn9u+W/gN803QbtNsLmTY+XsOl5sIoF8C9XE7mziIa/ukVKdq/kd
+Um8+Tdb5eApfrwMx8vPcSc+S0u8DZwco40G83Xryh4F9QmLNHJcol26y8QTjOhz0uDyfD44YyGce
+Un7P9Vv25ho+TjA313Kc03yd57mI62k+p8PlJGgx0Bco45XYbrNJq7/FDWx/+JibFt/w38Qf8jN+
+bvkt/hU/4w/5lXrLb/E9yz/0PvPfwp9b/hv4CHblpWpa0R3+F0WbDSYvLHtWL9JkNpzCP1SRnnko
+jRNjWynh5/WU1dbTZPpzjojReLGgZIcsRxVXTk8jpBwKp7IZrjtTVmwRrSOE78Y+34SVn6CEaAuB
+XUzwNZiSf3rEu1b+futSgIkmaZpr/akeli6iHd8J8SLy+hpyCpLRByH2OMomP1p8b8Bv8Fv+Pv6A
+H/hTy2/xe/wt/q7j7/Atf4vf8Vt8TjrDb/AxvuVv8deW3+JTn1/jN98uKUlobNJcxRz1XJmPCp5l
+8LFMlJz6wMGeIISz7OlJK+PFdTirAg+ZhVquYr0T6ffF6/fX/X4R6jUbe6W9CXYmqeiVUl6qea5J
+draWL8tUPrM8G00euJrjHcaxJR7NHlmY/33i2uLl61wQbgL6CvZQU/jv1+8L6EtKdJH5jg2/nmoS
+W5y2lr5g5ml8Z8Cv8S1/hz/gV/hk+S1+afktPm7G8A/xt5q/xbf8Ft/yd/iW3+J3/BYf/jf8Fp83
+aJd3EbCepiVyPIoOVJgSXvgIn/qAEioLtT1ie3zkIioSGR9UVnvsbU5x7Gop0hPamKD09RWbO2Q2
+EtY6elu440AidsTyIu7kd9jF2RUE66X6gLnpFk+SeGfYGvmJTNKUIEwC8jmmOM4JVAZqf6ZtQaqm
+QwdlnFwuoMYycrD51Pi55R/gPyt+iz/r+Ft82eM3+MsBv8Lv+Htrdsvf4Wv3g79bQFv+m/iW/xof
+uzSDj2BXiNeuk4uT/I430Z2zMb8duDvz5KQo/NbPLuf5BOfwURDYQpav5zJYz6mSmE7IK+NuD0s4
+RVHy0ov14+MjXK+3qLyQ5KSiLSm/c9Ij5FcPepPCuxPI77ydcIvC0+ldZDN8KGR44Y0LqgqijK0D
+JluAF+GcdlxXetH+d0w7CUFhYv3E+tvMs/jtbIsTi6/XzRX4Lb60/BbftfyQ1/if+Bl//4lfyxv+
+Dr/jt/gt/wBf83f4lr/Dt/w82RU+gr2ko66g2CcZc2RIE1CagK/go4dn2i+pizXWPQfFHAdb7yc2
+wiqnsXZyJQXtWSxeUwSxTS6P9nT6S+Bc3uY1r8kv95RWCUW6pAQ62vjghu/BZIUCGZpoT9ziGUrB
+eBurUyYMeeqhkKNrQd4UqqAVqOZKX9LyLahRStrJBtz6X9SUT11e86Eu2774HX7H3+JPLL/Fb+ta
+gZaVwReW3+Knn/iBvxjyM/5swG/wW/4ePo5CzD/A1/wWH+Qdv8bnUmL4Nf6oRLBrU7843NiaqrBH
+TUoZHZ3nZ+lITHCE+8HdHfSxBxsE/6nwgtMRih9NwP5VC/aUxnOWnbuNIBHg+NyWUJy4I4eXA1XD
+uCBtM6dGE8Vvju1iyeHmI8FdgHMKN1jq2FtBn+VXEy+j5Q4O4hvA/gRh3lU76JcNyVYfxzLcBqad
+d3lzxjv05az+Qux9WY9VWmO8izO+GHEB6+O3/C1+Yvn7+Ibf4qOhY/gt/sjytw4Xu46/xZef+IHP
+7tf8Fl+5n/ktPu8vNb/F1/5nfovv9PmB7yU1gg1mfFXndDLG+03OrRFBfimwXpDPzY1tiNSmOOLi
+NaPQfXyacFMs3eM/MceGlHlRQ0kg3NNDU0W7ywnHed4v1Fg2UdQR2dDJVLADeb/F3IzC6KLkF6ai
+oMOOG/G4AZOi05kofZYvVqsHXCnEiozjH7YEKGHc34xqPpLLOU7ZrI/ej5xjs4hzWhkhjIvXXeKP
+Ib/ADWC5CNVsKyj2ipfM8aso3A3wNb/Fl5bf4vPJT/NbfCAb/g6/z6/xe/wtPuQNf4dv+S0+B9vw
+G3zUQsNv8Y3/wW/x047f4B9HqoM2KsuRcHXA82PuCPzsIzx8ZCvsivzVykHNWiEh0F5LCFeMluQm
+btvtumA092LU9MqneYC2RhU57wj2d04eTi9CD4vQrirJjRNKT14Se6r7BnvDqgsTSj/H/h3BPkRp
+3UiPT2ar5zEq7oo3aJemKgWhD3MgP5C2bX8qR6NELSJKX3AfSgW7fkU5QNs2pgB7CKRxU6Y+njqU
+b+TEru6+tfhk+S0+VA2/xS8tv8VvevwtvuXv8C3/Z3zDr/Etv8VHsDW/xcdhc8AP/NLyW3yn42/x
+j/qpF7u8LafoW5LnoUKmF5k5QsjnZ89znUwH+3JCo7zkpxDDRySpM1a7YXRWsJrzDvb9JIQvqz35
+C1RkgSWce5PVAfFPm/Ob7rRqq6rqDd0VTTvGcD7XpphYnjd63z2jVyIeHtB/4ebqeUT+uaniYPiQ
+NRpjsvE/Ob4nfM9BgUZTfHeJKdqPR55YoPph+F8VqgPufylsY1jjj3v8Bj+x/Ba/4//0hEjzt/iW
+3+LvLP81PvgtvuVv8anlt/juTf4WH8E2/BZfZzabu7jb3G2wcURlbM6perb5FzrSF0xutJ/K/T7q
+GuddnMy7kVo5sWr7ew6CephkrN6rvjbipx6G/MIcdKZx2lW9zsN+v7dXOO+xVDS4SBWoYH9te+4X
+rtcJGuH8hY/e06ZDqsJan1Wwf2Wu6PEb/B7/3+A3mr/Fr3v8Bv90m9/ge5a/vU/gG/5b+GivGf4r
+/Oag8UdHXrONlaivsa9C/clq87NL/WtnVxFWIinpywfI6nrvdT3MpaFKTSLmAnsjHqcv7q39+rtP
+kA+8G7fYlDfG6/XlJv8tfJRt5r+B/zf8Bj+9wX8Lv7H8v/YfLm2D3eCZfvDpD1BueP7zry6Qo+Mf
+/LnK5wvwwi3/+/EVP30e/cGfu3zWf//n/P9H/Oa3+P8Dp3kfiA3sOWoAAAAASUVORK5CYIJ=
+</w:binData>
+					<v:shape id="_x0000_i1026" type="#_x0000_t75" style="width:369pt;height:14.25pt">
+						<v:imagedata src="wordml://03000002.png" o:title="a" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:sectPr wsp:rsidR="004C6C9B">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

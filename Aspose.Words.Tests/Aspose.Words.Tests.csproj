@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- Build settings -->
+		<Configurations>Debug;Test;DebugNetStandard20;TestNetStandard20;DebugNetStandard20PyNet</Configurations>
+
+		<!-- Assembly metadata -->
+		<AssemblyName>Aspose.Words.Tests</AssemblyName>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<!-- Signing -->
+
+		<!-- Compiler settings -->
+		<LangVersion>6</LangVersion>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+
+		<!-- Analyzers and warnings -->
+		<SonarQubeExclude>true</SonarQubeExclude>
+		<RunAnalyzers>false</RunAnalyzers>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+		<NoWarn>CS0618</NoWarn>
+		<MSBuildWarningsAsMessages>MSB3042</MSBuildWarningsAsMessages>
+		<WarningLevel>4</WarningLevel>
+		<ErrorReport>prompt</ErrorReport>
+
+		<!-- Items control -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<OutputPath>bin\</OutputPath>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<OutputPath>bin\Test\</OutputPath>
+		<Optimize>true</Optimize>
+		<DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<OutputPath>bin\</OutputPath>
+		<Optimize>false</Optimize>
+		<Prefer32Bit>false</Prefer32Bit>
+		<DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20PyNet|AnyCPU'">
+	  <TargetFramework>$(TestsCoreFramework)</TargetFramework>
+	  <OutputPath>bin\</OutputPath>
+	  <Optimize>false</Optimize>
+	  <Prefer32Bit>false</Prefer32Bit>
+	  <DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;DEBUG_ASSERT;PYNET</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<OutputPath>bin\Test\</OutputPath>
+		<Optimize>true</Optimize>
+		<DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\packages\BouncyCastle.1.7.0\lib\Net20\BouncyCastle.Crypto.dll" />
+		<Reference Include="..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Security" />
+		<Reference Include="System.Web" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Xml.Linq" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.Foundation\Aspose.Foundation.csproj" />
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.TestFx\Aspose.TestFx.csproj" />
+		<ProjectReference Include="..\Aspose.Words.TestFx\Aspose.Words.TestFx.csproj" />
+		<ProjectReference Include="..\Aspose.Words\Aspose.Words.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NUnit" version="4.2.2" />
+		<PackageReference Include="NUnit3TestAdapter" version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="App.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.cs" />
+		<Compile Include="Dml\Charts\TestAxisBound.cs" />
+		<Compile Include="Dml\Charts\TestChartAxis.cs" />
+		<Compile Include="Dml\Charts\TestChartDataLabel.cs" />
+		<Compile Include="Dml\Charts\TestChartDataPoint.cs" />
+		<Compile Include="Dml\Charts\TestChartDataTable.cs" />
+		<Compile Include="Dml\Charts\TestChartLegend.cs" />
+		<Compile Include="Dml\Charts\TestChartSeries.cs" />
+		<Compile Include="Dml\Charts\TestDmlChartStyle.cs" />
+		<Compile Include="Dml\Charts\TestChartTitle.cs" />
+		<Compile Include="Dml\Charts\TestChartUtil.cs" />
+		<Compile Include="Dml\Geometries\TestPresetTextWarpXmlRepository.cs" />
+		<Compile Include="Dml\Guides\TestDmlFormulaFactory.cs" />
+		<Compile Include="Dml\Guides\TestDmlGuides.cs" />
+		<Compile Include="Dml\Guides\TestDmlOneArgumentFormula.cs" />
+		<Compile Include="Dml\Guides\TestDmlThreeArgumentFormula.cs" />
+		<Compile Include="Dml\Guides\TestDmlTwoArgumentFormula.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestBlockBookmarksDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestInsertDoc.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderStructuredDocumentTag.cs" />
+		<Compile Include="Export\IXmlExportContext.cs" />
+		<Compile Include="DocMerger\TestDocumentMerger.cs" />
+		<Compile Include="Export\TestSavingProgress.cs" />
+		<Compile Include="Export\TestExportMarkdownEmphases.cs" />
+		<Compile Include="Export\TestExportTxt.cs" />
+		<Compile Include="Export\TestMarkdownBase.cs" />
+		<Compile Include="Export\TestExportDocxWebExtensions.cs" />
+		<Compile Include="Export\TestMarkdownImageSavingEvent.cs" />
+		<Compile Include="Export\TestOpcDocumentFragmentWriter.cs" />
+		<Compile Include="Export\TestSavingProgressCallback.cs" />
+		<Compile Include="Fields\TestRichStringNumberFormatter.cs" />
+		<Compile Include="Fields\TestRichStrings.cs" />
+		<Compile Include="Import\Markdown\Parser\TestHardLineBreakParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestUnderlineParser.cs" />
+		<Compile Include="Import\TestLoadingProgress.cs" />
+		<Compile Include="Import\Docx\TestImportWebExtensions.cs" />
+		<Compile Include="Import\Docx\TestLoadingProgressCallback.cs" />
+		<Compile Include="Import\Markdown\Parser\TestAtxHeadingParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestAutolinkParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestEmphasesParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestFencedCodeParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestFootnoteParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestHorizontalRuleParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestImageParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestIndentedCodeParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestInlineCodeParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestLinkParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestMarkdownParserBase.cs" />
+		<Compile Include="Import\Markdown\Parser\TestOrderedListParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestParagraphParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestQuoteParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestSetextHeadingParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestStrikethroughParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestBulletListParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestTableParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestReferenceLinkParser.cs" />
+		<Compile Include="Import\Markdown\Parser\TestReferenceImageParser.cs" />
+		<Compile Include="Import\Txt\TestRomanDotTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestRomanRightBracketTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestTextRange.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormat.cs" />
+		<Compile Include="Model\FillFormat\TestFillGradientStops.cs" />
+		<Compile Include="Model\FillFormat\TestFillOneColorGradient.cs" />
+		<Compile Include="Model\FillFormat\TestFillPatterned.cs" />
+		<Compile Include="Model\FillFormat\TestFillPresetTextured.cs" />
+		<Compile Include="Model\FillFormat\TestFillSolid.cs" />
+		<Compile Include="Model\FillFormat\TestStrokeFillChart.cs" />
+		<Compile Include="Model\FillFormat\TestStrokeFillShape.cs" />
+		<Compile Include="Model\FillFormat\TestTextureAlignment.cs" />
+		<Compile Include="Model\FillFormat\TestFillTwoColorGradient.cs" />
+		<Compile Include="Model\FillFormat\TestFillThemeColors.cs" />
+		<Compile Include="Model\FillFormat\TestFillTintAndShade.cs" />
+		<Compile Include="Model\FillFormat\TestStrokeFormat.cs" />
+		<Compile Include="Model\TestAdjustments.cs" />
+		<Compile Include="Model\TestBibliography.cs" />
+		<Compile Include="Model\TestChartDataApi.cs" />
+		<Compile Include="Model\TestChartFormat.cs" />
+		<Compile Include="Dml\Charts\TestChartSeriesGroup.cs" />
+		<Compile Include="Model\TestDmlChartDataAnalyzer.cs" />
+		<Compile Include="Model\TestGabrielZaha\Test25442.cs" />
+		<Compile Include="Model\TestGabrielZaha\Test26027.cs" />
+		<Compile Include="Model\TestGabrielZaha\Test26636.cs" />
+		<Compile Include="Model\TestGabrielZaha\Test28724.cs" />
+		<Compile Include="Model\TestGabrielZaha\Test28725.cs" />
+		<Compile Include="Model\TestGabrielZaha\TestGabrielZaha.cs" />
+		<Compile Include="Model\TestGlowFormat.cs" />
+		<Compile Include="Model\TestKoreanNumbering.cs" />
+		<Compile Include="Model\TestReflectionFormat.cs" />
+		<Compile Include="Model\TestShadowFormat.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatBackColor.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatBase.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatBuilder.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatForeColor.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatRotateWithObject.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatTransparency.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatType.cs" />
+		<Compile Include="Model\FillFormat\TestFillFormatVisible.cs" />
+		<Compile Include="Model\TestImportFormatOptions.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderCharts.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderOnlineVideo.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderStyleSeparator.cs" />
+		<Compile Include="Export\TestHelper\DocBrowser.cs" />
+		<Compile Include="Fields\TestFieldCollection.cs" />
+		<Compile Include="Fields\TestUserInformation.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilderBase.cs" />
+		<Compile Include="Fields\FieldBuilder\FieldAssert.cs" />
+		<Compile Include="Export\DocxExportContext.cs" />
+		<Compile Include="Export\TestExportIsoStrictDocx.cs" />
+		<Compile Include="Fields\FieldBuilder\FieldNodeRangeAssert.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilder.cs" />
+		<Compile Include="Import\Markdown\TestMarkdownFormatDetector.cs" />
+		<Compile Include="Import\Markdown\TestMarkdownFeatureDetectors.cs" />
+		<Compile Include="Export\TestExportMarkdown.cs" />
+		<Compile Include="Import\Markdown\TestImportMarkdown.cs" />
+		<Compile Include="Import\TestC14Transform.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilderCompositeArguments.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilderPositions.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilderSimpleArguments.cs" />
+		<Compile Include="Fields\FieldBuilder\TestFieldBuilderSwitches.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestInsertDocumentCustomers.cs" />
+		<Compile Include="Model\TestBookmarkText.cs" />
+		<Compile Include="Model\TestImageDataCore.cs" />
+		<Compile Include="Model\TestIntern.cs" />
+		<Compile Include="Model\TestDocumentCleaner.cs" />
+		<Compile Include="Fields\TestLanguage.cs" />
+		<Compile Include="Model\TestNodeChangingCallback.cs" />
+		<Compile Include="Model\TestNodeImporter.cs" />
+		<Compile Include="Model\TestFootnote.cs" />
+		<Compile Include="Model\TestMaxWarningCountCallback.cs" />
+		<Compile Include="Model\TestPeople.cs" />
+		<Compile Include="Model\TestSdtXmlMapping.cs" />
+		<Compile Include="Model\TestSoftEdgeFormat.cs" />
+		<Compile Include="Model\TestThemes.cs" />
+		<Compile Include="Model\TestOrdinalNumbering.cs" />
+		<Compile Include="Model\TestWatermark.cs" />
+		<Compile Include="Model\TestWebExtensions.cs" />
+		<Compile Include="Model\TestWordUtilFormatDateTime.cs" />
+		<Compile Include="Import\Txt\TestCharsetDetector.cs" />
+		<Compile Include="Other\TestTextExtraction.cs" />
+		<Compile Include="Export\TestHelper\NonSeekStream.cs" />
+		<Compile Include="RW\TestDocxNamespaces.cs" />
+		<Compile Include="RW\TestVmlColor.cs" />
+		<Compile Include="Fonts\TestFonts.cs" />
+		<Compile Include="SetUpFixture.cs" />
+		<Compile Include="TestsAssemblyInfo.cs" />
+		<Compile Include="Defects\TestDefects.cs" />
+		<Compile Include="Dml\Readers\TestComplexTypesReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlChartAxisReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlChartReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlChartSeriesReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlColorReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlCompositeNodeReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlEffectReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlFillReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlGeometryReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlNodePropertiesReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlOutlineReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlPathReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlPictureReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlShapeReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlShapeStyleReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlTextShapeReader.cs" />
+		<Compile Include="Dml\Readers\TestDmlTransformReader.cs" />
+		<Compile Include="Dml\Charts\TestSimpleTypes.cs" />
+		<Compile Include="Dml\Colors\TestDmlColorModifiers.cs" />
+		<Compile Include="Dml\Colors\TestDmlHexRgbColor.cs" />
+		<Compile Include="Dml\Colors\TestDmlHslColor.cs" />
+		<Compile Include="Dml\Colors\TestDmlPercentageRgbColor.cs" />
+		<Compile Include="Dml\Colors\TestDmlPresetColor.cs" />
+		<Compile Include="Dml\Common\TestPercentage.cs" />
+		<Compile Include="Dml\Fills\TestDmlBlip.cs" />
+		<Compile Include="Dml\Fills\TestDmlBlipFill.cs" />
+		<Compile Include="Dml\Fills\TestDmlPatternFill.cs" />
+		<Compile Include="Dml\Geometries\TestDmlGeometry.cs" />
+		<Compile Include="Dml\Geometries\TestPresetGeometryXmlRepository.cs" />
+		<Compile Include="Dml\Path\TestDmlAdjustableAngle.cs" />
+		<Compile Include="Dml\Path\TestDmlAdjustableCoordinate.cs" />
+		<Compile Include="Dml\Path\TestDmlPath.cs" />
+		<Compile Include="Dml\TestDmlGeometryFallback.cs" />
+		<Compile Include="Dml\TestDmlLists.cs" />
+		<Compile Include="Dml\TestNestedDmls.cs" />
+		<Compile Include="Dml\Text\TestDmlRunProperties.cs" />
+		<Compile Include="Dml\Text\TestDmlTextListStyles.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderDeleteRow.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderOther.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderPara.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderRun.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderSection.cs" />
+		<Compile Include="DocBuilder\TestDocBuilderTable.cs" />
+		<Compile Include="Export\TestExportDocx.cs" />
+		<Compile Include="Fields\Expressions\ExpressionCalculatorTest.cs" />
+		<Compile Include="Fields\Expressions\ComparisonEvaluatorTest.cs" />
+		<Compile Include="Fields\Expressions\ExpressionParserTest.cs" />
+		<Compile Include="Fields\TestDocumentInformation.cs" />
+		<Compile Include="Fields\TestDoubleConstant.cs" />
+		<Compile Include="Fields\TestDuplicateFormattingStripper.cs" />
+		<Compile Include="Fields\TestEquationsAndFormulas.cs" />
+		<Compile Include="Fields\TestFieldCode.cs" />
+		<Compile Include="Fields\TestFieldsBase.cs" />
+		<Compile Include="Fields\TestFieldTypes.cs" />
+		<Compile Include="Fields\TestFunctionParameter.cs" />
+		<Compile Include="Fields\TestIndexAndTables.cs" />
+		<Compile Include="Generators\NBidi\CodeGenerator.cs" />
+		<Compile Include="Generators\NBidi\UnicodeArabicShapingCodeGenerator.cs" />
+		<Compile Include="Generators\NBidi\UnicodeDataCodeGenerator.cs" />
+		<Compile Include="Generators\NBidi\UnicodeMirroringCodeGenerator.cs" />
+		<Compile Include="Gold\Range\TestGoldRangeToDocument.cs" />
+		<Compile Include="Gold\Txt\TestGoldTxtBase.cs" />
+		<Compile Include="Gold\Txt\TestGoldTxtOther.cs" />
+		<Compile Include="Import\Docx\TestDocxEncryption.cs" />
+		<Compile Include="Import\Docx\TestImportDocx.cs" />
+		<Compile Include="Import\Docx\TestImportDocxEmbedded.cs" />
+		<Compile Include="Import\Docx\TestImportDocxPackage.cs" />
+		<Compile Include="Import\Docx\TestImportDocxSdt.cs" />
+		<Compile Include="Import\Docx\TestImportFlatOpc.cs" />
+		<Compile Include="Import\ImportIso29500\TestIso29500Strict.cs" />
+		<Compile Include="Import\ImportIso29500\TestIso29500Transitional.cs" />
+		<Compile Include="Import\TestImportFromWeb.cs" />
+		<Compile Include="Import\TestImportFromAzure.cs" />
+		<Compile Include="Import\Txt\TestArabicDotTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestArabicRightBracketTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestAsteriskTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestCourierCircleTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestLowercaseLetterDotTxtNumberingStyle.cs" />
+		<Compile Include="Import\Txt\TestTxtFormatDetector.cs" />
+		<Compile Include="Import\Txt\TestTxtNumbering.cs" />
+		<Compile Include="Import\Txt\TestTxtNumberingDetector.cs" />
+		<Compile Include="Import\Txt\TestTxtParagraph.cs" />
+		<Compile Include="Import\Txt\TestTxtParagraphReader.cs" />
+		<Compile Include="Import\Txt\TestTxtReader.cs" />
+		<Compile Include="Iterators\TestLinkedList.cs" />
+		<Compile Include="Iterators\FakeLinkedListNode.cs" />
+		<Compile Include="ModelDump.cs" />
+		<Compile Include="Model\TestDmlChartFeatures.cs" />
+		<Compile Include="Model\TestDmlCharts.cs" />
+		<Compile Include="Model\TestDmlChartsFeatures3D.cs" />
+		<Compile Include="Model\TestDmlCustomersCharts.cs" />
+		<Compile Include="Model\TestDmlDiagrams.cs" />
+		<Compile Include="Model\TestDmlNodeClone.cs" />
+		<Compile Include="Model\TestTextEffects.cs" />
+		<Compile Include="Model\TestWordUtil.cs" />
+		<Compile Include="Model\DmlVmlTestUtil.cs" />
+		<Compile Include="Model\TestMsWordVersionSpecificBehavior.cs" />
+		<Compile Include="Model\TestAltChunk.cs" />
+		<Compile Include="Model\TestBorder.cs" />
+		<Compile Include="Model\TestDocumentNode.cs" />
+		<Compile Include="Model\TestDocumentValidator.cs" />
+		<Compile Include="Model\TestDocumentVisitor.cs" />
+		<Compile Include="Model\TestDrawingML.cs" />
+		<Compile Include="Model\TestEuropeanNumbering.cs" />
+		<Compile Include="Model\TestExcelColumnNumbering.cs" />
+		<Compile Include="Model\TestFieldRemover.cs" />
+		<Compile Include="Model\TestGrandParent.cs" />
+		<Compile Include="Model\TestNode.cs" />
+		<Compile Include="Model\TestNodeChangingCallbackChain.cs" />
+		<Compile Include="Model\TestNodeCollection.cs" />
+		<Compile Include="Model\TestNodeCopier.cs" />
+		<Compile Include="Model\TestNodeEnumerator.cs" />
+		<Compile Include="Model\TestNodeInsertRemove.cs" />
+		<Compile Include="Model\TestNodeRange.cs" />
+		<Compile Include="Model\TestNonMarkupTraverse.cs" />
+		<Compile Include="Model\TestNumbering.cs" />
+		<Compile Include="Model\TestEditableRange.cs" />
+		<Compile Include="Model\TestPreferredWidth.cs" />
+		<Compile Include="Model\TestRangeDocumentBuilder.cs" />
+		<Compile Include="Model\TestResourceLoadingCallback.cs" />
+		<Compile Include="Model\TestSdt.cs" />
+		<Compile Include="Model\TestSection.cs" />
+		<Compile Include="Model\TestStyleManagement.cs" />
+		<Compile Include="Model\TestTableFormat.cs" />
+		<Compile Include="Model\TestTrackRevisions.cs" />
+		<Compile Include="Model\TestTypedNodeCollection.cs" />
+		<Compile Include="Model\TestUnifiedWarnings.cs" />
+		<Compile Include="Other\PrBagGenerator.cs" />
+		<Compile Include="Other\TestExceptions.cs" />
+		<Compile Include="Other\TestGoogleProof.cs" />
+		<Compile Include="Other\TestIBMScalability.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestBlockLevelSdtDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestBlockLevelSdtDocEndsWithPara.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestBlockLevelSdtDocStartsWithPara.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestInsertDstDocLocation.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestListItemsDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestMultiColumnDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestMultiSectionDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestOneListItemDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestOneParaDoc.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestOneParaDocInsideTable.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestInsertSrcDocType.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestTableDocStartsWithPara.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestTableDocStartsWithTable.cs" />
+		<Compile Include="DocBuilder\InsertDocument\TestInsertDocumentBase.cs" />
+		<Compile Include="Unified\ListDefStub.cs" />
+		<Compile Include="Unified\TestAttrCollection.cs" />
+		<Compile Include="Unified\TestBackgroundShape.cs" />
+		<Compile Include="Unified\TestBookmarks.cs" />
+		<Compile Include="Unified\TestBuildingBlocks.cs" />
+		<Compile Include="Unified\TestComments.cs" />
+		<Compile Include="Unified\TestDemo2007.cs" />
+		<Compile Include="Unified\TestDemos.cs" />
+		<Compile Include="Unified\TestDocProperties.cs" />
+		<Compile Include="Unified\TestDocument.cs" />
+		<Compile Include="Unified\TestDop.cs" />
+		<Compile Include="Unified\TestDopMailMerge.cs" />
+		<Compile Include="Unified\TestEditableRanges.cs" />
+		<Compile Include="Unified\TestEmbeddedFonts.cs" />
+		<Compile Include="Unified\TestFields.cs" />
+		<Compile Include="Unified\TestFileFormatUtil.cs" />
+		<Compile Include="Unified\TestFootnotes.cs" />
+		<Compile Include="Unified\TestFormFields.cs" />
+		<Compile Include="Unified\TestHeaders.cs" />
+		<Compile Include="Unified\TestLists.cs" />
+		<Compile Include="Unified\TestMarkup.cs" />
+		<Compile Include="Unified\TestMath.cs" />
+		<Compile Include="Unified\TestOther.cs" />
+		<Compile Include="Unified\TestPageSetup.cs" />
+		<Compile Include="Unified\TestParagraphs.cs" />
+		<Compile Include="Unified\TestProtection.cs" />
+		<Compile Include="Unified\TestReplace.cs" />
+		<Compile Include="Unified\TestReplaceRegex.cs" />
+		<Compile Include="Unified\TestRevisionGroup.cs" />
+		<Compile Include="Unified\TestRevisions.cs" />
+		<Compile Include="Unified\TestRuns.cs" />
+		<Compile Include="Unified\TestSections.cs" />
+		<Compile Include="Unified\TestShapeFillAndLine.cs" />
+		<Compile Include="Unified\TestShapeGeometry.cs" />
+		<Compile Include="Unified\TestShapeGroup.cs" />
+		<Compile Include="Unified\TestShapeImages.cs" />
+		<Compile Include="Unified\TestShapeOleControls.cs" />
+		<Compile Include="Unified\TestShapeOther.cs" />
+		<Compile Include="Unified\TestShapePosition.cs" />
+		<Compile Include="Unified\TestShapeTextboxes.cs" />
+		<Compile Include="Unified\TestStyleCollection.cs" />
+		<Compile Include="Unified\TestStyleImport.cs" />
+		<Compile Include="Unified\TestStyleList.cs" />
+		<Compile Include="Unified\TestStyles.cs" />
+		<Compile Include="Unified\TestStyleTable.cs" />
+		<Compile Include="Unified\TestTableGrid.cs" />
+		<Compile Include="Unified\TestTables.cs" />
+		<Compile Include="Unified\TestVba.cs" />
+		<Compile Include="Unified\UnifiedTestsBase.cs" />
+		<Compile Include="Unified\UserProvidedDataHandler.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Generators\NBidi\ArabicShaping.txt" />
+		<Content Include="Generators\NBidi\BidiMirroring.txt" />
+		<Content Include="Generators\NBidi\UnicodeData.txt" />
+		<Content Include="Unified\readme.txt" />
+	</ItemGroup>
+</Project>

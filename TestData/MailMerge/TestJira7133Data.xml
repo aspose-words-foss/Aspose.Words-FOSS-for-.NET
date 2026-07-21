@@ -1,0 +1,527 @@
+  <Assessment>
+  <Risk>
+      <active>1</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Asbestos</riskName>
+      <riskSubtitle />
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>1</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Slips trips &amp; falls</riskName>
+      <riskSubtitle>cable's, pipes, varying levels and Debris</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>1</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Risk of falling debris</riskName>
+      <riskSubtitle>Hard hat PPE requirements</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>1</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Safe Access and Egress</riskName>
+      <riskSubtitle>hazards would hamper emergency exits</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Manual Handling</riskName>
+      <riskSubtitle>stripping out work, installation of equipment</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>COSHH</riskName>
+      <riskSubtitle>dust, asbestos, bio hazard, fumes or gases</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Respiratory hazard</riskName>
+      <riskSubtitle>airborne dust &amp; particles caused by air mover</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Sharps</riskName>
+      <riskSubtitle>exposed nails, building materials</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Eye injuries</riskName>
+      <riskSubtitle>sharps and airborne debris</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Leptospirosis</riskName>
+      <riskSubtitle>wiel's disease risk from vermin infestation</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Electric shock</riskName>
+      <riskSubtitle>exposed electricity cable's &amp; sockets</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Lone worker</riskName>
+      <riskSubtitle>Lone working not suitable on the site</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Impact</riskName>
+      <riskSubtitle>Injury risk from hanging cables &amp; pipe-work</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Suffocation</riskName>
+      <riskSubtitle>Carbon Monoxide risk from exposed boiler unit</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Carbon Monoxide risk</riskName>
+      <riskSubtitle>recirculation of gas from open wall vent</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Explosion</riskName>
+      <riskSubtitle>potential for damage to exposed gas pipes</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Noise</riskName>
+      <riskSubtitle>drying equipment may impact on staff or attached neighbours</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Third party risk</riskName>
+      <riskSubtitle>lack of warning notices on entrance to warn of hazards</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Work at height</riskName>
+      <riskSubtitle />
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Welfare requirements</riskName>
+      <riskSubtitle>toilets, washing and fresh drinking water</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>
+    <Risk>
+      <active>0</active>
+      <custom>0</custom>
+      <dateCreatedLocally>17-08-2012</dateCreatedLocally>
+      <notes />
+      <riskName>Welfare requirements</riskName>
+      <riskSubtitle>location off site for consumption of food &amp; breaks</riskSubtitle>
+      <ratingAsString>High</ratingAsString>
+      <RefLikelihood>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Certain / Imminent Death</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefLikelihood>
+      <RefWorseCaseOutcome>
+        <dateUpdatedRemotely />
+        <displayTitle>10 Fatality</displayTitle>
+        <isDisplayed>1</isDisplayed>
+        <referenceId>0</referenceId>
+        <sortOrder>0</sortOrder>
+        <value>10</value>
+      </RefWorseCaseOutcome>
+    </Risk>   
+  </Assessment>

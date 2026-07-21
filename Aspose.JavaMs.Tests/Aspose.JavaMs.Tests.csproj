@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- Basic project information -->
+		<Configurations>Debug;Test;DebugNetStandard20;TestNetStandard20;DebugNetStandard20PyNet</Configurations>
+
+		<!-- Compiler settings -->
+		<LangVersion>6</LangVersion>
+		<WarningLevel>4</WarningLevel>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<Prefer32Bit>false</Prefer32Bit>
+
+		<!-- Assembly metadata generation -->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<!-- Items control -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+
+		<!-- Code analysis and quality -->
+		<SonarQubeExclude>true</SonarQubeExclude>
+		<RunAnalyzers>false</RunAnalyzers>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+
+		<!-- Debug settings (common) -->
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<TargetFramework>$(TestsFramework)</TargetFramework>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20PyNet|AnyCPU'">
+	  <TargetFramework>$(TestsCoreFramework)</TargetFramework>
+	  <Optimize>false</Optimize>
+	  <OutputPath>bin\</OutputPath>
+	  <DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestNetStandard20|AnyCPU'">
+		<TargetFramework>$(TestsCoreFramework)</TargetFramework>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>TRACE;DEBUG;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\packages\BouncyCastle.1.7.0\lib\Net20\BouncyCastle.Crypto.dll" />
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="NUnit" version="4.2.2" />
+		<PackageReference Include="NUnit3TestAdapter" version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.Foundation\Aspose.Foundation.csproj" />
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.TestFx\Aspose.TestFx.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.cs" />
+		<Compile Include="BouncyCastle\TestBigInteger.cs" />
+		<Compile Include="System\Collections\TestDictionaryEntry.cs" />
+		<Compile Include="System\Collections\TestGenericCollection.cs" />
+		<Compile Include="System\Collections\TestDictionaryGeneric.cs" />
+		<Compile Include="System\Collections\TestLinkedListGeneric.cs" />
+		<Compile Include="System\Collections\TestOutRefGenerics.cs" />
+		<Compile Include="System\Collections\TestComparableGenerics.cs" />
+		<Compile Include="System\Collections\TestListGeneric.cs" />
+		<Compile Include="System\Collections\TestStackGenerics.cs" />
+		<Compile Include="System\Collections\TestSortedList.cs" />
+		<Compile Include="System\Collections\TestQueueGenerics.cs" />
+		<Compile Include="System\Collections\TestSortedListGenerics.cs" />
+		<Compile Include="System\Collections\TestSortedListIterator.cs" />
+		<Compile Include="System\Data\DataSetWriter.cs" />
+		<Compile Include="System\Data\TestDataTableReader.cs" />
+		<Compile Include="System\Drawing\TestFont.cs" />
+		<Compile Include="System\Drawing\TestKnownColor.cs" />
+		<Compile Include="System\Drawing\TestPointF.cs" />
+		<Compile Include="System\Globalization\TestCalendar.cs" />
+		<Compile Include="System\Globalization\TestCultureInfo.cs" />
+		<Compile Include="System\Globalization\TestDateTimeFormatInfo.cs" />
+		<Compile Include="System\IO\TestFileStream.cs" />
+		<Compile Include="System\IO\TestBinaryReaderWriter.cs" />
+		<Compile Include="System\IO\TestFileStreamCtor.cs" />
+		<Compile Include="System\IO\TestMemoryStream.cs" />
+		<Compile Include="System\IO\TestStreamWriterCtor.cs" />
+		<Compile Include="System\IO\TestStreamWriterMisc.cs" />
+		<Compile Include="System\IO\TestStreamWriterWrite.cs" />
+		<Compile Include="System\Number\TestFormatDouble.cs" />
+		<Compile Include="System\Number\TestFormatFloat.cs" />
+		<Compile Include="System\Number\TestFormatLong.cs" />
+		<Compile Include="System\Number\TestFormatInt32.cs" />
+		<Compile Include="System\Number\TestFormatShort.cs" />
+		<Compile Include="System\Number\TestFormatSByte.cs" />
+		<Compile Include="System\Number\TestFormatUInt.cs" />
+		<Compile Include="System\Number\TestFormatUShort.cs" />
+		<Compile Include="System\Number\TestFormatByte.cs" />
+		<Compile Include="System\TestBinaryExpressionByte.cs" />
+		<Compile Include="System\TestBinaryExpressionUInt.cs" />
+		<Compile Include="System\TestBinaryOperatorUInt.cs" />
+		<Compile Include="System\TestBinaryExpressionUShort.cs" />
+		<Compile Include="System\TestBinaryOperatorUShort.cs" />
+		<Compile Include="System\TestBinaryOperatorByte.cs" />
+		<Compile Include="System\TestBitConverter.cs" />
+		<Compile Include="System\TestMsUInt.cs" />
+		<Compile Include="System\TestMsUShort.cs" />
+		<Compile Include="System\TestMsByte.cs" />
+		<Compile Include="System\TestOutRefStruct.cs" />
+		<Compile Include="System\Text\RegularExpressions\TestRegex.cs" />
+		<Compile Include="System\TestArray.cs" />
+		<Compile Include="System\TestChar.cs" />
+		<Compile Include="System\TestConvert.cs" />
+		<Compile Include="System\Data\TestDataColumn.cs" />
+		<Compile Include="System\Data\TestDataSet.cs" />
+		<Compile Include="System\Data\TestDataSetConstraints.cs" />
+		<Compile Include="System\Data\TestDataSetDiffgram.cs" />
+		<Compile Include="System\Data\TestDataSetReadSchema.cs" />
+		<Compile Include="System\TestDateTime.cs" />
+		<Compile Include="System\TestDateTimeFormatter.cs" />
+		<Compile Include="System\TestDateTimeParse.cs" />
+		<Compile Include="System\TestEnum.cs" />
+		<Compile Include="System\TestFile.cs" />
+		<Compile Include="System\TestGuid.cs" />
+		<Compile Include="System\TestMs.cs" />
+		<Compile Include="System\TestMsMath.cs" />
+		<Compile Include="System\IO\TestPath.cs" />
+		<Compile Include="System\TestString.cs" />
+		<Compile Include="System\TestStringBuilder.cs" />
+		<Compile Include="System\TestStringFormat.cs" />
+		<Compile Include="System\TestUri.cs" />
+		<Compile Include="System\Text\TestEncoding.cs" />
+		<Compile Include="System\Xml\TestXmlTextReader.cs" />
+		<Compile Include="System\Xml\TestXmlTextWriter.cs" />
+		<Compile Include="System\Xml\TestXmlTextWriterEncoding.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="App.config" />
+	</ItemGroup>
+</Project>

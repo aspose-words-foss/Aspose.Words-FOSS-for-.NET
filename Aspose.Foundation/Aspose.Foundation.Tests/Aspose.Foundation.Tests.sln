@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Foundation.Tests", "Aspose.Foundation.Tests.csproj", "{24D60D96-EB15-3B7A-BDA1-6C75B9D54DD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D60D96-EB15-3B7A-BDA1-6C75B9D54DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D60D96-EB15-3B7A-BDA1-6C75B9D54DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D60D96-EB15-3B7A-BDA1-6C75B9D54DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D60D96-EB15-3B7A-BDA1-6C75B9D54DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7D03F97-4A63-4898-99E2-54E7A08BC7C4}
+	EndGlobalSection
+EndGlobal

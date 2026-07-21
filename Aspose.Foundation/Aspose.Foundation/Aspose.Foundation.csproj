@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Basic information -->
+		<TargetFramework>$(DefaultFramework)</TargetFramework>
+		<TargetFrameworkProfile></TargetFrameworkProfile>
+		<RootNamespace>Aspose</RootNamespace>
+		<AssemblyName>Aspose.Foundation</AssemblyName>
+		<Configurations>Debug;DebugNetStandard20;Release;Release35;Release40;ReleaseNetStandard20;Release461;Release60;Release80;Release90;Release100;Test;TestNetStandard20;DebugNetStandard20PyNet;ReleaseNetStandard20PyNet</Configurations>
+
+		<!-- Assembly metadata -->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+		<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+
+		<!-- Compiler settings -->
+		<LangVersion>6</LangVersion>
+		<Optimize>true</Optimize>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+
+		<!-- Analyzers and warnings -->
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningLevel>4</WarningLevel>
+		<ErrorReport>prompt</ErrorReport>
+
+		<!-- Items control -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20|AnyCPU'">
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNetStandard20PyNet|AnyCPU'">
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT;PYNET</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<TargetFramework>$(DefaultFramework)</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release35|AnyCPU' ">
+		<TargetFramework>net35</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release40|AnyCPU' ">
+		<TargetFramework>net40</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release461|AnyCPU'">
+		<TargetFramework>net461</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNetStandard20|AnyCPU'">
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNetStandard20PyNet|AnyCPU'">
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <OutputPath>bin\Release</OutputPath>
+	  <DefineConstants>TRACE;OPTIMIZED;PYNET</DefineConstants>
+	  <NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release60|AnyCPU'">
+		<TargetFramework>net6.0</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,CA1416,SYSLIB0014,CA1307,CA1309,CA1310,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release80|AnyCPU'">
+		<TargetFramework>net8.0</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,CA1416,SYSLIB0014,CA1307,CA1309,CA1310,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release90|AnyCPU'">
+		<TargetFramework>net9.0</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,CA1416,SYSLIB0014,CA1307,CA1309,CA1310,SYSLIB0057,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release100|AnyCPU'">
+		<TargetFramework>net10.0</TargetFramework>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,CA1416,SYSLIB0014,CA1307,CA1309,CA1310,SYSLIB0057,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<DebugType>full</DebugType>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestNetStandard20|AnyCPU'">
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<DebugType>full</DebugType>
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\..\packages\BouncyCastle.1.7.0\lib\Net20\BouncyCastle.Crypto.dll" />
+		<Reference Include="..\..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll"></Reference>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net35' or '$(TargetFramework)' == 'net40' or '$(TargetFramework)' == 'net461' or '$(TargetFramework)' == 'net462'">
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Security" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' or '$(TargetFramework)' == 'net6.0' or '$(TargetFramework)' == 'net8.0' or '$(TargetFramework)' == 'net9.0' or '$(TargetFramework)' == 'net10.0'">
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+		<PackageReference Include="SkiaSharp" Version="3.119.0" />
+		<PackageReference Include="BitMiracle.LibTiff.NET" Version="2.4.649" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<PackageReference Include="SkiaSharp" Version="3.119.0" Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Test'" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Aspose.EnumExtensionsGenerator" Version="1.0.2" PrivateAssets="all" ExcludeAssets="runtime">
+			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<PropertyGroup>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(IncludeGenerated)' == true">
+		<Compile Include="Generated\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.cs" />
+		<Compile Include="Base\ArgumentUtil.cs" />
+		<Compile Include="Base\BasePathUtil.cs" />
+		<Compile Include="Base\EnumeratorWrapperPalGeneric.cs" />
+		<Compile Include="Base\FixedPoint.cs" />
+		<Compile Include="Base\FixedPoint16Dot16.cs" />
+		<Compile Include="Base\FixedPoint2Dot14.cs" />
+		<Compile Include="Base\Lazy.cs" />
+		<Compile Include="Base\LocaleClassifier.cs" />
+		<Compile Include="Base\LocaleConverter.cs" />
+		<Compile Include="Base\ListUtil.cs" />
+		<Compile Include="Base\ArrayUtil.cs" />
+		<Compile Include="Base\BitUtil.cs" />
+		<Compile Include="Base\CharCase.cs" />
+		<Compile Include="Base\ListUtilPal.cs" />
+		<Compile Include="Base\NullableBoolUtil.cs" />
+		<Compile Include="Base\NumberFormattingOptions.cs" />
+		<Compile Include="Base\ProcessExecutionResult.cs" />
+		<Compile Include="Base\URI.cs" />
+		<Compile Include="Bidi\BidiLevelList.cs" />
+		<Compile Include="Bidi\NBidi.cs" />
+		<Compile Include="Bidi\UnicodeBlocks.cs" />
+		<Compile Include="Charset\TextRange.cs" />
+		<Compile Include="Base\ColorModel.cs" />
+		<Compile Include="Base\ConvertUtilCore.cs" />
+		<Compile Include="Base\DateTimeUtil.cs" />
+		<Compile Include="Base\Debug.cs" />
+		<Compile Include="Base\EncodingUtil.cs" />
+		<Compile Include="Base\EnumUtilPal.cs" />
+		<Compile Include="Base\FileFormat.cs" />
+		<Compile Include="Base\ImageConstants.cs" />
+		<Compile Include="Base\Language.cs" />
+		<Compile Include="Base\LanguageOnly.cs" />
+		<Compile Include="Base\MathUtil.cs" />
+		<Compile Include="Base\NumberFormatter.cs" />
+		<Compile Include="Base\Pair.cs" />
+		<Compile Include="Base\DoublePal.cs" />
+		<Compile Include="Base\ThreadPal.cs" />
+		<Compile Include="Base\Platform.cs" />
+		<Compile Include="Base\PlatformUtilPal.cs" />
+		<Compile Include="Base\StringOrdinalComparer.cs" />
+		<Compile Include="Base\StringOrdinalIgnoreCaseComparer.cs" />
+		<Compile Include="Base\StringUtil.cs" />
+		<Compile Include="Base\StringUtilPal.cs" />
+		<Compile Include="Base\UriUtil.cs" />
+		<Compile Include="Bidi\ArabicShapeJoiningType.cs" />
+		<Compile Include="Bidi\BidiAlgorithm.cs" />
+		<Compile Include="Bidi\BidiCharacterMirrorResolver.cs" />
+		<Compile Include="Bidi\BidiCharacterType.cs" />
+		<Compile Include="Bidi\BidiCharData.cs" />
+		<Compile Include="Bidi\BidiChars.cs" />
+		<Compile Include="Bidi\BidiControlCharUtil.cs" />
+		<Compile Include="Bidi\BidiLevel.cs" />
+		<Compile Include="Bidi\BidiParagraph.cs" />
+		<Compile Include="Bidi\BidiRun.cs" />
+		<Compile Include="Bidi\BidiSourceRun.cs" />
+		<Compile Include="Bidi\CharacterClassifier.cs" />
+		<Compile Include="Bidi\ConstantBidiParagraphLevelOverride.cs" />
+		<Compile Include="Bidi\DirectionalOverrideStatus.cs" />
+		<Compile Include="Bidi\IBidiParagraphCharDataModifier.cs" />
+		<Compile Include="Bidi\IBidiParagraphLevelOverride.cs" />
+		<Compile Include="Bidi\LetterForm.cs" />
+		<Compile Include="Bidi\StringUtf32Enumerator.cs" />
+		<Compile Include="Bidi\UnicodeArabicShapingResolver.cs" />
+		<Compile Include="Bidi\UnicodeCanonicalClass.cs" />
+		<Compile Include="Bidi\UnicodeCharacterComposeMap.cs" />
+		<Compile Include="Bidi\UnicodeCharacterDataResolver.cs" />
+		<Compile Include="Bidi\UnicodeCharacterDecomposeMap.cs" />
+		<Compile Include="Bidi\UnicodeDecompositionType.cs" />
+		<Compile Include="Bidi\UnicodeGeneralCategory.cs" />
+		<Compile Include="Bidi\UnicodeUtil.cs" />
+		<Compile Include="Charset\CharsetDetector.cs" />
+		<Compile Include="Charset\CharsetISO2022Recognizer.cs" />
+		<Compile Include="Charset\CharsetMatch.cs" />
+		<Compile Include="Charset\CharsetMultiByteRecognizer.cs" />
+		<Compile Include="Charset\CharsetRecognizer.cs" />
+		<Compile Include="Charset\CharsetSingleByteRecognizer.cs" />
+		<Compile Include="Charset\CharsetUnicodeRecognizer.cs" />
+		<Compile Include="Charset\CharsetUTF7Recognizer.cs" />
+		<Compile Include="Charset\CharsetUTF8Recognizer.cs" />
+		<Compile Include="Charset\CodePage.cs" />
+		<Compile Include="Collections\Auto\ByteList.cs" />
+		<Compile Include="Collections\Auto\ByteToUIntDictionary.cs" />
+		<Compile Include="Collections\Auto\BytesHash.cs" />
+		<Compile Include="Collections\Auto\BytesHashToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\CharList.cs" />
+		<Compile Include="Collections\Auto\CharToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\DoubleList.cs" />
+		<Compile Include="Collections\Auto\DoubleStack.cs" />
+		<Compile Include="Collections\Auto\FloatList.cs" />
+		<Compile Include="Collections\Auto\GuidToIntDictionary.cs" />
+		<Compile Include="Collections\Auto\GuidToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\IntBigArray.cs" />
+		<Compile Include="Collections\Auto\IntList.cs" />
+		<Compile Include="Collections\Auto\IntStack.cs" />
+		<Compile Include="Collections\Auto\IntToCharDictionary.cs" />
+		<Compile Include="Collections\Auto\IntToIntDictionary.cs" />
+		<Compile Include="Collections\Auto\IntToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\LongList.cs" />
+		<Compile Include="Collections\Auto\LongToBoolDictionary.cs" />
+		<Compile Include="Collections\Auto\LongToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\ObjToDoubleDictionary.cs" />
+		<Compile Include="Collections\Auto\ObjToIntDictionary.cs" />
+		<Compile Include="Collections\Auto\PointFList.cs" />
+		<Compile Include="Collections\Auto\PointList.cs" />
+		<Compile Include="Collections\Auto\RectangleFList.cs" />
+		<Compile Include="Collections\Auto\StringList.cs" />
+		<Compile Include="Collections\Auto\StringToCharDictionary.cs" />
+		<Compile Include="Collections\Auto\StringToIntDictionary.cs" />
+		<Compile Include="Collections\Auto\StringToObjDictionary.cs" />
+		<Compile Include="Collections\Auto\StringToStringDictionary.cs" />
+		<Compile Include="Collections\Auto\UIntToByteDictionary.cs" />
+		<Compile Include="Collections\BidirectionalMaps\BidirectionalMapUtil.cs" />
+		<Compile Include="Collections\BidirectionalMaps\IntToIntBidirectionalMap.cs" />
+		<Compile Include="Collections\BidirectionalMaps\StringToIntBidirectionalMap.cs" />
+		<Compile Include="Collections\BidirectionalMaps\StringToObjBidirectionalMap.cs" />
+		<Compile Include="Collections\CaseInsensitiveHashSet.cs" />
+		<Compile Include="Collections\DictionaryExtension.cs" />
+		<Compile Include="Collections\EmptyEnumerator.cs" />
+		<Compile Include="Collections\Auto\Templates\BigArray.cs" />
+		<Compile Include="Collections\Generic\ISetGeneric.cs" />
+		<Compile Include="Collections\Generic\SortedIntegerListGeneric.cs" />
+		<Compile Include="Collections\Generic\StringListGeneric.cs" />
+		<Compile Include="Collections\Generic\StringListEnumerator.cs" />
+		<Compile Include="Collections\HashCodeProviderPal.cs" />
+		<Compile Include="Collections\Generic\HashSetGeneric.cs" />
+		<Compile Include="Collections\Generic\SortedStringListGeneric.cs" />
+		<Compile Include="Collections\SortedShortListIntegerFallback.cs" />
+		<Compile Include="Collections\StackExtension.cs" />
+		<Compile Include="Common\CompositeDisposable.cs" />
+		<Compile Include="Common\CompressedData.cs" />
+		<Compile Include="Common\CssEscape.cs" />
+		<Compile Include="Common\FileFormatCore.cs" />
+		<Compile Include="Common\FormatterPal.cs" />
+		<Compile Include="Drawing\Fonts\TTFontHorizontalMetrics.cs" />
+		<Compile Include="Drawing\Fonts\TTFontVerticalMetrics.cs" />
+		<Compile Include="Fonts\PhysicalFontData.cs" />
+		<Compile Include="Fonts\TrueType\ComponentGlyphRecord.cs" />
+		<Compile Include="Fonts\TrueType\CvtTable.cs" />
+		<Compile Include="Fonts\TrueType\FontFsTypePermissions.cs" />
+		<Compile Include="Fonts\TrueType\FontFsType.cs" />
+		<Compile Include="Fonts\TrueType\OpenTypeReader.cs" />
+		<Compile Include="Fonts\TrueType\SimpleGlyfPoint.cs" />
+		<Compile Include="Fonts\TrueType\TTFontBuilder.cs" />
+		<Compile Include="Fonts\Ttc\TtcOpenTypeReader.cs" />
+		<Compile Include="Fonts\Ttc\TtcPhysicalFontData.cs" />
+		<Compile Include="Fonts\Ttc\TtcReader.cs" />
+		<Compile Include="Images\Jpeg\JpegReader.cs" />
+		<Compile Include="Common\Nullables.cs">
+			<DependentUpon>Nullables.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Include="Common\Strings\IChar.cs" />
+		<Compile Include="Common\Strings\IString.cs" />
+		<Compile Include="Common\Strings\IStringBehaviour.cs" />
+		<Compile Include="Common\Strings\IStringBuilder.cs" />
+		<Compile Include="Common\Strings\SystemCharAdapter.cs" />
+		<Compile Include="Common\Strings\SystemStringAdapter.cs" />
+		<Compile Include="Common\Strings\SystemStringBehaviour.cs" />
+		<Compile Include="Common\Strings\SystemStringBuilderAdapter.cs" />
+		<Compile Include="Common\SystemPal.cs" />
+		<Compile Include="Common\RandomUtil.cs" />
+		<Compile Include="Common\WebRequestHelper.cs" />
+		<Compile Include="Common\WebRequestThreadState.cs" />
+		<Compile Include="Common\ZipCompressionLevel.cs" />
+		<Compile Include="Crypto\BigInteger.cs" />
+		<Compile Include="Crypto\BlockCipher.cs" />
+		<Compile Include="Crypto\BlockCipherFactory.cs" />
+		<Compile Include="Crypto\CertificateHolderInternal.cs" />
+		<Compile Include="Crypto\Crc32Xfer.cs" />
+		<Compile Include="Crypto\CryptoAlgorithm.cs" />
+		<Compile Include="Crypto\DsaParameters.cs" />
+		<Compile Include="Crypto\Crc32.cs" />
+		<Compile Include="Crypto\CrcEncoding.cs" />
+		<Compile Include="Crypto\CrcMaker.cs" />
+		<Compile Include="Crypto\DigestAlgorithm.cs" />
+		<Compile Include="Crypto\HashUtil.cs" />
+		<Compile Include="Crypto\IDigest.cs" />
+		<Compile Include="Crypto\IMac.cs" />
+		<Compile Include="Crypto\IRandomGenerator.cs" />
+		<Compile Include="Crypto\CryptoUtilPal.cs" />
+		<Compile Include="Crypto\DigestWrapperPal.cs" />
+		<Compile Include="Crypto\MacWrapperPal.cs" />
+		<Compile Include="Crypto\RandomGeneratorWrapperPal.cs" />
+		<Compile Include="Crypto\Rsa.cs" />
+		<Compile Include="Drawing\DrArgb.cs" />
+		<Compile Include="Drawing\DrColor.cs" />
+		<Compile Include="Drawing\DrColorMatrix.cs" />
+		<Compile Include="Drawing\DrColorUtil.cs" />
+		<Compile Include="Drawing\DrKnownColors.cs" />
+		<Compile Include="Drawing\DrMatrix.cs" />
+		<Compile Include="Drawing\DrPixels.cs" />
+		<Compile Include="Drawing\Fonts\DrFont.cs" />
+		<Compile Include="Fonts\CourierNewHackUtil.cs" />
+		<Compile Include="Fonts\FontConfigSubstitutionRuleCore.cs" />
+		<Compile Include="Fonts\FontSearchInfoCache.cs" />
+		<Compile Include="Fonts\FontSearchDataContainer.cs" />
+		<Compile Include="Fonts\FontSearchInfoSerializer.cs" />
+		<Compile Include="Fonts\IFileFontData.cs" />
+		<Compile Include="Fonts\IFontSource.cs" />
+		<Compile Include="Fonts\TrueType\CmapSubtableFormat2.cs" />
+		<Compile Include="Fonts\TrueType\ColrTable.cs" />
+		<Compile Include="Fonts\TrueType\CpalTable.cs" />
+		<Compile Include="Fonts\TrueType\GlyfTableBuilder.cs" />
+		<Compile Include="Fonts\TrueType\GlyfTableReader.cs" />
+		<Compile Include="Fonts\TrueType\LegacyEncodingsUtil.cs" />
+		<Compile Include="Fonts\TrueType\TTEncoding.cs" />
+		<Compile Include="Fonts\TrueType\TTEncodingLegacyChinese.cs" />
+		<Compile Include="Fonts\TrueType\TTEncodingRegular.cs" />
+		<Compile Include="Fonts\TrueType\TTFontNameRecord.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyphColoredInfo.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyphColoredLayer.cs" />
+		<Compile Include="Fonts\Woff\WoffHeader.cs" />
+		<Compile Include="Fonts\Woff\WoffConverter.cs" />
+		<Compile Include="Fonts\Woff\WoffTableDirectory.cs" />
+		<Compile Include="Images\Jpeg\QuadByteQueue.cs" />
+		<Compile Include="Images\Jpeg\PhotoshopMetadataReader.cs" />
+		<Compile Include="Images\ExifOrientation.cs" />
+		<Compile Include="Numbering\KoreanNumber.cs" />
+		<Compile Include="Numbering\Textual\CatalanTextualNumber.cs" />
+		<Compile Include="IO\TempFiler.cs" />
+		<Compile Include="Numbering\Textual\BasqueTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\ItalianTextualNumber.cs" />
+		<Compile Include="Numbering\ThaiArabicNumber.cs" />
+		<Compile Include="Common\W3CNamespaces.cs" />
+		<Compile Include="Xml\XslTransform.cs" />
+		<Compile Include="Zip\ZipStream.cs" />
+		<Compile Include="Numbering\GreekNumber.cs" />
+		<Compile Include="Numbering\VietnameseNumber.cs" />
+		<Compile Include="Images\Pal\CantCreateBitmapException.cs" />
+		<Compile Include="Drawing\Fonts\IDrFontMetrics.cs" />
+		<Compile Include="Drawing\Fonts\IDrFontProvider.cs" />
+		<Compile Include="Drawing\Fonts\FontPal.cs" />
+		<Compile Include="Drawing\Fonts\TTFontMetrics.cs" />
+		<Compile Include="Drawing\GeometryUtil.cs" />
+		<Compile Include="Drawing\HSLColor.cs" />
+		<Compile Include="Drawing\IDrColorEffect.cs" />
+		<Compile Include="Drawing\ColorPal.cs" />
+		<Compile Include="Drawing\ScRgbUtil.cs" />
+		<Compile Include="Fonts\FontSubstitutionStrategyMsWordSpecific.cs" />
+		<Compile Include="Fonts\TrueType\FontCodepageRanges.cs" />
+		<Compile Include="Fonts\FontFamilyCore.cs" />
+		<Compile Include="Fonts\FontPanose.cs" />
+		<Compile Include="Fonts\FontPitchCore.cs" />
+		<Compile Include="Fonts\TrueType\FontUnicodeRanges.cs" />
+		<Compile Include="Fonts\FontSubstitutionStrategyGeneral.cs" />
+		<Compile Include="Fonts\CharacterReplacerBase.cs" />
+		<Compile Include="Fonts\ControlCharacterReplacer.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfCoderUtil.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfDecoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfEncodedData.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfEncoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfGlyphDecoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfGlyphDecoderContext.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfGlyphEncoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfGlyphEncoderContext.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfGlyphPoint.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\CtfHdmxDeviceRecord.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\MagnitudeReader.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\MagnitudeWriter.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\Short255.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\TripletEncoding.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\Ctf\UShort255.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\EotFontFiler.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\EotVersion.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\AdaptiveHuffmanCodec.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\HuffmanTreeNode.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\LzCompDecoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\LzCompDecoderContext.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\LzCompEncoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\LzCompEncoderContext.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\LzCompVersion.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\RleCoder.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\LzComp\RleDecoderState.cs" />
+		<Compile Include="Fonts\EmbeddedOpenType\MtxCoder.cs" />
+		<Compile Include="Fonts\ExternalFontCache.cs" />
+		<Compile Include="Fonts\FileFontData.cs" />
+		<Compile Include="Fonts\FileFontSourceCore.cs" />
+		<Compile Include="Fonts\FolderFontSourceCore.cs" />
+		<Compile Include="Fonts\IFontData.cs" />
+		<Compile Include="Fonts\FontLineMeasurements.cs" />
+		<Compile Include="Fonts\FontSearchInfo.cs" />
+		<Compile Include="Fonts\FontSearchInfoLoader.cs" />
+		<Compile Include="Fonts\FontSourceBaseCore.cs" />
+		<Compile Include="Fonts\FontUtil.cs" />
+		<Compile Include="Fonts\IFontBuilder.cs" />
+		<Compile Include="Fonts\IFontProvider.cs" />
+		<Compile Include="Fonts\FontSubstitutionInfo.cs" />
+		<Compile Include="Fonts\IFontSubstitutionStrategy.cs" />
+		<Compile Include="Fonts\LinuxCharacterReplacer.cs" />
+		<Compile Include="Fonts\MemoryFontData.cs" />
+		<Compile Include="Fonts\Ps\PsCMapEntry.cs" />
+		<Compile Include="Fonts\Ps\PsUtil.cs" />
+		<Compile Include="Fonts\Sfnt\SfntBuilder.cs" />
+		<Compile Include="Fonts\Sfnt\SfntOffsetTable.cs" />
+		<Compile Include="Fonts\Sfnt\SfntReader.cs" />
+		<Compile Include="Fonts\Sfnt\SfntTableRecordEntry.cs" />
+		<Compile Include="Fonts\SymbolCharacterReplacer.cs" />
+		<Compile Include="Fonts\SystemFontSourceCore.cs" />
+		<Compile Include="Fonts\TableCharacterReplacer.cs" />
+		<Compile Include="Fonts\TrueType\Cmap.cs" />
+		<Compile Include="Fonts\TrueType\CmapEncodingRecord.cs" />
+		<Compile Include="Fonts\TrueType\CmapSubtable.cs" />
+		<Compile Include="Fonts\TrueType\CmapSubtableFormat12.cs" />
+		<Compile Include="Fonts\TrueType\CmapSubtableFormat4.cs" />
+		<Compile Include="Fonts\TrueType\CmapUcs2.cs" />
+		<Compile Include="Fonts\TrueType\CmapWinUcs4.cs" />
+		<Compile Include="Fonts\TrueType\CompositeGlyfTableRecord.cs" />
+		<Compile Include="Fonts\TrueType\FontHeader.cs" />
+		<Compile Include="Fonts\TrueType\FontMetrics.cs" />
+		<Compile Include="Fonts\TrueType\GlyfTableRecord.cs" />
+		<Compile Include="Fonts\TrueType\HdmxDeviceRecord.cs" />
+		<Compile Include="Fonts\TrueType\HdmxTable.cs" />
+		<Compile Include="Fonts\TrueType\HorizontalHeader.cs" />
+		<Compile Include="Fonts\TrueType\HorizontalMetric.cs" />
+		<Compile Include="Fonts\TrueType\HorizontalMetrics.cs" />
+		<Compile Include="Fonts\TrueType\MaximumProfile.cs" />
+		<Compile Include="Fonts\TrueType\NameString.cs" />
+		<Compile Include="Fonts\TrueType\OpenTypeTableTag.cs" />
+		<Compile Include="Fonts\TrueType\PostScript.cs" />
+		<Compile Include="Fonts\TrueType\SimpleGlyfTableRecord.cs" />
+		<Compile Include="Fonts\TrueType\TTFont.cs" />
+		<Compile Include="Fonts\TrueType\TTFontFamily.cs" />
+		<Compile Include="Fonts\TrueType\TTFontFiler.cs" />
+		<Compile Include="Fonts\TrueType\TTFontNames.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyph.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyphHashtable.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyphPoint.cs" />
+		<Compile Include="Fonts\TrueType\TTGlyphPointCollection.cs" />
+		<Compile Include="Fonts\TrueType\TTInstructionsUtil.cs" />
+		<Compile Include="Fonts\TrueType\TTLocaTable.cs" />
+		<Compile Include="Fonts\TrueType\TTTable.cs" />
+		<Compile Include="Fonts\TrueType\VdmxGroup.cs" />
+		<Compile Include="Fonts\TrueType\VdmxVTable.cs" />
+		<Compile Include="Fonts\TrueType\VerticalHeader.cs" />
+		<Compile Include="Fonts\TrueType\VerticalMetric.cs" />
+		<Compile Include="Fonts\TrueType\VerticalMetrics.cs" />
+		<Compile Include="Fonts\Win1252PuaCharacterReplacer.cs" />
+		<Compile Include="Images\BitmapBytes.cs" />
+		<Compile Include="Images\BitmapCompression.cs" />
+		<Compile Include="Images\BitmapFileHeader.cs" />
+		<Compile Include="Images\BitmapInfoHeader.cs" />
+		<Compile Include="Images\BitonalConverter.cs" />
+		<Compile Include="Images\DibHeader.cs" />
+		<Compile Include="Images\Filters\ColorErrorDiffusionToAdjacentNeighbors.cs" />
+		<Compile Include="Images\Filters\ErrorDiffusionDithering.cs" />
+		<Compile Include="Images\Filters\FloydSteinbergColorDithering.cs" />
+		<Compile Include="Images\Filters\Grayscale.cs" />
+		<Compile Include="Images\ImageBinarizationMethodCore.cs" />
+		<Compile Include="Images\ImageCodecInfoRegistry.cs" />
+		<Compile Include="Images\ImageCrop.cs" />
+		<Compile Include="Images\ImageSizeCore.cs" />
+		<Compile Include="Images\ImageUtil.cs" />
+		<Compile Include="Images\TiffCompressionCore.cs" />
+		<Compile Include="Images\TiffDataReader.cs" />
+		<Compile Include="Images\TiffInkSetCore.cs" />
+		<Compile Include="Images\TiffPhotometricInterpretationCore.cs" />
+		<Compile Include="Images\TiffPlanarConfigurationCore.cs" />
+		<Compile Include="Images\TiffResolutionUnitCore.cs" />
+		<Compile Include="IO\BigEndianBinaryReader.cs" />
+		<Compile Include="IO\BigEndianBinaryWriter.cs" />
+		<Compile Include="IO\BitBinaryIoBase.cs" />
+		<Compile Include="IO\BitBinaryReader.cs" />
+		<Compile Include="IO\BitBinaryWriter.cs" />
+		<Compile Include="IO\BitWriter.cs" />
+		<Compile Include="IO\FsPathUtil.cs" />
+		<Compile Include="IO\StreamUtil.cs" />
+		<Compile Include="Numbering\ChineseNumber.cs" />
+		<Compile Include="Numbering\GroupSplitter.cs" />
+		<Compile Include="Numbering\HebrewNumber.cs" />
+		<Compile Include="Numbering\JapaneseNumber.cs" />
+		<Compile Include="Numbering\NumberConverterCore.cs" />
+		<Compile Include="Numbering\NumberStyleCore.cs" />
+		<Compile Include="Numbering\OrdinalNumber.cs" />
+		<Compile Include="Numbering\Textual\CroatianTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\CzechTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\DutchTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\EnglishTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\EuropeanTextualNumberProvider.cs" />
+		<Compile Include="Numbering\Textual\FrenchTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\GermanTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\PolishTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\PortugueseTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\RomanianTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\SpanishTextualNumber.cs" />
+		<Compile Include="Numbering\Textual\TextualNumber.cs" />
+		<Compile Include="Numbering\ZodiacNumber.cs" />
+		<Compile Include="OpcPackaging\OpcContentType.cs" />
+		<Compile Include="OpcPackaging\OpcContentTypesWriter.cs" />
+		<Compile Include="OpcPackaging\OpcCorePropertiesWriter.cs" />
+		<Compile Include="OpcPackaging\OpcFlatPackage.cs" />
+		<Compile Include="OpcPackaging\OpcPackage.cs" />
+		<Compile Include="OpcPackaging\OpcPackageBase.cs" />
+		<Compile Include="OpcPackaging\OpcPackagePart.cs" />
+		<Compile Include="OpcPackaging\OpcPackagePartCollection.cs" />
+		<Compile Include="OpcPackaging\OpcRelationship.cs" />
+		<Compile Include="OpcPackaging\OpcRelationshipCollection.cs" />
+		<Compile Include="OpcPackaging\OpcRelationshipType.cs" />
+		<Compile Include="OpcPackaging\OpcRelsWriter.cs" />
+		<Compile Include="Images\Pal\BitmapPal.cs" />
+		<Compile Include="Images\Pal\BitmapDataPal.cs" />
+		<Compile Include="Images\Pal\BitmapUtilPal.cs" />
+		<Compile Include="Images\Pal\ImagePal.cs" />
+		<Compile Include="Images\Pal\MatrixPal.cs" />
+		<Compile Include="Images\Pal\TiffWriterPal.cs" />
+		<Compile Include="Images\Pal\WebPConverterPal.cs" />
+		<Compile Include="Ss\CompoundStorage.cs" />
+		<Compile Include="Ss\CompoundStream.cs" />
+		<Compile Include="Ss\Difat.cs" />
+		<Compile Include="Ss\DirEntry.cs" />
+		<Compile Include="Ss\DirEntryCollection.cs" />
+		<Compile Include="Ss\Fat.cs" />
+		<Compile Include="Ss\FileSystem.cs" />
+		<Compile Include="Ss\Header.cs" />
+		<Compile Include="Ss\MemoryStorage.cs" />
+		<Compile Include="Ss\MemoryStorageNameComparer.cs" />
+		<Compile Include="Ss\Property\DocSummaryInfoProperty.cs" />
+		<Compile Include="Ss\Property\Property.cs" />
+		<Compile Include="Ss\Property\PropertyCollection.cs" />
+		<Compile Include="Ss\Property\PropertySet.cs" />
+		<Compile Include="Ss\Property\PropertySetSection.cs" />
+		<Compile Include="Ss\Property\PropIdOffset.cs" />
+		<Compile Include="Ss\SectCollection.cs" />
+		<Compile Include="Ss\Sector.cs" />
+		<Compile Include="Ss\SsEnum.cs" />
+		<Compile Include="Common\CustomTextReader.cs" />
+		<Compile Include="Warnings\IWarningCallbackCore.cs" />
+		<Compile Include="Warnings\WarningSourceCore.cs" />
+		<Compile Include="Warnings\WarningTypeCore.cs" />
+		<Compile Include="Xml\AnyXmlBuilder.cs" />
+		<Compile Include="Xml\AnyXmlReader.cs" />
+		<Compile Include="Xml\AnyXmlTextHandlingConsts.cs" />
+		<Compile Include="Xml\AnyXmlTextHandling.cs" />
+		<Compile Include="Xml\Base64Splitter.cs" />
+		<Compile Include="Xml\IAnyXmlBuilder.cs" />
+		<Compile Include="Xml\IXmlUpdater.cs" />
+		<Compile Include="Xml\XmlTextReaderNamespaceStorage.cs" />
+		<Compile Include="Xml\XmlUtilPal.cs" />
+		<Compile Include="Zip\Crc32.cs" />
+		<Compile Include="Zip\Deflate.cs" />
+		<Compile Include="Zip\DeflateStream.cs" />
+		<Compile Include="Zip\Enums\AddOrUpdateAction.cs" />
+		<Compile Include="Zip\Enums\EncryptionAlgorithm.cs" />
+		<Compile Include="Zip\Enums\ExtractExistingFileAction.cs" />
+		<Compile Include="Base\NullableBool.cs" />
+		<Compile Include="Common\Zip64Option.cs" />
+		<Compile Include="Zip\Enums\ZipConstants.cs" />
+		<Compile Include="Zip\Enums\ZipEntrySource.cs" />
+		<Compile Include="Zip\Enums\ZipEntryTimestamp.cs" />
+		<Compile Include="Zip\Enums\ZipErrorAction.cs" />
+		<Compile Include="Zip\Events.cs" />
+		<Compile Include="Zip\Exceptions.cs" />
+		<Compile Include="Zip\GZipStream.cs" />
+		<Compile Include="Zip\Inflate.cs" />
+		<Compile Include="Zip\InfTree.cs" />
+		<Compile Include="Common\ZipReaderPal.cs" />
+		<Compile Include="Common\ZipUtilPal.cs" />
+		<Compile Include="Common\ZipWriterPal.cs" />
+		<Compile Include="Zip\Shared.cs" />
+		<Compile Include="Zip\Tree.cs" />
+		<Compile Include="Zip\ZipCrypto.cs" />
+		<Compile Include="Zip\ZipEntry.cs" />
+		<Compile Include="Common\ZipException.cs" />
+		<Compile Include="Zip\ZipFile.cs" />
+		<Compile Include="Common\ZipMethod.cs" />
+		<Compile Include="Zip\Zlib.cs" />
+		<Compile Include="Zip\ZlibCodec.cs" />
+		<Compile Include="Zip\ZlibConstants.cs" />
+		<Compile Include="Zip\ZlibStream.cs" />
+		<None Include="Collections\Auto\Templates\Dictionary.cs" />
+		<None Include="Collections\Auto\Templates\List.cs" />
+		<None Include="Collections\Auto\Templates\Stack.cs" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' or '$(TargetFramework)' == 'net6.0' or '$(TargetFramework)' == 'net8.0' or '$(TargetFramework)' == 'net9.0' or '$(TargetFramework)' == 'net10.0'">
+		<Compile Include="Skia\Drawing\Path\PathPal.cs" />
+		<Compile Include="Skia\Drawing\Fonts\DefaultFontSubstitutionRuleInternal.cs" />
+		<Compile Include="Skia\Drawing\Fonts\FontSettingsInternal.cs" />
+		<Compile Include="Skia\Drawing\Fonts\SystemFontProvider.cs" />
+		<Compile Include="Skia\Images\Pal\GraphicsQualityOptions.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\GradientBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\RadialGradientBrushPal.cs" />
+		<Compile Include="Skia\Images\Filters\Grayscale.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtImageUtil.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtBogusColorSpace.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtColorModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtColorSpace.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtComponentColorModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtComponentSampleModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBuffer.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferByte.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferDouble.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferFloat.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferInt.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferShort.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDataBufferUShort.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtDirectColorModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtIccColorSpace.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtIndexColorModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtMultiPixelPackedSampleModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtPackedColorModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtPixelInterleavedSampleModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtSampleModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtSimpleCmykColorSpace.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtSinglePixelPackedSampleModel.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Awt\Image\AwtTransparency.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Decoder\Tiff\TiffDecoder.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\ImageStreamWriter.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\ImageStreamReader.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Bmp\BmpConstants.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Bmp\BmpImageWriter.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Bmp\BmpMetadata.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Tiff\TiffEncoder.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Tiff\TiffEncoderOptions.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\TiffCustomStream.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\TiffDummyErrorHandler.cs" />
+		<Compile Include="Skia\Drawing\Fonts\FontPal.cs" />
+		<Compile Include="Skia\Drawing\Fonts\PrivateFontCachePal.cs" />
+		<Compile Include="Skia\Images\Filters\ErrorDiffusionDithering.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\HatchBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\LinearGradientBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\NativeBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\PathGradientBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Gradient\PathGradientSurroundColors.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\SolidBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Brush\TextureBrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\BitmapCorePal.cs" />
+		<Compile Include="Skia\Images\Pal\BitmapDataPal.cs" />
+		<Compile Include="Skia\Images\Pal\BitmapPal.cs" />
+		<Compile Include="Skia\Images\Pal\BitmapUtilPal.cs" />
+		<Compile Include="Skia\Images\Pal\BrushPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Gif\GifEncoder.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Gif\LZWEncoder.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Encoder\Gif\NeuQuant.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\Gradient\PathGradient.cs" />
+		<Compile Include="Skia\Images\Pal\GraphicsPal.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\ImageEffectsHelper.cs" />
+		<Compile Include="Skia\Images\Pal\Graphics\ImageWriterHelper.cs" />
+		<Compile Include="Skia\Images\Pal\MatrixPal.cs" />
+		<Compile Include="Skia\Images\Pal\MetafilePal.cs" />
+		<Compile Include="Skia\Images\Pal\PathEffectHelperPal.cs" />
+		<Compile Include="Skia\Images\Pal\PenPal.cs" />
+		<Compile Include="Skia\Drawing\Region\RegionPal.cs" />
+		<Compile Include="Skia\Images\Pal\TiffWriterPal.cs" />
+		<Compile Include="Skia\Images\Pal\TiffUtilPal.cs" />
+		<Compile Include="Skia\Images\BitonalConverter.cs" />
+		<Compile Include="Skia\Rendering\Gdi\GdiRenderer.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\ColorBlend.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\CombineMode.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\DashCap.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\DashStyle.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\FillMode.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\HatchStyle.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\LineCap.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\LineJoin.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\MatrixOrder.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\PenAlignment.cs" />
+		<Compile Include="Skia\System\Drawing\Drawing2D\WrapMode.cs" />
+		<Compile Include="Skia\System\Drawing\FontStyle.cs" />
+		<Compile Include="Skia\System\Drawing\Imaging\EmfType.cs" />
+		<Compile Include="Skia\System\Drawing\Imaging\PixelFormat.cs" />
+		<Compile Include="Skia\System\Drawing\Region.cs" />
+		<Compile Include="Skia\System\Drawing\SystemColors.cs" />
+		<Content Include="Skia\Images\Pal\0Readme.txt" />
+		<Content Include="Skia\Rendering\Gdi\Readme.txt" />
+		<Content Include="Skia\readme.txt" />
+		<Content Include="Skia\System\readme.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Properties\" />
+		<None Include="Common\Nullables.tt">
+			<LastGenOutput>Nullables.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+		<Content Include="Base\0Readme.txt" />
+		<Content Include="Bidi\0Readme.txt" />
+		<Content Include="Charset\0Readme.txt" />
+		<Content Include="Collections\0Readme.txt" />
+		<Content Include="Collections\Auto\ReadMe.txt" />
+		<Content Include="Collections\Auto\Templates\ReadMe.txt" />
+		<Content Include="Common\0Readme.txt" />
+		<Content Include="Crypto\0Readme.txt" />
+		<Content Include="Drawing\0Readme.txt" />
+		<Content Include="Fonts\TrueType\Readme.txt" />
+		<Content Include="Images\Readme.txt" />
+		<Content Include="IO\0Readme.txt" />
+		<Content Include="Numbering\0Readme.txt" />
+		<Content Include="Images\Pal\0Readme.txt" />
+		<Content Include="Ss\0Readme.txt" />
+		<Content Include="Warnings\0Readme.txt" />
+		<Content Include="Xml\0Readme.txt" />
+		<Content Include="Zip\0Readme.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Fanwood.ttf" />
+		<EmbeddedResource Include="Resources\NoImage.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+</Project>

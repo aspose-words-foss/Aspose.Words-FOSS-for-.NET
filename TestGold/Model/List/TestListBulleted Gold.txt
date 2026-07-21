@@ -1,0 +1,8 @@
+﻿· Item 1
+· Item 2
+o Item 2.1
+o Item 2.2
+§ Item 2.2.1
+· Item 2.2.1.1. This line is long enough to see how good the second line starts when it wraps.
+o Item 2.3
+· Item 3

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type="text/xsl"   ?>
+
+<!DOCTYPE doc SYSTEM "doc.dtd">
+
+<doc>Hello, world!<!-- Comment 1 -->
+        <mdssi:Trans xmlns:mdssi="http://mdssi" xmlns:opc="http://opc"> Type="element with prefix and extra '>' at the end">
+          <opc:Nested Type="nested element with prefix">
+          </opc:Nested>
+        </mdssi:Trans>
+</doc>
+<?pi-without-data     ?>
+
+<!-- Comment 2 -->
+
+<!-- Comment 3 -->

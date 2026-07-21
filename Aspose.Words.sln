@@ -1,0 +1,223 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5947D52-1531-46D1-98B9-FFCE49406DF1}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		README.md = README.md
+		AGENTS.md = AGENTS.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Words", "Aspose.Words\Aspose.Words.csproj", "{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Foundation", "Aspose.Foundation\Aspose.Foundation\Aspose.Foundation.csproj", "{5BAF586B-4538-42FD-8F17-D72AD11B87C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Foundation.Tests", "Aspose.Foundation\Aspose.Foundation.Tests\Aspose.Foundation.Tests.csproj", "{C7A1A88A-5DBB-429E-8101-72250535F748}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Words.Tests", "Aspose.Words.Tests\Aspose.Words.Tests.csproj", "{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.TestFx", "Aspose.Foundation\Aspose.TestFx\Aspose.TestFx.csproj", "{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.JavaMs.Tests", "Aspose.JavaMs.Tests\Aspose.JavaMs.Tests.csproj", "{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Words.TestFx", "Aspose.Words.TestFx\Aspose.Words.TestFx.csproj", "{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugNetStandard20|Any CPU = DebugNetStandard20|Any CPU
+		DebugNetStandard20PyNet|Any CPU = DebugNetStandard20PyNet|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release100|Any CPU = Release100|Any CPU
+		Release35|Any CPU = Release35|Any CPU
+		Release40|Any CPU = Release40|Any CPU
+		Release461|Any CPU = Release461|Any CPU
+		Release60|Any CPU = Release60|Any CPU
+		Release80|Any CPU = Release80|Any CPU
+		Release90|Any CPU = Release90|Any CPU
+		ReleaseNetStandard20|Any CPU = ReleaseNetStandard20|Any CPU
+		ReleaseNetStandard20PyNet|Any CPU = ReleaseNetStandard20PyNet|Any CPU
+		Test|Any CPU = Test|Any CPU
+		TestNetStandard20|Any CPU = TestNetStandard20|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release100|Any CPU.ActiveCfg = Release100|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release100|Any CPU.Build.0 = Release100|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release35|Any CPU.ActiveCfg = Release35|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release35|Any CPU.Build.0 = Release35|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release40|Any CPU.ActiveCfg = Release40|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release40|Any CPU.Build.0 = Release40|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release461|Any CPU.ActiveCfg = Release461|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release461|Any CPU.Build.0 = Release461|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release60|Any CPU.ActiveCfg = Release60|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release60|Any CPU.Build.0 = Release60|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release80|Any CPU.ActiveCfg = Release80|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release80|Any CPU.Build.0 = Release80|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release90|Any CPU.ActiveCfg = Release90|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Release90|Any CPU.Build.0 = Release90|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.ReleaseNetStandard20|Any CPU.ActiveCfg = ReleaseNetStandard20|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.ReleaseNetStandard20|Any CPU.Build.0 = ReleaseNetStandard20|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = ReleaseNetStandard20PyNet|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.ReleaseNetStandard20PyNet|Any CPU.Build.0 = ReleaseNetStandard20PyNet|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.Test|Any CPU.Build.0 = Test|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{5AC49871-C532-4C6E-8AAC-1BF895ECC17A}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release100|Any CPU.ActiveCfg = Release100|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release100|Any CPU.Build.0 = Release100|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release35|Any CPU.ActiveCfg = Release35|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release35|Any CPU.Build.0 = Release35|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release40|Any CPU.ActiveCfg = Release40|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release40|Any CPU.Build.0 = Release40|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release461|Any CPU.ActiveCfg = Release461|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release461|Any CPU.Build.0 = Release461|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release60|Any CPU.ActiveCfg = Release60|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release60|Any CPU.Build.0 = Release60|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release80|Any CPU.ActiveCfg = Release80|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release80|Any CPU.Build.0 = Release80|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release90|Any CPU.ActiveCfg = Release90|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Release90|Any CPU.Build.0 = Release90|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.ReleaseNetStandard20|Any CPU.ActiveCfg = ReleaseNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.ReleaseNetStandard20|Any CPU.Build.0 = ReleaseNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = ReleaseNetStandard20PyNet|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.ReleaseNetStandard20PyNet|Any CPU.Build.0 = ReleaseNetStandard20PyNet|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.Test|Any CPU.Build.0 = Test|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{5BAF586B-4538-42FD-8F17-D72AD11B87C5}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release100|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release35|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release40|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release461|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release60|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release80|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Release90|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.ReleaseNetStandard20|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.Test|Any CPU.Build.0 = Test|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{C7A1A88A-5DBB-429E-8101-72250535F748}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release100|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release35|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release40|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release461|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release60|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release80|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Release90|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.ReleaseNetStandard20|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.Test|Any CPU.Build.0 = Test|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release100|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release35|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release40|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release461|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release60|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release80|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Release90|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.ReleaseNetStandard20|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.Test|Any CPU.Build.0 = Test|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release100|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release35|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release40|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release461|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release60|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release80|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Release90|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.ReleaseNetStandard20|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.Test|Any CPU.Build.0 = Test|Any CPU
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.DebugNetStandard20|Any CPU.ActiveCfg = DebugNetStandard20|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.DebugNetStandard20|Any CPU.Build.0 = DebugNetStandard20|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.DebugNetStandard20PyNet|Any CPU.ActiveCfg = DebugNetStandard20PyNet|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.DebugNetStandard20PyNet|Any CPU.Build.0 = DebugNetStandard20PyNet|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release100|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release35|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release40|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release461|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release60|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release80|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Release90|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.ReleaseNetStandard20|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.ReleaseNetStandard20PyNet|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.Test|Any CPU.Build.0 = Test|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.TestNetStandard20|Any CPU.ActiveCfg = TestNetStandard20|Any CPU
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9}.TestNetStandard20|Any CPU.Build.0 = TestNetStandard20|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7A1A88A-5DBB-429E-8101-72250535F748} = {A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}
+		{CABEBB5E-C8AA-4201-9AF4-2E8D3696146D} = {A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}
+		{BDDEF9D7-F2D1-4E69-8913-AFA5D22A141F} = {A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}
+		{B3250BFD-16BD-47D7-B7CB-A774EC4C8725} = {A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}
+		{53F3FECC-A234-4FB3-BD2F-2FA1B8D0C1F9} = {A4F30D67-D2E3-46EE-A0D9-4FB3F7C105F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {290CB74C-23B2-49DC-8E9D-6873D4DF6B7C}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

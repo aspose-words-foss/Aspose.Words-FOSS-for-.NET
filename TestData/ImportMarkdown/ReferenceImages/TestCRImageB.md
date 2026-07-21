@@ -1,0 +1,3 @@
+![Foo][]
+
+[foO]: /url "title"

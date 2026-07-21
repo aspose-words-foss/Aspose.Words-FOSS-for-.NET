@@ -1,0 +1,3126 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Author>administrator</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-19T11:26:00Z</o:Created>
+		<o:LastSaved>2011-10-19T11:26:00Z</o:LastSaved>
+		<o:Pages>2</o:Pages>
+		<o:Words>219</o:Words>
+		<o:Characters>1252</o:Characters>
+		<o:Company>Straightedge</o:Company>
+		<o:Lines>10</o:Lines>
+		<o:Paragraphs>2</o:Paragraphs>
+		<o:CharactersWithSpaces>1469</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Arial">
+			<w:panose-1 w:val="020B0604020202020204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Tahoma">
+			<w:panose-1 w:val="020B0604030504040204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E1002EFF" w:usb-1="C000605B" w:usb-2="00000029" w:usb-3="00000000" w:csb-0="000101FF" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:lists>
+		<w:listDef w:listDefId="0">
+			<w:lsid w:val="3D117E4E" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="78828070" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:list w:ilfo="1">
+			<w:ilst w:val="0" />
+		</w:list>
+	</w:lists>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="00D416EC" />
+			<w:pPr>
+				<w:spacing w:after="60" />
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:sz w:val="24" />
+				<w:sz-cs w:val="24" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Header">
+			<w:name w:val="header" />
+			<wx:uiName wx:val="Header" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="00D416EC" />
+			<w:pPr>
+				<w:tabs>
+					<w:tab w:val="center" w:pos="4844" />
+					<w:tab w:val="right" w:pos="9689" />
+				</w:tabs>
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Footer">
+			<w:name w:val="footer" />
+			<wx:uiName wx:val="Footer" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="00D416EC" />
+			<w:pPr>
+				<w:tabs>
+					<w:tab w:val="center" w:pos="4844" />
+					<w:tab w:val="right" w:pos="9689" />
+				</w:tabs>
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+			</w:rPr>
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:val="best-fit" w:percent="221" />
+		<w:doNotEmbedSystemFonts />
+		<w:proofState w:spelling="clean" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:footnotePr>
+			<w:footnote w:type="separator">
+				<w:p wsp:rsidR="00BA67A5" wsp:rsidRDefault="00BA67A5">
+					<w:r>
+						<w:separator />
+					</w:r>
+				</w:p>
+			</w:footnote>
+			<w:footnote w:type="continuation-separator">
+				<w:p wsp:rsidR="00BA67A5" wsp:rsidRDefault="00BA67A5">
+					<w:r>
+						<w:continuationSeparator />
+					</w:r>
+				</w:p>
+			</w:footnote>
+		</w:footnotePr>
+		<w:endnotePr>
+			<w:endnote w:type="separator">
+				<w:p wsp:rsidR="00BA67A5" wsp:rsidRDefault="00BA67A5">
+					<w:r>
+						<w:separator />
+					</w:r>
+				</w:p>
+			</w:endnote>
+			<w:endnote w:type="continuation-separator">
+				<w:p wsp:rsidR="00BA67A5" wsp:rsidRDefault="00BA67A5">
+					<w:r>
+						<w:continuationSeparator />
+					</w:r>
+				</w:p>
+			</w:endnote>
+		</w:endnotePr>
+		<w:compat>
+			<w:dontAllowFieldEndSelect />
+			<w:useWord2002TableStyleRules />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="003C41DA" />
+			<wsp:rsid wsp:val="002C2D5C" />
+			<wsp:rsid wsp:val="0080715F" />
+			<wsp:rsid wsp:val="009730C3" />
+			<wsp:rsid wsp:val="00BA67A5" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+					<w:u w:val="dash" />
+				</w:rPr>
+				<w:t>This text</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+				</w:rPr>
+				<w:t> is inserted at the beginning of the document and demonstrates </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+					<w:shd w:val="solid" w:color="00FFFF" w:fill="auto" wx:bgcolor="00FFFF" />
+				</w:rPr>
+				<w:t>various font</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+					<w:bdr w:val="single" w:sz="0" wx:bdrwidth="5" w:space="0" w:color="auto" />
+				</w:rPr>
+				<w:t> formatting </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+				</w:rPr>
+				<w:t>options.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+					<w:color w:val="0000FF" />
+					<w:sz w:val="32" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:b />
+					<w:color w:val="FF0000" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:b />
+					<w:color w:val="FF0000" />
+				</w:rPr>
+				<w:t>Evaluation only, garbage text in the document is part of the evaluation watermark. Created with Aspose.Words. Copyright 2003-2006 Aspose Pty Ltd.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>This example demonstrates how to use the </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>Aspose.Words</w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>.Document</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>Builder</w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t> </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>class to insert text, images and other content, specify font and paragraph formatting.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>The steps to use </w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>DocumentBuilder</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t> are:</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:listPr>
+					<w:ilvl w:val="0" />
+					<w:ilfo w:val="1" />
+					<wx:t wx:val="1." />
+					<wx:font wx:val="Times New Roman" />
+				</w:listPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>Create a </w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>DocumentBuilder</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t> object and attach it to an existing </w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>Document</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t> object.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:listPr>
+					<w:ilvl w:val="0" />
+					<w:ilfo w:val="1" />
+					<wx:t wx:val="2." />
+					<wx:font wx:val="Times New Roman" />
+				</w:listPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>Navigate the “cursor” inside </w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>DocumentBuilder</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t> using MoveToXXX methods to a place in the document where you want to insert new content.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:listPr>
+					<w:ilvl w:val="0" />
+					<w:ilfo w:val="1" />
+					<wx:t wx:val="3." />
+					<wx:font wx:val="Times New Roman" />
+				</w:listPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>Insert content and specify formatting using methods and properties of </w:t>
+			</w:r>
+			<w:r wsp:rsidRPr="00D416EC">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+					<w:b />
+				</w:rPr>
+				<w:t>DocumentBuilder</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<wx:pBdrGroup>
+			<wx:borders>
+				<wx:top wx:val="double" wx:bdrwidth="135" wx:space="0" wx:color="auto" />
+			</wx:borders>
+			<wx:margin-left wx:val="2880" />
+			<wx:shd wx:bgcolor="F0FFFF" />
+			<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+				<w:pPr>
+					<w:pBdr>
+						<w:top w:val="double" w:sz="16" wx:bdrwidth="135" w:space="0" w:color="auto" />
+					</w:pBdr>
+					<w:shd w:val="solid" w:color="F0FFFF" w:fill="auto" wx:bgcolor="F0FFFF" />
+					<w:spacing w:before="240" w:after="240" />
+					<w:ind w:left="2880" />
+					<w:jc w:val="center" />
+					<w:rPr>
+						<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+						<wx:font wx:val="Arial" />
+					</w:rPr>
+				</w:pPr>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+						<wx:font wx:val="Arial" />
+					</w:rPr>
+					<w:t>This fragment demonstrates use of paragraph formatting to specify alignment, spacing, borders and shading.</w:t>
+				</w:r>
+			</w:p>
+		</wx:pBdrGroup>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Arial" w:h-ansi="Arial" w:cs="Arial" />
+					<wx:font wx:val="Arial" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:r>
+				<w:t>This shows how to build a table in a document.</w:t>
+			</w:r>
+		</w:p>
+		<w:tbl>
+			<w:tblPr>
+				<w:tblW w:w="0" w:type="auto" />
+			</w:tblPr>
+			<w:tblGrid>
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+				<w:gridCol w:w="576" />
+			</w:tblGrid>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y0</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y1</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y2</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y3</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y4</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y5</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y6</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr wsp:rsidR="009730C3">
+				<w:tblPrEx>
+					<w:tblCellMar>
+						<w:top w:w="0" w:type="dxa" />
+						<w:bottom w:w="0" w:type="dxa" />
+					</w:tblCellMar>
+				</w:tblPrEx>
+				<w:trPr>
+					<w:trHeight w:h-rule="exact" w:val="576" />
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X0, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X1, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X2, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X3, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X4, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X5, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="90EE90" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X6, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="576" w:type="dxa" />
+						<w:tcBorders>
+							<w:top w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:left w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:bottom w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+							<w:right w:val="single" w:sz="16" wx:bdrwidth="45" w:space="0" w:color="0000FF" />
+						</w:tcBorders>
+						<w:shd w:val="clear" w:color="auto" w:fill="FFFFE0" />
+						<w:vAlign w:val="center" />
+					</w:tcPr>
+					<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+						<w:pPr>
+							<w:jc w:val="center" />
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Tahoma" w:fareast="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+								<wx:font wx:val="Tahoma" />
+								<w:sz w:val="12" />
+							</w:rPr>
+							<w:t>X7, Y7</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+		</w:tbl>
+		<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+			<w:pPr>
+				<w:jc w:val="center" />
+				<w:sectPr wsp:rsidR="009730C3">
+					<w:hdr w:type="even">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Header" />
+							</w:pPr>
+						</w:p>
+					</w:hdr>
+					<w:hdr w:type="odd">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Header" />
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:i />
+								</w:rPr>
+								<w:t>This text is inserted into the header.</w:t>
+							</w:r>
+						</w:p>
+					</w:hdr>
+					<w:ftr w:type="even">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Footer" />
+							</w:pPr>
+						</w:p>
+					</w:ftr>
+					<w:ftr w:type="odd">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Footer" />
+							</w:pPr>
+						</w:p>
+					</w:ftr>
+					<w:hdr w:type="first">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Header" />
+							</w:pPr>
+						</w:p>
+					</w:hdr>
+					<w:ftr w:type="first">
+						<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+							<w:pPr>
+								<w:pStyle w:val="Footer" />
+							</w:pPr>
+						</w:p>
+					</w:ftr>
+					<w:pgSz w:w="12240" w:h="15840" />
+					<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+					<w:cols w:space="720" />
+					<w:docGrid w:line-pitch="360" />
+				</w:sectPr>
+			</w:pPr>
+		</w:p>
+		<wx:sect>
+			<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+				<w:pPr>
+					<w:jc w:val="center" />
+				</w:pPr>
+				<w:r>
+					<w:t>This text is in a section with different page size and orientation.</w:t>
+				</w:r>
+			</w:p>
+			<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+				<w:pPr>
+					<w:jc w:val="center" />
+				</w:pPr>
+				<w:r>
+					<w:t>Insert an image into the document here.</w:t>
+				</w:r>
+			</w:p>
+			<w:p wsp:rsidR="009730C3" wsp:rsidRDefault="009730C3">
+				<w:pPr>
+					<w:jc w:val="center" />
+				</w:pPr>
+				<w:r>
+					<w:pict>
+						<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="if lineDrawn pixelLineWidth 0" />
+								<v:f eqn="sum @0 1 0" />
+								<v:f eqn="sum 0 0 @1" />
+								<v:f eqn="prod @2 1 2" />
+								<v:f eqn="prod @3 21600 pixelWidth" />
+								<v:f eqn="prod @3 21600 pixelHeight" />
+								<v:f eqn="sum @0 0 1" />
+								<v:f eqn="prod @6 1 2" />
+								<v:f eqn="prod @7 21600 pixelWidth" />
+								<v:f eqn="sum @8 21600 0" />
+								<v:f eqn="prod @7 21600 pixelHeight" />
+								<v:f eqn="sum @10 21600 0" />
+							</v:formulas>
+							<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+							<o:lock v:ext="edit" aspectratio="t" />
+						</v:shapetype>
+						<w:binData w:name="wordml://03000001.png" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAYBQTFRF
+XWeIssD/ZG+Ud4SvjpjLrLr/9vb2dovJK0+TxcXJvsHOlqT8SHauiZbw7+/v4ODig468TVVxxdL/
+urzIbXigpLH/d7faBSt+sL7+paWmT4W5hISF0NHUvcr/mpuceHl7hMrmtra3EjaEm6fh/f39RlqH
++vr6laHYOGmmuMX/ztv/pLLrz+n1XJPC29vcitHrkt3zoK3+gbrWoKTBsObzY6DLy8zOluL2L0Ny
+HkOMk5ywh8Hel9XtdoGcqLX/09TXd6bGydb/wM//rbr3vsfgfcPieqnWotPlaqnRs7zU5/P6lrXl
+oK3m8fj/qbbxV19+irTe1N3nlabHp7HHksnjoau1iqvjhaTEpLL2hqPbLVuehY2gZ3q45OXlmrjK
+peDwttrphbLPPluYerHQxc7de7zfm77Yp73Qrq+vnsXy5Oz1jtfvcJu9wdDso8347Pf9kJCRxNbj
+Q0plo7vzcLHWmrvtt8Tz19fY6enp9/3+rM3cf4vZYYWmTmigs8H/////tDmOpwAAHWFJREFUeF7t
+XY1fGtcSXRfURVGhoovEKC4SyVMETVDXr9gQjEl9YtT4gdgkUFpbaWOpqTZhzb/+zty7IChfi2D6
+ez8vvjy7wu6ePXNm5s7OXYSv/ydD+D/B8fUeyL+NyXtG7hlp0hW4N60mXdi6d3vPSN2XrkkfvGek
+SRe27t3eM1L3pWvSB+8ZadKFrXu394zUfema9MF7Rpp0Yeve7T0jdV+6Jn3wnpEmXdi6d3vPSN2X
+rkkfvGekSRe27t3Wzshvf27tWa1WjY343vaLUYy6j9vwD9YG5Ldf2n2xmERDpaGwkTC9ePTo34Km
+BiC//ezyAQYN4ChEIiuK6ae2fweWqkD+TMOefDRyWDgUYkVVJVlOvGojLA23FYM7rALkd7/LBSA6
+FGs2K2atIl4JSVXwwk9CAZTutm9uYRWBTKz4AQTDanWl54eGTk8fXA1RkMAJbE1TZK2n+1uzUgHI
+f38O+f34cbn86YEhhmE4/+K/eEGJV9U0Wdm+6IbwDZpDI99eHsjE2draWghA0m8ZimEMzscpXmwA
+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
+AABJRU5ErkJggk==
+</w:binData>
+						<v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:150pt;height:150pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+							<v:imagedata src="wordml://03000001.png" o:title="" />
+						</v:shape>
+					</w:pict>
+				</w:r>
+			</w:p>
+			<w:p wsp:rsidR="009730C3" wsp:rsidRPr="00D416EC" wsp:rsidRDefault="009730C3" wsp:rsidP="009730C3">
+				<w:pPr>
+					<w:rPr>
+						<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+						<wx:font wx:val="Arial" />
+					</w:rPr>
+				</w:pPr>
+			</w:p>
+		</wx:sect>
+		<w:sectPr wsp:rsidR="009730C3" wsp:rsidRPr="00D416EC">
+			<w:pgSz w:w="11905" w:h="8390" w:orient="landscape" />
+			<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+			<w:docGrid w:line-pitch="360" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

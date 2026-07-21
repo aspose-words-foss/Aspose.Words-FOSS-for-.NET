@@ -1,0 +1,33 @@
+﻿Arial
+А Җ ' " <> {xxx} ‘ “ & < > £ ¥ § ¨ © ª « ® » ¼ \ \\
+
+Wingdings
+u ¨
+
+Symbol
+Q Ä
+
+Special Chars
+tab1	tab2	tab3
+ “double opening and closing quotes”
+‘single opening and closing quotes’
+
+em—dash and em space
+en–dash and enspace
+
+nonbreaking space
+one fourths em space
+
+nonbreaking hyphen
+optional hyphen
+
+left-to-right mark‎test‏right-to-left mark
+
+zero-width non-joiner‌a.k.a No-Width Optional Break
+zero-width joiner‍a.k.a No-Width Non Break
+
+Line 1 ends with a carriage return, not a paragraph break.Line 2.
+
+<MyTag1>My text</MyTag1>
+<MyTag2 a=”hello”/>
+

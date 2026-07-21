@@ -1,0 +1,1 @@
+This contains PAL (Platform Abstraction Layer) classes. These classes need to be implemented in Java manually, they are not automatically portable because they use .NET classes such as Image, Brush etc. Keep these classes small and their interfaces simple so it is possible to implement them in Java.

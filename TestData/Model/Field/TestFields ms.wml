@@ -1,0 +1,1849 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="yes" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Title>titleText</o:Title>
+		<o:Subject>subj</o:Subject>
+		<o:Author>authorName</o:Author>
+		<o:Keywords>keyword1</o:Keywords>
+		<o:Description>comment</o:Description>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-19T12:26:00Z</o:Created>
+		<o:LastSaved>2011-10-19T12:26:00Z</o:LastSaved>
+		<o:Pages>2</o:Pages>
+		<o:Words>687</o:Words>
+		<o:Characters>3917</o:Characters>
+		<o:Company>ITEC</o:Company>
+		<o:Lines>32</o:Lines>
+		<o:Paragraphs>9</o:Paragraphs>
+		<o:CharactersWithSpaces>4595</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Tahoma">
+			<w:panose-1 w:val="020B0604030504040204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E1002EFF" w:usb-1="C000605B" w:usb-2="00000029" w:usb-3="00000000" w:csb-0="000101FF" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:lists />
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="00401FB3" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:sz w:val="24" />
+				<w:sz-cs w:val="24" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+		<w:style w:type="character" w:styleId="Hyperlink">
+			<w:name w:val="Hyperlink" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:rsid w:val="00401FB3" />
+			<w:rPr>
+				<w:color w:val="0000FF" />
+				<w:u w:val="single" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="TOC2">
+			<w:name w:val="toc 2" />
+			<wx:uiName wx:val="TOC 2" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:autoRedefine />
+			<w:rsid w:val="00401FB3" />
+			<w:pPr>
+				<w:ind w:left="240" />
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BalloonText">
+			<w:name w:val="Balloon Text" />
+			<w:basedOn w:val="Normal" />
+			<w:link w:val="BalloonTextChar" />
+			<w:rsid w:val="007A32B6" />
+			<w:rPr>
+				<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+				<wx:font wx:val="Tahoma" />
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="BalloonTextChar">
+			<w:name w:val="Balloon Text Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="BalloonText" />
+			<w:rsid w:val="007A32B6" />
+			<w:rPr>
+				<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+	</w:styles>
+	<w:docOleData>
+		<w:binData w:name="oledata.mso" xml:space="preserve">0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA
+EAAAAgAAAAEAAAD+////AAAAAAAAAAD/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////9
+/////v////7////+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////1IA
+bwBvAHQAIABFAG4AdAByAHkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAWAAUA//////////8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJD99FJajswB
+AwAAAMABAAAAAAAAXwAxADMAOAAwADUANwAyADEANwA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABgAAgH///////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAigEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////////wAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////
+////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+AAIAAAADAAAABAAAAAUAAAAGAAAA/v//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////8ADAAA
+eJy7cF7wwcKNUg8Z0IAdAzPDv/+cDGxIYoxQDAYCDAxMUP6/////w4T/j4IhBf4CMQs0DmF4FIwc
+EMSQD4QlDAoMrgx5QLqIoRK9KMALxBhY4XkeVB4wnWMCix+ASLshq53w90tQVN8ZRmYgu4ERVqb4
+M+QwpJJkJzLgYmBiRPYPsfpEGGD2OwP9n8tQAHRHEkMWyfYLAe0HeQXkJ2LtB6lPg7KZofZ6AkM/
+DegScuwH2ctCgv0gt8LK9X/QeIPlfVYoexSMDABMi0wcJKc6BGAEphZmLkjaQ8/74kDCNzO5KL84
+P61EwbWwNLEkMz9PwVjPgIEHKOUSDBdj4AbyYRw9Y4YvlpsKiXUBM6JNQgaQYQC1Y/YeSoTyA76L
+MeRwiUNMZmRk5uJiFGpOYRBqToPidAZmPkYGbkZmHUYGHkaYGDrNIMgAVIMqmgJlQ0wbJMCVoZCh
+lCERWPJnAkufPGA94AfllRFVKisAQw85PRFjJ6isqqXM2SiAVPupDYay/QC9pkEoAADgfl8ABAEA
+AOYbaQB4RADAQOs0AM1QBQAzRx4AzVAFADNHHgDNUAUAzVAFADNHHgA5AAAAQLMAAIgpAAAAAAAA
+AQAAAMB9XwAEAQAA5htpAHhEAMBA6zQAzVAFADNHHgDNUAUAM0ceAM1QBQDNUAUAM0ceAE==
+</w:binData>
+	</w:docOleData>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="7170" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="00401FB3" />
+			<wsp:rsid wsp:val="003F35A4" />
+			<wsp:rsid wsp:val="00401FB3" />
+			<wsp:rsid wsp:val="00451759" />
+			<wsp:rsid wsp:val="007A32B6" />
+			<wsp:rsid wsp:val="00E04BB8" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> =ABS() \# "$#,##0.00;($#,##0.00)" </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>!Syntax Error, )</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r>
+				<w:instrText> ADDRESSBLOCK  \c \d \e \f \l  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>«AddressBlock»</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> ADVANCE  \d 1 \l 2 \r 3 \u 4 \x 5 \y 6 </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> ASK  bookmarkName prompt \d yes \o  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:t>yes</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" AUTHOR  authorName \* FirstCap  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>AuthorName</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> AUTONUM  \* ALPHABETIC \s / </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+				<wx:t wx:val="A/" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> AUTONUMLGL  \* alphabetic \e \s - </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+				<wx:t wx:val="b" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> AUTONUMOUT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+				<wx:t wx:val="3." />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" AUTOTEXT  &quot;Author, Page #, Date&quot;  \* MERGEFORMAT ">
+				<w:r>
+					<w:fldChar w:fldCharType="begin" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:instrText> AUTHOR </w:instrText>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="separate" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>authorName</w:t>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="end" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:tab />
+					<w:t>Page </w:t>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="begin" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:instrText> PAGE </w:instrText>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="separate" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>1</w:t>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="end" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:tab />
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="begin" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:instrText> DATE </w:instrText>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="separate" />
+				</w:r>
+				<w:r wsp:rsidR="007A32B6">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>10/19/2011</w:t>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="end" />
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="begin" />
+				</w:r>
+				<w:r wsp:rsidR="00E04BB8">
+					<w:instrText> DATE \@ "M/d/yyyy" </w:instrText>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="separate" />
+				</w:r>
+				<w:r wsp:rsidR="007A32B6">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>10/19/2011</w:t>
+				</w:r>
+				<w:r>
+					<w:fldChar w:fldCharType="end" />
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> BARCODE  bookmarkName \b \f 23 \u zip  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> BIDIOUTLINE  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" COMMENTS  comment \* Caps  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>Comment</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> COMPARE  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! Missing test condition.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> CREATEDATE  \@ "dddd, MMMM dd, yyyy" \h \s  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>AsSabt, Jamada El Thaniah 12, 1427</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> DATE  \@ "MMMM d, yyyy" \l  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="007A32B6">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>October 19, 2011</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" DOCPROPERTY  Company  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>ITEC</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> DOCVARIABLE  var  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" EDITTIME  \* Ordinal  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>7th</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r wsp:rsidRPr="00401FB3">
+				<w:rPr>
+					<w:position w:val="-14" />
+				</w:rPr>
+				<w:pict>
+					<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+						<v:stroke joinstyle="miter" />
+						<v:formulas>
+							<v:f eqn="if lineDrawn pixelLineWidth 0" />
+							<v:f eqn="sum @0 1 0" />
+							<v:f eqn="sum 0 0 @1" />
+							<v:f eqn="prod @2 1 2" />
+							<v:f eqn="prod @3 21600 pixelWidth" />
+							<v:f eqn="prod @3 21600 pixelHeight" />
+							<v:f eqn="sum @0 0 1" />
+							<v:f eqn="prod @6 1 2" />
+							<v:f eqn="prod @7 21600 pixelWidth" />
+							<v:f eqn="sum @8 21600 0" />
+							<v:f eqn="prod @7 21600 pixelHeight" />
+							<v:f eqn="sum @10 21600 0" />
+						</v:formulas>
+						<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+						<o:lock v:ext="edit" aspectratio="t" />
+					</v:shapetype>
+					<w:binData w:name="wordml://08000001.wmz" xml:space="preserve">H4sIAAAAAAAEC51RLU8DQRCdmWsPem1CORCkQRwIFCDqQPUPAAlUodrkPoDkoEmbXOqqUdUYPL+h
+4hQKNEgwYC9pMDTheLO9gIbZ7ObtfL6ZeXq8vyEjLTsVrigcnzIBWMuMh9aNtYy3IgoVCcNkEEue
+5wbt8lqhq/741SSVlu1Cv2UvUYPgmxPV8U+B7vRnE13Av1r41OigOzhrD3sBUY8Wof2EVSNUSrg7
+KK0cVmXEb6JoBWhaVp4z8ZBfZWwYloTq7fM46HuHQeIdX8XdS3q+nSavuJ73kTTcMJvnZMOg6RzJ
+trWA+DAK/cgPTfcz6fwzqxjGGbg4yNl09nhioWHNjjNnPPqCAvJ3xso8Y9FdIfcL75tqfhhGWk0n
+7piJ666o6KRO2h3RRHf0wCKbJ8P+IIgp01kQIjbo2gSoQ+fdLWb+24kFPdE3wn8zYDgCAAA=
+</w:binData>
+					<v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:50.25pt;height:21.75pt" o:ole="">
+						<v:imagedata src="wordml://08000001.wmz" o:title="" />
+					</v:shape>
+					<o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025" DrawAspect="Content" ObjectID="_1380572178" />
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" FILENAME  \* Upper \p  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>X:\ASPOSE\ASPOSE.WORDS\TESTDATA\MODEL\TESTFIELDS.DOC</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" FILESIZE  \* CardText  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>ten thousand seven hundred fifty-two</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" FILLIN  prompt \d no \o  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>no</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> GOTOBUTTON  bookmarkName </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" GREETINGLINE  \e \f \l  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>«GreetingLine»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:hlink w:dest="" w:bookmark="bookmarkName">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:rStyle w:val="Hyperlink" />
+					</w:rPr>
+					<w:t>#bookmarkName</w:t>
+				</w:r>
+			</w:hlink>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:hlink w:dest="http://www.wowwee.com/robosapien/robotvc.html">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:rStyle w:val="Hyperlink" />
+					</w:rPr>
+					<w:t>http://www.wowwee.com/robosapien/robotvc.html</w:t>
+				</w:r>
+			</w:hlink>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> IF A = A True False \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="007A32B6">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>True</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00451759">
+			<w:pPr>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r wsp:rsidRPr="00401FB3">
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:pict>
+					<v:shape id="_x0000_i1026" type="#_x0000_t75" style="width:225pt;height:51.75pt">
+						<v:imagedata src="http://www.aspose.com/images/banner-top-mid.gif" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:pPr>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r wsp:rsidRPr="00401FB3">
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:pict>
+					<w:binData w:name="wordml://03000002.png" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAASwAAABFCAMAAADHLythAAADAFBMVEVbcIN52njqhIRKlE1EVJ5G
+VmQjKoqI54fd3XRJWqGotP9YZczW1lhZuVhyjbp9m8CWmbCYpf7b22iE2IfoeHhpymdheIxje7GJ
+lvx3k6l3hO9tsm87R1Rccqw9S5qWmCpDVVWGpcVYjWLT00p/nsHYKCjxrq7bMzOJqsd1krzLyzRJ
+pEjiVFTl5ZWkLC5pgpWLrMiZ8pcpMo4dJIdgd62IjKGZpFdmbDB+nLTj44tbZbjtnJyBoMJVaajh
+4YRr0Wlhm2x4lL3XREalpyqCortTaHc0QZV7mL9telJnc9bmaWkxPZNRZKW9vCzDwzGorkSyaXOQ
+qJZpdMpLflLOzjkyPklqd+WPm1V6wovskZHNzUrkSUqW6ZX038tlcXNhbMaSpXplhIKAkWuHkupn
+JywWGoJYbapceHzeLCyipzvFxS21tCKnpx/h4Xd9s5usiJmj+aKPvLuwR04PEn55paHOcXNOYKRt
+hra8vDIuOJGHqMZyjqMZH4R1yX3DREiJpq2SSE184ntpgrTwd3eMjSVfa75TPEPFMzWMssGBjelS
+XsN1f5J9iFHti4udfY9hbdJ6hdlepmWKq8aEo8RrhLWNrbvzlpZtV2OQq6N5mZluibd/gSXp6aeD
+osNzfMPR0T1fvV6HZ3Q/SGsSFoCO7Iygrf55ico0Nj5x1XCvvP5cal2AjfmRp8E3RJaTpLx4Qkh7
+l6+Kuq2MrsaQnv9ha66GpsC3WmHRJSW7uiTFxT+3tyxTs1BUX76PrLFlc7tjxWFPWZQ6R5g3Rz/U
+VFVzft1whb2En8NLrkhAT5yB339sf8S3tybITlFldLVMXm1NWbqOq8WQVF22w//f331IUoSHp8Vu
+zW1ogLNwirhmf7JTZ6eIqcNvip+vrydQoVJQq01DbUqFochzf7lpe7inQ0DoXFzcPz+gkKWUn+5Y
+YKhdbptRWqbIyDKJxqGf+56gre1ZYpFqlI1zh3+JrMOOqcOMrMBmeLppcbZtdbtperRtgLN+pq2E
+q7SEqbkND32Mrsn5y55NAAABAHRSTlP/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////8AU/cHJQAA
+AAFiS0dE/6UH8sUAAAAMY21QUEpDbXAwNzEyAAAAA0gAc7wAABapSURBVHhe7Vt9YFPluW9retrQ
+ktAC/YAmNDSVpiKN50Qo0AKBkkiTIkLLRJwFMREBnbvVhIS4SflGa2fTuVkWQQprK0YZH6KCQphK
+UNfpsLQpRd29wpy37nK9d/fLu757zsd7cs7JSWl1+0PG6x+S5jnvx+/8nuf9Pc/7JgFdb0NGIGHI
+ltcN0XWwhkGC62BdB2sYCAzD9Dqz/pZgbd/+ZeKdw+jwWjYdnFmHfvir0aMfm7Oy9FqGYOhrGwSs
+7T/8cvTGxPFL8pMTDg69w2vZMi5Y2798bOPGxDn5eckJfUevZQSGsbY4YG1/qD0x5ezE0zWdJaVN
+w+ju2jaVB+tXj7Vv3Pc0QNVXcW0vf3irkwPr0EOzE/ed/bQtueTb+V+ZnmvyU7J2a+wul10TMcd8
+jx/E/w/EXZS+me2kWx3PRF1PW7g0EUOMBT9B6Xj6MqNcdzJgbb8TsBp/Oi9LwCr/O7+3/tKqfuf3
+sp3Iz9Pkw01mIWYX6agbYJuDUPaIunDzT+J/EDaX2xszjMpF+rhO6nykPRZ0ZO3lLWAYhVs0/R4q
+Zhz8B1vR0MDa/tjsjSkT25L7cKwqeufdd9PSGhsXLGhMS3v3Xb1sP7F9l1EcFgMDEem3AUUr/yX7
+D4twpUrJl+xH0i3uJmKTmDkUerGFV+mQmNhaBBblssMwf1TIvv8YZh0CXqUsaZuPpdU7b9fuTHtr
+x799fjgjI2fVqqWNO7e8rRuKq4ejU+mV2FvJ2Gn6TFEjKQqcdavABJmDMkulmoUjlXliTVo1UQtt
+fLCyhwSW8c7Z7Rs/rUngXFD3vyd2pu0YwbWOjo79GQeWps14u+uqcDVjJ4MZacXWakJulnX8MgSc
+FBu2Rrml8cmutNUZHapM5pUMDNTxFjrZaTDd+uQjoJRZjwBWS2qyLjBjGg0zdu58q2PE4ZxVO547
+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
+</w:binData>
+					<v:shape id="_x0000_i1027" type="#_x0000_t75" style="width:225pt;height:51.75pt">
+						<v:imagedata src="wordml://03000002.png" o:href="http://www.aspose.com/images/banner-top-mid.gif" />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRPr="00451759" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8" wsp:rsidRPr="00451759">
+				<w:instrText> INCLUDETEXT  "TestWml.doc" \* Upper  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+				</w:rPr>
+				<w:t>Error! Not a valid filename.</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRPr="00451759" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:instrText> INDEX \c "2" \z "1033" </w:instrText>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! No index entries found.</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:pPr>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:fldSimple w:instr=" INFO  CreateDate  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:lang w:val="RU" />
+					</w:rPr>
+					<w:t>08.07.2006 22:57:00</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" KEYWORDS  keyword1 \* Upper  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:lang w:val="RU" />
+					</w:rPr>
+					<w:t>KEYWORD1</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> LASTSAVEDBY  \* Lower  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> LINK  Word.Document.8 X:\\Aspose\\Aspose.Words\\TestData\\Model\\TestWml.doc   </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+				</w:rPr>
+				<w:t>Error! Not a valid link.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> LISTNUM  LegalDefault \l 4 \s 3 </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+				<wx:t wx:val="1.1.1.3." />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> MACROBUTTON  AcceptAllChangesShown </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field1 \* Upper  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>«FIELD1»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field2 \b before  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>before«field2»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field2 \b \f before  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>before«field2»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field2 \b \m before  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>before«field2»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field2 \b \v before  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>before«field2»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEFIELD  field2 \b \f \m \v before  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>before«field2»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> MERGEFIELD  \* Lower \b \f \m \v  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! No bookmark name given.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGEREC  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>«Merge Record #»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" MERGESEQ  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>«Merge Sequence #»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> NEXT  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> NEXTIF  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> NOTEREF  bookmarkName  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+				</w:rPr>
+				<w:t>Error! Bookmark not defined.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" NUMCHARS  \* roman  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>cdxcv</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> NUMPAGES  \# "#,##0.00"  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>   1.00</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> NUMWORDS  \# "0.00%" \* ROMAN  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>LXXVII</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" PAGE  \* Arabic  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>1</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin">
+					<w:fldData xml:space="preserve">CNDJ6nn5us4RjIIAqgBLqQsCAAAACAAAAA0AAABiAG8AbwBrAG0AYQByAGsATgBhAG0AZQAAAA==
+</w:fldData>
+				</w:fldChar>
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> PAGEREF  bookmarkName \# "#,##0" \* alphabetic \h \p  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>a</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> PRINT "sfsdf"\p cell \p para \p row  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> PRINTDATE  \@ "d MMMM yyyy"  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>0 XXX 0000</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> PRIVATE </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> QUOTE  quote \@ "M/d/yy"  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:t>quote</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> RD  TestWml.doc </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> </w:instrText>
+			</w:r>
+			<w:r wsp:rsidR="00451759">
+				<w:instrText>RD "TestWml.doc" \f</w:instrText>
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> REF  bookmarkName \p \r \t \w </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:cs />
+				</w:rPr>
+				<w:t>‎</w:t>
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:t>0 above</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> REVNUM  \# "0.00" \* Ordinal  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>2nd</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SAVEDATE  \@ "MMMM yy"  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="007A32B6">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>July 06</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" SECTION  \* Ordinal  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>1st</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SECTIONPAGES  \# "#,##0" \* roman  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>ii</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SEQ  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! No sequence specified.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SET  bookmarkName settext  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="bookmarkName" />
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>settext</w:t>
+			</w:r>
+			<aml:annotation aml:id="0" w:type="Word.Bookmark.End" />
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SKIPIF bookmarkName  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> STYLEREF  "Table Normal" \l \n \p \r \t \w  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! No text of specified style in document.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" SUBJECT  subj \* Lower  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>subj</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> SYMBOL  56 \a \f \h \j \s \u  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> TA \l "ghghgkjkbkjjkbjkbjkb" \s "gjhghjgjh" \c 1 </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:instrText> TC  textEntry \f \l 4 \n </w:instrText>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:lang w:val="RU" />
+				</w:rPr>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" TEMPLATE  \* Lower  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>normal.dot</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> TIME  \@ "HH:mm:ss"  \* MERGEFORMAT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="007A32B6">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>23:26:27</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" TITLE  titleText  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:t>titleText</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> TOA \h \c "3" \p </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:b />
+					<w:b-cs />
+					<w:noProof />
+				</w:rPr>
+				<w:t>Error! No table of authorities entries found.</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:pPr>
+				<w:pStyle w:val="TOC2" />
+				<w:tabs>
+					<w:tab w:val="right" w:leader="dot" w:pos="9679" />
+				</w:tabs>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> TOC \o "1-3" \h \z \u </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>page break</w:t>
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:rPr>
+					<w:noProof />
+					<w:webHidden />
+				</w:rPr>
+				<w:tab />
+				<w:t>2</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00E04BB8">
+			<w:pPr>
+				<w:pStyle w:val="TOC2" />
+				<w:tabs>
+					<w:tab w:val="right" w:leader="dot" w:pos="9679" />
+				</w:tabs>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>page break</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:webHidden />
+				</w:rPr>
+				<w:tab />
+				<w:t>2</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" USERADDRESS  userAddress \* Lower  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>useraddress</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" USERINITIALS  userInitials \* Upper  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>USERINITIA</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:fldSimple w:instr=" USERNAME  userName \* FirstCap  \* MERGEFORMAT ">
+				<w:r wsp:rsidR="00E04BB8">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>UserName</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="00401FB3" wsp:rsidRDefault="00401FB3">
+			<w:r>
+				<w:fldChar w:fldCharType="begin" />
+			</w:r>
+			<w:r wsp:rsidR="00E04BB8">
+				<w:instrText> XE "sf:dsfs" </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="003F35A4" wsp:rsidRDefault="003F35A4" />
+		<aml:annotation aml:id="1" w:type="Word.Bookmark.Start" w:name="Text1" />
+		<w:p wsp:rsidR="003F35A4" wsp:rsidRDefault="00451759">
+			<w:r>
+				<w:fldChar w:fldCharType="begin">
+					<w:fldData xml:space="preserve">/////4ABAAAAAAUAVABlAHgAdAAxAAAACwBEAEUARgBBAFUATABUAFQARQBYAFQAAAAJAFUAUABQ
+AEUAUgBDAEEAUwBFAAAACwBIAGUAbABwACAAbwBuACAARgAxAC4AAAASAEgAZQBsAHAAIAB0AGUA
+eAB0ACAAaQBzACAAaABlAHIAZQAuAAAADABSAGUAcwB0AG8AcgBlAEYAbwBjAHUAcwAAAAoAUgBl
+AGwAbwBjAGEAbABpAHoAZQAAAA==
+</w:fldData>
+				</w:fldChar>
+			</w:r>
+			<w:r>
+				<w:instrText> FORMTEXT </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="separate" />
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+				<w:t>DEFAULTTEXT</w:t>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<aml:annotation aml:id="1" w:type="Word.Bookmark.End" />
+		</w:p>
+		<aml:annotation aml:id="2" w:type="Word.Bookmark.Start" w:name="Check1" />
+		<w:p wsp:rsidR="003F35A4" wsp:rsidRDefault="00451759">
+			<w:r>
+				<w:fldChar w:fldCharType="begin">
+					<w:fldData xml:space="preserve">/////2UEAAAaAAYAQwBoAGUAYwBrADEAAAABAAAAAAAAAAAAAAAAABwAQwAxAEQAMgBIAFMAZQB0
+AEMAbwBuAGQAaQB0AGkAbwBuAGEAbABGAG8AbgB0AEMAbwBsAG8AcgAAABwAQwAxAEQAMgBIAFMA
+ZQB0AEMAbwBuAGQAaQB0AGkAbwBuAGEAbABIAGkAZwBoAGwAaQBnAGgAdAAAAA==
+</w:fldData>
+				</w:fldChar>
+			</w:r>
+			<w:r>
+				<w:instrText> FORMCHECKBOX </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<aml:annotation aml:id="2" w:type="Word.Bookmark.End" />
+		</w:p>
+		<aml:annotation aml:id="3" w:type="Word.Bookmark.Start" w:name="Dropdown1" />
+		<w:p wsp:rsidR="003F35A4" wsp:rsidRDefault="00451759">
+			<w:r>
+				<w:fldChar w:fldCharType="begin">
+					<w:fldData xml:space="preserve">/////2aAAAAAAAkARAByAG8AcABkAG8AdwBuADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8D
+AAAABQBJAHQAZQBtADEABQBJAHQAZQBtADIABQBJAHQAZQBtADMA
+</w:fldData>
+				</w:fldChar>
+			</w:r>
+			<w:r>
+				<w:instrText> FORMDROPDOWN </w:instrText>
+			</w:r>
+			<w:r>
+				<w:fldChar w:fldCharType="end" />
+			</w:r>
+			<aml:annotation aml:id="3" w:type="Word.Bookmark.End" />
+		</w:p>
+		<w:sectPr wsp:rsidR="003F35A4" wsp:rsidSect="00401FB3">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1134" w:right="850" w:bottom="1134" w:left="1701" w:header="708" w:footer="708" w:gutter="0" />
+			<w:cols w:space="708" />
+			<w:docGrid w:line-pitch="360" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

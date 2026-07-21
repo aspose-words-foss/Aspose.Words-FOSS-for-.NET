@@ -1,0 +1,6 @@
+﻿                                    RIGHTLEFT                                                      CENTER
+                 CENTER                                   CENTER
+LEFT                                                                         RIGHT
+                                        1                  12345                                                 John Peter
+2                                                          98765                  Mary Jones
+

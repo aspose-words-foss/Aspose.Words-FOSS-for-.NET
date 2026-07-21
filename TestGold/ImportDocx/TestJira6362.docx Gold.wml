@@ -1,0 +1,6197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<o:DocumentProperties>
+		<o:Title>ADVERTISING AGENCY AGREEMENT</o:Title>
+		<o:Author>Marlene McGriskin</o:Author>
+		<o:LastAuthor>Scott Poirier</o:LastAuthor>
+		<o:Revision>10</o:Revision>
+		<o:TotalTime>21</o:TotalTime>
+		<o:LastPrinted>2011-11-14T17:40:00Z</o:LastPrinted>
+		<o:Created>2011-11-08T14:54:00Z</o:Created>
+		<o:LastSaved>2012-05-17T20:02:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>11</o:Words>
+		<o:Characters>66</o:Characters>
+		<o:Company>Molson Breweries</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>76</o:CharactersWithSpaces>
+		<o:Version>14.0000</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Symbol">
+			<w:panose-1 w:val="05050102010706020507" />
+			<w:charset w:val="02" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000000" w:usb-1="10000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="80000000" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="00" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Courier New">
+			<w:panose-1 w:val="02070309020205020404" />
+			<w:charset w:val="00" />
+			<w:family w:val="Modern" />
+			<w:pitch w:val="fixed" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Wingdings">
+			<w:panose-1 w:val="05000000000000000000" />
+			<w:charset w:val="02" />
+			<w:family w:val="Auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000000" w:usb-1="10000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="80000000" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Arial">
+			<w:panose-1 w:val="020B0604020202020204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Palatino">
+			<w:charset w:val="00" />
+			<w:family w:val="Auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Tahoma">
+			<w:panose-1 w:val="020B0604030504040204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E1002EFF" w:usb-1="C000605B" w:usb-2="00000029" w:usb-3="00000000" w:csb-0="000101FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Arial Unicode MS">
+			<w:panose-1 w:val="020B0604020202020204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Roman" />
+			<w:notTrueType />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Arial,Bold">
+			<w:panose-1 w:val="00000000000000000000" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:notTrueType />
+			<w:pitch w:val="default" />
+			<w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E10002FF" w:usb-1="4000ACFF" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="400004FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:lists>
+		<w:listDef w:listDefId="0">
+			<w:lsid w:val="05F11834" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="84786F4C" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="7200" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="1">
+			<w:lsid w:val="084B53AA" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="672432B6" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="0" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Times New Roman" w:h-ansi="Arial" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="2">
+			<w:lsid w:val="09F93BF3" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="6368E47C" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="3">
+			<w:lsid w:val="0BA02C80" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="97ECAFC2" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:color w:val="auto" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="4" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="4">
+			<w:lsid w:val="0CEF51B2" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="88B4FE68" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="5">
+			<w:lsid w:val="0F450A1E" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="6FDA72CA" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6840" />
+					</w:tabs>
+					<w:ind w:left="6840" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="7560" />
+					</w:tabs>
+					<w:ind w:left="7560" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="6">
+			<w:lsid w:val="131371FF" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="2BA4845E" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="7">
+			<w:lsid w:val="17861ADE" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="C82CEE8E" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="8">
+			<w:lsid w:val="1A5A2A1D" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="88582A82" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="3" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:fareast="Times New Roman" w:h-ansi="Symbol" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="9">
+			<w:lsid w:val="1E555D33" />
+			<w:plt w:val="Multilevel" />
+			<w:tmpl w:val="921E01B0" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="21" />
+				<w:lvlText w:val="%1" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="10" />
+				<w:lvlText w:val="%1.%2" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8.%9" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="1800" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="10">
+			<w:lsid w:val="20EB0949" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="39A6F436" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="0" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:fareast="Times New Roman" w:h-ansi="Symbol" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6840" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="11">
+			<w:lsid w:val="2B4E1CCC" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="742C3DF6" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="2" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6840" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="7560" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="8280" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="12">
+			<w:lsid w:val="2D665CF8" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="D3D07166" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="13">
+			<w:lsid w:val="30A73097" />
+			<w:plt w:val="Multilevel" />
+			<w:tmpl w:val="1E2E4E96" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="8" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:b />
+					<w:u w:val="single" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4.%5" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:isLgl />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8.%9" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="1800" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:u w:val="none" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="14">
+			<w:lsid w:val="33F92583" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="9170FE26" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="0" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:fareast="Times New Roman" w:h-ansi="Symbol" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="15">
+			<w:lsid w:val="34AD7FF4" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="F8603B84" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1296" />
+					</w:tabs>
+					<w:ind w:left="1296" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2016" />
+					</w:tabs>
+					<w:ind w:left="2016" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2736" />
+					</w:tabs>
+					<w:ind w:left="2736" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3456" />
+					</w:tabs>
+					<w:ind w:left="3456" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4176" />
+					</w:tabs>
+					<w:ind w:left="4176" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4896" />
+					</w:tabs>
+					<w:ind w:left="4896" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5616" />
+					</w:tabs>
+					<w:ind w:left="5616" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6336" />
+					</w:tabs>
+					<w:ind w:left="6336" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="16">
+			<w:lsid w:val="39A76A8A" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="AABA453E" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="2" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Times New Roman" w:h-ansi="Arial" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="17">
+			<w:lsid w:val="42951666" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="100E45C2" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="18">
+			<w:lsid w:val="460A3417" />
+			<w:plt w:val="Multilevel" />
+			<w:tmpl w:val="3FC0FC8C" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="14" />
+				<w:lvlText w:val="%1" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="4" />
+				<w:lvlText w:val="%1.%2" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8.%9" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="1800" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="19">
+			<w:lsid w:val="46532B3D" />
+			<w:plt w:val="SingleLevel" />
+			<w:tmpl w:val="1B18B772" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1." />
+				<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="20">
+			<w:lsid w:val="495F7BD3" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="F3B89FBA" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="21">
+			<w:lsid w:val="4DFF7DD5" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="69A080AE" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:color w:val="auto" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="2" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="936" />
+					</w:tabs>
+					<w:ind w:left="936" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1656" />
+					</w:tabs>
+					<w:ind w:left="1656" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2376" />
+					</w:tabs>
+					<w:ind w:left="2376" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3096" />
+					</w:tabs>
+					<w:ind w:left="3096" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3816" />
+					</w:tabs>
+					<w:ind w:left="3816" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4536" />
+					</w:tabs>
+					<w:ind w:left="4536" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5256" />
+					</w:tabs>
+					<w:ind w:left="5256" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5976" />
+					</w:tabs>
+					<w:ind w:left="5976" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="22">
+			<w:lsid w:val="545B704D" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="5CB06354" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="4" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1353" />
+					</w:tabs>
+					<w:ind w:left="1353" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Times New Roman" w:h-ansi="Arial" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2073" />
+					</w:tabs>
+					<w:ind w:left="2073" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2793" />
+					</w:tabs>
+					<w:ind w:left="2793" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3513" />
+					</w:tabs>
+					<w:ind w:left="3513" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4233" />
+					</w:tabs>
+					<w:ind w:left="4233" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4953" />
+					</w:tabs>
+					<w:ind w:left="4953" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5673" />
+					</w:tabs>
+					<w:ind w:left="5673" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6393" />
+					</w:tabs>
+					<w:ind w:left="6393" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="7113" />
+					</w:tabs>
+					<w:ind w:left="7113" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="23">
+			<w:lsid w:val="56EA1F10" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="C1381A56" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="0" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:fareast="Times New Roman" w:h-ansi="Symbol" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="24">
+			<w:lsid w:val="58226441" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="0AC6965A" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="4" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1353" />
+					</w:tabs>
+					<w:ind w:left="1353" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Times New Roman" w:h-ansi="Arial" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2073" />
+					</w:tabs>
+					<w:ind w:left="2073" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2793" />
+					</w:tabs>
+					<w:ind w:left="2793" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3513" />
+					</w:tabs>
+					<w:ind w:left="3513" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4233" />
+					</w:tabs>
+					<w:ind w:left="4233" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4953" />
+					</w:tabs>
+					<w:ind w:left="4953" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5673" />
+					</w:tabs>
+					<w:ind w:left="5673" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6393" />
+					</w:tabs>
+					<w:ind w:left="6393" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="7113" />
+					</w:tabs>
+					<w:ind w:left="7113" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="25">
+			<w:lsid w:val="59E61158" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="C4AEE112" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="26">
+			<w:lsid w:val="5B0105DF" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="FB5EC84A" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6840" />
+					</w:tabs>
+					<w:ind w:left="6840" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="27">
+			<w:lsid w:val="5B230AF2" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="2BE4199E" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="936" />
+					</w:tabs>
+					<w:ind w:left="936" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1656" />
+					</w:tabs>
+					<w:ind w:left="1656" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2376" />
+					</w:tabs>
+					<w:ind w:left="2376" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3096" />
+					</w:tabs>
+					<w:ind w:left="3096" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3816" />
+					</w:tabs>
+					<w:ind w:left="3816" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4536" />
+					</w:tabs>
+					<w:ind w:left="4536" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5256" />
+					</w:tabs>
+					<w:ind w:left="5256" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5976" />
+					</w:tabs>
+					<w:ind w:left="5976" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="28">
+			<w:lsid w:val="5B713947" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="1AA6D0BE" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="0" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:fareast="Times New Roman" w:h-ansi="Symbol" w:cs="Times New Roman" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2160" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="4320" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:ind w:left="6480" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="29">
+			<w:lsid w:val="5D514567" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="72F6ABC2" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="936" />
+					</w:tabs>
+					<w:ind w:left="936" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1656" />
+					</w:tabs>
+					<w:ind w:left="1656" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2376" />
+					</w:tabs>
+					<w:ind w:left="2376" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3096" />
+					</w:tabs>
+					<w:ind w:left="3096" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3816" />
+					</w:tabs>
+					<w:ind w:left="3816" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4536" />
+					</w:tabs>
+					<w:ind w:left="4536" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5256" />
+					</w:tabs>
+					<w:ind w:left="5256" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5976" />
+					</w:tabs>
+					<w:ind w:left="5976" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="30">
+			<w:lsid w:val="5F6B4D9B" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="783AD706" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:color w:val="auto" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="31">
+			<w:lsid w:val="68E15461" />
+			<w:plt w:val="Multilevel" />
+			<w:tmpl w:val="BCEA15AA" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="720" />
+					</w:tabs>
+					<w:ind w:left="720" w:hanging="720" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="1080" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="1440" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8.%9" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="1800" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="32">
+			<w:lsid w:val="6FF6051F" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="2980743A" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+					<w:color w:val="auto" />
+					<w:sz w:val="16" />
+					<w:sz-cs w:val="16" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%2." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1440" />
+					</w:tabs>
+					<w:ind w:left="1440" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2160" />
+					</w:tabs>
+					<w:ind w:left="2160" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2880" />
+					</w:tabs>
+					<w:ind w:left="2880" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3600" />
+					</w:tabs>
+					<w:ind w:left="3600" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4320" />
+					</w:tabs>
+					<w:ind w:left="4320" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5040" />
+					</w:tabs>
+					<w:ind w:left="5040" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5760" />
+					</w:tabs>
+					<w:ind w:left="5760" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6480" />
+					</w:tabs>
+					<w:ind w:left="6480" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="33">
+			<w:lsid w:val="70E42A63" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="FDA658E6" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="2" />
+				<w:lvlText w:val="%1." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="960" />
+					</w:tabs>
+					<w:ind w:left="960" w:hanging="960" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%3." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%4." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%5." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%6." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:lvlText w:val="%7." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="4" />
+				<w:lvlText w:val="%8." />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="2" />
+				<w:lvlText w:val="%9." />
+				<w:lvlJc w:val="right" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="180" />
+				</w:pPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="34">
+			<w:lsid w:val="73345B84" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="E0EED036" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="360" />
+					</w:tabs>
+					<w:ind w:left="360" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1080" />
+					</w:tabs>
+					<w:ind w:left="1080" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="35">
+			<w:lsid w:val="73B6553A" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="CBDC3600" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1800" />
+					</w:tabs>
+					<w:ind w:left="1800" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2520" />
+					</w:tabs>
+					<w:ind w:left="2520" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3240" />
+					</w:tabs>
+					<w:ind w:left="3240" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3960" />
+					</w:tabs>
+					<w:ind w:left="3960" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4680" />
+					</w:tabs>
+					<w:ind w:left="4680" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5400" />
+					</w:tabs>
+					<w:ind w:left="5400" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6120" />
+					</w:tabs>
+					<w:ind w:left="6120" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6840" />
+					</w:tabs>
+					<w:ind w:left="6840" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="7560" />
+					</w:tabs>
+					<w:ind w:left="7560" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:listDef w:listDefId="36">
+			<w:lsid w:val="7CBA2F00" />
+			<w:plt w:val="HybridMultilevel" />
+			<w:tmpl w:val="221CF954" />
+			<w:lvl w:ilvl="0">
+				<w:start w:val="4" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="-" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="1353" />
+					</w:tabs>
+					<w:ind w:left="1353" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Arial" w:fareast="Times New Roman" w:h-ansi="Arial" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="1" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2073" />
+					</w:tabs>
+					<w:ind w:left="2073" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="2" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="2793" />
+					</w:tabs>
+					<w:ind w:left="2793" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="3" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="3513" />
+					</w:tabs>
+					<w:ind w:left="3513" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="4" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4233" />
+					</w:tabs>
+					<w:ind w:left="4233" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="5" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="4953" />
+					</w:tabs>
+					<w:ind w:left="4953" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="6" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="5673" />
+					</w:tabs>
+					<w:ind w:left="5673" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Symbol" w:h-ansi="Symbol" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="7" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="o" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="6393" />
+					</w:tabs>
+					<w:ind w:left="6393" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Courier New" w:h-ansi="Courier New" w:cs="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+			<w:lvl w:ilvl="8" w:tentative="on">
+				<w:start w:val="1" />
+				<w:nfc w:val="23" />
+				<w:lvlText w:val="" />
+				<w:lvlJc w:val="left" />
+				<w:pPr>
+					<w:tabs>
+						<w:tab w:val="list" w:pos="7113" />
+					</w:tabs>
+					<w:ind w:left="7113" w:hanging="360" />
+				</w:pPr>
+				<w:rPr>
+					<w:rFonts w:ascii="Wingdings" w:h-ansi="Wingdings" w:hint="default" />
+				</w:rPr>
+			</w:lvl>
+		</w:listDef>
+		<w:list w:ilfo="1">
+			<w:ilst w:val="13" />
+		</w:list>
+		<w:list w:ilfo="2">
+			<w:ilst w:val="8" />
+		</w:list>
+		<w:list w:ilfo="3">
+			<w:ilst w:val="6" />
+		</w:list>
+		<w:list w:ilfo="4">
+			<w:ilst w:val="26" />
+		</w:list>
+		<w:list w:ilfo="5">
+			<w:ilst w:val="31" />
+		</w:list>
+		<w:list w:ilfo="6">
+			<w:ilst w:val="19" />
+		</w:list>
+		<w:list w:ilfo="7">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="8">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="9">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="10">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="11">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="12">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="13">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="14">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="15">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="16">
+			<w:ilst w:val="19" />
+			<w:lvlOverride w:ilvl="0">
+				<w:lvl w:ilvl="0">
+					<w:start w:val="1" />
+					<w:lvlText w:val="%1." />
+					<w:legacy w:legacy="on" w:legacySpace="0" w:legacyIndent="360" />
+					<w:lvlJc w:val="left" />
+					<w:pPr>
+						<w:ind w:left="360" w:hanging="360" />
+					</w:pPr>
+				</w:lvl>
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="17">
+			<w:ilst w:val="22" />
+		</w:list>
+		<w:list w:ilfo="18">
+			<w:ilst w:val="36" />
+		</w:list>
+		<w:list w:ilfo="19">
+			<w:ilst w:val="24" />
+		</w:list>
+		<w:list w:ilfo="20">
+			<w:ilst w:val="15" />
+		</w:list>
+		<w:list w:ilfo="21">
+			<w:ilst w:val="27" />
+		</w:list>
+		<w:list w:ilfo="22">
+			<w:ilst w:val="29" />
+		</w:list>
+		<w:list w:ilfo="23">
+			<w:ilst w:val="30" />
+		</w:list>
+		<w:list w:ilfo="24">
+			<w:ilst w:val="2" />
+		</w:list>
+		<w:list w:ilfo="25">
+			<w:ilst w:val="3" />
+		</w:list>
+		<w:list w:ilfo="26">
+			<w:ilst w:val="32" />
+		</w:list>
+		<w:list w:ilfo="27">
+			<w:ilst w:val="21" />
+		</w:list>
+		<w:list w:ilfo="28">
+			<w:ilst w:val="5" />
+		</w:list>
+		<w:list w:ilfo="29">
+			<w:ilst w:val="16" />
+		</w:list>
+		<w:list w:ilfo="30">
+			<w:ilst w:val="25" />
+			<w:lvlOverride w:ilvl="0" />
+			<w:lvlOverride w:ilvl="1">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="2">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="3">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="4">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="5">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="6">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="7">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="8">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="31">
+			<w:ilst w:val="12" />
+			<w:lvlOverride w:ilvl="0" />
+			<w:lvlOverride w:ilvl="1">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="2">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="3">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="4">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="5">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="6">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="7">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="8">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="32">
+			<w:ilst w:val="33" />
+		</w:list>
+		<w:list w:ilfo="33">
+			<w:ilst w:val="35" />
+		</w:list>
+		<w:list w:ilfo="34">
+			<w:ilst w:val="1" />
+			<w:lvlOverride w:ilvl="0" />
+			<w:lvlOverride w:ilvl="1">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="2">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="3">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="4">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="5">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="6">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="7">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+			<w:lvlOverride w:ilvl="8">
+				<w:startOverride w:val="1" />
+			</w:lvlOverride>
+		</w:list>
+		<w:list w:ilfo="35">
+			<w:ilst w:val="18" />
+		</w:list>
+		<w:list w:ilfo="36">
+			<w:ilst w:val="9" />
+		</w:list>
+		<w:list w:ilfo="37">
+			<w:ilst w:val="11" />
+		</w:list>
+		<w:list w:ilfo="38">
+			<w:ilst w:val="4" />
+		</w:list>
+		<w:list w:ilfo="39">
+			<w:ilst w:val="1" />
+		</w:list>
+		<w:list w:ilfo="40">
+			<w:ilst w:val="0" />
+		</w:list>
+		<w:list w:ilfo="41">
+			<w:ilst w:val="10" />
+		</w:list>
+		<w:list w:ilfo="42">
+			<w:ilst w:val="14" />
+		</w:list>
+		<w:list w:ilfo="43">
+			<w:ilst w:val="28" />
+		</w:list>
+		<w:list w:ilfo="44">
+			<w:ilst w:val="23" />
+		</w:list>
+		<w:list w:ilfo="45">
+			<w:ilst w:val="17" />
+		</w:list>
+		<w:list w:ilfo="46">
+			<w:ilst w:val="34" />
+		</w:list>
+		<w:list w:ilfo="47">
+			<w:ilst w:val="20" />
+		</w:list>
+		<w:list w:ilfo="48">
+			<w:ilst w:val="7" />
+		</w:list>
+	</w:lists>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267" />
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:rPr>
+				<w:lang w:val="EN-US" w:fareast="EN-CA" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading1">
+			<w:name w:val="heading 1" />
+			<wx:uiName wx:val="Heading 1" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading1" />
+				<w:keepNext />
+				<w:jc w:val="both" />
+				<w:outlineLvl w:val="0" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading2">
+			<w:name w:val="heading 2" />
+			<wx:uiName wx:val="Heading 2" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading2" />
+				<w:keepNext />
+				<w:jc w:val="both" />
+				<w:outlineLvl w:val="1" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+				<w:u w:val="single" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading3">
+			<w:name w:val="heading 3" />
+			<wx:uiName wx:val="Heading 3" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading3" />
+				<w:keepNext />
+				<w:jc w:val="both" />
+				<w:outlineLvl w:val="2" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading4">
+			<w:name w:val="heading 4" />
+			<wx:uiName wx:val="Heading 4" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:link w:val="Heading4Char" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading4" />
+				<w:keepNext />
+				<w:jc w:val="center" />
+				<w:outlineLvl w:val="3" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+				<w:u w:val="single" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading5">
+			<w:name w:val="heading 5" />
+			<wx:uiName wx:val="Heading 5" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading5" />
+				<w:keepNext />
+				<w:jc w:val="center" />
+				<w:outlineLvl w:val="4" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading6">
+			<w:name w:val="heading 6" />
+			<wx:uiName wx:val="Heading 6" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading6" />
+				<w:keepNext />
+				<w:outlineLvl w:val="5" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading7">
+			<w:name w:val="heading 7" />
+			<wx:uiName wx:val="Heading 7" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading7" />
+				<w:keepNext />
+				<w:tabs>
+					<w:tab w:val="left" w:pos="2340" />
+				</w:tabs>
+				<w:outlineLvl w:val="6" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Heading8">
+			<w:name w:val="heading 8" />
+			<wx:uiName wx:val="Heading 8" />
+			<w:basedOn w:val="Normal" />
+			<w:next w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Heading8" />
+				<w:keepNext />
+				<w:jc w:val="center" />
+				<w:outlineLvl w:val="7" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:semiHidden />
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Title">
+			<w:name w:val="Title" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Title" />
+				<w:jc w:val="center" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyTextIndent">
+			<w:name w:val="Body Text Indent" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyTextIndent" />
+				<w:ind w:left="540" w:hanging="540" />
+				<w:jc w:val="both" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyTextIndent2">
+			<w:name w:val="Body Text Indent 2" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyTextIndent2" />
+				<w:ind w:left="720" w:hanging="720" />
+				<w:jc w:val="both" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyText">
+			<w:name w:val="Body Text" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyText" />
+				<w:jc w:val="both" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Header">
+			<w:name w:val="header" />
+			<wx:uiName wx:val="Header" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Header" />
+				<w:tabs>
+					<w:tab w:val="center" w:pos="4320" />
+					<w:tab w:val="right" w:pos="8640" />
+				</w:tabs>
+			</w:pPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Footer">
+			<w:name w:val="footer" />
+			<wx:uiName wx:val="Footer" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="Footer" />
+				<w:tabs>
+					<w:tab w:val="center" w:pos="4320" />
+					<w:tab w:val="right" w:pos="8640" />
+				</w:tabs>
+			</w:pPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="PageNumber">
+			<w:name w:val="page number" />
+			<wx:uiName wx:val="Page Number" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:rsid w:val="007D3D84" />
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyTextIndent3">
+			<w:name w:val="Body Text Indent 3" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyTextIndent3" />
+				<w:ind w:left="450" w:hanging="450" />
+				<w:jc w:val="both" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyText2">
+			<w:name w:val="Body Text 2" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyText2" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="FirstLine">
+			<w:name w:val="First Line" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="FirstLine" />
+				<w:spacing w:line="240" w:line-rule="at-least" />
+				<w:ind w:first-line="1440" />
+				<w:jc w:val="both" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Palatino" w:h-ansi="Palatino" />
+				<w:color w:val="000000" />
+				<w:sz w:val="24" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BodyText3">
+			<w:name w:val="Body Text 3" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="007D3D84" />
+			<w:pPr>
+				<w:pStyle w:val="BodyText3" />
+				<w:tabs>
+					<w:tab w:val="left" w:pos="360" />
+				</w:tabs>
+				<w:spacing w:before="120" w:after="120" />
+				<w:jc w:val="both" />
+			</w:pPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="Strong">
+			<w:name w:val="Strong" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:rsid w:val="0032290A" />
+			<w:rPr>
+				<w:b />
+				<w:b-cs />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="BalloonText">
+			<w:name w:val="Balloon Text" />
+			<w:basedOn w:val="Normal" />
+			<w:semiHidden />
+			<w:rsid w:val="00B624C2" />
+			<w:pPr>
+				<w:pStyle w:val="BalloonText" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Tahoma" w:h-ansi="Tahoma" w:cs="Tahoma" />
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="Hyperlink">
+			<w:name w:val="Hyperlink" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:rsid w:val="005B2B5B" />
+			<w:rPr>
+				<w:color w:val="0000FF" />
+				<w:u w:val="single" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="font0">
+			<w:name w:val="font0" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="005B2B5B" />
+			<w:pPr>
+				<w:pStyle w:val="font0" />
+				<w:spacing w:before="100" w:before-autospacing="on" w:after="100" w:after-autospacing="on" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Arial" w:fareast="Arial Unicode MS" w:h-ansi="Arial" w:cs="Arial" />
+				<w:lang w:fareast="EN-US" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Default">
+			<w:name w:val="Default" />
+			<w:rsid w:val="005B2B5B" />
+			<w:pPr>
+				<w:pStyle w:val="Default" />
+				<w:widowControl w:val="off" />
+				<w:autoSpaceDE w:val="off" />
+				<w:autoSpaceDN w:val="off" />
+				<w:adjustRightInd w:val="off" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:ascii="Arial,Bold" w:h-ansi="Arial,Bold" w:cs="Arial,Bold" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="table" w:styleId="TableGrid">
+			<w:name w:val="Table Grid" />
+			<w:basedOn w:val="TableNormal" />
+			<w:rsid w:val="002A6508" />
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblBorders>
+					<w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+					<w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+				</w:tblBorders>
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="CommentReference">
+			<w:name w:val="annotation reference" />
+			<wx:uiName wx:val="Comment Reference" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:semiHidden />
+			<w:rsid w:val="00C57C0B" />
+			<w:rPr>
+				<w:sz w:val="16" />
+				<w:sz-cs w:val="16" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="CommentText">
+			<w:name w:val="annotation text" />
+			<wx:uiName wx:val="Comment Text" />
+			<w:basedOn w:val="Normal" />
+			<w:semiHidden />
+			<w:rsid w:val="00C57C0B" />
+			<w:pPr>
+				<w:pStyle w:val="CommentText" />
+			</w:pPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="CommentSubject">
+			<w:name w:val="annotation subject" />
+			<wx:uiName wx:val="Comment Subject" />
+			<w:basedOn w:val="CommentText" />
+			<w:next w:val="CommentText" />
+			<w:semiHidden />
+			<w:rsid w:val="00C57C0B" />
+			<w:pPr>
+				<w:pStyle w:val="CommentSubject" />
+			</w:pPr>
+			<w:rPr>
+				<w:b />
+				<w:b-cs />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="ColorfulShading-Accent11">
+			<w:name w:val="Colorful Shading - Accent 11" />
+			<w:hidden />
+			<w:semiHidden />
+			<w:rsid w:val="005C6EF6" />
+			<w:pPr>
+				<w:pStyle w:val="ColorfulShading-Accent11" />
+			</w:pPr>
+			<w:rPr>
+				<w:lang w:val="EN-US" w:fareast="EN-CA" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="lgal3">
+			<w:name w:val="lgal3" />
+			<w:basedOn w:val="Normal" />
+			<w:rsid w:val="0001343D" />
+			<w:pPr>
+				<w:pStyle w:val="lgal3" />
+				<w:spacing w:before="100" w:before-autospacing="on" w:after="100" w:after-autospacing="on" />
+			</w:pPr>
+			<w:rPr>
+				<w:rFonts w:fareast="Calibri" />
+				<w:sz w:val="24" />
+				<w:sz-cs w:val="24" />
+				<w:lang w:fareast="EN-US" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="Heading4Char">
+			<w:name w:val="Heading 4 Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="Heading4" />
+			<w:rsid w:val="00574B56" />
+			<w:rPr>
+				<w:b />
+				<w:sz w:val="24" />
+				<w:u w:val="single" />
+				<w:lang w:fareast="EN-CA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="Emphasis">
+			<w:name w:val="Emphasis" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:rsid w:val="002F7425" />
+			<w:rPr>
+				<w:i />
+				<w:i-cs />
+			</w:rPr>
+		</w:style>
+	</w:styles>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:dontDisplayPageBoundaries />
+		<w:attachedTemplate w:val="" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:trackRevisions />
+		<w:defaultTabStop w:val="720" />
+		<w:displayHorizontalDrawingGridEvery w:val="0" />
+		<w:displayVerticalDrawingGridEvery w:val="0" />
+		<w:useMarginsForDrawingGridOrigin />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:validateAgainstSchema />
+		<w:optimizeForBrowser />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+		</w:compat>
+	</w:docPr>
+	<w:body>
+		<wx:sect>
+			<w:p>
+				<w:pPr>
+					<w:jc w:val="center" />
+					<w:rPr>
+						<w:b />
+						<w:sz w:val="24" />
+						<w:sz-cs w:val="24" />
+					</w:rPr>
+				</w:pPr>
+			</w:p>
+			<w:tbl>
+				<w:tblPr>
+					<w:tblpPr w:leftFromText="180" w:rightFromText="180" w:vertAnchor="text" w:horzAnchor="page" w:tblpX="1573" w:tblpY="74" />
+					<w:tblW w:w="9849" w:type="dxa" />
+					<w:tblLook w:val="04A0" />
+				</w:tblPr>
+				<w:tblGrid>
+					<w:gridCol w:w="2989" />
+					<w:gridCol w:w="2775" />
+					<w:gridCol w:w="272" />
+					<w:gridCol w:w="3294" />
+					<w:gridCol w:w="519" />
+					<w:tblGridChange>
+						<w:tblGrid>
+							<w:gridCol w:w="2989" />
+							<w:gridCol w:w="675" />
+							<w:gridCol w:w="2100" />
+							<w:gridCol w:w="272" />
+							<w:gridCol w:w="403" />
+							<w:gridCol w:w="272" />
+							<w:gridCol w:w="2619" />
+							<w:gridCol w:w="519" />
+							<w:gridCol w:w="156" />
+							<w:gridCol w:w="519" />
+						</w:tblGrid>
+					</w:tblGridChange>
+				</w:tblGrid>
+				<w:tr>
+					<w:tblPrEx>
+						<w:tblW w:w="9849" w:type="dxa" />
+						<w:tblLook w:val="04A0" />
+					</w:tblPrEx>
+					<w:trPr>
+						<w:trHeight w:val="255" />
+						<aml:annotation aml:id="0" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+							<aml:content />
+						</aml:annotation>
+					</w:trPr>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="2989" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="1" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:b />
+									<w:b-cs />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="2" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:b />
+											<w:b-cs />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>Brand</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="2775" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:jc w:val="right" />
+								<w:rPr>
+									<aml:annotation aml:id="3" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="4" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>Molson Canadian</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="272" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="nil" />
+								<w:right w:val="nil" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="5" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="6" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t> </w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="3294" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="7" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:b />
+									<w:b-cs />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="8" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:b />
+											<w:b-cs />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>Agency Name</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="519" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="9" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="10" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t> </w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+				</w:tr>
+				<w:tr>
+					<w:tblPrEx>
+						<w:tblW w:w="9849" w:type="dxa" />
+						<w:tblLook w:val="04A0" />
+					</w:tblPrEx>
+					<w:trPr>
+						<w:trHeight w:val="255" />
+						<aml:annotation aml:id="11" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+							<aml:content />
+						</aml:annotation>
+					</w:trPr>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="2989" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+							<aml:annotation aml:id="12" aml:author="MCBC" aml:createdate="2011-11-14T12:44:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="3664" w:type="dxa" />
+									<w:gridSpan w:val="2" />
+									<w:tcBorders>
+										<w:top w:val="nil" />
+										<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+										<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+										<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+									</w:tcBorders>
+									<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+									<w:noWrap />
+									<w:vAlign w:val="bottom" />
+									<w:hideMark />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="13" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:b />
+									<w:b-cs />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="14" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:b />
+											<w:b-cs />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>Year</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="2775" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+							<aml:annotation aml:id="15" aml:author="MCBC" aml:createdate="2011-11-14T12:44:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="2775" w:type="dxa" />
+									<w:gridSpan w:val="3" />
+									<w:tcBorders>
+										<w:top w:val="nil" />
+										<w:left w:val="nil" />
+										<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+										<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+									</w:tcBorders>
+									<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+									<w:noWrap />
+									<w:vAlign w:val="bottom" />
+									<w:hideMark />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:jc w:val="right" />
+								<w:rPr>
+									<aml:annotation aml:id="16" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="17" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>2012</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="272" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="nil" />
+								<w:right w:val="nil" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+							<aml:annotation aml:id="18" aml:author="MCBC" aml:createdate="2011-11-14T12:44:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="272" w:type="dxa" />
+									<w:tcBorders>
+										<w:top w:val="nil" />
+										<w:left w:val="nil" />
+										<w:bottom w:val="nil" />
+										<w:right w:val="nil" />
+									</w:tcBorders>
+									<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+									<w:noWrap />
+									<w:vAlign w:val="bottom" />
+									<w:hideMark />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="19" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="20" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t> </w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="3294" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+							<aml:annotation aml:id="21" aml:author="MCBC" aml:createdate="2011-11-14T12:44:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="3294" w:type="dxa" />
+									<w:gridSpan w:val="3" />
+									<w:tcBorders>
+										<w:top w:val="nil" />
+										<w:left w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+										<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+										<w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+									</w:tcBorders>
+									<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+									<w:noWrap />
+									<w:vAlign w:val="bottom" />
+									<w:hideMark />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:rPr>
+									<aml:annotation aml:id="22" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:b />
+									<w:b-cs />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="23" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:b />
+											<w:b-cs />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>Date/Version</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+					<w:tc>
+						<w:tcPr>
+							<w:tcW w:w="519" w:type="dxa" />
+							<w:tcBorders>
+								<w:top w:val="nil" />
+								<w:left w:val="nil" />
+								<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+								<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+							</w:tcBorders>
+							<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+							<w:noWrap />
+							<w:vAlign w:val="bottom" />
+							<w:hideMark />
+							<aml:annotation aml:id="24" aml:author="MCBC" aml:createdate="2011-11-14T12:44:00Z" w:type="Word.Formatting">
+								<aml:content>
+									<w:tcW w:w="519" w:type="dxa" />
+									<w:tcBorders>
+										<w:top w:val="nil" />
+										<w:left w:val="nil" />
+										<w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+										<w:right w:val="single" w:sz="8" wx:bdrwidth="20" w:space="0" w:color="auto" />
+									</w:tcBorders>
+									<w:shd w:val="clear" w:color="000000" w:fill="FFFFFF" />
+									<w:noWrap />
+									<w:vAlign w:val="bottom" />
+									<w:hideMark />
+								</aml:content>
+							</aml:annotation>
+						</w:tcPr>
+						<w:p>
+							<w:pPr>
+								<w:jc w:val="right" />
+								<w:rPr>
+									<aml:annotation aml:id="25" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion" />
+									<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+									<w:sz w:val="16" />
+									<w:sz-cs w:val="16" />
+									<w:lang w:fareast="EN-US" />
+								</w:rPr>
+							</w:pPr>
+							<aml:annotation aml:id="26" aml:author="MCBC" aml:createdate="2011-11-07T14:06:00Z" w:type="Word.Insertion">
+								<aml:content>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:ascii="Arial" w:h-ansi="Arial" w:cs="Arial" />
+											<w:sz w:val="16" />
+											<w:sz-cs w:val="16" />
+											<w:lang w:fareast="EN-US" />
+										</w:rPr>
+										<w:t>27-Oct-11</w:t>
+									</w:r>
+								</aml:content>
+							</aml:annotation>
+						</w:p>
+					</w:tc>
+				</w:tr>
+			</w:tbl>
+			<w:p>
+				<w:pPr>
+					<w:jc w:val="center" />
+					<w:rPr>
+						<w:sz w:val="24" />
+						<w:sz-cs w:val="24" />
+					</w:rPr>
+				</w:pPr>
+				<aml:annotation aml:id="27" w:type="Word.Bookmark.Start" w:name="_GoBack" />
+				<aml:annotation aml:id="27" w:type="Word.Bookmark.End" />
+			</w:p>
+			<w:sectPr>
+				<w:hdr w:type="even">
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="Header" />
+							<w:framePr w:wrap="around" w:vanchor="text" w:hanchor="margin" w:x-align="center" w:y="1" />
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="begin" />
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:instrText>PAGE  </w:instrText>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="separate" />
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+								<w:noProof />
+							</w:rPr>
+							<w:t>7</w:t>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="end" />
+						</w:r>
+					</w:p>
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="Header" />
+						</w:pPr>
+					</w:p>
+				</w:hdr>
+				<w:hdr w:type="first">
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="Header" />
+							<w:jc w:val="center" />
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="begin" />
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:instrText> PAGE </w:instrText>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="separate" />
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+								<w:noProof />
+							</w:rPr>
+							<w:t>1</w:t>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="PageNumber" />
+							</w:rPr>
+							<w:fldChar w:fldCharType="end" />
+						</w:r>
+					</w:p>
+				</w:hdr>
+				<w:type w:val="continuous" />
+				<w:pgSz w:w="12240" w:h="15840" />
+				<w:pgMar w:top="1440" w:right="1800" w:bottom="1008" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+				<w:cols w:space="720" />
+				<w:titlePg />
+			</w:sectPr>
+		</wx:sect>
+	</w:body>
+</w:wordDocument>

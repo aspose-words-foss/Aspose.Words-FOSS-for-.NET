@@ -1,0 +1,17 @@
+﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
+// 30/10/2011 by Dmitry Vorobyev
+
+namespace Aspose.Words.Fields
+{
+    /// <summary>
+    /// Implements the PRIVATE field.
+    /// <para>To learn more, visit the <a href="https://docs.aspose.com/words/net/working-with-fields/">Working with Fields</a> documentation article.</para>
+    /// </summary>
+    /// <remarks>
+    /// Provides a private storage area. This field is used to store data for documents converted from other
+    /// file formats.
+    /// </remarks>
+    public class FieldPrivate : Field
+    {
+    }
+}

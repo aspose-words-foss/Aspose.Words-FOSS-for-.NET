@@ -1,0 +1,16 @@
+# Visual Studio Code - Open Source
+
+***VS Code*** is a type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive editing and debugging support, an extensibility model, and lightweight integration with existing tools.
+___VS Code___ is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on [VS Code's website](https://code.visualstudio.com/Download). To get the latest releases every day, you can install the [Insiders version of VS Code](https://code.visualstudio.com/insiders). This builds from the master branch and is updated daily at the very least.
+<p align="center">
+  <img alt="VS Code in action" src="https://cloud.githubusercontent.com/assets/11839736/16642200/6624dde0-43bd-11e6-8595-c81885ba0dc2.png">
+</p>
+
+---
+
+If you are interested in fixing issues and contributing directly to the code base,
+please see the document How to Contribute, which covers the following:
+* How to build and run from source - https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run
+* The development workflow, including debugging and running tests - https://github.com/Microsoft/vscode/wiki/How-to-Contribute#debugging
+* Coding Guidelines - https://github.com/Microsoft/vscode/wiki/Coding-Guidelines
+Please also see our [Code of Conduct](CODE_OF_CONDUCT.md).

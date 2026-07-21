@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:SmartTagType o:namespaceuri="urn:schemas-microsoft-com:office:smarttags" o:name="place" />
+	<o:SmartTagType o:namespaceuri="urn:schemas-microsoft-com:office:smarttags" o:name="City" />
+	<o:DocumentProperties>
+		<o:Author>q</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-19T12:44:00Z</o:Created>
+		<o:LastSaved>2011-10-19T12:44:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>25</o:Words>
+		<o:Characters>146</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>170</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="SimSun" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="SimSun">
+			<w:altName w:val="宋体" />
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Verdana">
+			<w:panose-1 w:val="020B0604030504040204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="A10006FF" w:usb-1="4000205B" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="@SimSun">
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+			<o:rules v:ext="edit">
+				<o:r id="V:Rule1" type="callout" idref="#_s1098" />
+				<o:r id="V:Rule2" type="callout" idref="#_s1100" />
+				<o:r id="V:Rule3" type="callout" idref="#_s1102" />
+				<o:r id="V:Rule8" type="callout" idref="#_s1115" />
+				<o:r id="V:Rule9" type="connector" idref="#_s1122">
+					<o:proxy start="" idref="#_s1119" connectloc="0" />
+					<o:proxy end="" idref="#_s1118" connectloc="2" />
+				</o:r>
+				<o:r id="V:Rule10" type="connector" idref="#_s1123">
+					<o:proxy start="" idref="#_s1120" connectloc="0" />
+					<o:proxy end="" idref="#_s1118" connectloc="2" />
+				</o:r>
+				<o:r id="V:Rule13" type="connector" idref="#_s1128">
+					<o:proxy start="" idref="#_s1127" connectloc="0" />
+					<o:proxy end="" idref="#_s1119" connectloc="2" />
+				</o:r>
+				<o:r id="V:Rule14" type="connector" idref="#_s1130">
+					<o:proxy start="" idref="#_s1129" connectloc="0" />
+					<o:proxy end="" idref="#_s1119" connectloc="2" />
+				</o:r>
+			</o:rules>
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:doNotEmbedSystemFonts />
+		<w:proofState w:spelling="clean" w:grammar="clean" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:displayHorizontalDrawingGridEvery w:val="0" />
+		<w:displayVerticalDrawingGridEvery w:val="0" />
+		<w:useMarginsForDrawingGridOrigin />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:footnoteLayoutLikeWW8 />
+			<w:shapeLayoutLikeWW8 />
+			<w:alignTablesRowByRow />
+			<w:forgetLastTabAlignment />
+			<w:doNotUseHTMLParagraphAutoSpacing />
+			<w:layoutRawTableWidth />
+			<w:layoutTableRowsApart />
+			<w:useWord97LineBreakingRules />
+			<w:dontAllowFieldEndSelect />
+			<w:useWord2002TableStyleRules />
+			<w:useFELayout />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="0032726E" />
+			<wsp:rsid wsp:val="0032726E" />
+			<wsp:rsid wsp:val="00433A14" />
+			<wsp:rsid wsp:val="005A1E1E" />
+			<wsp:rsid wsp:val="0093351F" />
+			<wsp:rsid wsp:val="00A53C82" />
+			<wsp:rsid wsp:val="00D96ECE" />
+			<wsp:rsid wsp:val="00E3770D" />
+			<wsp:rsid wsp:val="00E460AC" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="0032726E" wsp:rsidRDefault="00E3770D">
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="005A1E1E">
+				<w:pict>
+					<v:group id="_x0000_s1117" editas="orgchart" style="width:200pt;height:170.25pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,3791" coordsize="5939,2880">
+						<o:diagram v:ext="edit" dgmstyle="12" dgmscalex="44139" dgmscaley="77484" dgmfontsize="8" constrainbounds="0,0,0,0" autoformat="t">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1118" iddest="#_s1118" />
+								<o:rel v:ext="edit" idsrc="#_s1119" iddest="#_s1118" idcntr="#_s1122" />
+								<o:rel v:ext="edit" idsrc="#_s1120" iddest="#_s1118" idcntr="#_s1123" />
+								<o:rel v:ext="edit" idsrc="#_s1127" iddest="#_s1119" idcntr="#_s1128" />
+								<o:rel v:ext="edit" idsrc="#_s1129" iddest="#_s1119" idcntr="#_s1130" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="if lineDrawn pixelLineWidth 0" />
+								<v:f eqn="sum @0 1 0" />
+								<v:f eqn="sum 0 0 @1" />
+								<v:f eqn="prod @2 1 2" />
+								<v:f eqn="prod @3 21600 pixelWidth" />
+								<v:f eqn="prod @3 21600 pixelHeight" />
+								<v:f eqn="sum @0 0 1" />
+								<v:f eqn="prod @6 1 2" />
+								<v:f eqn="prod @7 21600 pixelWidth" />
+								<v:f eqn="sum @8 21600 0" />
+								<v:f eqn="prod @7 21600 pixelHeight" />
+								<v:f eqn="sum @10 21600 0" />
+							</v:formulas>
+							<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+							<o:lock v:ext="edit" aspectratio="t" />
+						</v:shapetype>
+						<v:shape id="_x0000_s1116" type="#_x0000_t75" style="position:absolute;left:1726;top:3791;width:5939;height:2880" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" aspectratio="f" text="t" />
+						</v:shape>
+						<v:shapetype id="_x0000_t34" coordsize="21600,21600" o:spt="34" o:oned="t" adj="10800" path="m,l@0,0@0,21600,21600,21600e" filled="f">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="val #0" />
+							</v:formulas>
+							<v:path arrowok="t" fillok="f" o:connecttype="none" />
+							<v:handles>
+								<v:h position="#0,center" />
+							</v:handles>
+							<o:lock v:ext="edit" shapetype="t" />
+						</v:shapetype>
+						<v:shape id="_s1130" o:spid="_x0000_s1130" type="#_x0000_t34" style="position:absolute;left:5595;top:5141;width:360;height:1259;rotation:270;flip:x" o:connectortype="elbow" adj="7200,110452,-208280" strokeweight=".25pt" />
+						<v:shape id="_s1128" o:spid="_x0000_s1128" type="#_x0000_t34" style="position:absolute;left:4335;top:5140;width:360;height:1261;rotation:270" o:connectortype="elbow" adj="7200,-110332,-134960" strokeweight=".25pt" />
+						<v:shape id="_s1123" o:spid="_x0000_s1123" type="#_x0000_t34" style="position:absolute;left:6855;top:4060;width:360;height:1261;rotation:270;flip:x" o:connectortype="elbow" adj="7200,72173,-244960" strokeweight=".25pt" />
+						<v:shape id="_s1122" o:spid="_x0000_s1122" type="#_x0000_t34" style="position:absolute;left:5595;top:4061;width:360;height:1259;rotation:270" o:connectortype="elbow" adj="7200,-72252,-171640" strokeweight=".25pt" />
+						<v:shapetype id="_x0000_t93" coordsize="21600,21600" o:spt="93" adj="16200,5400" path="m@0,l@0@1,3375@1,3375@2@0@2@0,21600,21600,10800xem1350@1l1350@2,2700@2,2700@1xem0@1l0@2,675@2,675@1xe">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="val #0" />
+								<v:f eqn="val #1" />
+								<v:f eqn="sum height 0 #1" />
+								<v:f eqn="sum 10800 0 #1" />
+								<v:f eqn="sum width 0 #0" />
+								<v:f eqn="prod @4 @3 10800" />
+								<v:f eqn="sum width 0 @5" />
+							</v:formulas>
+							<v:path o:connecttype="custom" o:connectlocs="@0,0;0,10800;@0,21600;21600,10800" o:connectangles="270,180,90,0" textboxrect="3375,@1,@6,@2" />
+							<v:handles>
+								<v:h position="#0,#1" xrange="3375,21600" yrange="0,10800" />
+							</v:handles>
+						</v:shapetype>
+						<v:shape id="_s1118" o:spid="_x0000_s1118" type="#_x0000_t93" style="position:absolute;left:4245;top:3791;width:2160;height:720;v-text-anchor:middle" o:dgmlayout="0" o:dgmnodekind="1" adj="21600,0" fillcolor="#60897c" strokecolor="#60897c" strokeweight=".25pt">
+							<v:fill opacity=".5" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00A53C82" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+										</w:pPr>
+										<w:r>
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+											<w:t>Boss</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1119" o:spid="_x0000_s1119" type="#_x0000_t93" style="position:absolute;left:2985;top:4871;width:2160;height:720;v-text-anchor:middle" o:dgmlayout="0" o:dgmnodekind="0" adj="21600,0" fillcolor="#690" strokecolor="#690" strokeweight=".25pt">
+							<v:fill opacity=".5" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00A53C82" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+										</w:pPr>
+										<w:r>
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+											<w:t>John</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1120" o:spid="_x0000_s1120" type="#_x0000_t93" style="position:absolute;left:5505;top:4871;width:2160;height:720;v-text-anchor:middle" o:dgmlayout="0" o:dgmnodekind="0" adj="21600,0" fillcolor="#690" strokecolor="#690" strokeweight=".25pt">
+							<v:fill opacity=".5" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00A53C82" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+										</w:pPr>
+										<w:r>
+											<w:rPr>
+												<w:sz w:val="14" />
+												<w:sz-cs w:val="14" />
+											</w:rPr>
+											<w:t>Simon</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1127" o:spid="_x0000_s1127" type="#_x0000_t93" style="position:absolute;left:1726;top:5951;width:2159;height:720;v-text-anchor:middle" o:dgmlayout="2" o:dgmnodekind="0" adj="21600,0" fillcolor="#cc0" strokecolor="#cc0" strokeweight=".25pt">
+							<v:fill opacity=".5" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00A53C82" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="13" />
+												<w:sz-cs w:val="13" />
+											</w:rPr>
+										</w:pPr>
+										<st1:City w:st="on">
+											<st1:place w:st="on">
+												<w:r>
+													<w:rPr>
+														<w:sz w:val="13" />
+														<w:sz-cs w:val="13" />
+													</w:rPr>
+													<w:t>Alice</w:t>
+												</w:r>
+											</st1:place>
+										</st1:City>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1129" o:spid="_x0000_s1129" type="#_x0000_t93" style="position:absolute;left:4245;top:5951;width:2159;height:720;v-text-anchor:middle" o:dgmlayout="2" o:dgmnodekind="0" adj="21600,0" fillcolor="#cc0" strokecolor="#cc0" strokeweight=".25pt">
+							<v:fill opacity=".5" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00A53C82" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="13" />
+												<w:sz-cs w:val="13" />
+											</w:rPr>
+										</w:pPr>
+										<w:r>
+											<w:rPr>
+												<w:sz w:val="13" />
+												<w:sz-cs w:val="13" />
+											</w:rPr>
+											<w:t>Bob</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+			<w:r wsp:rsidR="0032726E">
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="005A1E1E">
+				<w:pict>
+					<v:group id="_x0000_s1027" editas="cycle" style="width:158.15pt;height:174.75pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,1631" coordsize="8640,8640">
+						<o:diagram v:ext="edit" dgmstyle="12" dgmscalex="24831" dgmscaley="22666" dgmfontsize="4" constrainbounds="2374,2279,9718,9623" autoformat="t" reverse="t">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1032" iddest="#_s1032" />
+								<o:rel v:ext="edit" idsrc="#_s1028" iddest="#_s1032" idcntr="#_s1039" />
+								<o:rel v:ext="edit" idsrc="#_s1034" iddest="#_s1028" idcntr="#_s1040" />
+								<o:rel v:ext="edit" idsrc="#_s1029" iddest="#_s1034" idcntr="#_s1041" />
+								<o:rel v:ext="edit" idsrc="#_s1036" iddest="#_s1029" idcntr="#_s1042" />
+								<o:rel v:ext="edit" idsrc="#_s1032" iddest="#_s1036" idcntr="#_s1038" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shape id="_x0000_s1026" type="#_x0000_t75" style="position:absolute;left:1726;top:1631;width:8640;height:8640" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" aspectratio="f" text="t" />
+						</v:shape>
+						<v:shapetype id="_x0000_t99" coordsize="21600,21600" o:spt="99" adj="-11796480,,5400" path="al10800,10800@8@8@4@6,10800,10800,10800,10800@9@7l@30@31@17@18@24@25@15@16@32@33xe">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="val #1" />
+								<v:f eqn="val #0" />
+								<v:f eqn="sum #1 0 #0" />
+								<v:f eqn="val 10800" />
+								<v:f eqn="sum 0 0 #1" />
+								<v:f eqn="sumangle @2 360 0" />
+								<v:f eqn="if @2 @2 @5" />
+								<v:f eqn="sum 0 0 @6" />
+								<v:f eqn="val #2" />
+								<v:f eqn="sum 0 0 #0" />
+								<v:f eqn="sum #2 0 2700" />
+								<v:f eqn="cos @10 #1" />
+								<v:f eqn="sin @10 #1" />
+								<v:f eqn="cos 13500 #1" />
+								<v:f eqn="sin 13500 #1" />
+								<v:f eqn="sum @11 10800 0" />
+								<v:f eqn="sum @12 10800 0" />
+								<v:f eqn="sum @13 10800 0" />
+								<v:f eqn="sum @14 10800 0" />
+								<v:f eqn="prod #2 1 2" />
+								<v:f eqn="sum @19 5400 0" />
+								<v:f eqn="cos @20 #1" />
+								<v:f eqn="sin @20 #1" />
+								<v:f eqn="sum @21 10800 0" />
+								<v:f eqn="sum @12 @23 @22" />
+								<v:f eqn="sum @22 @23 @11" />
+								<v:f eqn="cos 10800 #1" />
+								<v:f eqn="sin 10800 #1" />
+								<v:f eqn="cos #2 #1" />
+								<v:f eqn="sin #2 #1" />
+								<v:f eqn="sum @26 10800 0" />
+								<v:f eqn="sum @27 10800 0" />
+								<v:f eqn="sum @28 10800 0" />
+								<v:f eqn="sum @29 10800 0" />
+								<v:f eqn="sum @19 5400 0" />
+								<v:f eqn="cos @34 #0" />
+								<v:f eqn="sin @34 #0" />
+								<v:f eqn="mid #0 #1" />
+								<v:f eqn="sumangle @37 180 0" />
+								<v:f eqn="if @2 @37 @38" />
+								<v:f eqn="cos 10800 @39" />
+								<v:f eqn="sin 10800 @39" />
+								<v:f eqn="cos #2 @39" />
+								<v:f eqn="sin #2 @39" />
+								<v:f eqn="sum @40 10800 0" />
+								<v:f eqn="sum @41 10800 0" />
+								<v:f eqn="sum @42 10800 0" />
+								<v:f eqn="sum @43 10800 0" />
+								<v:f eqn="sum @35 10800 0" />
+								<v:f eqn="sum @36 10800 0" />
+							</v:formulas>
+							<v:path o:connecttype="custom" o:connectlocs="@44,@45;@48,@49;@46,@47;@17,@18;@24,@25;@15,@16" textboxrect="3163,3163,18437,18437" />
+							<v:handles>
+								<v:h position="@3,#0" polar="10800,10800" />
+								<v:h position="#2,#1" polar="10800,10800" radiusrange="0,10800" />
+							</v:handles>
+						</v:shapetype>
+						<v:shape id="_s1042" o:spid="_x0000_s1042" type="#_x0000_t99" style="position:absolute;left:3843;top:2279;width:4407;height:4407;flip:x;v-text-anchor:middle" o:dgmnodekind="65535" adj="-7471104,-5505024,7200" strokecolor="#9c0" strokeweight="6pt">
+							<v:stroke linestyle="thinThin" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1041" o:spid="_x0000_s1041" type="#_x0000_t99" style="position:absolute;left:2446;top:3294;width:4407;height:4407;rotation:72;flip:x;v-text-anchor:middle" o:dgmnodekind="65535" adj="-7471104,-5505024,7200" strokecolor="#9c0" strokeweight="6pt">
+							<v:stroke linestyle="thinThin" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1040" o:spid="_x0000_s1040" type="#_x0000_t99" style="position:absolute;left:2980;top:4937;width:4407;height:4407;rotation:144;flip:x;v-text-anchor:middle" o:dgmnodekind="65535" adj="-7471104,-5505024,7200" strokecolor="#194349" strokeweight="6pt">
+							<v:stroke linestyle="thinThin" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1039" o:spid="_x0000_s1039" type="#_x0000_t99" style="position:absolute;left:4707;top:4936;width:4407;height:4407;rotation:216;flip:x;v-text-anchor:middle" o:dgmnodekind="65535" adj="-7471104,-5505024,7200" strokecolor="#669" strokeweight="6pt">
+							<v:stroke linestyle="thinThin" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1038" o:spid="_x0000_s1038" type="#_x0000_t99" style="position:absolute;left:5240;top:3293;width:4407;height:4407;rotation:288;flip:x;v-text-anchor:middle" o:dgmnodekind="65535" adj="-7471104,-5505024,7200" strokecolor="#690" strokeweight="6pt">
+							<v:stroke linestyle="thinThin" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:rect id="_s1036" o:spid="_x0000_s1036" style="position:absolute;left:7178;top:2467;width:1621;height:1621;v-text-anchor:middle" o:dgmnodekind="0" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="00433A14" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00433A14">
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+											<w:t>Task 2</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:rect id="_s1029" o:spid="_x0000_s1029" style="position:absolute;left:8379;top:6161;width:1621;height:1621;v-text-anchor:middle" o:dgmnodekind="0" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="00433A14" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00433A14">
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+											<w:t>Task 3</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:rect id="_s1034" o:spid="_x0000_s1034" style="position:absolute;left:5237;top:8445;width:1621;height:1621;v-text-anchor:middle" o:dgmnodekind="0" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="00433A14" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00433A14">
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+											<w:t>Task 4</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:rect id="_s1028" o:spid="_x0000_s1028" style="position:absolute;left:2094;top:6162;width:1621;height:1621;v-text-anchor:middle" o:dgmnodekind="0" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="00433A14" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00433A14">
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+											<w:t>Task 5</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:rect id="_s1032" o:spid="_x0000_s1032" style="position:absolute;left:3294;top:2468;width:1621;height:1621;v-text-anchor:middle" o:dgmnodekind="0" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="00433A14" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00433A14">
+											<w:rPr>
+												<w:sz w:val="23" />
+												<w:sz-cs w:val="23" />
+											</w:rPr>
+											<w:t>Task 1</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="0032726E" wsp:rsidRDefault="0032726E">
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="005A1E1E">
+				<w:pict>
+					<v:group id="_x0000_s1044" editas="radial" style="width:213.75pt;height:213.75pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,1631" coordsize="8640,8640">
+						<o:lock v:ext="edit" aspectratio="t" />
+						<o:diagram v:ext="edit" dgmstyle="0" dgmscalex="32427" dgmscaley="32427" dgmfontsize="5" constrainbounds="1942,1847,10150,10055">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1045" iddest="#_s1045" />
+								<o:rel v:ext="edit" idsrc="#_s1046" iddest="#_s1045" idcntr="#_s1047" />
+								<o:rel v:ext="edit" idsrc="#_s1048" iddest="#_s1045" idcntr="#_s1049" />
+								<o:rel v:ext="edit" idsrc="#_s1052" iddest="#_s1045" idcntr="#_s1053" />
+								<o:rel v:ext="edit" idsrc="#_s1054" iddest="#_s1045" idcntr="#_s1055" />
+								<o:rel v:ext="edit" idsrc="#_s1056" iddest="#_s1045" idcntr="#_s1057" />
+								<o:rel v:ext="edit" idsrc="#_s1058" iddest="#_s1045" idcntr="#_s1059" />
+								<o:rel v:ext="edit" idsrc="#_s1060" iddest="#_s1045" idcntr="#_s1061" />
+								<o:rel v:ext="edit" idsrc="#_s1062" iddest="#_s1045" idcntr="#_s1063" />
+								<o:rel v:ext="edit" idsrc="#_s1066" iddest="#_s1045" idcntr="#_s1067" />
+								<o:rel v:ext="edit" idsrc="#_s1074" iddest="#_s1045" idcntr="#_s1075" />
+								<o:rel v:ext="edit" idsrc="#_s1070" iddest="#_s1045" idcntr="#_s1071" />
+								<o:rel v:ext="edit" idsrc="#_s1072" iddest="#_s1045" idcntr="#_s1073" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shape id="_x0000_s1043" type="#_x0000_t75" style="position:absolute;left:1726;top:1631;width:8640;height:8640" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:line id="_s1073" o:spid="_x0000_s1073" style="position:absolute;flip:x y;v-text-anchor:middle" from="4662,3550" to="5715,5374" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1072" o:spid="_x0000_s1072" style="position:absolute;left:3661;top:2309;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1071" o:spid="_x0000_s1071" style="position:absolute;flip:x y;v-text-anchor:middle" from="3648,4564" to="5472,5617" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1070" o:spid="_x0000_s1070" style="position:absolute;left:2404;top:3567;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1075" o:spid="_x0000_s1075" style="position:absolute;flip:x;v-text-anchor:middle" from="3277,5949" to="5383,5949" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1074" o:spid="_x0000_s1074" style="position:absolute;left:1944;top:5285;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1067" o:spid="_x0000_s1067" style="position:absolute;flip:x;v-text-anchor:middle" from="3648,6281" to="5472,7334" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1066" o:spid="_x0000_s1066" style="position:absolute;left:2405;top:7003;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1063" o:spid="_x0000_s1063" style="position:absolute;flip:x;v-text-anchor:middle" from="4662,6524" to="5715,8348" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1062" o:spid="_x0000_s1062" style="position:absolute;left:3663;top:8261;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1061" o:spid="_x0000_s1061" style="position:absolute;v-text-anchor:middle" from="6047,6613" to="6047,8719" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1060" o:spid="_x0000_s1060" style="position:absolute;left:5382;top:8721;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1059" o:spid="_x0000_s1059" style="position:absolute;v-text-anchor:middle" from="6379,6524" to="7432,8348" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1058" o:spid="_x0000_s1058" style="position:absolute;left:7100;top:8260;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1057" o:spid="_x0000_s1057" style="position:absolute;v-text-anchor:middle" from="6622,6281" to="8446,7334" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1056" o:spid="_x0000_s1056" style="position:absolute;left:8358;top:7002;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1055" o:spid="_x0000_s1055" style="position:absolute;v-text-anchor:middle" from="6711,5949" to="8817,5949" o:dgmnodekind="65535" strokecolor="red" strokeweight="2.25pt" />
+						<v:oval id="_s1054" o:spid="_x0000_s1054" style="position:absolute;left:8818;top:5283;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1053" o:spid="_x0000_s1053" style="position:absolute;flip:y;v-text-anchor:middle" from="6622,4564" to="8446,5617" o:dgmnodekind="65535" strokeweight="2.25pt">
+							<v:stroke startarrow="diamond" endarrow="block" />
+						</v:line>
+						<v:oval id="_s1052" o:spid="_x0000_s1052" style="position:absolute;left:8357;top:3565;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1049" o:spid="_x0000_s1049" style="position:absolute;flip:y;v-text-anchor:middle" from="6379,3550" to="7432,5374" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1048" o:spid="_x0000_s1048" style="position:absolute;left:7099;top:2307;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:line id="_s1047" o:spid="_x0000_s1047" style="position:absolute;flip:y;v-text-anchor:middle" from="6046,3179" to="6046,5285" o:dgmnodekind="65535" strokeweight="2.25pt" />
+						<v:oval id="_s1046" o:spid="_x0000_s1046" style="position:absolute;left:5380;top:1847;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<v:oval id="_s1045" o:spid="_x0000_s1045" style="position:absolute;left:5380;top:5285;width:1332;height:1332;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:sz w:val="8" />
+												<w:sz-cs w:val="8" />
+											</w:rPr>
+										</w:pPr>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:oval>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="005A1E1E">
+				<w:pict>
+					<v:group id="_x0000_s1077" editas="venn" style="width:212.75pt;height:212.75pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,2193" coordsize="8640,8640">
+						<o:lock v:ext="edit" aspectratio="t" />
+						<o:diagram v:ext="edit" dgmstyle="7" dgmscalex="32275" dgmscaley="32275" dgmfontsize="5" constrainbounds="1726,2193,10366,10833" autoformat="t">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1078" iddest="#_s1078" />
+								<o:rel v:ext="edit" idsrc="#_s1079" iddest="#_s1078" />
+								<o:rel v:ext="edit" idsrc="#_s1084" iddest="#_s1084" />
+								<o:rel v:ext="edit" idsrc="#_s1085" iddest="#_s1084" />
+								<o:rel v:ext="edit" idsrc="#_s1086" iddest="#_s1086" />
+								<o:rel v:ext="edit" idsrc="#_s1087" iddest="#_s1086" />
+								<o:rel v:ext="edit" idsrc="#_s1088" iddest="#_s1088" />
+								<o:rel v:ext="edit" idsrc="#_s1089" iddest="#_s1088" />
+								<o:rel v:ext="edit" idsrc="#_s1080" iddest="#_s1080" />
+								<o:rel v:ext="edit" idsrc="#_s1081" iddest="#_s1080" />
+								<o:rel v:ext="edit" idsrc="#_s1082" iddest="#_s1082" />
+								<o:rel v:ext="edit" idsrc="#_s1083" iddest="#_s1082" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shape id="_x0000_s1076" type="#_x0000_t75" style="position:absolute;left:1726;top:2193;width:8640;height:8640" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:oval id="_s1078" o:spid="_x0000_s1078" style="position:absolute;left:4426;top:3659;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="gray" strokecolor="gray">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1079" o:spid="_x0000_s1079" style="position:absolute;left:5614;top:2525;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>A</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:oval id="_s1084" o:spid="_x0000_s1084" style="position:absolute;left:5494;top:4275;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#099" strokecolor="#099">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1085" o:spid="_x0000_s1085" style="position:absolute;left:8798;top:4113;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>B</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:oval id="_s1086" o:spid="_x0000_s1086" style="position:absolute;left:5495;top:5508;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#339" strokecolor="#339">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1087" o:spid="_x0000_s1087" style="position:absolute;left:8798;top:8101;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>C</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:oval id="_s1088" o:spid="_x0000_s1088" style="position:absolute;left:4427;top:6126;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#bbe0e3" strokecolor="#bbe0e3">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1089" o:spid="_x0000_s1089" style="position:absolute;left:5614;top:9690;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>D</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:oval id="_s1080" o:spid="_x0000_s1080" style="position:absolute;left:3358;top:5510;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#9c0" strokecolor="#9c0">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1081" o:spid="_x0000_s1081" style="position:absolute;left:2430;top:8101;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>E</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<v:oval id="_s1082" o:spid="_x0000_s1082" style="position:absolute;left:3357;top:4276;width:3240;height:3240;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="gray" strokecolor="gray">
+							<v:fill opacity=".5" o:opacity2=".5" rotate="t" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:rect id="_s1083" o:spid="_x0000_s1083" style="position:absolute;left:2430;top:4113;width:864;height:810;v-text-anchor:middle" o:dgmnodekind="5" filled="f" stroked="f">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="0032726E" wsp:rsidRPr="0032726E" wsp:rsidRDefault="0032726E" wsp:rsidP="0032726E">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="0032726E">
+											<w:t>F</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:rect>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00E3770D" wsp:rsidRDefault="00E3770D">
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:group id="_x0000_s1091" editas="stacked" style="width:3in;height:3in;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,1631" coordsize="8640,8640">
+						<o:lock v:ext="edit" aspectratio="t" />
+						<o:diagram v:ext="edit" dgmstyle="4" dgmscalex="32768" dgmscaley="32768" dgmfontsize="6" constrainbounds="1942,1847,10150,10055" autoformat="t">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1092" iddest="#_s1092" />
+								<o:rel v:ext="edit" idsrc="#_s1093" iddest="#_s1093" />
+								<o:rel v:ext="edit" idsrc="#_s1094" iddest="#_s1094" />
+								<o:rel v:ext="edit" idsrc="#_s1103" iddest="#_s1103" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shape id="_x0000_s1090" type="#_x0000_t75" style="position:absolute;left:1726;top:1631;width:8640;height:8640" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shapetype id="_x0000_t8" coordsize="21600,21600" o:spt="8" adj="5400" path="m,l@0,21600@1,21600,21600,xe">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="val #0" />
+								<v:f eqn="sum width 0 #0" />
+								<v:f eqn="prod #0 1 2" />
+								<v:f eqn="sum width 0 @2" />
+								<v:f eqn="mid #0 width" />
+								<v:f eqn="mid @1 0" />
+								<v:f eqn="prod height width #0" />
+								<v:f eqn="prod @6 1 2" />
+								<v:f eqn="sum height 0 @7" />
+								<v:f eqn="prod width 1 2" />
+								<v:f eqn="sum #0 0 @9" />
+								<v:f eqn="if @10 @8 0" />
+								<v:f eqn="if @10 @7 height" />
+							</v:formulas>
+							<v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="@3,10800;10800,21600;@2,10800;10800,0" textboxrect="1800,1800,19800,19800;4500,4500,17100,17100;7200,7200,14400,14400" />
+							<v:handles>
+								<v:h position="#0,bottomRight" xrange="0,10800" />
+							</v:handles>
+						</v:shapetype>
+						<v:shape id="_s1092" o:spid="_x0000_s1092" type="#_x0000_t8" style="position:absolute;left:5020;top:2397;width:2052;height:1777;flip:y;v-text-anchor:middle" o:dgmnodekind="0" adj="10800" fillcolor="#0399ff" strokecolor="#4b595b" strokeweight="2.25pt" insetpen="t">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00E3770D">
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+											<w:t>Step 1</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1093" o:spid="_x0000_s1093" type="#_x0000_t8" style="position:absolute;left:3994;top:4174;width:4104;height:1777;flip:y;v-text-anchor:middle" o:dgmnodekind="0" fillcolor="#01bd0a" strokecolor="#019308" strokeweight="2.25pt" insetpen="t">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:r>
+											<w:t>a </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+										<w:proofErr w:type="spellStart" />
+										<w:r>
+											<w:t>a</w:t>
+										</w:r>
+										<w:proofErr w:type="spellEnd" />
+										<w:r>
+											<w:t> </w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1094" o:spid="_x0000_s1094" type="#_x0000_t8" style="position:absolute;left:2968;top:5951;width:6156;height:1777;flip:y;v-text-anchor:middle" o:dgmnodekind="0" adj="3600" fillcolor="#f1fd09" strokecolor="#cad402" strokeweight="2.25pt" insetpen="t">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00E3770D">
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+											<w:t>Step 3</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<v:shape id="_s1103" o:spid="_x0000_s1103" type="#_x0000_t8" style="position:absolute;left:1942;top:7728;width:8208;height:1777;flip:y;v-text-anchor:middle" o:dgmnodekind="0" adj="2700" fillcolor="#ff8c01" strokecolor="#d87600" strokeweight="2.25pt" insetpen="t">
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="00E3770D" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+										</w:pPr>
+										<w:r wsp:rsidRPr="00E3770D">
+											<w:rPr>
+												<w:rFonts w:ascii="Verdana" w:h-ansi="Verdana" />
+												<wx:font wx:val="Verdana" />
+											</w:rPr>
+											<w:t>Step 4</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+						</v:shape>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="005A1E1E">
+				<w:pict>
+					<v:group id="_x0000_s1096" editas="bullseye" style="width:204.65pt;height:204.65pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" coordorigin="1726,5523" coordsize="8640,8640">
+						<o:lock v:ext="edit" aspectratio="t" />
+						<o:diagram v:ext="edit" dgmstyle="9" dgmscalex="31046" dgmscaley="31046" dgmfontsize="5" constrainbounds="1942,5739,10150,13947" autoformat="t">
+							<o:relationtable v:ext="edit">
+								<o:rel v:ext="edit" idsrc="#_s1097" iddest="#_s1097" />
+								<o:rel v:ext="edit" idsrc="#_s1098" iddest="#_s1097" />
+								<o:rel v:ext="edit" idsrc="#_s1099" iddest="#_s1099" />
+								<o:rel v:ext="edit" idsrc="#_s1100" iddest="#_s1099" />
+								<o:rel v:ext="edit" idsrc="#_s1101" iddest="#_s1101" />
+								<o:rel v:ext="edit" idsrc="#_s1102" iddest="#_s1101" />
+								<o:rel v:ext="edit" idsrc="#_s1114" iddest="#_s1114" />
+								<o:rel v:ext="edit" idsrc="#_s1115" iddest="#_s1114" />
+							</o:relationtable>
+						</o:diagram>
+						<v:shape id="_x0000_s1095" type="#_x0000_t75" style="position:absolute;left:1726;top:5523;width:8640;height:8640" o:preferrelative="f">
+							<v:fill o:detectmouseclick="t" />
+							<v:path o:extrusionok="t" o:connecttype="none" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shapetype id="_x0000_t23" coordsize="21600,21600" o:spt="23" adj="5400" path="m,10800qy10800,,21600,10800,10800,21600,,10800xm@0,10800qy10800@2@1,10800,10800@0@0,10800xe">
+							<v:formulas>
+								<v:f eqn="val #0" />
+								<v:f eqn="sum width 0 #0" />
+								<v:f eqn="sum height 0 #0" />
+								<v:f eqn="prod @0 2929 10000" />
+								<v:f eqn="sum width 0 @3" />
+								<v:f eqn="sum height 0 @3" />
+							</v:formulas>
+							<v:path o:connecttype="custom" o:connectlocs="10800,0;3163,3163;0,10800;3163,18437;10800,21600;18437,18437;21600,10800;18437,3163" textboxrect="3163,3163,18437,18437" />
+							<v:handles>
+								<v:h position="#0,center" xrange="0,10800" />
+							</v:handles>
+						</v:shapetype>
+						<v:shape id="_s1114" o:spid="_x0000_s1114" type="#_x0000_t23" style="position:absolute;left:1942;top:6765;width:6156;height:6156" o:dgmnodekind="0" adj="2700" fillcolor="#bbe0e3" strokecolor="#099">
+							<v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<v:shadow on="t" color="#099" offset="-4pt,4pt" offset2="4pt,-4pt" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shapetype id="_x0000_t42" coordsize="21600,21600" o:spt="42" adj="-10080,24300,-3600,4050,-1800,4050" path="m@0@1l@2@3@4@5nfem,l21600,r,21600l,21600nsxe">
+							<v:stroke joinstyle="miter" />
+							<v:formulas>
+								<v:f eqn="val #0" />
+								<v:f eqn="val #1" />
+								<v:f eqn="val #2" />
+								<v:f eqn="val #3" />
+								<v:f eqn="val #4" />
+								<v:f eqn="val #5" />
+							</v:formulas>
+							<v:path arrowok="t" o:extrusionok="f" gradientshapeok="t" o:connecttype="custom" o:connectlocs="@0,@1;10800,0;10800,21600;0,10800;21600,10800" />
+							<v:handles>
+								<v:h position="#0,#1" />
+								<v:h position="#2,#3" />
+								<v:h position="#4,#5" />
+							</v:handles>
+							<o:callout v:ext="edit" on="t" textborder="f" />
+						</v:shapetype>
+						<v:shape id="_s1115" o:spid="_x0000_s1115" type="#_x0000_t42" style="position:absolute;left:8919;top:8199;width:1231;height:820" o:dgmnodekind="5" adj="-21155,43311,-6150,10021,-4446,10021,-593,4064" fillcolor="#9c0">
+							<v:shadow on="t" color="#339" offset="3pt,-3pt" offset2="-6pt,6pt" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="005A1E1E" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="005A1E1E">
+											<w:t>D</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+							<o:callout v:ext="edit" minusy="t" />
+						</v:shape>
+						<v:shape id="_s1101" o:spid="_x0000_s1101" type="#_x0000_t23" style="position:absolute;left:2712;top:7535;width:4617;height:4617" o:dgmnodekind="0" adj="3600" fillcolor="#bbe0e3" strokecolor="gray">
+							<v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<v:shadow on="t" offset="-4pt,4pt" offset2="4pt,-4pt" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1102" o:spid="_x0000_s1102" type="#_x0000_t42" style="position:absolute;left:8919;top:7379;width:1231;height:820" o:dgmnodekind="5" adj="-34642,64911,-6113,9995,-4446,9995,-259,3110" fillcolor="#9c0">
+							<v:shadow on="t" color="#339" offset="3pt,-3pt" offset2="-6pt,6pt" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="005A1E1E" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="005A1E1E">
+											<w:t>C</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+							<o:callout v:ext="edit" minusy="t" />
+						</v:shape>
+						<v:shape id="_s1099" o:spid="_x0000_s1099" type="#_x0000_t23" style="position:absolute;left:3481;top:8304;width:3078;height:3078" o:dgmnodekind="0" fillcolor="#bbe0e3" strokecolor="#9c0">
+							<v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<v:shadow on="t" color="#9c0" offset="-4pt,4pt" offset2="4pt,-4pt" />
+							<o:lock v:ext="edit" text="t" />
+						</v:shape>
+						<v:shape id="_s1100" o:spid="_x0000_s1100" type="#_x0000_t42" style="position:absolute;left:8919;top:6559;width:1231;height:820" o:dgmnodekind="5" adj="-48165,86511,-6150,10021,-4446,10021,-259,3118" fillcolor="#9c0">
+							<v:shadow on="t" color="#339" offset="3pt,-3pt" offset2="-6pt,6pt" />
+							<v:textbox inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="005A1E1E" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="005A1E1E">
+											<w:t>B</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+							<o:callout v:ext="edit" minusy="t" />
+						</v:shape>
+						<v:oval id="_s1097" o:spid="_x0000_s1097" style="position:absolute;left:4251;top:9074;width:1539;height:1539" o:dgmnodekind="0" fillcolor="#bbe0e3">
+							<v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+								<o:fill v:ext="view" type="gradientCenter" />
+							</v:fill>
+							<v:shadow on="t" color="black" offset="-4pt,4pt" offset2="4pt,-4pt" />
+							<o:lock v:ext="edit" text="t" />
+						</v:oval>
+						<v:shape id="_s1098" o:spid="_x0000_s1098" type="#_x0000_t42" style="position:absolute;left:8919;top:5739;width:1231;height:820" o:dgmnodekind="5" adj="-68394,108111,-6150,9995,-4446,9995,-259,3110" fillcolor="#9c0">
+							<v:shadow on="t" color="#339" offset="3pt,-3pt" offset2="-6pt,6pt" />
+							<v:textbox style="mso-next-textbox:#_s1098" inset="0,0,0,0">
+								<w:txbxContent>
+									<w:p wsp:rsidR="00E3770D" wsp:rsidRPr="005A1E1E" wsp:rsidRDefault="00E3770D" wsp:rsidP="00E3770D">
+										<w:pPr>
+											<w:jc w:val="center" />
+										</w:pPr>
+										<w:r wsp:rsidRPr="005A1E1E">
+											<w:t>A</w:t>
+										</w:r>
+									</w:p>
+								</w:txbxContent>
+							</v:textbox>
+							<o:callout v:ext="edit" minusy="t" />
+						</v:shape>
+						<w10:anchorlock />
+					</v:group>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:sectPr wsp:rsidR="00E3770D">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>
