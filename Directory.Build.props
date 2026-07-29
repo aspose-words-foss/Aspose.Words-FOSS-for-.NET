@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <!-- Test projects build for a single framework only (the product multi-targets). -->
+    <TestsFramework>net462</TestsFramework>
+
+    <!-- Silences NETSDK1138 when a target reaches end-of-support (net8.0 goes EOL in Nov 2026). -->
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+</Project>

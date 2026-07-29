@@ -1,0 +1,30 @@
+﻿                                                           Discharge Orders Summary
+  Name: Client Name 
+  Acct#: Account Number
+  MR#: Medical Record Number
+  Sex: TestValue
+  Location: TestValue
+
+  Requested by: TestValue(TestValue)
+  Entered by: TestValue(TestValue)
+  Entered: 04/19/2008 19:05
+  Order Set: TestValue                   #Error
+
+  TestValue
+        Requested: 04/19/2008 TestValue                        Scheduled: 04/19/2008 19:05                      Start: 04/19/2008  TestValue                 Stop: 04/19/2008 TestValue
+
+  TestValue
+  When                                             Who                                                         Status 
+  04/19/2008 19:05                                 TestValue(TestValue)                                        TestValue
+
+  TestValue
+        Requested: 04/19/2008 TestValue                        Scheduled: 04/19/2008 19:05                      Start: 04/19/2008  TestValue                 Stop: 04/19/2008 TestValue
+
+  TestValue
+  When                                             Who                                                         Status 
+  04/19/2008 19:05                                 TestValue(TestValue)                                        TestValue
+
+
+
+  Version 1 (Approved 3/1/07)                                                                                   Page: 1
+ 

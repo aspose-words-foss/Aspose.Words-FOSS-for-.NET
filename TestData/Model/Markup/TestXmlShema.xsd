@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<xs:schema id="MarkupSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tbl">
+          <xs:complexType>
+             <xs:sequence>
+               <xs:element name="tblPr" type="xs:integer" />
+               <xs:element name="tblBorders" type="xs:string" />
+               <xs:element name="tblGrid">
+                 <xs:complexType>
+                   <xs:sequence>
+                      <xs:element name="tblLook" type="xs:string" />
+                      <xs:element name="gridCol" type="xs:decimal" />
+                   </xs:sequence>
+                 </xs:complexType>
+               </xs:element>
+             </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

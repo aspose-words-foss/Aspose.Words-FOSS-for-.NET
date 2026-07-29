@@ -1,0 +1,12 @@
+﻿Vertically merged cells.           Row1
+Another line in the cell.
+Row2
+Row2
+Row3
+
+
+C1.1                               C1.2                               C1.3
+C2.1                               Merged vertically                  C2.2
+C3.1                               C3.2
+C4.1                               C4.2                               C4.3
+

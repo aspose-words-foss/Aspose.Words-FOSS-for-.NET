@@ -1,0 +1,24 @@
+********************************************************************************
+Aspose.Words.dll
+********************************************************************************
+ArrayList / Char / enum: False
+ArrayList / DictionaryEntry / enum: False
+ArrayList / ExPolygon / enum: False
+ArrayList / IntPoint / enum: False
+ArrayList / SpanCell / enum: False
+Hashtable / Boolean / enum: False
+Hashtable / Char / enum: False
+SortedList / BorderType / enum: True
+SortedList / Int32 / enum: False
+Stack / Char / enum: False
+********************************************************************************
+Aspose.Foundation.dll
+********************************************************************************
+ArrayList / Double / enum: False
+ArrayList / Int16 / enum: False
+ArrayList / Int32 / enum: False
+ArrayList / Int64 / enum: False
+Hashtable / DmlShapeEffectType / enum: True
+Hashtable / Int32 / enum: False
+SortedList / DmlEffectOrder / enum: True
+SortedList / FileFormat / enum: True

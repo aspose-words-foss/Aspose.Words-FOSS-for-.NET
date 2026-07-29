@@ -1,0 +1,31 @@
+--- a.cs	2019-05-20 17:00:11.760749500 +0300
++++ b.cs	2019-05-20 17:08:22.692904400 +0300
+@@ -3,11 +3,11 @@
+ 
+ namespace Prime.UnitTests.Services
+ {
+-    public class PrimeService_IsPrimeShould
++    public class PrimeServiceTests
+     {
+         private readonly PrimeService _primeService;
+ 
+-        public PrimeService_IsPrimeShould()
++        public PrimeServiceTests()
+         {
+             _primeService = new PrimeService();
+         }
+@@ -19,5 +19,13 @@
+ 
+             Assert.False(result, "1 should not be prime");
+         }
++
++        [Fact]
++        public void ReturnTrueGivenValueOf2()
++        {
++            var result = _primeService.IsPrime(2);
++
++            Assert.True(result, "2 should be prime");
++        }
+     }
+ }
+\ No newline at end of file

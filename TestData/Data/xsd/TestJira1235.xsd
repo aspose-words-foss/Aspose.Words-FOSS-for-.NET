@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+	<xs:element name="indirizzo" type="indirizzo"/>
+	<xs:element name="iscrizione" type="iscrizione"/>
+	<xs:element name="iscrizionePdf" type="iscrizionePdf"/>
+	<xs:element name="istanzaBase" type="istanzaBase"/>
+	<xs:element name="istanzaPdf" type="istanzaPdf"/>
+	<xs:element name="minore" type="minore"/>
+	<xs:element name="turno" type="turno"/>
+	
+	<xs:complexType name="iscrizionePdf">
+		<xs:complexContent>
+			<xs:extension base="istanzaPdf">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="domicilioCivico" type="xs:string"/>
+					<xs:element minOccurs="0" name="domicilioViaDe" type="xs:string"/>
+					<xs:element minOccurs="0" name="domicilioViaIt" type="xs:string"/>
+					<xs:element minOccurs="0" name="residenzaCivico" type="xs:string"/>
+					<xs:element minOccurs="0" name="residenzaViaDe" type="xs:string"/>
+					<xs:element minOccurs="0" name="residenzaViaIt" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="istanzaPdf">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="identita" type="identita"/>
+			<xs:element minOccurs="0" name="istanza" type="istanzaBase"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="identita">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="cap" type="xs:string"/>
+			<xs:element minOccurs="0" name="cellulare" type="xs:string"/>
+			<xs:element minOccurs="0" name="codiceFiscale" type="xs:string"/>
+			<xs:element minOccurs="0" name="codiceIstatComune" type="xs:string"/>
+			<xs:element minOccurs="0" name="codiceIstatComuneDiNascita" type="xs:string"/>
+			<xs:element minOccurs="0" name="cognome" type="xs:string"/>
+			<xs:element minOccurs="0" name="comuneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="comuneDiNascitaDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="comuneDiNascitaIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="comuneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataDiNascita" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="email" type="xs:string"/>
+			<xs:element minOccurs="0" name="linguaPreferita" type="xs:string"/>
+			<xs:element minOccurs="0" name="localitaEstera" type="xs:string"/>
+			<xs:element minOccurs="0" name="localitaEsteraDiNascita" type="xs:string"/>
+			<xs:element minOccurs="0" name="nome" type="xs:string"/>
+			<xs:element minOccurs="0" name="numeroCivico" type="xs:string"/>
+			<xs:element minOccurs="0" name="partitaIva" type="xs:string"/>
+			<xs:element minOccurs="0" name="provinciaDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="provinciaIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="ragioneSocialeDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="ragioneSocialeIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="sesso" type="xs:string"/>
+			<xs:element minOccurs="0" name="statoDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="statoIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="strada" type="xs:string"/>
+			<xs:element minOccurs="0" name="telefono" type="xs:string"/>
+			<xs:element minOccurs="0" name="tipoPersona" type="tipoPersona"/>
+			<xs:element minOccurs="0" name="utenteCollegatoCodiceFiscale" type="xs:string"/>
+			<xs:element minOccurs="0" name="utenteCollegatoCognome" type="xs:string"/>
+			<xs:element minOccurs="0" name="utenteCollegatoNome" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType abstract="false" name="istanzaBase">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="iscrizione">
+		<xs:complexContent>
+			<xs:extension base="istanzaBase">
+				<xs:sequence>
+					<xs:element name="anno" type="xs:int"/>
+					<xs:element minOccurs="0" name="cellulare" type="xs:string"/>
+					<xs:element name="dichiarazioniMendaci" type="xs:boolean"/>
+					<xs:element minOccurs="0" name="domicilio" type="indirizzo"/>
+					<xs:element minOccurs="0" name="email" type="xs:string"/>
+					<xs:element name="familyPlus" type="xs:boolean"/>
+					<xs:element minOccurs="0" name="importo" type="xs:decimal"/>
+					<xs:element name="informativa" type="xs:boolean"/>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="minori" nillable="true" type="minore"/>
+					<xs:element name="minoriResidentiBolzano" type="xs:boolean"/>
+					<xs:element minOccurs="0" name="potestaGenitoriale" type="dominio"/>
+					<xs:element minOccurs="0" name="residenza" type="indirizzo"/>
+					<xs:element name="ricevutaPagamento" type="xs:boolean"/>
+					<xs:element minOccurs="0" name="telefono" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="indirizzo">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="cap" type="xs:string"/>
+			<xs:element minOccurs="0" name="civico" type="xs:string"/>
+			<xs:element minOccurs="0" name="civicoStrada" type="civico"/>
+			<xs:element minOccurs="0" name="comune" type="comune"/>
+			<xs:element minOccurs="0" name="via" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="civico">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="barrato" type="xs:string"/>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element name="numero" type="xs:int"/>
+			<xs:element minOccurs="0" name="scala" type="xs:string"/>
+			<xs:element minOccurs="0" name="strada" type="strada"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="strada">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="areaDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="areaIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="comune">
+		<xs:sequence>
+			<xs:element name="capoluogo" type="xs:boolean"/>
+			<xs:element minOccurs="0" name="codiceIstat" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataFine" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="provincia" type="provincia"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="provincia">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="codiceIstat" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataFine" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizione" type="xs:string"/>
+			<xs:element minOccurs="0" name="siglaAuto" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="minore">
+		<xs:sequence>
+			<xs:element name="assistenzaPersonale" type="xs:boolean"/>
+			<xs:element minOccurs="0" name="certificatoMedico" type="xs:short"/>
+			<xs:element minOccurs="0" name="classe" type="xs:string"/>
+			<xs:element minOccurs="0" name="codiceFiscale" type="xs:string"/>
+			<xs:element minOccurs="0" name="cognome" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataNascita" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="dieta" type="dominio"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="malattie" nillable="true" type="dominio"/>
+			<xs:element minOccurs="0" name="nome" type="xs:string"/>
+			<xs:element name="oreAssistenza" type="xs:int"/>
+			<xs:element minOccurs="0" name="scuola" type="scuola"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="turni" nillable="true" type="turno"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dominio">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="altro" type="xs:string"/>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataFine" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="numero" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="scuola">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="civico" type="civico"/>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataFine" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="email" type="xs:string"/>
+			<xs:element minOccurs="0" name="fax" type="xs:string"/>
+			<xs:element minOccurs="0" name="istitutoComprensivo" type="scuolaType"/>
+			<xs:element minOccurs="0" name="lingua" type="lingua"/>
+			<xs:element minOccurs="0" name="telefono" type="xs:string"/>
+			<xs:element minOccurs="0" name="tipo" type="tipoScuola"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="scuolaType">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="civico" type="civico"/>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element minOccurs="0" name="dataFine" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="email" type="xs:string"/>
+			<xs:element minOccurs="0" name="fax" type="xs:string"/>
+			<xs:element minOccurs="0" name="lingua" type="lingua"/>
+			<xs:element minOccurs="0" name="telefono" type="xs:string"/>
+			<xs:element minOccurs="0" name="tipo" type="tipoScuola"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="turno">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="codice" type="xs:string"/>
+			<xs:element minOccurs="0" name="daData" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="descrizioneDe" type="xs:string"/>
+			<xs:element minOccurs="0" name="descrizioneIt" type="xs:string"/>
+			<xs:element minOccurs="0" name="aData" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="tipoPersona">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PersonaFisica"/>
+			<xs:enumeration value="PersonaGiuridica"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="lingua">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="IT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tipoScuola">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Materna"/>
+			<xs:enumeration value="Elementare"/>
+			<xs:enumeration value="Media"/>
+			<xs:enumeration value="Superiore"/>
+			<xs:enumeration value="Musica"/>
+			<xs:enumeration value="IstitutoComprensivo"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,12 @@
+Test list
+1 test 1
+2 test 2
+2.1
+2.2.
+3 test 3
+4
+2.91
+2.91 text 
+FLOATING POINT NUMBER:
+2.91 2.91
+2.91

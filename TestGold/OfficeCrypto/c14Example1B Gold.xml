@@ -1,0 +1,9 @@
+<?xml-stylesheet href="doc.xsl"
+   type="text/xsl"   ?>
+<doc>Hello, world!
+        <mdssi:Trans xmlns:mdssi="http://mdssi" xmlns:opc="http://opc"> Type="element with prefix and extra '&gt;' at the end"&gt;
+          <opc:Nested Type="nested element with prefix">
+          </opc:Nested>
+        </mdssi:Trans>
+</doc>
+<?pi-without-data?>

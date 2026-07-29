@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<o:DocumentProperties>
+		<o:Author>Sue Hughes</o:Author>
+		<o:LastAuthor>Sue Hughes</o:LastAuthor>
+		<o:Revision>4</o:Revision>
+		<o:TotalTime>4</o:TotalTime>
+		<o:Created>2015-04-07T22:37:00Z</o:Created>
+		<o:LastSaved>2015-04-07T22:41:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>859</o:Words>
+		<o:Characters>4898</o:Characters>
+		<o:Lines>40</o:Lines>
+		<o:Paragraphs>11</o:Paragraphs>
+		<o:CharactersWithSpaces>5746</o:CharactersWithSpaces>
+		<o:Version>14.0000</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Calibri" w:fareast="Calibri" w:h-ansi="Calibri" w:cs="Times New Roman" />
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="4000ACFF" w:usb-2="00000001" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="00" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="00" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="400004FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267" />
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:pPr>
+				<w:spacing w:after="200" w:line="276" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="22" />
+				<w:sz-cs w:val="22" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:semiHidden />
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+			<w:semiHidden />
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="FootnoteText">
+			<w:name w:val="footnote text" />
+			<wx:uiName wx:val="Footnote Text" />
+			<w:basedOn w:val="Normal" />
+			<w:link w:val="FootnoteTextChar" />
+			<w:semiHidden />
+			<w:rsid w:val="005F6D25" />
+			<w:pPr>
+				<w:pStyle w:val="FootnoteText" />
+				<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<w:sz w:val="20" />
+				<w:sz-cs w:val="20" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="FootnoteTextChar">
+			<w:name w:val="Footnote Text Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="FootnoteText" />
+			<w:semiHidden />
+			<w:rsid w:val="005F6D25" />
+			<w:rPr>
+				<w:sz w:val="20" />
+				<w:sz-cs w:val="20" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="FootnoteReference">
+			<w:name w:val="footnote reference" />
+			<wx:uiName wx:val="Footnote Reference" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:semiHidden />
+			<w:rsid w:val="005F6D25" />
+			<w:rPr>
+				<w:vertAlign w:val="superscript" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="paragraph" w:styleId="Footer">
+			<w:name w:val="footer" />
+			<wx:uiName wx:val="Footer" />
+			<w:basedOn w:val="Normal" />
+			<w:link w:val="FooterChar" />
+			<w:semiHidden />
+			<w:rsid w:val="000E7689" />
+			<w:pPr>
+				<w:pStyle w:val="Footer" />
+				<w:tabs>
+					<w:tab w:val="center" w:pos="4680" />
+					<w:tab w:val="right" w:pos="9360" />
+				</w:tabs>
+				<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+			</w:pPr>
+		</w:style>
+		<w:style w:type="character" w:styleId="FooterChar">
+			<w:name w:val="Footer Char" />
+			<w:basedOn w:val="DefaultParagraphFont" />
+			<w:link w:val="Footer" />
+			<w:semiHidden />
+			<w:rsid w:val="000E7689" />
+		</w:style>
+	</w:styles>
+	<w:docPr>
+		<w:view w:val="normal" />
+		<w:zoom w:percent="120" />
+		<w:proofState w:spelling="clean" />
+		<w:attachedTemplate w:val="" />
+		<w:defaultTabStop w:val="720" />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:footnotePr>
+			<w:footnote w:type="separator">
+				<w:p>
+					<w:pPr>
+						<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+					</w:pPr>
+					<w:r>
+						<w:separator />
+					</w:r>
+				</w:p>
+			</w:footnote>
+			<w:footnote w:type="continuation-separator">
+				<w:p>
+					<w:pPr>
+						<w:pStyle w:val="Footer" />
+					</w:pPr>
+					<w:r>
+						<w:t>….This is a Footnote Continuation Separator</w:t>
+					</w:r>
+				</w:p>
+			</w:footnote>
+			<w:footnote w:type="continuation-notice">
+				<w:p>
+					<w:pPr>
+						<w:spacing w:after="0" w:line="240" w:line-rule="auto" />
+					</w:pPr>
+					<w:r>
+						<w:t>… this is a Footnote Continuation Notice</w:t>
+					</w:r>
+				</w:p>
+			</w:footnote>
+		</w:footnotePr>
+		<w:doNotEmbedSystemFonts />
+		<w:validateAgainstSchema />
+		<w:optimizeForBrowser />
+		<w:relyOnVML />
+		<w:allowPNG />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+		</w:compat>
+	</w:docPr>
+	<w:body>
+		<wx:sect>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look. </w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rStyle w:val="FootnoteReference" />
+					</w:rPr>
+					<w:footnote>
+						<w:p>
+							<w:pPr>
+								<w:pStyle w:val="FootnoteText" />
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="FootnoteReference" />
+								</w:rPr>
+								<w:footnoteRef />
+							</w:r>
+							<w:r>
+								<w:t> This is a  footnote</w:t>
+							</w:r>
+						</w:p>
+					</w:footnote>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>You can easily change the formatting of selected text in the document text by choosing a look for the </w:t>
+				</w:r>
+				<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="_GoBack" />
+				<w:r>
+					<w:t>selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other controls on the Home tab. Most controls offer a choice of using the look from the current theme or using a format that you specify directly.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<aml:annotation aml:id="0" w:type="Word.Bookmark.End" />
+				<w:r>
+					<w:t>To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other controls on the Home tab. Most controls offer a choice of using the look from the current theme or using a format that you specify directly.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other controls on the Home tab. Most controls offer a choice of using the look from the current theme or using a format that you specify directly.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. </w:t>
+				</w:r>
+				<w:r>
+					<w:t>Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other controls on the Home tab. Most controls offer a choice of using the look from the current theme or using a format that you specify directly.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the other controls on the Home tab. Most controls offer a choice of using the look from the current theme or using a format that you specify directly.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.</w:t>
+				</w:r>
+			</w:p>
+			<w:p>
+				<w:r>
+					<w:t>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</w:t>
+				</w:r>
+			</w:p>
+			<w:sectPr>
+				<w:pgSz w:w="12240" w:h="15840" />
+				<w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="720" w:footer="720" w:gutter="0" />
+				<w:cols w:space="720" />
+				<w:docGrid w:line-pitch="360" />
+			</w:sectPr>
+		</wx:sect>
+	</w:body>
+</w:wordDocument>

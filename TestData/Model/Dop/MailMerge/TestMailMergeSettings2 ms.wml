@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Author>romeok</o:Author>
+		<o:LastAuthor>romeok</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2009-10-23T01:30:00Z</o:Created>
+		<o:LastSaved>2009-10-23T01:30:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>24</o:Words>
+		<o:Characters>141</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>1</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>164</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Calibri" w:fareast="SimSun" w:h-ansi="Calibri" w:cs="Arial" />
+		<w:font w:name="Arial">
+			<w:panose-1 w:val="020B0604020202020204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="SimSun">
+			<w:altName w:val="宋体" />
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="01" />
+			<w:family w:val="Roman" />
+			<w:notTrueType />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000000" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000000" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="A00002EF" w:usb-1="4000207B" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000009F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="@SimSun">
+			<w:panose-1 w:val="02010600030101010101" />
+			<w:charset w:val="86" />
+			<w:family w:val="auto" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="toc 1" />
+			<w:lsdException w:name="toc 2" />
+			<w:lsdException w:name="toc 3" />
+			<w:lsdException w:name="toc 4" />
+			<w:lsdException w:name="toc 5" />
+			<w:lsdException w:name="toc 6" />
+			<w:lsdException w:name="toc 7" />
+			<w:lsdException w:name="toc 8" />
+			<w:lsdException w:name="toc 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Default Paragraph Font" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Table Grid" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="008247F3" />
+			<w:pPr>
+				<w:spacing w:after="200" w:line="276" w:line-rule="auto" />
+			</w:pPr>
+			<w:rPr>
+				<wx:font wx:val="Calibri" />
+				<w:sz w:val="22" />
+				<w:sz-cs w:val="22" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Calibri" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050" />
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="130" />
+		<w:doNotEmbedSystemFonts />
+		<w:mailMerge>
+			<w:mainDocumentType w:val="catalog" />
+			<w:linkToQuery />
+			<w:dataType w:val="ODSO" />
+			<w:connectString w:val="Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=X:\Aspose\Aspose.Words\Demos\Common\Database\Northwind.mdb;Mode=Read;Extended Properties=&quot;&quot;;Jet OLEDB:System database=&quot;&quot;;Jet OLEDB:Registry Path=&quot;&quot;;Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=0;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=&quot;&quot;;Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False;Jet OLEDB:Support Complex Data=False" />
+			<w:query w:val="SELECT * FROM `Customers`  ORDER BY `CompanyName` DESC " />
+			<w:dataSource w:val="X:\Aspose\Aspose.Words\Demos\Common\Database\Northwind.mdb" />
+			<w:odso>
+				<w:udl w:val="Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=X:\Aspose\Aspose.Words\Demos\Common\Database\Northwind.mdb;Mode=Read;Extended Properties=&quot;&quot;;Jet OLEDB:System database=&quot;&quot;;Jet OLEDB:Registry Path=&quot;&quot;;Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=0;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=&quot;&quot;;Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False;Jet OLEDB:Support Complex Data=False" />
+				<w:table w:val="Customers" />
+				<w:src w:val="X:\Aspose\Aspose.Words\Demos\Common\Database\Northwind.mdb" />
+				<w:sort w:val="0100000001000000" />
+				<w:colDelim w:val="9" />
+				<w:jdsoType w:val="1" />
+				<w:fHdr w:val="1" />
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="CustomerID" />
+					<w:mappedName w:val="Unique Identifier" />
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="CompanyName" />
+					<w:mappedName w:val="Company" />
+					<w:column w:val="1" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="Address" />
+					<w:mappedName w:val="Address 1" />
+					<w:column w:val="4" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="City" />
+					<w:mappedName w:val="City" />
+					<w:column w:val="5" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="PostalCode" />
+					<w:mappedName w:val="Postal Code" />
+					<w:column w:val="7" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="Country" />
+					<w:mappedName w:val="Country or Region" />
+					<w:column w:val="8" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="Phone" />
+					<w:mappedName w:val="Business Phone" />
+					<w:column w:val="9" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:type w:val="db-column" />
+					<w:name w:val="Fax" />
+					<w:mappedName w:val="Business Fax" />
+					<w:column w:val="10" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:fieldMapData>
+					<w:column w:val="0" />
+					<w:lid w:val="EN-US" />
+				</w:fieldMapData>
+				<w:recipientData>
+					<w:hash w:val="5177431" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784215" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4718679" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522071" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259927" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784214" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784214" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259926" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374036" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374036" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177428" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177428" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4718676" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4718676" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570643" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5242963" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5242963" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784211" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522067" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259923" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259923" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177426" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784210" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784210" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522066" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259922" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259922" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570641" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570641" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570641" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374032" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784208" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522064" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259920" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5505103" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4980815" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4390991" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177422" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177421" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522061" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259917" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259917" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177420" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784204" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784204" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522060" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522060" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259916" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259916" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259916" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259916" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177419" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5439561" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570632" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570632" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784200" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259912" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374023" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374023" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177415" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177415" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259911" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570630" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374022" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374022" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374022" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177414" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177414" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4784198" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259910" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374021" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259909" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5570628" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374020" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259927" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177411" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177411" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4718659" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522051" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4259907" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5439554" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177410" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177410" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5177410" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4980802" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4980802" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4522050" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5374017" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5111873" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="5111873" />
+				</w:recipientData>
+				<w:recipientData>
+					<w:hash w:val="4980801" />
+				</w:recipientData>
+				<w:recipientData />
+			</w:odso>
+		</w:mailMerge>
+		<w:defaultTabStop w:val="720" />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+			<w:useFELayout />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="00E37454" />
+			<wsp:rsid wsp:val="00107056" />
+			<wsp:rsid wsp:val="0022200E" />
+			<wsp:rsid wsp:val="004C0D3E" />
+			<wsp:rsid wsp:val="008247F3" />
+			<wsp:rsid wsp:val="00BE28EA" />
+			<wsp:rsid wsp:val="00E37454" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E" wsp:rsidP="0022200E">
+			<w:r>
+				<w:t>Test 2 for mail merge settings.</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E" wsp:rsidP="0022200E">
+			<w:r>
+				<w:t>Document: Directory</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E" wsp:rsidP="0022200E">
+			<w:r>
+				<w:t>Data: MS Access Database</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="008247F3" wsp:rsidRDefault="0022200E">
+			<w:r>
+				<w:t>Field: </w:t>
+			</w:r>
+			<w:fldSimple w:instr=" MERGEFIELD &quot;CompanyName&quot; ">
+				<w:r wsp:rsidR="00107056">
+					<w:rPr>
+						<w:noProof />
+					</w:rPr>
+					<w:t>«CompanyName»</w:t>
+				</w:r>
+			</w:fldSimple>
+		</w:p>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E">
+			<w:r>
+				<w:t>Preview Results: No</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E">
+			<w:r>
+				<w:t>Output: Document</w:t>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="0022200E" wsp:rsidRDefault="0022200E" />
+		<w:sectPr wsp:rsidR="0022200E" wsp:rsidSect="008247F3">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1134" w:right="850" w:bottom="1134" w:left="1701" w:header="708" w:footer="708" w:gutter="0" />
+			<w:cols w:space="708" />
+			<w:docGrid w:line-pitch="360" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

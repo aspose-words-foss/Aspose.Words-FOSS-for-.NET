@@ -1,0 +1,7 @@
+CLDR 28: For details of the many changes in CLDR, see CLDR 28.
+Unicode data updated to Unicode 8.0: 41 new emoji characters, 5,771 new ideographs for Chinese/Japanese/Korean, 6 new scripts, improved character properties data, etc.
+ICU data size reduced by about 7.2% (1.8MB) via sharing string values across resource bundles. [#11537]
+DateIntervalFormat now handles intervals with seconds, and sets FieldPosition more consistently. [#11706, #11726]
+DateFormat::createInstanceForSkeleton() caches DateFormat patterns rather than DateTimePatternGenerator instances, for better performance (for cache hits) and lower heap memory consumption. [#11780]
+StringSearch (based on collation) defaults to matches on normalization boundaries rather than grapheme cluster boundaries, which yields more matches on Indic text. [#11750]
+RuleBasedNumberFormat (spelled-out numbers) now handles rounding (Java only), infinity, NaN. [#11653, #11760, #8223]

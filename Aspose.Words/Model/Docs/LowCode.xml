@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Topics>
+	<Topic name="SavingToFileRemarks">
+		<remarks>
+			<para>If the output format is an image (BMP, EMF, EPS, GIF, JPEG, PNG, or WebP), each page of the output will be saved as a separate file. The specified output file name will be used to generate file names for each part following the rule: outputFile_partIndex.extension.</para>
+			<para>If the output format is TIFF, the output will be saved as a single multi-frame TIFF file.</para>
+		</remarks>
+	</Topic>
+	<Topic name="SavingToStreamRemarks">
+		<remarks>
+			<para>If the output format is an image (BMP, EMF, EPS, GIF, JPEG, PNG, or WebP), only the first page of the output will be saved to the specified stream.</para>
+			<para>If the output format is TIFF, the output will be saved as a single multi-frame TIFF to the specified stream.</para>
+		</remarks>
+	</Topic>
+</Topics>

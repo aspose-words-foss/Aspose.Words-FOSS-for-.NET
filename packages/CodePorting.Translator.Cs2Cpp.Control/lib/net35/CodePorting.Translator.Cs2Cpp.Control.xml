@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodePorting.Translator.Cs2Cpp.Control</name>
+    </assembly>
+    <members>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppArrayInnerIndexer">
+            <summary>
+            Access to inner array indexer
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppArrayInnerIndexer.ArrayNames">
+            <summary>
+            Array names
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppArrayInnerIndexer.#ctor(System.String[])">
+            <summary>
+            Create arrays inside the function body on stack
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppArrayOnStack">
+            <summary>
+            Create arrays inside the function body on stack
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppArrayOnStack.ArrayNames">
+            <summary>
+            Array names
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppArrayOnStack.#ctor(System.String[])">
+            <summary>
+            Create arrays inside the function body on stack
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppConstRefReturnTypeAttribute">
+            <summary>
+            Enforces property getter result type to be const reference.
+            Avoids extra copying operations.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppConstRefReturnTypeAttribute.#ctor">
+            <summary>
+            Enforces property getter result type to be constreference in translated code.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDeclareFriendFunctionAttribute">
+            <summary>
+            Forces friend function declaration. Forward declaration for mentioned function is generated.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppDeclareFriendFunctionAttribute.FunctionDeclaration">
+            <summary>
+            Name of the friend function as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppDeclareFriendFunctionAttribute.#ctor(System.String)">
+            <summary>
+            Generates friend declaration for specified function.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDisableEnumeratorCurrentValueHolderAttribute">
+            <summary>
+            This attribute is applicable to the enumerator class or struct, when emit_enumerator_current_value_holder global 
+            option is on, but you're need to keep get_Current code free from holder emission (supposed, you know what you do).
+            
+            This attribute enforces translator to avoid special holder usage in get_Current method, in spite of 
+            emit_enumerator_current_value_holder is ON.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDisableVirtualFunctionCallsWarning">
+            <summary>
+            Disables warning logging about virtual function call for marked class method/property/indexer.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppAddStructDefaultMethodsAttribute">
+            <summary>
+            Forces generating default ValueType methods: operator==, Equals, ToString and GetHashCode. See
+            https://docs.microsoft.com/en-us/dotnet/api/system.valuetype?view=netframework-4.7.1 for details.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppAllowBoxingAttribute">
+            <summary>
+            Allows boxing for this type. This requires the type to implement operator == (), ToString() const and GetHashCode() const.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppAllowStackAllocation">
+            <summary>
+            Allows translated classes to be allocated on stack by making their destructors public.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.ArgumentKind">
+            <summary>
+            Argument translating mode. Used by CppArgumentKindAttribute.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.Value">
+            <summary>
+            Value-type argument translation, same as if no CppArgumentKind attribute was used.	
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.Reference">
+            <summary>
+            Reference function argument.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.Pointer">
+            <summary>
+            Pointer function argument.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.ConstValue">
+            <summary>
+            Const value function argument.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.ConstReference">
+            <summary>
+            Const reference function argument.	
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.ConstPointer">
+            <summary>
+            Const pointer function argument.	
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.UnsafeConst">
+            <summary>
+            Unsafe pointer to const data (for arrays).
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.ArgumentKind.ArrayView">
+            <summary>
+            Array view
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppArgumentKindAttribute">
+            <summary>
+            Forces to use a specific way to pass a parameter to function (const reference, pointer, etc.). This option is useful mostly
+            if you're overriding your translated code with manually written one, as it only affects function formal parameters but not the
+            references to them. Calling contexts are not affected as well.
+            Please note that C# semantics is followed by default which means that pointer types are passed to functions by reference
+            while value types are passed by value. You don't need to use this attribute to impose this behavior.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppArgumentKindAttribute.Kind">
+            <summary>
+            Argument kind as sent when adding the attribute to argument.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppArgumentKindAttribute.#ctor(CodePorting.Translator.Cs2Cpp.ArgumentKind)">
+            <summary>
+            Defines way of translating argument to C++.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppConstexpr">
+            <summary>
+            Forces translation of a field or of all fields of class as constexpr.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppConstMethodAttribute">
+            <summary>
+            Mark method as const in C++.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppConstMethodAttribute.#ctor">
+            <summary>
+            Places const modifier to the method when it is translated.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppNonConstMethodAttribute">
+            <summary>
+            Mark method as non-const in C++.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppNonConstMethodAttribute.#ctor">
+            <summary>
+            Mark method as non-const in C++.
+            Translator config setting will be overridden
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppConstWrapperAttribute">
+            <summary>
+            generate const method wrapper for non const method
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppConstWrapperAttribute.#ctor">
+            <summary>
+            generate const method wrapper for non const method
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppConstRefParamAttribute">
+            <summary>
+            Forces const reference form of function parameters in translated code. Same effect can be achieved
+            using CppArgumentKind(ArgumentKind.ConstReference) attribute, but CppConstRefParam form is more
+            compact. This parameter can be used e. g. to reduce shared pointer copying performance penalties.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppConstRefParamAttribute.Names">
+            <summary>
+            Argument names as set in attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppConstRefParamAttribute.#ctor(System.String[])">
+            <summary>
+            Forces arguments with specified names to be translated as const references.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppCTORSelfReferenceAttribute">
+            <summary>
+            Generate guard which allows it to safely create temporary shared pointers during constructor
+            execution without deleting the object. Not required if auto_ctor_self_reference option
+            is enabled. Otherwise, creating shared pointers in constructor could lead to calling
+            'delete' on object being constructed and crashes in runtime.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDeclareFriendClassAttribute">
+            <summary>
+            Forces friend class declaration. Forward declaration for mentioned class is generated if needed.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppDeclareFriendClassAttribute.FullTypeName">
+            <summary>
+            Name of the friend class as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppDeclareFriendClassAttribute.#ctor(System.String)">
+            <summary>
+            Generates friend declaration for specified typename.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDeferredInitAttribute">
+            <summary>
+            Moves actual C# initialization routines (static members construction, static constructors calls)
+            from C++ static variables initialization phase (default) to the first reference to the members.
+            As result, all static data members in class become singletons.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppDeferredInitAttribute.#ctor(System.Boolean)">
+            <summary>
+            Makes class initialization lazy (on first access to class members).
+            The argument is ignored by translator.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDisableAutoReorderingAttribute">
+            <summary>
+            Disables class members automatic reordering.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppEmitEnumeratorCurrentValueHolderAttribute">
+            <summary>
+            This attribute is applicable to the enumerator class or struct, when emit_enumerator_current_value_holder global 
+            option is off, and you're need to avoid С4172 compiler error or any other errors (null-reference exception, SEH,
+            any type of UB at runtime)
+            
+            This attribute enforces translator to emit special holder to get_Current method, and store reference to it's result,
+            if necessary.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppNoBeginEndMethodsAttribute">
+            <summary>
+            Prevents translator from generating begin/end methods
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppDoNotObfuscateAttribute">
+            <summary>
+            Disables obfuscating the specified entity, even if 'obfuscate_cpp_headers' option is enabled.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppEnumEnableMetadataAttribute">
+            <summary>
+            Forces metadata generation for enum (string representation of values for parsing and serializing).
+            Use if you need conversions between enum values and strings in translated application.
+            'cpp_enum_enable_metadata' option enables this behavior globally.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppEnumWithOperatorsAttribute">
+            <summary>
+            Enables bitwise operators for enum. Use if you are using them.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppExactArrayInitializerAttribute">
+            <summary>
+            Passes array initializer expression directly from C# to C++ without parsing and code generation.
+            Speeds up translating long initializers (like thousands of string elements, etc.).
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceArrayInitializerCast">
+            <summary>
+            Forces explicit casts of array initializers otherwise not working in C++ but allowed in C#.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastToTypeParam">
+            <summary>
+            Forces dynamic casts from Object to argument type parameter instead of static casts used by default.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastToTypeParam.Name">
+            <summary>
+            Name of affected type parameter as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastToTypeParam.#ctor(System.String)">
+            <summary>
+            Forces dynamic casts from Object to the type argument specified as attribute constructor argument.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastFromTypeParam">
+            <summary>
+            Forces dynamic casts from argument type parameter to Object instead of static casts used by default.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastFromTypeParam.Name">
+            <summary>
+            Name of affected type parameter as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppForceDynamicCastFromTypeParam.#ctor(System.String)">
+            <summary>
+            Forces dynamic casts to Object from the type argument specified as attribute constructor argument.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceForwardDeclaration">
+            <summary>
+            Inside attributed type, always use forward declaration of argument type instead of include. Useful for loop type references management, etc.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceForwardDeclaration.FullClassName">
+            <summary>
+            Full type name to forward declare, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppForceForwardDeclaration.#ctor(System.String)">
+            <summary>
+            Forces forward declaration of specified type.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceInclude">
+            <summary>
+            Inside attributed type, always include header with argument type definition instead of forward declaration.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceInclude.FullClassName">
+            <summary>
+            Full type name to generate include for, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceInclude.IsIgnoreCrossIncludeCheck">
+            <summary>
+            Whether attribute ignores cross-include check, as passed to constructor.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppForceInclude.IsDirectInclude">
+            <summary>
+            Whether only affects direct includes, as passed to constructor. Support for this value will be removed soon.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppForceInclude.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Forces inclusion of specified type.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceObfuscateAttribute">
+            <summary>
+            Forces attributed entity to be obfuscated if 'obfuscate_cpp_headers' option is enabled.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceSharedApiAttribute">
+            <summary>
+            Adds LIBRARY_NAME_SHARED_API keyword to the entity declaration
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppForceStringParam">
+            <summary>
+            Forces 'String(...)' wrappers around string literals passed to attributed parameter.
+            Useful if there is a problem with overloads (in C++, the priority converting string
+            literals to boolean value is higher than to String class object.+ In C++, these calls
+            are resolved used different rules from C#.
+            Only use if issues occur after translating as translator automatically resolves most such
+            problems.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppGenerateBeginEndMethodsAttribute">
+            <summary>
+            Forces translator to generate begin/end methods that will delegate begin/end methods of a field or an auto-property
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppGenerateBeginEndMethodsAttribute.#ctor">
+            <summary>
+            Forces translator to generate begin/end methods that will delegate begin/end methods of a field or an auto-property
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppIgnoreBaseTypeAttribute">
+            <summary>
+            Forces translator to omit inheritance from a specific type during translation.
+            One usecase is creating a lightweight class not related to Object tree.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppIgnoreBaseTypeAttribute.TypeName">
+            <summary>
+            Name of base type to ignore, same as passed to attribute constructor.
+            Empty string means System.Object.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIgnoreBaseTypeAttribute.#ctor">
+            <summary>
+            Skip inheritance from System.Object.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIgnoreBaseTypeAttribute.#ctor(System.String)">
+            <summary>
+            Skip inheritance from specific type.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppIgnoreConstraintsAttribute">
+            <summary>
+            Disables translating 'where' clauses to C++.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppIgnoreConstraintsAttribute.Message">
+            <summary>
+            Comment as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIgnoreConstraintsAttribute.#ctor">
+            <summary>
+            Ignores all constraints without any message.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIgnoreConstraintsAttribute.#ctor(System.String)">
+            <summary>
+            Ignores all constraints. String comment can be passed which is ignored by translator.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppInlineAttribute">
+            <summary>
+            Moves methods implementation to header file.
+            If applied to class or struct, all methods become inline.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.IOStreamType">
+            <summary>
+            Translated stream type. Used by CppIOStreamWrapperAttribute.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.IOStreamType.IStream">
+            <summary>
+            Stream type. Allows generate overloads to std::istream-like streams.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.IOStreamType.OStream">
+            <summary>
+            Stream type. Allows generate overloads to std::ostream-like streams.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.IOStreamType.IOStream">
+            <summary>
+            Stream type. Allows generate overloads to std::iostream-like streams.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute">
+            <summary>
+            Forces translator to generate overloads for std::iostream-like streams. This option is useful if
+            you need to use std::iostream-like parameter/properties/indexers instead System::IO::Stream-like one.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.Type">
+            <summary>
+            Stream type to be sent when adding the attribute to the argument.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.CharTypeName">
+            <summary>
+            Stream character's template type name to be sent when adding an attribute to an argument.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.TraitsTypeName">
+            <summary>
+            Stream character's traits template type name that can be optionaly sent when adding an
+            attribute to an argument.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.#ctor">
+            <summary>
+            Constructs CppIOStreamWrapperAttribute object.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.#ctor(CodePorting.Translator.Cs2Cpp.IOStreamType)">
+            <summary>
+            Constructs CppIOStreamWrapperAttribute object.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppIOStreamWrapperAttribute.#ctor(CodePorting.Translator.Cs2Cpp.IOStreamType,System.String,System.String)">
+            <summary>
+            Constructs CppIOStreamWrapperAttribute object.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppLambdaPassByReferenceAttribute">
+            <summary>
+            Mark local variable to be passed to lambda-function by reference, not by value.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppLambdaPassByReferenceAttribute.VariableName">
+            <summary>
+            Variable name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppLambdaPassByReferenceAttribute.#ctor(System.String)">
+            <summary>
+            Makes specified variable to be captured by reference by lambdas in attributed method.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppLambdaUseHolderAttribute">
+            <summary>
+            Mark a local variable to be wrapper into a holder.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppLambdaUseHolderAttribute.VariableName">
+            <summary>
+            Variable name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppLambdaUseHolderAttribute.#ctor(System.String)">
+            <summary>
+            Makes specified variable to be captured by value by lambdas in attributed method.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppLambdaPassByValueAttribute">
+            <summary>
+            Mark local variable to be passed to lambda-function by value, not by reference.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppLambdaPassByValueAttribute.VariableName">
+            <summary>
+            Variable name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppLambdaPassByValueAttribute.#ctor(System.String)">
+            <summary>
+            Makes specified variable to be captured by value by lambdas in attributed method.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppLambdaShouldCaptureByReferenceAttribute">
+            <summary>
+             Lambda that is passed as an argument should capture all variables by reference if possible.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppMakeMembersPublicAttribute">
+            <summary>
+            Make all class/struct members public.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppMutable">
+            <summary>
+            Marks field as mutable.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppNightTestAttribute">
+            <summary>
+            Marks test as night, excluding it from usual test runs by adding 'ASPOSE_ENABLE_NIGHT_TESTS' ifdefs around it.
+            Use on test method or test fixture class or outer class.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppNoAbstract">
+            <summary>
+            Make translator not generate ABSTRACT modifier.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.AccessModifiers">
+            <summary>
+            Overridden access modifier of the entity.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.AccessModifiers.Public">
+            <summary>
+            Makes the entry public.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.AccessModifiers.Internal">
+            <summary>
+            Makes the entry internal.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.AccessModifiers.Protected">
+            <summary>
+            Makes the entry protected.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.AccessModifiers.Private">
+            <summary>
+            Makes the entry private.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppOverrideAccessModifier">
+            <summary>
+            Overrides access modifier of the entity.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppOverrideAccessModifier.#ctor(CodePorting.Translator.Cs2Cpp.AccessModifiers)">
+            <summary>
+            Overrides access modifier of the entity.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppOverrideAccessModifier.AccessModifier">
+            <summary>
+            New access modifier.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppOverrideAttribute">
+            <summary>
+            add override modifier to the method in C++.
+            if attribute is applied to class then class methods that have 'override' in C#
+            will receive 'override' in C++
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppOverrideAttribute.#ctor">
+            <summary>
+            add override modifier to the methods in C++.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppOverrideTestFixtureSetUpAttribute">
+            <summary>
+            Marks the method as override TestFixtureSetUp method.
+            Automatically changes name and adds 'static' modifier.
+            For all used class variables the 'static' modifier is added.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppOverrideTestFixtureTearDownAttribute">
+            <summary>
+            Marks the method as override TestFixtureTearDown method.
+            Automatically changes name and adds 'static' modifier.
+            For all used class variables the 'static' modifier is added.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppPlaceAfterAttribute">
+            <summary>
+            Places entity (class, struct, etc.) after the specified anchor entity.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppPlaceAfterAttribute.EntityName">
+            <summary>
+            Anchor entity name.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppPlaceAfterAttribute.#ctor(System.String)">
+            <summary>
+            Places entity (class, struct, etc.) after the specified anchor entity.
+            </summary>
+            <param name="entityName">Anchor entity name (don't use fully qualified name).</param>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppPlaceBeforeAttribute">
+            <summary>
+            Places entity (class, struct, etc.) before the specified anchor entity.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppPlaceBeforeAttribute.EntityName">
+            <summary>
+            Anchor entity name.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppPlaceBeforeAttribute.#ctor(System.String)">
+            <summary>
+            Places entity (class, struct, etc.) before the specified anchor entity.
+            </summary>
+            <param name="entityName">Anchor entity name (don't use fully qualified name).</param>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppPortAsEnumAttribute">
+            <summary>
+            Translate numeric constant as enum (not enum class) with single value in it.
+            Useful to define header-only constants (const fields are translated as
+            static constants and require definition as an addition to header declaration.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppPortAsSingletonAttribute">
+            <summary>
+            Translates field as singleton.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppPortAsSingletonAttribute.#ctor">
+            <summary>
+            Translates field as singleton.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppPortAsSingletonAttribute.#ctor(System.Boolean)">
+            <summary>
+            Translates field as singleton. Obsolete argument is ignored.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppPortConstStringAsWCharAttribute">
+            <summary>
+            Forces translating "const string m_field ..." as "const wchar_t *m_field ..." instead of "System::String m_field ...".
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppRenameEntity">
+            <summary>
+            Renames method or property in output code. Useful if you have name clash which can't
+            be resolved on C++ side (e. g. two virtual methods with same signatures or C++ keyword
+            used as an identifier). Affects both symbol and references to it.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppRenameEntity.Name">
+            <summary>
+            New entity's name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppRenameEntity.#ctor">
+            <summary>
+            Renames entity using translator-generated new name.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppRenameEntity.#ctor(System.String)">
+            <summary>
+            Renames entity using specified new name.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppSelfReferenceAttribute">
+            <summary>
+            Same as CppCTORSelfReference, but works on method. No auto-placement option at the moment
+            exists for this attribute. Useful if method is called when no references to object exist
+            (e. g. during construction or destruction).
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppSkipDefinitionAttribute">
+            <summary>
+            Skips translating method or class definition, leaving declaration in place. Optionally,
+            generates stubs that throw exception without actually doing anything. Use this attribute
+            on methods you want to substitute native C++ implementation to.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppSkipDefinitionAttribute.Stub">
+            <summary>
+            Whether to generate throwing stub code, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppSkipDefinitionAttribute.#ctor(System.Boolean)">
+            <summary>
+            Forces translator to skip translating attributed entity. If argument is set to true, an
+            exception throwing stub will be generated instead of actual method body.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppSkipEntityAttribute">
+            <summary>
+            Skips class, struct, enum, method, field, etc. The output code looks as if the entity was
+            not present in the input at all. Unlike CppSkipDefinition, skips both declarations and
+            definitions of the affected entities. Note that any references to skipped entity in translated
+            code end up in compilation errors.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppSkipEntityAttribute.Message">
+            <summary>
+            Message string, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppSkipEntityAttribute.#ctor">
+            <summary>
+            Makes translator skip entity.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppSkipEntityAttribute.#ctor(System.String)">
+            <summary>
+            Makes translator skip entity. Optional message is ignored by translator.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppSkipTestAttribute">
+            <summary>
+            Adds a GTEST_SKIP call at the beginning of the method. Does not apply to non-test methods.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppStaticMethodAttribute">
+            <summary>
+            Marks the method or property as static.
+            For all class variables used by it the 'static' modifier is added.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppStaticVariableAttribute">
+            <summary>
+            Forces argument variable as static. Affects all variables with same name.
+            Only affects declarations containing single variable per declaration. Useful
+            to cache large objects (e. g. string arrays, etc.).
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppStaticVariableAttribute.VariableName">
+            <summary>
+            Variable name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppStaticVariableAttribute.#ctor(System.String)">
+            <summary>
+            Forces named variable to be translated as static one.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUnknownTypeParam">
+            <summary>
+            Mark generic class/method type argument as unknown-type (it is needed for using ObjectExt::UnknownToObject &amp; ObjectExt::ObjectToUnknown).
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppUnknownTypeParam.Name">
+            <summary>
+            Type parameter name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppUnknownTypeParam.#ctor(System.String)">
+            <summary>
+            Makes translator add ObjectExt::UnknownToObject &amp; ObjectExt::ObjectToUnknown calls when casting to or from specified type parameter.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUseAlternativeSwitchAttribute">
+            <summary>
+            Forces using do-while form of switch translation inside this method.
+            Similar to alternative_string_switch option, but only affects single method.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUseReflectionAttribute">
+            <summary>
+            Enables translator generating full reflection information for specific class.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUseWeakPtrToCaptureThis">
+            <summary>
+            Use System::WeakPtr to capture this in a lambda expression.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUsingAttribute">
+            <summary>
+            Generates 'using' directives that import symbols from base classes.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.Visibility">
+            <summary>
+            'Using' directives visibility.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.Visibility.Public">
+            <summary>
+            Put 'using' directive into public section of class members.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.Visibility.Protected">
+            <summary>
+            Put 'using' directive into protected section of class members.
+            </summary>
+        </member>
+        <member name="F:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.Visibility.Private">
+            <summary>
+            Put 'using' directive into private section of class members.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.MethodName">
+            <summary>
+            Method name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.MethodVisibility">
+            <summary>
+            Method visibility, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.#ctor(System.String)">
+            <summary>
+            Generate 'using' directive for specific method in public section.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppUsingAttribute.#ctor(System.String,CodePorting.Translator.Cs2Cpp.CppUsingAttribute.Visibility)">
+            <summary>
+            Generate 'using' directive for specific method in specified section.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppValueTypeParam">
+            <summary>
+            Mark generic class/method type argument as value-type (don't wrap it to System::SharedPtr, apply boxing rules, etc.).
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppValueTypeParam.Name">
+            <summary>
+            Type parameter name, as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppValueTypeParam.#ctor(System.String)">
+            <summary>
+            Forces specified type parameter to be treated as value type by translator.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppVirtualInheritance">
+            <summary>
+            Forces virtual inheritance instead of direct for specific type.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppVirtualInheritance.BaseTypeFullName">
+            <summary>
+            Name of type base to be inherited from virtually.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppVirtualInheritance.#ctor(System.String)">
+            <summary>
+            Forces virtual inheritance instead of direct for specified type.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppWeakPtr">
+            <summary>
+            Force holding value as weak pointer rather than shared pointer.
+            Should only be used with fields, as other usage modes are obsolete.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppWeakPtr.TemplateArgN">
+            <summary>
+            Index of template argument to be translated as weak reference.
+            -1 means top level pointer.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppWeakPtr.#ctor">
+            <summary>
+            Forces variable to hold weak pointer to attributed field instead of shared pointer.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppWeakPtr.#ctor(System.Int32)">
+            <summary>
+            Forces switching collection to storing weak pointers instead of shared ones.
+            Pass 0 to store weak pointers in List or to store weak pointers to Dictionary keys.
+            Pass 1 to store weak pointers to Dictionary values, etc.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.CppWrapInMacroAttribute">
+            <summary>
+            Forces translator to wrap method in macro.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.CppWrapInMacroAttribute.MacroCondition">
+            <summary>
+            Macro condition to be passed to macro as passed to attribute constructor.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.CppWrapInMacroAttribute.#ctor(System.String)">
+            <summary>
+            Wraps translated method into '#if &lt;macroCondition&gt; ... #endif' macro when translating.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.Translator">
+            <summary>
+            API to query information stored by translator.
+            </summary>
+        </member>
+        <member name="P:CodePorting.Translator.Cs2Cpp.Translator.IsTranslated">
+            <summary>
+            Returns true, if translated code is running, and false otherwise.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.MemoryManagement">
+            <summary>
+            API to perform specific actions from ported code which are related to memory management.
+            </summary>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectReferenceEqualityComparer">
+            <summary>
+            Comparer that uses object references,
+            ignoring any <see cref="M:System.Object.Equals(System.Object)"/> overrides.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectReferenceEqualityComparer.Equals(System.Object,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectReferenceEqualityComparer.GetHashCode(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectsBag">
+            <summary>
+            Container designed to extend objects lifetime.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectsBag.Add(System.Object)">
+            <summary>
+            Adds object into container.
+            </summary>
+            <param name="obj">Object to add.</param>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectsBag.Remove(System.Object)">
+            <summary>
+            Removes object from container.
+            </summary>
+            <param name="obj">Object to remove.</param>
+            <returns>True if object was found and deleted, false otherwise.</returns>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectsBag.Contains(System.Object)">
+            <summary>
+            Checks if object is present in the container.
+            </summary>
+            <param name="obj">Object to look for.</param>
+            <returns>True if object is present in the container, false otherwise.</returns>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ObjectsBag.Clear">
+            <summary>
+            Deletes all objects in the container.
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.BindLifetime``2(``0,``1)">
+            <summary>
+            Creates a pointer to the <paramref name="target"/> object which controls lifetime of the <paramref name="owner"/> object.
+            This pointer's expiration is bound to expiration of the <paramref name="owner"/> object,
+            just like this of any other pointer that owns <paramref name="owner"/> object.
+            If converted to weak type, it is still consistent with other pointers to <paramref name="owner"/> and
+            does not expire while there is at least one shared pointer to <paramref name="owner"/> object.
+            Also, the returned pointer does not ensure that <paramref name="target"/> object is alive, so some other
+            means (e. g. shared pointer stored in the <paramref name="owner"/> object) should do so.
+            Should be used in the situations where <paramref name="owner"/> owns the <paramref name="target"/>, which effectively means that
+            the <paramref name="target"/> will be kept alive by <paramref name="owner"/> even if the returned aliasing pointer no longer exists.
+            Otherwise, doesn't guarantee that the resulting pointer will remain valid, because if <paramref name="owner"/>
+            doesn't actually hold shared reference to <paramref name="target"/>, <paramref name="target"/> can be deleted any time as the
+            resulting pointer only owns <paramref name="owner"/> but not the <paramref name="target"/>.
+            </summary>
+            <remarks>
+            This is low-level and error-prone function, use it with care.
+            </remarks>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ExtendLifetime``2(``0,``1)">
+            <summary>
+            Creates a smart pointer using the aliasing constructor and copies <paramref name="object1"/> and
+            <paramref name="object2"/> pointers to the "proxy" objects holder.
+            Creates a pointer to the <paramref name="object1"/> and extends the lifetime of all objects to the lifetime of this pointer.
+            The resulting pointer guarantees all parameters to remain alive, even if it is the only pointer that
+            keeps track of them.
+            The resulting pointer effectively owns all objects passed to this method, however, it has its own
+            expiration track. This means, that converting its own copy to weak type will expire it, even if all objects
+            it tracks are still alive.
+            Should be used in the situations when there are several unrelated (not holding shared references to each
+            other) objects that should be guaranteed to remain alive together. The returned pointer will own a
+            temporary objects that keeps all of them alive, and this lifetime extension stops working once the returned
+            pointer no longer exists (or all of its copies become weak).
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ExtendLifetime``3(``0,``1,``2)">
+            <summary>
+            Creates a smart pointer using the aliasing constructor and copies <paramref name="object1"/>,
+            <paramref name="object2"/> and <paramref name="object3"/> pointers to the "proxy" objects holder.
+            Creates a pointer to the <paramref name="object1"/> and extends the lifetime of all objects to the lifetime of this pointer.
+            The resulting pointer guarantees all parameters to remain alive, even if it is the only pointer that
+            keeps track of them.
+            The resulting pointer effectively owns all objects passed to this method, however, it has its own
+            expiration track. This means, that converting its own copy to weak type will expire it, even if all objects
+            it tracks are still alive.
+            Should be used in the situations when there are several unrelated (not holding shared references to each
+            other) objects that should be guaranteed to remain alive together. The returned pointer will own a
+            temporary objects that keeps all of them alive, and this lifetime extension stops working once the returned
+            pointer no longer exists (or all of its copies become weak).
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ExtendLifetime``4(``0,``1,``2,``3)">
+            <summary>
+            Creates a smart pointer using the aliasing constructor and copies <paramref name="object1"/>,
+            <paramref name="object2"/>, <paramref name="object3"/> and <paramref name="object4"/> pointers to the "proxy" objects holder.
+            Creates a pointer to the <paramref name="object1"/> and extends the lifetime of all objects to the lifetime of this pointer.
+            The resulting pointer guarantees all parameters to remain alive, even if it is the only pointer that
+            keeps track of them.
+            The resulting pointer effectively owns all objects passed to this method, however, it has its own
+            expiration track. This means, that converting its own copy to weak type will expire it, even if all objects
+            it tracks are still alive.
+            Should be used in the situations when there are several unrelated (not holding shared references to each
+            other) objects that should be guaranteed to remain alive together. The returned pointer will own a
+            temporary objects that keeps all of them alive, and this lifetime extension stops working once the returned
+            pointer no longer exists (or all of its copies become weak).
+            </summary>
+        </member>
+        <member name="M:CodePorting.Translator.Cs2Cpp.MemoryManagement.ExtendLifetime``5(``0,``1,``2,``3,``4)">
+            <summary>
+            Creates a smart pointer using the aliasing constructor and copies <paramref name="object1"/>,
+            <paramref name="object2"/>, <paramref name="object3"/>, <paramref name="object4"/> and
+            <paramref name="object5"/> pointers to the "proxy" objects holder.
+            Creates a pointer to the <paramref name="object1"/> and extends the lifetime of all objects to the lifetime of this pointer.
+            The resulting pointer guarantees all parameters to remain alive, even if it is the only pointer that
+            keeps track of them.
+            The resulting pointer effectively owns all objects passed to this method, however, it has its own
+            expiration track. This means, that converting its own copy to weak type will expire it, even if all objects
+            it tracks are still alive.
+            Should be used in the situations when there are several unrelated (not holding shared references to each
+            other) objects that should be guaranteed to remain alive together. The returned pointer will own a
+            temporary objects that keeps all of them alive, and this lifetime extension stops working once the returned
+            pointer no longer exists (or all of its copies become weak).
+            </summary>
+        </member>
+    </members>
+</doc>

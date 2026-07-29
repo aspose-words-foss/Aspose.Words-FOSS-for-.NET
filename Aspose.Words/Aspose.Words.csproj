@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net462;netstandard2.0;net8.0</TargetFrameworks>
+		<TargetFrameworkProfile></TargetFrameworkProfile>
+		<!-- The FOSS assembly is deliberately named differently from the commercial Aspose.Words.dll;
+		     namespaces stay Aspose.Words.* for source compatibility. -->
+		<RootNamespace>Aspose.Words</RootNamespace>
+		<AssemblyName>Aspose.Words.FOSS</AssemblyName>
+		<AssemblyTitle>Aspose.Words FOSS</AssemblyTitle>
+		<Configurations>Debug;Release;Test</Configurations>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+
+		<!-- Assembly metadata -->
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GenerateAssemblyTitleAttribute>true</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+		<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+
+		<!-- Compiler settings -->
+		<LangVersion>7.1</LangVersion>
+		<AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+		<CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+		<Optimize>true</Optimize>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<FileAlignment>4096</FileAlignment>
+
+		<!-- Analyzers and warnings -->
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<RunCodeAnalysis>false</RunCodeAnalysis>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningLevel>4</WarningLevel>
+		<ErrorReport>prompt</ErrorReport>
+
+		<!-- Documentation (per-TFM output; a single fixed path would clash between parallel inner builds) -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+		<!-- Items control: Compile items come from default SDK globbing; resources and None stay explicit -->
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+		<EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+
+		<!-- Legacy / .NET Framework-specific -->
+		<RegisterForComInterop>false</RegisterForComInterop>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>TRACE;DEBUG;ASPOSE_WORDS;CODE_ANALYSIS;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0659,CS1591,CS2200,CS0618,NU1900</NoWarn>
+		<Optimize>false</Optimize>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;ASPOSE_WORDS;OPTIMIZED</DefineConstants>
+		<!-- CS0649: with no InternalsVisibleTo (DEBUG-only) the compiler reports internal fields
+		     orphaned by the FOSS reduction; same suppression as Foundation and the former net6+ configs. -->
+		<NoWarn>CS0659,CS1591,CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;ASPOSE_WORDS;CODE_ANALYSIS;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0659,CS1591,NU1900</NoWarn>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+
+	<!-- Suppressions specific to the net8.0 target (same set the former Release80 configuration used) -->
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<NoWarn>$(NoWarn);SYSLIB0014;CA1307;CA1309;CA1310;CS0649</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\packages\BouncyCastle.1.7.0\lib\Net20\BouncyCastle.Crypto.dll" />
+		<Reference Include="..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Security" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Web" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Aspose.Foundation\Aspose.Foundation\Aspose.Foundation.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="ILRepack" Version="2.0.46" PrivateAssets="all" ExcludeAssets="all" GeneratePathProperty="true" />
+		<PackageReference Include="Aspose.EnumExtensionsGenerator" Version="1.0.2" PrivateAssets="all" ExcludeAssets="runtime">
+			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<PropertyGroup>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- Emitted generator output must not be compiled together with the in-memory generator output -->
+		<Compile Remove="Generated\**" Condition="'$(IncludeGenerated)' != true" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Model\Fields\FieldCode\Translation\StyleNameTranslator.cs">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>StyleNameTranslator.tt</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Resources\ShapeTypes.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Model\Docs\LowCode.xml" />
+		<Content Include="Model\Drawing\Core\Dml\Themes\readme.txt" />
+		<Content Include="Model\Docs\Saving.xml" />
+		<Content Include="Model\Docs\Drawing.xml">
+			<SubType>Designer</SubType>
+		</Content>
+		<Content Include="Model\Docs\Text.xml" />
+		<Content Include="Model\Drawing\Core\Dml\readme.txt" />
+		<Content Include="Model\Fields\FieldCode\Translation\StyleNameTranslation.xml">
+			<DependentUpon>StyleNameTranslator.tt</DependentUpon>
+			<SubType>Designer</SubType>
+		</Content>
+		<Content Include="Model\Nrx\0readme.txt" />
+		<Content Include="Model\Numbering\readme.txt" />
+		<Content Include="Model\TableLayout\0ReadMe.txt" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles1.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles222.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles245.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles264.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles284.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles305.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles326.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles346.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles385.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartStyles415.xml" />
+		<EmbeddedResource Include="Resources\XhtmlEntities.dtd" />
+		<EmbeddedResource Include="Resources\SdtImageDefaultContent.docx" />
+		<EmbeddedResource Include="Resources\PageBorderArt\Definitions.xml">
+			<SubType>Designer</SubType>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Resources\OleIcons\bmp.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\doc.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\dot.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\docm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\docx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\dotx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\dotm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\odp.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\ods.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\odt.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\packager.emf" />
+		<EmbeddedResource Include="Resources\OleIcons\packager.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\pdf.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xls.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xlt.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xlsb.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xlsm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xlsx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xltx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\xltm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\normal.png" />
+		<EmbeddedResource Include="Resources\OleIcons\mpp.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\vsd.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\pps.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\pot.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\potm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\potx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\ppsm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\ppsx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\ppt.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\pptm.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\pptx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\sldx.ico" />
+		<EmbeddedResource Include="Resources\OleIcons\html.ico" />
+		<EmbeddedResource Include="Resources\PresetShapeDefinitions.xml" />
+		<EmbeddedResource Include="Resources\Charts\ChartTypes.xml" />
+		<EmbeddedResource Include="Resources\theme1.xml" />
+		<EmbeddedResource Include="Resources\PresetTextWarpDefinitions.xml" />
+		<EmbeddedResource Include="Resources\3dBubble.jpg" />
+		<EmbeddedResource Include="Resources\AsposeLogo.png" />
+		<EmbeddedResource Include="Resources\OleIcons\RadioChecked.wmf" />
+		<EmbeddedResource Include="Resources\OleIcons\RadioUnchecked.wmf" />
+		<EmbeddedResource Include="Resources\Bibliography\apasixtheditionofficeonline.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\chicago.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\gb.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\gostname.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\gosttitle.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\harvardanglia2008officeonline.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\ieee2006officeonline.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\iso690.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\iso690nmerical.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\mlaseventheditionofficeonline.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\sist02.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\turabian.xsl" />
+		<EmbeddedResource Include="Resources\Bibliography\BibliographyLocales.xml" />
+		<EmbeddedResource Include="Resources\Blank.docx" />
+		<Content Include="RW\Celler\0ReadMe.txt" />
+		<Content Include="RW\Dml\Reader\Readme.txt" />
+		<Content Include="RW\Factories\0readme.txt" />
+		<Content Include="RW\Nrx\readme.txt" />
+		<Content Include="RW\OfficeCrypto\readme.txt" />
+		<EmbeddedResource Include="Resources\AllStyles2003.docx" />
+		<EmbeddedResource Include="Resources\AllStyles2007.docx" />
+		<EmbeddedResource Include="Resources\PageBorderArt\100.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\101.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\102.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\103.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\104_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\105_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\106_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\107_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\108.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\109.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\110_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\111.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\112.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\113.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\114_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\115_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\116_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\117.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\118_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\119.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\120.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\121.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\122.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\123.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\124.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\125.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\126_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\127.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\128.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\129.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\130.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\131_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\132.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\133.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\134.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\135.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\136_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\137_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\138.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\139.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\140_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\141_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\142.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\143.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\144.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\145.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\146.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\147.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\148_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\149.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\150.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\151.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\152_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\153.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\154.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\155.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\156_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\157_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\158_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\159.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\160.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\161_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\162_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\163.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\164.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\165.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\166_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\167_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\168.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\169.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\170.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\171.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\172.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\173.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\174.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\175_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\176.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\177_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\178_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\179_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\180.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\181_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\182.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\183.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\184_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\185_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\186.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\187.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\188.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\189.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\190_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\191.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\192.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\193.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\194.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\195_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\196.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\197_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\198.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\199.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\200.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\201.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\202_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\203_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\204_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\205.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\206.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\207_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\208_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\209_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\210_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\211_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\212_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\213_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\214_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\215_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\216_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\217_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\218_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\219_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\220_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\221_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\222_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\223_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\224.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\225_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\226_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\227_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\64.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\65.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\66.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\67.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\68.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\69.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\70_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\71.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\72.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\73_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\74_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\75.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\76.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\77_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\78_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\79_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\80.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\81_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\82.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\83.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\84.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\85_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\86_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\87_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\88_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\89.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\90_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\91_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\92.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\93.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\94_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\95_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\96_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\97.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\98_8.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_1.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_2.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_3.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_4.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_5.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_6.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_7.wmf" />
+		<EmbeddedResource Include="Resources\PageBorderArt\99_8.wmf" />
+		<None Include="Model\Fields\FieldCode\Translation\StyleNameTranslator.tt">
+			<Generator>TextTemplatingFileGenerator</Generator>
+			<LastGenOutput>StyleNameTranslator.cs</LastGenOutput>
+		</None>
+		<EmbeddedResource Include="Resources\AllStyles2013.docx" />
+		<EmbeddedResource Include="Resources\PresetTextures\BlueTissuePaper.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Bouquet.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\BrownMarble.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Canvas.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Cork.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Denim.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\FishFossil.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Granite.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\GreenMarble.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\MediumWood.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Newsprint.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Oak.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\PaperBag.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Papyrus.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Parchment.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\PinkTissuePaper.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\PurpleMesh.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\RecycledPaper.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Sand.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Stationery.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\Walnut.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\WaterDroplets.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\WhiteMarble.jpeg" />
+		<EmbeddedResource Include="Resources\PresetTextures\WovenMat.jpeg" />
+		<EmbeddedResource Include="Resources\Patterns\5Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\10Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\20Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\25Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\30Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\40Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\50Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\60Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\70Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\80Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\90Percent.png" />
+		<EmbeddedResource Include="Resources\Patterns\Cross.png" />
+		<EmbeddedResource Include="Resources\Patterns\DarkDownwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DarkHorizontal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DarkUpwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DarkVertical.png" />
+		<EmbeddedResource Include="Resources\Patterns\DashedDownwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DashedHorizontal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DashedUpwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\DashedVertical.png" />
+		<EmbeddedResource Include="Resources\Patterns\DiagonalBrick.png" />
+		<EmbeddedResource Include="Resources\Patterns\DiagonalCross.png" />
+		<EmbeddedResource Include="Resources\Patterns\Divot.png" />
+		<EmbeddedResource Include="Resources\Patterns\DottedDiamond.png" />
+		<EmbeddedResource Include="Resources\Patterns\DottedGrid.png" />
+		<EmbeddedResource Include="Resources\Patterns\DownwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\Horizontal.png" />
+		<EmbeddedResource Include="Resources\Patterns\HorizontalBrick.png" />
+		<EmbeddedResource Include="Resources\Patterns\LargeCheckerBoard.png" />
+		<EmbeddedResource Include="Resources\Patterns\LargeConfetti.png" />
+		<EmbeddedResource Include="Resources\Patterns\LargeGrid.png" />
+		<EmbeddedResource Include="Resources\Patterns\LightDownwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\LightHorizontal.png" />
+		<EmbeddedResource Include="Resources\Patterns\LightUpwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\LightVertical.png" />
+		<EmbeddedResource Include="Resources\Patterns\NarrowHorizontal.png" />
+		<EmbeddedResource Include="Resources\Patterns\NarrowVertical.png" />
+		<EmbeddedResource Include="Resources\Patterns\OutlinedDiamond.png" />
+		<EmbeddedResource Include="Resources\Patterns\Plaid.png" />
+		<EmbeddedResource Include="Resources\Patterns\Shingle.png" />
+		<EmbeddedResource Include="Resources\Patterns\SmallCheckerBoard.png" />
+		<EmbeddedResource Include="Resources\Patterns\SmallConfetti.png" />
+		<EmbeddedResource Include="Resources\Patterns\SmallGrid.png" />
+		<EmbeddedResource Include="Resources\Patterns\SolidDiamond.png" />
+		<EmbeddedResource Include="Resources\Patterns\Sphere.png" />
+		<EmbeddedResource Include="Resources\Patterns\Trellis.png" />
+		<EmbeddedResource Include="Resources\Patterns\UpwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\Vertical.png" />
+		<EmbeddedResource Include="Resources\Patterns\Wave.png" />
+		<EmbeddedResource Include="Resources\Patterns\Weave.png" />
+		<EmbeddedResource Include="Resources\Patterns\WideDownwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\WideUpwardDiagonal.png" />
+		<EmbeddedResource Include="Resources\Patterns\ZigZag.png" />
+
+	</ItemGroup>
+	<!-- C++ supports Embedded rresources only from calling library, that is why include embedded resources from Aspose.Foundation into Aspose.Words. -->
+	<ItemGroup Condition="'$(CPLUSPLUS)' != ''">
+		<EmbeddedResource Include="..\Aspose.Foundation\Aspose.Foundation\Resources\NoImage.png">
+			<Link>Resources\NoImage.png</Link>
+		</EmbeddedResource>
+		<EmbeddedResource Include="..\Aspose.Foundation\Aspose.Foundation\Resources\Fanwood.ttf">
+			<Link>Resources\Fanwood.ttf</Link>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+	<!-- Release-only: merge the private implementation assemblies into a single Aspose.Words.FOSS.dll
+	     with their types internalized, reproducing the single-file layout of the commercial release.
+	     SkiaSharp and the other NuGet dependencies stay external. Output goes to bin\Release\merged\<tfm>\
+	     and is what the NuGet package will ship; the regular per-TFM output is left untouched. -->
+	<Target Name="MergeFossAssembly" AfterTargets="Build" Condition="'$(Configuration)' == 'Release' And '$(TargetFramework)' != ''">
+		<PropertyGroup>
+			<MergedDir>$(ProjectDir)bin\Release\merged\$(TargetFramework)\</MergedDir>
+		</PropertyGroup>
+		<ItemGroup>
+			<MergeInput Include="$(TargetPath)" />
+			<MergeInput Include="$(TargetDir)Aspose.Foundation.dll" />
+			<MergeInput Include="$(TargetDir)Aspose.JavaAttributes.dll" />
+			<MergeInput Include="$(TargetDir)CodePorting.Translator.Cs2Cpp.Control.dll" />
+			<MergeInput Include="$(TargetDir)BouncyCastle.Crypto.dll" />
+			<_MergeLibDirWithDupes Include="@(ReferencePathWithRefAssemblies->'%(RootDir)%(Directory).')" />
+		</ItemGroup>
+		<RemoveDuplicates Inputs="@(_MergeLibDirWithDupes)">
+			<Output TaskParameter="Filtered" ItemName="_MergeLibDir" />
+		</RemoveDuplicates>
+		<MakeDir Directories="$(MergedDir)" />
+		<Exec Command="&quot;$(PkgILRepack)\tools\ILRepack.exe&quot; /internalize /xmldocs /out:&quot;$(MergedDir)$(TargetFileName)&quot; @(MergeInput->'&quot;%(FullPath)&quot;', ' ') @(_MergeLibDir->'/lib:&quot;%(Identity)&quot;', ' ')" />
+		<Message Importance="high" Text="Merged FOSS assembly -> $(MergedDir)$(TargetFileName)" />
+	</Target>
+</Project>

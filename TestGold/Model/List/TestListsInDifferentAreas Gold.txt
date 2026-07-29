@@ -1,0 +1,24 @@
+﻿5. Sect1_OddPage_Header_1
+6. Sect1_OddPage_Header_2
+7. Sect1_OddPage_Header_3
+8. Sect1_OddPage_Header_4
+1. Sect1_Body_1
+1. Sect1_TextBox_1
+2. Sect1_TextBox_2
+2. Sect1_Body_2
+3. Sect1_Body_3
+4. Sect1_Body_4
+3. Sect1_TextBox_3
+4. Sect1_TextBox_4
+Sect1_Body_End
+
+
+13. Sect1_OddPage_Footer_1
+14. Sect1_OddPage_Footer_2
+15. Sect1_OddPage_Footer_3
+16. Sect1_OddPage_Footer_4
+17. Sect2_Header_1
+18. Sect2_Header_2
+19. Sect2_Header_3
+20. Sect2_Header_4
+Sect2_Body_Start

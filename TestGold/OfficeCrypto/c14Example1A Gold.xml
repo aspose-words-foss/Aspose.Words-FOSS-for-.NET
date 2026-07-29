@@ -1,0 +1,5 @@
+<doc1>Hello, world!</doc1>
+<?xml-stylesheet href="doc.xsl"
+   type="text/xsl"   ?>
+<?pi-without-data?>
+<?pi-without-data?>

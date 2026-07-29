@@ -1,0 +1,21 @@
+REGEDIT4
+
+[-HKEY_CURRENT_USER\Software\VB and VBA Program Settings\TrashReg]
+
+[-HKEY_CURRENT_USER\Software\VB and VBA Program Settings\TrashRegX64]
+
+[-HKEY_CURRENT_USER\Software\VB and VBA Program Settings\SNC]
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"zTrashReg"=-
+"zTrashRegX64"=-
+
+[-HKEY_CLASSES_ROOT\regfile\shell\Open in RegEdit]
+[-HKEY_CLASSES_ROOT\regfile\shell\Open in RegEdit32]
+[-HKEY_CLASSES_ROOT\regfile\shell\Open in RegEdit64]
+
+[-HKEY_CLASSES_ROOT\.del32]
+[-HKEY_CLASSES_ROOT\.del64]
+
+[-HKEY_CLASSES_ROOT\delfile32]
+[-HKEY_CLASSES_ROOT\delfile64]

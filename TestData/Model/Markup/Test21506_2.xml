@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+  <pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml" pkg:padding="512">
+    <pkg:xmlData>
+      <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+        <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml" />
+        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml" />
+        <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml" />
+      </Relationships>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml" pkg:padding="256">
+    <pkg:xmlData>
+      <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+        <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings" Target="webSettings.xml" />
+        <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml" />
+        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml" />
+        <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/glossaryDocument" Target="glossary/document.xml" />
+        <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml" />
+      </Relationships>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
+    <pkg:xmlData>
+      <w:document mc:Ignorable="w14 w15 wp14" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+        <w:body>
+          <w:sdt>
+            <w:sdtPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Calibri" />
+                <w:b />
+                <w:bCs />
+                <w:caps />
+                <w:sz w:val="44" />
+                <w:szCs w:val="44" />
+              </w:rPr>
+              <w:alias w:val="Titre " />
+              <w:id w:val="-1591849913" />
+              <w:placeholder>
+                <w:docPart w:val="340FF14FA48C45E98DD32629D1948D71" />
+              </w:placeholder>
+              <w:dataBinding w:prefixMappings="xmlns:ns0='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://schemas.openxmlformats.org/package/2006/metadata/core-properties' " w:xpath="/ns1:coreProperties[1]/ns0:title[1]" w:storeItemID="{6C3C8BC8-F283-45AE-878A-BAB7291924A1}" />
+              <w:text />
+            </w:sdtPr>
+            <w:sdtEndPr />
+            <w:sdtContent>
+
+
+        <w:p w:rsidR="00CF099E" w:rsidRDefault="001B4358" w:rsidP="00CF099E">
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Calibri" />
+              <w:vanish />
+              <w:sz w:val="44" />
+              <w:szCs w:val="44" />
+            </w:rPr>
+            <w:t>Dummy start</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Calibri" />
+              <w:b />
+              <w:bCs />
+              <w:caps />
+              <w:sz w:val="72" />
+              <w:szCs w:val="44" />
+            </w:rPr>
+            <w:t>Supp</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Calibri" />
+              <w:b />
+              <w:bCs />
+              <w:caps />
+              <w:sz w:val="72" />
+              <w:szCs w:val="44" />
+            </w:rPr>
+            <w:t>i</w:t>
+          </w:r>
+
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Verdana" w:hAnsi="Verdana" w:cs="Calibri" />
+              <w:vanish />
+              <w:sz w:val="44" />
+              <w:szCs w:val="44" />
+            </w:rPr>
+            <w:t>Dummy end</w:t>
+          </w:r>
+
+
+        </w:p>
+
+
+            </w:sdtContent>
+          </w:sdt>
+          <w:sectPr w:rsidR="00D6749C">
+            <w:pgSz w:w="12240" w:h="15840" />
+            <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0" />
+            <w:cols w:space="708" />
+            <w:docGrid w:linePitch="360" />
+          </w:sectPr>
+        </w:body>
+      </w:document>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/settings.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml">
+    <pkg:xmlData>
+      <w:settings mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main">
+        <w:zoom w:percent="100" />
+        <w:displayBackgroundShape />
+        <w:defaultTabStop w:val="720" />
+        <w:characterSpacingControl w:val="doNotCompress" />
+        <w:savePreviewPicture />
+        <w:compat>
+          <w:useFELayout />
+          <w:compatSetting w:name="compatibilityMode" w:uri="http://schemas.microsoft.com/office/word" w:val="15" />
+          <w:compatSetting w:name="overrideTableStyleFontSizeAndJustification" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="enableOpenTypeFeatures" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="doNotFlipMirrorIndents" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="differentiateMultirowTableHeaders" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+        </w:compat>
+        <w:docVars>
+          <w:docVar w:name="__Grammarly_42____i" w:val="H4sIAAAAAAAEAKtWckksSQxILCpxzi/NK1GyMqwFAAEhoTITAAAA" />
+          <w:docVar w:name="__Grammarly_42___1" w:val="H4sIAAAAAAAEAKtWcslP9kxRslIyNDYyNTQ2tzAztTAysTQ0NDZR0lEKTi0uzszPAykwrgUAnA0fACwAAAA=" />
+        </w:docVars>
+        <w:rsids>
+          <w:rsidRoot w:val="00CF099E" />
+          <w:rsid w:val="000C3881" />
+          <w:rsid w:val="001B4358" />
+          <w:rsid w:val="00214BF6" />
+          <w:rsid w:val="0034036D" />
+          <w:rsid w:val="003871AF" />
+          <w:rsid w:val="00791EDC" />
+          <w:rsid w:val="0097269F" />
+          <w:rsid w:val="00CF099E" />
+          <w:rsid w:val="00D6749C" />
+          <w:rsid w:val="00E37B6F" />
+          <w:rsid w:val="00EB54A0" />
+        </w:rsids>
+        <m:mathPr>
+          <m:mathFont m:val="Cambria Math" />
+          <m:brkBin m:val="before" />
+          <m:brkBinSub m:val="--" />
+          <m:smallFrac m:val="0" />
+          <m:dispDef />
+          <m:lMargin m:val="0" />
+          <m:rMargin m:val="0" />
+          <m:defJc m:val="centerGroup" />
+          <m:wrapIndent m:val="1440" />
+          <m:intLim m:val="subSup" />
+          <m:naryLim m:val="undOvr" />
+        </m:mathPr>
+        <w:themeFontLang w:val="en-US" w:eastAsia="ja-JP" w:bidi="ar-SA" />
+        <w:clrSchemeMapping w:bg1="light1" w:t1="dark1" w:bg2="light2" w:t2="dark2" w:accent1="accent1" w:accent2="accent2" w:accent3="accent3" w:accent4="accent4" w:accent5="accent5" w:accent6="accent6" w:hyperlink="hyperlink" w:followedHyperlink="followedHyperlink" />
+        <w:shapeDefaults>
+          <o:shapedefaults v:ext="edit" spidmax="1026" />
+          <o:shapelayout v:ext="edit">
+            <o:idmap v:ext="edit" data="1" />
+          </o:shapelayout>
+        </w:shapeDefaults>
+        <w:decimalSymbol w:val="." />
+        <w:listSeparator w:val="," />
+        <w15:chartTrackingRefBased />
+        <w15:docId w15:val="{9CF9556D-B055-418B-9F72-8D59D9B7A7AF}" />
+      </w:settings>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/settings.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml">
+    <pkg:xmlData>
+      <w:settings mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main">
+        <w:view w:val="normal" />
+        <w:revisionView w:inkAnnotations="0" />
+        <w:defaultTabStop w:val="720" />
+        <w:characterSpacingControl w:val="doNotCompress" />
+        <w:compat>
+          <w:useFELayout />
+          <w:compatSetting w:name="compatibilityMode" w:uri="http://schemas.microsoft.com/office/word" w:val="15" />
+          <w:compatSetting w:name="overrideTableStyleFontSizeAndJustification" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="enableOpenTypeFeatures" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="doNotFlipMirrorIndents" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+          <w:compatSetting w:name="differentiateMultirowTableHeaders" w:uri="http://schemas.microsoft.com/office/word" w:val="1" />
+        </w:compat>
+        <w:rsids>
+          <w:rsidRoot w:val="00EB54A0" />
+          <w:rsid w:val="000C3881" />
+          <w:rsid w:val="005108D8" />
+          <w:rsid w:val="00EB54A0" />
+          <w:rsid w:val="00F1203F" />
+          <w:rsid w:val="00F65681" />
+          <w:rsid w:val="00FB5B25" />
+        </w:rsids>
+        <m:mathPr>
+          <m:mathFont m:val="Cambria Math" />
+          <m:brkBin m:val="before" />
+          <m:brkBinSub m:val="--" />
+          <m:smallFrac m:val="0" />
+          <m:dispDef />
+          <m:lMargin m:val="0" />
+          <m:rMargin m:val="0" />
+          <m:defJc m:val="centerGroup" />
+          <m:wrapIndent m:val="1440" />
+          <m:intLim m:val="subSup" />
+          <m:naryLim m:val="undOvr" />
+        </m:mathPr>
+        <w:themeFontLang w:val="en-US" w:eastAsia="ja-JP" w:bidi="ar-SA" />
+        <w:clrSchemeMapping w:bg1="light1" w:t1="dark1" w:bg2="light2" w:t2="dark2" w:accent1="accent1" w:accent2="accent2" w:accent3="accent3" w:accent4="accent4" w:accent5="accent5" w:accent6="accent6" w:hyperlink="hyperlink" w:followedHyperlink="followedHyperlink" />
+        <w:decimalSymbol w:val="." />
+        <w:listSeparator w:val="," />
+        <w15:chartTrackingRefBased />
+      </w:settings>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml">
+    <pkg:xmlData>
+      <w:glossaryDocument mc:Ignorable="w14 w15 wp14" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+        <w:docParts>
+          <w:docPart>
+            <w:docPartPr>
+              <w:name w:val="340FF14FA48C45E98DD32629D1948D71" />
+              <w:category>
+                <w:name w:val="General" />
+                <w:gallery w:val="placeholder" />
+              </w:category>
+              <w:types>
+                <w:type w:val="bbPlcHdr" />
+              </w:types>
+              <w:behaviors>
+                <w:behavior w:val="content" />
+              </w:behaviors>
+              <w:guid w:val="{CFAB5D9B-6C53-4C10-AA3A-4EC010583438}" />
+            </w:docPartPr>
+            <w:docPartBody>
+              <w:p w:rsidR="000C3881" w:rsidRDefault="00F1203F" w:rsidP="00EB54A0">
+                <w:pPr>
+                  <w:pStyle w:val="340FF14FA48C45E98DD32629D1948D71" />
+                </w:pPr>
+                <w:r w:rsidRPr="0034036D">
+                  <w:rPr>
+                    <w:rStyle w:val="PlaceholderText" />
+                  </w:rPr>
+                  <w:t>[Titre ]</w:t>
+                </w:r>
+              </w:p>
+            </w:docPartBody>
+          </w:docPart>
+        </w:docParts>
+      </w:glossaryDocument>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+    <pkg:xmlData>
+      <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+        <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings" Target="webSettings.xml" />
+        <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml" />
+        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml" />
+        <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml" />
+      </Relationships>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/fontTable.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml">
+    <pkg:xmlData>
+      <w:fonts mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:font w:name="Calibri">
+          <w:panose1 w:val="020F0502020204030204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E4002EFF" w:usb1="C000247B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="MS Mincho">
+          <w:altName w:val="ＭＳ 明朝" />
+          <w:panose1 w:val="02020609040205080304" />
+          <w:charset w:val="80" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E00002FF" w:usb1="6AC7FDFB" w:usb2="08000012" w:usb3="00000000" w:csb0="0002009F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Arial">
+          <w:panose1 w:val="020B0604020202020204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C000785B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Times New Roman">
+          <w:panose1 w:val="02020603050405020304" />
+          <w:charset w:val="CC" />
+          <w:family w:val="roman" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C000785B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Courier New">
+          <w:panose1 w:val="02070309020205020404" />
+          <w:charset w:val="CC" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C0007843" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Verdana">
+          <w:panose1 w:val="020B0604030504040204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="A00006FF" w:usb1="4000205B" w:usb2="00000010" w:usb3="00000000" w:csb0="0000019F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="MS Gothic">
+          <w:altName w:val="ＭＳ ゴシック" />
+          <w:panose1 w:val="020B0609070205080204" />
+          <w:charset w:val="80" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E00002FF" w:usb1="6AC7FDFB" w:usb2="08000012" w:usb3="00000000" w:csb0="0002009F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Calibri Light">
+          <w:panose1 w:val="020F0302020204030204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E4002EFF" w:usb1="C000247B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+      </w:fonts>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/docProps/app.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.extended-properties+xml" pkg:padding="256">
+    <pkg:xmlData>
+      <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
+        <Template>Normal</Template>
+        <TotalTime>0</TotalTime>
+        <Pages>1</Pages>
+        <Words>1</Words>
+        <Characters>7</Characters>
+        <Application>Microsoft Office Word</Application>
+        <DocSecurity>0</DocSecurity>
+        <Lines>1</Lines>
+        <Paragraphs>1</Paragraphs>
+        <ScaleCrop>false</ScaleCrop>
+        <HeadingPairs>
+          <vt:vector size="2" baseType="variant">
+            <vt:variant>
+              <vt:lpstr>Title</vt:lpstr>
+            </vt:variant>
+            <vt:variant>
+              <vt:i4>1</vt:i4>
+            </vt:variant>
+          </vt:vector>
+        </HeadingPairs>
+        <TitlesOfParts>
+          <vt:vector size="1" baseType="lpstr">
+            <vt:lpstr>Suppi</vt:lpstr>
+          </vt:vector>
+        </TitlesOfParts>
+        <Company />
+        <LinksUpToDate>false</LinksUpToDate>
+        <CharactersWithSpaces>7</CharactersWithSpaces>
+        <SharedDoc>false</SharedDoc>
+        <HyperlinksChanged>false</HyperlinksChanged>
+        <AppVersion>15.0000</AppVersion>
+      </Properties>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/webSettings.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml">
+    <pkg:xmlData>
+      <w:webSettings mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:optimizeForBrowser />
+        <w:allowPNG />
+      </w:webSettings>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/styles.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml">
+    <pkg:xmlData>
+      <w:styles mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:docDefaults>
+          <w:rPrDefault>
+            <w:rPr>
+              <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" />
+              <w:sz w:val="22" />
+              <w:szCs w:val="22" />
+              <w:lang w:val="en-US" w:eastAsia="ja-JP" w:bidi="ar-SA" />
+            </w:rPr>
+          </w:rPrDefault>
+          <w:pPrDefault>
+            <w:pPr>
+              <w:spacing w:after="160" w:line="259" w:lineRule="auto" />
+            </w:pPr>
+          </w:pPrDefault>
+        </w:docDefaults>
+        <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
+          <w:name w:val="Normal" />
+          <w:qFormat />
+        </w:style>
+        <w:style w:type="character" w:default="1" w:styleId="DefaultParagraphFont">
+          <w:name w:val="Default Paragraph Font" />
+          <w:uiPriority w:val="1" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+        </w:style>
+        <w:style w:type="table" w:default="1" w:styleId="TableNormal">
+          <w:name w:val="Normal Table" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+          <w:tblPr>
+            <w:tblInd w:w="0" w:type="dxa" />
+            <w:tblCellMar>
+              <w:top w:w="0" w:type="dxa" />
+              <w:left w:w="108" w:type="dxa" />
+              <w:bottom w:w="0" w:type="dxa" />
+              <w:right w:w="108" w:type="dxa" />
+            </w:tblCellMar>
+          </w:tblPr>
+        </w:style>
+        <w:style w:type="numbering" w:default="1" w:styleId="NoList">
+          <w:name w:val="No List" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+        </w:style>
+        <w:style w:type="paragraph" w:styleId="NoSpacing">
+          <w:name w:val="No Spacing" />
+          <w:link w:val="NoSpacingChar" />
+          <w:uiPriority w:val="1" />
+          <w:qFormat />
+          <w:rsid w:val="00CF099E" />
+          <w:pPr>
+            <w:spacing w:after="0" w:line="240" w:lineRule="auto" />
+          </w:pPr>
+          <w:rPr>
+            <w:lang w:val="fr-CH" w:eastAsia="en-US" />
+          </w:rPr>
+        </w:style>
+        <w:style w:type="character" w:customStyle="1" w:styleId="NoSpacingChar">
+          <w:name w:val="No Spacing Char" />
+          <w:basedOn w:val="DefaultParagraphFont" />
+          <w:link w:val="NoSpacing" />
+          <w:uiPriority w:val="1" />
+          <w:rsid w:val="00CF099E" />
+          <w:rPr>
+            <w:lang w:val="fr-CH" w:eastAsia="en-US" />
+          </w:rPr>
+        </w:style>
+        <w:style w:type="character" w:styleId="PlaceholderText">
+          <w:name w:val="Placeholder Text" />
+          <w:basedOn w:val="DefaultParagraphFont" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:rsid w:val="00CF099E" />
+          <w:rPr>
+            <w:color w:val="808080" />
+          </w:rPr>
+        </w:style>
+        <w:style w:type="character" w:customStyle="1" w:styleId="tw4winMark">
+          <w:name w:val="tw4winMark" />
+          <w:rPr>
+            <w:rFonts w:ascii="Courier New" w:eastAsia="Courier New" w:hAnsi="Courier New" w:cs="Courier New" />
+            <w:vanish />
+            <w:color w:val="800080" />
+            <w:sz w:val="24" />
+            <w:vertAlign w:val="subscript" />
+          </w:rPr>
+        </w:style>
+      </w:styles>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/fontTable.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml">
+    <pkg:xmlData>
+      <w:fonts mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:font w:name="Calibri">
+          <w:panose1 w:val="020F0502020204030204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E4002EFF" w:usb1="C000247B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="MS Mincho">
+          <w:altName w:val="ＭＳ 明朝" />
+          <w:panose1 w:val="02020609040205080304" />
+          <w:charset w:val="80" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E00002FF" w:usb1="6AC7FDFB" w:usb2="08000012" w:usb3="00000000" w:csb0="0002009F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Arial">
+          <w:panose1 w:val="020B0604020202020204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C000785B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Times New Roman">
+          <w:panose1 w:val="02020603050405020304" />
+          <w:charset w:val="CC" />
+          <w:family w:val="roman" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C000785B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Courier New">
+          <w:panose1 w:val="02070309020205020404" />
+          <w:charset w:val="CC" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E0002EFF" w:usb1="C0007843" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Verdana">
+          <w:panose1 w:val="020B0604030504040204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="A00006FF" w:usb1="4000205B" w:usb2="00000010" w:usb3="00000000" w:csb0="0000019F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="MS Gothic">
+          <w:altName w:val="ＭＳ ゴシック" />
+          <w:panose1 w:val="020B0609070205080204" />
+          <w:charset w:val="80" />
+          <w:family w:val="modern" />
+          <w:pitch w:val="fixed" />
+          <w:sig w:usb0="E00002FF" w:usb1="6AC7FDFB" w:usb2="08000012" w:usb3="00000000" w:csb0="0002009F" w:csb1="00000000" />
+        </w:font>
+        <w:font w:name="Calibri Light">
+          <w:panose1 w:val="020F0302020204030204" />
+          <w:charset w:val="CC" />
+          <w:family w:val="swiss" />
+          <w:pitch w:val="variable" />
+          <w:sig w:usb0="E4002EFF" w:usb1="C000247B" w:usb2="00000009" w:usb3="00000000" w:csb0="000001FF" w:csb1="00000000" />
+        </w:font>
+      </w:fonts>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/webSettings.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml">
+    <pkg:xmlData>
+      <w:webSettings mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:optimizeForBrowser />
+        <w:allowPNG />
+      </w:webSettings>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/glossary/styles.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml">
+    <pkg:xmlData>
+      <w:styles mc:Ignorable="w14 w15" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+        <w:docDefaults>
+          <w:rPrDefault>
+            <w:rPr>
+              <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" />
+              <w:sz w:val="22" />
+              <w:szCs w:val="22" />
+              <w:lang w:val="en-US" w:eastAsia="ja-JP" w:bidi="ar-SA" />
+            </w:rPr>
+          </w:rPrDefault>
+          <w:pPrDefault>
+            <w:pPr>
+              <w:spacing w:after="160" w:line="259" w:lineRule="auto" />
+            </w:pPr>
+          </w:pPrDefault>
+        </w:docDefaults>
+        <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
+          <w:name w:val="Normal" />
+          <w:qFormat />
+        </w:style>
+        <w:style w:type="character" w:default="1" w:styleId="DefaultParagraphFont">
+          <w:name w:val="Default Paragraph Font" />
+          <w:uiPriority w:val="1" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+        </w:style>
+        <w:style w:type="table" w:default="1" w:styleId="TableNormal">
+          <w:name w:val="Normal Table" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+          <w:tblPr>
+            <w:tblInd w:w="0" w:type="dxa" />
+            <w:tblCellMar>
+              <w:top w:w="0" w:type="dxa" />
+              <w:left w:w="108" w:type="dxa" />
+              <w:bottom w:w="0" w:type="dxa" />
+              <w:right w:w="108" w:type="dxa" />
+            </w:tblCellMar>
+          </w:tblPr>
+        </w:style>
+        <w:style w:type="numbering" w:default="1" w:styleId="NoList">
+          <w:name w:val="No List" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:unhideWhenUsed />
+        </w:style>
+        <w:style w:type="character" w:styleId="PlaceholderText">
+          <w:name w:val="Placeholder Text" />
+          <w:basedOn w:val="DefaultParagraphFont" />
+          <w:uiPriority w:val="99" />
+          <w:semiHidden />
+          <w:rsid w:val="00EB54A0" />
+          <w:rPr>
+            <w:color w:val="808080" />
+          </w:rPr>
+        </w:style>
+        <w:style w:type="paragraph" w:customStyle="1" w:styleId="92469A5D8F164B1193C7650E455B2948">
+          <w:name w:val="92469A5D8F164B1193C7650E455B2948" />
+          <w:rsid w:val="00EB54A0" />
+        </w:style>
+        <w:style w:type="paragraph" w:customStyle="1" w:styleId="340FF14FA48C45E98DD32629D1948D71">
+          <w:name w:val="340FF14FA48C45E98DD32629D1948D71" />
+          <w:rsid w:val="00EB54A0" />
+        </w:style>
+      </w:styles>
+    </pkg:xmlData>
+  </pkg:part>
+  <pkg:part pkg:name="/docProps/core.xml" pkg:contentType="application/vnd.openxmlformats-package.core-properties+xml" pkg:padding="256">
+    <pkg:xmlData>
+      <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dc:title>Suppi</dc:title>
+        <dc:creator>Christophe Keller</dc:creator>
+        <cp:lastModifiedBy>Alexey Morozov</cp:lastModifiedBy>
+        <cp:revision>2</cp:revision>
+        <dcterms:created xsi:type="dcterms:W3CDTF">2020-12-13T08:56:00Z</dcterms:created>
+        <dcterms:modified xsi:type="dcterms:W3CDTF">2020-12-13T08:56:00Z</dcterms:modified>
+      </cp:coreProperties>
+    </pkg:xmlData>
+  </pkg:part>
+</pkg:package>

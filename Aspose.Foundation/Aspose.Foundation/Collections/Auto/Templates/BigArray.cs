@@ -1,0 +1,76 @@
+﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
+// 12/03/2021 by Dmitry Sokolov
+
+#if INCLUDE_FILE
+using System;
+
+namespace Aspose.Collections
+{
+    /// <summary>
+    /// Implementation of the array which split to sub-arrays.
+    /// Such approach allows to allocate a big array on fragmented memory.
+    /// It is adopted implementation from here:
+    /// https://docs.microsoft.com/en-us/archive/blogs/joshwil/bigarrayt-getting-around-the-2gb-array-size-limit.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class BigArray
+    {
+        internal BigArray(int size)
+        {
+            if (size <= 0)
+                throw new ArgumentOutOfRangeException("Size must be greater than zero.");
+
+            int numBlocks = (size / mBlockSize);
+            if ((numBlocks * mBlockSize) < size)
+                numBlocks += 1;
+
+            mLength = size;
+            mElements = new T[numBlocks][];
+            for (int i = 0; i < (numBlocks - 1); i++)
+                mElements[i] = new T[mBlockSize];
+
+            // By making sure to make the last block right sized then we get the range checks
+            // for free with the normal array range checks and don't have to add our own
+            int numElementsInLastBlock = (size % mBlockSize) > 0 ? (size % mBlockSize) : mBlockSize;
+            numElementsInLastBlock = numElementsInLastBlock > 0 ? numElementsInLastBlock : mBlockSize;
+            mElements[numBlocks - 1] = new T[numElementsInLastBlock];
+        }
+
+        internal int Length
+        {
+            get
+            {
+                return mLength;
+            }
+        }
+
+        internal T this[int elementNumber]
+        {
+            get
+            {
+                int blockNum = (elementNumber >> mBlockSizeLog2);
+                int elementNumberInBlock = (elementNumber & (mBlockSize - 1));
+                return mElements[blockNum][elementNumberInBlock];
+            }
+            set
+            {
+                int blockNum = (elementNumber >> mBlockSizeLog2);
+                int elementNumberInBlock = (elementNumber & (mBlockSize - 1));
+                mElements[blockNum][elementNumberInBlock] = value;
+            }
+        }
+
+        // Block size must be a power of 2.
+        private const int mBlockSize = 1024; // For example, for integer array it will be 4 Kb per block.
+        private const int mBlockSizeLog2 = 10;
+
+        // Don't use a multi-dimensional array here because such implementation requires single memory block with size M * N.
+        // Also we need the ability to set different size for the last block from others.
+        // Jagged Arrays: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/jagged-arrays
+        // Multidimensional Arrays: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays
+        private T[][] mElements;
+
+        private int mLength;
+    }
+}
+#endif

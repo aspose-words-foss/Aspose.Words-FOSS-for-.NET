@@ -1,0 +1,13 @@
+<Project>
+  <!-- Framework-cascade symbols for the three supported targets.
+       The NET1x..NET46 ladder is kept because code still contains #if checks against the older symbols. -->
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+    <DefineConstants>NET10;NET20;NET30;NET35;NET40;NET45;NET46;NETSTANDARD;NETCORE;NETCORE31;NET50;NET60;NET70;NET80;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+</Project>

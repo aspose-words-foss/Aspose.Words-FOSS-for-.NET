@@ -1,0 +1,1845 @@
+.HTMLBody {
+	margin: 0px; overflow: auto; padding-left: 5px; font-family: Tahoma,sans-serif; font-size: 11px; background-color: rgb(13, 73, 136) !important;
+}
+.AnswersBarOuterTable {
+	padding: 4px 2px 2px; border-bottom-color: rgb(107, 152, 191); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(154, 191, 220);
+}
+.AnswersBarButtonCell {
+	padding: 2px 6px 2px 0px; font-size: 8pt;
+}
+.columnHeader {
+	border: 1px solid rgb(198, 201, 192); border-image: none; color: rgb(0, 0, 0); font-size: 8pt; font-weight: normal; cursor: move; background-color: rgb(247, 244, 226);
+}
+.AnswersViewToolbar {
+	padding: 1px 5px; border: 1px solid rgb(99, 102, 97); border-image: none; background-color: rgb(236, 234, 213);
+}
+.FilterEditTable {
+	border: 0px solid rgb(255, 255, 255); border-image: none; background-color: rgb(255, 255, 255);
+}
+.AnswersBarPreviewCell {
+	padding-right: 4px;
+}
+.AnswersBarFileButtonCell {
+	padding: 5px 4px 5px 2px;
+}
+.AnswersBarFileSeparator {
+	background-position: center; padding: 0px 1px; width: 6px; background-image: url("backgroundviewbarsepnorm.gif"); background-repeat: no-repeat;
+}
+.AnswersBarFileButtonBar {
+	margin: 0px 5px; padding: 0px 3px; border: 1px solid rgb(119, 162, 198); border-image: none; background-color: rgb(170, 204, 231);
+}
+.AnswersBarDropDownCell {
+	padding: 2px; border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);
+}
+.AnswersBarDropDownSpan {
+	width: 90pt; cursor: pointer;
+}
+.AnswersBarDropDownCell a {
+	padding: 0px 1px 0px 4px; color: rgb(60, 60, 60); font-size: 8pt; font-weight: bold; text-decoration: none; white-space: nowrap;
+}
+.AnswersBarDropDownCell a:link {
+	padding: 0px 1px 0px 4px; color: rgb(60, 60, 60); font-size: 8pt; font-weight: bold; text-decoration: none; white-space: nowrap;
+}
+.AnswersBarDropDownCell a:visited {
+	padding: 0px 1px 0px 4px; color: rgb(60, 60, 60); font-size: 8pt; font-weight: bold; text-decoration: none; white-space: nowrap;
+}
+.AnswersBarDropDownCell a:hover {
+	color: rgb(0, 0, 0); text-decoration: none; background-color: rgb(232, 232, 232);
+}
+.AnswersBarTextCell {
+	padding: 2px 3px 2px 2px; font-family: Arial,Sans-serif; font-size: 9pt; font-weight: normal;
+}
+.AnswersBarNameCell {
+	padding: 2px 6px 0px; text-align: right; line-height: 100%; font-family: Arial,Sans-serif; font-size: 8pt; font-weight: bold;
+}
+.AnswersBarCaptionCell {
+	padding: 2px 3px 0px; letter-spacing: 2px; font-family: Arial,Sans-serif; font-size: 7pt; font-weight: normal;
+}
+.AnswersBarButtonCell input {
+	font-size: 8pt;
+}
+.AnswersBarButtonCell button {
+	font-size: 8pt;
+}
+.AnswersBarButtonCell select {
+	font-size: 8pt;
+}
+.AnswersBarSeparator {
+	background-position: left; padding: 0px 1px; width: 6px; background-image: url("bganswersbarsep.gif"); background-repeat: no-repeat;
+}
+.AnswersBarForm {
+	margin: 0px;
+}
+.WriteBackButtonCell {
+	padding: 2px 6px 2px 0px;
+}
+.AnswersTabsOuterTable {
+	margin: 0px; padding: 0px 0px 0px 8px; background-color: rgb(19, 88, 168);
+}
+.AnswersTabsInnerTable {
+	padding: 0px; height: 23px;
+}
+.AnswersTabsCell {
+	padding: 2px 3px 0px 0px; height: 27px; font-size: 8pt; vertical-align: bottom; white-space: nowrap;
+}
+.AnswersTabCell {
+	padding: 2px 3px 0px 0px; height: 27px; font-size: 8pt; vertical-align: bottom; white-space: nowrap;
+}
+.tier1On {
+	background-position: right bottom; background-image: url("background_tab_end.gif"); background-repeat: no-repeat;
+}
+.tier1Off {
+	background-position: right bottom; background-image: url("background_tab_end.gif"); background-repeat: no-repeat;
+}
+.tier1On a {
+	border-width: 2px 1px 1px 2px; border-style: groove solid solid groove; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(229, 229, 229); padding: 1px 6px 0px; height: 18px; color: rgb(51, 51, 153); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(229, 229, 229);
+}
+.tier1On a:visited {
+	border-width: 2px 1px 1px 2px; border-style: groove solid solid groove; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(229, 229, 229); padding: 1px 6px 0px; height: 18px; color: rgb(51, 51, 153); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(229, 229, 229);
+}
+.tier1On a:link {
+	border-width: 2px 1px 1px 2px; border-style: groove solid solid groove; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(229, 229, 229); padding: 1px 6px 0px; height: 18px; color: rgb(51, 51, 153); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(229, 229, 229);
+}
+.tier1On a:hover {
+	border-width: 2px 1px 1px 2px; border-style: groove solid solid groove; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(229, 229, 229); padding: 1px 6px 0px; height: 18px; color: rgb(51, 51, 153); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(229, 229, 229);
+}
+.tier1On a:hover {
+	border-color: rgb(255, 255, 255); color: rgb(51, 51, 153); background-color: rgb(229, 229, 229);
+}
+.tier1Off a {
+	border-width: 2px 1px 0px 2px; border-style: groove; border-color: rgb(255, 255, 255); margin: 4px 0px; padding: 1px 6px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(70, 111, 180);
+}
+.tier1Off a:visited {
+	border-width: 2px 1px 0px 2px; border-style: groove; border-color: rgb(255, 255, 255); margin: 4px 0px; padding: 1px 6px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(70, 111, 180);
+}
+.tier1Off a:link {
+	border-width: 2px 1px 0px 2px; border-style: groove; border-color: rgb(255, 255, 255); margin: 4px 0px; padding: 1px 6px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(70, 111, 180);
+}
+.tier1Off a:hover {
+	border-width: 2px 1px 0px 2px; border-style: groove; border-color: rgb(255, 255, 255); margin: 4px 0px; padding: 1px 6px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 9pt; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(70, 111, 180);
+}
+.tier1Off a:hover {
+	border-color: rgb(255, 255, 255); color: rgb(51, 51, 153); background-color: rgb(229, 229, 229);
+}
+.TabOnCell {
+	background-position: left top; padding: 3px 4px 2px 10px; text-align: center; text-decoration: none; background-image: url("bg_tab.gif"); background-repeat: repeat-x;
+}
+.TabOnSep {
+	background-position: left top; width: 5px; background-image: url("subtabr.gif"); background-repeat: no-repeat;
+}
+.TabOffCell {
+	background-position: left top; padding: 3px 4px 2px 10px; text-align: center; font-size: 9pt; white-space: pre; background-image: url("bg_tab_dim.gif"); background-repeat: repeat-x;
+}
+.TabOffSep {
+	background-position: left top; width: 5px; background-image: url("subdimtabr.gif"); background-repeat: no-repeat;
+}
+.TabOnCell a {
+	color: rgb(35, 74, 130); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOnCell a:link {
+	color: rgb(35, 74, 130); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOnCell a:visited {
+	color: rgb(35, 74, 130); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOnCell a:hover {
+	color: rgb(35, 74, 130); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOffCell a {
+	color: rgb(79, 96, 112); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOffCell a:link {
+	color: rgb(79, 96, 112); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOffCell a:visited {
+	color: rgb(79, 96, 112); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOffCell a:hover {
+	color: rgb(79, 96, 112); letter-spacing: 0px; font-family: Tahoma; font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.TabOffCell a:hover {
+	color: rgb(35, 74, 130);
+}
+.MainBarTable {
+	background-position: left top; height: 27px; background-image: url("headerbackground.jpg"); background-repeat: no-repeat; background-color: rgb(17, 153, 227);
+}
+.MainBarProductCell {
+	padding: 0px 3px 0px 4px; font-size: 8pt;
+}
+.MainBarActiveProductCell {
+	padding: 0px 3px 0px 4px; font-size: 8pt;
+}
+.MainBarActionCell {
+	padding: 0px 3px 0px 4px; font-size: 8pt;
+}
+.MainBarAlertCell {
+	padding: 0px 3px 0px 4px; font-size: 8pt;
+}
+.MainBarSep {
+	color: rgb(255, 255, 255);
+}
+.MainBarActionCell a {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarActionCell a:visited {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarActionCell a:link {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarActionCell a:hover {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarActionCell a:hover {
+	text-decoration: underline;
+}
+.MainBarActiveProductCell a {
+	color: rgb(255, 255, 255); font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.MainBarActiveProductCell a:visited {
+	color: rgb(255, 255, 255); font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.MainBarActiveProductCell a:link {
+	color: rgb(255, 255, 255); font-size: 8pt; font-weight: bold; text-decoration: none;
+}
+.MainBarActiveProductCell a:hover {
+	text-decoration: underline;
+}
+.MainBarProductCell a {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarProductCell a:visited {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarProductCell a:link {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarProductCell a:hover {
+	color: rgb(255, 255, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarProductCell a:hover {
+	text-decoration: underline;
+}
+.MainBarAlertCell a {
+	color: rgb(204, 204, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarAlertCell a:visited {
+	color: rgb(204, 204, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarAlertCell a:link {
+	color: rgb(204, 204, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarAlertCell a:hover {
+	color: rgb(204, 204, 255); font-size: 8pt; text-decoration: none;
+}
+.MainBarAlertCell a:hover {
+	text-decoration: underline;
+}
+.ViewBarDiv {
+	width: 100%; border-bottom-color: rgb(201, 203, 211); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(234, 239, 245);
+}
+.ViewBarTable {
+	height: 25px; margin-left: 4px;
+}
+.ViewBarButtonCell {
+	font: 11px/normal Tahoma; padding: 2px 4px; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarLinkCell {
+	font: 11px/normal Tahoma; padding: 2px 4px; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarTextCell {
+	font: 11px/normal Tahoma; padding: 2px 4px; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarButtonCell a {
+	cursor: default;
+}
+.ViewBarButtonCellDown {
+	border-width: 1px; border-style: solid; border-color: rgb(0, 0, 10) rgb(103, 113, 131) rgb(157, 171, 192); padding: 1px 3px; background-image: url("button_bg_md.png"); background-repeat: repeat-x;
+}
+.ViewBarCheckboxCell {
+	padding: 2px 0px 2px 2px; font-size: 8pt;
+}
+.ViewBarCaptionCell {
+	font: 11px/normal Tahoma; padding: 2px 4px; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarCaption {
+	font: 11px/normal Tahoma; padding: 2px 4px; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarCaptionOver {
+	font: 11px/normal Tahoma; padding: 2px 4px; color: rgb(0, 0, 153); text-decoration: underline; font-size-adjust: none; font-stretch: normal;
+}
+.ViewBarHighlightedSpan {
+	padding: 1px 4px; color: rgb(64, 64, 64); background-color: rgb(255, 255, 255);
+}
+.ViewBarSeparator {
+	background-position: center; font: 11px/normal Tahoma; padding: 2px 5px; font-size-adjust: none; font-stretch: normal; background-image: url("backgroundviewbarsepnorm.gif"); background-repeat: no-repeat;
+}
+.ViewBarSeparatorAttach {
+	background-position: center; font: 11px/normal Tahoma; padding: 2px 5px; font-size-adjust: none; font-stretch: normal; background-image: url("bgviewbarsepattach.gif"); background-repeat: no-repeat;
+}
+.shadowOffsetCellBottom {
+	padding: 0px; width: 4px; height: 6px; background-color: transparent;
+}
+.shadowOffsetCellRight {
+	padding: 0px; width: 6px; height: 4px; background-color: transparent;
+}
+.shadowRight {
+	background: url("sdw_vert.png") right top !important; padding: 0px; width: 6px; font-size: 1pt;
+}
+.shadowBottom {
+	background: url("sdw_horz.png") left bottom !important; padding: 0px; height: 6px; font-size: 1pt;
+}
+.shadowCorner {
+	background: url("sdw_corner.png") no-repeat right bottom !important; padding: 0px; width: 6px; height: 6px;
+}
+.dialogDiv {
+	display: none; position: absolute;
+}
+.DialogText {
+	padding: 0px 0px 2px 2px; width: 300px; color: rgb(0, 0, 0); font-size: 9pt;
+}
+.OpaqueLayer {
+	background-position: left top; opacity: 0.6; background-repeat: repeat; background-color: white;
+}
+.TransparentLayer {
+	background-color: transparent;
+}
+.XUIColorPickerButton {
+	padding: 2px; font-size: 8pt; vertical-align: top; white-space: nowrap;
+}
+.XUIDialogTable {
+	text-align: left; border-right-color: rgb(3, 92, 138); border-left-color: rgb(3, 92, 138); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-color: white;
+}
+.XUIDialogTable input {
+	font: 11px/normal Tahoma; font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogTable button {
+	font: 11px/normal Tahoma; font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogTable textarea {
+	font: 11px/normal Tahoma; font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogTable select {
+	font: 11px/normal Tahoma; font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogRoundCornerRow td {
+	font-size: 1px;
+}
+.XUIDialogRoundCornerRow table {
+	width: 100%; height: 4px;
+}
+.XUIDialogRoundCornerRow img {
+	vertical-align: top;
+}
+.XUIDialogRoundCornerRow .TopCenter {
+	background-image: url("../common/r_win_tcenter.png"); background-repeat: repeat-x;
+}
+.XUIDialogRoundCornerRow .BottomCenter {
+	background-image: url("../common/r_win_bcenter.png"); background-repeat: repeat-x;
+}
+.XUIDialogTitleCell {
+	font: bold 12px/normal Tahoma; padding: 0px 0px 2px 6px; color: rgb(62, 64, 61); font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogTitleCellInactive {
+	background-position: left top; font: bold 12px/normal Tahoma; padding: 2px 0px 2px 6px; left: 1px; color: rgb(255, 255, 255); position: relative; font-size-adjust: none; font-stretch: normal; background-repeat: repeat-x; background-color: rgb(204, 204, 204);
+}
+.XUIDialogIconCell {
+	padding: 0px 3px 2px 0px; text-align: right;
+}
+.XUIDialogHelpCell {
+	padding: 1px 3px 1px 1px;
+}
+.XUIDialogHelpCell a {
+	color: rgb(20, 117, 144); font-size: 8pt; text-decoration: underline;
+}
+.XUIDialogHelpCell a:visited {
+	color: rgb(20, 117, 144); font-size: 8pt; text-decoration: underline;
+}
+.XUIDialogHelpCell a:link {
+	color: rgb(20, 117, 144); font-size: 8pt; text-decoration: underline;
+}
+.XUIDialogHelpCell a:hover {
+	text-decoration: underline;
+}
+.XUIDialogTitleBar {
+	cursor: move; background-image: url("../common/titleBar_background.png"); background-repeat: repeat-x;
+}
+.XUIDialogFooterBar {
+	background-position: bottom; background-image: url("../common/footer_background.png"); background-repeat: repeat-x;
+}
+.XUIDialogFooterBar td {
+	padding-top: 4px; padding-bottom: 2px;
+}
+.XUIDialogFooterLeftCell {
+	text-align: left; padding-left: 10px;
+}
+.XUIDialogFooterRightCell {
+	text-align: right; padding-right: 10px;
+}
+td.XUIDialogButtonCell {
+	padding: 2px 0px 2px 3px;
+}
+div.XUIDialogButtonCell {
+	padding: 2px 0px 2px 3px;
+}
+.XUIDialogEditorCell {
+	padding: 5px; border-top-color: rgb(178, 190, 221); border-bottom-color: rgb(178, 190, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+td.XUIDialogButtonsCell {
+	padding: 2px 6px 4px 0px;
+}
+.XUIPromptLink {
+	padding: 2px 0px; font-size: 8pt; white-space: nowrap;
+}
+.XUIPromptToolbar {
+	background-color: rgb(234, 239, 245);
+}
+.XUIPromptSubtable {
+	margin-left: 8px;
+}
+.XUIPromptTable {
+	font: 11px/normal Tahoma; padding: 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptGroup {
+	font: bold 11px/normal Tahoma; padding: 4px 0px 2px 4px; color: rgb(62, 64, 61); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptGroupCell {
+	font: bold 11px/normal Tahoma; padding: 4px 0px 2px 4px; color: rgb(62, 64, 61); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptAnsGroupCell {
+	font: bold 11px/normal Tahoma; padding: 4px 0px 2px 4px; color: rgb(62, 64, 61); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptAnsGroupCell {
+	border-style: none none solid; border-color: rgb(62, 64, 61) rgb(62, 64, 61) rgb(210, 210, 190); border-bottom-width: 1px;
+}
+.XUIPromptGroupImgCell {
+	padding: 0px;
+}
+.XUIPromptGroupCellExpanderCaption {
+	font: bold 11px/normal Tahoma; padding: 4px 4px 2px; color: rgb(62, 64, 61); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCaption {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntry {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledCaption {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledEntry {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCaptionWrap {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledCaptionWrap {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCBRBCaption {
+	font: 11px/normal Tahoma; padding: 3px 8px 3px 0px; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCBRBCaption {
+	padding: 0px 8px 0px 0px;
+}
+.XUIPromptCaption {
+	text-align: right; color: rgb(112, 74, 0); white-space: nowrap;
+}
+.OldXUIPromptCaption {
+	color: rgb(112, 74, 0); white-space: nowrap;
+}
+.XUIPromptCBRBCaption {
+	color: rgb(0, 0, 0); white-space: nowrap;
+}
+.XUIPromptEntry {
+	color: rgb(0, 0, 0); white-space: nowrap;
+}
+.XUIPromptEntryIn {
+	color: rgb(0, 0, 0); white-space: nowrap;
+}
+.ImageMapEditorDialogMainTable .XUIPromptCaption {
+	text-align: right;
+}
+.XUIPromptDisabledCaption {
+	color: rgb(126, 128, 122); white-space: nowrap;
+}
+.XUIPromptDisabledEntry {
+	color: rgb(126, 128, 122); white-space: nowrap;
+}
+.XUIPromptCaptionWrap {
+	color: rgb(112, 74, 0);
+}
+.XUIPromptDisabledCaptionWrap {
+	color: rgb(126, 128, 122);
+}
+.XUIPromptCaptionIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntryIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUICaptionInAlignTop {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCaptionIn {
+	text-align: right;
+}
+.XUICaptionInAlignTop {
+	vertical-align: top;
+}
+.OldXUIPromptCaptionIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledCaptionIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(126, 128, 122); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledEntryIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(126, 128, 122); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptCaptionWrapIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledCaptionWrapIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(126, 128, 122); font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntry input {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntry select {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntry textarea {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntryIn input {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntryIn select {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptEntryIn textarea {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptDisabledEntry input {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptDisabledEntry select {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptDisabledEntry textarea {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptDisabledEntryIn input {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptDisabledEntryIn select {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptDisabledEntryIn textarea {
+	border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; background-color: rgb(235, 234, 213);
+}
+.XUIPromptBoxIn {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 14px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptHelpIn {
+	padding: 3px 6px 3px 14px; font-size: 8pt;
+}
+.XUIPromptStaticText {
+	padding: 3px 6px 3px 3px; height: 22px; font-size: 8pt; font-weight: bold;
+}
+.XUIPromptColor {
+	border: 1px solid gray; border-image: none; font-size: 11px; cursor: pointer;
+}
+.XUIPromptError {
+	font: 11px/normal Tahoma; padding: 4px; color: red; border-left-color: red; border-left-width: 2px; border-left-style: solid; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptHeading {
+	padding: 2px; color: rgb(102, 102, 102); font-style: italic;
+}
+.XUIPromptIndicatorHeading {
+	padding: 2px; text-align: right; color: rgb(102, 102, 102); font-style: italic;
+}
+.XUIPromptImage {
+	padding: 0px 3px; cursor: pointer;
+}
+.XUIPromptSelectedImage {
+	padding: 0px 3px; cursor: pointer;
+}
+.XUIPromptSelectedIndicator {
+	padding: 0px 6px 0px 4px; text-align: right;
+}
+.XUIPromptIndicator {
+	padding: 0px 6px 0px 4px; text-align: right; color: rgb(153, 153, 153);
+}
+.XUIPromptItem {
+	padding: 2px 4px;
+}
+.XUIPromptSelectedItem {
+	padding: 2px 4px; font-weight: bold;
+}
+.XUIPromptItemIn {
+	padding: 2px 4px 2px 16px;
+}
+.XUIPromptSelecte {
+	padding: 2px 4px 2px 16px; font-weight: bold;
+}
+.XUIPreviewDiv {
+	border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-right-style: dashed; border-bottom-style: dashed; border-left-style: dashed;
+}
+.XUIPreviewBanner {
+	background-color: rgb(234, 239, 245);
+}
+.XUIPreviewTable {
+	margin: 8px 0px 2px; border: 2px dashed rgb(204, 204, 204); border-image: none; width: 100%;
+}
+.XUIPreviewCheckboxCell a {
+	font-size: 9pt;
+}
+.XUIPreviewCheckboxCell input {
+	font-size: 9pt;
+}
+.XUIPreviewLinkCell a {
+	font-size: 9pt;
+}
+.XUIPreviewLinkCell {
+	padding: 0px 6px 4px 2px;
+}
+.XUIPreviewingSpan {
+	padding-left: 4px; font-size: 9pt; font-weight: bold; white-space: nowrap;
+}
+.XUIPromptBox {
+	font: 11px/normal Tahoma; padding: 3px 6px 3px 0px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.XUIPromptBox input {
+	margin: 0px; padding: 0px;
+}
+.XUIPromptBoxIn input {
+	margin: 0px; padding: 0px;
+}
+.XUIPromptButtonized {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 216) rgb(185, 185, 132) rgb(121, 121, 117); padding: 2px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px;
+}
+.XUIPromptButtonized span {
+	border-width: 2px; border-style: solid; border-color: white black black white;
+}
+.XUIPromptButtonized img {
+	text-align: center; vertical-align: middle;
+}
+.XUISectionHeadingTable {
+	padding: 2px; margin-top: 2px; margin-bottom: 2px;
+}
+.XUISectionHeadingTitle {
+	font: bold 12px/normal Tahoma; color: rgb(62, 64, 61); font-size-adjust: none; font-stretch: normal;
+}
+.XUISectionHeadingText {
+	font: 11px/normal Tahoma; font-size-adjust: none; font-stretch: normal;
+}
+.XUIDialogAnchor {
+	color: black; font-size: 8pt; text-decoration: none;
+}
+.NQSODBCError {
+	width: 275px;
+}
+.SAWHozContainer {
+	border: 1px solid black; border-image: none;
+}
+.SAWHozTabCell {
+	margin: 0px; padding: 0px 0px 10px; border: 0px solid black; border-image: none; vertical-align: top; background-color: rgb(204, 204, 204);
+}
+.SAWHozTabPanel {
+	padding: 0px; margin-top: 50px; background-color: rgb(204, 204, 204);
+}
+.SAWHozTabList {
+	list-style: none; margin: 0px; padding: 0px; width: 100%; float: left; background-color: rgb(204, 204, 204);
+}
+.SAWHozTabList li {
+	padding: 5px 10px 5px 5px;
+}
+.SAWHozTabCurrent {
+	border: 0px solid black; border-image: none; margin-right: 0px; display: block; background-color: white;
+}
+.SAWHozTabOff {
+	margin: 0px; border: 0px solid rgb(204, 204, 204); border-image: none; display: block;
+}
+.SAWHozTabMagicBorder {
+	display: none; position: absolute; background-color: blue;
+}
+.SAWHozContentPanel {
+	padding: 0px; border: 0px solid black; border-image: none;
+}
+.minibuttonOn {
+	color: black; font-family: Tahoma; font-size: 11px; text-decoration: none; white-space: nowrap;
+}
+.minibuttonOn a {
+	background-position: bottom; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 216) rgb(185, 185, 132) rgb(121, 121, 117); padding: 2px 9px 1px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; text-decoration: none; vertical-align: bottom; background-image: url("button_bg_ena.png"); background-repeat: repeat-x; background-color: rgb(253, 253, 250);
+}
+.minibuttonOn a:link {
+	background-position: bottom; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 216) rgb(185, 185, 132) rgb(121, 121, 117); padding: 2px 9px 1px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; text-decoration: none; vertical-align: bottom; background-image: url("button_bg_ena.png"); background-repeat: repeat-x; background-color: rgb(253, 253, 250);
+}
+.minibuttonOn a:visited {
+	background-position: bottom; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 216) rgb(185, 185, 132) rgb(121, 121, 117); padding: 2px 9px 1px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; text-decoration: none; vertical-align: bottom; background-image: url("button_bg_ena.png"); background-repeat: repeat-x; background-color: rgb(253, 253, 250);
+}
+.minibuttonOn a:hover {
+	background-position: bottom; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 216) rgb(185, 185, 132) rgb(121, 121, 117); padding: 2px 9px 1px; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; text-decoration: none; vertical-align: bottom; background-image: url("button_bg_ena.png"); background-repeat: repeat-x; background-color: rgb(253, 253, 250);
+}
+.minibuttonOn a:hover {
+	background-position: bottom; border-color: rgb(172, 186, 207) rgb(118, 128, 146) rgb(10, 11, 25); background-image: url("button_background_mo.png"); background-repeat: repeat-x; background-color: rgb(237, 255, 255);
+}
+.minibuttonOn a:active {
+	background-position: bottom; border-color: rgb(0, 0, 10) rgb(103, 113, 131) rgb(157, 171, 192); background-image: url("button_bg_md.png"); background-repeat: repeat-x; background-color: rgb(170, 186, 205);
+}
+.minibuttonCell {
+	padding-top: 2px; padding-bottom: 2px;
+}
+.minibuttonOff {
+	white-space: nowrap;
+}
+.minibuttonOff a {
+	padding: 2px 9px 1px; border: 1px solid rgb(185, 185, 180); border-image: none; color: rgb(115, 115, 115); font-family: Tahoma; font-size: 11px; text-decoration: none; cursor: default; background-color: rgb(222, 222, 222);
+}
+.minibuttonOff a:link {
+	padding: 2px 9px 1px; border: 1px solid rgb(185, 185, 180); border-image: none; color: rgb(115, 115, 115); font-family: Tahoma; font-size: 11px; text-decoration: none; cursor: default; background-color: rgb(222, 222, 222);
+}
+.minibuttonOff a:visited {
+	padding: 2px 9px 1px; border: 1px solid rgb(185, 185, 180); border-image: none; color: rgb(115, 115, 115); font-family: Tahoma; font-size: 11px; text-decoration: none; cursor: default; background-color: rgb(222, 222, 222);
+}
+.minibuttonOff a:hover {
+	padding: 2px 9px 1px; border: 1px solid rgb(185, 185, 180); border-image: none; color: rgb(115, 115, 115); font-family: Tahoma; font-size: 11px; text-decoration: none; cursor: default; background-color: rgb(222, 222, 222);
+}
+.SAWPropPgTabOuter {
+	margin: 0px; padding: 1px 0px 0px; border: currentColor; border-image: none;
+}
+.SAWPropPgTabOn a {
+	border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); margin: 0px; padding: 1px 5px 0px; border-image: none; top: 0px; height: 20px; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; position: relative;
+}
+.SAWPropPgTabOn a:visited {
+	border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); margin: 0px; padding: 1px 5px 0px; border-image: none; top: 0px; height: 20px; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; position: relative;
+}
+.SAWPropPgTabOn a:link {
+	border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); margin: 0px; padding: 1px 5px 0px; border-image: none; top: 0px; height: 20px; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; position: relative;
+}
+.SAWPropPgTabOn a:active {
+	border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); margin: 0px; padding: 1px 5px 0px; border-image: none; top: 0px; height: 20px; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; position: relative;
+}
+.SAWPropPgTabOn a:hover {
+	border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); margin: 0px; padding: 1px 5px 0px; border-image: none; top: 0px; height: 20px; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; position: relative;
+}
+.SAWPropPgTabOff a {
+	margin: 0px; padding: 0px 5px; border: 1px solid rgb(102, 102, 102); border-image: none; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; background-color: rgb(234, 239, 245);
+}
+.SAWPropPgTabOff a:visited {
+	margin: 0px; padding: 0px 5px; border: 1px solid rgb(102, 102, 102); border-image: none; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; background-color: rgb(234, 239, 245);
+}
+.SAWPropPgTabOff a:active {
+	margin: 0px; padding: 0px 5px; border: 1px solid rgb(102, 102, 102); border-image: none; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; background-color: rgb(234, 239, 245);
+}
+.SAWPropPgTabOff a:link {
+	margin: 0px; padding: 0px 5px; border: 1px solid rgb(102, 102, 102); border-image: none; color: black; font-size: 8pt; text-decoration: none; white-space: nowrap; background-color: rgb(234, 239, 245);
+}
+.SAWPropPgTabOff a:hover {
+	margin: 0px; padding: 0px 5px; border: 1px solid rgb(102, 102, 102); border-image: none; color: navy; font-size: 8pt; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+.SAWPropPgTabSpacer {
+	font-size: 8pt;
+}
+.SAWPropPgTabCell {
+	padding: 1px 0px 0px; vertical-align: bottom;
+}
+.SAWPropPgTabsTable {
+	margin-top: 4px;
+}
+.SAWPropPgDiv {
+	padding: 5px;
+}
+.SAWPropPgTabsCell {
+	padding: 0px;
+}
+.PropTabBarDiv {
+	margin-left: -10px;
+}
+.SAWPropPgDivsCell {
+	padding: 0px; border: 1px solid rgb(102, 102, 102); border-image: none;
+}
+.SAWPropPg {
+	padding: 0px; width: 100%;
+}
+.SAWInfoPopup {
+	padding: 10px; border: 1px solid rgb(204, 204, 0); width: 250px; display: none; white-space: normal; position: absolute; background-color: rgb(255, 255, 225);
+}
+.TZInfoPopup {
+	padding: 5px; border: 1px solid rgb(204, 204, 0); display: none; white-space: nowrap; position: absolute; background-color: rgb(255, 255, 225);
+}
+.missingview {
+	color: rgb(204, 0, 0); font-size: 8pt;
+}
+.BorderButton {
+	border-width: 1px; border-style: solid; border-color: white gray gray white; padding: 1px; line-height: 2px; cursor: pointer; background-color: rgb(238, 238, 238);
+}
+.browserDlgContentDiv {
+	width: 400px; height: 300px; overflow: auto;
+}
+.browserErrorDiv {
+	padding: 0px 0px 2px; border-bottom-color: red; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.CatalogBrowserDlgListContainer {
+	border: 1px solid rgb(185, 185, 180); border-image: none; height: 218px;
+}
+.CatalogFiltersBar {
+	padding: 2px 0px 2px 4px; border: 1px solid rgb(99, 102, 97); border-image: none; background-color: rgb(236, 234, 213);
+}
+div.proxyDialog {
+	margin: 2px 4px 6px;
+}
+div.proxyTargetError {
+	padding: 4px; color: red; margin-top: 4px; border-top-color: black; border-top-width: 1px; border-top-style: solid;
+}
+.SubjectAreaTable {
+	width: 100%; border-collapse: collapse;
+}
+.SubjectAreaTable td {
+	padding: 2px;
+}
+.SubjectAreaChoiceAnchor {
+	font: 11px/normal Tahoma; padding: 2px 2px 2px 29px; color: rgb(0, 0, 0); text-decoration: none; display: block; white-space: nowrap; cursor: default; font-size-adjust: none; font-stretch: normal;
+}
+.SubjectAreaChoiceAnchor:link {
+	font: 11px/normal Tahoma; padding: 2px 2px 2px 29px; color: rgb(0, 0, 0); text-decoration: none; display: block; white-space: nowrap; cursor: default; font-size-adjust: none; font-stretch: normal;
+}
+.SubjectAreaChoiceAnchor:visited {
+	font: 11px/normal Tahoma; padding: 2px 2px 2px 29px; color: rgb(0, 0, 0); text-decoration: none; display: block; white-space: nowrap; cursor: default; font-size-adjust: none; font-stretch: normal;
+}
+.SubjectAreaChoiceAnchor:hover {
+	margin: 0px; padding: 1px 2px 1px 29px; color: black; border-top-color: white; border-bottom-color: white; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(209, 221, 231);
+}
+.previewbartable {
+	background-position: left top; background-image: url("headerbackground.jpg"); background-repeat: no-repeat;
+}
+.previewbarlogo {
+	padding: 3px 3px 4px; width: 10%;
+}
+.previewbartext {
+	padding: 0px 4px; text-align: center; color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt;
+}
+.previewbarbutton {
+	width: 18px; text-align: right; padding-right: 6px; cursor: pointer;
+}
+.HorizSplitterButton {
+	background: url("gradient_h_n.png") center; height: 24px; border-top-color: rgb(150, 164, 189); border-bottom-color: rgb(150, 164, 189); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; cursor: pointer;
+}
+.SplitterCollapsed .HorizSplitterButtonR {
+	border-left-color: rgb(150, 164, 189); border-left-width: 1px; border-left-style: solid;
+}
+.SplitterCollapsed .HorizSplitterButtonL {
+	border-right-color: rgb(150, 164, 189); border-right-width: 1px; border-right-style: solid;
+}
+.HorizSplitterButton span {
+	width: 5px; height: 7px; display: block;
+}
+.HorizSplitterButtonR span {
+	background-image: url("../common/splitter_arrow_vr_n.png");
+}
+.HorizSplitterButtonL span {
+	background-image: url("../common/splitter_arrow_vl_n.png");
+}
+.HorizSplitterDraggable {
+	height: 0px;
+}
+.SplitterContainer {
+	margin: 0px; border: currentColor; border-image: none; visibility: hidden;
+}
+.HorizSplitter {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 5px; overflow: hidden; cursor: e-resize;
+}
+.HorizSplitterDrag {
+	width: 0px; border-right-color: rgb(197, 197, 192); border-right-width: 1px; border-right-style: solid;
+}
+.PrimaryAccordion {
+	border-bottom-color: rgb(151, 153, 145); border-bottom-width: 1px; border-bottom-style: solid; background-color: transparent;
+}
+.PageAccordion {
+	border-bottom-color: rgb(151, 153, 145); border-bottom-width: 1px; border-bottom-style: solid; background-color: transparent;
+}
+.PageAccordionTR {
+	border-width: 1px 1px 0px; border-bottom-color: rgb(151, 153, 145); border-bottom-style: solid; background-color: transparent;
+}
+.PageAccordionTD {
+	border-bottom-color: rgb(151, 153, 145); border-bottom-width: 1px; border-bottom-style: solid; background-color: transparent;
+}
+.PageAccordionTR .AccordionPaneHeadRoundCorner .RoundCornerLeft {
+	background-image: url("../common/subheader_round_g_l.png");
+}
+.PageAccordionTR .AccordionPaneHeadRoundCorner .RoundCornerRight {
+	background-image: url("../common/subheader_round_g_r.png");
+}
+.PageAccordionTR .AccordionPaneHead {
+	background-image: url("../common/subheader_g_background.png"); background-color: rgb(249, 249, 240);
+}
+.PageAccordionTR .AccordionPaneHeadContent {
+	background-image: url("../common/subheader_g_background.png"); background-color: rgb(249, 249, 240);
+}
+.PageAccordionTR .AccordionPaneHead {
+	background-color: transparent;
+}
+.PageAccordionTR .AccordionPaneHeadContentBorderNone {
+	background-color: transparent;
+}
+.AccordionPane {
+	overflow: hidden; display: none;
+}
+.AccordionPaneHeadRoundCorner {
+	width: 100%;
+}
+.AccordionPaneHeadRoundCorner .RoundCornerLeft {
+	width: 3px; font-size: 1px; background-repeat: no-repeat;
+}
+.AccordionPaneHeadRoundCorner .RoundCornerRight {
+	width: 3px; font-size: 1px; background-repeat: no-repeat;
+}
+.PageAccordion .AccordionPaneHeadRoundCorner .RoundCornerLeft {
+	background-image: url("../common/subheader_round_l.png");
+}
+.PageAccordion .AccordionPaneHeadRoundCorner .RoundCornerRight {
+	background-image: url("../common/subheader_round_r.png");
+}
+.PrimaryAccordion .AccordionPaneHeadRoundCorner .RoundCornerLeft {
+	background-image: url("../common/subheader_round_g_l.png");
+}
+.PrimaryAccordion .AccordionPaneHeadRoundCorner .RoundCornerRight {
+	background-image: url("../common/subheader_round_g_r.png");
+}
+.AccordionPaneHeadContent {
+	font: 11px/normal Tahoma, sans-serif; width: 100%; height: 19px; border-top-color: rgb(151, 153, 145); border-top-width: 1px; border-top-style: solid; table-layout: fixed; font-size-adjust: none; font-stretch: normal; background-repeat: repeat-x;
+}
+.AccordionPaneHeadContentWithoutTop {
+	font: 11px/normal Tahoma, sans-serif; width: 100%; height: 19px; font-size-adjust: none; font-stretch: normal; background-repeat: repeat-x;
+}
+.dashboardSectionTitleWrap {
+	white-space: normal;
+}
+.AccordionPaneHead {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(151, 153, 145) rgb(151, 153, 145) currentColor; font: 11px/normal Tahoma, sans-serif; border-image: none; white-space: nowrap; cursor: n-resize; font-size-adjust: none; font-stretch: normal; background-repeat: repeat-x;
+}
+.PrimaryAccordion .AccordionPaneHead {
+	background-image: url("../common/subheader_g_background.png"); background-color: rgb(241, 247, 255);
+}
+.PrimaryAccordion .AccordionPaneHeadContent {
+	background-image: url("../common/subheader_g_background.png"); background-color: rgb(241, 247, 255);
+}
+.PageAccordion .AccordionPaneHead {
+	background-image: url("../common/subheader_background.png"); background-color: rgb(249, 249, 240);
+}
+.PageAccordion .AccordionPaneHeadContent {
+	background-image: url("../common/subheader_background.png"); background-color: rgb(249, 249, 240);
+}
+.AccordionPaneHead table {
+	width: 100%; height: 18px; table-layout: fixed;
+}
+.AccordionPaneHead td {
+	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.AccordionFirstPaneHead td {
+	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.AccordionPaneHeadContent .PaneHeadToolbar {
+	width: 40%;
+}
+.PaneHeadToolbar {
+	text-align: right;
+}
+.PaneHeadToolbar .toolbar {
+	padding: 0px; height: 18px; background-color: transparent;
+}
+.PaneHeadToolbar .uberBarMainDiv {
+	padding: 0px; height: 18px; background-color: transparent;
+}
+.PaneHeadToolbar .uberBarButtonSpan {
+	margin-top: 1px;
+}
+.AccordionPaneBody {
+	overflow: auto; border-top-color: rgb(210, 210, 190); border-right-color: rgb(151, 153, 145); border-left-color: rgb(151, 153, 145); border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; background-color: white;
+}
+.PrimaryAccordion .AccordionPaneBody {
+	border-top-color: rgb(195, 208, 223); border-top-width: 1px; border-top-style: solid;
+}
+.AccordionDisclosure {
+	background-position: center; padding: 4px 5px; height: 1px; font-size: 1px; margin-right: 2px; margin-left: 2px; vertical-align: middle; display: inline-block; cursor: pointer; background-repeat: no-repeat;
+}
+.AccordionDisclosureExpand {
+	background-image: url("../common/disclosure_collapse.png");
+}
+.AccordionDisclosureCollapse {
+	background-image: url("../common/disclosure_expand.png");
+}
+.AccordionFirstPaneHead .AccordionDisclosure {
+	margin-left: 0px;
+}
+.AccordionPaneHeaderText {
+	color: rgb(62, 64, 61); font-family: Tahoma; font-size: 12px; font-weight: bold; vertical-align: middle; white-space: nowrap;
+}
+.ToolbarIcon {
+	margin: 0px 2px; height: 16px; vertical-align: middle; cursor: pointer;
+}
+.AnswersToolbar {
+	border: 1px solid rgb(99, 102, 97); border-image: none; height: 20px; padding-top: 2px; background-color: rgb(236, 234, 213);
+}
+.AvailableDataToolbar {
+	border: 1px solid rgb(99, 102, 97); border-image: none; height: 20px; padding-top: 2px; background-color: rgb(236, 234, 213);
+}
+.CatalogExploreToolbar {
+	margin: 0px 4px 2px 0px; padding: 2px 0px 2px 2px; border: 1px solid rgb(99, 102, 97); border-image: none; background-color: rgb(236, 234, 213);
+}
+.ListDetailViewTable {
+	table-layout: fixed;
+}
+.ListItem {
+	padding: 2px;
+}
+.ListSelectedItem {
+	background-color: rgb(181, 189, 214);
+}
+.ListActiveItem {
+	background-color: rgb(214, 226, 239);
+}
+.ListHighlightedItem {
+	color: rgb(99, 102, 97); background-color: rgb(198, 207, 231);
+}
+.ListDetailViewColumnHeader {
+	white-space: nowrap;
+}
+.ListDetailViewCell {
+	padding: 2px 4px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ListDetailViewHeaderContainer {
+	background-position: bottom; background-image: url("../common/list_th_bg.png"); background-repeat: repeat-x; background-color: rgb(255, 253, 237);
+}
+.ListDetailViewHeader td {
+	background-position: bottom; background-image: url("../common/list_th_bg.png"); background-repeat: repeat-x; background-color: rgb(255, 253, 237);
+}
+.ListDetailViewHeader td {
+	font: 11px/normal Tahoma; padding: 2px 4px; overflow: hidden; border-right-color: rgb(151, 153, 145); border-bottom-color: rgb(151, 153, 145); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; white-space: nowrap; -ms-text-overflow: ellipsis; font-size-adjust: none; font-stretch: normal;
+}
+.ListDetailViewHeaderContainer {
+	width: 100%; overflow: visible;
+}
+.ListDetailViewHeaderContainerCell {
+	height: 18px; overflow: hidden;
+}
+.ListDetailViewHeaderPaddingCell {
+	border-bottom-color: rgb(151, 153, 145); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.ListDetailViewDataTableContainer {
+	-ms-overflow-y: auto;
+}
+.ListDetailViewSortIcon {
+	padding: 4px 5px; font-size: 1px; margin-left: 2px; vertical-align: middle; display: inline-block;
+}
+.ListDetailViewSortIconAsc {
+	background-position: center; background-image: url("../common/list_sort_asc.gif"); background-repeat: no-repeat;
+}
+.ListDetailViewSortIconDesc {
+	background-position: center; background-image: url("../common/list_sort_des.gif"); background-repeat: no-repeat;
+}
+.ListDragMultiItemIcon {
+	width: 20px; height: 20px; display: block; background-image: url("../common/multi_node_drag.png"); background-repeat: no-repeat;
+}
+.AnswersTitleBarMenuBar {
+	margin-bottom: 4px;
+}
+.MenuBarItem {
+	margin: 2px; cursor: default;
+}
+.MenuBarItemIcon {
+	margin-right: 2px; vertical-align: text-bottom;
+}
+.GlobalRegionMenuBar .MenuBarItemText {
+	color: rgb(197, 255, 255); font-family: Tahoma; font-size: 11px;
+}
+.GlobalRegionMenuBar .MenuBarItemDropDown {
+	margin: 0px 2px; padding: 3px; font-size: 1px; background-image: url("../common/dropdown_g_n.png"); background-repeat: no-repeat;
+}
+.GlobalRegionMenuBar .MenuBarItemSep {
+	margin: 0px 2px; padding: 7px 1px; font-size: 1px; vertical-align: middle; background-image: url("../common/menu_gSeparator.gif"); background-repeat: no-repeat;
+}
+.AjaxLoadingOpacity {
+	padding: 20px; left: 0px; top: 0px; text-align: center; overflow: hidden; position: absolute; z-index: 4; opacity: 0.6; background-color: rgb(255, 255, 255);
+}
+.AjaxLoadingIndicator {
+	padding: 10px; border-radius: 3px; left: 0px; top: 0px; white-space: nowrap; position: absolute; z-index: 4; box-shadow: 0px 0px 5px #888; background-color: rgb(255, 255, 255); -webkit-box-shadow: 0 0 5px#888;
+}
+.AjaxLoadingIndicator img {
+	vertical-align: middle;
+}
+.AjaxLoadingMessageText {
+	color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; font-weight: bold; margin-left: 2px; vertical-align: middle; white-space: nowrap;
+}
+.HeaderPageStatus {
+	padding: 4px 0px 0px 2px;
+}
+.HeaderPageStatus img {
+	width: 21px; height: 18px;
+}
+.HeaderLogo {
+	background-color: rgb(255, 255, 255);
+}
+.HeaderLogo img {
+	vertical-align: top;
+}
+.HeaderBrandingCell {
+	width: 100%;
+}
+.HeaderBrandingCell img {
+	width: 100%; height: 25px; vertical-align: top;
+}
+.HeaderBrandName {
+	left: 130px; top: 2px; color: rgb(9, 62, 125); overflow: hidden; font-family: Tahoma; font-size: 17px; font-weight: bold; display: inline-block; white-space: nowrap; position: absolute; -ms-text-overflow: ellipsis;
+}
+.HeaderBrandingCell a {
+	text-decoration: none;
+}
+.HeaderBrandingCell a:visited {
+	text-decoration: none;
+}
+.HeaderBrandingCell a:link {
+	text-decoration: none;
+}
+.HeaderTitleBarLeft {
+	width: 8px; vertical-align: top;
+}
+.HeaderTitleBarRight {
+	width: 21px; vertical-align: top;
+}
+.HeaderTitleBarLeft img {
+	vertical-align: top;
+}
+.HeaderTitleBarRight img {
+	vertical-align: top;
+}
+.HeaderTitleBarCell {
+	background-position: bottom; vertical-align: top; white-space: nowrap; background-image: url("../common/header_spacer_bg.gif"); background-repeat: repeat-x;
+}
+.HeaderNavBarCell {
+	background-position: bottom; vertical-align: top; white-space: nowrap; background-image: url("../common/header_spacer_bg.gif"); background-repeat: repeat-x;
+}
+.HeaderTitleBarCell span {
+	display: inline-block;
+}
+.HeaderTitleBarCaption {
+	padding: 6px 1px; height: 13px; overflow: hidden; font-weight: bold; margin-bottom: -3px; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 400px; background-image: url("l1_seltab_bg.gif");
+}
+.HeaderNavBarCell {
+	text-align: right;
+}
+.HeaderTopBar {
+	width: 100%; margin-left: -5px;
+}
+.HeaderSecondBar {
+	width: 100%; height: 25px;
+}
+.HeaderSecondBarMargin {
+	margin-left: 0px;
+}
+.HeaderQuickSearch {
+	font: 11px/normal Tahoma; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.HeaderQuickSearchPrompt {
+	font: 11px/normal Tahoma; padding-right: 8px; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.HeaderQuickSearch select {
+	font: 11px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; margin-right: 1px; max-width: 160px; font-size-adjust: none; font-stretch: normal;
+}
+.HeaderQuickSearch input {
+	border-width: 1px; font: 11px/normal Tahoma; width: 100px; margin-right: 1px; font-size-adjust: none; font-stretch: normal;
+}
+.HeaderSearchGo img {
+	margin-right: 5px; vertical-align: top;
+}
+.HeaderSkipLink {
+	padding: 2px 5px; border: 1px solid black; border-image: none; top: -999px; position: absolute; z-index: 1; background-color: rgb(255, 255, 255);
+}
+.HeaderContainer {
+	font: 11px/normal Tahoma; position: relative; font-size-adjust: none; font-stretch: normal; background-color: rgb(13, 73, 136);
+}
+.HeaderBarSeparator {
+	height: 1px; text-align: right; font-size: 1px; margin-bottom: 2px; margin-left: -5px; border-top-color: rgb(97, 161, 239); border-top-width: 1px; border-top-style: solid;
+}
+.HeaderNavMenubarCell {
+	padding-top: 1px;
+}
+.HeaderGlobalLinkHover {
+	cursor: pointer;
+}
+.HeaderGlobalLinkDown {
+	cursor: pointer;
+}
+.HeaderGlobalLinkHover .HeaderMenuBarText span {
+	text-decoration: underline;
+}
+.HeaderGlobalLinkDown .HeaderMenuBarText span {
+	text-decoration: underline;
+}
+.HeaderMenubar {
+	color: rgb(169, 223, 245);
+}
+.HeaderQuickSearchPrompt {
+	color: rgb(169, 223, 245);
+}
+.HeaderSearchGo {
+	color: rgb(169, 223, 245);
+}
+.HeaderMenubar {
+	white-space: nowrap; cursor: default;
+}
+.HeaderMenubar td {
+	vertical-align: middle;
+}
+.HeaderMenubar .uberBarTextMenuButtonSpan {
+	margin: 0px; padding: 1px 5px; height: 16px; display: block; white-space: nowrap;
+}
+.HeaderMenubarSeparator {
+	margin: 0px 2px; display: block;
+}
+.HeaderMenuBarText {
+	height: 15px; vertical-align: top; border-right-color: transparent; border-right-width: 1px; border-right-style: solid; display: inline-block; _border-color: cyan;
+}
+.HeaderMenuBarText span {
+	padding-top: 1px; vertical-align: top; display: inline-block;
+}
+.uberBarButtonSpanDown .HeaderMenuBarText {
+	color: rgb(0, 0, 0);
+}
+.HeaderMenuBarText img {
+	padding-right: 2px; vertical-align: middle;
+}
+.HeaderMenuBarDropdown {
+	padding-left: 1px; font-size: 1px; vertical-align: middle; display: inline-block;
+}
+.HeaderMenuBarDropdown img {
+	padding: 3px 2px 0px; vertical-align: middle;
+}
+div.HeaderContextMenuDiv {
+	padding: 2px 5px; border: 1px solid rgb(135, 148, 163); border-image: none; filter: none; background-image: none;
+}
+div.HeaderContextMenuDiv div {
+	color: rgb(0, 51, 153);
+}
+div.HeaderContextMenuDiv .contextMenuOption {
+	padding: 2px 4px;
+}
+div.HeaderContextMenuDiv .contextMenuOptionHover {
+	border-color: transparent; text-decoration: underline; cursor: pointer; background-color: white;
+}
+div.HeaderContextMenuDiv .contextMenuIcon {
+	display: none;
+}
+.HeaderAlerts {
+	padding-right: 4px;
+}
+.HeaderAlerts {
+	color: rgb(255, 0, 0); text-decoration: none; white-space: nowrap;
+}
+.HeaderAlerts a:link {
+	color: rgb(255, 0, 0); text-decoration: none; white-space: nowrap;
+}
+.HeaderAlerts a:visited {
+	color: rgb(255, 0, 0); text-decoration: none; white-space: nowrap;
+}
+.HeaderAlerts a:hover {
+	color: rgb(255, 0, 0); text-decoration: none; white-space: nowrap;
+}
+.HeaderAlerts span {
+	vertical-align: middle;
+}
+.HeaderAlerts img {
+	padding-right: 2px; vertical-align: middle;
+}
+.HeaderMenubar span.HeaderLoggedInAs {
+	height: 14px; padding-right: 0px; white-space: nowrap;
+}
+.HeaderMenubar .HeaderHomeCell {
+	height: 14px; color: rgb(255, 255, 255); padding-right: 4px; font-weight: bold;
+}
+.HeaderUserName {
+	padding-top: 1px; font-weight: bold;
+}
+.HeaderPopupWindow {
+	background: white; font: 11px/normal Tahoma, sans-serif; padding: 4px 10px; border: 1px solid rgb(135, 148, 163); border-image: none; top: 0px; position: absolute; font-size-adjust: none; font-stretch: normal;
+}
+.HeaderPopupWindow a {
+	text-decoration: none;
+}
+.HeaderPopupWindow a:link {
+	text-decoration: none;
+}
+.HeaderPopupWindow a:visited {
+	text-decoration: none;
+}
+.HeaderPopupWindow a:hover {
+	text-decoration: underline;
+}
+.HeaderRecentDashboard {
+	padding-top: 1px; padding-bottom: 2px; margin-bottom: 2px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.HeaderPortalsGroup {
+	padding: 1px 0px; max-width: 350px;
+}
+.HeaderPortalsGroupLink {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+a.HeaderPortalsGroupLink:link {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+a.HeaderPortalsGroupLink:visited {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+a.HeaderPortalsGroupLink:hover {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+.HeaderPortalLink {
+	background-position: left; color: rgb(0, 51, 153); padding-left: 20px; display: block; min-height: 16px; max-width: 400px; background-image: url("../catalog/portal_folder.png"); background-repeat: no-repeat;
+}
+a.HeaderPortalLink:link {
+	background-position: left; color: rgb(0, 51, 153); padding-left: 20px; display: block; min-height: 16px; max-width: 400px; background-image: url("../catalog/portal_folder.png"); background-repeat: no-repeat;
+}
+a.HeaderPortalLink:visited {
+	background-position: left; color: rgb(0, 51, 153); padding-left: 20px; display: block; min-height: 16px; max-width: 400px; background-image: url("../catalog/portal_folder.png"); background-repeat: no-repeat;
+}
+a.HeaderPortalLink:hover {
+	background-position: left; color: rgb(0, 51, 153); padding-left: 20px; display: block; min-height: 16px; max-width: 400px; background-image: url("../catalog/portal_folder.png"); background-repeat: no-repeat;
+}
+a.HeaderPortalLink:hover {
+	text-decoration: underline;
+}
+.HeaderCurrentPortal {
+	font-weight: bold;
+}
+.HeaderPortalsGroupLink img {
+	border: currentColor; border-image: none;
+}
+.HeaderPortalsList {
+	padding-top: 2px; padding-left: 10px;
+}
+.HeaderMRUListDiv {
+	padding-top: 2px; margin-top: 4px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+.HeaderRecentItems {
+	width: 50%; padding-top: 1px; padding-right: 3px; vertical-align: top; border-right-color: rgb(204, 204, 204); border-right-width: 1px; border-right-style: solid;
+}
+.HeaderFavoriteItems {
+	width: 50%; padding-top: 1px; padding-left: 6px; vertical-align: top;
+}
+.HeaderRecentItems div {
+	width: 150px; overflow: hidden; -ms-text-overflow: ellipsis;
+}
+.HeaderFavoriteItems div {
+	width: 150px; overflow: hidden; -ms-text-overflow: ellipsis;
+}
+.HeaderMenuOption {
+	padding: 1px 0px; white-space: nowrap;
+}
+.HeaderMenuOption img {
+	width: 16px; margin-right: 2px; vertical-align: middle; cursor: pointer;
+}
+.HeaderCatalogItemLink {
+	color: rgb(0, 51, 153); vertical-align: middle; white-space: nowrap;
+}
+a.HeaderCatalogItemLink:link {
+	color: rgb(0, 51, 153); vertical-align: middle; white-space: nowrap;
+}
+a.HeaderCatalogItemLink:visited {
+	color: rgb(0, 51, 153); vertical-align: middle; white-space: nowrap;
+}
+a.HeaderCatalogItemLink:hover {
+	color: rgb(0, 51, 153); vertical-align: middle; white-space: nowrap;
+}
+a.HeaderCatalogItemLink:hover {
+	text-decoration: underline;
+}
+.HeaderCatalogItemsTitle {
+	padding-bottom: 5px; font-weight: bold;
+}
+.HeaderCreateGroupTitle {
+	margin: 2px 0px; font-weight: bold;
+}
+.HeaderMenuOptinSeparator {
+	height: 0px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.HeaderLoadingIndicator {
+	margin: 3px;
+}
+.HeaderAboutDialogContent {
+	width: 350px;
+}
+.PageContentBodyDiv {
+	margin: 0px 0px 5px; padding: 0px 0px 5px 5px; background-color: rgb(175, 195, 210);
+}
+.PortalBodyADFEmbedded .PageContentBodyDiv {
+	padding-left: 0px;
+}
+.PageContentEmbeddedBodyDiv {
+	background-color: transparent;
+}
+.SyndicatedPageContentBodyDiv {
+	margin: 0px; padding: 0px 0px 5px 5px; background-color: rgb(175, 195, 210);
+}
+.PageContentInnerDiv {
+	background-color: rgb(255, 255, 255);
+}
+.ExternalDialogIframe {
+	border: currentColor; border-image: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; background-color: transparent;
+}
+.VpatOffscreenLabel {
+	top: -1000px; position: absolute; xdisplay: none;
+}
+.ScrollablePanelContent {
+	padding: 0px 1px;
+}
+.ScrollablePanelScroller {
+	-ms-overflow-y: hidden;
+}
+.ScrollablePanelScrollButton {
+	text-align: center;
+}
+.ScrollablePanelScrollButton a {
+	background-position: center; padding: 6px 20px 0px 0px; height: 2px; font-size: 1px; display: inline-block; background-repeat: no-repeat;
+}
+.ScrollablePanelUpIcon {
+	background-image: url("../common/scroll_upper_n.png");
+}
+a.ScrollablePanelUpIcon:link {
+	background-image: url("../common/scroll_upper_n.png");
+}
+a.ScrollablePanelUpIcon:visited {
+	background-image: url("../common/scroll_upper_n.png");
+}
+a.ScrollablePanelUpIcon:hover {
+	background-image: url("../common/scroll_upper_mo.png");
+}
+.ScrollablePanelUpIconDown {
+	background-image: url("../common/scroll_upper_md.png");
+}
+a.ScrollablePanelUpIconDown:hover {
+	background-image: url("../common/scroll_upper_md.png");
+}
+.ScrollablePanelUpIconDisabled {
+	background-image: url("../common/scroll_upper_d.png");
+}
+a.ScrollablePanelUpIconDisabled:link {
+	background-image: url("../common/scroll_upper_d.png");
+}
+a.ScrollablePanelUpIconDisabled:hover {
+	background-image: url("../common/scroll_upper_d.png");
+}
+a.ScrollablePanelUpIconDisabled:visited {
+	background-image: url("../common/scroll_upper_d.png");
+}
+.ScrollablePanelDownIcon {
+	background-image: url("../common/scroll_dwn_n.png");
+}
+a.ScrollablePanelDownIcon:link {
+	background-image: url("../common/scroll_dwn_n.png");
+}
+a.ScrollablePanelDownIcon:visited {
+	background-image: url("../common/scroll_dwn_n.png");
+}
+a.ScrollablePanelDownIcon:hover {
+	background-image: url("../common/scroll_dwn_mo.png");
+}
+.ScrollablePanelDownIconDown {
+	background-image: url("../common/scroll_dwn_md.png");
+}
+a.ScrollablePanelDownIconDown:hover {
+	background-image: url("../common/scroll_dwn_md.png");
+}
+.ScrollablePanelDownIconDisabled {
+	background-image: url("../common/scroll_dwn_d.png");
+}
+a.ScrollablePanelDownIconDisabled:hover {
+	background-image: url("../common/scroll_dwn_d.png");
+}
+.ViewElementMask {
+	opacity: 0.75; background-color: rgb(255, 255, 255); -moz-opacity: .75;
+}
+.ViewElementMaskMessage {
+	font: bold 11px/normal Tahoma; color: rgb(0, 0, 0); font-size-adjust: none; font-stretch: normal;
+}
+.SubjectAreaBaseLink {
+	width: 280px; color: rgb(44, 82, 136); padding-top: 2px; padding-left: 20px; text-decoration: none; display: block; white-space: nowrap; min-height: 16px; background-repeat: no-repeat;
+}
+.SubjectAreaBaseLink:link {
+	width: 280px; color: rgb(44, 82, 136); padding-top: 2px; padding-left: 20px; text-decoration: none; display: block; white-space: nowrap; min-height: 16px; background-repeat: no-repeat;
+}
+.SubjectAreaBaseLink:visited {
+	width: 280px; color: rgb(44, 82, 136); padding-top: 2px; padding-left: 20px; text-decoration: none; display: block; white-space: nowrap; min-height: 16px; background-repeat: no-repeat;
+}
+.SubjectAreaBaseLink:hover {
+	width: 280px; color: rgb(44, 82, 136); padding-top: 2px; padding-left: 20px; text-decoration: none; display: block; white-space: nowrap; min-height: 16px; background-repeat: no-repeat;
+}
+.SubjectAreaBaseLink:hover {
+	text-decoration: underline;
+}
+.SubjectAreaLink {
+	background-position: left bottom; background-image: url("../answers/isubjectareaplus.gif");
+}
+.SubjectAreaLink:link {
+	background-position: left bottom; background-image: url("../answers/isubjectareaplus.gif");
+}
+.SubjectAreaLink:visited {
+	background-position: left bottom; background-image: url("../answers/isubjectareaplus.gif");
+}
+.SubjectAreaLink:hover {
+	background-position: left bottom; background-image: url("../answers/isubjectareaplus.gif");
+}
+.UploadedSubjectAreaLink {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadedsubjectarea.png");
+}
+.UploadedSubjectAreaLink:link {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadedsubjectarea.png");
+}
+.UploadedSubjectAreaLink:visited {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadedsubjectarea.png");
+}
+.UploadedSubjectAreaLink:hover {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadedsubjectarea.png");
+}
+.CreateAnalysisFromDataset {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadsubjectarea_ena.png");
+}
+.CreateAnalysisFromDataset:link {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadsubjectarea_ena.png");
+}
+.CreateAnalysisFromDataset:visited {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadsubjectarea_ena.png");
+}
+.CreateAnalysisFromDataset:hover {
+	background-position: left bottom; background-image: url("../../s_blafp/answers/uploadsubjectarea_ena.png");
+}
+.CreateDirectDBRequestLink {
+	background-position: left bottom; background-image: url("../answers/database.png");
+}
+.CreateDirectDBRequestLink:link {
+	background-position: left bottom; background-image: url("../answers/database.png");
+}
+.CreateDirectDBRequestLink:visited {
+	background-position: left bottom; background-image: url("../answers/database.png");
+}
+.CreateDirectDBRequestLink:hover {
+	background-position: left bottom; background-image: url("../answers/database.png");
+}
+.CreateSimpleSQLRequestLink {
+	background-position: left bottom; background-image: url("../answers/logicalsql_ena.png");
+}
+.CreateSimpleSQLRequestLink:link {
+	background-position: left bottom; background-image: url("../answers/logicalsql_ena.png");
+}
+.CreateSimpleSQLRequestLink:visited {
+	background-position: left bottom; background-image: url("../answers/logicalsql_ena.png");
+}
+.CreateSimpleSQLRequestLink:hover {
+	background-position: left bottom; background-image: url("../answers/logicalsql_ena.png");
+}
+.SubjectAreaDescription {
+	color: rgb(161, 145, 145); padding-top: 0px; padding-bottom: 4px; padding-left: 22px; text-decoration: none; display: block; min-height: 10px;
+}
+.CatalogDialogPromptCaption {
+	font: 11px/normal Tahoma; padding: 0px 0px 1px; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.CatalogDialogPromptEntry {
+	font: 11px/normal Tahoma; padding: 0px 0px 1px; color: rgb(0, 0, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.CatalogDialogPromptEntry input {
+	font: 11px/normal Tahoma; padding: 0px; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.CatalogDialogPromptEntry select {
+	font: 11px/normal Tahoma; padding: 0px; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.CatalogDialogPromptEntry textarea {
+	font: 11px/normal Tahoma; padding: 0px; border: 1px solid rgb(185, 185, 180); border-image: none; vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+.DropLayerTD {
+	border: 1px solid rgb(151, 153, 145); border-image: none; height: 4px; color: rgb(99, 102, 97); font-size: 2px; font-weight: normal; z-index: -1; background-color: rgb(196, 206, 224);
+}
+.copyflash {
+	left: 0px; top: 3px; position: relative;
+}
+.copyflashie {
+	left: 0px; top: 2px; position: relative;
+}
+.LinkSeparator {
+	margin: 0px 2px 0px 4px; font-size: 8px; border-left-color: rgb(44, 82, 136); border-left-width: 1px; border-left-style: solid;
+}
+.NewAlertLink:link {
+	color: rgb(44, 82, 136); text-decoration: none; white-space: nowrap;
+}
+.NewAlertLink:visited {
+	color: rgb(44, 82, 136); text-decoration: none; white-space: nowrap;
+}
+.NewAlertLink:hover {
+	color: rgb(44, 82, 136); text-decoration: none; white-space: nowrap;
+}
+.NewAlertLink:hover {
+	text-decoration: underline;
+}
+.NewAlertLink img {
+	padding-left: 2px;
+}
+.NewAlertMoreItemsLink {
+	color: rgb(0, 40, 148); font-weight: bold; text-decoration: none;
+}
+a.NewAlertMoreItemsLink:link {
+	color: rgb(0, 40, 148); font-weight: bold; text-decoration: none;
+}
+a.NewAlertMoreItemsLink:hover {
+	color: rgb(0, 40, 148); font-weight: bold; text-decoration: none;
+}
+a.NewAlertMoreItemsLink:visited {
+	color: rgb(0, 40, 148); font-weight: bold; text-decoration: none;
+}
+.ConciseText {
+	text-align: left; color: rgb(0, 0, 0); font-family: Tahoma; font-size: 11px; font-weight: bold;
+}
+.MsgErrorImg {
+	padding-right: 4px; vertical-align: middle;
+}
+.ErrorTitle {
+	text-align: left; color: rgb(0, 0, 0); padding-top: 4px; padding-left: 8px; font-family: Tahoma; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+.ErrorInfo {
+	text-align: left; color: rgb(0, 0, 0); font-size: 11px; text-decoration: none;
+}
+.ErrorCodes {
+	color: rgb(0, 0, 0); font-size: 11px;
+}
+.FavoritesSeparator {
+	padding-top: 2px; margin-top: 4px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+.FavoritesTreeContainer {
+	margin: 0px; padding: 0px; overflow: auto;
+}
+.favoritesManagerTreeContainer {
+	border: 1px solid rgb(185, 185, 180); border-image: none;
+}
+.favoritesManagerListContainer {
+	border: 1px solid rgb(185, 185, 180); border-image: none; height: 375px; overflow: auto;
+}
+.favoritesManagerDefaultFont {
+	font-family: Tahoma,sans-serif; font-size: 11px;
+}
+.favoritesCreateLargeOverlay {
+	margin-bottom: 15px; margin-left: -12px;
+}
+.favoritesCreateSmallOverlay {
+	margin-bottom: -5px; margin-left: -11px;
+}
+.ComponentHeader {
+	overflow: hidden; position: relative;
+}
+.ComponentHeaderTable {
+	margin-right: 0px;
+}
+.ComponentHeaderToolbar .uberBarMainDiv {
+	height: 20px;
+}
+.ComponentHeaderSummaryDiv {
+	width: 100%; padding-left: 3px; background-color: rgb(175, 195, 210);
+}
+.ComponentHeaderPageOptions {
+	text-align: right; padding-right: 3px; vertical-align: top;
+}
+.ComponentHeaderBackground {
+	background-position: left top; background-image: url("l2_spacer_bg.gif"); background-repeat: repeat-x;
+}
+.FitToParentWidth {
+	width: 100%;
+}
+.StatusIndicatorBackground {
+	background-position: left top; background-image: url("l2_spacer_bg.gif"); background-repeat: repeat-x;
+}
+.StatusIndicatorBackground .StatusIndicatorDiv {
+	text-align: right; padding-right: 5px; padding-bottom: 5px; vertical-align: top; white-space: nowrap;
+}
+StatusIndicator {
+	vertical-align: middle;
+}
+.PageContentOuterDiv {
+	background-color: rgb(167, 181, 202);
+}
+.PageWithTabsContentOuterDiv {
+	background-color: rgb(219, 231, 242);
+}
+.PageOuterBodyTopRightTd {
+	width: 0px; display: none;
+}
+.PageOuterBodyTopRight {
+	width: 0px; display: none;
+}
+.PageOuterBodyCenterRight {
+	width: 0px; display: none; position: relative; background-image: none;
+}
+.HeaderBorderRight {
+	width: 0px; height: 0px; display: none; background-image: none; background-color: transparent;
+}
+.PrimaryTabTable {
+	margin-left: 0px;
+}
+.PageBodyTopRightTd {
+	width: 0px; height: 0px; background-color: transparent;
+}
+.PageBodyTopLeft {
+	width: 0px; display: none; background-image: none; background-color: transparent;
+}
+.PageBodyTopRight {
+	width: 0px; display: none; background-image: none; background-color: transparent;
+}
+.PageBodyBottomLeft {
+	margin: 0px; padding: 0px; height: 5px; display: none; background-color: rgb(219, 231, 242);
+}
+.PageBodyBottomCenter {
+	margin: 0px; padding: 0px; height: 5px; display: none; background-color: rgb(219, 231, 242);
+}
+.PageBodyBottomRight {
+	margin: 0px; padding: 0px; height: 5px; display: none; background-color: rgb(219, 231, 242);
+}
+.PrimaryTabbarLeftBorder {
+	margin: 0px; padding: 0px; display: none; background-color: transparent;
+}
+.SecondaryTabbarLeftBorder {
+	margin: 0px; padding: 0px; background-color: rgb(219, 231, 242);
+}
+.ComponentHeaderNoSecondaryTabbar .SecondaryTabbarLeftBorder {
+	background-color: rgb(167, 181, 202);
+}
+.SecondaryTabbarRightBorder {
+	margin: 0px; padding: 0px; width: 0px; display: none; visibility: hidden; background-image: none; background-color: transparent;
+}
+.PageOuterBodyTd {
+	margin: 0px; padding: 0px; width: 0px; display: none; visibility: hidden; background-image: none; background-color: transparent;
+}
+.PageOuterBodyMiddleTd {
+	margin: 0px; padding: 0px; width: 0px; display: none; visibility: hidden; background-image: none; background-color: transparent;
+}
+.ComponentLevelTabbarOuterDiv {
+	width: 100%;
+}
+.ProgressIndicatorDiv {
+	text-align: left; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; cursor: default;
+}
+.AdminHelpIconDiv {
+	display: inline;
+}
+.AdminHelpSpan {
+	padding-right: 10px; float: right;
+}
+.BreadCrumbDiv {
+	margin: -7px 0px 0px; border: currentColor; border-image: none; width: 100%; height: 22px; background-color: rgb(222, 234, 241);
+}
+a.BreadCrumbItem {
+	font: 11px/normal Tahoma; color: rgb(0, 50, 134) !important; text-decoration: none !important; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+a.BreadCrumbEditItem {
+	font: italic 11px/normal Tahoma; color: rgb(0, 50, 134) !important; text-decoration: none !important; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.BreadCrumbCurrentItem {
+	font: 11px/normal Tahoma; color: rgb(0, 0, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.BreadCrumbCurrentEditItem {
+	font: italic 11px/normal Tahoma; color: rgb(0, 0, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.BreadCrumbItemTd {
+	padding: 1px 3px; vertical-align: top; white-space: nowrap;
+}
+.BreadCrumbImageTd {
+	padding: 1px; color: rgb(0, 50, 134); vertical-align: top; white-space: nowrap;
+}
+a.BreadCrumbItem:hover {
+	text-decoration: underline !important;
+}
+.obipsBreadCrumbOverflow {
+	margin: 5px 0px 0px; padding: 2px 1px; border: 1px solid transparent; border-image: none; vertical-align: top; display: none; position: absolute; z-index: 1; background-color: rgb(222, 234, 241);
+}
+.obipsBreadCrumbOverflowOver {
+	border-width: 1px; border-style: solid; border-color: rgb(172, 186, 207) rgb(118, 128, 146) rgb(10, 11, 25); padding: 2px 1px; background-color: rgb(237, 255, 255);
+}
+.obipsBreadCrumbOverflowDown {
+	border-width: 1px; border-style: solid; border-color: rgb(10, 11, 25) rgb(118, 128, 146) rgb(172, 186, 207); padding: 2px 1px; background-color: rgb(222, 234, 241);
+}
+.overflowImageStart {
+	vertical-align: top; background-repeat: no-repeat; background-color: rgb(222, 234, 241);
+}
+td.CatalogListCell {
+	padding: 2px 10px 2px 2px; background-color: rgb(255, 255, 255);
+}
+.CommonTabBody {
+	height: 250px; overflow: auto;
+}
+.FilterEditValueSpan {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+.FilterEditValueSpanHighLight {
+	text-decoration: underline;
+}
+.FilterEditOpCell {
+	top: -8pt; font-size: 9pt; font-weight: bold; vertical-align: top; position: relative; background-color: rgb(242, 242, 245);
+}
+.FilterEditTableHighLight {
+	border: 1px solid rgb(201, 203, 211); border-image: none; background-color: rgb(255, 255, 255);
+}
+.XUIPromptToolbarTD {
+	padding: 0px; border: 1px solid rgb(118, 128, 146); border-image: none; text-align: left; vertical-align: top;
+}
+.FilterEvaluteTextBox {
+	border: 1px solid rgb(153, 153, 153); border-image: none; background-color: rgb(235, 234, 213);
+}
+.BIEEHome {
+	overflow: auto; background-color: rgb(255, 255, 255);
+}
+.BIEEError {
+	overflow: auto; background-color: rgb(255, 255, 255);
+}
+.dialogLabel {
+	font: 13px/normal Tahoma; color: rgb(112, 74, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+.dialogControl {
+	font: 13px/normal Tahoma; border: 1px solid rgb(185, 185, 180); border-image: none; font-size-adjust: none; font-stretch: normal;
+}
+.selectionDropDown {
+	border: 1px solid gray; border-image: none; height: 16px;
+}
+.groupHeader {
+	height: 18px; padding-right: 10px; padding-left: 5px; background-image: url("gradientGray.png") !important; background-repeat: repeat;
+}
+.MyAccountDialogDiv {
+	width: auto; max-width: 800px;
+}
+.globalVariableListToolbar {
+	text-align: right; margin-right: 1px; background-color: rgb(236, 234, 213);
+}
+.globalVariableListToolbarText {
+	height: 21px; padding-left: 4px; font-size: 12px; font-weight: bold; background-color: rgb(236, 234, 213);
+}
+.SortDialogBody {
+	-ms-overflow-x: hidden; -ms-overflow-y: auto;
+}
+.SortDialogPaneContent {
+	padding: 0px; -ms-overflow-x: hidden; -ms-overflow-y: auto;
+}
+.SortDialogPaneContentBottom {
+	border-bottom-color: rgb(151, 153, 145); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.SortDialogLabel {
+	padding: 2px 2px 3px; color: rgb(0, 0, 0); font-size: 11px; font-weight: normal;
+}
+.SortDialogSortRow {
+	margin-top: 2px; margin-bottom: 3px;
+}
+.SortDialogDropDownButton {
+	text-align: right; margin-bottom: 1px; vertical-align: bottom; cursor: pointer;
+}
+.SortDialogLabelVAlign {
+	vertical-align: middle;
+}
+.SortDialogFirstPaneHead .AccordionPaneHeadContent {
+	padding-left: 5px; border-right-color: rgb(151, 153, 145); border-bottom-color: rgb(151, 153, 145); border-left-color: rgb(151, 153, 145); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-left-radius: 3px; border-top-right-radius: 3px;
+}
+.PageAccordion .AccordionPaneHeadRoundCorner .sortDialogRoundCorner {
+	width: 0px; background-image: none;
+}

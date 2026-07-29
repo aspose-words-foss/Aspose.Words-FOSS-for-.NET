@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Topics>
+
+
+<Topic name="Node.Clone(bool,INodeCloningListener)">
+<summary>
+Creates a duplicate of the node.
+</summary>
+<remarks><p>This method serves as a copy constructor for nodes. 
+The cloned node has no parent, but belongs to the same document as the original node.</p>
+<p>This method always performs a deep copy of the node. The <paramref name="isCloneChildren"/> parameter
+specifies whether to perform copy all child nodes as well.</p>
+</remarks>
+<param name="isCloneChildren">True to recursively clone the subtree under the specified node; 
+false to clone only the node itself.</param>
+<param name="cloningListener">Listener to node cloning event.</param>
+<returns>The cloned node.</returns>
+</Topic>
+
+<Topic name="Node.Clone(bool)">
+<summary>
+Creates a duplicate of the node.
+</summary>
+<remarks><p>This method serves as a copy constructor for nodes. 
+The cloned node has no parent, but belongs to the same document as the original node.</p>
+<p>This method always performs a deep copy of the node. The <paramref name="isCloneChildren"/> parameter
+specifies whether to perform copy all child nodes as well.</p>
+</remarks>
+<param name="isCloneChildren">True to recursively clone the subtree under the specified node; 
+false to clone only the node itself.</param>
+<returns>The cloned node.</returns>
+</Topic>
+
+
+<Topic name="Node.Accept">
+<summary>
+Accepts a visitor.
+</summary>
+<remarks>
+<p>Enumerates over this node and all of its children. Each node calls a corresponding method on <see cref="DocumentVisitor"/>.</p>
+<p>For more info see the Visitor design pattern.</p>
+</remarks>
+<param name="visitor">The visitor that will visit the nodes.</param>
+<returns>True if all nodes were visited; false if <see cref="DocumentVisitor"/> stopped the operation before visiting all nodes.</returns>
+</Topic>
+
+
+<Topic name="CompositeNode.InsertCommon">
+<remarks>
+<p>If the <paramref name="newChild"/> is already in the tree, it is first removed.</p>
+<p>If the node being inserted was created from another document, you should use 
+<see cref="Aspose.Words.DocumentBase.ImportNode(Node, bool, ImportFormatMode)"/> to import the node to the current document. 
+The imported node can then be inserted into the current document.</p>
+</remarks>
+</Topic>
+  
+  
+<Topic name="NodeCollection.InsertCommon">
+<remarks>
+<p>If the node being inserted was created from another document, you should use 
+<see cref="Aspose.Words.DocumentBase.ImportNode(Node, bool, ImportFormatMode)"/> to import the node to the current document. 
+The imported node can then be inserted into the current document.</p>
+</remarks>
+</Topic>
+
+
+<Topic name="NodeCollection.IndexerCommon">
+<remarks>
+<p>The index is zero-based.</p>
+<p>Negative indexes are allowed and indicate access from the back of the collection. 
+For example -1 means the last item, -2 means the second before last and so on.</p>
+<p>If index is greater than or equal to the number of items in the list, this returns a null reference.</p>
+<p>If index is negative and its absolute value is greater than the number of items in the list, this returns a null reference.</p>
+</remarks>
+</Topic>
+
+
+<Topic name="NodeCollection.ToArrayCommon">
+<p>You should not be adding/removing nodes while iterating over a collection 
+of nodes because it invalidates the iterator and requires refreshes for live collections.</p>
+<p>To be able to add/remove nodes during iteration, use this method to copy 
+nodes into a fixed-size array and then iterate over the array.</p>
+</Topic>
+
+
+<Topic name="CompositeNode.GetChildNodesLive">
+<remarks>
+<p>A live collection is always in sync with the document. For example, if you
+selected all sections in a document and enumerate through the collection
+deleting the sections, the section is removed from the collection immediately
+when it is removed from the document.</p>
+</remarks>
+</Topic>
+
+
+<Topic name="Document.Clone">
+<summary>
+Creates a duplicate of the document.
+</summary>
+<remarks>
+<p>
+If you need to generate many documents from a single document,
+just load the document into memory once, clone it and populate the cloned
+document with your data. This speeds up generation of documents because there is
+no need to load and parse the document from file every time.
+</p>
+</remarks>
+<param name="isCloneChildren">
+True to recursively clone the content of the document;
+false to clone only the document node and document-wide objects such as styles and lists.
+</param>
+<returns>The cloned document.</returns>
+</Topic>
+
+<Topic name="Document.ImportNodeCommon">
+  <p>Importing a node creates a copy of the source node belonging to the importing document. 
+The returned node has no parent. The source node is not altered or removed from the original document.</p>
+<p>Before a node from another document can be inserted into this document, it must be imported.
+During import, document-specific properties such as references to styles and lists are translated
+from the original to the importing document. After the node was imported, it can be inserted
+into the appropriate place in the document using <see cref="CompositeNode.InsertBefore{T}(T, Node)"/> or 
+<see cref="CompositeNode.InsertAfter{T}(T, Node)"/>.</p>
+<p>If the source node already belongs to the destination document, then simply a deep clone
+of the source node is created.</p>
+</Topic>
+
+<Topic name="Document.OpenStreamCommon">
+<remarks>
+<p>
+  The document must be stored at the beginning of the stream. <ms>The stream must support random positioning.</ms><cpp>The stream must support random positioning.</cpp>
+</p>
+</remarks>
+</Topic>
+
+<Topic name="Document.LoadFileExceptions">
+  <exception cref="UnsupportedFileFormatException">The document format is not recognized or not supported.</exception>
+  <exception cref="FileCorruptedException">The document appears to be corrupted and cannot be loaded.</exception>
+  <exception cref="System.Exception">There is a problem with the document and it should be reported to Aspose.Words developers.</exception>
+  <exception cref="IOException">There is an input/output exception.</exception>
+  <exception cref="IncorrectPasswordException">The document is encrypted and requires a password to open, but you supplied an incorrect password.</exception>
+  <exception cref="System.ArgumentException">The name of the file cannot be null or empty string.</exception>
+</Topic>
+
+<Topic name="Document.LoadStreamExceptions">
+  <exception cref="UnsupportedFileFormatException">The document format is not recognized or not supported.</exception>
+  <exception cref="FileCorruptedException">The document appears to be corrupted and cannot be loaded.</exception>
+  <exception cref="System.Exception">There is a problem with the document and it should be reported to Aspose.Words developers.</exception>
+  <exception cref="IOException">There is an input/output exception.</exception>
+  <exception cref="IncorrectPasswordException">The document is encrypted and requires a password to open, but you supplied an incorrect password.</exception>
+  <exception cref="System.ArgumentNullException">The stream cannot be null.</exception>
+  <exception cref="System.NotSupportedException">The stream does not support reading or seeking.</exception>
+  <exception cref="System.ObjectDisposedException">The stream is a disposed object.</exception>
+</Topic>
+
+
+
+<Topic name="ParagraphFormat.AutoSpacing">
+<remarks>
+<p>When you set paragraph Space Before and Space After to Auto,
+Microsoft Word adds 14 points spacing between paragraphs automatically
+according to the following rules:</p>
+<list type="bullet">
+<item>Normally, spacing is added after all paragraphs.</item>
+<item>In a bulleted or numbered list, spacing is added only after the last item in the list.
+Spacing is not added between the list items.</item>
+<item>In a nested bulleted or numbered list spacing is not added.</item>
+<item>Spacing is normally added after a table.</item>
+<item>Spacing is not added after a table if it is the last block in a table cell.</item>
+<item>Spacing is not added after the last paragraph in a table cell.</item>
+</list>
+</remarks>
+</Topic>
+
+
+<Topic name="DocumentBuilder.InsertImageCommon">
+<p>You can change the image size, location, positioning method and other settings using the 
+<see cref="Aspose.Words.Drawing.Shape"/> object returned by this method.</p>
+</Topic>
+
+<Topic name="DocumentBuilder.InsertJavaBufferedImage">
+<java>
+<p>Aspose.Words will insert the image in the PNG format and with default settings. If you want to insert a <tt>BufferedImage</tt> in 
+another format or with other settings, you need to save the image into a byte array and use <see cref="InsertImage(byte[])"/>.</p>
+</java>
+</Topic>
+
+<Topic name="DocumentBuilder.InsertImageParams">
+<param name="width">The width of the image in points. Can be a negative or zero value to request 100% scale.</param>
+<param name="height">The height of the image in points. Can be a negative or zero value to request 100% scale.</param>
+<returns>The image node that was just inserted.</returns>
+</Topic>
+
+<Topic name="DocumentBuilder.InsertImageJavaParams">
+<javaParam name="width">The width of the image in points. Can be a negative or zero value to request 100% scale.</javaParam>
+<javaParam name="height">The height of the image in points. Can be a negative or zero value to request 100% scale.</javaParam>
+<returns>The image node that was just inserted.</returns>
+</Topic>
+
+<Topic name="DocumentBuilder.InsertImageParamsEx">
+<param name="horzPos">Specifies where the distance to the image is measured from.</param>
+<param name="left">Distance in points from the origin to the left side of the image.</param>
+<param name="vertPos">Specifies where the distance to the image measured from.</param>
+<param name="top">Distance in points from the origin to the top side of the image.</param>
+<param name="width">The width of the image in points. Can be a negative or zero value to request 100% scale.</param>
+<param name="height">The height of the image in points. Can be a negative or zero value to request 100% scale.</param>
+<param name="wrapType">Specifies how to wrap text around the image.</param>
+<returns>The image node that was just inserted.</returns>
+</Topic>
+
+<Topic name="DocumentBuilder.InsertImageJavaParamsEx">
+<javaParam name="horzPos">A <see cref="RelativeHorizontalPosition"/> value. Specifies where the distance to the image is measured from.</javaParam>
+<javaParam name="left">Distance in points from the origin to the left side of the image.</javaParam>
+<javaParam name="vertPos">A <see cref="RelativeVerticalPosition"/> value. Specifies where the distance to the image measured from.</javaParam>
+<javaParam name="top">Distance in points from the origin to the top side of the image.</javaParam>
+<javaParam name="width">The width of the image in points. Can be a negative or zero value to request 100% scale.</javaParam>
+<javaParam name="height">The height of the image in points. Can be a negative or zero value to request 100% scale.</javaParam>
+<javaParam name="wrapType">A <see cref="WrapType"/> value. Specifies how to wrap text around the image.</javaParam>
+<returns>The image node that was just inserted.</returns>
+</Topic>
+
+
+<Topic name="DocumentProperties.Common">
+<remarks>
+<p>The names of the properties are case-insensitive.</p>
+<p>The properties in the collection are sorted alphabetically by name.</p>
+</remarks>
+</Topic>
+
+<Topic name="DocumentProperties.JavaSlow">
+<remarks>
+<p><b>Note: </b>In Java this method is slow because iterates over all nodes.</p>
+</remarks>
+</Topic>
+
+
+<Topic name="IsInsertRevision">
+<summary>
+Returns true if this object was inserted in Microsoft Word while change tracking was enabled.
+</summary>
+</Topic>
+
+<Topic name="IsDeleteRevision">
+<summary>
+Returns true if this object was deleted in Microsoft Word while change tracking was enabled.
+</summary>
+</Topic>
+
+<Topic name="IsFormatRevision">
+<summary>
+Returns true if formatting of the object was changed in Microsoft Word while change tracking was enabled.
+</summary>
+</Topic>
+
+<Topic name="IsMoveFromRevision">
+<summary>
+Returns <c>true</c> if this object was moved (deleted) in Microsoft Word while change tracking was enabled.
+</summary>
+</Topic>
+
+<Topic name="IsMoveToRevision">
+<summary>
+Returns <c>true</c> if this object was moved (inserted) in Microsoft Word while change tracking was enabled.
+</summary>
+</Topic>
+
+
+<Topic name="Field.Common">
+<p>A complete field in a Microsoft Word document is a complex structure consisting of
+a field start character, field code, field separator character, field result
+and field end character. Some fields only have field start, field code and field end.</p>
+<p>To easily insert a new field into a document, use the <see cref="DocumentBuilder.InsertField(string)"/>
+method.</p>
+</Topic>
+
+  
+<Topic name="UpdateFields"  >
+<para>When you open, modify and then save a document, Aspose.Words does not update fields automatically, it keeps them intact.
+Therefore, you would usually want to call this method before saving if you have modified the document
+programmatically and want to make sure the proper (calculated) field values appear in the saved document.</para>
+<para>There is no need to update fields after executing a mail merge because mail merge is a kind of field update
+and automatically updates all fields in the document.</para>
+<p>This method does not update all field types. For the detailed list of supported field types, see the Programmers Guide.</p>
+<para>This method does not update fields that are related to the page layout algorithms (e.g. PAGE, PAGES, PAGEREF).
+In the Aspose.Words FOSS version these fields are never updated.</para>
+</Topic>
+
+
+<Topic name="GlossaryDocument.NotVisited">
+<remarks>
+<para>
+Note: A glossary document node and its children are not visited when you execute a
+Visitor over a <see cref="Aspose.Words.Document"/>. If you want to execute a Visitor over a
+glossary document, you need to call <see cref="GlossaryDocument.Accept"/>.
+</para>
+</remarks>
+</Topic>
+
+<Topic name="BuildingBlock.NotVisited">
+<remarks>
+<para>
+Note: A building block node and its children are not visited when you execute a
+Visitor over a <see cref="Aspose.Words.Document"/>. If you want to execute a Visitor over a
+building block, you need to execute the visitor over <see cref="GlossaryDocument"/> or
+call <see cref="BuildingBlock.Accept"/>.
+</para>
+</remarks>
+</Topic>
+
+<Topic name="SaveOptions.HtmlExportFontResourcesCommonLicensingWarning">
+<p>
+  <b>Important!</b> When exporting font resources, font licensing issues should be considered. Authors who want to use specific fonts via a downloadable
+  font mechanism must always carefully verify that their intended use is within the scope of the font license. Many commercial fonts presently do not
+  allow web downloading of their fonts in any form. License agreements that cover some fonts specifically note that usage via <b>@font-face</b> rules
+  in CSS style sheets is not allowed. Font subsetting can also violate license terms.
+</p>
+</Topic>
+
+
+</Topics>

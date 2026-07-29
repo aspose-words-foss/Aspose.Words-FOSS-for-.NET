@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Topics>
+
+<Topic name="PageSet">
+<summary>
+Gets or sets the pages to render.
+Default is all the pages in the document.
+</summary>
+</Topic>
+
+<Topic name="UseBookFoldPrintingSettings">
+<summary>
+Gets or sets a boolean value indicating whether the document should be saved using a booklet printing layout,
+if it is specified via <see cref="PageSetup.MultiplePages"/>.
+</summary>
+<remarks>
+<para>
+If this option is specified, <see cref="FixedPageSaveOptions.PageSet"/> is ignored when saving.
+This behavior matches MS Word.
+If book fold printing settings are not specified in page setup, this option will have no effect.
+</para>
+</remarks>
+</Topic>
+
+</Topics>

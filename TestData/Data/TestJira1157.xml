@@ -1,0 +1,12 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+  <iscrizionePdf>
+    <test>ABC</test>
+    <identity>
+       <name>Simone</name>
+       <id>123</id>
+       <birthDate>1950-04-01T00:00:00+01:00</birthDate>
+    </identity>
+    <issue>
+       <title>xxxx</title>
+    </issue>
+  </iscrizionePdf>

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+	<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+	<o:DocumentProperties>
+		<o:Author>q</o:Author>
+		<o:LastAuthor>amorozov</o:LastAuthor>
+		<o:Revision>2</o:Revision>
+		<o:TotalTime>0</o:TotalTime>
+		<o:Created>2011-10-19T12:43:00Z</o:Created>
+		<o:LastSaved>2011-10-19T12:43:00Z</o:LastSaved>
+		<o:Pages>1</o:Pages>
+		<o:Words>57</o:Words>
+		<o:Characters>328</o:Characters>
+		<o:Company>q</o:Company>
+		<o:Lines>2</o:Lines>
+		<o:Paragraphs>1</o:Paragraphs>
+		<o:CharactersWithSpaces>384</o:CharactersWithSpaces>
+		<o:Version>12</o:Version>
+	</o:DocumentProperties>
+	<w:fonts>
+		<w:defaultFonts w:ascii="Times New Roman" w:fareast="Calibri" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+		<w:font w:name="Times New Roman">
+			<w:panose-1 w:val="02020603050405020304" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Cambria Math">
+			<w:panose-1 w:val="02040503050406030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Roman" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+		<w:font w:name="Calibri">
+			<w:panose-1 w:val="020F0502020204030204" />
+			<w:charset w:val="CC" />
+			<w:family w:val="Swiss" />
+			<w:pitch w:val="variable" />
+			<w:sig w:usb-0="E10002FF" w:usb-1="4000ACFF" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+		</w:font>
+	</w:fonts>
+	<w:styles>
+		<w:versionOfBuiltInStylenames w:val="7" />
+		<w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+			<w:lsdException w:name="Normal" />
+			<w:lsdException w:name="heading 1" />
+			<w:lsdException w:name="heading 2" />
+			<w:lsdException w:name="heading 3" />
+			<w:lsdException w:name="heading 4" />
+			<w:lsdException w:name="heading 5" />
+			<w:lsdException w:name="heading 6" />
+			<w:lsdException w:name="heading 7" />
+			<w:lsdException w:name="heading 8" />
+			<w:lsdException w:name="heading 9" />
+			<w:lsdException w:name="toc 1" />
+			<w:lsdException w:name="toc 2" />
+			<w:lsdException w:name="toc 3" />
+			<w:lsdException w:name="toc 4" />
+			<w:lsdException w:name="toc 5" />
+			<w:lsdException w:name="toc 6" />
+			<w:lsdException w:name="toc 7" />
+			<w:lsdException w:name="toc 8" />
+			<w:lsdException w:name="toc 9" />
+			<w:lsdException w:name="caption" />
+			<w:lsdException w:name="Title" />
+			<w:lsdException w:name="Subtitle" />
+			<w:lsdException w:name="Strong" />
+			<w:lsdException w:name="Emphasis" />
+			<w:lsdException w:name="Placeholder Text" />
+			<w:lsdException w:name="No Spacing" />
+			<w:lsdException w:name="Light Shading" />
+			<w:lsdException w:name="Light List" />
+			<w:lsdException w:name="Light Grid" />
+			<w:lsdException w:name="Medium Shading 1" />
+			<w:lsdException w:name="Medium Shading 2" />
+			<w:lsdException w:name="Medium List 1" />
+			<w:lsdException w:name="Medium List 2" />
+			<w:lsdException w:name="Medium Grid 1" />
+			<w:lsdException w:name="Medium Grid 2" />
+			<w:lsdException w:name="Medium Grid 3" />
+			<w:lsdException w:name="Dark List" />
+			<w:lsdException w:name="Colorful Shading" />
+			<w:lsdException w:name="Colorful List" />
+			<w:lsdException w:name="Colorful Grid" />
+			<w:lsdException w:name="Light Shading Accent 1" />
+			<w:lsdException w:name="Light List Accent 1" />
+			<w:lsdException w:name="Light Grid Accent 1" />
+			<w:lsdException w:name="Medium Shading 1 Accent 1" />
+			<w:lsdException w:name="Medium Shading 2 Accent 1" />
+			<w:lsdException w:name="Medium List 1 Accent 1" />
+			<w:lsdException w:name="Revision" />
+			<w:lsdException w:name="List Paragraph" />
+			<w:lsdException w:name="Quote" />
+			<w:lsdException w:name="Intense Quote" />
+			<w:lsdException w:name="Medium List 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 1 Accent 1" />
+			<w:lsdException w:name="Medium Grid 2 Accent 1" />
+			<w:lsdException w:name="Medium Grid 3 Accent 1" />
+			<w:lsdException w:name="Dark List Accent 1" />
+			<w:lsdException w:name="Colorful Shading Accent 1" />
+			<w:lsdException w:name="Colorful List Accent 1" />
+			<w:lsdException w:name="Colorful Grid Accent 1" />
+			<w:lsdException w:name="Light Shading Accent 2" />
+			<w:lsdException w:name="Light List Accent 2" />
+			<w:lsdException w:name="Light Grid Accent 2" />
+			<w:lsdException w:name="Medium Shading 1 Accent 2" />
+			<w:lsdException w:name="Medium Shading 2 Accent 2" />
+			<w:lsdException w:name="Medium List 1 Accent 2" />
+			<w:lsdException w:name="Medium List 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 1 Accent 2" />
+			<w:lsdException w:name="Medium Grid 2 Accent 2" />
+			<w:lsdException w:name="Medium Grid 3 Accent 2" />
+			<w:lsdException w:name="Dark List Accent 2" />
+			<w:lsdException w:name="Colorful Shading Accent 2" />
+			<w:lsdException w:name="Colorful List Accent 2" />
+			<w:lsdException w:name="Colorful Grid Accent 2" />
+			<w:lsdException w:name="Light Shading Accent 3" />
+			<w:lsdException w:name="Light List Accent 3" />
+			<w:lsdException w:name="Light Grid Accent 3" />
+			<w:lsdException w:name="Medium Shading 1 Accent 3" />
+			<w:lsdException w:name="Medium Shading 2 Accent 3" />
+			<w:lsdException w:name="Medium List 1 Accent 3" />
+			<w:lsdException w:name="Medium List 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 1 Accent 3" />
+			<w:lsdException w:name="Medium Grid 2 Accent 3" />
+			<w:lsdException w:name="Medium Grid 3 Accent 3" />
+			<w:lsdException w:name="Dark List Accent 3" />
+			<w:lsdException w:name="Colorful Shading Accent 3" />
+			<w:lsdException w:name="Colorful List Accent 3" />
+			<w:lsdException w:name="Colorful Grid Accent 3" />
+			<w:lsdException w:name="Light Shading Accent 4" />
+			<w:lsdException w:name="Light List Accent 4" />
+			<w:lsdException w:name="Light Grid Accent 4" />
+			<w:lsdException w:name="Medium Shading 1 Accent 4" />
+			<w:lsdException w:name="Medium Shading 2 Accent 4" />
+			<w:lsdException w:name="Medium List 1 Accent 4" />
+			<w:lsdException w:name="Medium List 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 1 Accent 4" />
+			<w:lsdException w:name="Medium Grid 2 Accent 4" />
+			<w:lsdException w:name="Medium Grid 3 Accent 4" />
+			<w:lsdException w:name="Dark List Accent 4" />
+			<w:lsdException w:name="Colorful Shading Accent 4" />
+			<w:lsdException w:name="Colorful List Accent 4" />
+			<w:lsdException w:name="Colorful Grid Accent 4" />
+			<w:lsdException w:name="Light Shading Accent 5" />
+			<w:lsdException w:name="Light List Accent 5" />
+			<w:lsdException w:name="Light Grid Accent 5" />
+			<w:lsdException w:name="Medium Shading 1 Accent 5" />
+			<w:lsdException w:name="Medium Shading 2 Accent 5" />
+			<w:lsdException w:name="Medium List 1 Accent 5" />
+			<w:lsdException w:name="Medium List 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 1 Accent 5" />
+			<w:lsdException w:name="Medium Grid 2 Accent 5" />
+			<w:lsdException w:name="Medium Grid 3 Accent 5" />
+			<w:lsdException w:name="Dark List Accent 5" />
+			<w:lsdException w:name="Colorful Shading Accent 5" />
+			<w:lsdException w:name="Colorful List Accent 5" />
+			<w:lsdException w:name="Colorful Grid Accent 5" />
+			<w:lsdException w:name="Light Shading Accent 6" />
+			<w:lsdException w:name="Light List Accent 6" />
+			<w:lsdException w:name="Light Grid Accent 6" />
+			<w:lsdException w:name="Medium Shading 1 Accent 6" />
+			<w:lsdException w:name="Medium Shading 2 Accent 6" />
+			<w:lsdException w:name="Medium List 1 Accent 6" />
+			<w:lsdException w:name="Medium List 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 1 Accent 6" />
+			<w:lsdException w:name="Medium Grid 2 Accent 6" />
+			<w:lsdException w:name="Medium Grid 3 Accent 6" />
+			<w:lsdException w:name="Dark List Accent 6" />
+			<w:lsdException w:name="Colorful Shading Accent 6" />
+			<w:lsdException w:name="Colorful List Accent 6" />
+			<w:lsdException w:name="Colorful Grid Accent 6" />
+			<w:lsdException w:name="Subtle Emphasis" />
+			<w:lsdException w:name="Intense Emphasis" />
+			<w:lsdException w:name="Subtle Reference" />
+			<w:lsdException w:name="Intense Reference" />
+			<w:lsdException w:name="Book Title" />
+			<w:lsdException w:name="Bibliography" />
+			<w:lsdException w:name="TOC Heading" />
+		</w:latentStyles>
+		<w:style w:type="paragraph" w:default="on" w:styleId="Normal">
+			<w:name w:val="Normal" />
+			<w:rsid w:val="002E6029" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+			</w:rPr>
+		</w:style>
+		<w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">
+			<w:name w:val="Default Paragraph Font" />
+		</w:style>
+		<w:style w:type="table" w:default="on" w:styleId="TableNormal">
+			<w:name w:val="Normal Table" />
+			<wx:uiName wx:val="Table Normal" />
+			<w:rPr>
+				<wx:font wx:val="Times New Roman" />
+				<w:lang w:val="EN-US" w:fareast="EN-US" w:bidi="AR-SA" />
+			</w:rPr>
+			<w:tblPr>
+				<w:tblInd w:w="0" w:type="dxa" />
+				<w:tblCellMar>
+					<w:top w:w="0" w:type="dxa" />
+					<w:left w:w="108" w:type="dxa" />
+					<w:bottom w:w="0" w:type="dxa" />
+					<w:right w:w="108" w:type="dxa" />
+				</w:tblCellMar>
+			</w:tblPr>
+		</w:style>
+		<w:style w:type="list" w:default="on" w:styleId="NoList">
+			<w:name w:val="No List" />
+		</w:style>
+	</w:styles>
+	<w:shapeDefaults>
+		<o:shapedefaults v:ext="edit" spidmax="2050">
+			<o:colormenu v:ext="edit" fillcolor="none" extrusioncolor="none [1951]" />
+		</o:shapedefaults>
+		<o:shapelayout v:ext="edit">
+			<o:idmap v:ext="edit" data="1" />
+		</o:shapelayout>
+	</w:shapeDefaults>
+	<w:docPr>
+		<w:view w:val="print" />
+		<w:zoom w:percent="100" />
+		<w:proofState w:spelling="clean" w:grammar="clean" />
+		<w:stylePaneFormatFilter w:val="3F01" />
+		<w:defaultTabStop w:val="720" />
+		<w:displayHorizontalDrawingGridEvery w:val="0" />
+		<w:displayVerticalDrawingGridEvery w:val="0" />
+		<w:useMarginsForDrawingGridOrigin />
+		<w:punctuationKerning />
+		<w:characterSpacingControl w:val="DontCompress" />
+		<w:optimizeForBrowser />
+		<w:validateAgainstSchema />
+		<w:saveInvalidXML w:val="off" />
+		<w:ignoreMixedContent w:val="off" />
+		<w:alwaysShowPlaceholderText w:val="off" />
+		<w:compat>
+			<w:breakWrappedTables />
+			<w:snapToGridInCell />
+			<w:wrapTextWithPunct />
+			<w:useAsianBreakRules />
+			<w:dontGrowAutofit />
+		</w:compat>
+		<wsp:rsids>
+			<wsp:rsidRoot wsp:val="00A53B0B" />
+			<wsp:rsid wsp:val="00201A51" />
+			<wsp:rsid wsp:val="00240791" />
+			<wsp:rsid wsp:val="002E6029" />
+			<wsp:rsid wsp:val="004859AD" />
+			<wsp:rsid wsp:val="008078E8" />
+			<wsp:rsid wsp:val="008D56CC" />
+			<wsp:rsid wsp:val="008E752A" />
+			<wsp:rsid wsp:val="00A53B0B" />
+			<wsp:rsid wsp:val="00A9486E" />
+			<wsp:rsid wsp:val="00B00725" />
+			<wsp:rsid wsp:val="00C158EB" />
+			<wsp:rsid wsp:val="00DC4D93" />
+			<wsp:rsid wsp:val="00FD6549" />
+			<wsp:rsid wsp:val="00FF04F0" />
+		</wsp:rsids>
+	</w:docPr>
+	<w:body>
+		<w:p wsp:rsidR="00A53B0B" wsp:rsidRDefault="00A53B0B">
+			<w:r>
+				<w:t>Parallel </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shapetype id="_x0000_t21" coordsize="21600,21600" o:spt="21" adj="3600" path="m@0,qy0@0l0@2qx@0,21600l@1,21600qy21600@2l21600@0qx@1,xe">
+						<v:stroke joinstyle="miter" />
+						<v:formulas>
+							<v:f eqn="val #0" />
+							<v:f eqn="sum width 0 #0" />
+							<v:f eqn="sum height 0 #0" />
+							<v:f eqn="prod @0 7071 10000" />
+							<v:f eqn="sum width 0 @3" />
+							<v:f eqn="sum height 0 @3" />
+							<v:f eqn="val width" />
+							<v:f eqn="val height" />
+							<v:f eqn="prod width 1 2" />
+							<v:f eqn="prod height 1 2" />
+						</v:formulas>
+						<v:path gradientshapeok="t" limo="10800,10800" o:connecttype="custom" o:connectlocs="@8,0;0,@9;@8,@7;@6,@9" textboxrect="@3,@3,@4,@5" />
+						<v:handles>
+							<v:h position="#0,topLeft" switch="" xrange="0,10800" />
+						</v:handles>
+					</v:shapetype>
+					<v:shape id="_x0000_s1032" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="#dbeef3">
+						<o:extrusion v:ext="view" on="t" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1033" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="#fdeada">
+						<o:extrusion v:ext="view" on="t" viewpoint="-34.72222mm,34.72222mm" viewpointorigin="-.5,.5" skewangle="45" lightposition="-50000" lightposition2="50000" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1034" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" filled="f" fillcolor="#fdeada">
+						<o:extrusion v:ext="view" on="t" render="wireFrame" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1035" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+						<o:extrusion v:ext="view" on="t" rotationangle="-10,35" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00A9486E" wsp:rsidRDefault="00A53B0B">
+			<w:r>
+				<w:t>Perspective </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1036" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+						<o:extrusion v:ext="view" backdepth="9600pt" on="t" rotationangle="5,-5" type="perspective" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1037" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+						<o:extrusion v:ext="view" backdepth="1in" on="t" rotationangle="-25,25" viewpoint="0,0" viewpointorigin="0,0" skewangle="0" skewamt="0" lightposition=",50000" type="perspective" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="002E6029" wsp:rsidRDefault="00C158EB">
+			<w:r>
+				<w:t>Color and light </w:t>
+			</w:r>
+			<w:r wsp:rsidR="00A53B0B">
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="00A53B0B">
+				<w:pict>
+					<v:shape id="_x0000_s1038" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="yellow">
+						<v:fill color2="fill darken(102)" focusposition=".5,.5" focussize="" method="linear sigma" type="gradientRadial" />
+						<o:extrusion v:ext="view" color="#7891b1" on="t" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r wsp:rsidR="00A9486E">
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="00A9486E">
+				<w:pict>
+					<v:shape id="_x0000_s1041" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+						<o:extrusion v:ext="view" on="t" lightposition="-50000,-50000" lightposition2="50000" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r wsp:rsidR="00A9486E">
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="00A9486E">
+				<w:pict>
+					<v:shape id="_x0000_s1042" type="#_x0000_t21" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line">
+						<o:extrusion v:ext="view" on="t" brightness="10000f" lightposition=",-50000" lightlevel="44000f" lightlevel2="24000f" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:p wsp:rsidR="00C158EB" wsp:rsidRDefault="00240791">
+			<w:r>
+				<w:t>Texture </w:t>
+			</w:r>
+			<w:r wsp:rsidR="00C158EB">
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r wsp:rsidR="00C158EB">
+				<w:pict>
+					<v:shapetype id="_x0000_t55" coordsize="21600,21600" o:spt="55" adj="16200" path="m@0,l,0@1,10800,,21600@0,21600,21600,10800xe">
+						<v:stroke joinstyle="miter" />
+						<v:formulas>
+							<v:f eqn="val #0" />
+							<v:f eqn="sum 21600 0 @0" />
+							<v:f eqn="prod #0 1 2" />
+						</v:formulas>
+						<v:path o:connecttype="custom" o:connectlocs="@2,0;@1,10800;@2,21600;21600,10800" o:connectangles="270,180,90,0" textboxrect="0,0,10800,21600;0,0,16200,21600;0,0,21600,21600" />
+						<v:handles>
+							<v:h position="#0,topLeft" xrange="0,21600" />
+						</v:handles>
+					</v:shapetype>
+					<v:shape id="_x0000_s1047" type="#_x0000_t55" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="#f2f2f2">
+						<v:fill color2="#616161" rotate="t" />
+						<o:extrusion v:ext="view" on="t" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1050" type="#_x0000_t55" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="#f2f2f2">
+						<v:fill color2="#616161" rotate="t" />
+						<o:extrusion v:ext="view" specularity="80000f" on="t" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:noProof />
+					<w:lang w:fareast="EN-US" />
+				</w:rPr>
+			</w:r>
+			<w:r>
+				<w:pict>
+					<v:shape id="_x0000_s1051" type="#_x0000_t55" style="width:48pt;height:40.5pt;mso-position-horizontal-relative:char;mso-position-vertical-relative:line" fillcolor="#f2f2f2">
+						<v:fill color2="#616161" rotate="t" />
+						<o:extrusion v:ext="view" specularity="80000f" diffusity="43712f" on="t" metal="t" />
+						<w10:anchorlock />
+					</v:shape>
+				</w:pict>
+			</w:r>
+		</w:p>
+		<w:sectPr wsp:rsidR="00C158EB" wsp:rsidSect="002E6029">
+			<w:pgSz w:w="12240" w:h="15840" />
+			<w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+		</w:sectPr>
+	</w:body>
+</w:wordDocument>

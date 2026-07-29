@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>Aspose.Words.FOSS</id>
+		<version>26.2.0</version>
+		<title>Aspose.Words FOSS for .NET</title>
+		<authors>Aspose</authors>
+		<license type="expression">MIT</license>
+		<icon>icon.png</icon>
+		<readme>README.md</readme>
+		<projectUrl>https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET</projectUrl>
+		<repository type="git" url="https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET.git" branch="refs/heads/master" />
+		<description>Open-source .NET library for Word documents, built from the genuine Aspose.Words codebase. Create, read, and edit DOCX; convert to Markdown and plain text. No Microsoft Word required.
+
+The API is source-compatible with the commercial Aspose.Words for .NET within the supported feature set. Page layout and rendering (PDF/XPS/image output), DOC/RTF/ODT/HTML formats, mail merge and reporting are not part of this edition.</description>
+		<releaseNotes>https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET/releases</releaseNotes>
+		<copyright>Copyright (c) 2001-2026 Aspose Pty Ltd</copyright>
+		<tags>aspose words docx word document openxml docm dotx flatopc markdown convert foss</tags>
+		<dependencies>
+			<group targetFramework="net462" />
+			<group targetFramework=".NETStandard2.0">
+				<dependency id="SkiaSharp" version="3.119.0" exclude="Build,Analyzers" />
+				<dependency id="BitMiracle.LibTiff.NET" version="2.4.649" exclude="Build,Analyzers" />
+				<dependency id="Microsoft.Win32.Registry" version="5.0.0" exclude="Build,Analyzers" />
+			</group>
+			<group targetFramework="net8.0">
+				<dependency id="SkiaSharp" version="3.119.0" exclude="Build,Analyzers" />
+				<dependency id="BitMiracle.LibTiff.NET" version="2.4.649" exclude="Build,Analyzers" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="README.md" target="" />
+		<file src="icon.png" target="" />
+		<file src="..\Aspose.Words\bin\Release\merged\net462\Aspose.Words.FOSS.dll" target="lib\net462" />
+		<file src="..\Aspose.Words\bin\Release\merged\net462\Aspose.Words.FOSS.xml" target="lib\net462" />
+		<file src="..\Aspose.Words\bin\Release\merged\netstandard2.0\Aspose.Words.FOSS.dll" target="lib\netstandard2.0" />
+		<file src="..\Aspose.Words\bin\Release\merged\netstandard2.0\Aspose.Words.FOSS.xml" target="lib\netstandard2.0" />
+		<file src="..\Aspose.Words\bin\Release\merged\net8.0\Aspose.Words.FOSS.dll" target="lib\net8.0" />
+		<file src="..\Aspose.Words\bin\Release\merged\net8.0\Aspose.Words.FOSS.xml" target="lib\net8.0" />
+	</files>
+</package>

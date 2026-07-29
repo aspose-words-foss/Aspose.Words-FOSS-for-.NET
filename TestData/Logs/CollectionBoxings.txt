@@ -1,0 +1,50 @@
+********************************************************************************
+Aspose.Words.dll
+********************************************************************************
+Aspose.Layout.Core.ClipperLib.ExPolygons.Add : method - ArrayList.Add(Object) : Int32; boxed type - ExPolygon
+Aspose.Layout.Core.ClipperLib.IntPointList.Add : method - ArrayList.Add(Object) : Int32; boxed type - IntPoint
+Aspose.Layout.Core.ClipperLib.IntPointList.set_Item : method - ArrayList.set_Item(Int32, Object) : Void; boxed type - IntPoint
+Aspose.Layout.Core.Hyphenator..ctor : method - Hashtable.Add(Object, Object) : Void; boxed type - Char
+Aspose.Words.BorderCollection.get_Item : method - SortedList.get_Item(Object) : Object; boxed type - BorderType
+Aspose.Words.BorderCollection.IsPossible : method - SortedList.Contains(Object) : Boolean; boxed type - BorderType
+Aspose.Words.Drawing.ImageData..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.Layout.BorderAttrSourceAdapter.GetBorderCollection : method - SortedList.Add(Object, Object) : Void; boxed type - BorderType
+Aspose.Words.PageSetup..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.ParaPr..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.RW.Html.Css.CssAttributeNameComparer..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.RW.Html.Css.New.CssPropertyComparer..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.RW.Nrx.Reader.NrxCellPrReader.SetBorder : method - ArrayList.Add(Object) : Int32; boxed type - DictionaryEntry
+Aspose.Words.RW.Odt.Reader.OdtCustomShapeReader.OdtFormulaToRpnOperatorProcessing : method - Stack.Push(Object) : Void; boxed type - Char
+Aspose.Words.RW.Odt.Reader.OdtCustomShapeReader.OperatorProcessing : method - Stack.Push(Object) : Void; boxed type - Char
+Aspose.Words.RW.Odt.Reader.OdtCustomShapeReader.ReadEnhancedPath : method - ArrayList.Add(Object) : Int32; boxed type - Char
+Aspose.Words.RW.Odt.Reader.OdtPathReader.ReadPathData : method - ArrayList.Add(Object) : Int32; boxed type - Char
+Aspose.Words.Saving.BookmarksOutlineLevelCollection.Add : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.Saving.BookmarksOutlineLevelCollection.set_Item : method - SortedList.set_Item(Object, Object) : Void; boxed type - Int32
+Aspose.Words.Saving.BookmarksOutlineLevelCollection.set_Item : method - SortedList.SetByIndex(Int32, Object) : Void; boxed type - Int32
+Aspose.Words.Settings.CompatibilityOptions.InitInheritedCompatibilityOptions : method - Hashtable.set_Item(Object, Object) : Void; boxed type - Boolean
+Aspose.Words.TableLayout.TableLayouter.ContributeMergedCell : method - ArrayList.Add(Object) : Int32; boxed type - SpanCell
+Aspose.Words.Tables.CellPr..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.Tables.TablePr..cctor : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+Aspose.Words.TableStyle.Aspose.Words.ICellAttrSource.GetDirectCellAttr : method - SortedList.ContainsValue(Object) : Boolean; boxed type - Int32
+Aspose.Words.Validation.DocumentValidator.AddXmlNamespace : method - SortedList.Add(Object, Object) : Void; boxed type - Int32
+********************************************************************************
+Aspose.Foundation.dll
+********************************************************************************
+Aspose.FileFormatCore.InitMaps : method - SortedList.Add(Object, Object) : Void; boxed type - FileFormat
+Aspose.Fonts.Cff.CffDict.UpdateOperand : method - ArrayList.set_Item(Int32, Object) : Void; boxed type - Int32
+Aspose.Fonts.Cff.CffDictDecoder.ReadNibbles : method - ArrayList.Add(Object) : Int32; boxed type - Int32
+Aspose.Fonts.Cff.CffDictDecoder.WriteRealOperand : method - ArrayList.Add(Object) : Int32; boxed type - Int32
+Aspose.Fonts.Cff.CffDictDecoderContext.AddIntOperand : method - ArrayList.Add(Object) : Int32; boxed type - Int32
+Aspose.Fonts.Cff.CffDictDecoderContext.AddRealOperand : method - ArrayList.Add(Object) : Int32; boxed type - Double
+Aspose.Fonts.TrueType.TTGlyphHashtable.Add : method - Hashtable.set_Item(Object, Object) : Void; boxed type - Int32
+Aspose.Fonts.TrueType.TTGlyphHashtable.get_Item : method - Hashtable.get_Item(Object) : Object; boxed type - Int32
+Aspose.Fonts.TrueType.TTGlyphHashtable.set_Item : method - Hashtable.set_Item(Object, Object) : Void; boxed type - Int32
+Aspose.Rendering.Dml.Effects.DmlEffectsArranger.GetOrderedEffectsCollection : method - SortedList.Add(Object, Object) : Void; boxed type - DmlEffectOrder
+Aspose.Rendering.Dml.Effects.DmlEffectsArranger.GetOrderedEffectsCollection : method - SortedList.ContainsKey(Object) : Boolean; boxed type - DmlEffectOrder
+Aspose.Rendering.Dml.Effects.DmlEffectsArranger.GetOrderedEffectsCollection : method - SortedList.Remove(Object) : Void; boxed type - DmlEffectOrder
+Aspose.Rendering.Dml.ShapeEffects.DmlShapeEffectsCollection.AddEffect : method - Hashtable.set_Item(Object, Object) : Void; boxed type - DmlShapeEffectType
+Aspose.Rendering.Dml.ShapeEffects.DmlShapeEffectsCollection.GetEffect : method - Hashtable.get_Item(Object) : Object; boxed type - DmlShapeEffectType
+Aspose.Rendering.Dml.ShapeEffects.DmlShapeEffectsCollection.HasEffect : method - Hashtable.get_Item(Object) : Object; boxed type - DmlShapeEffectType
+Aspose.Zip.ZipFile.CheckZip : method - ArrayList.Add(Object) : Int32; boxed type - Int16
+Aspose.Zip.ZipFile.CheckZip : method - ArrayList.Add(Object) : Int32; boxed type - Int32
+Aspose.Zip.ZipFile.CheckZip : method - ArrayList.Add(Object) : Int32; boxed type - Int64

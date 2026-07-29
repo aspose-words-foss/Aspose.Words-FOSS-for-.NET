@@ -1,0 +1,14 @@
+<?xml version="1.0"?><body xmlns="http://www.w3.org/1999/xtml"
+xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+xfa:contentType="text/html" xfa:APIVersion="Acrobat:8.0.0" xfa:spec="2.4">
+<p style="text-align:left">
+<b>
+<i>
+Here is some bold italic text
+</i>
+</b>
+</p>
+<p style= "font-size:16pt color:#FF0000">
+This text uses default text state parameters but changes the font size to 16.
+</p>
+</body>

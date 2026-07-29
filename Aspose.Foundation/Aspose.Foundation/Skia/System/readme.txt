@@ -1,0 +1,1 @@
+﻿Folder contains implementation of missed in Xamarin and .Net Standard classes from System.XXX namespaces.

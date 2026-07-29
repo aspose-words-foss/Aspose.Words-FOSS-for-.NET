@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Basic information -->
+		<TargetFrameworks>net462;netstandard2.0;net8.0</TargetFrameworks>
+		<TargetFrameworkProfile></TargetFrameworkProfile>
+		<RootNamespace>Aspose</RootNamespace>
+		<AssemblyName>Aspose.Foundation</AssemblyName>
+		<Configurations>Debug;Release;Test</Configurations>
+
+		<!-- Assembly metadata -->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+		<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+
+		<!-- Compiler settings -->
+		<LangVersion>6</LangVersion>
+		<Optimize>true</Optimize>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+
+		<!-- Analyzers and warnings -->
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningLevel>4</WarningLevel>
+		<ErrorReport>prompt</ErrorReport>
+
+		<!-- Items control: Compile items come from default SDK globbing; resources and None stay explicit -->
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+		<EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>TRACE;DEBUG;DEBUG_ASSERT</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>TRACE;OPTIMIZED</DefineConstants>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+		<OutputPath>bin\Test\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;OPTIMIZED;DEBUG_ASSERT</DefineConstants>
+		<DebugType>full</DebugType>
+		<NoWarn>CS0649,NU1900</NoWarn>
+	</PropertyGroup>
+
+	<!-- Suppressions specific to the net8.0 target (same set the former Release80 configuration used) -->
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<NoWarn>$(NoWarn);CA1416;SYSLIB0014;CA1307;CA1309;CA1310</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\..\packages\Aspose.JavaAttributes\lib\net2.0\Aspose.JavaAttributes.dll" />
+		<Reference Include="..\..\packages\BouncyCastle.1.7.0\lib\Net20\BouncyCastle.Crypto.dll" />
+		<Reference Include="..\..\packages\CodePorting.Translator.Cs2Cpp.Control\lib\net35\CodePorting.Translator.Cs2Cpp.Control.dll"></Reference>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="System" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Security" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' != 'net462'">
+		<PackageReference Include="SkiaSharp" Version="3.119.0" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+		<PackageReference Include="BitMiracle.LibTiff.NET" Version="2.4.649" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+		<!-- On net8.0 the Registry API is part of the base class library -->
+		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<PackageReference Include="SkiaSharp" Version="3.119.0" Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Test'" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Aspose.EnumExtensionsGenerator" Version="1.0.2" PrivateAssets="all" ExcludeAssets="runtime">
+			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<PropertyGroup>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- Code-generation templates and emitted generator output must not be compiled -->
+		<Compile Remove="Generated\**" Condition="'$(IncludeGenerated)' != true" />
+		<Compile Remove="Collections\Auto\Templates\Dictionary.cs" />
+		<Compile Remove="Collections\Auto\Templates\List.cs" />
+		<Compile Remove="Collections\Auto\Templates\Stack.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Common\Nullables.cs">
+			<DependentUpon>Nullables.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<None Include="Collections\Auto\Templates\Dictionary.cs" />
+		<None Include="Collections\Auto\Templates\List.cs" />
+		<None Include="Collections\Auto\Templates\Stack.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Common\Nullables.tt">
+			<LastGenOutput>Nullables.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+		<Content Include="Base\0Readme.txt" />
+		<Content Include="Bidi\0Readme.txt" />
+		<Content Include="Charset\0Readme.txt" />
+		<Content Include="Collections\0Readme.txt" />
+		<Content Include="Collections\Auto\ReadMe.txt" />
+		<Content Include="Collections\Auto\Templates\ReadMe.txt" />
+		<Content Include="Common\0Readme.txt" />
+		<Content Include="Crypto\0Readme.txt" />
+		<Content Include="Drawing\0Readme.txt" />
+		<Content Include="Fonts\TrueType\Readme.txt" />
+		<Content Include="Images\Readme.txt" />
+		<Content Include="IO\0Readme.txt" />
+		<Content Include="Numbering\0Readme.txt" />
+		<Content Include="Images\Pal\0Readme.txt" />
+		<Content Include="Ss\0Readme.txt" />
+		<Content Include="Warnings\0Readme.txt" />
+		<Content Include="Xml\0Readme.txt" />
+		<Content Include="Zip\0Readme.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Fanwood.ttf" />
+		<EmbeddedResource Include="Resources\NoImage.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+</Project>

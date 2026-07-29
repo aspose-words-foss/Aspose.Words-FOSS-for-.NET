@@ -1,0 +1,213 @@
+﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
+// 31/05/2013 by Andrey Noskov
+
+using Aspose.Words.Revisions;
+
+namespace Aspose.Words
+{
+    /// <summary>
+    /// Represents a start of an editable range in a Word document.
+    /// <para>To learn more, visit the <a href="https://docs.aspose.com/words/net/aspose-words-document-object-model/">Aspose.Words Document Object Model (DOM)</a> documentation article.</para>
+    /// </summary>
+    /// <remarks>
+    /// <p>A complete editable range in a Word document consists of a <see cref="EditableRangeStart"/>
+    /// and a matching <see cref="EditableRangeEnd"/> with the same Id.</p>
+    ///
+    /// <p><see cref="EditableRangeStart"/> and <see cref="EditableRangeEnd"/> are just markers inside a document
+    /// that specify where the editable range starts and ends.</p>
+    ///
+    /// <p>Use the <see cref="EditableRange"/> class as a "facade" to work with an editable range
+    /// as a single object.</p>
+    ///
+    /// <note>Currently editable ranges are supported only at the inline-level, that is inside <see cref="Paragraph"/>,
+    /// but editable range start and editable range end can be in different paragraphs.</note>
+    /// </remarks>
+    public sealed class EditableRangeStart : Node, IDisplaceableByCustomXml, INodeWithAnnotationId
+    {
+        internal EditableRangeStart(DocumentBase doc)
+            : this(doc, doc.GetNextAnnotationId())
+        {
+        }
+
+        internal EditableRangeStart(DocumentBase doc, int id)
+            : base(doc)
+        {
+            mId = id;
+        }
+
+        internal EditableRangeStart(DocumentBase doc, int id, string ed, EditorType edGrp)
+            : this (doc, id, ed, edGrp, 0)
+        {
+        }
+
+        internal EditableRangeStart(DocumentBase doc, int id, string ed, EditorType edGrp, int flags)
+            : base(doc)
+        {
+            mId = id;
+            mEd = ed;
+            mEdGrp = edGrp;
+            mFlags = flags;
+        }
+
+        /// <summary>
+        /// Accepts a visitor.
+        /// </summary>
+        /// <remarks>
+        /// <p>Calls <see cref="DocumentVisitor.VisitEditableRangeStart"/>.</p>
+        /// <p>For more info see the Visitor design pattern.</p>
+        /// </remarks>
+        /// <param name="visitor">The visitor that will visit the node.</param>
+        /// <returns><c>false</c> if the visitor requested the enumeration to stop.</returns>
+        public override bool Accept(DocumentVisitor visitor)
+        {
+            return VisitorActionToBool(visitor.VisitEditableRangeStart(this));
+        }
+
+        /// <summary>
+        /// Specifies the identifier of the editable range.
+        /// </summary>
+        public int Id
+        {
+            get { return mId; }
+            set { mId = value; }
+        }
+
+        /// <summary>
+        /// Gets the facade object that encapsulates this editable range start and end.
+        /// </summary>
+        public EditableRange EditableRange
+        {
+            get { return new EditableRange(this); }
+        }
+
+        /// <summary>
+        /// Returns <see cref="Aspose.Words.NodeType.EditableRangeStart"/>.
+        /// </summary>
+        public override NodeType NodeType
+        {
+            get { return NodeType.EditableRangeStart; }
+        }
+
+        /// <summary>
+        /// Specifies that placement of the editable range node is directly linked with the location of the physical
+        /// presentation of a custom XML element in the document.
+        /// </summary>
+        internal DisplacedByType DisplacedBy
+        {
+            get { return mDisplacedBy; }
+            set { mDisplacedBy = value; }
+        }
+
+        /// <summary>
+        /// Specifies that placement of the editable range node is directly linked with the location of the physical
+        /// presentation of a custom XML element in the document.
+        /// </summary>
+        /// <dev>
+        /// The two same properties DisplacedBy and IDisplaceableByCustomXml.DisplacedByCustomXml have been implemented
+        /// for Java porter. The porter does not support a case when a class contains "internal" property and explicitly
+        /// defined interface property with same name.
+        /// </dev>
+        DisplacedByType IDisplaceableByCustomXml.DisplacedByCustomXml
+        {
+            get { return mDisplacedBy; }
+            set { mDisplacedBy = value; }
+        }
+
+        int INodeWithAnnotationId.IdInternal
+        {
+            get { return Id; }
+            set { mId = value; }
+        }
+
+        int INodeWithAnnotationId.ParentIdInternal
+        {
+            get { return Comment.NoParent; }
+            set { }
+        }
+
+        /// <summary>
+        /// Returns original MS Word editable range flags that sometimes specify if its a table column editable range.
+        /// </summary>
+        internal int Flags
+        {
+            get { return mFlags; }
+        }
+
+        /// <summary>
+        /// Specifies the single user for editable range.
+        /// </summary>
+        internal string SingleUser
+        {
+            get { return mEd; }
+            set { mEd = value; }
+        }
+
+        /// <summary>
+        /// Specifies the editor group for editable range.
+        /// </summary>
+        internal EditorType EditorGroup
+        {
+            get { return mEdGrp; }
+            set { mEdGrp = value; }
+        }
+
+        /// <summary>
+        /// Returns true if this EditableRange is a table column range.
+        /// </summary>
+        internal bool IsColumn
+        {
+            get { return ((mFlags & 0x8000) == 0x8000); }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the first column in editable range. Only valid if <see cref="IsColumn"/> is true.
+        /// </summary>
+        internal int FirstColumn
+        {
+            get { return (mFlags & 0x007F); }
+            set
+            {
+                int newValue = mFlags;
+
+                newValue &= ~0x007F;
+                newValue |= (value & 0x007F);
+
+                // Sets the flag indicating this is a table column editable range.
+                newValue |= 0x8000;
+                mFlags = newValue;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the last column in editable range. Only valid if <see cref="IsColumn"/> is true.
+        /// </summary>
+        internal int LastColumn
+        {
+            get
+            {
+                // The flags contains the zero-based index of the first column beyond the end of the table column range
+                // associated with the editable range.
+                return (((mFlags & 0x7F00) >> 8) - 1);
+            }
+            set
+            {
+                int newValue = mFlags;
+
+                newValue &= ~0x7F00;
+                // Put value + 1, i.e. index of a column beyond the last column of the column range associated with
+                // the editable range.
+                newValue |= (((value + 1) & 0x007F) << 8);
+
+                // Sets the flag indicating this is a table column editable range.
+                newValue |= 0x8000;
+                mFlags = newValue;
+            }
+        }
+
+        private int mId;
+        private int mFlags;
+        private string mEd = string.Empty;
+        private EditorType mEdGrp;
+        private DisplacedByType mDisplacedBy = DisplacedByType.Unspecified;
+    }
+}

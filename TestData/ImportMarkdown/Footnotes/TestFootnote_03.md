@@ -1,0 +1,1 @@
+Here's a footnote[^10] without definition (shown as simple text).
