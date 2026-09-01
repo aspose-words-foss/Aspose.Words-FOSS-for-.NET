@@ -48,7 +48,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
 
             Assert.That("2 3 4 6 7 ", Is.EqualTo(result));
         }
-        
+
         private List<CompareObject> GetCompareArrayList()
         {
             List<CompareObject> newArray = new List<CompareObject>();
@@ -90,8 +90,8 @@ namespace Aspose.JavaMs.Tests.System.Collections
             {
                 if (obj == null)
                     return 1;
-                
-                return - Index.CompareTo(obj.Index);
+
+                return -Index.CompareTo(obj.Index);
             }
 
             internal string Code

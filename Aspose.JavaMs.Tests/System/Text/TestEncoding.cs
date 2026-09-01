@@ -15,7 +15,7 @@ namespace Aspose.JavaMs.Tests.System.Text
     public class TestEncoding
     {
         //>>>>>>>>>>>>>>>>>>>>>>>> Encoder
-        
+
         /// <summary>
         /// "Convenience method" java.nio.charset.CharsetDecoder.decode(ByteBuffer in) can't properly decode
         /// single one-byte symbol of multibyte encodings(like Shift-Jis) - it just returns an empty char array.
@@ -106,7 +106,7 @@ namespace Aspose.JavaMs.Tests.System.Text
         }
 
         [Test]
-        public void TestSomeEncodings() 
+        public void TestSomeEncodings()
         {
             Assert.That(Encoding.Unicode.HeaderName, Is.EqualTo(Encoding.GetEncoding(1200).HeaderName));
 
@@ -452,7 +452,8 @@ namespace Aspose.JavaMs.Tests.System.Text
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>> Decoder
 
-        [Test][JavaThrows(true)]
+        [Test]
+        [JavaThrows(true)]
         public void TestDecoderGetChars()
         {
             string testStrUnicode = "Test String Тестовая строчка 123 /n.";
@@ -487,7 +488,7 @@ namespace Aspose.JavaMs.Tests.System.Text
         [Test]
         public void TestJiraJ1859()
         {
-            byte [] bytes = Encoding.GetEncoding(1252).GetBytes("14â€ Encouraged");
+            byte[] bytes = Encoding.GetEncoding(1252).GetBytes("14â€ Encouraged");
             string s = new string(Encoding.UTF8.GetChars(bytes));
 
             Assert.That("14” Encouraged", Is.EqualTo(s));

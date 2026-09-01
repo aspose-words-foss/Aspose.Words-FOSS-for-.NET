@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 14/05/2020 by Alexey Noskov
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using SkiaSharp;
 

@@ -183,7 +183,7 @@ namespace Aspose.TestFx
         }
 
         /// <summary>
-        /// Loads a CSV file into a DataTable according to https://auckland.dynabic.com/wiki/display/org/How+MailMerge+is+Autoported+to+Java.
+        /// Loads a CSV file into a DataTable.
         /// To automatically build in test file path from relative one it is better to use TestTableUtil.LoadTableFromCsv(string fileName).
         /// </summary>
         private static DataTable LoadTableFromCsvFile(string fileName)

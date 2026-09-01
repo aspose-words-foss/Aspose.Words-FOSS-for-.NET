@@ -79,7 +79,7 @@ namespace Aspose.Numbering
 
         private static string Hundred(int hundreds)
         {
-           return hundreds == 1 ? "sută" : "sute";
+            return hundreds == 1 ? "sută" : "sute";
         }
 
         protected override string ThousandsOrdinalSuffix

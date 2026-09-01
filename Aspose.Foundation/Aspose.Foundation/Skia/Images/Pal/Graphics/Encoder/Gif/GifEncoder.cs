@@ -2,10 +2,10 @@
 // 07/11/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
-using SkiaSharp;
 using System.IO;
+using SkiaSharp;
 
 namespace Aspose.Images.Pal.Graphics.Encoder
 {
@@ -17,7 +17,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         /// <param name="ms">int delay time in milliseconds</param>
         public void SetDelay(int ms)
         {
-            mDelay = ms/10;
+            mDelay = ms / 10;
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             mStarted = false;
             try
             {
-                mOutput.Write((byte) 0x3b); // gif trailer
+                mOutput.Write((byte)0x3b); // gif trailer
                 mOutput.Flush();
                 if (mCloseStream)
                 {
@@ -158,7 +158,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         public void SetFrameRate(float fps)
         {
             if (!MathUtil.IsZero(fps))
-                mDelay = (int) (100/fps);
+                mDelay = (int)(100 / fps);
         }
 
         /// <summary>
@@ -254,7 +254,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             {
                 int index = nq.Map(mPixels[k++] & 0xff, mPixels[k++] & 0xff, mPixels[k++] & 0xff);
                 mUsedEntry[index] = true;
-                mIndexedPixels[i] = (byte) index;
+                mIndexedPixels[i] = (byte)index;
             }
             mPixels = null;
             mColorDepth = 8;
@@ -333,9 +333,9 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         /// </summary>
         private void WriteGraphicCtrlExt()
         {
-            mOutput.Write((byte) 0x21); // extension introducer
-            mOutput.Write((byte) 0xf9); // GCE label
-            mOutput.Write((byte) 4); // data block size
+            mOutput.Write((byte)0x21); // extension introducer
+            mOutput.Write((byte)0xf9); // GCE label
+            mOutput.Write((byte)4); // data block size
             int transp, disp;
             if (mTransparent == -1)
             {
@@ -354,14 +354,14 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             disp <<= 2;
 
             // packed fields
-            mOutput.Write((byte) (0 | // 1:3 reserved
+            mOutput.Write((byte)(0 | // 1:3 reserved
                                   disp | // 4:6 disposal
                                   0 | // 7 user input - 0 = none
                                   transp)); // 8 transparency flag
 
             WriteShort(mDelay); // delay x 1/100 sec
-            mOutput.Write((byte) mTransIndex); // transparent color index
-            mOutput.Write((byte) 0); // block terminator
+            mOutput.Write((byte)mTransIndex); // transparent color index
+            mOutput.Write((byte)0); // block terminator
         }
 
         /// <summary>
@@ -369,7 +369,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         /// </summary>
         private void WriteImageDesc()
         {
-            mOutput.Write((byte) 0x2c); // image separator
+            mOutput.Write((byte)0x2c); // image separator
             WriteShort(mX); // image position x,y = 0,0
             WriteShort(mY);
             WriteShort(mWidth); // image size
@@ -378,12 +378,12 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             if (mFirstFrame)
             {
                 // no LCT - GCT is used for first (or only) frame
-                mOutput.Write((byte) 0);
+                mOutput.Write((byte)0);
             }
             else
             {
                 // specify normal LCT
-                mOutput.Write((byte) (0x80 | // 1 local color table 1=yes
+                mOutput.Write((byte)(0x80 | // 1 local color table 1=yes
                                       0 | // 2 interlace - 0=no
                                       0 | // 3 sorted - 0=no
                                       0 | // 4-5 reserved
@@ -400,13 +400,13 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             WriteShort(mWidth);
             WriteShort(mHeight);
             // packed fields
-            mOutput.Write((byte) (0x80 | // 1 : global color table flag = 1 (gct used)
+            mOutput.Write((byte)(0x80 | // 1 : global color table flag = 1 (gct used)
                                   0x70 | // 2-4 : color resolution = 7
                                   0x00 | // 5 : gct sort flag = 0
                                   mPalSize)); // 6-8 : gct size
 
-            mOutput.Write((byte) 0); // background color index
-            mOutput.Write((byte) 0); // pixel aspect ratio - assume 1:1
+            mOutput.Write((byte)0); // background color index
+            mOutput.Write((byte)0); // pixel aspect ratio - assume 1:1
         }
 
         /// <summary>
@@ -414,14 +414,14 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         /// </summary>
         private void WriteNetscapeExt()
         {
-            mOutput.Write((byte) 0x21); // extension introducer
-            mOutput.Write((byte) 0xff); // app extension label
-            mOutput.Write((byte) 11); // block size
+            mOutput.Write((byte)0x21); // extension introducer
+            mOutput.Write((byte)0xff); // app extension label
+            mOutput.Write((byte)11); // block size
             WriteString("NETSCAPE" + "2.0"); // app id + auth code
-            mOutput.Write((byte) 3); // sub-block size
-            mOutput.Write((byte) 1); // loop sub-block id
+            mOutput.Write((byte)3); // sub-block size
+            mOutput.Write((byte)1); // loop sub-block id
             WriteShort(mRepeat); // loop count (extra iterations, 0=repeat forever)
-            mOutput.Write((byte) 0); // block terminator
+            mOutput.Write((byte)0); // block terminator
         }
 
         /// <summary>
@@ -433,7 +433,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             int n = (3 * 256) - mColorTab.Length;
             for (int i = 0; i < n; i++)
             {
-                mOutput.Write((byte) 0);
+                mOutput.Write((byte)0);
             }
         }
 
@@ -451,8 +451,8 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         /// </summary>
         private void WriteShort(int value)
         {
-            mOutput.Write((byte) (value & 0xff));
-            mOutput.Write((byte) ((value >> 8) & 0xff));
+            mOutput.Write((byte)(value & 0xff));
+            mOutput.Write((byte)((value >> 8) & 0xff));
         }
 
         /// <summary>
@@ -462,7 +462,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         {
             for (int i = 0; i < s.Length; i++)
             {
-                mOutput.Write((byte) s[i]);
+                mOutput.Write((byte)s[i]);
             }
         }
 

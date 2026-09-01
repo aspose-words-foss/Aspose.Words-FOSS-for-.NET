@@ -58,7 +58,7 @@ namespace Aspose.Tests.Ss
             //Load and save the property set.
             Stream srcStream = fs.Root["\x0005DocumentSummaryInformation"] as Stream;
             PropertySet ps = new PropertySet(srcStream);
-            
+
             MemoryStream dstStream = new MemoryStream();
             ps.Save(dstStream);
             fs.Root["\x0005DocumentSummaryInformation"] = dstStream;
@@ -146,7 +146,7 @@ namespace Aspose.Tests.Ss
         public void TestExcelSigned()
         {
             FileSystem fs = new FileSystem(TestFxUtil.BuildTestFileName(@"Ss\TestExcelSigned.xls"));
-            
+
             // Read and save the property set.
             Stream stream = fs.Root["\x0005DocumentSummaryInformation"] as Stream;
             PropertySet ps = new PropertySet(stream);
@@ -164,7 +164,7 @@ namespace Aspose.Tests.Ss
             // the digital signature was disappearing in the VBA Editor.
             sect = (PropertySetSection)ps.Sections[1];
             byte[] userProps = sect.ToByteArray();
-            byte[] goldUserProps = new byte[] 
+            byte[] goldUserProps = new byte[]
             {
                 0x24, 0x00, 0x00, 0x00,    // length of the section
                 0x02, 0x00, 0x00, 0x00,    // count of properties

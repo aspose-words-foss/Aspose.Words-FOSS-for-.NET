@@ -9,7 +9,7 @@ namespace Aspose
     /// Represents a Boolean value that can be undefined.
     /// </summary>
     [SuppressMessage(
-        "Microsoft.Design", 
+        "Microsoft.Design",
         "CA1028:EnumStorageShouldBeInt32",
         Justification = "The enum was moved from Aspose.Zip where backing by sbyte can make sense to reduce memory consumption.")]
     public enum NullableBool : sbyte

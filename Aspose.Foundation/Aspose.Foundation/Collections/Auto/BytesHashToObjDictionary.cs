@@ -26,7 +26,7 @@ namespace Aspose.Collections
         /// <summary>
         /// Initializes a new instance of the BytesHashToObjDictionary&lt;BytesHash, TValue&gt; class that is empty and has the default initial capacity.
         /// </summary>
-        public BytesHashToObjDictionary() 
+        public BytesHashToObjDictionary()
             : this(0)
         {
         }
@@ -34,10 +34,10 @@ namespace Aspose.Collections
         /// <summary>
         /// Initializes a new instance of the BytesHashToObjDictionary&lt;BytesHash, TValue&gt; class that is empty and has the specified initial capacity.
         /// </summary>
-        public BytesHashToObjDictionary(int capacity) 
+        public BytesHashToObjDictionary(int capacity)
         {
             ArgumentUtil.CheckNonNegative(capacity, "capacity");
-            if (capacity > 0) 
+            if (capacity > 0)
                 Initialize(capacity);
         }
 
@@ -69,7 +69,7 @@ namespace Aspose.Collections
         /// </summary>
         public void Clear()
         {
-            if (mCount == 0) 
+            if (mCount == 0)
                 return;
 
             ClearBuckets(mBuckets);
@@ -137,7 +137,7 @@ namespace Aspose.Collections
                 int hashCode = GetHashCode(key);
                 for (int i = mBuckets[hashCode % mBuckets.Length]; i >= 0; i = mNextIndexes[i])
                 {
-                    if ((mHashCodes[i] == hashCode) && CompareKeys(mKeys[i], key)) 
+                    if ((mHashCodes[i] == hashCode) && CompareKeys(mKeys[i], key))
                         return i;
                 }
             }
@@ -175,7 +175,7 @@ namespace Aspose.Collections
         /// </summary>
         private void Insert(BytesHash key, TValue value, bool add)
         {
-            if (mBuckets == null) 
+            if (mBuckets == null)
                 Initialize(0);
 
             // Try to find and replace an existing value with the specified key.
@@ -203,7 +203,7 @@ namespace Aspose.Collections
             }
             else
             {
-                if (mCount == mHashCodes.Length) 
+                if (mCount == mHashCodes.Length)
                     Resize();
 
                 index = mCount;
@@ -373,7 +373,7 @@ namespace Aspose.Collections
             get
             {
                 int i = FindEntry(key);
-                return (i >= 0) 
+                return (i >= 0)
                     ? mValues[i]
                     : null;
             }
@@ -460,7 +460,7 @@ namespace Aspose.Collections
                 get
                 {
                     EnsureIndex();
-                    return mDictionary.mKeys[mIndex]; 
+                    return mDictionary.mKeys[mIndex];
                 }
             }
 

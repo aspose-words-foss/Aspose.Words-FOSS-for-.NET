@@ -124,7 +124,7 @@ namespace Aspose
         /// </summary>
         public static int DoubleToInt(double value)
         {
-#if JAVA || NETSTANDARD
+#if NETSTANDARD || NET || JAVA
             // WORDSJAVA-2352, WORDSJAVA-2641- '(int)double.PositiveInfinity' returns int.MinValue on .Net.
             // '(int)double.MaxValue', '(int)double.NaN' - the same.
             if (double.IsInfinity(value) || double.IsNaN(value) || value == double.MaxValue)

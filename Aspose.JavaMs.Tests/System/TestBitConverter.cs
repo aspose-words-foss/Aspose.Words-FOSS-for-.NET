@@ -12,47 +12,47 @@ namespace Aspose.JavaMs.Tests.System
         [Test]
         public void TestGetBytesFromInt()
         {
-            Assert.That(BitConverter.GetBytes(0), Is.EqualTo(new byte[] {0, 0, 0, 0}));
-            Assert.That(BitConverter.GetBytes(1), Is.EqualTo(new byte[] {0x01, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(100), Is.EqualTo(new byte[] {0x64, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000), Is.EqualTo(new byte[] {0xE8, 0x03, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000), Is.EqualTo(new byte[] {0x40, 0x42, 0x0F, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000000), Is.EqualTo(new byte[] {0x00, 0xCA, 0x9A, 0x3B}));
-            Assert.That(BitConverter.GetBytes(int.MaxValue - 1), Is.EqualTo(new byte[] {0xFE, 0xFF, 0xFF, 0x7F}));
-            Assert.That(BitConverter.GetBytes(int.MaxValue), Is.EqualTo(new byte[] {0xFF, 0xFF, 0xFF, 0x7F}));
-            Assert.That(BitConverter.GetBytes(int.MinValue), Is.EqualTo(new byte[] {0x00, 0x00, 0x00, 0x80}));
-            Assert.That(BitConverter.GetBytes(int.MinValue + 1), Is.EqualTo(new byte[] {0x01, 0x00, 0x00, 0x80}));
-            Assert.That(BitConverter.GetBytes(-1000000000), Is.EqualTo(new byte[] {0x00, 0x36, 0x65, 0xC4}));
-            Assert.That(BitConverter.GetBytes(-1000000), Is.EqualTo(new byte[] {0xC0, 0xBD, 0xF0, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1000), Is.EqualTo(new byte[] {0x18, 0xFC, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-100), Is.EqualTo(new byte[] {0x9C, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1), Is.EqualTo(new byte[] {0xFF, 0xFF, 0xFF, 0xFF}));
+            Assert.That(BitConverter.GetBytes(0), Is.EqualTo(new byte[] { 0, 0, 0, 0 }));
+            Assert.That(BitConverter.GetBytes(1), Is.EqualTo(new byte[] { 0x01, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(100), Is.EqualTo(new byte[] { 0x64, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000), Is.EqualTo(new byte[] { 0xE8, 0x03, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000), Is.EqualTo(new byte[] { 0x40, 0x42, 0x0F, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000000), Is.EqualTo(new byte[] { 0x00, 0xCA, 0x9A, 0x3B }));
+            Assert.That(BitConverter.GetBytes(int.MaxValue - 1), Is.EqualTo(new byte[] { 0xFE, 0xFF, 0xFF, 0x7F }));
+            Assert.That(BitConverter.GetBytes(int.MaxValue), Is.EqualTo(new byte[] { 0xFF, 0xFF, 0xFF, 0x7F }));
+            Assert.That(BitConverter.GetBytes(int.MinValue), Is.EqualTo(new byte[] { 0x00, 0x00, 0x00, 0x80 }));
+            Assert.That(BitConverter.GetBytes(int.MinValue + 1), Is.EqualTo(new byte[] { 0x01, 0x00, 0x00, 0x80 }));
+            Assert.That(BitConverter.GetBytes(-1000000000), Is.EqualTo(new byte[] { 0x00, 0x36, 0x65, 0xC4 }));
+            Assert.That(BitConverter.GetBytes(-1000000), Is.EqualTo(new byte[] { 0xC0, 0xBD, 0xF0, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1000), Is.EqualTo(new byte[] { 0x18, 0xFC, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-100), Is.EqualTo(new byte[] { 0x9C, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1), Is.EqualTo(new byte[] { 0xFF, 0xFF, 0xFF, 0xFF }));
         }
 
         [Test]
         public void TestGetBytesFromLong()
         {
-            Assert.That(BitConverter.GetBytes(0L), Is.EqualTo(new byte[] {0, 0, 0, 0, 0, 0, 0, 0}));
-            Assert.That(BitConverter.GetBytes(1L), Is.EqualTo(new byte[] {0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(100L), Is.EqualTo(new byte[] {0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000L), Is.EqualTo(new byte[] {0xE8, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000L), Is.EqualTo(new byte[] {0x40, 0x42, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000000L), Is.EqualTo(new byte[] {0x00, 0xCA, 0x9A, 0x3B, 0x00, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000000000L), Is.EqualTo(new byte[] {0x00, 0x10, 0xA5, 0xD4, 0xE8, 0x00, 0x00, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000000000000L), Is.EqualTo(new byte[] {0x00, 0x80, 0xC6, 0xA4, 0x7E, 0x8D, 0x03, 0x00}));
-            Assert.That(BitConverter.GetBytes(1000000000000000000L), Is.EqualTo(new byte[] {0x00, 0x00, 0x64, 0xA7, 0xB3, 0xB6, 0xE0, 0x0D}));
-            Assert.That(BitConverter.GetBytes(long.MaxValue - 1), Is.EqualTo(new byte[] {0xFE, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F}));
-            Assert.That(BitConverter.GetBytes(long.MaxValue), Is.EqualTo(new byte[] {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F}));
-            Assert.That(BitConverter.GetBytes(long.MinValue), Is.EqualTo(new byte[] {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80}));
-            Assert.That(BitConverter.GetBytes(long.MinValue + 1), Is.EqualTo(new byte[] {0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80}));
-            Assert.That(BitConverter.GetBytes(-1000000000000000000L), Is.EqualTo(new byte[] {0x00, 0x00, 0x9C, 0x58, 0x4C, 0x49, 0x1F, 0xF2}));
-            Assert.That(BitConverter.GetBytes(-1000000000000000L), Is.EqualTo(new byte[] {0x00, 0x80, 0x39, 0x5B, 0x81, 0x72, 0xFC, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1000000000000L), Is.EqualTo(new byte[] {0x00, 0xF0, 0x5A, 0x2B, 0x17, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1000000000L), Is.EqualTo(new byte[] {0x00, 0x36, 0x65, 0xC4, 0xFF, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1000000L), Is.EqualTo(new byte[] {0xC0, 0xBD, 0xF0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1000L), Is.EqualTo(new byte[] {0x18, 0xFC, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-100L), Is.EqualTo(new byte[] {0x9C, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}));
-            Assert.That(BitConverter.GetBytes(-1L), Is.EqualTo(new byte[] {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}));
+            Assert.That(BitConverter.GetBytes(0L), Is.EqualTo(new byte[] { 0, 0, 0, 0, 0, 0, 0, 0 }));
+            Assert.That(BitConverter.GetBytes(1L), Is.EqualTo(new byte[] { 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(100L), Is.EqualTo(new byte[] { 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000L), Is.EqualTo(new byte[] { 0xE8, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000L), Is.EqualTo(new byte[] { 0x40, 0x42, 0x0F, 0x00, 0x00, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000000L), Is.EqualTo(new byte[] { 0x00, 0xCA, 0x9A, 0x3B, 0x00, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000000000L), Is.EqualTo(new byte[] { 0x00, 0x10, 0xA5, 0xD4, 0xE8, 0x00, 0x00, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000000000000L), Is.EqualTo(new byte[] { 0x00, 0x80, 0xC6, 0xA4, 0x7E, 0x8D, 0x03, 0x00 }));
+            Assert.That(BitConverter.GetBytes(1000000000000000000L), Is.EqualTo(new byte[] { 0x00, 0x00, 0x64, 0xA7, 0xB3, 0xB6, 0xE0, 0x0D }));
+            Assert.That(BitConverter.GetBytes(long.MaxValue - 1), Is.EqualTo(new byte[] { 0xFE, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F }));
+            Assert.That(BitConverter.GetBytes(long.MaxValue), Is.EqualTo(new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F }));
+            Assert.That(BitConverter.GetBytes(long.MinValue), Is.EqualTo(new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80 }));
+            Assert.That(BitConverter.GetBytes(long.MinValue + 1), Is.EqualTo(new byte[] { 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80 }));
+            Assert.That(BitConverter.GetBytes(-1000000000000000000L), Is.EqualTo(new byte[] { 0x00, 0x00, 0x9C, 0x58, 0x4C, 0x49, 0x1F, 0xF2 }));
+            Assert.That(BitConverter.GetBytes(-1000000000000000L), Is.EqualTo(new byte[] { 0x00, 0x80, 0x39, 0x5B, 0x81, 0x72, 0xFC, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1000000000000L), Is.EqualTo(new byte[] { 0x00, 0xF0, 0x5A, 0x2B, 0x17, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1000000000L), Is.EqualTo(new byte[] { 0x00, 0x36, 0x65, 0xC4, 0xFF, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1000000L), Is.EqualTo(new byte[] { 0xC0, 0xBD, 0xF0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1000L), Is.EqualTo(new byte[] { 0x18, 0xFC, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-100L), Is.EqualTo(new byte[] { 0x9C, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }));
+            Assert.That(BitConverter.GetBytes(-1L), Is.EqualTo(new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }));
         }
 
         [Test]

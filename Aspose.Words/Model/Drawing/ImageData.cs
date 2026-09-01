@@ -15,13 +15,13 @@ using Aspose.Words.Drawing.Core.Dml.Fills;
 using Aspose.Words.RW.Factories;
 using CodePorting.Translator.Cs2Cpp;
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using Image = SkiaSharp.SKBitmap;
 #endif
 
 namespace Aspose.Words.Drawing
 {
-#if NETSTANDARD
+#if NETSTANDARD || NET
     /// <summary>
     /// Defines an image for a shape.
     /// <para>To learn more, visit the <a href="https://docs.aspose.com/words/net/working-with-images/">Working with Images</a> documentation article.</para>
@@ -69,7 +69,7 @@ namespace Aspose.Words.Drawing
         /// Sets the image that the shape displays.
         /// </summary>
         /// <param name="image">The image object.</param>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public void SetImage(Image image)
@@ -118,7 +118,7 @@ namespace Aspose.Words.Drawing
         ///     </java>
         ///     <p>It is the responsibility of the caller to dispose the image object.</p>
         /// </remarks>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public Image ToImage()
@@ -251,7 +251,7 @@ namespace Aspose.Words.Drawing
             }
         }
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         /// <summary>
         /// Gets or sets the raw bytes of the image stored in the shape.
         /// </summary>

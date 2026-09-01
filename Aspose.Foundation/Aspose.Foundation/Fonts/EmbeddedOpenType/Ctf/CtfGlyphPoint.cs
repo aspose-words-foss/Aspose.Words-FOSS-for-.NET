@@ -17,8 +17,8 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
         {
             CtfGlyphPoint point = new CtfGlyphPoint();
 
-            TripletEncoding.ReadTriplet(reader, flag, point); 
-  
+            TripletEncoding.ReadTriplet(reader, flag, point);
+
             return point;
         }
 

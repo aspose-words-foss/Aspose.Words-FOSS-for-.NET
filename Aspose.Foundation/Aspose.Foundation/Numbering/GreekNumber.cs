@@ -31,7 +31,7 @@ namespace Aspose.Numbering
             List<int> groups = GroupSplitter.SplitToGroups(value, 1);
             StringBuilder sb = new StringBuilder();
 
-            for (int exponent = groups.Count-1; exponent >= 0; exponent--)
+            for (int exponent = groups.Count - 1; exponent >= 0; exponent--)
             {
                 int groupValue = groups[exponent];
                 if (groupValue > 0)

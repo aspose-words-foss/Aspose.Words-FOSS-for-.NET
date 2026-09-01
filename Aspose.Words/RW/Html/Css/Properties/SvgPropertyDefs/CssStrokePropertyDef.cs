@@ -8,7 +8,7 @@ namespace Aspose.Words.RW.Html.Css
     /// </summary>
     internal class CssStrokePropertyDef : CssIndividualSimplePropertyDef
     {
-        internal CssStrokePropertyDef() 
+        internal CssStrokePropertyDef()
             : base(
                 "stroke",
                 true,

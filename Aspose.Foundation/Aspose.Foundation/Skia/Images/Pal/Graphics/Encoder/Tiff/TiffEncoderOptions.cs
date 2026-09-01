@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 15/01/2024 by Denis Panov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using BitMiracle.LibTiff.Classic;
 
 namespace Aspose.Images.Pal.Graphics.Encoder.Tiff
@@ -31,7 +31,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder.Tiff
 
         public Photometric Photometric
         {
-            get { return IsGrayscale ?  Photometric.MINISWHITE : Photometric.RGB; }
+            get { return IsGrayscale ? Photometric.MINISWHITE : Photometric.RGB; }
         }
 
         private bool IsGrayscale

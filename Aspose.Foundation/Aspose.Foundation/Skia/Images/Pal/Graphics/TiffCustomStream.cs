@@ -1,11 +1,8 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 27/01/2024 by Denis Panov
 
-#if NETSTANDARD
-using System;
-using System.Collections.Generic;
+#if NETSTANDARD || NET
 using System.IO;
-using System.Text;
 using BitMiracle.LibTiff.Classic;
 
 namespace Aspose.Skia.Images.Pal.Graphics

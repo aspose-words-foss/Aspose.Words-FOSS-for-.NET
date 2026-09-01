@@ -330,7 +330,7 @@ namespace Aspose.Words
                 return (End.Node.NodeType != NodeType.Run)
                     ? Start.IsEqual(End)
                     // Run is an exception:
-                    :  Start.IsSameNode(End) &&
+                    : Start.IsSameNode(End) &&
                        (Start.Offset >= End.Offset || Start.IsEnd);
             }
         }
@@ -386,7 +386,7 @@ namespace Aspose.Words
             IEnumerator it = GetEnumerator();
             while (it.MoveNext())
             {
-                Node node = (Node) it.Current;
+                Node node = (Node)it.Current;
                 if (node == null)
                 {
                     Debug.WriteLine("null");

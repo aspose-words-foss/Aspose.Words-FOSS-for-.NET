@@ -6,7 +6,7 @@ using System.Drawing;
 using System.IO;
 using Aspose.Drawing.Fonts;
 using Aspose.Words.Drawing;
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using Image = SkiaSharp.SKBitmap;
 #endif
 
@@ -78,7 +78,7 @@ namespace Aspose.Words
         /// <exception cref="ArgumentNullException">
         /// Throws when the image is <c>null</c>.
         /// </exception>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public void SetImage(Image image)
@@ -95,7 +95,7 @@ namespace Aspose.Words
         /// Throws when the image is <c>null</c>.
         /// </exception>
         /// <remarks>If <see cref="ImageWatermarkOptions"/> is <c>null</c>, the watermark will be set with default options.</remarks>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public void SetImage(Image image, ImageWatermarkOptions options)

@@ -11,7 +11,7 @@ namespace Aspose.Fonts.TrueType
         {
             CvtTable table = new CvtTable();
             table.Values = new short[(int)tableLength / 2];
-            for (int i = 0; i <  table.Values.Length; i++)
+            for (int i = 0; i < table.Values.Length; i++)
                 table.Values[i] = reader.ReadInt16();
             return table;
         }

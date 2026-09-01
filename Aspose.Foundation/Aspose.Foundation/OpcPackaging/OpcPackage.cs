@@ -38,7 +38,7 @@ namespace Aspose.OpcPackaging
         /// <param name="filename">Source file path.</param>
         public OpcPackage(string filename)
         {
-           using (Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read))
+            using (Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read))
                 LoadCore(stream);
         }
 

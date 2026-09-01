@@ -64,7 +64,7 @@ namespace Aspose.Words.Tests.Import.Docx
         {
             RandomUtil.Reset();
             // DocTestStub is not autoportable.
-#if !JAVA && !NETSTANDARD && !CPLUSPLUS
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS
             DocTestStub.InitialShapeId = 0;
 #endif
         }
@@ -2743,7 +2743,7 @@ namespace Aspose.Words.Tests.Import.Docx
 
             Assert.That(tableNormal.HasConditionalFormatting, Is.False);
 
-            foreach(int key in TablePr.PossibleBorderKeys.Values)
+            foreach (int key in TablePr.PossibleBorderKeys.Values)
                 Assert.That(tableNormal.TablePr[key], Is.Null);
         }
 
@@ -2871,17 +2871,17 @@ namespace Aspose.Words.Tests.Import.Docx
             {
                 IInline thisInline = thisNode as IInline;
 
-                if(thisInline == null)
+                if (thisInline == null)
                     continue;
 
                 foreach (Node otherNode in doc.GetChildNodes(NodeType.Any, true))
                 {
                     IInline otherInline = otherNode as IInline;
 
-                    if(otherInline == null)
+                    if (otherInline == null)
                         continue;
 
-                    if(ReferenceEquals(thisInline, otherInline))
+                    if (ReferenceEquals(thisInline, otherInline))
                         continue;
 
                     // Check to RunPr sharing.

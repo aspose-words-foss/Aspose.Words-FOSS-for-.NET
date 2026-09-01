@@ -16,10 +16,6 @@ using Aspose.Words.RW.Ole;
 using Aspose.Words.RW.Ole.Ole2;
 using Aspose.Words.Saving;
 using NUnit.Framework;
-#if NETSTANDARD
-using Image = SkiaSharp.SKBitmap;
-#endif
-
 
 namespace Aspose.Words.Tests.Unified
 {
@@ -717,7 +713,7 @@ namespace Aspose.Words.Tests.Unified
             control.Pages.Add(new FormControl("Some extra page."));
             Assert.That(control.Pages.Count, Is.EqualTo(3));
 
-            control.Pages.Remove(control.Pages[control.Pages.Count-1]);
+            control.Pages.Remove(control.Pages[control.Pages.Count - 1]);
             Assert.That(control.Pages.Count, Is.EqualTo(2));
 
             // Round-trip control.
@@ -957,7 +953,7 @@ namespace Aspose.Words.Tests.Unified
         /// Tests default value and setting null value.
         /// </summary>
         [Test, ExpectedException(typeof(ArgumentNullException),
-#if NETSTANDARD
+#if NETSTANDARD || NET
             ExpectedMessage = "Value cannot be null. (Parameter 'GroupName')")]
 #else
             ExpectedMessage = "Value cannot be null.\r\nParameter name: GroupName")]
@@ -1062,7 +1058,7 @@ namespace Aspose.Words.Tests.Unified
         {
             DocumentBuilder builder = new DocumentBuilder();
 
-            CommandButtonControl button1 = new CommandButtonControl() {Caption = "AAA"};
+            CommandButtonControl button1 = new CommandButtonControl() { Caption = "AAA" };
             builder.InsertForms2OleControl(button1);
             Assert.That(button1.Caption, Is.EqualTo("AAA"));
 

@@ -5,6 +5,5 @@ Aspose.CsClassTransformer using AutoGenConfig.xml configuration file located in 
 folder of the solution. Change AutoGenConfig.xml to generate new classes based on the 
 existing templates if needed.
 
-Visit https://auckland.dynabic.com/wiki/display/org/2.+Class+generation for additional information.
 INCLUDE_FILE directive is used to exclude template code from C++ porting, because C++ porter 
 doesn't support Compile Action: None property.

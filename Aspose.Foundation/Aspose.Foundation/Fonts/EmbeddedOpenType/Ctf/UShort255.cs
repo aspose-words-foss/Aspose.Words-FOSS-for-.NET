@@ -52,17 +52,17 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
             }
             else if (value <= (LowestUCode + 255))
             {
-                writer.WriteByte((byte) OneMoreByteCode1);
+                writer.WriteByte((byte)OneMoreByteCode1);
                 writer.WriteByte((byte)(value - LowestUCode));
             }
             else if (value <= (LowestUCode * 2 + 255))
             {
-                writer.WriteByte((byte) OneMoreByteCode2);
+                writer.WriteByte((byte)OneMoreByteCode2);
                 writer.WriteByte((byte)(value - LowestUCode * 2));
             }
             else
             {
-                writer.WriteByte((byte) WordCode);
+                writer.WriteByte((byte)WordCode);
                 writer.WriteUInt16(value);
             }
         }

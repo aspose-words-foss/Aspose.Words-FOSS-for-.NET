@@ -81,7 +81,7 @@ namespace Aspose.Words.RW.Vml
             //    easily saved into DOC or WML.
             // 3) persistStream - "lightweight" version of persistStorage. Only serialized data is saved without structured storage. Can be easily converted to persistStorage.
             // 4) persistStreamInit - never seen.
-            switch(persistence)
+            switch (persistence)
             {
                 case "persistPropertyBag":
                 {
@@ -120,7 +120,7 @@ namespace Aspose.Words.RW.Vml
                     break;
                 }
                 case "persistStreamInit":
-                reader.IgnoreElement(WarningType.DataLoss, WarningSource.Shapes, string.Format(WarningMessageFormat, reader.LocalName));
+                    reader.IgnoreElement(WarningType.DataLoss, WarningSource.Shapes, string.Format(WarningMessageFormat, reader.LocalName));
                     break;
                 default:
                     throw new InvalidOperationException("Invalid persistence value.");
@@ -363,20 +363,20 @@ namespace Aspose.Words.RW.Vml
                         break;
                     case "WordFieldCodes":
                     case "FieldCodes":
+                    {
+                        string value = reader.ReadString();
+                        if (value.Length > 0)
                         {
-                            string value = reader.ReadString();
-                            if (value.Length > 0)
-                            {
-                                char linkTypeDigitChar = value[value.Length - 1];
-                                if (linkTypeDigitChar >= '0' && linkTypeDigitChar <= '5')
-                                    oleFormat.FormatUpdateType = linkTypeDigitChar - '0';
-                            }
-                            else
-                            {
-                                oleFormat.FormatUpdateType = 0;
-                            }
-                            break;
+                            char linkTypeDigitChar = value[value.Length - 1];
+                            if (linkTypeDigitChar >= '0' && linkTypeDigitChar <= '5')
+                                oleFormat.FormatUpdateType = linkTypeDigitChar - '0';
                         }
+                        else
+                        {
+                            oleFormat.FormatUpdateType = 0;
+                        }
+                        break;
+                    }
                     default:
                         reader.IgnoreElement(WarningType.MinorFormattingLoss, WarningSource.Shapes, string.Format(WarningMessageFormat, reader.LocalName));
                         break;

@@ -156,6 +156,8 @@ namespace Aspose.Words
             get
             {
                 TableStyleOverrideType type = ConditionalStyleTypeToOverrideType(conditionalStyleType);
+
+
                 return this[type];
             }
         }

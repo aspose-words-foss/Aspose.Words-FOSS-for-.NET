@@ -2,7 +2,9 @@
 // 24/01/2020 by Alexey Noskov
 
 using System;
+#if !NET8_0_OR_GREATER
 using System.Runtime.Serialization;
+#endif
 using Aspose.JavaAttributes;
 
 namespace Aspose.Words

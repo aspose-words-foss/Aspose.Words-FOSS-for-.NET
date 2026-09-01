@@ -1,7 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 19/06/2025 by Konstantin Kornilov
 
-using Aspose.Drawing;
 using Aspose.IO;
 
 namespace Aspose.Fonts.TrueType
@@ -133,8 +132,8 @@ namespace Aspose.Fonts.TrueType
         public int Arg1 { get; set; }
         public int Arg2 { get; set; }
         public FixedPoint2Dot14 XScale { get; private set; }
-        public FixedPoint2Dot14 YScale { get;  private set; }
-        public FixedPoint2Dot14 Scale01 { get; private  set; }
+        public FixedPoint2Dot14 YScale { get; private set; }
+        public FixedPoint2Dot14 Scale01 { get; private set; }
         public FixedPoint2Dot14 Scale10 { get; private set; }
 
         public bool Arg1And2AreWords

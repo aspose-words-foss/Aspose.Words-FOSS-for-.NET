@@ -25,7 +25,7 @@ namespace Aspose.Words.Math
 
         internal override MathObjectType MathObjectType
         {
-            get { return MathObjectType.Supercript; }
+            get { return MathObjectType.Superscript; }
         }
     }
 }

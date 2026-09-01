@@ -32,7 +32,7 @@ namespace Aspose.Fonts.TrueType
 
             return vdmxVTable;
         }
-        
+
         public ushort YPelHeight;
         public short YMax;
         public short YMin;

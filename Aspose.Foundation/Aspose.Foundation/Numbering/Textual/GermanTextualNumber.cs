@@ -30,7 +30,7 @@ namespace Aspose.Numbering
 
         protected override bool MergeOrdinalThousands(int thousand)
         {
-             return true;
+            return true;
         }
 
         protected override string ThousandsOrdinalSuffix

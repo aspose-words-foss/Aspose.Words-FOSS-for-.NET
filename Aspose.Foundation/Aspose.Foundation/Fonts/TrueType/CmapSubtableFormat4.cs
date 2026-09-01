@@ -103,56 +103,56 @@ namespace Aspose.Fonts.TrueType
                         switch (idRangeOffset)
                         {
                             case 0:
-                                {
-                                    // If the idRangeOffset is 0, the idDelta value is added directly to the
-                                    // character code offset (i.e. idDelta[i] + c) to get the corresponding glyph index.
-                                    // The idDelta arithmetic is modulo 65536.
-                                    glyphIndex = (charCode + idDeltas[segIdx]) & 0xFFFF;
+                            {
+                                // If the idRangeOffset is 0, the idDelta value is added directly to the
+                                // character code offset (i.e. idDelta[i] + c) to get the corresponding glyph index.
+                                // The idDelta arithmetic is modulo 65536.
+                                glyphIndex = (charCode + idDeltas[segIdx]) & 0xFFFF;
 
-                                    // This is to fix the problem similar to 7531 (see comment below)
-                                    if (glyphIndex == 65535)
-                                    {
-                                        glyphIndex = 0;
-                                    }
-                                    break;
-                                }
-                            case 65535:
+                                // This is to fix the problem similar to 7531 (see comment below)
+                                if (glyphIndex == 65535)
                                 {
-                                    // WORDSNET-7531 RESILIENCY There seems to be this value in the file.
-                                    // It is for the last char and I think it is for the "missing glyph"
                                     glyphIndex = 0;
-                                    break;
                                 }
+                                break;
+                            }
+                            case 65535:
+                            {
+                                // WORDSNET-7531 RESILIENCY There seems to be this value in the file.
+                                // It is for the last char and I think it is for the "missing glyph"
+                                glyphIndex = 0;
+                                break;
+                            }
                             default:
-                                {
-                                    // If the idRangeOffset value for the segment is not 0, the mapping of character codes
-                                    // relies on glyphIdArray.
-                                    // The character code offset from startCode is added to the idRangeOffset value.
-                                    // This sum is used as an offset from the current location within
-                                    // idRangeOffset itself to index out the correct glyphIdArray value.
+                            {
+                                // If the idRangeOffset value for the segment is not 0, the mapping of character codes
+                                // relies on glyphIdArray.
+                                // The character code offset from startCode is added to the idRangeOffset value.
+                                // This sum is used as an offset from the current location within
+                                // idRangeOffset itself to index out the correct glyphIdArray value.
 
-                                    // original C expression: 
-                                    // *(idRangeOffset[segIdx] / 2 +            this is idRangeOffset value, why divided?
-                                    //  (charCode - startCount[segIdx]) +       this is character code offset
-                                    //  &idRangeOffset[segIdx])                 current location within isRangeOffset itself
+                                // original C expression: 
+                                // *(idRangeOffset[segIdx] / 2 +            this is idRangeOffset value, why divided?
+                                //  (charCode - startCount[segIdx]) +       this is character code offset
+                                //  &idRangeOffset[segIdx])                 current location within isRangeOffset itself
 
-                                    int charCodeOffset = charCode - startCodes[segIdx];
+                                int charCodeOffset = charCode - startCodes[segIdx];
 
-                                    // Calculate index into the glyphId array.
-                                    int glyphIdIdx =
-                                        idRangeOffsets[segIdx] / 2          // the idRangeOffsetValue
-                                        + charCodeOffset                    // character code offset
-                                        - segCount                          // probably helps to come down from pointer arithmetic
-                                        + segIdx;                           // just use index instead of pointer arithmetic
+                                // Calculate index into the glyphId array.
+                                int glyphIdIdx =
+                                    idRangeOffsets[segIdx] / 2          // the idRangeOffsetValue
+                                    + charCodeOffset                    // character code offset
+                                    - segCount                          // probably helps to come down from pointer arithmetic
+                                    + segIdx;                           // just use index instead of pointer arithmetic
 
-                                    // If the value obtained from the indexing operation is not 0 (which indicates missingGlyph),
-                                    // idDelta[i] is added to it to get the glyph index. The idDelta arithmetic is modulo 65536.
-                                    glyphIndex = glyphIds[glyphIdIdx];
-                                    if (glyphIndex != 0)
-                                        glyphIndex = (glyphIndex + idDeltas[segIdx]) & 0xFFFF;
+                                // If the value obtained from the indexing operation is not 0 (which indicates missingGlyph),
+                                // idDelta[i] is added to it to get the glyph index. The idDelta arithmetic is modulo 65536.
+                                glyphIndex = glyphIds[glyphIdIdx];
+                                if (glyphIndex != 0)
+                                    glyphIndex = (glyphIndex + idDeltas[segIdx]) & 0xFFFF;
 
-                                    break;
-                                }
+                                break;
+                            }
                         }
                     }
 

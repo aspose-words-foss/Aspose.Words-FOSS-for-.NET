@@ -2,13 +2,13 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
 namespace Aspose.Images.Pal.Graphics.Awt.Image
 {
-    internal class AwtSinglePixelPackedSampleModel: AwtSampleModel
+    internal class AwtSinglePixelPackedSampleModel : AwtSampleModel
     {
         public AwtSinglePixelPackedSampleModel(AwtDataBufferType dataType, int w, int h, int[] bitMasks) : this(dataType, w, h, w, bitMasks)
         {
@@ -71,7 +71,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
             value |= (s << mBitOffsets[b]) & mBitMasks[b];
             data.SetElem(y * mScanlineStride + x, value);
         }
-        
+
         public override AwtSampleModel CreateSubsetSampleModel(int[] bands)
         {
             if (bands.Length > mNumBands)

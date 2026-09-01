@@ -1460,6 +1460,72 @@ namespace Aspose.Words.Tests.Unified
 
 
         /// <summary>
+        /// WORDSNET-28604. JoinRunsWithSameFormatting does not join runs.
+        /// Tests JoinRunsWithSameFormatting() with new options.
+        /// IgnoreSpacing case.
+        /// </summary>
+        [Test]
+        public void Test28604_IgnoreSpacing()
+        {
+            // FOSS: only the Test28604B input ships with this edition.
+            int[] expectedB = new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            TestJoinRunsWithOption("Test28604B", "IgnoreSpacing", expectedB);
+        }
+
+        /// <summary>
+        /// Relates to WORDSNET-28604.
+        /// IgnoreRedundant case.
+        /// </summary>
+        [Test]
+        public void Test28604_IgnoreRedundant()
+        {
+            // FOSS: only the Test28604B input ships with this edition.
+            int[] expectedB = new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            TestJoinRunsWithOption("Test28604B", "IgnoreRedundant", expectedB);
+        }
+
+        /// <summary>
+        /// Relates to WORDSNET-28604.
+        /// IgnoreInsignificant case.
+        /// </summary>
+        [Test]
+        public void Test28604_IgnoreInsignificant()
+        {
+            // FOSS: only the Test28604B input ships with this edition.
+            int[] expectedB = new[] { 0, 2, 0, 2, 4, 0, 0, 3, 1, 0, 1 };
+            TestJoinRunsWithOption("Test28604B", "IgnoreInsignificant", expectedB);
+        }
+
+        private void TestJoinRunsWithOption(string fileName, string optionName, int[] expJoins)
+        {
+            Document doc = TestUtil.Open(string.Format(@"Model\Para\{0}.docx", fileName));
+
+            JoinRunsOptions options = new JoinRunsOptions();
+            switch (optionName)
+            {
+                case "IgnoreSpacing":
+                    options.IgnoreSpacing = true;
+                    break;
+                case "IgnoreRedundant":
+                    options.IgnoreRedundant = true;
+                    break;
+                case "IgnoreInsignificant":
+                    options.IgnoreInsignificant = true;
+                    break;
+            }
+
+            NodeCollection paras = doc.FirstSection.Body.GetChildNodes(NodeType.Paragraph, true);
+            int i = 0;
+            foreach (Paragraph para in paras)
+            {
+                int joinCount = para.JoinRunsWithSameFormatting(options);
+                Assert.That(joinCount, Is.EqualTo(expJoins[i++]));
+            }
+
+            TestUtil.SaveCheckGold(doc, string.Format(@"Model\Para\{0}_{1}.docx", fileName, optionName));
+        }
+
+        /// <summary>
         /// Change false to true and true to false for the SnapToGrid property
         /// of the test document content.
         /// </summary>

@@ -47,7 +47,7 @@ namespace Aspose.JavaMs.Tests.System.Data
             table.Columns.Add("PriceUshortType", typeof(ushort));
             table.Columns.Add("PriceUintType", typeof(uint));
 
-            table.Rows.Add("30000", 18000.0, 1, 1 , 1);
+            table.Rows.Add("30000", 18000.0, 1, 1, 1);
             table.Rows.Add("50000", 20000.0, 253, 0xFFF0, 0xFFFFFFF0);
 
             string resultString = string.Empty;

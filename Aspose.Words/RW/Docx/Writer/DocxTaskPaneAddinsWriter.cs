@@ -40,7 +40,7 @@ namespace Aspose.Words.RW.Docx.Writer
             builder.StartDocument("wetp:taskpanes");
             builder.WriteAttributeString("xmlns:wetp", "http://schemas.microsoft.com/office/webextensions/taskpanes/2010/11");
 
-            foreach(TaskPane taskPane in taskPanes)
+            foreach (TaskPane taskPane in taskPanes)
             {
                 relId = DocxWebExtensionWriter.Write(writer, builder.Part, taskPane.WebExtension);
                 WriteTaskPane(builder, taskPane, relId);

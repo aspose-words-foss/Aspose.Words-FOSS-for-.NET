@@ -56,11 +56,11 @@ namespace Aspose.Tests.Ss
                 Assert.That(header.CsectFat, Is.EqualTo(207));            //Looked up in the file. There are 207 FAT sectors.
                 Assert.That(header.SectDifStart, Is.EqualTo((uint)26180));    //Looked up in the file. This is where first DIFAT sector starts.
                 Assert.That(header.CsectDif, Is.EqualTo(1));            //There is only one DIFAT sector.
-                
+
                 SectCollection difat = Difat.Read(s, header.CsectFat, header.SectDifStart, header.CsectDif);
                 //109 DIFAT entries in the header plus 127 DIFAT entries in the DIFAT sector 
                 //(1 last entry out of 128 is used for chaining DIFAT sectors.
-                Assert.That(difat.Count, Is.EqualTo(236));    
+                Assert.That(difat.Count, Is.EqualTo(236));
                 //All DIFAT sectors starting from 207 are not used (free).
                 Assert.That(difat[(uint)206] != FatEntryType.FreeSect, Is.True);   // Cast to uint to allow autoporting to Java.
                 Assert.That(difat[(uint)207] == FatEntryType.FreeSect, Is.True);
@@ -131,10 +131,10 @@ namespace Aspose.Tests.Ss
 
             MemoryStream doc = fs.Root["WordDocument"] as MemoryStream;
             Assert.That(doc.Length, Is.EqualTo(0x1000L));
-            
+
             MemoryStream table = fs.Root["1Table"] as MemoryStream;
             Assert.That(table.Length, Is.EqualTo(0x1000L));
-            
+
             MemoryStream obj = fs.Root["\x0001CompObj"] as MemoryStream;
             Assert.That(obj.Length, Is.EqualTo(0x6aL));
         }
@@ -172,9 +172,9 @@ namespace Aspose.Tests.Ss
         public void TestZeroLength()
         {
             FileSystem srcFs = new FileSystem(Guid.Empty);
-            
+
             //This is the zero length stream.
-            MemoryStream srcA = new MemoryStream();    
+            MemoryStream srcA = new MemoryStream();
             srcFs.Root["A"] = srcA;
 
             //Non zero length stream that follows the zero length one. 

@@ -10,7 +10,7 @@ namespace Aspose.Fonts.TrueType
     /// </summary>
     internal class CmapUcs2 : Cmap
     {
-        public CmapUcs2(SortedIntegerListGeneric<int> charMap, int language, int platformId, int encodingId) 
+        public CmapUcs2(SortedIntegerListGeneric<int> charMap, int language, int platformId, int encodingId)
             : base(charMap, language)
         {
             mPlatformId = platformId;

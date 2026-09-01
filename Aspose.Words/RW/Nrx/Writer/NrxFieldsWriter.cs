@@ -36,35 +36,35 @@ namespace Aspose.Words.RW.Nrx.Writer
             switch (fieldChar.NodeType)
             {
                 case NodeType.FieldStart:
-                    {
-                        fldCharName = "begin";
+                {
+                    fldCharName = "begin";
 
-                        mFieldCharsStack.Push(fieldChar);
-                        FieldStartCount++;
-                        break;
-                    }
+                    mFieldCharsStack.Push(fieldChar);
+                    FieldStartCount++;
+                    break;
+                }
                 case NodeType.FieldSeparator:
-                    {
-                        fldCharName = "separate";
+                {
+                    fldCharName = "separate";
 
-                        // Substitute FieldStart with FieldSeparator.
-                        // We do not check here if it was actually FieldStart that was popped. It should be FieldStart in a
-                        // valid document. And if the document is invalid, it is not our responsibility to validate it.
-                        mFieldCharsStack.Pop();
-                        mFieldCharsStack.Push(fieldChar);
+                    // Substitute FieldStart with FieldSeparator.
+                    // We do not check here if it was actually FieldStart that was popped. It should be FieldStart in a
+                    // valid document. And if the document is invalid, it is not our responsibility to validate it.
+                    mFieldCharsStack.Pop();
+                    mFieldCharsStack.Push(fieldChar);
 
-                        FieldStartCount--;
+                    FieldStartCount--;
 
-                        break;
-                    }
+                    break;
+                }
                 case NodeType.FieldEnd:
-                    {
-                        fldCharName = "end";
+                {
+                    fldCharName = "end";
 
-                        if (mFieldCharsStack.Pop().NodeType == NodeType.FieldStart)
-                            FieldStartCount--;
-                        break;
-                    }
+                    if (mFieldCharsStack.Pop().NodeType == NodeType.FieldStart)
+                        FieldStartCount--;
+                    break;
+                }
                 default:
                     throw new InvalidOperationException("Field delimiter expected.");
             }
@@ -72,7 +72,7 @@ namespace Aspose.Words.RW.Nrx.Writer
             if (IsHyperlink(fieldChar) && CanWriteAsHyperlink(fieldChar))
             {
                 // If shape is only child we assume link is written as shape property.
-                if(!IsSingleShapeResult(fieldChar.GetField()))
+                if (!IsSingleShapeResult(fieldChar.GetField()))
                     WriteHyperlink(fieldChar);
             }
             else
@@ -228,10 +228,10 @@ namespace Aspose.Words.RW.Nrx.Writer
             foreach (Node node in fieldCodeRange)
             {
                 ITrackableNode trackable = node as ITrackableNode;
-                if(trackable == null)
+                if (trackable == null)
                     continue;
 
-                if((trackable.DeleteRevision != null) || (trackable.InsertRevision != null))
+                if ((trackable.DeleteRevision != null) || (trackable.InsertRevision != null))
                     return true;
             }
 
@@ -243,7 +243,9 @@ namespace Aspose.Words.RW.Nrx.Writer
         /// </summary>
         internal bool SkipThisInline
         {
-            get { return IsInsideFieldCode &&
+            get
+            {
+                return IsInsideFieldCode &&
                     IsHyperlink(TopFieldChar) &&
                     CanWriteAsHyperlink(TopFieldChar) &&
                     // WORDSNET-21886 Do not skip display text for nested hyperlinks.

@@ -666,7 +666,7 @@ namespace Aspose.Words.RW.Nrx.Reader
                         }
                     case "sub":
                         {
-                            if (obj.MathObjectType == MathObjectType.Supercript) // superscripts shouldn't have "sub" objTag inside
+                            if (obj.MathObjectType == MathObjectType.Superscript) // superscripts shouldn't have "sub" objTag inside
                                 xmlReader.IgnoreElement();
                             else
                                 ReadArgument(reader, new MathObjectArgumentBase(MathObjectType.SubscriptPart), "sub");

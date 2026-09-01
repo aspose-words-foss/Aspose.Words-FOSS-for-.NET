@@ -18,8 +18,8 @@ namespace Aspose.Numbering
             if (value == 0)
                 return;
 
-            int tens = value/10;
-            int ones = value - 10*tens;
+            int tens = value / 10;
+            int ones = value - 10 * tens;
 
             if (value < 70) // 1-69
             {

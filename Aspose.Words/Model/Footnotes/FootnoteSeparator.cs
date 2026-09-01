@@ -78,6 +78,15 @@ namespace Aspose.Words.Notes
                 for (int i = 0; i < paraPr.Count; /* */)
                 {
                     int key = paraPr.GetKey(i);
+
+                    // WORDSNET-29083 Ignore number revision attr since it cannot be inherited and not accepted above.
+                    // AM. This is quick fix, I think whole method should be simplified somehow.
+                    if (key == RevisionAttr.NumberRevision)
+                    {
+                        i++;
+                        continue;
+                    }
+
                     object inheritedValue = ((IParaAttrSource)para).FetchInheritedParaAttr(key);
                     object thisValue = paraPr[key];
 

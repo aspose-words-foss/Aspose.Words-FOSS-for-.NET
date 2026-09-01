@@ -54,7 +54,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
         }
 
         [Test]
-        [JavaExpectedException(typeof(IndexOutOfBoundsException))] 
+        [JavaExpectedException(typeof(IndexOutOfBoundsException))]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void TestCtorWrongIndex()
         {
@@ -199,7 +199,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
 
         [Test]
         [JavaExpectedException(typeof(NullPointerException))]
-        [ExpectedException(typeof(ArgumentNullException ))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void TestIndexOfNullKey()
         {
             SortedList list = new SortedList();
@@ -493,14 +493,14 @@ namespace Aspose.JavaMs.Tests.System.Collections
 #if JAVA
             16;     
 #else
-            0;     
+            0;
 #endif
             SortedList list = new SortedList();
             Assert.That(defaultCapacity, Is.EqualTo(list.Capacity));
 
             list.Capacity = 3;
             Assert.That(3, Is.EqualTo(list.Capacity));
-            
+
             list.Capacity = 0;
             Assert.That(defaultCapacity, Is.EqualTo(list.Capacity));
 

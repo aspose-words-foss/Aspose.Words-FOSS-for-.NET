@@ -89,17 +89,6 @@
 		<PackageReference Include="SkiaSharp" Version="3.119.0" Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Test'" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Aspose.EnumExtensionsGenerator" Version="1.0.2" PrivateAssets="all" ExcludeAssets="runtime">
-			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-	</ItemGroup>
-	<PropertyGroup>
-		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-		<CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
-	</PropertyGroup>
-	<ItemGroup>
-		<!-- Code-generation templates and emitted generator output must not be compiled -->
-		<Compile Remove="Generated\**" Condition="'$(IncludeGenerated)' != true" />
 		<Compile Remove="Collections\Auto\Templates\Dictionary.cs" />
 		<Compile Remove="Collections\Auto\Templates\List.cs" />
 		<Compile Remove="Collections\Auto\Templates\Stack.cs" />

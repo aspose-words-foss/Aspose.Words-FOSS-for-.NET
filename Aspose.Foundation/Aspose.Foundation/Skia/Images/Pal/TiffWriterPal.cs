@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 24/05/2006 by Dmitry Vorobyev
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using System.IO;

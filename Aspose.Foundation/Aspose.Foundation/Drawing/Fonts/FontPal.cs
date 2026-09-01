@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 28/07/2010 by Roman Korchagin
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System.Drawing;
 using System.Globalization;

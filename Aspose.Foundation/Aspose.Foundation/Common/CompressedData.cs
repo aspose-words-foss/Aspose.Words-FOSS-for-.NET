@@ -58,7 +58,7 @@ namespace Aspose.Common
                     return bytes;
             }
 
-            using (MemoryStream stream = new MemoryStream(bytes, 
+            using (MemoryStream stream = new MemoryStream(bytes,
                 CompressedDataSignature.Length, bytes.Length - CompressedDataSignature.Length))
             {
                 using (MemoryStream zipStream = ZipReaderPal.LoadCompressedEntryToMemory(stream))

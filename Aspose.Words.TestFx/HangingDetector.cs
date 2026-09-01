@@ -36,7 +36,7 @@ namespace Aspose.Words.Tests
             LoadFileContext loadContext = new LoadFileContext();
             loadContext.SyncObj = (AutoResetEvent)detector.mWaitHandles[1];
 
-            ThreadPool.QueueUserWorkItem(new WaitCallback(detector.DoWaitTimeOut),detector.mWaitHandles[0]);
+            ThreadPool.QueueUserWorkItem(new WaitCallback(detector.DoWaitTimeOut), detector.mWaitHandles[0]);
             // Creation of the new thread allows to abort it, when documents loading hangs.
             Thread docLoadThread = new Thread(detector.LoadFile);
             docLoadThread.Start(loadContext);
@@ -47,8 +47,14 @@ namespace Aspose.Words.Tests
             if (index == 0)
             {
                 // Just inject a "ThreadAbortException" on the thread and do not wait while it will be interrupted.
-#if !NET50
+#if NETFRAMEWORK
+                // Thread.Abort is only supported in legacy .NET Framework (3.5, 4.6.x).
+                // In modern .NET and .NET Standard, this call throws PlatformNotSupportedException.
                 docLoadThread.Abort();
+#else
+                // For .NET 6.0+, .NET Standard 2.2: 
+                // Thread.Abort is not supported. Ideally, use CancellationToken or a volatile flag.
+                // We skip Abort here to prevent runtime crashes on modern platforms.
 #endif
             }
             else
@@ -76,8 +82,13 @@ namespace Aspose.Words.Tests
             }
             catch (ThreadAbortException)
             {
-#if !NET50
+#if NETFRAMEWORK
+                // ResetAbort is only available and functional in legacy .NET Framework.
+                // It prevents the exception from being re-thrown at the end of the catch block.
                 Thread.ResetAbort();
+#else
+                // In .NET 6.0-10.0 and .NET Standard, ResetAbort throws PlatformNotSupportedException.
+                // We do nothing here, as ThreadAbortException is effectively obsolete on these platforms.
 #endif
             }
         }

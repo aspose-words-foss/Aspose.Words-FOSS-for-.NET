@@ -42,7 +42,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
 
             int pos = (prevByte << 8) | curByte;
 
-            HashNode hNode = new HashNode(index-1, HashTable[pos]);
+            HashNode hNode = new HashNode(index - 1, HashTable[pos]);
             HashTable[pos] = hNode;
         }
 

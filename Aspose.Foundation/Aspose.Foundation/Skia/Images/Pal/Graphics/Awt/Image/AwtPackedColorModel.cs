@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -10,9 +10,9 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
 {
     internal class AwtPackedColorModel : AwtColorModel
     {
-        public AwtPackedColorModel(AwtColorSpace space, int bits, int rmask, int gmask, int bmask, int amask, bool isAlphaPremultiplied, 
-                AwtTransparency trans, AwtDataBufferType transferType) : 
-            base(bits, AwtPackedColorModel.CreateBitsArray(rmask, gmask, bmask, amask), space, (amask != 0), 
+        public AwtPackedColorModel(AwtColorSpace space, int bits, int rmask, int gmask, int bmask, int amask, bool isAlphaPremultiplied,
+                AwtTransparency trans, AwtDataBufferType transferType) :
+            base(bits, AwtPackedColorModel.CreateBitsArray(rmask, gmask, bmask, amask), space, (amask != 0),
                 isAlphaPremultiplied, trans, transferType)
         {
             if (space.Type != AwtColorSpaceType.Rgb)

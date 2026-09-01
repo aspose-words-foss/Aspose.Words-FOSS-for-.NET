@@ -1143,7 +1143,7 @@ namespace Aspose.Words
         /// [MS-OE376]: Office Implementation Information for ECMA-376 Standards Support.
         /// 2.1.89 Part 4 Section 2.3.2.24, rFonts (Run Fonts).
         /// </summary>
-        private CharacterCategory GetCharacterCategory()
+        internal CharacterCategory GetCharacterCategory()
         {
             Run run = ParentRun;
             if ((run == null) || !StringUtil.HasChars(run.Text))
@@ -1153,7 +1153,7 @@ namespace Aspose.Words
                 return CharacterCategory.ComplexScript;
 
             // Special case from spec.
-            if ((NameAscii == NameOther) && (NameFarEast == "Times New Roman") )
+            if ((NameAscii == NameOther) && (NameFarEast == "Times New Roman"))
                 return CharacterCategory.Ascii;
 
             CharacterCategory hint = (run.RunPr[FontAttr.CharacterCategoryHint] != null)
@@ -1263,7 +1263,7 @@ namespace Aspose.Words
             return mParent.FetchInheritedRunAttr(key);
         }
 
-#region IFillable implementation
+        #region IFillable implementation
         /// <summary>
         /// Changes type of the fill to Solid.
         /// </summary>
@@ -1310,7 +1310,7 @@ namespace Aspose.Words
             throw new InvalidOperationException(ErrorPatterned);
         }
 
-                /// <summary>
+        /// <summary>
         /// Changes type of the fill to gradient.
         /// </summary>
         void IFillable.TwoColorGradient(GradientStyle style, GradientVariant variant)
@@ -1733,7 +1733,7 @@ namespace Aspose.Words
             get { return Theme; }
         }
 
-#endregion
+        #endregion
 
         /// <summary>
         /// Creates a new Solid fill in this <see cref="Font"/> object.

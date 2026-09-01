@@ -417,7 +417,7 @@ namespace Aspose.Words.Tests.Model
             if (text)
                 doc.Watermark.SetText("Watermark");
             else
-#if NETSTANDARD
+#if NETSTANDARD || NET
                 doc.Watermark.SetImage(SkiaSharp.SKBitmap.Decode(ImageUtil.GetNoImageBytes()));
 #elif CPLUSPLUS
                 doc.Watermark.SetImage(Image.FromStream(ImageUtil.GetNoImageStream()));

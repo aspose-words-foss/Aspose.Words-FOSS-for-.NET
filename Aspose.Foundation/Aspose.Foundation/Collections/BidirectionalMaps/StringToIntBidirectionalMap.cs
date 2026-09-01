@@ -125,11 +125,11 @@ namespace Aspose.Collections
         /// <summary>
         /// Shows if <see cref="StringToIntBidirectionalMap"/> contains an integer value.
         /// </summary>
-        public bool ContainsValue(int value) 
+        public bool ContainsValue(int value)
         {
             return mFirstDictionary.ContainsValue(value);
         }
-        
+
         private readonly StringToIntDictionary mFirstDictionary;
         private readonly IntToObjDictionary<string> mSecondDictionary;
 

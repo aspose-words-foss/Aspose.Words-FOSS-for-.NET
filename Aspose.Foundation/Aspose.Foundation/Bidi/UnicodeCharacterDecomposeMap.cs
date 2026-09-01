@@ -7,9 +7,9 @@ namespace Aspose.Bidi
 {
     internal static class UnicodeCharacterDecomposeMap
     {
-        internal static Dictionary<char,string> Get()
+        internal static Dictionary<char, string> Get()
         {
-            Dictionary<char,string> decomposeMap = new Dictionary<char, string>();
+            Dictionary<char, string> decomposeMap = new Dictionary<char, string>();
 
             // It gives best performance to merge map keys and values into two strings in comparison with adding 
             // key/value one by one and with using static arrays. 

@@ -797,6 +797,11 @@ namespace Aspose.Words
                 ? Run.KeysToIgnoreInComparisonOnJoinRtlRuns
                 : Run.KeysToIgnoreInComparisonOnJoinLtrRuns;
 
+            return IsSameFormatting(runPrA, runPrB, keysToIgnore);
+        }
+
+        internal static bool IsSameFormatting(RunPr runPrA, RunPr runPrB, int[] keysToIgnore)
+        {
             return runPrB.Equals(runPrA, keysToIgnore);
         }
 

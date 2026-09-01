@@ -18,7 +18,7 @@ namespace Aspose.Tests.Base
         /// Tests writing of arbitrary number of bits.
         /// </summary>
         // 1 bit.
-        [TestCase(new bool[] { false }, new byte[] { 0x00 }, "1 bit: 0x00.")] 
+        [TestCase(new bool[] { false }, new byte[] { 0x00 }, "1 bit: 0x00.")]
         [TestCase(new bool[] { true }, new byte[] { 0x80 }, "1 bit: 0x80.")]
         // 5 bits.
         [TestCase(new bool[] { false, true, false, true, false }, new byte[] { 0x50 }, "5 bits: 0x50.")]
@@ -58,7 +58,7 @@ namespace Aspose.Tests.Base
         {
             VerifyWriteValue(value);
         }
-        
+
         /// <summary>
         /// Verifies writing value from binary string.
         /// </summary>
@@ -121,7 +121,7 @@ namespace Aspose.Tests.Base
         /// <summary>
         /// Verifies writing of bool array using both MSB and LSB ordering.
         /// </summary>
-        private static void VerifyResultByteArray(bool [] data, byte[] expectedResultWithMsbOrdering, string message)
+        private static void VerifyResultByteArray(bool[] data, byte[] expectedResultWithMsbOrdering, string message)
         {
             // Verify MSB byte ordering.
             VerifyMsbResultByteArray(data, expectedResultWithMsbOrdering, message);

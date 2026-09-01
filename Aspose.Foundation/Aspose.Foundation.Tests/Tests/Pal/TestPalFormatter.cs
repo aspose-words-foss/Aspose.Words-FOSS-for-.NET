@@ -70,7 +70,7 @@ namespace Aspose.Tests.Pal
 #if JAVA
         [TestCase("1234567890123460", 1234567890123455.0)] // 5.5 rounds to 6.0
         [TestCase("1234567890123450", 1234567890123445.0)] // 4.5 rounds to 5.0
-#elif NETSTANDARD
+#elif NETSTANDARD || NET
         [TestCase("1.23456789012346E+15", 1234567890123455.0)] // 5.5 rounds to 6.0
         [TestCase("1.23456789012344E+15", 1234567890123445.0)] // 4.5 rounds to 5.0
 #else
@@ -166,7 +166,7 @@ namespace Aspose.Tests.Pal
         [TestCase("123456789012346", 123456789012345.6)]
         [TestCase("1234567890123.46", 1234567890123.456)]
         [TestCase("1234567890123460", 1234567890123455.0)]// 5.5 rounds to 6
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [TestCase("1234567890123440", 1234567890123445.0)]// 4.5 rounds to 5
 #else
         [TestCase("1234567890123450", 1234567890123445.0)]// 4.5 rounds to 5
@@ -684,7 +684,7 @@ namespace Aspose.Tests.Pal
         // White space between number and grivna international symbol.
         private const string GrivnaSuffix = " " + Grivna;
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         private const string UkraineShortTimePattern = "HH:mm";
 #else
         private const string UkraineShortTimePattern = "H:mm";

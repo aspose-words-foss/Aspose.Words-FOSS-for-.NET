@@ -2,7 +2,7 @@
 // 07/08/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System.IO;
 using Aspose.Images.Pal.Graphics.Encoder;

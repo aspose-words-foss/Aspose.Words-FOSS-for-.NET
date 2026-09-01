@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 25/09/2009 by Roman Korchagin
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using Aspose.Drawing;
@@ -200,7 +200,7 @@ namespace Aspose.Images.Pal
             float m12 = 0;
 
             SKMatrix m = new SKMatrix();
-            m.Values = new float[] {m00, m01, m02, m10, m11, m12, 0, 0, 1}; //{m00, m10, m01, m11, m02, m12, 0, 0, 1});
+            m.Values = new float[] { m00, m01, m02, m10, m11, m12, 0, 0, 1 }; //{m00, m10, m01, m11, m02, m12, 0, 0, 1});
             return m;
         }
 

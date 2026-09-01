@@ -78,15 +78,15 @@ namespace Aspose.Tests.Bidi
             //Create string which emulate the following HTML:
             //<p><span dir="RTL">1[F].</span><span>2{S}.</span><span dir="RTL">3(T).</span></p>
             string orig = BidiChars.RLE + span1 + BidiChars.PDF + span2 + BidiChars.RLE + span3 + BidiChars.PDF;
-            
+
             IList<BidiParagraph> pars = BidiParagraph.SplitStringToParagraphs(orig);
             ICollection<BidiRun> br = pars[0].BidiRuns;
             Assert.That(10, Is.EqualTo(br.Count));
-            
+
             string res = NBidi.LogicalToVisual(orig);
             string exp = "2.[F]1{S}..(T)3";
             Assert.That(res, Is.EqualTo(exp), string.Format(
-                    "original: \"{0}\"\noriginal as chars: {1}\nresult as chars:   {2}\nexpected as chars: {3}", 
+                    "original: \"{0}\"\noriginal as chars: {1}\nresult as chars:   {2}\nexpected as chars: {3}",
                     orig, AsCharArray(orig), AsCharArray(res), AsCharArray(exp)));
         }
 

@@ -105,7 +105,7 @@ namespace Aspose.Numbering
             if (value == 0)
                 return "te";
 
-            switch ((int) Math.Abs(value) % 100)
+            switch ((int)Math.Abs(value) % 100)
             {
                 case 0:
                     return "ende";
@@ -155,7 +155,7 @@ namespace Aspose.Numbering
             if (LanguageOnly.Compare(LanguageOnly.Dutch, (int)language))
                 return "e";
 
-            switch ((int) value)
+            switch ((int)value)
             {
                 case -1:
                 case 1:

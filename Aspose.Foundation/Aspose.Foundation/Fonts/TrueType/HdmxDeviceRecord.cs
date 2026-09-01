@@ -16,7 +16,7 @@ namespace Aspose.Fonts.TrueType
         /// </summary>
         internal static HdmxDeviceRecord Read(BigEndianBinaryReader reader, int numGlyphs, int deviceRecordSize)
         {
-            if(deviceRecordSize < GetActualRecordSize(numGlyphs))
+            if (deviceRecordSize < GetActualRecordSize(numGlyphs))
                 throw new InvalidOperationException("Wrong hdmx device record size.");
 
             HdmxDeviceRecord record = new HdmxDeviceRecord();
@@ -35,7 +35,7 @@ namespace Aspose.Fonts.TrueType
         /// </summary>
         internal void Write(BigEndianBinaryWriter writer, int deviceRecordSize)
         {
-            if(deviceRecordSize < GetActualRecordSize(Widths.Length))
+            if (deviceRecordSize < GetActualRecordSize(Widths.Length))
                 throw new InvalidOperationException("Wrong hdmx device record size.");
 
             Write(writer);

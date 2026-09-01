@@ -44,18 +44,18 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                 mBitWriter.WriteBit(false);
                 return 1;
             }
-            
+
             bool isNegative = (value < 0);
-            
+
             // The value will be encoded as a number of '1' bits before '0' bit.
             int bitsCount = (isNegative) ? -value : value;
-            
+
             for (int i = 0; i < bitsCount; i++)
                 mBitWriter.WriteBit(true);
-            
+
             // Write '0' bit after value bits are written.
             mBitWriter.WriteBit(false);
-            
+
             // If value is negative, then after '0' bit we should write '1' bit, otherwise '0' bit.
             mBitWriter.WriteBit(isNegative);
 

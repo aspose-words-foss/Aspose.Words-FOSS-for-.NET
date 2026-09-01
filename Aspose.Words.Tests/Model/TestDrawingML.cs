@@ -43,7 +43,7 @@ using Aspose.Words.Themes;
 using Aspose.Words.Validation;
 using NUnit.Framework;
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using Image = SkiaSharp.SKBitmap;
 #endif
 

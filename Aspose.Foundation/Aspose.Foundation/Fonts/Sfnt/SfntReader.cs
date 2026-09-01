@@ -38,7 +38,7 @@ namespace Aspose.Fonts.Sfnt
         /// </summary>
         public void ReadHeader()
         {
-            if(!TryReadHeader())
+            if (!TryReadHeader())
                 throw new InvalidOperationException("The sfnt file is not valid.");
         }
 
@@ -68,7 +68,7 @@ namespace Aspose.Fonts.Sfnt
         public void SeekToTable(string tableTag)
         {
             SfntTableRecordEntry tableRecordEntry = mTableRecordEntries.GetValueOrNull(tableTag);
-            if(tableRecordEntry == null)
+            if (tableRecordEntry == null)
                 throw new InvalidOperationException(string.Format("Cannot find table '{0}' in the font file.", tableTag));
 
             mReader.BaseStream.Position = tableRecordEntry.Offset;

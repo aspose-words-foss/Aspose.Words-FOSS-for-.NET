@@ -16,7 +16,7 @@ namespace Aspose.Words.RW
         /// Ctr.
         /// </summary>
         /// <param name="markupStartsTable">Dictionary of nodes where IMarkupNode of block level is started.</param>
-        internal InlineMarkupResolver(IDictionary<IMarkupNode, Node> markupStartsTable) 
+        internal InlineMarkupResolver(IDictionary<IMarkupNode, Node> markupStartsTable)
         {
             mMarkupStartsTable = markupStartsTable;
         }
@@ -44,7 +44,7 @@ namespace Aspose.Words.RW
         {
             Debug.Assert((sdt != null));
             const int emptyIndex = -1;
- 
+
             if (sdt.Level != MarkupLevel.Inline)
                 return emptyIndex;
 
@@ -285,7 +285,7 @@ namespace Aspose.Words.RW
 
             return curNode.ParentNode;
         }
-        
+
         /// <summary>
         /// Clears current context which determines how to accumulate nodes for resolve.
         /// </summary>
@@ -435,7 +435,7 @@ namespace Aspose.Words.RW
                 para.AppendChild(resolveRoot);
 
                 // Insert paragraph to block level.
-                inlineAncestor.InsertBefore(para, inlineAncestor.LastChild);               
+                inlineAncestor.InsertBefore(para, inlineAncestor.LastChild);
                 MoveMarkupStartToNode(para, inlineAncestor.LastChild);
             }
         }
@@ -492,7 +492,7 @@ namespace Aspose.Words.RW
 
             if (!mInlinePendingTable.ContainsKey(rootNode))
             {
-                return new List<Node>{ rootNode };
+                return new List<Node> { rootNode };
             }
 
             return mInlinePendingTable[rootNode];
@@ -585,13 +585,13 @@ namespace Aspose.Words.RW
         /// <remarks>
         /// Keys of inline SDT's retrieves while iterating through <see cref="mInlineSequence"/>.
         /// </remarks>
-        private readonly Dictionary<Node, IList<Node>> mInlinePendingTable = 
+        private readonly Dictionary<Node, IList<Node>> mInlinePendingTable =
             new Dictionary<Node, IList<Node>>();
 
         /// <summary>
         /// Stores composite nodes from  <see cref="mInlineSequence"/> and parents map. 
         /// </summary>
-        private readonly Dictionary<Node, CompositeNode> mBlockLevelParents = 
+        private readonly Dictionary<Node, CompositeNode> mBlockLevelParents =
             new Dictionary<Node, CompositeNode>();
     }
 }

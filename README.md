@@ -1,84 +1,52 @@
 # Aspose.Words FOSS for .NET
 
-[![NuGet version](https://img.shields.io/nuget/v/Aspose.Words.FOSS.svg)](https://www.nuget.org/packages/Aspose.Words.FOSS/) [![.NET Standard](https://img.shields.io/badge/.NET_Standard-2.0-blue.svg)](Aspose.Words/Aspose.Words.csproj) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Contributors](https://img.shields.io/github/contributors/aspose-words-foss/Aspose.Words-FOSS-for-.NET.svg)](https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET/graphs/contributors)
+Open-source .NET library for Word documents, built from the genuine Aspose.Words codebase. Create, read, and edit DOCX, convert to Markdown and plain text. No Microsoft Word required.
 
-[![Aspose.Words FOSS for .NET](https://products.aspose.org/media/words/net/banner-readme.png)](https://products.aspose.org/words/net/)
-
-### Project History
-
-Aspose.Words FOSS for .NET carries the history of the underlying Aspose.Words engine, which predates the DOCX format itself and has been under continuous development for more than two decades. Its earliest years involved directly reverse-engineering Microsoft's binary DOC format, since no public specification existed at the time; support for WordML, the XML-based dialect Word 2003 introduced, followed, and then OOXML once Word 2007 standardized on it. This FOSS edition is a deliberate reduction of that same commercial codebase: everything specific to page layout, rendering, the long tail of format converters, and licensing was removed, leaving the core document model and the DOCX reader/writer this library exposes today.
-
-Aspose.Words FOSS for .NET is an open-source .NET library for reading, creating, and editing Word documents — DOCX, DOCM, DOTX, and DOTM — with export to Markdown and plain text, and no Microsoft Word installation, COM interop, or native Office automation required. It is not a from-scratch reimplementation of the OOXML spec: it is the genuine Aspose.Words engine, in production since 2003, reduced to an open-source edition.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Navigation
 
-- [At a Glance](#at-a-glance)
-- [Key Capabilities](#key-capabilities)
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Quick Start](#quick-start)
-- [Additional Examples](#additional-examples)
-- [API Reference](#api-reference)
-- [Documentation & Resources](#documentation--resources)
-- [Scope and Limitations](#scope-and-limitations)
-- [Development and Testing](#development-and-testing)
-- [License](#license)
+- [What it can do](#what-it-can-do) · [Supported formats](#supported-formats)
+- [Getting started](#getting-started) · [Dependencies](#dependencies) · [A quick example](#a-quick-example) · [Additional examples](#additional-examples)
+- [API reference](#api-reference)
+- [What's not included](#whats-not-included-and-where-to-get-it) · [Development and testing](#development-and-testing)
+- [The story behind this code](#the-story-behind-this-code) · [Documentation & resources](#documentation--resources)
+- [Star it](#enjoying-it-star-it-) · [Contributing](#contributing) · [License](#license)
 
-## At a Glance
+## What it can do
 
-```mermaid
-flowchart TD
-  subgraph StartingPoints["Starting Points"]
-    direction TB
-    i1["An existing DOCX, DOCM, DOTX, or DOTM document"]
-    i2["A Flat OPC package"]
-    i3["A Markdown or plain text file"]
-  end
-  PRODUCT["Aspose.Words FOSS for .NET"]
-  subgraph Capabilities["Core Capabilities"]
-    direction LR
-    subgraph capl[" "]
-      direction TB
-      c1["Document creation from scratch and editing"]
-      c2["Text, styles, tables, lists, and sections"]
-      c3["Tracked-changes engine"]
-    end
-    subgraph capr[" "]
-      direction TB
-      c4["Field evaluation engine"]
-      c5["Document protection and signature verification"]
-      c6["DOCX, Markdown, and plain-text conversion"]
-    end
-  end
-  subgraph Outputs["Outputs"]
-    direction TB
-    o1["DOCX, DOCM, DOTX, or DOTM documents"]
-    o2["Flat OPC packages"]
-    o3["Markdown (.md)"]
-    o4["Plain text (.txt)"]
-  end
-  StartingPoints --> PRODUCT --> Capabilities --> Outputs
-```
+- **Create documents from scratch** with the full document object model or the high-level `DocumentBuilder`.
+- **Read and edit existing DOCX files**: text, formatting, styles, tables, lists, sections, headers and footers, bookmarks, comments, footnotes, shapes.
+- **Convert** between DOCX, Markdown, and plain text.
+- **Combine and reorganize documents**: append, clone, and import content between documents.
+- **Find and replace** text with regular expressions and formatting-aware options.
+- **Work with tracked changes**: inspect, accept, or reject revisions.
+- **Update fields**: the full field evaluation engine is included, though values that depend on page layout (such as page numbers in a TOC) come out as placeholders (see [what's not included](#whats-not-included-and-where-to-get-it)).
+- **Protect documents** and round-trip macro-enabled files (DOCM/DOTM) with their VBA projects intact.
+- **Verify digital signatures**: check whether a DOCX is signed and untampered, inspect the certificates, or remove signatures. (Creating new signatures is not included in this edition.)
 
-## Key Capabilities
+The library is managed C# shipping three targets — **.NET Framework 4.6.2, .NET Standard 2.0, and .NET 8** — so it runs on .NET Framework 4.6.2+, .NET 6/8/10, Windows, Linux, and macOS. No Office automation. On .NET Framework image handling uses the in-box GDI+; on the cross-platform targets it uses [SkiaSharp](https://github.com/mono/SkiaSharp) (on Linux, also add the [SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux) package).
 
-- Create documents from scratch with the full document object model, or through the cursor-based `DocumentBuilder`, then load and edit existing DOCX, DOCM, DOTX, or DOTM files with the same `Document` class.
-- Read and edit structural content — text, formatting, styles, tables, lists, sections, headers and footers, bookmarks, comments, and footnotes — through the `Document` node tree (`Section`, `Body`, `Paragraph`, `Run`, `Table`).
-- Convert between DOCX, Flat OPC, Markdown, and plain text with one `Document.Save()` method and a `SaveFormat` constant — the same API loads and saves every supported format, including a Flat OPC package.
-- Combine and reorganize documents: append, clone, and import content between `Document` instances with `AppendDocument()` and `ImportNode()`.
-- Find and replace text with regular expressions and formatting-aware options via `Range.Replace()`.
-- Inspect, accept, or reject tracked changes with `StartTrackRevisions()`, `AcceptAllRevisions()`, and the `Revisions` collection; evaluate fields with `UpdateFields()` — the full field evaluation engine is included, though values that depend on page layout (a TOC's page numbers, `NUMPAGES`) come out as placeholders.
-- Protect documents and round-trip macro-enabled files (DOCM/DOTM) with their VBA projects intact via `Document.Protect()`.
-- Verify digital signatures — check whether a document is signed and untampered, and inspect certificates — through `Document.DigitalSignatures`; creating new signatures is not included in this edition.
-- Inspect and adjust properties of charts embedded in a document — axis, legend, series, and data-label formatting — through the `Chart`, `ChartAxis`, `ChartLegend`, and `ChartDataLabel` object model.
+## Supported formats
 
-## Installation
+| Format | Load | Save |
+|---|:---:|:---:|
+| DOCX / DOCM / DOTX / DOTM | ✅ | ✅ |
+| Flat OPC (all variants) | ✅ | ✅ |
+| Markdown | ✅ | ✅ |
+| Plain text | ✅ | ✅ |
+
+The engine underneath already knows how to handle far more (see [the story](#the-story-behind-this-code) below), and more formats may be opened over time. If you need a format that is not in the table, you have two options: [open an issue](../../issues) to request it, and we will consider open-sourcing it, or get it right away in the commercial [Aspose.Words for .NET](https://products.aspose.com/words/net/), which reads and writes all of them today.
+
+## Getting started
 
 Install from NuGet:
 
 ```bash
 dotnet add package Aspose.Words.FOSS
 ```
+
+The package ships a single assembly, `Aspose.Words.FOSS.dll`, for all three targets. The namespaces are `Aspose.Words.*` — the same as the commercial product, so existing Aspose.Words code compiles against it as is.
 
 Or build from source:
 
@@ -88,7 +56,7 @@ cd Aspose.Words-FOSS-for-.NET
 dotnet build Aspose.Words.sln -c Release
 ```
 
-Then reference `Aspose.Words/Aspose.Words.csproj` from your project. The package ships a single assembly, `Aspose.Words.FOSS.dll`, for all three targets; its namespaces are `Aspose.Words.*` — the same as the commercial product, so existing Aspose.Words code compiles against it as is. The library targets .NET Standard 2.0, so it runs on .NET Framework 4.6.2+ and .NET 6/8/10, on Windows, Linux, and macOS — see [Dependencies](#dependencies) below for the full required-package and native-requirement breakdown.
+Then add a project reference to `Aspose.Words/Aspose.Words.csproj` from your application.
 
 ## Dependencies
 
@@ -96,6 +64,7 @@ Then reference `Aspose.Words/Aspose.Words.csproj` from your project. The package
 
 - `SkiaSharp` 3.119.0 — cross-platform image decoding/encoding, used by the .NET Standard 2.0 and .NET 8 targets. On .NET Framework the in-box GDI+ (System.Drawing) is used instead.
 - `BitMiracle.LibTiff.NET` 2.4.649 — TIFF image codec support, used by the .NET Standard 2.0 and .NET 8 targets.
+- `System.Text.Encoding.CodePages` 7.0.0 - legacy code-page encodings, used by the .NET Standard 2.0 and .NET 8 targets.
 - `Microsoft.Win32.Registry` 5.0.0 — Windows registry access, used only by the .NET Standard 2.0 target (not referenced by the .NET Framework or .NET 8 builds).
 
 ### Native and System Requirements
@@ -110,34 +79,29 @@ Then reference `Aspose.Words/Aspose.Words.csproj` from your project. The package
 
 None of these are referenced by the main library projects; they apply only to `Aspose.Words.Tests/Aspose.Words.Tests.csproj` and are never shipped with the published package.
 
-## Quick Start
-
-Create a document and save it to both DOCX and Markdown:
+## A quick example
 
 ```csharp
 using Aspose.Words;
 
+// Create a document from scratch.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
-builder.Writeln("Quarterly Report");
+builder.Writeln("Hello from Aspose.Words FOSS!");
+
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.BodyText;
-builder.Writeln("Generated on " + DateTime.Today.ToShortDateString());
+builder.Writeln("This document was created entirely in code, no Word installed.");
 
-doc.Save("report.docx");
-doc.Save("report.md");
+doc.Save("Hello.docx");
+
+// Convert an existing document to Markdown.
+Document report = new Document("Report.docx");
+report.Save("Report.md");
 ```
 
-Load an existing document and extract its text:
-
-```csharp
-using Aspose.Words;
-
-Document doc = new Document("input.docx");
-string text = doc.GetText();
-Console.WriteLine(text);
-```
+The API is the same as in the commercial Aspose.Words for .NET, so the [official documentation and examples](https://docs.aspose.com/words/net/) largely apply here too, within the supported feature set.
 
 ## Additional Examples
 
@@ -218,7 +182,7 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 | `AxisScaling` | Represents the scaling options of the axis. |
 | `AxisTickLabels` | Represents properties of axis tick mark labels. |
 | `BarcodeParameters` | Container class for barcode parameters to pass-through to BarcodeGenerator. |
-| `BaseWebExtensionCollection` | Base class for TaskPaneCollection, WebExtensionBindingCollection, WebExtensionPropertyCollection and WebExtensionReferenceCollection collections. |
+| `BaseWebExtensionCollection<T>` | Base class for TaskPaneCollection, WebExtensionBindingCollection, WebExtensionPropertyCollection and WebExtensionReferenceCollection collections. |
 | `Bibliography` | Represents the list of bibliography sources available in the document. |
 | `Body` | Represents a container for the main text of a section. |
 | `Bookmark` | Represents a single bookmark. |
@@ -460,6 +424,7 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 | `Inline` | Base class for inline-level nodes that can have character formatting associated with them, but cannot have child nodes of their own. |
 | `InlineStory` | Base class for inline-level nodes that can contain paragraphs and tables. |
 | `InternableComplexAttr` | Base class for internable complex attribute. |
+| `JoinRunsOptions` | Provides configuration flags for the join runs operation - IgnoreSpacing, IgnoreRedundant and IgnoreInsignificant. |
 | `LanguagePreferences` | Allows to set up language preferences. |
 | `List` | List class exposes ListId, ListLevels, Style and methods like CompareTo and HasSameTemplate, allowing developers to inspect, compare, and manipulate document list definitions. |
 | `ListCollection` | Stores and manages formatting of bulleted and numbered lists used in a document. |
@@ -477,7 +442,6 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 | `Node` | Base class for all nodes of a Word document. |
 | `NodeChangingArgs` | Provides data for methods of the INodeChangingCallback interface. |
 | `NodeCollection` | Represents a collection of nodes of a specific type. |
-| `NodeEnumerator` | Enumerates the nodes produced by a document tree traversal, exposing the current node via `MoveNext()`/`Current`. |
 | `NodeImporter` | Allows to efficiently perform repeated import of nodes from one document to another. |
 | `NodeList` | Represents a collection of nodes matching an XPath query executed using the SelectNodes method. |
 | `Odso` | Specifies the Office Data Source Object (ODSO) settings for a mail merge data source. |
@@ -613,7 +577,6 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 | `IFieldUserPromptRespondent` | Represents the respondent to user prompts during field update. |
 | `IImageSavingCallback` | Implement this interface if you want to control how Aspose.Words saves images when saving a document to HTML. |
 | `INodeChangingCallback` | Implement this interface if you want to receive notifications when nodes are inserted or removed in the document. |
-| `INodeCollection` | Common interface implemented by `CompositeNode` and `NodeCollection` for accessing a set of child `Node` objects. |
 | `IPageSavingCallback` | Implement this interface if you want to control how Aspose.Words saves separate pages when saving a document to fixed page formats. |
 | `IReplacingCallback` | Implement this interface if you want to have your own custom method called during a find and replace operation. |
 | `IResourceLoadingCallback` | Implement this interface if you want to control how Aspose.Words loads external resource when importing a document and inserting images using DocumentBuilder. |
@@ -670,7 +633,6 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 | `DmlEffectsRenderingMode` | Specifies how DrawingML effects are rendered to fixed page formats. |
 | `DmlRenderingMode` | Specifies how DrawingML shapes are rendered to fixed page formats. |
 | `DocumentDirection` | Allows to specify the direction to flow the text in a document. |
-| `DocumentPositionMovement` | Classifies how one document position relates to another (`Inside`, `StartEnd`, `Sibling`, `Above`, `Below`) during position comparison. |
 | `DocumentRecoveryMode` | Specifies the available recovery options when a document encounters errors during loading. |
 | `DocumentSecurity` | Used as a value for the Security property. |
 | `DocumentSplitCriteria` | Specifies how the document is split into parts when saving to HTML, EPUB or AZW3 format. |
@@ -890,27 +852,21 @@ The primary entry point is `Document`, loaded from a file, stream, or created em
 - `ChartLegend` — `LegendEntries -> ChartLegendEntryCollection`, `Position: LegendPosition`, `Font -> Font`
 - `ChartDataLabel` — `ShowValue`, `ShowCategoryName`, `ShowPercentage`, `Position`, `ClearFormat()`
 
-The full surface totals 617 public types across the Core API, interfaces, and enumerations. See the [full API reference](#documentation--resources) below for every type.
+The full surface totals 615 public types across the Core API, interfaces, and enumerations. See the [full API reference](#documentation--resources) below for every type.
 
 </details>
 
-## Documentation & Resources
+## What's not included (and where to get it)
 
-- **[Getting started guide](https://docs.aspose.org/words/net/)** — installation, walkthroughs, and feature guides for this library.
-- **[How-to guides & FAQ](https://kb.aspose.org/words/net/)** — task-focused answers for common Word-document-processing questions.
-- **[Full API reference](https://reference.aspose.org/words/net/)** — the complete, browsable reference for all 617 public types (the [API reference](#api-reference) section above covers the essentials).
-- **[Agent and contributor guide](AGENTS.md)** — usage recipes for AI coding assistants, plus build, test, and code-style conventions for anyone changing this repository.
-- The public API matches the commercial [Aspose.Words for .NET](https://docs.aspose.com/words/net/), so its official documentation and thousands of examples largely apply here too, within this edition's supported feature set.
-- Found a bug or have a feature request? [Open an issue](https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET/issues) on GitHub — pull requests are welcome too; for anything non-trivial, open an issue first so the approach can be discussed.
+To keep this edition free, the subsystems that power Aspose's commercial offering were removed. To be upfront about it:
 
-## Scope and Limitations
+- **Page layout and rendering.** No saving to PDF, XPS, or images, and no printing. This also means layout-dependent field values (such as page numbers in a TOC or `NUMPAGES`) evaluate to `0` rather than being computed.
+- **Additional formats.** DOC, RTF, ODT, HTML, EPUB, and others are not read or written in this edition.
+- **Mail merge, LINQ Reporting, document comparison, document signing, and embedded-font subsetting** are not included.
 
-- This edition removes the commercial subsystems that power the full Aspose.Words for .NET product to stay free — no page layout or rendering, so no PDF, XPS, or image output, and no printing; layout-dependent field values (a TOC's page numbers, `NUMPAGES`) evaluate to `0` rather than being computed.
-- No DOC (legacy binary), RTF, ODT, HTML, or EPUB support — reading or writing.
-- No mail merge, LINQ Reporting, document comparison, digital-signature creation, or embedded-font subsetting — signatures can be verified and inspected, but not created.
-- The FOSS and commercial boundary is not fixed: what is included today is simply how far the commercial codebase could reasonably be reduced, not a final shape. If a feature outside this list would help your project, [open an issue](https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET/issues) and tell us about your use case; where there is real demand, we will consider opening up more of the code.
+One important thing to know: what's included today is the *minimum*, the commercial codebase reduced as far as it would go. It is not the final shape of the project, and the boundary is not set in stone. If a feature you need sits on the wrong side of it, [open an issue](../../issues) and tell us about your use case. Where there is real demand, we will consider opening up more of the code.
 
-These limitations don't apply to [Aspose.Words for .NET — Enterprise Edition](https://products.aspose.com/words/net/), which adds full PDF/XPS/image rendering support, DOC/RTF/ODT/HTML/EPUB format support, mail merge, LINQ Reporting, document comparison, and digital-signature creation. Because this library is the same codebase with those subsystems removed, upgrading is essentially swapping the package reference — your code carries over.
+If your project grows into needing any of the above, the commercial [Aspose.Words for .NET](https://products.aspose.com/words/net/) has all of it. And because this library *is* that codebase, upgrading is essentially swapping the package reference. Your code carries over.
 
 ## Development and Testing
 
@@ -921,10 +877,39 @@ dotnet build Aspose.Words.sln -c Release
 dotnet test Aspose.Words.Tests/Aspose.Words.Tests.csproj
 ```
 
-A build from a genuinely fresh clone currently fails at NuGet restore because one referenced build-time source-generator package is not published; removing that package reference from the two affected project files lets the build proceed against the generator's own output, which is already checked into the repository.
-
 Many tests compare generated output against gold files under `TestGold/` — a mismatch produces a diff-style failure message naming both paths. See [`AGENTS.md`](AGENTS.md) for the project layout (`Aspose.Words/` is the engine, `Aspose.Foundation/` supporting infrastructure, `Aspose.Words.Tests/` the test suite) and code-style conventions.
+
+## The story behind this code
+
+Most open-source Word libraries start from zero and work their way up the OOXML spec. This one went the other way. It is not a rewrite or a wrapper: it is the actual Aspose.Words for .NET source code, the same document engine that has processed Word documents in production since 2003.
+
+Aspose.Words has been in continuous development for over two decades, and it is older than DOCX itself. The library began with manual reverse engineering of the binary DOC format, at a time when no public specification existed. Then came WordML, the Word 2003 XML dialect, then OOXML when Word 2007 arrived, and one format after another in the years since. To create this FOSS edition, we started from the full commercial source and carefully reduced it: the commercial subsystems (page layout, rendering, the long tail of format converters, and the licensing machinery) were removed, along with internal infrastructure and materials not meant for publication. What remains is the genuine core: the document model, the DOCX reader and writer, and thousands of small fixes for real-world documents that only accumulate after twenty years of production use.
+
+The reduction itself was an interesting engineering project. To carry it out, we built an internal tool, the Full2Foss agent, developed with the help of [Claude](https://claude.com), Anthropic's AI assistant. Full2Foss traces which subsystems each piece of code depends on, cuts what has to go, and keeps thousands of tests honest along the way.
+
+That is also why the source is worth a read. This is production code, not a demonstration. If you have ever wondered what it actually takes to handle Word documents correctly, it is all in here.
+
+## Documentation & Resources
+
+- **[Getting started guide](https://docs.aspose.org/words/net/)** — installation, walkthroughs, and feature guides for this library.
+- **[How-to guides & FAQ](https://kb.aspose.org/words/net/)** — task-focused answers for common Word-document-processing questions.
+- **[Full API reference](https://reference.aspose.org/words/net/)** — the complete, browsable reference for all 617 public types (the [API reference](#api-reference) section above covers the essentials).
+- **[Agent and contributor guide](AGENTS.md)** — usage recipes for AI coding assistants, plus build, test, and code-style conventions for anyone changing this repository.
+- The public API matches the commercial [Aspose.Words for .NET](https://docs.aspose.com/words/net/), so its official documentation and thousands of examples largely apply here too, within this edition's supported feature set.
+- Found a bug or have a feature request? [Open an issue](https://github.com/aspose-words-foss/Aspose.Words-FOSS-for-.NET/issues) on GitHub — pull requests are welcome too; for anything non-trivial, open an issue first so the approach can be discussed.
+
+## Enjoying it? Star it ⭐
+
+This project is brand new, and stars are how GitHub decides whether anyone else gets to discover it. If Aspose.Words FOSS looks useful to you:
+
+- **Star** the repo. It takes one click and helps more than anything else.
+- **Watch** it (Releases only is fine) to hear about new features first. The NuGet package and new formats are landing soon.
+- **Tell someone.** A mention in a blog post, a team chat, or an answer on Stack Overflow means a lot to a young project.
+
+## Contributing
+
+Bug reports and feature requests are very welcome, please [open an issue](../../issues). Pull requests are considered case by case; for anything non-trivial, it is best to open an issue first so we can discuss the approach.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). The MIT License permits use, copying, modification, distribution, sublicensing, and commercial use, provided its copyright and permission notice are retained. The software is provided without warranty.
+[MIT](LICENSE). Free for commercial and personal use.

@@ -1,11 +1,11 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 10/02/2020 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
+using System.IO;
 using Aspose.Images.Pal;
 using Aspose.TestFx;
 using NUnit.Framework;
-using System.IO;
 
 namespace Aspose.Tests.Xamarin
 {
@@ -104,7 +104,7 @@ namespace Aspose.Tests.Xamarin
             "flower-separated-planar-16.tif"
         };
 
-#region TestCore
+        #region TestCore
 
         private static void TestTiffCore(string input)
         {
@@ -124,7 +124,7 @@ namespace Aspose.Tests.Xamarin
             // Do not show original Tiff image, because some of them are not valid for windows and out of memory error is thrown.
             TestRenderingUtil.VerifyGraphics(testOut, testGold, null);
         }
-#endregion
+        #endregion
     }
 }
 #endif

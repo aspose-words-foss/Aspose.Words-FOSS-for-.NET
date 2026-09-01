@@ -1,6 +1,6 @@
 // Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 24/07/2022 by Alexey Morozov
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Collections.Generic;
 using System.IO;

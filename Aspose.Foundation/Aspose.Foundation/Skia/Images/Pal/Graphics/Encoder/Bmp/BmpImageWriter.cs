@@ -1,12 +1,12 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 15/11/2017 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
-using SkiaSharp;
 using System;
 using System.Drawing;
 using System.IO;
+using SkiaSharp;
 
 namespace Aspose.Images.Pal.Graphics.Encoder.Bmp
 {

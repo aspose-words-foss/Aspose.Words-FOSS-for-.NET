@@ -46,7 +46,7 @@ using Aspose.Words.Notes;
 using Aspose.Words.Loading;
 using Aspose.Words.RW.Dml;
 using Aspose.Words.Drawing.Core.Dml.Themes;
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System.Web;
 #endif
 
@@ -648,7 +648,7 @@ namespace Aspose.Words.Tests.Export.Docx
             // No WordML in FOSS.
         }
 
-#if !NETSTANDARD // We do not provide saving document to a response stream in Xamarin.Android.
+#if NETFRAMEWORK // We do not provide saving document to a response stream in Xamarin.Android.
         /// <summary>
         /// WORDSNET-13135 Document.Save issue with Google Chrome.
         /// If file name contains comma (,), "Google chrome" shows following error:
@@ -2411,6 +2411,9 @@ namespace Aspose.Words.Tests.Export.Docx
             Assert.That(pgMarNode.Attributes["w:header"].Value, Is.EqualTo(markupHeaderDistance));
         }
 
+        // FOSS Test29083 removed: loads an ExportDocx\Test29083.doc input, and the
+        // legacy .doc reader is not part of the FOSS build.
+
         /// <summary>
         /// Checks that content of specified paragraph is the date field in short format.
         /// </summary>
@@ -2561,7 +2564,7 @@ namespace Aspose.Words.Tests.Export.Docx
             Assert.That(test32.TextboxNextShapeId, Is.EqualTo(0));
         }
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
         /// <summary>
         /// Create "Docx" document, save it to client browser and check added headers.
         /// </summary>

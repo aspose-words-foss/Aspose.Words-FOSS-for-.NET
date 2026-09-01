@@ -36,13 +36,13 @@ namespace Aspose.Fonts.TrueType
 
             if (isLocaShort)
             {
-                int count = (int)(tableLenght/2);
+                int count = (int)(tableLenght / 2);
                 for (int i = 0; i < count; i++)
-                    loca.GlyphLocations.Add(reader.ReadUInt16()*2);
+                    loca.GlyphLocations.Add(reader.ReadUInt16() * 2);
             }
             else
             {
-                int count = (int)(tableLenght/4);
+                int count = (int)(tableLenght / 4);
                 for (int i = 0; i < count; i++)
                     loca.GlyphLocations.Add(reader.ReadInt32());
             }
@@ -58,7 +58,7 @@ namespace Aspose.Fonts.TrueType
             for (int i = 0; i < GlyphLocations.Count; i++)
             {
                 if (IsLocaShort)
-                    writer.WriteInt16(GlyphLocations[i]/2);
+                    writer.WriteInt16(GlyphLocations[i] / 2);
                 else
                     writer.WriteInt32(GlyphLocations[i]);
             }
@@ -72,7 +72,7 @@ namespace Aspose.Fonts.TrueType
             int maxOffset = 0;
             for (int i = 0; i < GlyphLocations.Count; i++)
             {
-                if (GlyphLocations[i]%2 != 0)
+                if (GlyphLocations[i] % 2 != 0)
                 {
                     // In short loca only even offsets could be defined.
                     IsLocaShort = false;
@@ -105,6 +105,6 @@ namespace Aspose.Fonts.TrueType
         private bool mIsLocaShort;
 
         [CodePorting.Translator.Cs2Cpp.CppConstexpr]
-        private const int MaxShortLocaOffset = ushort.MaxValue*2;
+        private const int MaxShortLocaOffset = ushort.MaxValue * 2;
     }
 }

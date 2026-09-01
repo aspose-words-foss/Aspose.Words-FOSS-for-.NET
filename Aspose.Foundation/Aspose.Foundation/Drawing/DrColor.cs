@@ -79,7 +79,7 @@ namespace Aspose.Drawing
         {
             return ColorPal.GetSystemColor(systemColorName);
         }
-        
+
         public override string ToString()
         {
             string name = FormatterPal.IntToStrX8(mArgb);
@@ -191,7 +191,7 @@ namespace Aspose.Drawing
 
         public override bool Equals(object obj)
         {
-            return (obj is DrColor) && (Equals(this, (DrColor) obj));
+            return (obj is DrColor) && (Equals(this, (DrColor)obj));
         }
 
         /// <summary>

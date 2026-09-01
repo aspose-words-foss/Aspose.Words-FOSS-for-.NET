@@ -20,7 +20,7 @@ namespace Aspose.IO
             UseMsbFirstBitOrdering = useMsbFirstBitOrdering;
             InitBuffer();
         }
-        
+
         /// <summary>
         /// Initializes buffer.
         /// </summary>

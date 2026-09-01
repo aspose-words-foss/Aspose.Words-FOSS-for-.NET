@@ -2,7 +2,9 @@
 // 09/01/2017 by Konstantin Sidorenko
 
 using System;
+#if !NET8_0_OR_GREATER
 using System.Runtime.Serialization;
+#endif
 using Aspose.JavaAttributes;
 
 namespace Aspose.Common

@@ -8,10 +8,11 @@ using System.Drawing;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
-
 using Aspose.JavaAttributes;
 
-#if !NETSTANDARD
+
+
+#if NETFRAMEWORK
 using System.Windows.Forms;
 #endif
 
@@ -29,7 +30,7 @@ namespace Aspose.TestFx.Pal
     {
         static TestUtilPal()
         {
-#if !NETSTANDARD
+#if NETFRAMEWORK
             string value = Environment.GetEnvironmentVariable("SettingsFormTriggerKeys");
             if (value == "2")
             {
@@ -84,7 +85,7 @@ namespace Aspose.TestFx.Pal
 
         public static bool IsScrollLockOn()
         {
-#if !NETSTANDARD
+#if NETFRAMEWORK
             return Control.IsKeyLocked(Keys.Scroll);
 #else
             if (PlatformUtilPal.IsWindows())
@@ -108,7 +109,7 @@ namespace Aspose.TestFx.Pal
         /// </summary>
         public static string GetMostActualExistingGold(string dotNetGold)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             string netstandardGold = GetMostActualGold(dotNetGold);
             return File.Exists(netstandardGold) ? netstandardGold : dotNetGold;
 #elif CPLUSPLUS
@@ -125,7 +126,7 @@ namespace Aspose.TestFx.Pal
         /// </summary>
         public static string GetMostActualGold(string dotNetGold)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             return dotNetGold.Replace("words-net-standard-golds", @"awnet")
                 .Replace("awnet", @"words-net-standard-golds")
                 .Replace("TestGoldNETStandard", "TestGold")
@@ -161,7 +162,7 @@ namespace Aspose.TestFx.Pal
             {
                 FieldInfo info = fieldAttrFields[attrIdx];
 
-                if(info.IsLiteral && info.FieldType == typeof(int))
+                if (info.IsLiteral && info.FieldType == typeof(int))
                 {
                     // RK Don't use the GetRawConstantValue because it is not available in .NET 1.1.
                     intValues[count] = Int32.Parse(info.GetValue(info).ToString());
@@ -233,7 +234,7 @@ namespace Aspose.TestFx.Pal
         /// </summary>
         public static bool IsNonStandardDesktopResolution()
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             return true; // not sure how to detect resulution on mac. return true for now.
 #else
             // In .NET a new Bitmap resolution is same as the current desktop resolution.
@@ -250,7 +251,7 @@ namespace Aspose.TestFx.Pal
         {
             float currentResolution;
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
             currentResolution = ImageConstants.StandardResolution;// not sure how to detect resolution on mac. Use standard resolution for now.
 #else
             // In .NET a new Bitmap resolution is same as the current desktop resolution.
@@ -304,7 +305,7 @@ namespace Aspose.TestFx.Pal
                 return null;
 
             Form form = new Form();
-            form.Font = new Font("Tahoma",9f);
+            form.Font = new Font("Tahoma", 9f);
 
             form.AutoSize = false;
             form.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -332,21 +333,21 @@ namespace Aspose.TestFx.Pal
             gGlobalConfigFile.Checked = TestSettings.IsGlobalConfigFile;
             gGlobalConfigFile.Text = "Global config file at %USERPROFILE%\\Aspose folder";
             gGlobalConfigFile.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            gGlobalConfigFile.MinimumSize = new Size(4*ITEM_HEIGHT, ITEM_HEIGHT);
+            gGlobalConfigFile.MinimumSize = new Size(4 * ITEM_HEIGHT, ITEM_HEIGHT);
 
             Button closeButton = new Button();
             closeButton.AutoSize = false;
             closeButton.Text = "Close";
-            closeButton.Size = new Size(3*ITEM_HEIGHT, ITEM_HEIGHT);
-            closeButton.Location = new Point(FORM_WIDTH - closeButton.Width - 2*PAD, 0);
+            closeButton.Size = new Size(3 * ITEM_HEIGHT, ITEM_HEIGHT);
+            closeButton.Location = new Point(FORM_WIDTH - closeButton.Width - 2 * PAD, 0);
             closeButton.Anchor = AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
             closeButton.DialogResult = DialogResult.OK;
 
             Button saveButton = new Button();
             saveButton.AutoSize = false;
             saveButton.Text = "Save and Close";
-            saveButton.Size = new Size(4*ITEM_HEIGHT, ITEM_HEIGHT);
-            saveButton.Location = new Point(closeButton.Left - saveButton.Width - 4*PAD, 0);
+            saveButton.Size = new Size(4 * ITEM_HEIGHT, ITEM_HEIGHT);
+            saveButton.Location = new Point(closeButton.Left - saveButton.Width - 4 * PAD, 0);
             saveButton.Anchor = AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
             saveButton.DialogResult = closeButton.DialogResult;
             saveButton.Click += new EventHandler(save_Click);
@@ -359,7 +360,7 @@ namespace Aspose.TestFx.Pal
             bottomPanel.Controls.Add(gGlobalConfigFile);
 
             Panel topPanel = new Panel();
-            topPanel.Width = FORM_WIDTH - 2*PAD;
+            topPanel.Width = FORM_WIDTH - 2 * PAD;
             topPanel.Dock = DockStyle.Fill;
             topPanel.AutoScroll = true;
             topPanel.HorizontalScroll.Visible = false;
@@ -399,19 +400,25 @@ namespace Aspose.TestFx.Pal
             Control input = null;
             switch (entry.Value.Kind)
             {
-                case TestSetting.KindEnum.Bool: input = CreateControl(typeof(CheckBox), entry); break;
+                case TestSetting.KindEnum.Bool:
+                    input = CreateControl(typeof(CheckBox), entry);
+                    break;
                 case TestSetting.KindEnum.String:
-                case TestSetting.KindEnum.Float: input = CreateControl(typeof(TextBox), entry); break;
-                case TestSetting.KindEnum.Array: input = CreateControl(typeof(ComboBox), entry); break;
+                case TestSetting.KindEnum.Float:
+                    input = CreateControl(typeof(TextBox), entry);
+                    break;
+                case TestSetting.KindEnum.Array:
+                    input = CreateControl(typeof(ComboBox), entry);
+                    break;
                 default:
                     throw new Exception("unexpected '" + entry.Value.Kind + "' kind");
             }
 
-            input.Width = FORM_WIDTH - 4*PAD;
+            input.Width = FORM_WIDTH - 4 * PAD;
 
             if (spacer != null)
             {
-                spacer.Width = FORM_WIDTH - 4*PAD;
+                spacer.Width = FORM_WIDTH - 4 * PAD;
                 return new Control[] { spacer, input };
             }
 
@@ -448,7 +455,7 @@ namespace Aspose.TestFx.Pal
             if (controlType == typeof(CheckBox))
             {
                 CheckBox cb = new CheckBox();
-                cb.Size = new Size(FORM_WIDTH - 4*PAD, ITEM_HEIGHT);
+                cb.Size = new Size(FORM_WIDTH - 4 * PAD, ITEM_HEIGHT);
                 cb.TextAlign = ContentAlignment.MiddleLeft;
                 cb.FlatStyle = FlatStyle.System;
                 cb.Appearance = Appearance.Normal;
@@ -467,7 +474,7 @@ namespace Aspose.TestFx.Pal
                 label.Text = text;
 
                 TextBox tb = new TextBox();
-                tb.Size = new Size(FORM_WIDTH - 4*PAD, ITEM_HEIGHT);
+                tb.Size = new Size(FORM_WIDTH - 4 * PAD, ITEM_HEIGHT);
                 tb.Dock = DockStyle.Top;
                 tb.ReadOnly = false;
                 tb.Text = (string)value;
@@ -512,7 +519,7 @@ namespace Aspose.TestFx.Pal
                     panel.Controls.Add(rb);
                 }
 
-                ((RadioButton)panel.Controls[panel.Controls.Count-1]).Checked = true;
+                ((RadioButton)panel.Controls[panel.Controls.Count - 1]).Checked = true;
 #endif
 
                 Label label = new Label();
@@ -538,7 +545,7 @@ namespace Aspose.TestFx.Pal
             }
 
             result.Dock = DockStyle.Top;
-            result.Width = FORM_WIDTH - 4*PAD;
+            result.Width = FORM_WIDTH - 4 * PAD;
             result.AutoSize = true;
             result.Padding = new Padding(0, PAD, 0, PAD);
 

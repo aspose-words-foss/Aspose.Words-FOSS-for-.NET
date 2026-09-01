@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 31/01/2024 by Denis Panov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using System.IO;
@@ -154,7 +154,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder.Tiff
 
         private static byte[] ConvertTo1Bpp(SKBitmap image)
         {
-            int width  = image.Width;
+            int width = image.Width;
             int height = image.Height;
             int stride = (image.Width + 7) / 8;
             IntPtr pixels = image.GetPixels();
@@ -168,13 +168,13 @@ namespace Aspose.Images.Pal.Graphics.Encoder.Tiff
                 for (int x = 0; x < width; x++)
                 {
                     // Calculate the index in the pixels array and get the grayscale value
-                    int grayIndex = y * width + x; 
+                    int grayIndex = y * width + x;
                     byte grayValue = Marshal.ReadByte(pixels, grayIndex);
 
                     // Calculate the index in the result array
                     int resultIndex = y * stride + x / 8;
                     // Create a mask for setting the bit
-                    byte mask = (byte)(0x80 >> (x % 8)); 
+                    byte mask = (byte)(0x80 >> (x % 8));
 
                     // Set the bit if the grayscale value is byte.MaxValue
                     if (grayValue == byte.MaxValue)

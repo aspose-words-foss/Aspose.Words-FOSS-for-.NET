@@ -174,7 +174,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             ObjToDoubleDictionary<object> dictionary = new ObjToDoubleDictionary<object>();
             dictionary.Add(gFirstKey, gFirstValue);
-            
+
             ObjToDoubleDictionary<object>.Enumerator enumerator = dictionary.GetEnumerator();
             bool isMoved = enumerator.MoveNext();
             Assert.That(isMoved, Is.True);

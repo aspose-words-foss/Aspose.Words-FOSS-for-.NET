@@ -32,7 +32,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
         {
             entry = new DictionaryEntry("Hello", "World");
             Assert.That("World", Is.EqualTo(entry.Value));
-            
+
             entry = new DictionaryEntry(5, 6);
             Assert.That(6, Is.EqualTo(entry.Value));
         }

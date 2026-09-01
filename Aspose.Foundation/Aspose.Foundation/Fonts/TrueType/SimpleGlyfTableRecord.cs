@@ -209,7 +209,7 @@ namespace Aspose.Fonts.TrueType
             else if (Math.Abs(coord) <= byte.MaxValue)
             {
                 result += shortFlag;
-                if(coord >= 0)
+                if (coord >= 0)
                     result += sameOrPositiveFlag;
             }
 

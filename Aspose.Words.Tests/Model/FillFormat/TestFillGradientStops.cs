@@ -420,7 +420,7 @@ namespace Aspose.Words.Tests.Model.FillFormat
         [TestCase("TextOneColorGradient")]
         [TestCase("TextPresetGradient")]
         [ExpectedException(typeof(ArgumentOutOfRangeException),
-#if NETSTANDARD
+#if NETSTANDARD || NET
         ExpectedMessage = "The specified value is out of range. (Parameter 'index')")]
 #else
         ExpectedMessage = "The specified value is out of range.\r\nParameter name: index")]
@@ -442,7 +442,7 @@ namespace Aspose.Words.Tests.Model.FillFormat
         [TestCase("TextOneColorGradient")]
         [TestCase("TextPresetGradient")]
         [ExpectedException(typeof(ArgumentOutOfRangeException),
-#if NETSTANDARD
+#if NETSTANDARD || NET
         ExpectedMessage = "The specified value is out of range. (Parameter 'index')")]
 #else
         ExpectedMessage = "The specified value is out of range.\r\nParameter name: index")]

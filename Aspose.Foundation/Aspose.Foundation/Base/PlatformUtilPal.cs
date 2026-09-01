@@ -21,7 +21,7 @@ namespace Aspose
         /// </summary>
         public static Platform GetPlatform()
         {
-#if NETSTANDARD // 
+#if NETSTANDARD || NET //
             if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
                 return Platform.Windows;
 
@@ -154,16 +154,16 @@ namespace Aspose
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
             startInfo.FileName = fileName;
-            
+
             if (args != null && args.Length > 0)
             {
                 // Surround arguments which have spaces with double quotes.
                 StringBuilder parameters = new StringBuilder();
                 foreach (string s in args)
                     parameters.AppendFormat("{0}{1}{0} ", s.Contains(" ") ? "\"" : "", s);
-                
+
                 parameters.Length--;
-                
+
                 startInfo.Arguments = parameters.ToString();
             }
 

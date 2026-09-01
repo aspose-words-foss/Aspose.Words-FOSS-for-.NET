@@ -1261,7 +1261,7 @@ namespace Aspose.Images
                 // So, safe marker reading was introduced to avoid "EndOfStreamException" exception in normal processing.
                 while (jpegReader.GoToNextMarker())
                 {
-                    if(jpegReader.IsEoiMarker)
+                    if (jpegReader.IsEoiMarker)
                         break;
 
                     ushort segmentLength = reader.ReadUInt16();
@@ -2131,7 +2131,7 @@ namespace Aspose.Images
         {
             using (BitmapPal bitmap = new BitmapPal(imageBytes))
             {
-#if !NETSTANDARD
+#if NETFRAMEWORK
                 if (bitmap.PixelFormat == PixelFormat.Format16bppGrayScale)
                     return false;
 #endif

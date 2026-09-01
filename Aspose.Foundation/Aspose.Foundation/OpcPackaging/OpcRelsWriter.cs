@@ -30,7 +30,7 @@ namespace Aspose.OpcPackaging
             foreach (OpcPackagePart part in partsWithRels)
                 WriteCore(package, part.Rels, part.Name, isPrettyFormat);
         }
-        
+
         /// <summary>
         /// Builds URI for relationships.
         /// </summary>

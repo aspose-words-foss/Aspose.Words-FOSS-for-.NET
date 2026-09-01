@@ -249,7 +249,7 @@ namespace Aspose.Charset
 
                 // Copy either whole source buffer, or only bytes before text being removed.
                 int count = 0;
-                int lengthToCopy = (rangeToRemove == null) ? length: rangeToRemove.StartIndex - srcIndex;
+                int lengthToCopy = (rangeToRemove == null) ? length : rangeToRemove.StartIndex - srcIndex;
                 if (lengthToCopy > 0)
                 {
                     count = ArrayUtil.Copy(srcBuf, srcIndex, lengthToCopy, dstBuf, dstIndex);

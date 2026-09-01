@@ -88,7 +88,7 @@ namespace Aspose.Fonts.TrueType
             // WORDSNET-Test27393 Version 2 is not defined in OTF spec but in this case there is legacy Taiwan font
             // with version 2 which is handled well by MW and Windows.
             if (Version != 0x00010000 && Version != 0x00020000)
-                throw new NotSupportedException ("Unsupported horizontal header version.");
+                throw new NotSupportedException("Unsupported horizontal header version.");
 
             Ascender = reader.ReadInt16();
             Descender = reader.ReadInt16();

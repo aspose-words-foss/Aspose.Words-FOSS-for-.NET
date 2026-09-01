@@ -773,7 +773,7 @@ namespace Aspose.JavaMs.Tests.System.Data
             if (addSelfRelation)
             {
                 expectedTables.AddRelation("istitutoComprensivo_istitutoComprensivo", istitutoComprensivo,
-                    istitutoComprensivo, new string[] {"istitutoComprensivo_Id"}, new string[] {"istitutoComprensivo_Id"});
+                    istitutoComprensivo, new string[] { "istitutoComprensivo_Id" }, new string[] { "istitutoComprensivo_Id" });
             }
 
             return expectedTables;

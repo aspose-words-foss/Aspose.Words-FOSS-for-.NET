@@ -35,7 +35,7 @@ namespace Aspose.Common
         IChar IStringBuilder.this[int index]
         {
             get { return GetChar(index); }
-            set { SetChar(index,(SystemCharAdapter)value); }
+            set { SetChar(index, (SystemCharAdapter)value); }
         }
 
         public SystemCharAdapter GetChar(int index)

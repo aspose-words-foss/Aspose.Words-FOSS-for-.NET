@@ -48,7 +48,7 @@ namespace Aspose.Images
                     result.BitCount = reader.ReadUInt16();
                     if (size != Os22XBitmapHeader16Size)
                     {
-                        result.Compression = (BitmapCompression) reader.ReadUInt32();
+                        result.Compression = (BitmapCompression)reader.ReadUInt32();
                         result.SizeImage = reader.ReadUInt32();
                         result.XPelsPerMeter = reader.ReadInt32();
                         result.YPelsPerMeter = reader.ReadInt32();

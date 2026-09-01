@@ -2,7 +2,7 @@
 // 25/05/2011 by Alexey Titov
 
 using Aspose.JavaAttributes;
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 #else
@@ -18,7 +18,7 @@ namespace Aspose.Images
     [AndroidManual("Not needed in java. But it needs to be ported on Android manually.")]
     internal class BitmapBytes
     {
-#if !NETSTANDARD
+#if NETFRAMEWORK
         public BitmapBytes(BitmapData bitmapData)
         {
             mWidth = bitmapData.Width;

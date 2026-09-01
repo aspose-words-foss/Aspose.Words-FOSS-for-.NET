@@ -77,7 +77,7 @@ namespace Aspose.Charset
         public int CompareTo(CharsetMatch other)
         {
             if (other == null)
-               return 1;
+                return 1;
 
             int compareResult = 0;
 

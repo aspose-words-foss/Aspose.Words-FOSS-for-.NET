@@ -127,7 +127,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
             Assert.That(node.Next.Value, Is.EqualTo("C"));
             Assert.That(list.Count, Is.EqualTo(5));
         }
-        
+
         [Test]
         public void TestLinkedListContains()
         {
@@ -140,7 +140,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
             list.AddLast("D");
             Assert.That(list.Contains("D"), Is.True);
         }
-        
+
         [Test]
         public void TestLinkedListRemove()
         {

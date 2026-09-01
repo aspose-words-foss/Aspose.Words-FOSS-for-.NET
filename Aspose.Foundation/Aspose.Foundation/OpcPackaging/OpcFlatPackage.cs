@@ -152,7 +152,7 @@ namespace Aspose.OpcPackaging
 
                 // ContentType of package parts, which contain XML data normally ends with "+xml" or equals "application/xml".
                 // So if ContentType does not end with "xml", we can assume this is binary data.
-                if(!part.ContentType.EndsWith("xml", StringComparison.Ordinal))
+                if (!part.ContentType.EndsWith("xml", StringComparison.Ordinal))
                 {
                     // If we write binaryData, we should also add compression attribute.
                     xmlBuilder.WriteAttributeString("pkg:compression", "store");
@@ -182,7 +182,7 @@ namespace Aspose.OpcPackaging
             const string ending = "?>";
             const int notFound = -1;
 
-            string xmlString  = new StreamReader(xmlStringStream).ReadToEnd();
+            string xmlString = new StreamReader(xmlStringStream).ReadToEnd();
 
             int openingPos = xmlString.IndexOf(opening, StringComparison.Ordinal);
             if (openingPos == notFound)

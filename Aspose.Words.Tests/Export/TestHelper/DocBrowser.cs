@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 06/04/2016 by Dmitry Sokolov
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System.Collections.Generic;
 using System.Web;

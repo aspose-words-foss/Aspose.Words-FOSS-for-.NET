@@ -27,7 +27,7 @@ namespace Aspose.IO
 
             public FileStream Stream
             {
-               get { return mStream;}
+                get { return mStream; }
             }
 
             public string Filename
@@ -82,7 +82,7 @@ namespace Aspose.IO
         /// </remarks>
         public void Cleanup()
         {
-            foreach(TempFile tempFile in mTempFiles)
+            foreach (TempFile tempFile in mTempFiles)
             {
                 tempFile.Stream.Close();
                 File.Delete(tempFile.Filename);

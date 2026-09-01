@@ -124,6 +124,6 @@ namespace Aspose.Tests.Collections.Generic
             2000000, 1000000, 20000000, 10000000, 200000000, 100000000, 2000000000, 1000000000
         };
 
-        private readonly string[] mOrderedValues3 = {"0", "19", "20"};
+        private readonly string[] mOrderedValues3 = { "0", "19", "20" };
     }
 }

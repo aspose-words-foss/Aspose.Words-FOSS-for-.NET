@@ -35,7 +35,7 @@ using Aspose.Words.Notes;
 using CodePorting.Translator.Cs2Cpp;
 using Aspose.Words.Settings;
 using Aspose.Words.Validation;
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using Image = SkiaSharp.SKBitmap;
 #else
 using Image = System.Drawing.Image;
@@ -804,7 +804,7 @@ namespace Aspose.Words
                     {
                         Paragraph lastSdtPara = CurrentStructuredDocumentTag.LastChild as Paragraph;
 
-                        if(lastSdtPara != null)
+                        if (lastSdtPara != null)
                             lastSdtPara.ParaPr.ExpandTo(newPara.ParaPr);
                     }
 
@@ -813,10 +813,7 @@ namespace Aspose.Words
                 }
                 else
                 {
-                    if (CurrentParagraph.ParentNode.NodeType == NodeType.StructuredDocumentTag &&
-                        CurrentParagraph.IsLastChild &&
-                        !IsAtEndOfStructuredDocumentTag &&
-                        IsAtEndOfParagraph)
+                    if (AtLastParagraphOfLastSdt)
                     {
                         // See Test25317Customer() for explanation.
                         CurrentStructuredDocumentTag.InsertNext(newPara);
@@ -930,7 +927,7 @@ namespace Aspose.Words
                 StructuredDocumentTag newSdt = new StructuredDocumentTag(mDoc, type, MarkupLevel.Block);
 
                 Paragraph lastPara = (Paragraph)CurrentStructuredDocumentTag.GetChild(NodeType.Paragraph, -1, true);
-                if(lastPara != null)
+                if (lastPara != null)
                     lastPara.ParaPr.ExpandTo(((Paragraph)newSdt.FirstChild).ParaPr);
 
                 mRunPr.ExpandTo(newSdt.ContentsRunPr);
@@ -1487,7 +1484,7 @@ namespace Aspose.Words
         /// another format or with other settings, you need to save the image into a byte array and use <see cref = "InsertImage(byte[])"/>.</p>
         /// </java >
         /// </remarks>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public Shape InsertImage(Image image)
@@ -1554,7 +1551,7 @@ namespace Aspose.Words
         /// another format or with other settings, you need to save the image into a byte array and use <see cref = "InsertImage(byte[])"/>.</p>
         /// </java >
         /// </remarks>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public Shape InsertImage(Image image, double width, double height)
@@ -1625,7 +1622,7 @@ namespace Aspose.Words
         /// another format or with other settings, you need to save the image into a byte array and use <see cref = "InsertImage(byte[])"/>.</p>
         /// </java >
         /// </remarks>
-#if NETSTANDARD
+#if NETSTANDARD || NET
         [CLSCompliant(false)] // SkiaSharp.SKBitmap is not CLSCompliant.
 #endif
         public Shape InsertImage(
@@ -1643,7 +1640,7 @@ namespace Aspose.Words
 
             using (MemoryStream stream = new MemoryStream())
             {
-#if NETSTANDARD || CPLUSPLUS
+#if NETSTANDARD || NET || CPLUSPLUS
                 BitmapPal.SaveNativeImageForWord97(image, stream);
 #else
                 BitmapPal.SaveNativeImageForWord97(image, stream);
@@ -3174,7 +3171,7 @@ namespace Aspose.Words
         /// </summary>
         internal void EnsureAtStructuredDocumentTagEnd()
         {
-            if(IsAtEndOfParagraph && (CurrentParagraph.ParentNode.NodeType == NodeType.StructuredDocumentTag))
+            if (IsAtEndOfParagraph && (CurrentParagraph.ParentNode.NodeType == NodeType.StructuredDocumentTag))
                 MoveToStructuredDocumentTag((StructuredDocumentTag)CurrentParagraph.ParentNode, -1);
         }
 
@@ -4076,6 +4073,32 @@ namespace Aspose.Words
                     return CurrentParagraph.ParentCell.CellPr;
 
                 return mCellPr;
+            }
+        }
+
+        /// <summary>
+        /// Indicates that cursor is at the last paragraph of the last SDT.
+        /// </summary>
+        /// <remarks>
+        /// We apply different logic here when insert paragraph to allow to append content after SDT.
+        /// </remarks>
+        private bool AtLastParagraphOfLastSdt
+        {
+            get
+            {
+                Paragraph currentPara = CurrentParagraph;
+                CompositeNode parentNode = currentPara.ParentNode;
+
+                if (parentNode.NodeType != NodeType.StructuredDocumentTag)
+                    return false;
+
+                if (!parentNode.IsLastChild)
+                    return false;
+
+                if (!currentPara.IsLastChild)
+                    return false;
+
+                return IsAtEndOfParagraph && !IsAtEndOfStructuredDocumentTag;
             }
         }
 

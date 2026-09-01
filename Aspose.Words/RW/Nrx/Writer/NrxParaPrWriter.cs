@@ -12,7 +12,7 @@ namespace Aspose.Words.RW.Nrx.Writer
     {
         internal static void Write(ParaPr paraPr, INrxWriterContext writer)
         {
-             if (WriteStart(paraPr, writer))
+            if (WriteStart(paraPr, writer))
                 writer.Builder.EndElement();    //w:pPr
         }
 
@@ -192,7 +192,7 @@ namespace Aspose.Words.RW.Nrx.Writer
                         break;
                     }
                     case ParaAttr.TextboxTightWrap:
-                        tightWrap = NrxParaEnum.TextboxTightWrapToXml((TextboxTightWrap) value);
+                        tightWrap = NrxParaEnum.TextboxTightWrapToXml((TextboxTightWrap)value);
                         break;
                     case ParaAttr.HtmlBlockId:
                         divId = value;
@@ -243,7 +243,7 @@ namespace Aspose.Words.RW.Nrx.Writer
                         frameYAlign = NrxParaEnum.VerticalAlignmentToXml((VerticalAlignment)value);
                         break;
                     case ParaAttr.FrameHeight:
-                        Height height = (Height) value;
+                        Height height = (Height)value;
                         frameHRule = NrxParaEnum.HeightRuleToXml(height.Rule, isDocx);
                         frameH = height.Value;
                         break;
@@ -397,7 +397,7 @@ namespace Aspose.Words.RW.Nrx.Writer
                         jc = NrxParaEnum.ParagraphAlignmentToXml((ParagraphAlignment)value, isDocx, writer.Compliance);
                         break;
                     case ParaAttr.FrameTextOrientation:
-                        textDirection = StyleConvertUtil.TextOrientationToXml((TextOrientation)value, isDocx, 
+                        textDirection = StyleConvertUtil.TextOrientationToXml((TextOrientation)value, isDocx,
                             writer.Compliance);
                         break;
                     case ParaAttr.BaselineAlignment:
@@ -571,7 +571,7 @@ namespace Aspose.Words.RW.Nrx.Writer
                 writer.Warn(WarningType.MinorFormattingLoss, "MirrorIndents is not supported in WordML.");
 
             // Collapsed is not supported in WordML. 
-            if ((collapsed != null) && (bool)collapsed && 
+            if ((collapsed != null) && (bool)collapsed &&
                 isDocx && (writer.Compliance != OoxmlComplianceCore.Ecma376))
                 builder.WriteEmptyElement("w15:collapsed");
 

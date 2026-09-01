@@ -615,7 +615,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             ByteList list = new ByteList(10);
             Assert.That(list.Capacity, Is.EqualTo(10));
-            
+
             list.Capacity = 5;
             Assert.That(list.Capacity, Is.EqualTo(5));
         }

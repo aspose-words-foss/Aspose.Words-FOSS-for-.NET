@@ -265,6 +265,9 @@ namespace Aspose.Words.Drawing
 
         private static string ReadLengthPrefixedUnicodeString(BinaryReader reader, int len)
         {
+            // Limit to reasonable length.
+            len = System.Math.Min(len, 0xffff);
+
             byte[] bytes = reader.ReadBytes(len * 2); //assume there is no 4bytes characters
             string result = Encoding.Unicode.GetString(bytes);
             return result;

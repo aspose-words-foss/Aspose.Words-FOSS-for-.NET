@@ -144,7 +144,7 @@ namespace Aspose.TestFx
         [JavaThrows(false)]
         public static string BuildRootTestFileName(string relativePath)
         {
-                return CorrectPath(Path.Combine(TestEnvironment.GetTestData(), relativePath));
+            return CorrectPath(Path.Combine(TestEnvironment.GetTestData(), relativePath));
         }
 
         /// <summary>
@@ -214,32 +214,32 @@ namespace Aspose.TestFx
             switch (PlatformUtilPal.GetPlatform())
             {
                 case Platform.Windows:
-                    {
-                        // The path is expected to be with '\' already, do nothing.
-                        return anyPath;
-                    }
+                {
+                    // The path is expected to be with '\' already, do nothing.
+                    return anyPath;
+                }
                 case Platform.Android:
                 case Platform.Unix:
                 case Platform.MacOS:
                 case Platform.iOS:
+                {
+                    // If we have something like this:
+                    // X:\awnet\Aspose.Words\TestData\xxx.doc
+                    if (UriUtil.IsAbsoluteLocalFilePathWindows(anyPath))
                     {
-                        // If we have something like this:
-                        // X:\awnet\Aspose.Words\TestData\xxx.doc
-                        if (UriUtil.IsAbsoluteLocalFilePathWindows(anyPath))
-                        {
-                            // We need to convert it to something like this:
-                            // /media/sf_F_DRIVE/awnet/Aspose.Words/TestData/xxx.doc
+                        // We need to convert it to something like this:
+                        // /media/sf_F_DRIVE/awnet/Aspose.Words/TestData/xxx.doc
 
-                            // We achieve this by:
-                            // 1. Drop the drive letter and the first slash.
-                            anyPath = anyPath.Substring(3);
-                            // 2. Prepend the "project parent" path so it can be any location on Linux.
-                            anyPath = Path.Combine(TestEnvironment.GetRawRoot(), anyPath);
-                        }
-
-                        // Turn slashes into Linux style.
-                        return anyPath.Replace('\\', Path.DirectorySeparatorChar);
+                        // We achieve this by:
+                        // 1. Drop the drive letter and the first slash.
+                        anyPath = anyPath.Substring(3);
+                        // 2. Prepend the "project parent" path so it can be any location on Linux.
+                        anyPath = Path.Combine(TestEnvironment.GetRawRoot(), anyPath);
                     }
+
+                    // Turn slashes into Linux style.
+                    return anyPath.Replace('\\', Path.DirectorySeparatorChar);
+                }
                 default:
                     throw new InvalidOperationException("Unexpected platform.");
             }

@@ -410,15 +410,15 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(ushortValue.ToString(), Is.EqualTo("48"));
         }
 
-        private readonly sbyte[] sbytes = { 1, 2, 3, 50, SByte.MaxValue};
-        private readonly byte[] bytes = { 1, 2, 3, 50, Byte.MaxValue};
-        private readonly short[] shorts = { 1, 2, 3, 50, Int16.MaxValue};
-        private readonly ushort[] ushorts = { 1, 2, 3, 50, UInt16.MaxValue};
-        private readonly int[] ints = { 1, 2, 3, 50, Int32.MaxValue};
+        private readonly sbyte[] sbytes = { 1, 2, 3, 50, SByte.MaxValue };
+        private readonly byte[] bytes = { 1, 2, 3, 50, Byte.MaxValue };
+        private readonly short[] shorts = { 1, 2, 3, 50, Int16.MaxValue };
+        private readonly ushort[] ushorts = { 1, 2, 3, 50, UInt16.MaxValue };
+        private readonly int[] ints = { 1, 2, 3, 50, Int32.MaxValue };
         private readonly uint[] uints = { 1, 2, 3, 50, UInt32.MaxValue };
-        private readonly long[] longs = { 1L, 2L, 3L, 50, Int64.MaxValue};
-        private readonly float[] floats = { 1.0F, 2.0F, 3.0F, 50};
-        private readonly double[] doubles = { 1.0, 2.0, 3.0, 50};
+        private readonly long[] longs = { 1L, 2L, 3L, 50, Int64.MaxValue };
+        private readonly float[] floats = { 1.0F, 2.0F, 3.0F, 50 };
+        private readonly double[] doubles = { 1.0, 2.0, 3.0, 50 };
     }
 }
 #pragma warning restore CS0675

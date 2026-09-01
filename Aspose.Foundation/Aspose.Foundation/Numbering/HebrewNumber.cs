@@ -85,7 +85,7 @@ namespace Aspose.Numbering
             int digit = digits[digitPos];
             if (digit == 1)
             {
-                digit = digits[digitPos-1];
+                digit = digits[digitPos - 1];
 
                 // Digits form number '15'.
                 if (digit == 5)

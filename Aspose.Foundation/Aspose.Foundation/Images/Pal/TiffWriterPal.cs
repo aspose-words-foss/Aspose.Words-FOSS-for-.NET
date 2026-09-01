@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 24/05/2006 by Dmitry Vorobyev
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -24,7 +24,7 @@ namespace Aspose.Images.Pal
                 mFirstFrame = null;
             }
         }
-        
+
         /// <summary>
         /// Saves an image in TIFF format to a stream as the first frame.
         /// </summary>
@@ -43,7 +43,7 @@ namespace Aspose.Images.Pal
             mbBinarizationMethod = binarizationMethod;
             mThreshold = threshold;
             mPixelFormat = pixelFormat;
-            
+
             mFirstFrame = ConvertTo1BppIfRequired(nativeBitmap);
             ImageCodecInfo encoderInfo = ImageCodecInfoRegistry.GetEncoderInfo(ImageFormat.Tiff);
             mEncoderParameters = GetTiffEncoderParameters(compression, isMultiframe);
@@ -145,7 +145,8 @@ namespace Aspose.Images.Pal
         private static Bitmap ConvertTo32BppIfNeeded(Bitmap bitmap)
         {
             if (bitmap.PixelFormat == PixelFormat.Format24bppRgb || bitmap.PixelFormat == PixelFormat.Format32bppArgb ||
-                bitmap.PixelFormat == PixelFormat.Format32bppRgb) return bitmap;
+                bitmap.PixelFormat == PixelFormat.Format32bppRgb)
+                return bitmap;
 
             Bitmap converted = new Bitmap(bitmap.Width, bitmap.Height, PixelFormat.Format32bppArgb);
             converted.SetResolution(bitmap.HorizontalResolution, bitmap.VerticalResolution);

@@ -27,7 +27,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             // MS Word packs empty data arrays into four zero bytes.
             if (data == null || data.Length == 0)
                 return new byte[4];
-            
+
             // LZComp encodes data only with size less than three bytes length.
             if ((data.Length & 0xFF000000) != 0)
                 throw new ArgumentOutOfRangeException("data");
@@ -35,7 +35,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             byte[] rleEncoded = RleCoder.Encode(data);
             // Only use run-length encoding if there is a clear benefit.
             bool isRleEncoded = (rleEncoded.Length < (data.Length * 3 / 4));
-            byte [] dataSource = (isRleEncoded) ? rleEncoded : data;
+            byte[] dataSource = (isRleEncoded) ? rleEncoded : data;
 
             return Encode(dataSource, isRleEncoded);
         }
@@ -52,7 +52,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 writer.WriteValue(data.Length, 24);
 
                 LzCompEncoderContext context = new LzCompEncoderContext(data, writer);
-                
+
                 int index = context.PreLoadData.Length;
                 while (index < context.MaxIndex)
                 {
@@ -104,7 +104,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 return stream.ToArray();
             }
         }
-        
+
         /// <summary>
         /// Encodes the distance.
         /// </summary>
@@ -132,13 +132,13 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             int i = BitRange;
             while (i < bitsUsed)
                 i += BitRange;
-            int mask = 1 << (i-1);
-            
+            int mask = 1 << (i - 1);
+
             int symbol = (bitsUsed > BitRange) ? 2 : 0;
 
             // Repeat gBitRange times, hard-wire so that we do not have to loop
             /* 1 */
-            if ((value & mask) !=0)
+            if ((value & mask) != 0)
                 symbol |= 1;
             mask >>= 1;
             /* 2 */
@@ -151,7 +151,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             context.SymbolCoder.WriteSymbolAndUpdateTree(256 + symbol + (numDistRanges - 1) * (1 << WidthOfLength));
 
             i = bitsUsed - BitRange;
-            while(i >= 1)
+            while (i >= 1)
             {
                 symbol = (i > BitRange) ? 2 : 0;
 
@@ -165,7 +165,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 if ((value & mask) != 0)
                     symbol |= 1;
                 mask >>= 1;
-        
+
                 i -= BitRange;
 
                 context.LengthCoder.WriteSymbolAndUpdateTree(symbol);
@@ -179,7 +179,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
         {
             const int lenMaxCostCache = 32;
             int[] literalCostCache = new int[lenMaxCostCache + 1];
-            
+
             Match bestMatch = new Match();
 
             int hashNodesCount = 0;
@@ -190,7 +190,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             {
                 // Store in hash 2-bytes values.
                 int symbol = context.GetTwoBytesSymbol(indexInData);
-                
+
                 HashNode prevHashNode = null;
                 HashNode curHashNode = context.HashTable[symbol];
                 while (curHashNode != null)
@@ -209,14 +209,14 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                     curHashNode = curHashNode.Next;
 
                     int maxLength = Math.Min(maxIndexMinusIndex, indexInData - indexBrowsed);
-                    if ( maxLength < MinLength )
+                    if (maxLength < MinLength)
                         continue;
 
                     // Calculate length of the found coinciding piece.
                     // Since we found first symbol (2 bytes) in hash, we can skip it.
-                    int length = context.CalcLength(indexBrowsed+2, indexInData+2, maxLength-2) + 2;
+                    int length = context.CalcLength(indexBrowsed + 2, indexInData + 2, maxLength - 2) + 2;
 
-                    distance = distance - length + 1; 
+                    distance = distance - length + 1;
                     if (distance > context.DistanceMax)
                         continue;
 
@@ -347,14 +347,14 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             if ((value & mask) != 0)
                 symbol |= 1;
             mask = mask >> 1;
-            
-            int lengthCost = context.SymbolCoder.GetSymbolCost(256 + symbol +  (numDistRanges - 1) * (1 << WidthOfLength));
-            
+
+            int lengthCost = context.SymbolCoder.GetSymbolCost(256 + symbol + (numDistRanges - 1) * (1 << WidthOfLength));
+
             i = bitsUsed - BitRange;
             while (i >= 1)
             {
                 symbol = (i > BitRange) ? 2 : 0;
-                
+
                 //Repeat gBitRange times, hard-wire so that we do not have to loop.
                 /* 1 */
                 if ((value & mask) != 0)
@@ -364,8 +364,8 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 symbol = symbol << 1;
                 if ((value & mask) != 0)
                     symbol = symbol | 1;
-                mask >>=1;
-        
+                mask >>= 1;
+
                 i -= BitRange;
 
                 lengthCost += context.LengthCoder.GetSymbolCost(symbol);
@@ -387,7 +387,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
 
             int curPos = index;
             context.UpdateHashTable(index++);
-            
+
             if (match1.Gain > 0)
             {
                 Match match2 = FindMatch(context, index);
@@ -412,7 +412,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
 
                             int lenBitCount = GetEncodedLengthCost(context, match1.Length - 1, match1.Distance + 1, distRanges);
                             int distBitCount = GetEncodedDistanceCost(context, match1.Distance + 1, distRanges);
-                            
+
                             int cost1B = lenBitCount + distBitCount;
                             cost1B += match3.CostPerByte * match3.Length;
 
@@ -469,7 +469,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
         /// performance significantly and size of encoded data is not grows.
         /// </remarks>
         private const int MaxSymbolNodesInCache = 16;
-        
+
         /// <summary>
         /// Match type that helps to make a decision on whether to use a copy item.
         /// </summary>

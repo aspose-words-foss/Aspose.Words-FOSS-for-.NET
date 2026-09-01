@@ -505,8 +505,8 @@ namespace Aspose.Zip
         /// <param name="count">the number of bytes to read.</param>
         public override int Read(byte[] buffer, int offset, int count)
         {
-                if (_disposed)
-                    throw new ObjectDisposedException("ZlibStream");
+            if (_disposed)
+                throw new ObjectDisposedException("ZlibStream");
             return _baseStream.Read(buffer, offset, count);
         }
 
@@ -761,7 +761,8 @@ namespace Aspose.Zip
 
         private void finish()
         {
-            if (_z == null) return;
+            if (_z == null)
+                return;
 
             if (_streamMode == StreamMode.Writer)
             {
@@ -818,7 +819,7 @@ namespace Aspose.Zip
                     // workitem 8501: handle edge case (decompress empty stream)
                     if (_z.TotalBytesOut == 0L)
                         return;
-                        
+
                     // Read and potentially verify the GZIP trailer: CRC32 and  size mod 2^32
                     byte[] trailer = new byte[8];
 
@@ -848,7 +849,7 @@ namespace Aspose.Zip
                 }
             }
         }
-        
+
 
 
         private void end()
@@ -869,7 +870,8 @@ namespace Aspose.Zip
 
         public override void Close()
         {
-            if (_stream == null) return;
+            if (_stream == null)
+                return;
             try
             {
                 finish();
@@ -877,7 +879,8 @@ namespace Aspose.Zip
             finally
             {
                 end();
-                if (!_leaveOpen) _stream.Close();
+                if (!_leaveOpen)
+                    _stream.Close();
                 _stream = null;
             }
         }
@@ -944,9 +947,9 @@ namespace Aspose.Zip
             int n = _stream.Read(header, 0, header.Length);
 
             // workitem 8501: handle edge case (decompress empty stream)
-            if (n==0)
+            if (n == 0)
                 return 0;
-            
+
             if (n != 10)
                 throw new ZlibException("Not a valid GZIP stream.");
 
@@ -978,7 +981,7 @@ namespace Aspose.Zip
                 int bytesRead = Read(_buf1, 0, 1);
                 if (bytesRead != 1)
                     throw new InvalidDataException("Failed to read CRC16 byte. Unexpected end of stream.");
-            }    
+            }
 
             return totalBytesRead;
         }
@@ -993,7 +996,8 @@ namespace Aspose.Zip
 
             if (_streamMode == StreamMode.Undefined)
             {
-                if (!_stream.CanRead) throw new ZlibException("The stream is not readable.");
+                if (!_stream.CanRead)
+                    throw new ZlibException("The stream is not readable.");
                 // for the first read, set up some controls.
                 _streamMode = StreamMode.Reader;
                 // (The first reference to _z goes through the private accessor which
@@ -1011,14 +1015,20 @@ namespace Aspose.Zip
             if (_streamMode != StreamMode.Reader)
                 throw new ZlibException("Cannot Read after Writing.");
 
-            if (count == 0) return 0;
-            if (nomoreinput && _wantCompress) return 0;  // workitem 8557
-            if (buffer == null) throw new ArgumentNullException("buffer");
-            if (count < 0) throw new ArgumentOutOfRangeException("count");
-            if (offset < buffer.GetLowerBound(0)) throw new ArgumentOutOfRangeException("offset");
-            if ((offset + count) > buffer.GetLength(0)) throw new ArgumentOutOfRangeException("count");
+            if (count == 0)
+                return 0;
+            if (nomoreinput && _wantCompress)
+                return 0;  // workitem 8557
+            if (buffer == null)
+                throw new ArgumentNullException("buffer");
+            if (count < 0)
+                throw new ArgumentOutOfRangeException("count");
+            if (offset < buffer.GetLowerBound(0))
+                throw new ArgumentOutOfRangeException("offset");
+            if ((offset + count) > buffer.GetLength(0))
+                throw new ArgumentOutOfRangeException("count");
 
-            int rc= 0;
+            int rc = 0;
 
             // set up the output of the deflate/inflate codec:
             _z.OutputBuffer = buffer;
@@ -1042,10 +1052,10 @@ namespace Aspose.Zip
                         nomoreinput = true;
 
                 }
-                    // we have data in InputBuffer; now compress or decompress as appropriate
-                    rc = (_wantCompress)
-                        ? _z.Deflate(_flushMode)
-                        : _z.Inflate(_flushMode);
+                // we have data in InputBuffer; now compress or decompress as appropriate
+                rc = (_wantCompress)
+                    ? _z.Deflate(_flushMode)
+                    : _z.Inflate(_flushMode);
 
                 if (nomoreinput && (rc == ZlibConstants.Z_BUF_ERROR))
                     return 0;
@@ -1067,7 +1077,7 @@ namespace Aspose.Zip
                 {
                     // deferred
                 }
-                
+
                 if (nomoreinput && _wantCompress)
                 {
                     // no more input data available; therefore we flush to
@@ -1077,8 +1087,8 @@ namespace Aspose.Zip
                     if (rc != ZlibConstants.Z_OK && rc != ZlibConstants.Z_STREAM_END)
                         throw new ZlibException(String.Format("Deflating:  rc={0}  msg={1}", rc, _z.Message));
                 }
-            } 
-               
+            }
+
             rc = (count - _z.AvailableBytesOut);
 
             // calculate CRC after reading
@@ -1138,8 +1148,8 @@ namespace Aspose.Zip
                                       System.Reflection.BindingFlags.CreateInstance,
                                       null,
                                       null,
-                                      new object[] {ms, CompressionMode.Compress, CompressionLevel.BestCompression});
-                    
+                                      new object[] { ms, CompressionMode.Compress, CompressionLevel.BestCompression });
+
                 using (compressor)
                 {
                     compressor.Write(uncompressed, 0, uncompressed.Length);
@@ -1164,17 +1174,17 @@ namespace Aspose.Zip
                                           System.Reflection.BindingFlags.CreateInstance,
                                           null,
                                           null,
-                                          new object[] {input, CompressionMode.Decompress});
-                    
+                                          new object[] { input, CompressionMode.Decompress });
+
                     using (decompressor)
                     {
                         int n;
-                        while ((n= decompressor.Read(working, 0, working.Length)) !=0)
+                        while ((n = decompressor.Read(working, 0, working.Length)) != 0)
                         {
                             output.Write(working, 0, n);
                         }
                     }
-                    
+
                     // reset to allow read from start
                     output.Seek(0, SeekOrigin.Begin);
                     StreamReader sr = new StreamReader(output, encoding);
@@ -1194,8 +1204,8 @@ namespace Aspose.Zip
                                       System.Reflection.BindingFlags.CreateInstance,
                                       null,
                                       null,
-                                      new object[] {ms, CompressionMode.Compress, CompressionLevel.BestCompression});
-                    
+                                      new object[] { ms, CompressionMode.Compress, CompressionLevel.BestCompression });
+
                 using (compressor)
                 {
                     compressor.Write(b, 0, b.Length);
@@ -1218,12 +1228,12 @@ namespace Aspose.Zip
                                           System.Reflection.BindingFlags.CreateInstance,
                                           null,
                                           null,
-                                          new object[] {input, CompressionMode.Decompress});
-                    
+                                          new object[] { input, CompressionMode.Decompress });
+
                     using (decompressor)
                     {
                         int n;
-                        while ((n= decompressor.Read(working, 0, working.Length)) !=0)
+                        while ((n = decompressor.Read(working, 0, working.Length)) != 0)
                         {
                             output.Write(working, 0, n);
                         }

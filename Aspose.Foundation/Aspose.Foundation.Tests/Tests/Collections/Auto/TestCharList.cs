@@ -615,7 +615,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             CharList list = new CharList(10);
             Assert.That(list.Capacity, Is.EqualTo(10));
-            
+
             list.Capacity = 5;
             Assert.That(list.Capacity, Is.EqualTo(5));
         }

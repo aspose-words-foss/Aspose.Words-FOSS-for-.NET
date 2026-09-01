@@ -41,7 +41,7 @@ namespace Aspose.JavaMs.Tests.System
             iArray = obj as int[];
             Assert.That(obj, Is.EqualTo(iArray));
 
-            int[] array = {1, 2, 3};
+            int[] array = { 1, 2, 3 };
             iArray = array as int[];
             Assert.That(array, Is.EqualTo(iArray));
 

@@ -15,13 +15,13 @@ namespace Aspose.TestFx
             // Fix Resharper and Rider empty Test Session Output
             EnsureConsoleTraceListenerUsesConsoleOutWriter();
 
-            // Fix failed tests in Resharper and Rider caused by difference in Trace.Fail behaviour.
+            // Fix failed tests in Resharper and Rider caused by difference in Trace.Fail behavior.
             DoNotThrowOnTraceFail();
         }
 
         private static void EnsureConsoleTraceListenerUsesConsoleOutWriter()
         {
-#if !NETSTANDARD && !JAVA && !CPLUSPLUS
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS
             foreach (TraceListener listener in Trace.Listeners)
             {
                 ConsoleTraceListener consoleTraceListener = listener as ConsoleTraceListener;
@@ -38,7 +38,7 @@ namespace Aspose.TestFx
 
         private static void DoNotThrowOnTraceFail()
         {
-#if !NETSTANDARD && !JAVA && !CPLUSPLUS
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS
             for (int index = 0; index < Trace.Listeners.Count; index++)
             {
                 TraceListener listener = Trace.Listeners[index];

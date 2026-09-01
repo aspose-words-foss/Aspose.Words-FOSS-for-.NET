@@ -23,7 +23,7 @@ namespace Aspose.IO
         /// True for MSB first bit ordering.
         /// False for LSB first bit ordering.
         /// </param>
-        public BitBinaryReader(Stream stream, bool useMsbFirstBitOrdering) : base (useMsbFirstBitOrdering)
+        public BitBinaryReader(Stream stream, bool useMsbFirstBitOrdering) : base(useMsbFirstBitOrdering)
         {
             mReader = new BinaryReader(stream);
         }
@@ -52,7 +52,7 @@ namespace Aspose.IO
         {
             // kvk: I'm not quite sure how to implement reading of values with LSB ordering.
             // While it is not required just throw NotSupportedException.
-            if(!UseMsbFirstBitOrdering)
+            if (!UseMsbFirstBitOrdering)
                 throw new NotSupportedException("Reading LSB ordered values is not supported.");
 
             if (length < 0 || length > 63)

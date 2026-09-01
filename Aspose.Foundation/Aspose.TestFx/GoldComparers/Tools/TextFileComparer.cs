@@ -16,9 +16,9 @@ namespace Aspose.TestFx.GoldComparers
         {
             TextFileComparer comparer = new TextFileComparer();
             comparer.ComparerParams = comparerParams;
-            comparer.ExecuteCore(comparerParams.Title, 
-                                comparerParams.FileNameOut, 
-                                comparerParams.FileNameGold, 
+            comparer.ExecuteCore(comparerParams.Title,
+                                comparerParams.FileNameOut,
+                                comparerParams.FileNameGold,
                                 comparerParams.FileNameMs,
                                 comparerParams.FileNameSrc);
         }
@@ -93,7 +93,7 @@ namespace Aspose.TestFx.GoldComparers
             bool restorePosition = (ComparerParams != null) ? ComparerParams.DialogRestorePosition : false;
             // The compare did not go well, bring up the user interface.
             ComparerFormResult userChoice = AsposeComparer.ExecuteTextTestUI(title, fileNameOut, fileNameGold,
-                  fileNameOriginalGold, fileNameSource, fileNameMS, 
+                  fileNameOriginalGold, fileNameSource, fileNameMS,
                   topmost, restorePosition);
 
             // If the user clicks Accept we override the gold file, otherwise propagate exception to the caller.

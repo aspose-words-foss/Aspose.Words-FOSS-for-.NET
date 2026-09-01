@@ -69,7 +69,7 @@ namespace Aspose.Crypto
 
         public static CertificateHolderInternal Create(string storefileName, string password)
         {
-             // WORDSNET-25903 We should access certificate file in read-only mode.
+            // WORDSNET-25903 We should access certificate file in read-only mode.
             using (FileStream storeStream = File.Open(storefileName, FileMode.Open, FileAccess.Read))
                 return CryptoUtilPal.CreateHolderForPkcs12(storeStream, password);
         }
@@ -83,7 +83,7 @@ namespace Aspose.Crypto
 
         public static CertificateHolderInternal Create()
         {
-           return new CertificateHolderInternal();
+            return new CertificateHolderInternal();
         }
 
         #endregion

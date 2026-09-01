@@ -35,7 +35,7 @@ namespace Aspose
         /// </summary>
         public static string PadRight(string s, int totalWidth, char paddingChar)
         {
-            return s.PadRight(totalWidth,paddingChar);
+            return s.PadRight(totalWidth, paddingChar);
         }
     }
 }

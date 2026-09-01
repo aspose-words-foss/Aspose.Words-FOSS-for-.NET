@@ -107,15 +107,15 @@ namespace Aspose.Tests.Fonts
         [TestCase(@"TrueType\CalibriBlock3.lzcomp", @"TrueType\CalibriBlock3.bin")]
         public void TestLzCompCalibri(string compressedFile, string decompressedFile)
         {
-            VerifyLzCompDecompression( TestFxUtil.BuildTestFileName(compressedFile), TestFxUtil.BuildTestFileName(decompressedFile));
+            VerifyLzCompDecompression(TestFxUtil.BuildTestFileName(compressedFile), TestFxUtil.BuildTestFileName(decompressedFile));
         }
 
         [Test]
         public void TestMagnitudeReader()
         {
             // These values are taken from MTX specification.
-            byte[] data = new byte[] {0x90, 0x48, 0x84};
-            short[] expectedResult = new short[] {0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0};
+            byte[] data = new byte[] { 0x90, 0x48, 0x84 };
+            short[] expectedResult = new short[] { 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0 };
 
             using (MemoryStream stream = new MemoryStream(data))
             {
@@ -136,7 +136,7 @@ namespace Aspose.Tests.Fonts
         {
             // These values are taken from MTX specification.
             // As there is just a code snippet, we should extend it with values which are assumed throughout a fragment of codes.
-            short[] data = new short[] { 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1};
+            short[] data = new short[] { 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1 };
             byte[] expectedResult = new byte[] { 0x90, 0x48, 0x84, 0x00 };
 
             using (MemoryStream stream = new MemoryStream())
@@ -185,7 +185,7 @@ namespace Aspose.Tests.Fonts
         [Test]
         public void TestCvtRoundtrip()
         {
-            byte[] originalCvt = {0x20, 0xA8, 0xD9, 0x10, 0xAA, 0xBB, 0xFE, 0xEE, 0xEE, 0x01, 0xEE, 0xFF, 0xEE, 0xFE, 0xFF, 0xFF, 0xFA, 0xFA};
+            byte[] originalCvt = { 0x20, 0xA8, 0xD9, 0x10, 0xAA, 0xBB, 0xFE, 0xEE, 0xEE, 0x01, 0xEE, 0xFF, 0xEE, 0xFE, 0xFF, 0xFF, 0xFA, 0xFA };
 
             byte[] encodedCvt = CtfEncoder.EncodeCvtTable(originalCvt);
             byte[] decodedCvt = CtfDecoder.DecodeCvtTable(encodedCvt);
@@ -342,7 +342,7 @@ namespace Aspose.Tests.Fonts
         [Test]
         public void Test255UShort()
         {
-            int [] originalValues = {0, 1, 253, 250, 254, 255, 256, 506, 507, 508, 509, 761, 762, 65535};
+            int[] originalValues = { 0, 1, 253, 250, 254, 255, 256, 506, 507, 508, 509, 761, 762, 65535 };
 
             using (MemoryStream encodedStream = new MemoryStream())
             {

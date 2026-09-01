@@ -77,7 +77,7 @@ namespace Aspose.Tests.Bidi
             CheckBidiRun(" - 3.5", true, 2, runs[2]);
             CheckBidiRun(" posts", false, 2, runs[3]);
         }
-        
+
         [Test]
         public void Test2()
         {
@@ -90,7 +90,7 @@ namespace Aspose.Tests.Bidi
             Assert.That(runs.Length, Is.EqualTo(1));
             CheckBidiRun("1. שנב 123 456 גקכ.", true, 0, runs[0]);
         }
-        
+
         [Test]
         public void Test3()
         {
@@ -105,7 +105,7 @@ namespace Aspose.Tests.Bidi
             CheckBidiRun("\uD840\uDC00\uD840\uDC01\uD840\uDC02", false, 0, runs[1]);
             CheckBidiRun(" \u05D3\u05D4\u05D5", true, 0, runs[2]);
         }
-        
+
         [Test]
         public void Test4()
         {
@@ -179,14 +179,14 @@ namespace Aspose.Tests.Bidi
             BidiRun[] runs = BidiAlgorithm.Apply(sourceRuns, false, false, true);
 
             Assert.That(runs.Length, Is.EqualTo(8));
-            CheckBidiRun("].",          true,   0, runs[0]);
-            CheckBidiRun("2",           true,   1, runs[1]);
-            CheckBidiRun("First",       false,  0, runs[2]);
-            CheckBidiRun("1[",          true,   0, runs[3]);
-            CheckBidiRun("{Second}!",   false,  1, runs[4]);
-            CheckBidiRun(")?",          true,   2, runs[5]);
-            CheckBidiRun("Third",       false,  2, runs[6]);
-            CheckBidiRun("3(",          true,   2, runs[7]);
+            CheckBidiRun("].", true, 0, runs[0]);
+            CheckBidiRun("2", true, 1, runs[1]);
+            CheckBidiRun("First", false, 0, runs[2]);
+            CheckBidiRun("1[", true, 0, runs[3]);
+            CheckBidiRun("{Second}!", false, 1, runs[4]);
+            CheckBidiRun(")?", true, 2, runs[5]);
+            CheckBidiRun("Third", false, 2, runs[6]);
+            CheckBidiRun("3(", true, 2, runs[7]);
         }
 
         /// <summary>

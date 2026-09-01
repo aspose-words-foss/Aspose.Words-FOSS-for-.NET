@@ -173,7 +173,16 @@ namespace Aspose.Drawing
         /// </summary>
         public PointF TransformPoint(PointF point)
         {
-            PointF result = new PointF(point.X, point.Y);
+            return TransformPoint(point.X, point.Y);
+        }
+
+        /// <summary>
+        /// Applies the geometric transform represented by this Matrix to 
+        /// a specified point.
+        /// </summary>
+        public PointF TransformPoint(float px, float py)
+        {
+            PointF result = new PointF(px, py);
             int state = mState;
 
             //Used 'points[index]' for assignment since PointF is value type in .Net.

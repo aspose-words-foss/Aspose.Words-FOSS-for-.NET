@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>Aspose.Words.FOSS</id>
-		<version>26.2.0</version>
+		<version>26.3.0</version>
 		<title>Aspose.Words FOSS for .NET</title>
 		<authors>Aspose</authors>
 		<license type="expression">MIT</license>

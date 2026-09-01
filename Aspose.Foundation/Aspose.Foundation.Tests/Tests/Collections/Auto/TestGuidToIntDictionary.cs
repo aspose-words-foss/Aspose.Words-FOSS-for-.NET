@@ -174,7 +174,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             GuidToIntDictionary dictionary = new GuidToIntDictionary();
             dictionary.Add(gFirstKey, gFirstValue);
-            
+
             GuidToIntDictionary.Enumerator enumerator = dictionary.GetEnumerator();
             bool isMoved = enumerator.MoveNext();
             Assert.That(isMoved, Is.True);

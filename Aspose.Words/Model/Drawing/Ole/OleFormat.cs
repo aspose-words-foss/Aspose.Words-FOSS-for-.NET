@@ -53,7 +53,7 @@ namespace Aspose.Words.Drawing
         }
 #endif
         [JavaInternal]
-        public void Save([CppIOStreamWrapper(IOStreamType.OStream)]Stream stream)
+        public void Save([CppIOStreamWrapper(IOStreamType.OStream)] Stream stream)
         {
             if (stream == null)
                 throw new ArgumentNullException("stream");
@@ -259,7 +259,7 @@ namespace Aspose.Words.Drawing
             {
                 string sourceFullName = (string)FetchAttr(ShapeAttr.OleSourceFullName);
 
-                if(!StringUtil.HasChars(sourceFullName) && (OlePackage != null) && OlePackage.IsLink)
+                if (!StringUtil.HasChars(sourceFullName) && (OlePackage != null) && OlePackage.IsLink)
                     sourceFullName = OlePackage.FileName;
 
                 return sourceFullName;
@@ -509,5 +509,5 @@ namespace Aspose.Words.Drawing
         [CodePorting.Translator.Cs2Cpp.CppWeakPtr]
         private readonly IShapeAttrSource mParent;
         private OlePackage mOlePackageCache;
-   }
+    }
 }

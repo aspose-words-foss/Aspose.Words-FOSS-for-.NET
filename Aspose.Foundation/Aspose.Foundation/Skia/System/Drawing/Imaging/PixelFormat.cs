@@ -1,12 +1,12 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 12/12/2017 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 namespace System.Drawing.Imaging
 {
     public enum PixelFormat
     {
-        Alpha= 0x40000,
+        Alpha = 0x40000,
         Canonical = 0x200000,
         DontCare = 0,
         Extended = 0x100000,

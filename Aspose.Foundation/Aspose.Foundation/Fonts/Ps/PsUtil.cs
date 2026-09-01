@@ -43,7 +43,7 @@ namespace Aspose.Fonts.Ps
             Array.Sort(indices);
             return indices;
         }
-        
+
         /// <summary>
         /// Array of glyphs names for Latin encoding. 
         /// These names are used for generation Encoding in Type42 font if source true type font

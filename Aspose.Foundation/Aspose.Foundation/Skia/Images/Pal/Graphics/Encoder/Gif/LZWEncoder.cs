@@ -2,7 +2,7 @@
 // 07/11/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using System.IO;
@@ -111,7 +111,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
                         }
                     } while (htab[i] >= 0);
 
-                    if(continueOuterLoop)
+                    if (continueOuterLoop)
                         continue;
                 }
                 Output(ent, outs);
@@ -313,7 +313,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
 
         private int cur_accum = 0;
         private int cur_bits = 0;
-        private readonly int[] masks = {0x0000, 0x0001, 0x0003, 0x0007, 0x000F, 0x001F, 0x003F, 0x007F, 0x00FF, 0x01FF, 0x03FF, 0x07FF, 0x0FFF, 0x1FFF, 0x3FFF, 0x7FFF, 0xFFFF};
+        private readonly int[] masks = { 0x0000, 0x0001, 0x0003, 0x0007, 0x000F, 0x001F, 0x003F, 0x007F, 0x00FF, 0x01FF, 0x03FF, 0x07FF, 0x0FFF, 0x1FFF, 0x3FFF, 0x7FFF, 0xFFFF };
 
         // Number of characters so far in this 'packet'
         private int a_count;

@@ -28,13 +28,13 @@ namespace Aspose.TestFx.GoldComparers
         private static string JoinFileNames(params string[] filenames)
         {
             Debug.Assert(filenames.Length != 0);
-            
+
             List<string> fullFilePaths = new List<string>();
             foreach (string filename in filenames)
             {
                 if (string.IsNullOrEmpty(filename))
                     continue;
-                
+
                 fullFilePaths.Add(Path.GetFullPath(filename));
             }
 

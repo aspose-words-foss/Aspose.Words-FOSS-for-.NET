@@ -128,7 +128,7 @@ namespace Aspose.JavaMs.Tests.System.IO
             sw2.Close();
         }
 
-        public static string  GetTestDir(Type testClass)
+        public static string GetTestDir(Type testClass)
         {
             // Use TestOut directory for creating test directories to avoid UnautorizedAccessException when run with NUnit3.
             return TestFxUtil.BuildOutFileName(testClass.Name, "", "");

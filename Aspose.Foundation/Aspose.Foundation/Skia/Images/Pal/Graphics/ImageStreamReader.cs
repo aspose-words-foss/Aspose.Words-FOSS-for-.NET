@@ -2,10 +2,10 @@
 // 08/12/2017 by Vyacheslav Durin
 // Ported from Java
 
-#if NETSTANDARD
-using Aspose.IO;
+#if NETSTANDARD || NET
 using System;
 using System.IO;
+using Aspose.IO;
 
 namespace Aspose.Images.Pal.Graphics
 {

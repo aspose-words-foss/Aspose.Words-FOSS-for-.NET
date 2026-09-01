@@ -35,10 +35,14 @@ namespace Aspose.Numbering
         {
             switch (value)
             {
-                case 1: return 10;
-                case 3: return 1000;
-                case 4: return 10000;
-                case 5: return 100000;
+                case 1:
+                    return 10;
+                case 3:
+                    return 1000;
+                case 4:
+                    return 10000;
+                case 5:
+                    return 100000;
                 default:
                     Debug.Fail("For now, other values aren't used. Add them if needed.");
                     return 0;

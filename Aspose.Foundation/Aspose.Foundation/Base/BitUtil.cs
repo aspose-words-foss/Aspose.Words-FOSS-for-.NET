@@ -21,8 +21,8 @@ namespace Aspose
                 ((value & 0x00000000000000FF) << 56) |
                 ((value & 0x000000000000FF00) << 40) |
                 ((value & 0x0000000000FF0000) << 24) |
-                ((value & 0x00000000FF000000) << 8)  |
-                ((value & 0x000000FF00000000) >> 8)  |
+                ((value & 0x00000000FF000000) << 8) |
+                ((value & 0x000000FF00000000) >> 8) |
                 ((value & 0x0000FF0000000000) >> 24) |
                 ((value & 0x00FF000000000000) >> 40) |
                 ((value >> 56) & 0x00000000000000FF);
@@ -123,10 +123,10 @@ namespace Aspose
         [CppSkipDefinition(false)] // replaced with compiler intrinsics
         public static int CountBitsInt32(int i)
         {
-            const int MASK1  = 0x55555555;
-            const int MASK2  = 0x33333333;
-            const int MASK4  = 0x0f0f0f0f;
-            const int MASK8  = 0x00ff00ff;
+            const int MASK1 = 0x55555555;
+            const int MASK2 = 0x33333333;
+            const int MASK4 = 0x0f0f0f0f;
+            const int MASK8 = 0x00ff00ff;
             const int MASK16 = 0x0000ffff;
 
             i = (i & MASK1) + ((i >> 1) & MASK1);
@@ -145,10 +145,10 @@ namespace Aspose
         [CppSkipDefinition(false)] // replaced with compiler intrinsics
         public static int CountBitsInt64(long i)
         {
-            const long MASK1  = 0x5555555555555555;
-            const long MASK2  = 0x3333333333333333;
-            const long MASK4  = 0x0f0f0f0f0f0f0f0f;
-            const long MASK8  = 0x00ff00ff00ff00ff;
+            const long MASK1 = 0x5555555555555555;
+            const long MASK2 = 0x3333333333333333;
+            const long MASK4 = 0x0f0f0f0f0f0f0f0f;
+            const long MASK8 = 0x00ff00ff00ff00ff;
             const long MASK16 = 0x0000ffff0000ffff;
             const long MASK32 = 0x00000000ffffffff;
 

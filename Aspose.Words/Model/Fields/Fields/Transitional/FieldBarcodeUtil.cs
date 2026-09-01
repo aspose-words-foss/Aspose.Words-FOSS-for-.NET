@@ -7,11 +7,6 @@ using System.Text;
 using Aspose.Images;
 using Aspose.JavaAttributes;
 using Aspose.Words.Drawing;
-#if NETSTANDARD
-using Image = SkiaSharp.SKBitmap;
-#else
-using Image = System.Drawing.Image;
-#endif
 
 namespace Aspose.Words.Fields
 {

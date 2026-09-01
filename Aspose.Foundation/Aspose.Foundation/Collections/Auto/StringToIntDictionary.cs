@@ -516,7 +516,7 @@ namespace Aspose.Collections
                 get
                 {
                     EnsureIndex();
-                    return mDictionary.mKeys[mIndex]; 
+                    return mDictionary.mKeys[mIndex];
                 }
             }
 
@@ -599,7 +599,7 @@ namespace Aspose.Collections
                     [CppConstMethod]
                     get { return Current; }
                 }
- 
+
                 object IEnumerator.Current
                 {
                     get { return Current; }

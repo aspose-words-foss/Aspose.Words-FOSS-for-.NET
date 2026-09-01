@@ -41,7 +41,7 @@ namespace Aspose.Tests.Fonts
             Assert.That(SfntTableRecordEntry.CalculateChecksum(b1, 0, 3), Is.EqualTo(0x01020300));
         }
 
-#if !NETSTANDARD // SystemPal.GetWindowsFontsFolder() is not available when run on device in Xamarin.Android. Use Platform to exclude this test.
+#if NETFRAMEWORK // SystemPal.GetWindowsFontsFolder() is not available when run on device in Xamarin.Android. Use Platform to exclude this test.
         /// <summary>
         /// Check that the checksum I calculate matches checksum in the file.
         /// </summary>

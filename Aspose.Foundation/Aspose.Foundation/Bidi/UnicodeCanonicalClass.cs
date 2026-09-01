@@ -11,19 +11,19 @@ namespace Aspose.Bidi
         ///<summary>Not Reordered</summary>
         ///<remarks>Spacing, split, enclosing, reordrant, and Tibetan subjoined.</remarks>
         NR = 0,
-        
+
         ///<summary>Overlays and interior</summary>
         OV = 1,
-        
+
         ///<summary>Nuktas</summary>
         NK = 7,
-        
+
         ///<summary>Hiragana/Katakana voicing marks</summary>
         KV = 8,
 
         ///<summary>Viramas</summary>
         VR = 9,
-        
+
         #region Fixed Position Classes
         /// <summary>
         /// General class level 10.
@@ -786,63 +786,63 @@ namespace Aspose.Bidi
         /// </summary>
         CLASS_199 = 199,
         #endregion
-        
+
         ///<summary>Attached Below Left</summary>
         ATBL = 200,
 
         ///<summary>Attached Below</summary>
         ATB = 202,
-        
+
         ///<summary>Attached Below Right</summary>
         ATBR = 204,
-        
+
         ///<summary>Attached Left</summary>
         ///<remarks>Reordrant around single base character.</remarks>
         ATL = 208,
-        
+
         ///<summary>Attached Right</summary>
         ATR = 210,
-        
+
         ///<summary>Attached Above Left</summary>
         ATAL = 212,
-        
+
         ///<summary>Attached Above</summary>
         ATA = 214,
-        
+
         ///<summary>Attached Above Right</summary>
         ATAR = 216,
-        
+
         ///<summary>Below Left</summary>
         BL = 218,
-        
+
         ///<summary>Below</summary>
         B = 220,
-        
+
         ///<summary>Below Right</summary>
         BR = 222,
-        
+
         ///<summary>Left</summary>
         ///<remarks>Reordrant around single base character.</remarks>
         L = 224,
-        
+
         ///<summary>Right</summary>
         R = 226,
-        
+
         ///<summary>Above Left</summary>
         AL = 228,
-        
+
         ///<summary>Above</summary>
         A = 230,
-        
+
         ///<summary>Above Right</summary>
         AR = 232,
-        
+
         ///<summary>Double Below</summary>
         DB = 233,
-        
+
         ///<summary>Double Above</summary>
         DA = 234,
-        
+
         ///<summary>Iota Subscript</summary>
         IS = 240
     }

@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 01/10/2018 by Konstantin Kornilov
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System.Drawing;
 using System.Globalization;
 using System.Threading;

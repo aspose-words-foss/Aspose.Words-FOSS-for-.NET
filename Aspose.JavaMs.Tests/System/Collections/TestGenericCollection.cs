@@ -14,7 +14,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
         [Test]
         public void TestEnumerator()
         {
-            string[] array = new[] {"abc", "bcd", "cde"};
+            string[] array = new[] { "abc", "bcd", "cde" };
             TestCollection coll = new TestCollection(array);
             Assert.That(coll, IsNot.Null());
             Assert.That(3, Is.EqualTo(coll.Count));
@@ -30,7 +30,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
         [Test]
         public void TestCollectionEnumerator()
         {
-            string[] array = new[] {"abc", "bcd", "cde"};
+            string[] array = new[] { "abc", "bcd", "cde" };
             TestCollection coll = new TestCollection(array);
             for (int index = 0; coll.MoveNext(); index++)
             {
@@ -129,7 +129,7 @@ namespace Aspose.JavaMs.Tests.System.Collections
 
             #endregion
 
-            private string[] mArray ;
+            private string[] mArray;
             private int mIndex = -1;
         }
     }

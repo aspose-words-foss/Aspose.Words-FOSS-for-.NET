@@ -15,7 +15,7 @@ namespace Aspose.Words.RW.Vml
     /// Contains static methods for conversion of Color values to/from VML string representation.
     /// Note: I have decided to throw on unknown colors, at least for some time after WordML release, until we decide otherwise.
     /// </summary>
-    internal static class VmlColor 
+    internal static class VmlColor
     {
         /// <summary>
         /// Converts VML color representation to <see cref="System.Drawing.Color"/>.
@@ -29,7 +29,7 @@ namespace Aspose.Words.RW.Vml
         internal static DrColor VmlToColor(string color)
         {
             Match match = gRegexColor.Match(color);
-            
+
             string action = match.Groups[ActionGroup].Value;
             string name = match.Groups[NameGroup].Value;
             string codeSix = match.Groups[CodeSixGroup].Value;
@@ -109,7 +109,7 @@ namespace Aspose.Words.RW.Vml
             else if (StringUtil.HasChars(codeHashThree))
             {
                 // The color is expressed in short code, like '#38B'. The full color code for it will be '#3388BB'
-                
+
                 // Convert short color code to full color code.
                 StringBuilder fullColorCodeBuilder = new StringBuilder(6);
 
@@ -327,17 +327,17 @@ namespace Aspose.Words.RW.Vml
             @"^(" +
             // 'fill darken(51)'
             @"(([a-z]+) ([a-z]+)\((\d+)\))|" +              // Groups: Action1 Action2(ActionCode). The whole thing is the "action" group.
-            // 'FFFFFF'
+                                                            // 'FFFFFF'
             @"([0-9a-f]{6})|" +                             // Group: CodeSix
-            // 'yellow' and sometimes 'white [3102]' etc.
+                                                            // 'yellow' and sometimes 'white [3102]' etc.
             @"(([a-z]+).*)|" +                              // Group: Name
-            // '#3388BB' and sometimes '#9bbb59 [rgb(1,2,3)]' etc.
+                                                            // '#3388BB' and sometimes '#9bbb59 [rgb(1,2,3)]' etc.
             @"(#([0-9a-f]{6}).*)|" +                        // Group: CodeHashSix
-            // '#38B' and sometimes '#ddd [3204]'
+                                                            // '#38B' and sometimes '#ddd [3204]'
             @"(#([0-9a-f]{3}).*)|" +                        // Group: CodeHashThree
-            // '#0' WORDSNET-11964
+                                                            // '#0' WORDSNET-11964
             @"(#[0-9a-f])" +                                // Group: CodeHashOne
-            @")$", 
+            @")$",
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private static readonly Regex gRegexBaseColor =

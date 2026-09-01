@@ -33,8 +33,8 @@ using Aspose.Words.BuildingBlocks;
 using Aspose.Words.WebExtensions;
 using Aspose.Words.DigitalSignatures;
 using Aspose.Words.Notes;
-using SaveOptions=Aspose.Words.Saving.SaveOptions;
-#if NETSTANDARD
+using SaveOptions = Aspose.Words.Saving.SaveOptions;
+#if NETSTANDARD || NET
 using Graphics = SkiaSharp.SKCanvas;
 #else
 using System.Drawing.Printing;
@@ -43,7 +43,7 @@ using System.Web;
 
 namespace Aspose.Words
 {
-#if NETSTANDARD // alexnosk: I am not sure how to be with xml comments where <see cref> is used, for now use preprocessor.
+#if NETSTANDARD || NET // alexnosk: I am not sure how to be with xml comments where <see cref> is used, for now use preprocessor.
     /// <summary>
     /// Represents a Word document.
     /// <para>To learn more, visit the <a href="https://docs.aspose.com/words/net/working-with-document/">Working with Document</a> documentation article.</para>
@@ -359,7 +359,7 @@ namespace Aspose.Words
         ///
         /// <javaName>Document(java.io.InputStream stream)</javaName>
         // JAVA: the first public api change map will be used: Stream -> java.io.InputStream
-        public Document([CppIOStreamWrapper(IOStreamType.IStream)]Stream stream) : this(stream, null)
+        public Document([CppIOStreamWrapper(IOStreamType.IStream)] Stream stream) : this(stream, null)
         {
             // Please NOTE - It is forbidden to use public ctors inside code to avoid extra credit billings.
             // Use internal Document ctors instead.
@@ -375,7 +375,7 @@ namespace Aspose.Words
         ///
         /// <javaName>Document(java.io.InputStream stream, com.aspose.words.LoadOptions loadOptions)</javaName>
         // JAVA: the first public api change map will be used: Stream -> java.io.InputStream
-        public Document([CppIOStreamWrapper(IOStreamType.IStream)]Stream stream, LoadOptions loadOptions) : this(DocumentCtorMode.EmptyDocumentNode)
+        public Document([CppIOStreamWrapper(IOStreamType.IStream)] Stream stream, LoadOptions loadOptions) : this(DocumentCtorMode.EmptyDocumentNode)
         {
             // Please NOTE - It is forbidden to use public ctors inside code to avoid extra credit billings.
             // Use internal Document ctors instead.
@@ -767,8 +767,8 @@ namespace Aspose.Words
 
         private void InitializeThemeIfNeeded()
         {
-                if(GetThemeInternal() == null)
-                    SetThemeInternal(Theme.BuiltInTheme.Clone());
+            if (GetThemeInternal() == null)
+                SetThemeInternal(Theme.BuiltInTheme.Clone());
         }
 
         internal override Theme GetThemeInternal()
@@ -780,8 +780,8 @@ namespace Aspose.Words
         {
             mTheme = theme;
             // WORDSNET-15915 Attach document to update colors when theme is changed.
-            if(mTheme != null)
-            mTheme.Attach(this);
+            if (mTheme != null)
+                mTheme.Attach(this);
         }
 
         /// <summary>
@@ -1049,7 +1049,7 @@ namespace Aspose.Words
         {
             get
             {
-                if(mFontProvider == null)
+                if (mFontProvider == null)
                     mFontProvider = new DocumentFontProvider(this);
                 return mFontProvider;
             }
@@ -1129,10 +1129,7 @@ namespace Aspose.Words
 
             // WORDSNET-28870 We need to create a copy of CompObj to save a cloned document in a thread-safe manner.
             if (mCompObj != null)
-            {
-                lhs.mCompObj = new MemoryStream();
-                mCompObj.WriteTo(lhs.mCompObj);
-            }
+                CloneCompObj(lhs);
 
             // These objects we do not change therefore we do not deep copy them.
             //
@@ -1180,6 +1177,13 @@ namespace Aspose.Words
             return lhs;
         }
 
+        [JavaConvertCheckedExceptions]
+        private void CloneCompObj(Document lhs)
+        {
+            lhs.mCompObj = new MemoryStream();
+            mCompObj.WriteTo(lhs.mCompObj);
+        }
+
         /// <summary>
         /// Performs a deep copy of the <see cref="Document"/>.
         /// </summary>
@@ -1187,7 +1191,7 @@ namespace Aspose.Words
         /// <dev>Kept to remain compatible with the old API.</dev>
         public Document Clone()
         {
-            Document newDoc =  (Document)Clone(true);
+            Document newDoc = (Document)Clone(true);
             return newDoc;
         }
 
@@ -1409,7 +1413,7 @@ namespace Aspose.Words
         }
 #endif
         [JavaInternal]
-        public SaveOutputParameters Save([CppIOStreamWrapper(IOStreamType.OStream)]Stream stream, SaveFormat saveFormat)
+        public SaveOutputParameters Save([CppIOStreamWrapper(IOStreamType.OStream)] Stream stream, SaveFormat saveFormat)
         {
             return Save(stream, SaveOptions.CreateSaveOptions(saveFormat));
         }
@@ -1434,7 +1438,7 @@ namespace Aspose.Words
         }
 #endif
         [JavaInternal]
-        public SaveOutputParameters Save([CppIOStreamWrapper(IOStreamType.OStream)]Stream stream, SaveOptions saveOptions)
+        public SaveOutputParameters Save([CppIOStreamWrapper(IOStreamType.OStream)] Stream stream, SaveOptions saveOptions)
         {
             if (!saveOptions.IsMultipleMainPartsAllowed && stream == null)
                 throw new ArgumentNullException("stream");
@@ -1443,7 +1447,7 @@ namespace Aspose.Words
         }
 
         // RK There is no HttpResponse in .NET Framework Client Profile.
-#if !NETSTANDARD
+#if NETFRAMEWORK
         /// <summary>
         /// Sends the document to the client browser.
         /// </summary>
@@ -1628,7 +1632,7 @@ namespace Aspose.Words
         private void AutoUpdateTrackRevisions()
         {
             // Do not turn off tracking if it already is turned on.
-            if(!TrackRevisions)
+            if (!TrackRevisions)
                 TrackRevisions = (ProtectionType == ProtectionType.AllowOnlyRevisions);
         }
 
@@ -1709,7 +1713,7 @@ namespace Aspose.Words
             // Field engine tracking is quite complex task so postpone it till later and
             // suspend tracking during this operation.
             using (new SuspendTrackRevisionsDocument(this))
-                using (new SuspendMappedCustomXmlUpdateDocument(this))
+            using (new SuspendMappedCustomXmlUpdateDocument(this))
             {
                 Range.UpdateFields();
             }
@@ -1760,15 +1764,15 @@ namespace Aspose.Words
             // WORDSNET-27660 Suspend XML update during this run join.
             using (new SuspendMappedCustomXmlUpdateDocument(this))
             {
-            NodeCollection paragraphs = GetChildNodes(NodeType.Paragraph, true);
-            StringBuilder sb = new StringBuilder(1024);
-            int joinCount = 0;
+                NodeCollection paragraphs = GetChildNodes(NodeType.Paragraph, true);
+                StringBuilder sb = new StringBuilder(1024);
+                int joinCount = 0;
 
-            foreach (Paragraph para in paragraphs)
-                joinCount += para.JoinRunsWithSameFormatting(sb);
+                foreach (Paragraph para in paragraphs)
+                    joinCount += para.JoinRunsWithSameFormatting(sb, null);
 
-            return joinCount;
-        }
+                return joinCount;
+            }
         }
 
         /// <summary>
@@ -2473,7 +2477,7 @@ namespace Aspose.Words
             return false;
         }
 
-#region Rendering
+        #region Rendering
 
         /// <summary>
         /// A cache for graphics context.
@@ -2683,9 +2687,9 @@ namespace Aspose.Words
                 ((ISectionAttrSource)section).ClearSectionAttrs();
         }
 
-#endregion Footnote and Endnote Options
+        #endregion Footnote and Endnote Options
 
-#region Fields
+        #region Fields
 
         /// <summary>
         /// Gets a <see cref="Fields.FieldOptions"/> object that represents options to control field handling in the document.
@@ -2777,7 +2781,7 @@ namespace Aspose.Words
         }
 
         internal FieldUpdateProgressContext FieldUpdateProgressContext { get; set; }
-#endregion
+        #endregion
 
         // RK It is interesting to note that if you clone a document and attempt to save both documents
         // using different threads, it could screw up because some of these unparsed structures are

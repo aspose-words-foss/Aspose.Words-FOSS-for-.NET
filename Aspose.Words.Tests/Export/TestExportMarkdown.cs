@@ -2172,7 +2172,7 @@ namespace Aspose.Words.Tests.Export
             string imageFileName = Directory.GetFiles(so.ImagesFolder)[0];
 #if JAVA
             TestUtil.VerifyHash("3307863FCBEA17ECAF59A9EC2F2A6625", StreamUtil.CopyFileToByteArray(imageFileName));
-#elif NETSTANDARD
+#elif NETSTANDARD || NET
             TestUtil.VerifyHash("0464E80A08EF910EBDD64919129073A5", StreamUtil.CopyFileToByteArray(imageFileName));
 #else
             TestUtil.VerifyHash("A9C1A23ABF020790B2702162D91ADECE", StreamUtil.CopyFileToByteArray(imageFileName));

@@ -60,7 +60,7 @@ namespace Aspose.Tests.Base
             char leadSurrogate = UnicodeUtil.ConvertFromUtf32(supplementaryChar)[0];
             char tailSurrogate = UnicodeUtil.ConvertFromUtf32(supplementaryChar)[1];
             const char normalChar = 'A';
-            
+
             TestEnumerateUtf32(leadSurrogate);
             TestEnumerateUtf32(tailSurrogate);
             TestEnumerateUtf32(leadSurrogate, leadSurrogate);

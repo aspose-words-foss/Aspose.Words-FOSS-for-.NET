@@ -749,7 +749,7 @@ namespace Aspose.Common
         /// </summary>
         public static string DoubleToStr(double val)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             return RemoveZeroSign(val.ToString("G15", CultureInfo.InvariantCulture));
 #else
 
@@ -782,7 +782,7 @@ namespace Aspose.Common
         /// </summary>
         public static string DoubleToStrRoundtrip(double val)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             // double..ToString("R") works differently after .NET Core 3.1 that causes a lot of gold diff red tests.
             //
             // Generally the double.ToString("R") has following logic:
@@ -875,7 +875,7 @@ namespace Aspose.Common
         /// </summary>
         private static string RemoveZeroSign(string numString)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             // WORDSNET-27702 An empty string appears to be a valid argument.
             if ((numString.Length > 0) && numString[0] == '-')
             {
@@ -1313,7 +1313,7 @@ namespace Aspose.Common
             return DateTimeFormatInfo.CurrentInfo;
         }
 
-#region Tests
+        #region Tests
 
         /// <summary>
         /// Sets native short date pattern for the current thread culture in testing purpose.
@@ -1363,7 +1363,7 @@ namespace Aspose.Common
             gCurrentDateTimeFormatInfoClone = null;
         }
 
-#endregion Tests
+        #endregion Tests
 
         public static char GetDecimalSeparatorCurrent()
         {

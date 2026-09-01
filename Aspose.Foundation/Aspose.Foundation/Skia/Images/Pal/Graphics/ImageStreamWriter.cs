@@ -1,11 +1,11 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 08/12/2017 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
-using Aspose.IO;
 using System;
 using System.IO;
+using Aspose.IO;
 
 namespace Aspose.Images.Pal.Graphics
 {

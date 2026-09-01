@@ -117,7 +117,7 @@ namespace Aspose.JavaMs.Tests.System
             // Use InvariantCulture-sensitive comparison to find the soft hyphen followed by "m".
             Assert.That(3, Is.EqualTo(s1.IndexOf("\u00ADm", StringComparison.InvariantCulture)));
             Assert.That(-1, Is.EqualTo(s2.IndexOf("\u00ADm", StringComparison.InvariantCulture)));
-            
+
             // Use ordinal comparison to find the soft hyphen.
             Assert.That(3, Is.EqualTo(s1.IndexOf("\u00AD", StringComparison.Ordinal)));
             Assert.That(-1, Is.EqualTo(s2.IndexOf("\u00AD", StringComparison.Ordinal)));

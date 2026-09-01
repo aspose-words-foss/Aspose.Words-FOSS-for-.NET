@@ -51,10 +51,10 @@ namespace Aspose.Fonts.TrueType
             // Convert to 21.11 format.
             vdmxGroup.mYMaxMultiplier = (yMaxRatio + 16) >> 5;
             vdmxGroup.mYMinMultiplier = (-yMinRatio + 16) >> 5;
-            
+
             return vdmxGroup;
         }
-        
+
         /// <summary>
         /// Used to predict actual yMax values.
         /// </summary>

@@ -41,7 +41,7 @@ namespace Aspose.IO
         public void WriteBit(bool value)
         {
             SetCurrentBitToBuffer(value);
-            
+
             CurrentBufferPosition++;
             if (CurrentBufferPosition < BufferSize)
                 return;
@@ -49,7 +49,7 @@ namespace Aspose.IO
             WriteCurBuffer();
             InitBuffer();
         }
-        
+
         /// <summary>
         /// Writes specified number of bits from the byte value.
         /// </summary>
@@ -87,7 +87,7 @@ namespace Aspose.IO
 
             int startByte = (numberOfBitsFromRight - 1) / 8;
             int startBit = numberOfBitsFromRight - (startByte * 8);
-            
+
             WriteValue(valueBytes[startByte--], startBit);
 
             while (startByte >= 0)

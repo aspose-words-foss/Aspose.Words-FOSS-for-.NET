@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 09/12/2008 by Roman Korchagin
 // 25/05/2011 by Alexey Titov
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -85,8 +85,8 @@ namespace Aspose.Images
                 // Compute pixel brightness (i.e. total of Red, Green, and Blue values)
                 // WORDSNET-5510
                 // Order of components in 32-bit ARGB pixel is BGRA. So we should sum 1,2,3 components.
-                int pixelTotal = 
-                    bitmapBytes.Bytes[byteOffset] + 
+                int pixelTotal =
+                    bitmapBytes.Bytes[byteOffset] +
                     bitmapBytes.Bytes[byteOffset + 1] +
                     bitmapBytes.Bytes[byteOffset + 2];
 

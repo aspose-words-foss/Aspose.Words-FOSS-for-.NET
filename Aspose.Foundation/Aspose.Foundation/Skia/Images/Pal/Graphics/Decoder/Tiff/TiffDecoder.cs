@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 25/01/2024 by Denis Panov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using System;
 using System.IO;
 using System.Runtime.InteropServices;

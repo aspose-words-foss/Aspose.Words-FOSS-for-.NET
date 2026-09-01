@@ -7,12 +7,13 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Text;
+using System.Threading;
 using Aspose.Common;
 using Aspose.Crypto;
+using Aspose.Images.Pal;
 using Aspose.IO;
 using Aspose.JavaAttributes;
 using Aspose.OpcPackaging;
-using Aspose.Images.Pal;
 using Aspose.Ss;
 using Aspose.TestFx;
 using Aspose.TestFx.Pal;
@@ -27,7 +28,6 @@ using CodePorting.Translator.Cs2Cpp;
 using NUnit.Framework;
 using Aspose.Words.Fonts;
 using Aspose.Words.Loading;
-using System.Threading;
 #if !NETSTANDARD
 using System.Windows.Forms;
 #endif
@@ -71,14 +71,14 @@ namespace Aspose.Words.Tests
         {
             fileName = BuildTestFileName(fileName);
 
-#if !JAVA && !NETSTANDARD && !CPLUSPLUS   // Exclude some MF-specific MS Word automation that we don't need on Java.
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS // Exclude some MF-specific MS Word automation that we don't need on Java.
             return OpenDocRetry(fileName);
 #else
             return new Document(fileName);
 #endif
         }
 
-#if !JAVA  && !NETSTANDARD  && !CPLUSPLUS // Some MF-specific MS Word automation that we don't need on Java.
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS // Some MF-specific MS Word automation that we don't need on Java.
         /// <summary>
         /// This method opens document. If document cannot be opened and we are debugging
         /// on MFDELL it will attempt to close the MS Word which locks the document and retry.

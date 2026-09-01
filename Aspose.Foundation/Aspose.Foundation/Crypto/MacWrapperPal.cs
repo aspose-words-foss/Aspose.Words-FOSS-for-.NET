@@ -48,7 +48,7 @@ namespace Aspose.Crypto
         {
             get { return mMac.GetMacSize(); }
         }
-        
+
         /// <summary>
         /// Message authentication code algorithm (MAC).
         /// </summary>

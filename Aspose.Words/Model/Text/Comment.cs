@@ -455,7 +455,7 @@ namespace Aspose.Words
                     return null;
 
                 // Make simplest implementation for a while.
-                foreach(Comment comment in Document.GetChildNodes(NodeType.Comment, true))
+                foreach (Comment comment in Document.GetChildNodes(NodeType.Comment, true))
                     if (comment.Id == ParentId)
                         return comment;
 
@@ -470,7 +470,7 @@ namespace Aspose.Words
         {
             get
             {
-                if(mReplies == null)
+                if (mReplies == null)
                     mReplies = new CommentCollection(Document, this);
 
                 return mReplies;

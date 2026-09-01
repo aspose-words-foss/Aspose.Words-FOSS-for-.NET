@@ -66,6 +66,7 @@ namespace Aspose.Numbering
 #if !NET40 || CPLUSPLUS
             return string.Join(Separator, builder.ToArray());
 #else
+            // For .NET 4.6.1+, .NET Standard, and .NET 6.0-10.0, we use the more memory-efficient IEnumerable overload.
             return string.Join(Separator, builder);
 #endif
         }

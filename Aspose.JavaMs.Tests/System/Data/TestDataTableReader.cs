@@ -29,7 +29,8 @@ namespace Aspose.JavaMs.Tests.System.Data
                 Assert.That(reader.RecordsAffected, Is.EqualTo(0));
 
                 int rowCount = 0;
-                while (reader.Read()) ++rowCount;
+                while (reader.Read())
+                    ++rowCount;
 
                 Assert.That(rowCount, Is.EqualTo(table.Rows.Count));
             }

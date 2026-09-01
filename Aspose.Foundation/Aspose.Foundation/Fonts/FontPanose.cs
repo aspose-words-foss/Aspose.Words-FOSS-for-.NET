@@ -13,7 +13,7 @@ namespace Aspose.Fonts
     {
         public FontPanose(byte[] values)
         {
-            if(values == null)
+            if (values == null)
                 values = new byte[PanoseLength];
 
             if (values.Length != PanoseLength)

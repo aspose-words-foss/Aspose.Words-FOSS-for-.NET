@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 22/01/2014 by Ivan Lyagin
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

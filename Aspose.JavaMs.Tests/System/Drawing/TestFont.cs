@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 23/08/2016 by Anatoliy Sidorenko
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System.Drawing;
 using Aspose.JavaAttributes;
 using NUnit.Framework;
@@ -18,7 +18,7 @@ namespace Aspose.JavaMs.Tests.System.Drawing
             TestCtor("Arial", 8.0f);
             TestCtor("Times New Roman", 8.1f);
             TestCtor("Arial", 8.0f, FontStyle.Bold);
-            TestCtor("Times New Roman", 8.1f, FontStyle.Bold|FontStyle.Italic);
+            TestCtor("Times New Roman", 8.1f, FontStyle.Bold | FontStyle.Italic);
         }
 
         private void TestCtor(string fontName, float sizeInPoints)

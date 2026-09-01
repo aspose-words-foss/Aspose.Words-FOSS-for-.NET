@@ -45,7 +45,7 @@ namespace Aspose.TestFx
             if (value is bool)
             {
                 result.Kind = KindEnum.Bool;
-                result.Values = new List<string> { (bool)value ? YES :  NO };
+                result.Values = new List<string> { (bool)value ? YES : NO };
             }
             else if (value is string)
             {
@@ -80,11 +80,11 @@ namespace Aspose.TestFx
 
         internal KindEnum Kind { get; private set; }
 
-        internal int Index {get; private set; }
+        internal int Index { get; private set; }
 
-        internal string Key {get; private set; }
+        internal string Key { get; private set; }
 
-        internal string[] Attached {get; private set; }
+        internal string[] Attached { get; private set; }
 
         internal bool AsBool
         {
@@ -141,8 +141,8 @@ namespace Aspose.TestFx
             get
             {
                 // last attached line is a comment with description
-                return  Attached.Length > 0 && Attached[Attached.Length-1].Length > 0
-                    ? Attached[Attached.Length-1].Substring(1) : null;
+                return Attached.Length > 0 && Attached[Attached.Length - 1].Length > 0
+                    ? Attached[Attached.Length - 1].Substring(1) : null;
             }
         }
 
@@ -211,7 +211,8 @@ namespace Aspose.TestFx
             bool first = true;
             foreach (string v in Values)
             {
-                if (!first) sb.Append(',');
+                if (!first)
+                    sb.Append(',');
                 first = false;
                 sb.Append(v.Replace(",", "\\,"));
             }
@@ -244,7 +245,7 @@ namespace Aspose.TestFx
                     {
                         if (last == '\\')
                         {
-                            sb[sb.Length-1] = c;
+                            sb[sb.Length - 1] = c;
                         }
                         else
                         {
@@ -271,7 +272,7 @@ namespace Aspose.TestFx
                     {
                         if (last == '\\')
                         {
-                            sb[sb.Length-1] = '"';
+                            sb[sb.Length - 1] = '"';
                         }
                         else
                         {
@@ -308,7 +309,7 @@ namespace Aspose.TestFx
                 {
                     if (last == '\\')
                     {
-                        sb[sb.Length-1] = c;
+                        sb[sb.Length - 1] = c;
                     }
                     else
                     {
@@ -377,7 +378,7 @@ namespace Aspose.TestFx
             foreach (var kind in kinds)
                 if (Kind == kind)
                     return;
-            throw new Exception("expected '" + Kind+ "' value");
+            throw new Exception("expected '" + Kind + "' value");
         }
 
         private TestSetting(int index, string key, params string[] attached)

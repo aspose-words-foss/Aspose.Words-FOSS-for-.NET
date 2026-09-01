@@ -79,7 +79,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
         /// <summary>
         /// Decodes single glyph.
         /// </summary>
-        private static GlyfTableRecord DecodeGlyph( CtfGlyphDecoderContext context)
+        private static GlyfTableRecord DecodeGlyph(CtfGlyphDecoderContext context)
         {
             short numContours = context.GlyphTableReader.ReadInt16();
             context.GlyphTableReader.BaseStream.Position -= 2;
@@ -94,7 +94,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
         /// <summary>
         /// Decodes composite glyph from CTF format.
         /// </summary>
-        private static GlyfTableRecord DecodeCompositeGlyph( CtfGlyphDecoderContext context)
+        private static GlyfTableRecord DecodeCompositeGlyph(CtfGlyphDecoderContext context)
         {
             short numContours = context.GlyphTableReader.ReadInt16();
             CompositeGlyfTableRecord glyf = new CompositeGlyfTableRecord();

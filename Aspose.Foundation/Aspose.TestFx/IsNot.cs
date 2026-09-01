@@ -16,8 +16,8 @@ namespace NUnit.Framework
         public static IResolveConstraint Null() => Is.Not.Null;
         public static IResolveConstraint Empty() => Is.Not.Empty;
 
-        public static EqualConstraint EqualTo( object expected) => Is.Not.EqualTo(expected);
-        public static IResolveConstraint SameAs( object expected) => Is.Not.SameAs(expected);
-        public static IResolveConstraint InstanceOf( Type expectedType) => Is.Not.InstanceOf(expectedType);
+        public static EqualConstraint EqualTo(object expected) => Is.Not.EqualTo(expected);
+        public static IResolveConstraint SameAs(object expected) => Is.Not.SameAs(expected);
+        public static IResolveConstraint InstanceOf(Type expectedType) => Is.Not.InstanceOf(expectedType);
     }
 }

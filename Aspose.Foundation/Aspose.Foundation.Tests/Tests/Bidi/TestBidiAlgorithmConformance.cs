@@ -29,20 +29,20 @@ namespace Aspose.Tests.Bidi
             gCharacters.Add("PDF", BidiChars.PDF);
             gCharacters.Add("LRO", BidiChars.LRO);
             gCharacters.Add("RLO", BidiChars.RLO);
-            gCharacters.Add("BN",  '\u00AD'); // SOFT HYPHEN
-            gCharacters.Add("L",   '\u0041'); // LATIN CAPITAL LETTER A
-            gCharacters.Add("R",   '\u05D0'); // HEBREW LETTER ALEF
-            gCharacters.Add("EN",  '\u0033'); // DIGIT THREE
-            gCharacters.Add("ES",  '\u002B'); // PLUS SIGN
-            gCharacters.Add("ET",  '\u0024'); // DOLLAR SIGN
-            gCharacters.Add("CS",  '\u002C'); // COMMA
+            gCharacters.Add("BN", '\u00AD'); // SOFT HYPHEN
+            gCharacters.Add("L", '\u0041'); // LATIN CAPITAL LETTER A
+            gCharacters.Add("R", '\u05D0'); // HEBREW LETTER ALEF
+            gCharacters.Add("EN", '\u0033'); // DIGIT THREE
+            gCharacters.Add("ES", '\u002B'); // PLUS SIGN
+            gCharacters.Add("ET", '\u0024'); // DOLLAR SIGN
+            gCharacters.Add("CS", '\u002C'); // COMMA
             gCharacters.Add("NSM", '\u0302'); // COMBINING CIRCUMFLEX ACCENT
-            gCharacters.Add("B",   '\u000A'); // LINE FEED (LF)
-            gCharacters.Add("S",   '\u0009'); // CHARACTER TABULATION
-            gCharacters.Add("WS",  '\u0020'); // SPACE
-            gCharacters.Add("ON",  '\u0021'); // EXCLAMATION MARK
-            gCharacters.Add("AL" , '\u062D'); // ARABIC LETTER HAA
-            gCharacters.Add("AN",  '\u0663'); // ARABIC-INDIC DIGIT THREE
+            gCharacters.Add("B", '\u000A'); // LINE FEED (LF)
+            gCharacters.Add("S", '\u0009'); // CHARACTER TABULATION
+            gCharacters.Add("WS", '\u0020'); // SPACE
+            gCharacters.Add("ON", '\u0021'); // EXCLAMATION MARK
+            gCharacters.Add("AL", '\u062D'); // ARABIC LETTER HAA
+            gCharacters.Add("AN", '\u0663'); // ARABIC-INDIC DIGIT THREE
         }
 
         [Test]
@@ -93,7 +93,7 @@ namespace Aspose.Tests.Bidi
 
             string expectedText = RunsToString(expectedRuns);
             string actualText = RunsToString(actualRuns);
-            
+
             bool testPassed = actualText == expectedText;
             if ((!testPassed) && outputDebugInfo)
             {
@@ -140,7 +140,7 @@ namespace Aspose.Tests.Bidi
 
                 result.Append(")");
             }
-            
+
             return result.ToString();
         }
 

@@ -33,7 +33,7 @@ namespace Aspose.Zip
 
                 mBufferSize = (int)Math.Min(mLength, maxBufferSize);
                 mCompressedStream = compressedData;
-                
+
                 InitializeBuffer();
             }
             catch (Exception ex1)
@@ -95,7 +95,7 @@ namespace Aspose.Zip
             {
                 if (value < 0)
                     throw new ArgumentOutOfRangeException("Negative ZipStream position.");
-                
+
                 if (value < mBufferPosition)
                     InitializeBuffer();
 
@@ -140,7 +140,7 @@ namespace Aspose.Zip
         {
             mCompressedStream.Dispose();
             mDecompressedStream.Dispose();
-            
+
             base.Dispose(disposing);
         }
 
@@ -158,7 +158,7 @@ namespace Aspose.Zip
 
             int dstOffset = offset;
 
-            while (bytesToRead > actualRead) 
+            while (bytesToRead > actualRead)
             {
                 int localPos = (int)mPosition % mBufferSize;
                 long localBytesToRead = Math.Min(mChunkSize - localPos, (count - actualRead));
@@ -199,7 +199,7 @@ namespace Aspose.Zip
             mPosition++;
             if (!PositionIsInChunk(mPosition))
                 ReadNextChunk();
-            
+
             return result;
         }
 
@@ -273,10 +273,10 @@ namespace Aspose.Zip
         /// Reads data that exceeds Int32.MaxValue length by parts.
         /// </summary>
         private void ReadLargeData(byte[] allData, long length)
-        {            
+        {
             long actualRead = 0;
             byte[] buffer = new byte[mBufferSize];
-            
+
             int chunkSize = Read(buffer, 0, mBufferSize);
 
             while ((actualRead < length) && (chunkSize > 0))

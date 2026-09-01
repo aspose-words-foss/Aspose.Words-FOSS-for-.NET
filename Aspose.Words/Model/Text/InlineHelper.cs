@@ -501,7 +501,7 @@ namespace Aspose.Words
                 TableStyle tableStyle = parentTable.Style as TableStyle;
                 Cell cell = inline.ParentParagraph_IInline.ParentCell;
 
-                if((tableStyle != null) && (cell != null))
+                if ((tableStyle != null) && (cell != null))
                     value = tableStyle.GetRunAttr(key, cell);
             }
 

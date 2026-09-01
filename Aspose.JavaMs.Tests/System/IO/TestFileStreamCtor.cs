@@ -60,7 +60,7 @@ namespace Aspose.JavaMs.Tests.System.IO
         [Test, ExpectedException(typeof(FileNotFoundException))]
         public void TestFileStreamCtor5()
         {
-            string  filName = GetTestFileName(GetType());
+            string filName = GetTestFileName(GetType());
             File.Delete(filName);
             new FileStream(filName, FileMode.Open);
         }
@@ -68,7 +68,7 @@ namespace Aspose.JavaMs.Tests.System.IO
         [Test]
         public void TestFileStreamCtor6()
         {
-            string  filName = GetTestFileName(GetType());
+            string filName = GetTestFileName(GetType());
             using (FileStream fs2 = new FileStream(filName, FileMode.Create))
             {
                 StreamWriter sw2 = new StreamWriter(fs2);
@@ -159,12 +159,12 @@ namespace Aspose.JavaMs.Tests.System.IO
             new FileStream(GetTestFileName(GetType()), FileMode.Create | FileMode.Truncate);
         }
 
-        public static string  GetTestFileName(Type testClass)
+        public static string GetTestFileName(Type testClass)
         {
             return GetTestDir(testClass) + Path.DirectorySeparatorChar + testClass.Name + "." + DateTime.Now.Millisecond + "." + Thread.CurrentThread.ManagedThreadId + ".tmp";
         }
 
-        public static string  GetTestDir(Type testClass)
+        public static string GetTestDir(Type testClass)
         {
             // Use TestOut directory for creating test directories to avoid UnautorizedAccessException when run with NUnit3.
             return TestFxUtil.BuildOutFileName(testClass.Name, "", "");

@@ -45,8 +45,15 @@ namespace Aspose
         /// </summary>
         public void Abort()
         {
-#if !NET50
+#if NETFRAMEWORK
+            // Thread.Abort is supported only in .NET Framework (3.5, 4.6.1, 4.6.2).
+            // Note: It's still risky, but at least it won't throw PlatformNotSupportedException.
             mThread.Abort();
+#else
+            // For .NET Standard, .NET 6.0-10.0:
+            // Thread.Abort is obsolete and throws PlatformNotSupportedException.
+            // Ideally, we should use a CancellationToken or a shared boolean flag to stop the thread.
+            // For now, we simply don't call Abort here to prevent crashes.
 #endif
         }
 

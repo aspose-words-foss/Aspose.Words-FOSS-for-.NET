@@ -14,11 +14,11 @@ namespace Aspose.Tests.Base
         public void TestReadBit()
         {
             VerifyResultBitArray(
-                new byte[] {0x35},
-                new bool[] {false, false, true, true, false, true, false, true});
+                new byte[] { 0x35 },
+                new bool[] { false, false, true, true, false, true, false, true });
 
             VerifyResultBitArray(
-                new byte[] {0xF2, 0x01},
+                new byte[] { 0xF2, 0x01 },
                 new bool[]
                     {
                         true, true, true, true, false, false, true, false,
@@ -40,11 +40,11 @@ namespace Aspose.Tests.Base
                 // Verify LSB ordering.
                 stream.Position = 0;
                 BitBinaryReader lsbReader = new BitBinaryReader(stream, false);
-                Assert.That(expectedResultWithMsbOrdering.Length%8, Is.EqualTo(0));
-                for (int i = 0; i < expectedResultWithMsbOrdering.Length/8; i++)
+                Assert.That(expectedResultWithMsbOrdering.Length % 8, Is.EqualTo(0));
+                for (int i = 0; i < expectedResultWithMsbOrdering.Length / 8; i++)
                     for (int j = 0; j < 8; j++)
                     {
-                        Assert.That(lsbReader.ReadBit(), Is.EqualTo(expectedResultWithMsbOrdering[8*i + 8 - j - 1]));
+                        Assert.That(lsbReader.ReadBit(), Is.EqualTo(expectedResultWithMsbOrdering[8 * i + 8 - j - 1]));
                     }
             }
         }
@@ -52,7 +52,7 @@ namespace Aspose.Tests.Base
         [Test]
         public void TestReadValueMsb()
         {
-            byte[] data = new byte[] {0x04, 0x03, 0x02, 0x01};
+            byte[] data = new byte[] { 0x04, 0x03, 0x02, 0x01 };
             using (MemoryStream stream = new MemoryStream(data))
             {
                 BitBinaryReader msbReader = new BitBinaryReader(stream, true);
@@ -66,7 +66,7 @@ namespace Aspose.Tests.Base
         [ExpectedException(typeof(NotSupportedException))]
         public void TestReadValueLsb()
         {
-            byte[] data = new byte[] {0x04, 0x03, 0x02, 0x01};
+            byte[] data = new byte[] { 0x04, 0x03, 0x02, 0x01 };
             using (MemoryStream stream = new MemoryStream(data))
             {
                 BitBinaryReader lsbReader = new BitBinaryReader(stream, false);

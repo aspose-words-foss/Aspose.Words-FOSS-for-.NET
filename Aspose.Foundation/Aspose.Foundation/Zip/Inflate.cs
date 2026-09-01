@@ -77,8 +77,8 @@ namespace Aspose.Zip
 
         // And'ing with mask[n] masks the lower n bits
         //UPGRADE_NOTE: Final was removed from the declaration of 'inflate_mask'. "ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?index='!DefaultContextWindowIndex'&keyword='jlca1003'"
-        private static readonly int[] inflate_mask = new int[] { 
-            0x00000000, 0x00000001, 0x00000003, 0x00000007, 0x0000000f, 0x0000001f, 0x0000003f, 0x0000007f, 0x000000ff, 
+        private static readonly int[] inflate_mask = new int[] {
+            0x00000000, 0x00000001, 0x00000003, 0x00000007, 0x0000000f, 0x0000001f, 0x0000003f, 0x0000007f, 0x000000ff,
             0x000001ff, 0x000003ff, 0x000007ff, 0x00000fff, 0x00001fff, 0x00003fff, 0x00007fff, 0x0000ffff };
 
         // Table for deflate from PKZIP's appnote.txt.
@@ -187,7 +187,8 @@ namespace Aspose.Zip
                             }
                             else
                             {
-                                bitb = b; bitk = k;
+                                bitb = b;
+                                bitk = k;
                                 _codec.AvailableBytesIn = n;
                                 _codec.TotalBytesIn += p - _codec.NextIn;
                                 _codec.NextIn = p;
@@ -205,9 +206,11 @@ namespace Aspose.Zip
                         switch (SharedUtils.URShift(t, 1))
                         {
                             case 0:  // stored 
-                                b = SharedUtils.URShift(b, (3)); k -= (3);
+                                b = SharedUtils.URShift(b, (3));
+                                k -= (3);
                                 t = k & 7; // go to byte boundary
-                                b = SharedUtils.URShift(b, (t)); k -= (t);
+                                b = SharedUtils.URShift(b, (t));
+                                k -= (t);
                                 mode = LENS; // get length of stored block
                                 break;
 
@@ -218,21 +221,25 @@ namespace Aspose.Zip
                                 int[][] td = new int[1][];
                                 InfTree.inflate_trees_fixed(bl, bd, tl, td, _codec);
                                 codes.Init(bl[0], bd[0], tl[0], 0, td[0], 0);
-                                b = SharedUtils.URShift(b, (3)); k -= (3);
+                                b = SharedUtils.URShift(b, (3));
+                                k -= (3);
                                 mode = CODES;
                                 break;
 
                             case 2:  // dynamic
-                                b = SharedUtils.URShift(b, (3)); k -= (3);
+                                b = SharedUtils.URShift(b, (3));
+                                k -= (3);
                                 mode = TABLE;
                                 break;
 
                             case 3:  // illegal
-                                b = SharedUtils.URShift(b, (3)); k -= (3);
+                                b = SharedUtils.URShift(b, (3));
+                                k -= (3);
                                 mode = BAD;
                                 _codec.Message = "invalid block type";
                                 r = ZlibConstants.Z_DATA_ERROR;
-                                bitb = b; bitk = k;
+                                bitb = b;
+                                bitk = k;
                                 _codec.AvailableBytesIn = n;
                                 _codec.TotalBytesIn += p - _codec.NextIn;
                                 _codec.NextIn = p;
@@ -251,14 +258,15 @@ namespace Aspose.Zip
                             }
                             else
                             {
-                                bitb = b; bitk = k;
+                                bitb = b;
+                                bitk = k;
                                 _codec.AvailableBytesIn = n;
                                 _codec.TotalBytesIn += p - _codec.NextIn;
                                 _codec.NextIn = p;
                                 write = q;
                                 return Flush(r);
                             }
-                            
+
                             n--;
                             b |= (_codec.InputBuffer[p++] & 0xff) << k;
                             k += 8;
@@ -270,7 +278,8 @@ namespace Aspose.Zip
                             _codec.Message = "invalid stored block lengths";
                             r = ZlibConstants.Z_DATA_ERROR;
 
-                            bitb = b; bitk = k;
+                            bitb = b;
+                            bitk = k;
                             _codec.AvailableBytesIn = n;
                             _codec.TotalBytesIn += p - _codec.NextIn;
                             _codec.NextIn = p;
@@ -285,7 +294,8 @@ namespace Aspose.Zip
                     case STORED:
                         if (n == 0)
                         {
-                            bitb = b; bitk = k;
+                            bitb = b;
+                            bitk = k;
                             _codec.AvailableBytesIn = n;
                             _codec.TotalBytesIn += p - _codec.NextIn;
                             _codec.NextIn = p;
@@ -297,20 +307,24 @@ namespace Aspose.Zip
                         {
                             if (q == end && read != 0)
                             {
-                                q = 0; m = (int)(q < read ? read - q - 1 : end - q);
+                                q = 0;
+                                m = (int)(q < read ? read - q - 1 : end - q);
                             }
                             if (m == 0)
                             {
                                 write = q;
                                 r = Flush(r);
-                                q = write; m = (int)(q < read ? read - q - 1 : end - q);
+                                q = write;
+                                m = (int)(q < read ? read - q - 1 : end - q);
                                 if (q == end && read != 0)
                                 {
-                                    q = 0; m = (int)(q < read ? read - q - 1 : end - q);
+                                    q = 0;
+                                    m = (int)(q < read ? read - q - 1 : end - q);
                                 }
                                 if (m == 0)
                                 {
-                                    bitb = b; bitk = k;
+                                    bitb = b;
+                                    bitk = k;
                                     _codec.AvailableBytesIn = n;
                                     _codec.TotalBytesIn += p - _codec.NextIn;
                                     _codec.NextIn = p;
@@ -327,8 +341,10 @@ namespace Aspose.Zip
                         if (t > m)
                             t = m;
                         Array.Copy(_codec.InputBuffer, p, window, q, t);
-                        p += t; n -= t;
-                        q += t; m -= t;
+                        p += t;
+                        n -= t;
+                        q += t;
+                        m -= t;
                         if ((left -= t) != 0)
                             break;
                         mode = last != 0 ? DRY : TYPE;
@@ -344,14 +360,15 @@ namespace Aspose.Zip
                             }
                             else
                             {
-                                bitb = b; bitk = k;
+                                bitb = b;
+                                bitk = k;
                                 _codec.AvailableBytesIn = n;
                                 _codec.TotalBytesIn += p - _codec.NextIn;
                                 _codec.NextIn = p;
                                 write = q;
                                 return Flush(r);
                             }
-                            
+
                             n--;
                             b |= (_codec.InputBuffer[p++] & 0xff) << k;
                             k += 8;
@@ -364,7 +381,8 @@ namespace Aspose.Zip
                             _codec.Message = "too many length or distance symbols";
                             r = ZlibConstants.Z_DATA_ERROR;
 
-                            bitb = b; bitk = k;
+                            bitb = b;
+                            bitk = k;
                             _codec.AvailableBytesIn = n;
                             _codec.TotalBytesIn += p - _codec.NextIn;
                             _codec.NextIn = p;
@@ -384,7 +402,8 @@ namespace Aspose.Zip
                             }
                         }
                         {
-                            b = SharedUtils.URShift(b, (14)); k -= (14);
+                            b = SharedUtils.URShift(b, (14));
+                            k -= (14);
                         }
 
                         index = 0;
@@ -402,14 +421,15 @@ namespace Aspose.Zip
                                 }
                                 else
                                 {
-                                    bitb = b; bitk = k;
+                                    bitb = b;
+                                    bitk = k;
                                     _codec.AvailableBytesIn = n;
                                     _codec.TotalBytesIn += p - _codec.NextIn;
                                     _codec.NextIn = p;
                                     write = q;
                                     return Flush(r);
                                 }
-                                
+
                                 n--;
                                 b |= (_codec.InputBuffer[p++] & 0xff) << k;
                                 k += 8;
@@ -418,7 +438,8 @@ namespace Aspose.Zip
                             blens[border[index++]] = b & 7;
 
                             {
-                                b = SharedUtils.URShift(b, (3)); k -= (3);
+                                b = SharedUtils.URShift(b, (3));
+                                k -= (3);
                             }
                         }
 
@@ -438,7 +459,8 @@ namespace Aspose.Zip
                                 mode = BAD;
                             }
 
-                            bitb = b; bitk = k;
+                            bitb = b;
+                            bitk = k;
                             _codec.AvailableBytesIn = n;
                             _codec.TotalBytesIn += p - _codec.NextIn;
                             _codec.NextIn = p;
@@ -471,14 +493,15 @@ namespace Aspose.Zip
                                 }
                                 else
                                 {
-                                    bitb = b; bitk = k;
+                                    bitb = b;
+                                    bitk = k;
                                     _codec.AvailableBytesIn = n;
                                     _codec.TotalBytesIn += p - _codec.NextIn;
                                     _codec.NextIn = p;
                                     write = q;
                                     return Flush(r);
                                 }
-                                
+
                                 n--;
                                 b |= (_codec.InputBuffer[p++] & 0xff) << k;
                                 k += 8;
@@ -489,7 +512,8 @@ namespace Aspose.Zip
 
                             if (c < 16)
                             {
-                                b = SharedUtils.URShift(b, (t)); k -= (t);
+                                b = SharedUtils.URShift(b, (t));
+                                k -= (t);
                                 blens[index++] = c;
                             }
                             else
@@ -506,24 +530,27 @@ namespace Aspose.Zip
                                     }
                                     else
                                     {
-                                        bitb = b; bitk = k;
+                                        bitb = b;
+                                        bitk = k;
                                         _codec.AvailableBytesIn = n;
                                         _codec.TotalBytesIn += p - _codec.NextIn;
                                         _codec.NextIn = p;
                                         write = q;
                                         return Flush(r);
                                     }
-                                    
+
                                     n--;
                                     b |= (_codec.InputBuffer[p++] & 0xff) << k;
                                     k += 8;
                                 }
 
-                                b = SharedUtils.URShift(b, (t)); k -= (t);
+                                b = SharedUtils.URShift(b, (t));
+                                k -= (t);
 
                                 j += (b & inflate_mask[i]);
 
-                                b = SharedUtils.URShift(b, (i)); k -= (i);
+                                b = SharedUtils.URShift(b, (i));
+                                k -= (i);
 
                                 i = index;
                                 t = table;
@@ -534,7 +561,8 @@ namespace Aspose.Zip
                                     _codec.Message = "invalid bit length repeat";
                                     r = ZlibConstants.Z_DATA_ERROR;
 
-                                    bitb = b; bitk = k;
+                                    bitb = b;
+                                    bitk = k;
                                     _codec.AvailableBytesIn = n;
                                     _codec.TotalBytesIn += p - _codec.NextIn;
                                     _codec.NextIn = p;
@@ -571,7 +599,8 @@ namespace Aspose.Zip
                                 }
                                 r = t;
 
-                                bitb = b; bitk = k;
+                                bitb = b;
+                                bitk = k;
                                 _codec.AvailableBytesIn = n;
                                 _codec.TotalBytesIn += p - _codec.NextIn;
                                 _codec.NextIn = p;
@@ -584,7 +613,8 @@ namespace Aspose.Zip
                         goto case CODES;
 
                     case CODES:
-                        bitb = b; bitk = k;
+                        bitb = b;
+                        bitk = k;
                         _codec.AvailableBytesIn = n;
                         _codec.TotalBytesIn += p - _codec.NextIn;
                         _codec.NextIn = p;
@@ -612,10 +642,12 @@ namespace Aspose.Zip
                     case DRY:
                         write = q;
                         r = Flush(r);
-                        q = write; m = (int)(q < read ? read - q - 1 : end - q);
+                        q = write;
+                        m = (int)(q < read ? read - q - 1 : end - q);
                         if (read != write)
                         {
-                            bitb = b; bitk = k;
+                            bitb = b;
+                            bitk = k;
                             _codec.AvailableBytesIn = n;
                             _codec.TotalBytesIn += p - _codec.NextIn;
                             _codec.NextIn = p;
@@ -638,7 +670,8 @@ namespace Aspose.Zip
                     case BAD:
                         r = ZlibConstants.Z_DATA_ERROR;
 
-                        bitb = b; bitk = k;
+                        bitb = b;
+                        bitk = k;
                         _codec.AvailableBytesIn = n;
                         _codec.TotalBytesIn += p - _codec.NextIn;
                         _codec.NextIn = p;
@@ -649,7 +682,8 @@ namespace Aspose.Zip
                     default:
                         r = ZlibConstants.Z_STREAM_ERROR;
 
-                        bitb = b; bitk = k;
+                        bitb = b;
+                        bitk = k;
                         _codec.AvailableBytesIn = n;
                         _codec.TotalBytesIn += p - _codec.NextIn;
                         _codec.NextIn = p;
@@ -697,7 +731,7 @@ namespace Aspose.Zip
 
             // RK Commented code out. Looks like a bug in ZLib. Sometimes we do get n == 0 and need to return OK to finish decompression properly.
             // Also there is exactly the same line further in this method. Maybe it also needs similar fix.
-            if (/*n != 0 &&*/ r == ZlibConstants.Z_BUF_ERROR)   
+            if (/*n != 0 &&*/ r == ZlibConstants.Z_BUF_ERROR)
                 r = ZlibConstants.Z_OK;
 
             // update counters
@@ -759,7 +793,7 @@ namespace Aspose.Zip
         //UPGRADE_NOTE: Final was removed from the declaration of 'inflate_mask'. "ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?index='!DefaultContextWindowIndex'&keyword='jlca1003'"
         private static readonly int[] inflate_mask = new int[]
             {
-                0x00000000, 0x00000001, 0x00000003, 0x00000007, 0x0000000f, 0x0000001f, 0x0000003f, 0x0000007f, 0x000000ff, 
+                0x00000000, 0x00000001, 0x00000003, 0x00000007, 0x0000000f, 0x0000001f, 0x0000003f, 0x0000007f, 0x000000ff,
                 0x000001ff, 0x000003ff, 0x000007ff, 0x00000fff, 0x00001fff, 0x00003fff, 0x00007fff, 0x0000ffff
             };
 
@@ -835,7 +869,8 @@ namespace Aspose.Zip
             n = z.AvailableBytesIn;
             b = blocks.bitb;
             k = blocks.bitk;
-            q = blocks.write; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+            q = blocks.write;
+            m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
 
             // process input and output based on current state
             while (true)
@@ -847,7 +882,8 @@ namespace Aspose.Zip
                         if (m >= 258 && n >= 10)
                         {
 
-                            blocks.bitb = b; blocks.bitk = k;
+                            blocks.bitb = b;
+                            blocks.bitk = k;
                             z.AvailableBytesIn = n;
                             z.TotalBytesIn += p - z.NextIn;
                             z.NextIn = p;
@@ -858,7 +894,8 @@ namespace Aspose.Zip
                             n = z.AvailableBytesIn;
                             b = blocks.bitb;
                             k = blocks.bitk;
-                            q = blocks.write; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                            q = blocks.write;
+                            m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
 
                             if (r != ZlibConstants.Z_OK)
                             {
@@ -882,7 +919,8 @@ namespace Aspose.Zip
                                 r = ZlibConstants.Z_OK;
                             else
                             {
-                                blocks.bitb = b; blocks.bitk = k;
+                                blocks.bitb = b;
+                                blocks.bitk = k;
                                 z.AvailableBytesIn = n;
                                 z.TotalBytesIn += p - z.NextIn;
                                 z.NextIn = p;
@@ -933,7 +971,8 @@ namespace Aspose.Zip
                         z.Message = "invalid literal/length code";
                         r = ZlibConstants.Z_DATA_ERROR;
 
-                        blocks.bitb = b; blocks.bitk = k;
+                        blocks.bitb = b;
+                        blocks.bitk = k;
                         z.AvailableBytesIn = n;
                         z.TotalBytesIn += p - z.NextIn;
                         z.NextIn = p;
@@ -951,12 +990,16 @@ namespace Aspose.Zip
                             else
                             {
 
-                                blocks.bitb = b; blocks.bitk = k;
-                                z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                                blocks.bitb = b;
+                                blocks.bitk = k;
+                                z.AvailableBytesIn = n;
+                                z.TotalBytesIn += p - z.NextIn;
+                                z.NextIn = p;
                                 blocks.write = q;
                                 return blocks.Flush(r);
                             }
-                            n--; b |= (z.InputBuffer[p++] & 0xff) << k;
+                            n--;
+                            b |= (z.InputBuffer[p++] & 0xff) << k;
                             k += 8;
                         }
 
@@ -981,12 +1024,16 @@ namespace Aspose.Zip
                             else
                             {
 
-                                blocks.bitb = b; blocks.bitk = k;
-                                z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                                blocks.bitb = b;
+                                blocks.bitk = k;
+                                z.AvailableBytesIn = n;
+                                z.TotalBytesIn += p - z.NextIn;
+                                z.NextIn = p;
                                 blocks.write = q;
                                 return blocks.Flush(r);
                             }
-                            n--; b |= (z.InputBuffer[p++] & 0xff) << k;
+                            n--;
+                            b |= (z.InputBuffer[p++] & 0xff) << k;
                             k += 8;
                         }
 
@@ -1015,8 +1062,11 @@ namespace Aspose.Zip
                         z.Message = "invalid distance code";
                         r = ZlibConstants.Z_DATA_ERROR;
 
-                        blocks.bitb = b; blocks.bitk = k;
-                        z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                        blocks.bitb = b;
+                        blocks.bitk = k;
+                        z.AvailableBytesIn = n;
+                        z.TotalBytesIn += p - z.NextIn;
+                        z.NextIn = p;
                         blocks.write = q;
                         return blocks.Flush(r);
 
@@ -1031,12 +1081,16 @@ namespace Aspose.Zip
                             else
                             {
 
-                                blocks.bitb = b; blocks.bitk = k;
-                                z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                                blocks.bitb = b;
+                                blocks.bitk = k;
+                                z.AvailableBytesIn = n;
+                                z.TotalBytesIn += p - z.NextIn;
+                                z.NextIn = p;
                                 blocks.write = q;
                                 return blocks.Flush(r);
                             }
-                            n--; b |= (z.InputBuffer[p++] & 0xff) << k;
+                            n--;
+                            b |= (z.InputBuffer[p++] & 0xff) << k;
                             k += 8;
                         }
 
@@ -1062,21 +1116,26 @@ namespace Aspose.Zip
                             {
                                 if (q == blocks.end && blocks.read != 0)
                                 {
-                                    q = 0; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                    q = 0;
+                                    m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
                                 }
                                 if (m == 0)
                                 {
-                                    blocks.write = q; r = blocks.Flush(r);
-                                    q = blocks.write; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                    blocks.write = q;
+                                    r = blocks.Flush(r);
+                                    q = blocks.write;
+                                    m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
 
                                     if (q == blocks.end && blocks.read != 0)
                                     {
-                                        q = 0; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                        q = 0;
+                                        m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
                                     }
 
                                     if (m == 0)
                                     {
-                                        blocks.bitb = b; blocks.bitk = k;
+                                        blocks.bitb = b;
+                                        blocks.bitk = k;
                                         z.AvailableBytesIn = n;
                                         z.TotalBytesIn += p - z.NextIn;
                                         z.NextIn = p;
@@ -1086,7 +1145,8 @@ namespace Aspose.Zip
                                 }
                             }
 
-                            blocks.window[q++] = blocks.window[f++]; m--;
+                            blocks.window[q++] = blocks.window[f++];
+                            m--;
 
                             if (f == blocks.end)
                                 f = 0;
@@ -1100,21 +1160,28 @@ namespace Aspose.Zip
                         {
                             if (q == blocks.end && blocks.read != 0)
                             {
-                                q = 0; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                q = 0;
+                                m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
                             }
                             if (m == 0)
                             {
-                                blocks.write = q; r = blocks.Flush(r);
-                                q = blocks.write; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                blocks.write = q;
+                                r = blocks.Flush(r);
+                                q = blocks.write;
+                                m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
 
                                 if (q == blocks.end && blocks.read != 0)
                                 {
-                                    q = 0; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                                    q = 0;
+                                    m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
                                 }
                                 if (m == 0)
                                 {
-                                    blocks.bitb = b; blocks.bitk = k;
-                                    z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                                    blocks.bitb = b;
+                                    blocks.bitk = k;
+                                    z.AvailableBytesIn = n;
+                                    z.TotalBytesIn += p - z.NextIn;
+                                    z.NextIn = p;
                                     blocks.write = q;
                                     return blocks.Flush(r);
                                 }
@@ -1122,7 +1189,8 @@ namespace Aspose.Zip
                         }
                         r = ZlibConstants.Z_OK;
 
-                        blocks.window[q++] = (byte)lit; m--;
+                        blocks.window[q++] = (byte)lit;
+                        m--;
 
                         mode = START;
                         break;
@@ -1136,13 +1204,18 @@ namespace Aspose.Zip
                             p--; // can always return one
                         }
 
-                        blocks.write = q; r = blocks.Flush(r);
-                        q = blocks.write; m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
+                        blocks.write = q;
+                        r = blocks.Flush(r);
+                        q = blocks.write;
+                        m = q < blocks.read ? blocks.read - q - 1 : blocks.end - q;
 
                         if (blocks.read != blocks.write)
                         {
-                            blocks.bitb = b; blocks.bitk = k;
-                            z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                            blocks.bitb = b;
+                            blocks.bitk = k;
+                            z.AvailableBytesIn = n;
+                            z.TotalBytesIn += p - z.NextIn;
+                            z.NextIn = p;
                             blocks.write = q;
                             return blocks.Flush(r);
                         }
@@ -1151,8 +1224,11 @@ namespace Aspose.Zip
 
                     case END:
                         r = ZlibConstants.Z_STREAM_END;
-                        blocks.bitb = b; blocks.bitk = k;
-                        z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                        blocks.bitb = b;
+                        blocks.bitk = k;
+                        z.AvailableBytesIn = n;
+                        z.TotalBytesIn += p - z.NextIn;
+                        z.NextIn = p;
                         blocks.write = q;
                         return blocks.Flush(r);
 
@@ -1161,8 +1237,11 @@ namespace Aspose.Zip
 
                         r = ZlibConstants.Z_DATA_ERROR;
 
-                        blocks.bitb = b; blocks.bitk = k;
-                        z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                        blocks.bitb = b;
+                        blocks.bitk = k;
+                        z.AvailableBytesIn = n;
+                        z.TotalBytesIn += p - z.NextIn;
+                        z.NextIn = p;
                         blocks.write = q;
                         return blocks.Flush(r);
 
@@ -1170,8 +1249,11 @@ namespace Aspose.Zip
                     default:
                         r = ZlibConstants.Z_STREAM_ERROR;
 
-                        blocks.bitb = b; blocks.bitk = k;
-                        z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+                        blocks.bitb = b;
+                        blocks.bitk = k;
+                        z.AvailableBytesIn = n;
+                        z.TotalBytesIn += p - z.NextIn;
+                        z.NextIn = p;
                         blocks.write = q;
                         return blocks.Flush(r);
 
@@ -1206,8 +1288,12 @@ namespace Aspose.Zip
             int tp_index_t_3; // (tp_index+t)*3
 
             // load input, output, bit values
-            p = z.NextIn; n = z.AvailableBytesIn; b = s.bitb; k = s.bitk;
-            q = s.write; m = q < s.read ? s.read - q - 1 : s.end - q;
+            p = z.NextIn;
+            n = z.AvailableBytesIn;
+            b = s.bitb;
+            k = s.bitk;
+            q = s.write;
+            m = q < s.read ? s.read - q - 1 : s.end - q;
 
             // initialize masks
             ml = inflate_mask[bl];
@@ -1222,7 +1308,8 @@ namespace Aspose.Zip
                 {
                     // max bits for literal/length code
                     n--;
-                    b |= (z.InputBuffer[p++] & 0xff) << k; k += 8;
+                    b |= (z.InputBuffer[p++] & 0xff) << k;
+                    k += 8;
                 }
 
                 t = b & ml;
@@ -1231,7 +1318,8 @@ namespace Aspose.Zip
                 tp_index_t_3 = (tp_index + t) * 3;
                 if ((e = tp[tp_index_t_3]) == 0)
                 {
-                    b >>= (tp[tp_index_t_3 + 1]); k -= (tp[tp_index_t_3 + 1]);
+                    b >>= (tp[tp_index_t_3 + 1]);
+                    k -= (tp[tp_index_t_3 + 1]);
 
                     s.window[q++] = (byte)tp[tp_index_t_3 + 2];
                     m--;
@@ -1452,10 +1540,17 @@ namespace Aspose.Zip
             while (m >= 258 && n >= 10);
 
             // not enough input or output--restore pointers and return
-            c = z.AvailableBytesIn - n; c = (k >> 3) < c ? k >> 3 : c; n += c; p -= c; k -= (c << 3);
+            c = z.AvailableBytesIn - n;
+            c = (k >> 3) < c ? k >> 3 : c;
+            n += c;
+            p -= c;
+            k -= (c << 3);
 
-            s.bitb = b; s.bitk = k;
-            z.AvailableBytesIn = n; z.TotalBytesIn += p - z.NextIn; z.NextIn = p;
+            s.bitb = b;
+            s.bitk = k;
+            z.AvailableBytesIn = n;
+            z.TotalBytesIn += p - z.NextIn;
+            z.NextIn = p;
             s.write = q;
 
             return ZlibConstants.Z_OK;
@@ -1581,7 +1676,8 @@ namespace Aspose.Zip
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
 
                         if (((method = _codec.InputBuffer[_codec.NextIn++]) & 0xf) != Z_DEFLATED)
                         {
@@ -1602,11 +1698,13 @@ namespace Aspose.Zip
 
                     case FLAG:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         b = (_codec.InputBuffer[_codec.NextIn++]) & 0xff;
 
                         if ((((method << 8) + b) % 31) != 0)
@@ -1627,44 +1725,52 @@ namespace Aspose.Zip
 
                     case DICT4:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need = ((_codec.InputBuffer[_codec.NextIn++] & 0xff) << 24) & unchecked((int)0xff000000L);
                         mode = DICT3;
                         goto case DICT3;
 
                     case DICT3:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need += (((_codec.InputBuffer[_codec.NextIn++] & 0xff) << 16) & 0xff0000L);
                         mode = DICT2;
                         goto case DICT2;
 
                     case DICT2:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need += (((_codec.InputBuffer[_codec.NextIn++] & 0xff) << 8) & 0xff00L);
                         mode = DICT1;
                         goto case DICT1;
 
                     case DICT1:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need += (_codec.InputBuffer[_codec.NextIn++] & 0xffL);
                         _codec._Adler32 = need;
                         mode = DICT0;
@@ -1684,9 +1790,11 @@ namespace Aspose.Zip
                             marker = 0; // can try inflateSync
                             break;
                         }
-                        if (r == ZlibConstants.Z_OK) r = f;
+                        if (r == ZlibConstants.Z_OK)
+                            r = f;
 
-                        if (r != ZlibConstants.Z_STREAM_END) return r;
+                        if (r != ZlibConstants.Z_STREAM_END)
+                            return r;
 
                         r = f;
                         blocks.Reset(was);
@@ -1700,25 +1808,30 @@ namespace Aspose.Zip
 
                     case CHECK4:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need = ((_codec.InputBuffer[_codec.NextIn++] & 0xff) << 24) & unchecked((int)0xff000000L);
                         mode = CHECK3;
                         goto case CHECK3;
 
                     case CHECK3:
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
                         r = f;
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need += (((_codec.InputBuffer[_codec.NextIn++] & 0xff) << 16) & 0xff0000L);
                         mode = CHECK2;
                         goto case CHECK2;
 
                     case CHECK2:
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
                         r = f;
 
                         _codec.AvailableBytesIn--;
@@ -1729,11 +1842,13 @@ namespace Aspose.Zip
 
                     case CHECK1:
 
-                        if (_codec.AvailableBytesIn == 0) return r;
+                        if (_codec.AvailableBytesIn == 0)
+                            return r;
 
                         r = f;
 
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                        _codec.AvailableBytesIn--;
+                        _codec.TotalBytesIn++;
                         need += (_codec.InputBuffer[_codec.NextIn++] & 0xffL);
                         unchecked
                         {
@@ -1821,7 +1936,8 @@ namespace Aspose.Zip
                 {
                     m = 4 - m;
                 }
-                p++; n--;
+                p++;
+                n--;
             }
 
             // restore

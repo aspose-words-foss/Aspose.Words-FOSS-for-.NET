@@ -54,7 +54,7 @@ namespace Aspose.Tests.Pal
 
             string expectedRequest = "GET https://www.example.com/example.jpg\r\n" +
                 "User-Agent:Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)Accept:*/*Accept-Language:*Accept-Encoding:GZip, Deflate";
-            
+
             Console.WriteLine(requestString);
             Assert.That(requestString, Is.EqualTo(expectedRequest));
         }

@@ -33,7 +33,7 @@ namespace Aspose.Numbering
             get { return "ésimo"; }
         }
 
-        protected override string  SeparatorTensOnes
+        protected override string SeparatorTensOnes
         {
             get { return " e "; }
         }

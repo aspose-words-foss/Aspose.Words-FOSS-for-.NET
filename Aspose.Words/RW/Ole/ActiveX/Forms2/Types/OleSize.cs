@@ -47,7 +47,7 @@ namespace Aspose.Words.Forms2
             }
         }
 
-#if TEST || DEBUG
+#if DEBUG || TEST
         /// <summary>
         /// Converts the OleSize object to a string.
         /// </summary>

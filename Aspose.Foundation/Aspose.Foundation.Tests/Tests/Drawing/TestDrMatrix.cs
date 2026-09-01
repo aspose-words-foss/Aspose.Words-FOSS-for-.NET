@@ -15,7 +15,7 @@ namespace Aspose.Tests.Drawing
         [Test]
         public void TestGetElements()
         {
-            float[] matrix = new float[] {11, 12, 21, 22, 31, 32};
+            float[] matrix = new float[] { 11, 12, 21, 22, 31, 32 };
             DrMatrix drMatrix = new DrMatrix(matrix[0], matrix[1], matrix[2], matrix[3], matrix[4], matrix[5]);
             float[] elements = drMatrix.GetElements();
             Assert.That(ArrayUtil.IsArrayEqual(matrix, elements), Is.True);
@@ -46,7 +46,7 @@ namespace Aspose.Tests.Drawing
             translate.TransformPoints(points);
             Assert.That(new PointF(-190, 220), Is.EqualTo(points[0]));
 
-            points[0] =  new PointF(1, 1);
+            points[0] = new PointF(1, 1);
             DrMatrix allTogether = new DrMatrix(10, 20, -10, 20, 10, 20);
             allTogether.TransformPoints(points);
             Assert.That(new PointF(10, 60), Is.EqualTo(points[0]));
@@ -304,8 +304,8 @@ namespace Aspose.Tests.Drawing
         public void TestCreateStretchMatrix()
         {
             //Arrange
-            RectangleF from = new RectangleF(1,2,4,16);
-            RectangleF to = new RectangleF(1,2,2,4);
+            RectangleF from = new RectangleF(1, 2, 4, 16);
+            RectangleF to = new RectangleF(1, 2, 2, 4);
             //Act
             DrMatrix matrix = DrMatrix.CreateStretchMatrix(from, to);
             //Assert
@@ -320,11 +320,11 @@ namespace Aspose.Tests.Drawing
             RectangleF rect = new RectangleF(1, 2, 4, 16);
             DrMatrix matrix = new DrMatrix();
             matrix.Scale(2, 1, MatrixOrder.Prepend);
-            matrix.Translate(-2,-2,MatrixOrder.Append);
+            matrix.Translate(-2, -2, MatrixOrder.Append);
             //Act
             RectangleF result = matrix.Transform(rect);
             //Assert
-            Assert.That(result, Is.EqualTo(new RectangleF(0,0,8,16)));
+            Assert.That(result, Is.EqualTo(new RectangleF(0, 0, 8, 16)));
         }
 
         /// <summary>
@@ -366,7 +366,7 @@ namespace Aspose.Tests.Drawing
         public void TestMatrixLock()
         {
             DrMatrix matrix = new DrMatrix();
-            
+
             Assert.That(matrix.Locked, Is.False);
 
             matrix.Scale(10, 20, MatrixOrder.Prepend);

@@ -45,8 +45,8 @@ namespace Aspose.Words.Fields
                 // WORDSNET-18798 modify SDT nested inline nodes.
                 if (referenceNode.NodeType == NodeType.StructuredDocumentTag)
                 {
-                    NodeEnumerator referenceRange = (NodeEnumerator) new NodeRange(referenceNode, referenceNode).GetEnumerator();
-                    NodeEnumerator modifiedRange = (NodeEnumerator) new NodeRange(nodeToModify, nodeToModify).GetEnumerator();
+                    NodeEnumerator referenceRange = (NodeEnumerator)new NodeRange(referenceNode, referenceNode).GetEnumerator();
+                    NodeEnumerator modifiedRange = (NodeEnumerator)new NodeRange(nodeToModify, nodeToModify).GetEnumerator();
 
                     while (referenceRange.MoveToNextNode() && modifiedRange.MoveToNextNode())
                         ModifyInlineNode(referenceRange.CurrentNode, modifiedRange.CurrentNode);

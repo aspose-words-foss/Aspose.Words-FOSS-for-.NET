@@ -78,7 +78,7 @@ namespace Aspose.Common
 
             if (initializers.Length == 0)
             {
-                initializers = new object[] {gLastPseudorandomInitializer++};
+                initializers = new object[] { gLastPseudorandomInitializer++ };
             }
 
             byte[] guid = new byte[16];

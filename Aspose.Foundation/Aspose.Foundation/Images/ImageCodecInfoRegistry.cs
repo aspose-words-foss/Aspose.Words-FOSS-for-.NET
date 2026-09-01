@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 29/07/2011 by Roman Korchagin
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System.Drawing.Imaging;
 using Aspose.Collections;
@@ -33,7 +33,7 @@ namespace Aspose.Images
         /// <summary>
         /// The key is ImageFormat.Guid and the value is ImageCodecInfo.
         /// </summary>
-        private static readonly GuidToObjDictionary<ImageCodecInfo> gImageCodecInfos = 
+        private static readonly GuidToObjDictionary<ImageCodecInfo> gImageCodecInfos =
             new GuidToObjDictionary<ImageCodecInfo>();
     }
 }

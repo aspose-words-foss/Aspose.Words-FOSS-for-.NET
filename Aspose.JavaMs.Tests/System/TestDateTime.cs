@@ -46,7 +46,7 @@ namespace Aspose.JavaMs.Tests.System
                 //But ToString works not as in .net for dates before Gregorian Calendar CutOver date
                 //(see TestGregorianCutOver()). - fixed (hacked) for DateTime.MinValue only.
                 Assert.That("1/01/0001 12:00:00 am", Is.EqualTo(min.ToString()));
-                
+
                 //round trip
                 DateTime newMax = new DateTime(DateTime.MaxValue.Ticks);
                 Assert.That(3155378975999999999L, Is.EqualTo(newMax.Ticks));
@@ -216,7 +216,7 @@ namespace Aspose.JavaMs.Tests.System
                 DateTime dateTime = new DateTime(2007, 12, 31, 12, 0, 0);
                 Assert.That(DateTimeKind.Unspecified, Is.EqualTo(dateTime.Kind));
                 Assert.That("31/12/2007 12:00:00 pm", Is.EqualTo(dateTime.ToString()));
-                
+
                 DateTime universalConverted = dateTime.ToUniversalTime();
                 Assert.That(DateTimeKind.Utc, Is.EqualTo(universalConverted.Kind));
                 //sk: in my timezone this looks like this:

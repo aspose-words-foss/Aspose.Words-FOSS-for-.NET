@@ -49,10 +49,10 @@ namespace Aspose.Fonts.TrueType
 
         private static TTEncoding GetBigEndianUnicode()
         {
-            if(gBigEndianUnicode == null)
+            if (gBigEndianUnicode == null)
                 lock (gSyncRoot)
                 {
-                    if(gBigEndianUnicode == null)
+                    if (gBigEndianUnicode == null)
                         gBigEndianUnicode = new TTEncodingRegular(Encoding.BigEndianUnicode);
                 }
 
@@ -61,10 +61,10 @@ namespace Aspose.Fonts.TrueType
 
         private static TTEncoding GetCp1252()
         {
-            if(gCp1252 == null)
+            if (gCp1252 == null)
                 lock (gSyncRoot)
                 {
-                    if(gCp1252 == null)
+                    if (gCp1252 == null)
                         gCp1252 = new TTEncodingRegular(Encoding.GetEncoding(1252));
                 }
 
@@ -73,10 +73,10 @@ namespace Aspose.Fonts.TrueType
 
         private static TTEncoding GetPrc()
         {
-            if(gPrc == null)
+            if (gPrc == null)
                 lock (gSyncRoot)
                 {
-                    if(gPrc == null)
+                    if (gPrc == null)
                         gPrc = new TTEncodingLegacyChinese(Encoding.GetEncoding("gb2312"));
                 }
 
@@ -85,10 +85,10 @@ namespace Aspose.Fonts.TrueType
 
         private static TTEncoding GetBig5()
         {
-            if(gBig5 == null)
+            if (gBig5 == null)
                 lock (gSyncRoot)
                 {
-                    if(gBig5 == null)
+                    if (gBig5 == null)
                         gBig5 = new TTEncodingLegacyChinese(Encoding.GetEncoding(950));
                 }
 
@@ -97,10 +97,10 @@ namespace Aspose.Fonts.TrueType
 
         private static TTEncoding GetMacTradChinese()
         {
-            if(gMacTradChinese == null)
+            if (gMacTradChinese == null)
                 lock (gSyncRoot)
                 {
-                    if(gMacTradChinese == null)
+                    if (gMacTradChinese == null)
                         gMacTradChinese = new TTEncodingLegacyChinese(Encoding.GetEncoding(10002));
                 }
 

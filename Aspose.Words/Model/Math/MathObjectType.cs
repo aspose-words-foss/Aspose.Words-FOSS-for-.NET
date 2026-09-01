@@ -163,6 +163,11 @@ namespace Aspose.Words.Math
         /// <summary>
         /// Superscript object, which consists of a base element and a reduced-size script placed above and to the right.
         /// </summary>
-        Supercript
+        Superscript,
+
+        /// <summary>
+        /// Type of object is not specified.
+        /// </summary>
+        None
     }
 }

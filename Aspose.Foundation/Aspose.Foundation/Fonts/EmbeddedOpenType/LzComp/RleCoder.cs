@@ -30,7 +30,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 counters[data[i]]++;
 
             // Find the least frequently used byte to use as the 'escape' symbol.
-            byte escape = (byte) GetIndexOfMinElement(counters);
+            byte escape = (byte)GetIndexOfMinElement(counters);
 
             using (MemoryStream stream = new MemoryStream())
             {
@@ -45,7 +45,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                     while (((i + runLength) < data.Length) && (data[i + runLength] == data[i]) && (runLength < 255))
                         runLength++;
 
-                    if ( runLength > 3 )
+                    if (runLength > 3)
                     {
                         // Write: escape, runLength and byte symbol
                         stream.WriteByte(escape);

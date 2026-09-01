@@ -2,9 +2,7 @@
 // 07/11/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
-
-using System;
+#if NETSTANDARD || NET
 
 namespace Aspose.Images.Pal.Graphics.Encoder
 {
@@ -32,15 +30,15 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             {
                 mNetwork[i] = new int[4];
                 p = mNetwork[i];
-                p[0] = p[1] = p[2] = (i << (Netbiasshift + 8))/Netsize;
-                mFreq[i] = Intbias/Netsize; // 1/netsize
+                p[0] = p[1] = p[2] = (i << (Netbiasshift + 8)) / Netsize;
+                mFreq[i] = Intbias / Netsize; // 1/netsize
                 mBias[i] = 0;
             }
         }
 
         public byte[] ColorMap()
         {
-            byte[] map = new byte[3*Netsize];
+            byte[] map = new byte[3 * Netsize];
             int[] index = new int[Netsize];
             for (int i = 0; i < Netsize; i++)
                 index[mNetwork[i][3]] = i;
@@ -48,9 +46,9 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             for (int i = 0; i < Netsize; i++)
             {
                 int j = index[i];
-                map[k++] = (byte) (mNetwork[j][0]);
-                map[k++] = (byte) (mNetwork[j][1]);
-                map[k++] = (byte) (mNetwork[j][2]);
+                map[k++] = (byte)(mNetwork[j][0]);
+                map[k++] = (byte)(mNetwork[j][1]);
+                map[k++] = (byte)(mNetwork[j][2]);
             }
             return map;
         }
@@ -129,12 +127,12 @@ namespace Aspose.Images.Pal.Graphics.Encoder
 
             if (mLengthcount < Minpicturebytes)
                 mSamplefac = 1;
-            mAlphadec = 30 + ((mSamplefac - 1)/3);
+            mAlphadec = 30 + ((mSamplefac - 1) / 3);
             p = mThepicture;
             pix = 0;
             lim = mLengthcount;
-            samplepixels = mLengthcount/(3*mSamplefac);
-            delta = samplepixels/Ncycles;
+            samplepixels = mLengthcount / (3 * mSamplefac);
+            delta = samplepixels / Ncycles;
             alpha = Initalpha;
             radius = Initradius;
 
@@ -142,24 +140,24 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             if (rad <= 1)
                 rad = 0;
             for (i = 0; i < rad; i++)
-                mRadpower[i] = alpha*(((rad*rad - i*i)*Radbias)/(rad*rad));
+                mRadpower[i] = alpha * (((rad * rad - i * i) * Radbias) / (rad * rad));
 
             // fprintf(stderr,"beginning 1D learning: initial radius=%d\n", rad);
 
             if (mLengthcount < Minpicturebytes)
                 step = 3;
-            else if ((mLengthcount%Prime1) != 0)
-                step = 3*Prime1;
+            else if ((mLengthcount % Prime1) != 0)
+                step = 3 * Prime1;
             else
             {
-                if ((mLengthcount%Prime2) != 0)
-                    step = 3*Prime2;
+                if ((mLengthcount % Prime2) != 0)
+                    step = 3 * Prime2;
                 else
                 {
-                    if ((mLengthcount%Prime3) != 0)
-                        step = 3*Prime3;
+                    if ((mLengthcount % Prime3) != 0)
+                        step = 3 * Prime3;
                     else
-                        step = 3*Prime4;
+                        step = 3 * Prime4;
                 }
             }
 
@@ -182,15 +180,15 @@ namespace Aspose.Images.Pal.Graphics.Encoder
                 i++;
                 if (delta == 0)
                     delta = 1;
-                if (i%delta == 0)
+                if (i % delta == 0)
                 {
-                    alpha -= alpha/mAlphadec;
-                    radius -= radius/Radiusdec;
+                    alpha -= alpha / mAlphadec;
+                    radius -= radius / Radiusdec;
                     rad = radius >> Radiusbiasshift;
                     if (rad <= 1)
                         rad = 0;
                     for (j = 0; j < rad; j++)
-                        mRadpower[j] = alpha*(((rad*rad - j*j)*Radbias)/(rad*rad));
+                        mRadpower[j] = alpha * (((rad * rad - j * j) * Radbias) / (rad * rad));
                 }
             }
             // fprintf(stderr,"finished 1D learning: readonly alpha=%f
@@ -337,13 +335,13 @@ namespace Aspose.Images.Pal.Graphics.Encoder
                     p = mNetwork[j++];
                     try
                     {
-                        p[0] -= (a*(p[0] - b))/Alpharadbias;
-                        p[1] -= (a*(p[1] - g))/Alpharadbias;
-                        p[2] -= (a*(p[2] - r))/Alpharadbias;
+                        p[0] -= (a * (p[0] - b)) / Alpharadbias;
+                        p[1] -= (a * (p[1] - g)) / Alpharadbias;
+                        p[2] -= (a * (p[2] - r)) / Alpharadbias;
                     }
                     catch
                     {
-// TODO: Maybe unchecked block can be used instead of this catch.
+                        // TODO: Maybe unchecked block can be used instead of this catch.
                     } // prevents 1.3 miscompilation
                 }
                 if (k > lo)
@@ -351,13 +349,13 @@ namespace Aspose.Images.Pal.Graphics.Encoder
                     p = mNetwork[k--];
                     try
                     {
-                        p[0] -= (a*(p[0] - b))/Alpharadbias;
-                        p[1] -= (a*(p[1] - g))/Alpharadbias;
-                        p[2] -= (a*(p[2] - r))/Alpharadbias;
+                        p[0] -= (a * (p[0] - b)) / Alpharadbias;
+                        p[1] -= (a * (p[1] - g)) / Alpharadbias;
+                        p[2] -= (a * (p[2] - r)) / Alpharadbias;
                     }
                     catch
                     {
-// TODO: Maybe unchecked block can be used instead of this catch.
+                        // TODO: Maybe unchecked block can be used instead of this catch.
                     }
                 }
             }
@@ -376,9 +374,9 @@ namespace Aspose.Images.Pal.Graphics.Encoder
 
             // alter hit neuron
             int[] n = mNetwork[i];
-            n[0] -= (alpha*(n[0] - b))/Initalpha;
-            n[1] -= (alpha*(n[1] - g))/Initalpha;
-            n[2] -= (alpha*(n[2] - r))/Initalpha;
+            n[0] -= (alpha * (n[0] - b)) / Initalpha;
+            n[1] -= (alpha * (n[1] - g)) / Initalpha;
+            n[2] -= (alpha * (n[2] - r)) / Initalpha;
         }
 
         /// <summary>
@@ -399,7 +397,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
             int bestpos, bestbiaspos, bestd, bestbiasd;
             int[] n;
 
-            bestd = ~(((int) 1) << 31);
+            bestd = ~(((int)1) << 31);
             bestbiasd = bestd;
             bestpos = -1;
             bestbiaspos = bestpos;
@@ -451,7 +449,7 @@ namespace Aspose.Images.Pal.Graphics.Encoder
 
         private const int Prime4 = 503;
 
-        private const int Minpicturebytes = (3*Prime4);
+        private const int Minpicturebytes = (3 * Prime4);
 
         private const int Maxnetpos = (Netsize - 1);
 
@@ -462,11 +460,11 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         // defs for freq and bias
         private const int Intbiasshift = 16; // bias for fractions
 
-        private const int Intbias = (((int) 1) << Intbiasshift);
+        private const int Intbias = (((int)1) << Intbiasshift);
 
         private const int Gammashift = 10; // gamma = 1024
 
-        private const int Gamma = (((int) 1) << Gammashift);
+        private const int Gamma = (((int)1) << Gammashift);
 
         private const int Betashift = 10;
 
@@ -481,9 +479,9 @@ namespace Aspose.Images.Pal.Graphics.Encoder
 
         private const int Radiusbiasshift = 6; // at 32.0 biased by 6 bits
 
-        private const int Radiusbias = (((int) 1) << Radiusbiasshift);
+        private const int Radiusbias = (((int)1) << Radiusbiasshift);
 
-        private const int Initradius = (Initrad*Radiusbias); // and decreases by a
+        private const int Initradius = (Initrad * Radiusbias); // and decreases by a
 
 
         private const int Radiusdec = 30; // factor of 1/30 each cycle
@@ -491,21 +489,21 @@ namespace Aspose.Images.Pal.Graphics.Encoder
         // defs for decreasing alpha factor
         private const int Alphabiasshift = 10; // alpha starts at 1.0
 
-        private const int Initalpha = (((int) 1) << Alphabiasshift);
+        private const int Initalpha = (((int)1) << Alphabiasshift);
 
         private int mAlphadec; // biased by 10 bits
 
         // radbias and alpharadbias used for radpower calculation
         private const int Radbiasshift = 8;
 
-        private const int Radbias = (((int) 1) << Radbiasshift);
+        private const int Radbias = (((int)1) << Radbiasshift);
 
         private const int Alpharadbshift = (Alphabiasshift + Radbiasshift);
 
-        private const int Alpharadbias = (((int) 1) << Alpharadbshift);
+        private const int Alpharadbias = (((int)1) << Alpharadbshift);
 
         // Types and Global Variables
-    
+
 
         private readonly byte[] mThepicture; // the input image itself
 

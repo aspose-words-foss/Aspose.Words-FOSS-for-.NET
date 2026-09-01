@@ -57,7 +57,7 @@ namespace Aspose.Collections
         private static InvalidOperationException CreateValueValidationException()
         {
             return new InvalidOperationException(
-                "A value for the specified key is missing and the default value is not provided."); 
+                "A value for the specified key is missing and the default value is not provided.");
         }
     }
 }

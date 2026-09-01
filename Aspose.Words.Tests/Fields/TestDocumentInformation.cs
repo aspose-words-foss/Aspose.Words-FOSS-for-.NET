@@ -460,7 +460,7 @@ namespace Aspose.Words.Tests.Fields
         }
 
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         private const string EnCaAm = "a.m.";
         private const string EnCaPm = "p.m.";
         private const string EnGbAm = "am";

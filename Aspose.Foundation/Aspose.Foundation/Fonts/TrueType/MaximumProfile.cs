@@ -83,23 +83,23 @@ namespace Aspose.Fonts.TrueType
         {
             Version = reader.ReadUInt32();
             NumGlyphs = reader.ReadUInt16();
-            
+
             if (Version == 0x00005000)
                 return;
 
             if (Version != 0x00010000)
-                throw new NotSupportedException ("Unsupported maximum profile version.");
+                throw new NotSupportedException("Unsupported maximum profile version.");
 
             MaxPoints = reader.ReadUInt16();
             MaxContours = reader.ReadUInt16();
             MaxCompositePoints = reader.ReadUInt16();
             MaxCompositeContours = reader.ReadUInt16();
-            
+
             MaxZones = reader.ReadUInt16();
             MaxTwilightPoints = reader.ReadUInt16();
             MaxStorage = reader.ReadUInt16();
             MaxFunctionDefs = reader.ReadUInt16();
-            
+
             MaxInstructionDefs = reader.ReadUInt16();
             MaxStackElements = reader.ReadUInt16();
             MaxSizeOfInstructions = reader.ReadUInt16();
@@ -112,7 +112,7 @@ namespace Aspose.Fonts.TrueType
         /// </summary>
         internal override void Write(BigEndianBinaryWriter writer)
         {
-            writer.WriteUInt32(Version);    
+            writer.WriteUInt32(Version);
             writer.WriteInt16(NumGlyphs);
 
             if (Version == 0x00005000)
@@ -122,7 +122,7 @@ namespace Aspose.Fonts.TrueType
             writer.WriteInt16(MaxContours);
             writer.WriteInt16(MaxCompositePoints);
             writer.WriteInt16(MaxCompositeContours);
-            
+
             writer.WriteInt16(MaxZones);
             writer.WriteInt16(MaxTwilightPoints);
             writer.WriteInt16(MaxStorage);

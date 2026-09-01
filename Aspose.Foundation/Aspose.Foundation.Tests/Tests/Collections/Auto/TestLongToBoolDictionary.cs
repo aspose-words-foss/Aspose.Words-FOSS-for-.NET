@@ -174,7 +174,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             LongToBoolDictionary dictionary = new LongToBoolDictionary();
             dictionary.Add(gFirstKey, gFirstValue);
-            
+
             LongToBoolDictionary.Enumerator enumerator = dictionary.GetEnumerator();
             bool isMoved = enumerator.MoveNext();
             Assert.That(isMoved, Is.True);

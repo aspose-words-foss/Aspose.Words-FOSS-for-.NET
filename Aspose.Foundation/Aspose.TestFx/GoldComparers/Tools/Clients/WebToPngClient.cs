@@ -33,7 +33,7 @@ namespace Aspose.TestFx
                 throw new System.ArgumentException("sourceFiles");
 
             List<string> p = new List<string>(sourceFiles);
-            p.Insert(0, "-o"+ outputFolder);
+            p.Insert(0, "-o" + outputFolder);
             ClientUtil.PostServerJobGetResults(MUTEX, PIPE, SERVER, ENVAR, p.ToArray());
         }
 

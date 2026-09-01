@@ -12,7 +12,8 @@ namespace Aspose.TestFx.GoldComparers
         {
             string srcFileName = comparerParams.FileNameSrc;
             string outFileName = comparerParams.FileNameOut;
-            string goldFileName = comparerParams.FileNameGold;;
+            string goldFileName = comparerParams.FileNameGold;
+            ;
 
             RasterizePostScript(srcFileName, outFileName);
             ImageFileComparer.Execute(outFileName, goldFileName, null);

@@ -15,7 +15,7 @@ namespace Aspose.Images
         internal BitmapFileHeader()
         {
         }
-        
+
         internal void Read(BinaryReader reader)
         {
             FileType = reader.ReadUInt16();

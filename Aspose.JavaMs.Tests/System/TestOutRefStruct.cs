@@ -54,7 +54,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(2, Is.EqualTo(p.X));
             Assert.That(1, Is.EqualTo(p.Y));
         }
-        
+
         private void MethodRef(out SizeF outSizeF, out Size outSize, ref Point refPoint, ref PointF refPointf)
         {
             PointF pfj = refPointf;
@@ -64,7 +64,7 @@ namespace Aspose.JavaMs.Tests.System
             outSizeF = new SizeF(pfj);
             outSize = new Size(pj);
         }
-        
+
         private void MethodRef2(Point point, ref SizeF refSizeF, ref Size refSize, ref Point refPoint, ref PointF refPointf)
         {
             refPoint.X = point.Y;

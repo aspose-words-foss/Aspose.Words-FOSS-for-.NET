@@ -2,13 +2,13 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
 namespace Aspose.Images.Pal.Graphics.Awt.Image
 {
-    internal class AwtIndexColorModel: AwtColorModel
+    internal class AwtIndexColorModel : AwtColorModel
     {
         public AwtIndexColorModel(int bits, int size, byte[] r, byte[] g, byte[] b) : this(bits, size, r, g, b, null)
         {

@@ -46,50 +46,63 @@ namespace Aspose.JavaMs.Tests.System
             int countTried = 0;
             int countCatched = 0;
 
-            try { countTried++; Convert.ToInt32(mBigPositive); }
+            try
+            { countTried++; Convert.ToInt32(mBigPositive); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32(mBigNegative); }
+            try
+            { countTried++; Convert.ToInt32(mBigNegative); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32((float)mBigPositive); }
+            try
+            { countTried++; Convert.ToInt32((float)mBigPositive); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32((float)mBigNegative); }
+            try
+            { countTried++; Convert.ToInt32((float)mBigNegative); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32((double)mBigPositive); }
+            try
+            { countTried++; Convert.ToInt32((double)mBigPositive); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32((double)mBigNegative); }
+            try
+            { countTried++; Convert.ToInt32((double)mBigNegative); }
             catch (OverflowException) { countCatched++; }
 
 
-            try { countTried++; Convert.ToInt32((decimal)mBigPositive); }
+            try
+            { countTried++; Convert.ToInt32((decimal)mBigPositive); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32((decimal)mBigNegative); }
+            try
+            { countTried++; Convert.ToInt32((decimal)mBigNegative); }
             catch (OverflowException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32(BigInteger.ValueOf(mBigPositive)); }
+            try
+            { countTried++; Convert.ToInt32(BigInteger.ValueOf(mBigPositive)); }
             catch (InvalidCastException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32(BigInteger.ValueOf(mBigNegative)); }
+            try
+            { countTried++; Convert.ToInt32(BigInteger.ValueOf(mBigNegative)); }
             catch (InvalidCastException) { countCatched++; }
 
             // Java throws NumberFormatException both for overflow and bad format:
 
-            try { countTried++; Convert.ToInt32("333.3"); }
+            try
+            { countTried++; Convert.ToInt32("333.3"); }
             catch (FormatException) { countCatched++; }
 
-            try { countTried++; Convert.ToInt32(mBigPositive.ToString()); }
+            try
+            { countTried++; Convert.ToInt32(mBigPositive.ToString()); }
 #if JAVA
             catch (FormatException) { countCatched++; }
 #else
             catch (OverflowException) { countCatched++; }
 #endif
 
-            try { countTried++; Convert.ToInt32(mBigNegative.ToString()); }
+            try
+            { countTried++; Convert.ToInt32(mBigNegative.ToString()); }
 #if JAVA
             catch (FormatException) { countCatched++; }
 #else

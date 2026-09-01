@@ -53,7 +53,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That("http://local_host_", Is.EqualTo(new Uri("   http:////////local_host_").AbsoluteUri));
 #else
             Assert.That("http://local_host_/", Is.EqualTo(new Uri("   http://locAl_host_").AbsoluteUri));
-            Assert.That("http://local_host_/", Is.EqualTo(new Uri("   http://loCal_hOst_").GetComponents(UriComponents.AbsoluteUri, UriFormat.UriEscaped))); 
+            Assert.That("http://local_host_/", Is.EqualTo(new Uri("   http://loCal_hOst_").GetComponents(UriComponents.AbsoluteUri, UriFormat.UriEscaped)));
 
 #endif
         }
@@ -99,24 +99,24 @@ namespace Aspose.JavaMs.Tests.System
 #endif
         }
 
-    /**
-    * See http://en.wikipedia.org/wiki/File_URI_scheme about number of slashes in URI.
-    *
-    * Short resume about slashes in Uri:
-    * 1. 2 slashes: Basic Uri like 'file://host/c:/test.pdf' or 'file://host/etc/test.pdf'.
-    * 2. 3 slashes: Special case when host is localhost and it is omitted: 'file:///c:/test.pdf' or 'file:///etc/test.pdf'.
-    * 3. 4 slashes - "legacy" URLs. Should be converted to 2 slashes.
-    * 4. 0, 1, 4+ slashes - errors that can exist in real files. Should be converted to 2 slashes.
-    *
-    * So.
-    * 1. 2 slashes are leaved as is.
-    * 2. file scheme + (dos-like path or 3 slashes) => 3 slashes (implicit localhost).
-    * 3. all other => 2 slashes.
-    *
-    * Note: .Net Uri throws on 0 or 1 slash - we don't (as some browsers). It works (i believe) for uri with scheme
-    * but result is undefined for absolute Uri without scheme (like '/HOST/c:/test.pdf') - it will be treated as
-    * relative local Uri i.e. something like 'X:/HOST/c:/test.pdf' - so I can't even include the case in tests.
-    */
+        /**
+        * See http://en.wikipedia.org/wiki/File_URI_scheme about number of slashes in URI.
+        *
+        * Short resume about slashes in Uri:
+        * 1. 2 slashes: Basic Uri like 'file://host/c:/test.pdf' or 'file://host/etc/test.pdf'.
+        * 2. 3 slashes: Special case when host is localhost and it is omitted: 'file:///c:/test.pdf' or 'file:///etc/test.pdf'.
+        * 3. 4 slashes - "legacy" URLs. Should be converted to 2 slashes.
+        * 4. 0, 1, 4+ slashes - errors that can exist in real files. Should be converted to 2 slashes.
+        *
+        * So.
+        * 1. 2 slashes are leaved as is.
+        * 2. file scheme + (dos-like path or 3 slashes) => 3 slashes (implicit localhost).
+        * 3. all other => 2 slashes.
+        *
+        * Note: .Net Uri throws on 0 or 1 slash - we don't (as some browsers). It works (i believe) for uri with scheme
+        * but result is undefined for absolute Uri without scheme (like '/HOST/c:/test.pdf') - it will be treated as
+        * relative local Uri i.e. something like 'X:/HOST/c:/test.pdf' - so I can't even include the case in tests.
+        */
 
         [Test]
         [JavaThrows(true)]
@@ -131,7 +131,7 @@ namespace Aspose.JavaMs.Tests.System
 #endif
             // WORDSJAVA-840 AWJ under linux doesn't read localhost image file with 3 slashes: "file:///tmp/documentum/09.png"
             Assert.That("/tmp/documentum/09.png", Is.EqualTo(new Uri("file:///tmp/documentum/09.png").LocalPath));
-            // Detailed results for different platforms are presented in http://auckland.aspose.com/jira/browse/WORDSJAVA-1038
+            // Detailed results for different platforms were captured during the original investigation.
         }
 
         [JavaThrows(true)]

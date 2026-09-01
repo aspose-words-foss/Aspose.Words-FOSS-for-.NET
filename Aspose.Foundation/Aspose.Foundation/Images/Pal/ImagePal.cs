@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 20/12/2015 by Alexander Zhiltsov
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Drawing;
 using System.IO;

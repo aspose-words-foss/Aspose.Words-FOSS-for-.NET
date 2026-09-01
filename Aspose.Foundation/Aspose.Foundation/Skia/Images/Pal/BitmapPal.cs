@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 02/08/2010 by Roman Korchagin
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using System.Drawing;

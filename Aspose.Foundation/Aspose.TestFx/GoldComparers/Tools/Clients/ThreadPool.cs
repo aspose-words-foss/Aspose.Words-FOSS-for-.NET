@@ -36,7 +36,8 @@ namespace Aspose.TestFx
             for (int i = 0; i < _threads.Length; i++)
             {
                 var thread = new Thread(ThreadProc);
-                if (useSTA) thread.SetApartmentState(ApartmentState.STA);
+                if (useSTA)
+                    thread.SetApartmentState(ApartmentState.STA);
                 thread.Start();
                 _threads[i] = thread;
             }
@@ -48,8 +49,10 @@ namespace Aspose.TestFx
 
         public void Enqueue(Action workItem)
         {
-            if (workItem == null) throw new ArgumentNullException(nameof(workItem));
-            if (_cancellationTokenSource.IsCancellationRequested) throw new OperationCanceledException();
+            if (workItem == null)
+                throw new ArgumentNullException(nameof(workItem));
+            if (_cancellationTokenSource.IsCancellationRequested)
+                throw new OperationCanceledException();
 
             Interlocked.Increment(ref _numUnfinished);
             _workQueue.Enqueue(workItem);

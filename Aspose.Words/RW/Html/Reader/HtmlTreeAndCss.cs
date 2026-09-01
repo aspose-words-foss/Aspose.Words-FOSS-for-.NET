@@ -14,7 +14,5 @@ namespace Aspose.Words.RW.Html.Reader
         internal IList<CssStyleRule> StyleRules { get; set; }
 
         internal IList<CssPageRule> PageRules { get; set; }
-
-        internal IList<CssListRule> ListRules { get; set; }
     }
 }

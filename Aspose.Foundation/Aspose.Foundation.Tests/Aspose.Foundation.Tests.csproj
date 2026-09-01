@@ -106,7 +106,7 @@
 		<Compile Include="Tests\Collections\Generic\TestHashSet2Int.cs" />
 		<Compile Include="Tests\Collections\Generic\TestSortedStringList2Int.cs" />
 		<Compile Include="Tests\Common\TestSystemStringAdapters.cs" />
-		<Compile Include="Tests\Images\TestImageUtil.cs" />
+		<Compile Include="Tests\Images\TestImageUtils.cs" />
 		<Compile Include="Tests\IO\TestStreamUtil.cs" />
 		<Compile Include="Tests\Pal\TestPalFont.cs" />
 		<Compile Include="Tests\Pal\TestPalZip.cs" />

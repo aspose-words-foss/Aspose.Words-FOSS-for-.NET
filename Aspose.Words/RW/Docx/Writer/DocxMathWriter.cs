@@ -110,7 +110,7 @@ namespace Aspose.Words.RW.Docx.Writer
                 case MathObjectType.SubSuperscript:
                     WriteMathObjectWithObjPr(mathObject, runPr, writer, "m:sSubSup");
                     break;
-                case MathObjectType.Supercript:
+                case MathObjectType.Superscript:
                     WriteMathObjectWithObjPr(mathObject, runPr, writer, "m:sSup");
                     break;
                 default:

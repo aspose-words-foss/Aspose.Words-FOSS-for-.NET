@@ -911,7 +911,7 @@ namespace Aspose.Words.Tests.Unified
             }
 
             // Check that original indent is not set i.e null.
-            Row row = (Row) doc.GetNodeById("0.0.0.0");
+            Row row = (Row)doc.GetNodeById("0.0.0.0");
             TablePr tablePr = row.TablePr;
             CellPr cellPr = row.FirstCell.CellPr;
 
@@ -1026,7 +1026,7 @@ namespace Aspose.Words.Tests.Unified
         [TestCaseSource("DefaultTestScenarios")]
         public void UnifiedTestRowProperties(LoadFormat lf, SaveFormat sf)
         {
-           TestUtil.OpenSaveOpen(@"Model\Table\TestRowProperties", lf, sf);
+            TestUtil.OpenSaveOpen(@"Model\Table\TestRowProperties", lf, sf);
         }
 
         [Test]
@@ -1068,7 +1068,7 @@ namespace Aspose.Words.Tests.Unified
         [TestCaseSource("DefaultTestScenarios")]
         public void UnifiedTestTableBorders(LoadFormat lf, SaveFormat sf)
         {
-           TestUtil.OpenSaveOpen(@"Model\Table\TestTableBorders", lf, sf);
+            TestUtil.OpenSaveOpen(@"Model\Table\TestTableBorders", lf, sf);
         }
 
         [Test]
@@ -1121,7 +1121,7 @@ namespace Aspose.Words.Tests.Unified
             Assert.That(tableStyle.TablePr.BorderBottom.Equals(new Border(LineStyle.Single, 12,
                                                                   new DrColor(0xff, 0x00, 0x00, 0x00))), Is.True);
             // There is difference between doc and docx reading. DOC reads Border.Empty, DOCX reads null.
-            switch(lf)
+            switch (lf)
             {
                 case LoadFormat.Docx:
                 case LoadFormat.WordML:
@@ -1332,7 +1332,8 @@ namespace Aspose.Words.Tests.Unified
             Document doc = TestUtil.OpenSaveOpen(@"Model\Table\TestHideMarkTable", lf, sf);
 
             Table table = doc.FirstSection.Body.Tables[0];
-            Cell cellWithHideMark = table.FirstRow.Cells[1];;
+            Cell cellWithHideMark = table.FirstRow.Cells[1];
+            ;
             Cell cellWithoutHideMark = table.FirstRow.Cells[0];
 
             Assert.That(cellWithHideMark.CellPr.HideMark, Is.True);
@@ -1379,7 +1380,7 @@ namespace Aspose.Words.Tests.Unified
                 // Only first row is hidden except DOCX is source document.
                 // See TestJira13772Hidden fro details.
                 if ((row.RowIndex == 0) || ((row.RowIndex == 1) && (lf == LoadFormat.Docx)))
-                    Assert.That((bool) hidden, Is.True);
+                    Assert.That((bool)hidden, Is.True);
                 else
                     Assert.That(hidden, Is.Null);
             }
@@ -1419,7 +1420,7 @@ namespace Aspose.Words.Tests.Unified
         [Test]
         public void TestJira7369()
         {
-            TablePr sourceTablePr= new TablePr();
+            TablePr sourceTablePr = new TablePr();
             CellPr cellPr = new CellPr();
             cellPr.Width = 123;
             sourceTablePr.SetAttr(TableAttr.Sys_Cells, new CellPrCollection());
@@ -1508,14 +1509,14 @@ namespace Aspose.Words.Tests.Unified
                 case SaveFormat.Doc:
                 case SaveFormat.WordML:
                 case SaveFormat.Rtf:
+                {
+                    foreach (Row checkedRow in rows)
                     {
-                        foreach (Row checkedRow in rows)
-                        {
-                            Assert.That(expectedHeights[checkedRow.RowIndex], Is.EqualTo(checkedRow.TablePr.Height));
-                            Assert.That(HeightRule.AtLeast, Is.EqualTo(checkedRow.TablePr.HeightRule));
-                        }
+                        Assert.That(expectedHeights[checkedRow.RowIndex], Is.EqualTo(checkedRow.TablePr.Height));
+                        Assert.That(HeightRule.AtLeast, Is.EqualTo(checkedRow.TablePr.HeightRule));
                     }
-                    break;
+                }
+                break;
                 default:
                     throw new InvalidOperationException("Unknown file format");
             }
@@ -1558,7 +1559,7 @@ namespace Aspose.Words.Tests.Unified
         {
             Document doc = TestUtil.OpenSaveOpen(@"Model\Table\TestJira6383A.docx");
             Cell cell = (Cell)doc.GetChildNodes(NodeType.Cell, true)[3];
-            CellVerticalAlignment verticalAlignment = (CellVerticalAlignment) cell.CellPr[CellAttr.VerticalAlignment];
+            CellVerticalAlignment verticalAlignment = (CellVerticalAlignment)cell.CellPr[CellAttr.VerticalAlignment];
             // Check the default cell value of vertical alignment 'top' was not lost on save.
             Assert.That(verticalAlignment, Is.EqualTo(CellVerticalAlignment.Top));
         }
@@ -1804,7 +1805,7 @@ namespace Aspose.Words.Tests.Unified
             doc = TestUtil.SaveOpen(doc, @"Model\Table\TestJira12114A.docx");
 
             table = doc.FirstSection.Body.Tables[0];
-            foreach (int key in new int[]{CellAttr.BorderTop, CellAttr.BorderBottom, CellAttr.BorderRight, CellAttr.BorderLeft})
+            foreach (int key in new int[] { CellAttr.BorderTop, CellAttr.BorderBottom, CellAttr.BorderRight, CellAttr.BorderLeft })
             {
                 Border border = (Border)table.FirstRow.FirstCell.CellPr[key];
                 Assert.That(border.IsNil, Is.True);
@@ -2263,7 +2264,7 @@ namespace Aspose.Words.Tests.Unified
         /// Added descriptive exception message.
         /// </summary>
         [Test, ExpectedException(typeof(ArgumentOutOfRangeException),
-#if NETSTANDARD
+#if NETSTANDARD || NET
         ExpectedMessage = "Must be non-negative and less than or equal to 31. (Parameter 'lineWidth')")]
 #else
         ExpectedMessage = "Must be non-negative and less than or equal to 31.\r\nParameter name: lineWidth")]

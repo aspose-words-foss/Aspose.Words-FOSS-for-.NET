@@ -234,7 +234,7 @@ namespace Aspose.Words.Tests.Unified
             Document doc = CheckAndLoadDocument(@"Model\Math\TestSubSupAssorti", lf, sf, lo);
             // test m:sSup
             OfficeMath node = GetOfficeMathTestNode(doc);
-            Assert.That(node.MathObject.MathObjectType, Is.EqualTo(MathObjectType.Supercript));
+            Assert.That(node.MathObject.MathObjectType, Is.EqualTo(MathObjectType.Superscript));
             Assert.That(node.GetChildNodes(NodeType.Any, false).Count, Is.EqualTo(2));
             ValidateMathArgumentContent(node, 0, "sup_text");
             ValidateMathArgumentContent(node, 1, "superscript", MathObjectType.SuperscriptPart);

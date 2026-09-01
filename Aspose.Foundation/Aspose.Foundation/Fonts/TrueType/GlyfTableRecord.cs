@@ -37,7 +37,7 @@ namespace Aspose.Fonts.TrueType
             short numContours = reader.ReadInt16();
             reader.BaseStream.Position -= 2;
 
-            if(numContours < 0)
+            if (numContours < 0)
                 return CompositeGlyfTableRecord.ReadCompositeRecord(reader);
 
             return SimpleGlyfTableRecord.ReadSimpleRecord(reader);

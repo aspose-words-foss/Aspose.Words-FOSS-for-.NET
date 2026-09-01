@@ -39,13 +39,13 @@ namespace Aspose.Collections.Generic
                 Add(item.Key, item.Value);
             }
         }
-        
+
         public void SetByIndex(int index, TValue value)
         {
             string key = Keys[index];
             this[key] = value;
         }
-        
+
         public TValue GetByIndex(int index)
         {
             return Values[index];
@@ -58,7 +58,7 @@ namespace Aspose.Collections.Generic
 
             return defaultValue;
         }
-        
+
         public string GetKey(int index)
         {
             return Keys[index];

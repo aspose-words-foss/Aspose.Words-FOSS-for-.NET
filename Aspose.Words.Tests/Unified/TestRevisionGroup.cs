@@ -3,7 +3,6 @@
 
 using System;
 using System.IO;
-using System.Linq;
 using Aspose.Common;
 using Aspose.TestFx;
 using Aspose.Words.Revisions;
@@ -188,7 +187,7 @@ namespace Aspose.Words.Tests.Unified
         public void TestLineSpacing()
         {
             TestRevisionGroups(@"Model\Revision\RevisionGroups\TestLineSpacing.docx",
-                new string[] {"Line spacing: Single", "Line spacing: 1.5 lines", "Line spacing: Exactly 12 pt", "Line spacing: At least 30 pt"});
+                new string[] { "Line spacing: Single", "Line spacing: 1.5 lines", "Line spacing: Exactly 12 pt", "Line spacing: At least 30 pt" });
         }
 
 
@@ -361,7 +360,7 @@ namespace Aspose.Words.Tests.Unified
         [Test]
         public void TestIsFormatRevisionFlag()
         {
-            TestRevisionGroups(@"Model\Revision\TestIsFormatRevisionFlag.docx", new string[]{"Font: Italic", "Heading 2" });
+            TestRevisionGroups(@"Model\Revision\TestIsFormatRevisionFlag.docx", new string[] { "Font: Italic", "Heading 2" });
         }
 
 

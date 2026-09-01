@@ -37,7 +37,7 @@ namespace Aspose.Fonts.TrueType
         {
             StartGlyph();
             GlyfStream.Write(glyphData, 0, glyphData.Length);
-            if(mPadToLocaShort && GlyfStream.Length % 2 == 1)
+            if (mPadToLocaShort && GlyfStream.Length % 2 == 1)
                 GlyfStream.WriteByte(0);
         }
 

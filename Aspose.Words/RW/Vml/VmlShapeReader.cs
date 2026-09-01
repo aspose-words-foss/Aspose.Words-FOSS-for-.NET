@@ -67,12 +67,12 @@ namespace Aspose.Words.RW.Vml
             }
 
             // WORDSNET-28422 Deferred shape source resolution.
-            if((shapes.Count > 0) && (shapes[0] is Shape))
+            if ((shapes.Count > 0) && (shapes[0] is Shape))
             {
                 Shape shape = (Shape)shapes[0];
                 string possibleMissingSrc = context.GetMissingSource(shape);
 
-                if(possibleMissingSrc != null)
+                if (possibleMissingSrc != null)
                     shape.ImageData.SetImageSafe(context.GetBinData(possibleMissingSrc));
             }
 
@@ -429,7 +429,7 @@ namespace Aspose.Words.RW.Vml
                     case "allowoverlap": // o:allowoverlap
                         SetBoolAttribute(shape, ShapeAttr.AllowOverlap, value);
                         break;
-                   case "coordorigin":
+                    case "coordorigin":
                         if (StringUtil.HasChars(value))
                         {
                             int[] values = VmlUtil.VmlToIntArray(value);
@@ -567,12 +567,12 @@ namespace Aspose.Words.RW.Vml
                         ArcSizeToAdj1(shape, value);
                         break;
                     case "wrapcoords":
-                        {
-                            PathPoint[] wrapPoints = ReadWrapPolygon(reader.Value);
-                            if (wrapPoints != null)
-                                shape.SetShapeAttrInternal(ShapeAttr.WrapPolygonVertices, wrapPoints);
-                            break;
-                        }
+                    {
+                        PathPoint[] wrapPoints = ReadWrapPolygon(reader.Value);
+                        if (wrapPoints != null)
+                            shape.SetShapeAttrInternal(ShapeAttr.WrapPolygonVertices, wrapPoints);
+                        break;
+                    }
                     case "equationxml":
                         shape.SetShapeAttrInternal(ShapeAttr.EquationXML, Encoding.UTF8.GetBytes(value));
                         break;
@@ -601,7 +601,7 @@ namespace Aspose.Words.RW.Vml
             {
                 // Local 'spt' is not defined but 'type' is defined instead. Try to find corresponding local shape type.
                 ShapePr shapeTypePr = context.GetShapeTypePr(type);
-                if((shapeTypePr != null) && shapeTypePr.Contains(ShapeAttr.ShapeType))
+                if ((shapeTypePr != null) && shapeTypePr.Contains(ShapeAttr.ShapeType))
                 {
                     // Corresponding shape type found, obtain 'spt' value from it.
                     shape.SetShapeAttrInternal(ShapeAttr.ShapeType, shapeTypePr[ShapeAttr.ShapeType]);
@@ -662,7 +662,7 @@ namespace Aspose.Words.RW.Vml
                 context.AddToShapeMap(id, shape);
 
             // WORDSNET-24467 Fix Shape type for GroupShape.
-            if((shape.NodeType == NodeType.GroupShape) && (shape.ShapeType == ShapeType.Image))
+            if ((shape.NodeType == NodeType.GroupShape) && (shape.ShapeType == ShapeType.Image))
                 shape.SetShapeType(ShapeType.Group);
 
             // Read shape child elements.
@@ -972,9 +972,9 @@ namespace Aspose.Words.RW.Vml
             VmlQuantity quantity = coordinates[index];
 
             if (!quantity.IsDistance)
-                 return new PathValue(defaultCoord);
+                return new PathValue(defaultCoord);
 
-            return  isInGroup ? new PathValue(MathUtil.DoubleToInt(quantity.DistanceToPoints()))
+            return isInGroup ? new PathValue(MathUtil.DoubleToInt(quantity.DistanceToPoints()))
                 : coordinates[index].DistanceToPathValue();
         }
 
@@ -1044,7 +1044,7 @@ namespace Aspose.Words.RW.Vml
 
             string[] values = new string[numbers.Count];
 
-            for (int i = 0; i < numbers.Count; i++ )
+            for (int i = 0; i < numbers.Count; i++)
                 values[i] = numbers[i].Value;
 
             PathPoint[] wrapPolygon = new PathPoint[values.Length / 2];
@@ -1165,7 +1165,7 @@ namespace Aspose.Words.RW.Vml
                     // For DOCX convert using z-index base values.
                     shape.ZOrder = ZOrderUtil.ZIndexToZOrder(zIndex, shape.BehindText);
 
-                        context.AddToZOrderList(shape);
+                    context.AddToZOrderList(shape);
                     break;
                 }
 
@@ -1267,18 +1267,18 @@ namespace Aspose.Words.RW.Vml
                 {
                     case "id":  // r:id - DOCX
                     case "src": // WordML.
-                        {
-                            // DOCX only.
-                            byte[] binData = context.GetBinData(value);
-                            shape.SetShapeAttrInternal(ShapeAttr.LineImageBytes, binData);
-                            break;
-                        }
+                    {
+                        // DOCX only.
+                        byte[] binData = context.GetBinData(value);
+                        shape.SetShapeAttrInternal(ShapeAttr.LineImageBytes, binData);
+                        break;
+                    }
                     case "title": // o:title
-                        {
-                            if (shape.ShapePr.GetDirectAttr(ShapeAttr.LineFillBlipName) == null)
-                                shape.SetShapeAttrInternal(ShapeAttr.LineFillBlipName, value);
-                            break;
-                        }
+                    {
+                        if (shape.ShapePr.GetDirectAttr(ShapeAttr.LineFillBlipName) == null)
+                            shape.SetShapeAttrInternal(ShapeAttr.LineFillBlipName, value);
+                        break;
+                    }
                     case "joinstyle":
                         shape.SetShapeAttrInternal(ShapeAttr.LineJoinStyle, VmlEnum.VmlToJoinStyle(value));
                         break;
@@ -1750,7 +1750,7 @@ namespace Aspose.Words.RW.Vml
                 {
                     case "font-family":
                         // Normally in MS generated WordML the font-family name is enclosed in double quotes ("). But we should expect it to be enclosed in single quotes(') as well.
-                        shape.SetShapeAttrInternal(ShapeAttr.GeoTextFont, value.Trim(new char[]{'"', '\''}));
+                        shape.SetShapeAttrInternal(ShapeAttr.GeoTextFont, value.Trim(new char[] { '"', '\'' }));
                         break;
                     case "font-size":
                         // andrnosk: Pass UseDefaultUnits=false because according to specification ECMA 376 6.1.2.23 the font size is always defined in points,

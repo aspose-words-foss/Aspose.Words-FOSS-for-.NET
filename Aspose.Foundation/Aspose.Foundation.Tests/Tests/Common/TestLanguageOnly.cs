@@ -44,10 +44,14 @@ namespace Aspose.Foundation.Tests.Tests.Common
         {
             switch (defaultName)
             {
-                case "SindhiDevanagaric": return "Devangari";
-                case "ChineseSimplified": return "Chinese";
-                case "TigrignaEthiopia": return "Ethiopian";
-                case "TibetanChina": return "Tibetan";
+                case "SindhiDevanagaric":
+                    return "Devangari";
+                case "ChineseSimplified":
+                    return "Chinese";
+                case "TigrignaEthiopia":
+                    return "Ethiopian";
+                case "TibetanChina":
+                    return "Tibetan";
                 default:
                     return defaultName;
             }

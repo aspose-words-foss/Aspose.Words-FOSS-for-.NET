@@ -1,7 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 01/11/2011 by Konstantin Kornilov
 
-using System;
 using System.Collections.Generic;
 using System.IO;
 using Aspose.IO;

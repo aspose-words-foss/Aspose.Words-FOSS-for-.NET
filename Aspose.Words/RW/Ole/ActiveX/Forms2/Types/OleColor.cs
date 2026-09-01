@@ -56,7 +56,7 @@ namespace Aspose.Words.Forms2
             }
         }
 
-#if TEST || DEBUG
+#if DEBUG || TEST
         /// <summary>
         /// Converts the OleColor object to a string.
         /// </summary>

@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 01/11/2013 by Sergey Merkulov
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using Aspose.IO;

@@ -57,7 +57,7 @@ namespace Aspose.Fonts.TrueType
         {
             int length = GetGlyphLength(glyphIndex);
 
-            if(length == 0)
+            if (length == 0)
                 return new byte[0];
 
             LocateGlyph(glyphIndex);

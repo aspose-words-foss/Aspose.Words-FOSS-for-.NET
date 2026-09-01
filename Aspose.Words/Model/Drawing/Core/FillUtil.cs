@@ -270,7 +270,7 @@ namespace Aspose.Words.Drawing.Core
         {
             HatchStyle style = RW.Vml.VmlEnum.GetHatchStyle(binData);
             if ((style != HatchStyle.Horizontal) && (style != HatchStyle.Vertical) &&
-#if NETSTANDARD || JAVA
+#if NETSTANDARD || NET || JAVA
                 // .NET Standard code cannot distinguish WideDownwardDiagonal vs DownwardDiagonal and WideUpwardDiagonal vs UpwardDiagonal.
                 // The reason seems to be BitonalConverter, it is hard to tune it to work like in .NET.
                 // So fall back to the code below to determine the pattern type by binData hash.
@@ -295,7 +295,7 @@ namespace Aspose.Words.Drawing.Core
                         return PatternType.UpwardDiagonal;
                     case 0x23bb9fa8:
                         return PatternType.DiagonalCross;
-#if NETSTANDARD || JAVA
+#if NETSTANDARD || NET || JAVA
                     // Not sure why, but in TestShapePatternedVml and in TestShapePatternedVml the same patterns has different hashes.
                     case (int)0x90780831:
                     case 0xb0cc343:

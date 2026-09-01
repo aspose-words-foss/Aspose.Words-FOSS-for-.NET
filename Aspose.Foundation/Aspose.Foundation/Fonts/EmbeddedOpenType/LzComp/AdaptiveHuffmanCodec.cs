@@ -34,7 +34,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             // For each node except root parent index = index/2.
             // Leaf node indices begins from symbolsCount ordered by increasing symbol value.
             // Array element with index = 1 will not be used.
-            int treeSize = 2*symbolsCount;
+            int treeSize = 2 * symbolsCount;
             mNodes = new HuffmanTreeNode[treeSize];
             for (int i = 1; i < treeSize; i++)
             {
@@ -48,12 +48,12 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 HuffmanTreeNode node = mNodes[i];
 
                 if (i > 1)
-                    node.Parent = mNodes[i/2];
+                    node.Parent = mNodes[i / 2];
 
                 if (i < symbolsCount)
                 {
-                    node.LeftChild = mNodes[2*i];
-                    node.RightChild = mNodes[2*i + 1];
+                    node.LeftChild = mNodes[2 * i];
+                    node.RightChild = mNodes[2 * i + 1];
                 }
 
                 if (i >= symbolsCount)
@@ -151,7 +151,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
         {
             HuffmanTreeNode currentNode = mRoot;
 
-            BitBinaryReader reader = (BitBinaryReader) mBitIo;
+            BitBinaryReader reader = (BitBinaryReader)mBitIo;
             while (!currentNode.IsLeaf)
             {
                 bool bit = reader.ReadBit();
@@ -171,7 +171,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             int bitsToWrite = 0;
             int curBit = 1;
             int bitsCount = 0;
-            
+
             while (symbolNode != mRoot)
             {
                 HuffmanTreeNode parent = symbolNode.Parent;
@@ -182,7 +182,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
                 bitsCount++;
                 symbolNode = parent;
             }
-            BitBinaryWriter writer = (BitBinaryWriter) mBitIo;
+            BitBinaryWriter writer = (BitBinaryWriter)mBitIo;
             writer.WriteValue(bitsToWrite, bitsCount);
         }
 
@@ -208,7 +208,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             HuffmanTreeNode parent1 = node1.Parent;
             HuffmanTreeNode parent2 = node2.Parent;
 
-            if(parent1.LeftChild == node1)
+            if (parent1.LeftChild == node1)
                 parent1.SetLeftChild(node2);
             else
                 parent1.SetRightChild(node2);

@@ -26,7 +26,7 @@ namespace Aspose.Words
         /// Leading zero removed from minor version.
         /// Note: Fib.cs packs the first four characters of this string, so keep the "yy.m" shape.
         /// </summary>
-        internal const string Version = "26.2.0";
+        internal const string Version = "26.3.0";
 
         /// <summary>
         /// Embed this string into all produced documents.

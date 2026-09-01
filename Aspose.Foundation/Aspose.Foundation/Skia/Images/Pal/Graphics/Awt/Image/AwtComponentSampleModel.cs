@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -319,7 +319,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
         {
             get { return mBankIndices; }
         }
-                
+
         public override int NumDataElements
         {
             get { return NumBands; }
@@ -341,7 +341,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
 
         public int ScanlineStride
         {
-           get { return mScanlineStride; }
+            get { return mScanlineStride; }
         }
 
         public int PixelStride

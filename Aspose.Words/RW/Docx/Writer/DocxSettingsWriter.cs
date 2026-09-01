@@ -70,17 +70,17 @@ namespace Aspose.Words.RW.Docx.Writer
 
                 if (isIso) // only for iso29500 and up
                     WriteStylePaneFormatFilterSettings(builder, docPr.StylePaneFormatFilterSettings);
-                
+
                 builder.EndElement();
             }
 
             if (docPr.StylePaneSortMethod != StylePaneSortMethod.Default)
                 builder.WriteVal("w:stylePaneSortMethod", !isIso ?
                     FormatterPal.IntToStrX4(StyleConvertUtil.StylePaneSortMethodToInt(docPr.StylePaneSortMethod)) :
-                    DocxDopEnum.StylePaneSortMethodToDocx(docPr.StylePaneSortMethod)); 
-            
+                    DocxDopEnum.StylePaneSortMethodToDocx(docPr.StylePaneSortMethod));
+
             builder.WriteVal("w:documentType", DocxDopEnum.AutoFormatDocumentTypeToDocx(docPr.DocumentType));
-            
+
             DocxMailMergePrWriter mailMergePrWriter = new DocxMailMergePrWriter();
             mailMergePrWriter.Write(docPr.MailMergeSettings, writer);
 
@@ -104,7 +104,7 @@ namespace Aspose.Words.RW.Docx.Writer
 
             builder.WriteValIfTrue("w:doNotTrackMoves", doNotTrackMoves);
             builder.WriteValIfTrue("w:doNotTrackFormatting", docPr.DoNotTrackFormatting);
-            
+
             WriteDocumentProtection(docPr.DocumentProtection, builder);
             builder.WriteValIfTrue("w:autoFormatOverride", docPr.DocumentProtection.AutoFormatOverride);
             builder.WriteValIfTrue("w:styleLockTheme", docPr.StyleLockTheme);
@@ -124,7 +124,7 @@ namespace Aspose.Words.RW.Docx.Writer
             HyphenationOptions hyphenationOptions = docPr.HyphenationOptions;
             builder.WriteValIfTrue("w:autoHyphenation", hyphenationOptions.AutoHyphenation);
             builder.WriteValIfPositive("w:consecutiveHyphenLimit", hyphenationOptions.ConsecutiveHyphenLimit);
-            builder.WriteValIfNotDefault("w:hyphenationZone", hyphenationOptions.HyphenationZone, 
+            builder.WriteValIfNotDefault("w:hyphenationZone", hyphenationOptions.HyphenationZone,
                 HyphenationOptions.HyphenationZoneDefault);
             builder.WriteValIfTrue("w:doNotHyphenateCaps", !hyphenationOptions.HyphenateCaps);
 
@@ -156,10 +156,10 @@ namespace Aspose.Words.RW.Docx.Writer
             builder.WriteVal("w:characterSpacingControl", DocxDopEnum.KinsokuJustificationToDocx(docPr.CharacterSpacingType));
             builder.WriteValIfTrue("w:printTwoOnOne", (docPr.MultiplePages == MultiplePagesType.TwoPagesPerSheet));
             builder.WriteValIfTrue("w:strictFirstAndLastChars", docPr.StrictFirstAndLastChars);
-            
+
             NrxDocPropertiesWriter.WriteNoLineBreaks(docPr, builder, docPr.NoLineBreaksLanguage == Language.LanguageNotSet
                               ? "en-US"
-                              : LocaleConverter.LocaleToDocxTag((int) docPr.NoLineBreaksLanguage));
+                              : LocaleConverter.LocaleToDocxTag((int)docPr.NoLineBreaksLanguage));
 
             builder.WriteValIfTrue("w:doNotEmbedSmartTags", docPr.DoNotEmbedSmartTags);
             builder.WriteValIfTrue("w:showEnvelope", docPr.ShowEnvelope);
@@ -180,7 +180,7 @@ namespace Aspose.Words.RW.Docx.Writer
                 NrxSettingsWriter.WriteRsids(docPr, builder, SaveFormat.Docx);
 
             WriteDocVars(doc.Variables, builder);
-            
+
             if (docPr.MathProperties.IsNonDefault) // at least one property is non default.
                 WriteMathProperties(docPr.MathProperties, builder);  // need to create mathPr section in the document.
 
@@ -193,7 +193,7 @@ namespace Aspose.Words.RW.Docx.Writer
             if (writer.SaveOptions.WriteClrSchemeMapping)
                 WriteClrSchemeMapping(builder);
 
-            if(writer.SaveOptions.WriteWordCountOption)
+            if (writer.SaveOptions.WriteWordCountOption)
                 builder.WriteValIfTrue("w:doNotIncludeSubdocsInStats", docPr.DoNotIncludeSubDocsInStats);
 
             builder.WriteValIfTrue("w:doNotEmbedSmartTags", docPr.DoNotEmbedSmartTags);
@@ -258,10 +258,10 @@ namespace Aspose.Words.RW.Docx.Writer
 
         private static bool IsAnyRevisionViewDisabled(DocPr docPr)
         {
-            return !docPr.ShowAnnotations || 
+            return !docPr.ShowAnnotations ||
                    !docPr.ShowFormatting ||
-                   !docPr.ShowInkAnnotations || 
-                   !docPr.ShowInsertionsDeletions || 
+                   !docPr.ShowInkAnnotations ||
+                   !docPr.ShowInsertionsDeletions ||
                    !docPr.ShowMarkup;
         }
 
@@ -273,9 +273,9 @@ namespace Aspose.Words.RW.Docx.Writer
             if (writeProt.ReadOnlyRecommended || writeProt.IsWriteProtected)
             {
                 builder.StartElement("w:writeProtection");
-                
+
                 builder.WriteAttributeIfTrue("w:recommended", writeProt.ReadOnlyRecommended);
-                
+
                 writeProt.UpdateDocxHash();
                 WritePasswordHashAttrs(writeProt.PasswordHash, builder);
 
@@ -475,12 +475,12 @@ namespace Aspose.Words.RW.Docx.Writer
 
             builder.EndElement(); //w:compat
         }
-        
+
         /// <summary>
         /// If compliance is other than older ECMA376, then write custom compat settings into docx.
         /// </summary>
         private static void WriteCustomCompatSettings(
-            CompatibilityOptions co, 
+            CompatibilityOptions co,
             OoxmlComplianceCore compliance,
             NrxXmlBuilder builder)
         {
@@ -534,28 +534,28 @@ namespace Aspose.Words.RW.Docx.Writer
                 "w:eastAsia", eastAsia,
                 "w:bidi", bidi);
         }
-        
+
         private static void WriteMathProperties(MathProperties mathPr, NrxXmlBuilder builder)
         {
             builder.StartElement("m:mathPr");
-            
+
 
             builder.WriteVal("m:mathFont", mathPr.DefaultFont);
 
             if (mathPr.BreakOnBinary != MathBreakOnBinary.Default)
                 builder.WriteVal("m:brkBin", DocxDopEnum.MathBreakOnBynaryToDocx(mathPr.BreakOnBinary));
-            
+
             if (mathPr.BreakOnBinarySubtraction != MathBreakOnBinarySubtraction.Default)
                 builder.WriteVal("m:brkBinSub", DocxDopEnum.MathBreakOnBinarySubtractionToDocx(mathPr.BreakOnBinarySubtraction));
-            
+
             builder.WriteValIfTrue("m:smallFrac", mathPr.IsSmallFraction);
-        
+
             if (!mathPr.UseDisplayMathDefaults)
                 builder.WriteVal("m:dispDef", mathPr.UseDisplayMathDefaults);
-            
+
             builder.WriteValIfNotDefault("m:lMargin", mathPr.LeftMargin, 0);
             builder.WriteValIfNotDefault("m:rMargin", mathPr.RightMargin, 0);
-            
+
             if (mathPr.DefaultJustification != OfficeMathJustification.Default)
                 builder.WriteVal("m:defJc", DocxEnum.MathJustificationToDocx(mathPr.DefaultJustification));
 
@@ -564,9 +564,9 @@ namespace Aspose.Words.RW.Docx.Writer
             builder.WriteValIfNotDefault("m:interSp", mathPr.InterEquationSpacing, 0);
             builder.WriteValIfNotDefault("m:intraSp", mathPr.IntraEquationSpacing, 0);
             builder.WriteValIfNotDefault("m:wrapIndent", mathPr.WrapIndent, MathProperties.DefaultWrapIndent);
-            builder.WriteValIfTrue("m:wrapRight", mathPr.WrapRight);            
-            
-            if (mathPr.IntegralLimitLocation !=  MathLimitLocation.SubscriptSuperscript)
+            builder.WriteValIfTrue("m:wrapRight", mathPr.WrapRight);
+
+            if (mathPr.IntegralLimitLocation != MathLimitLocation.SubscriptSuperscript)
                 builder.WriteVal("m:intLim", DocxEnum.MathLimitLocationToDocx(mathPr.IntegralLimitLocation));
 
             if (mathPr.NaryLimitLocation != MathLimitLocation.UnderOver)

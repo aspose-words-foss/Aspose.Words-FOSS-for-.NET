@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -10,7 +10,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
 {
     internal class AwtBogusColorSpace : AwtColorSpace
     {
-        public AwtBogusColorSpace(int numComponents):base(GetType(numComponents), numComponents)
+        public AwtBogusColorSpace(int numComponents) : base(GetType(numComponents), numComponents)
         {
         }
 

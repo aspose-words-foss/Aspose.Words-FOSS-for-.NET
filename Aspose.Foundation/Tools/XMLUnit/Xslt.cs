@@ -6,14 +6,14 @@ namespace XmlUnit {
     using System.Xml;
     using System.Xml.XPath;
     using System.Xml.Xsl;
-#if !NETSTANDARD2_0
+#if NETFRAMEWORK
     using System.Security.Policy;
 #endif
 
     public class Xslt {
         private readonly XmlInput _xsltInput;
     	private readonly XmlResolver _xsltResolver;
-#if !NETSTANDARD2_0
+#if NETFRAMEWORK
         private readonly Evidence _evidence;
     	
         public Xslt(XmlInput xsltInput, XmlResolver xsltResolver, Evidence evidence) {
@@ -65,7 +65,7 @@ namespace XmlUnit {
 
 #if CPLUSPLUS
             transform.Load(xsltReader);
-#elif !NETSTANDARD2_0
+#elif NETFRAMEWORK
             XmlSecureResolver secureResolver = new XmlSecureResolver(_xsltResolver, _evidence);
             transform.Load(xsltReader, XsltSettings.Default, secureResolver);
 #else

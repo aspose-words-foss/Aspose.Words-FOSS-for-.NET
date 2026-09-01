@@ -357,6 +357,21 @@ namespace Aspose.Xml
         }
 
         /// <summary>
+        /// Selects nodes using an XPath query.
+        /// </summary>
+        public static IList<XmlNode> SelectNodes(XmlNode node, string xPath)
+        {
+            XmlNodeList xmlNodes = node.SelectNodes(xPath);
+
+            List<XmlNode> result = new List<XmlNode>();
+            // Bind life time of selected nodes to avoid NullReferenceException in C++.
+            foreach (XmlNode xmlNode in xmlNodes)
+                result.Add(xmlNode);
+
+            return result;
+        }
+
+        /// <summary>
         /// Select single node using an XPath query.
         /// Namespaces is optional (can be null) and contains prefixes mapped to namespaces.
         /// </summary>

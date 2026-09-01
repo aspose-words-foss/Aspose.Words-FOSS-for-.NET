@@ -78,7 +78,7 @@ namespace Aspose.Words.RW.Factories
                 case SaveFormat.Jpeg:
                 case SaveFormat.Gif:
                 case SaveFormat.Eps:
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
                 case SaveFormat.WebP:
 #endif
                     throw new NotSupportedException("FOSS");
@@ -146,7 +146,7 @@ namespace Aspose.Words.RW.Factories
                 case SaveFormat.Xps:
                 case SaveFormat.Xlsx:
                 case SaveFormat.Docling:
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
                 case SaveFormat.WebP:
 #endif
                     return new NullOfficeMathToShapeConverter(doc);

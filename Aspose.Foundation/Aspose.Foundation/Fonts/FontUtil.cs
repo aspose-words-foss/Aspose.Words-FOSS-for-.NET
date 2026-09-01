@@ -403,7 +403,7 @@ namespace Aspose.Fonts
             gSuffixCharsetMap.Add("CE", 238);
             gSuffixCharsetMap.Add("Cyr", 204);
             gSuffixCharsetMap.Add("(Vietnamese)", 163);
-            gSuffixCharsetMap.Add("Western",0);
+            gSuffixCharsetMap.Add("Western", 0);
             gSuffixCharsetMap.Add("(Hebrew)", 177);
             gSuffixCharsetMap.Add("Tur", 162);
             gSuffixCharsetMap.Add("Greek", 161);

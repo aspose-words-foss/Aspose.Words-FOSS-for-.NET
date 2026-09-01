@@ -95,7 +95,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
         private const byte WordCode = 253;
         private const byte OneMoreByteCode2 = 254;
         private const byte OneMoreByteCode1 = 255;
-        
+
         private const short FlipSignCode = 250;
         private const short LowestCode = 250;
     }

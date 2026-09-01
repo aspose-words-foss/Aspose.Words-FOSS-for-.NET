@@ -506,9 +506,7 @@ namespace Aspose.JavaMs.Tests.System.Xml
             XmlTextReader reader = new XmlTextReader(new MemoryStream(Encoding.UTF8.GetBytes(input)));
             reader = new XmlTextReader(new MemoryStream(Encoding.UTF8.GetBytes(input)));
             reader.Namespaces = false;
-#if NET40
             reader.DtdProcessing = DtdProcessing.Prohibit;
-#endif
 
             reader.Read();
             Assert.That("", Is.EqualTo(reader.LocalName));
@@ -570,9 +568,7 @@ namespace Aspose.JavaMs.Tests.System.Xml
             //xml = xml.replace("\t", "&#x9;");
             XmlTextReader reader = new XmlTextReader(new MemoryStream(Encoding.UTF8.GetBytes(xml)));
             reader.Namespaces = false;
-#if NET40
             reader.DtdProcessing = DtdProcessing.Prohibit;
-#endif
             Assert.That(reader.Read(), Is.True);
             Assert.That(reader.MoveToFirstAttribute(), Is.True);
             Assert.That("\t0", Is.EqualTo(reader.Value));

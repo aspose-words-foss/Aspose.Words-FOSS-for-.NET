@@ -2370,7 +2370,7 @@ namespace Aspose
             end += this.mOffset;
             start += this.mOffset;
 
-            for (int next = start + 8 - (start & 0x7);; start = next, next += 8)
+            for (int next = start + 8 - (start & 0x7); ; start = next, next += 8)
             {
                 uint v;
                 if (next == 8)
@@ -2446,7 +2446,7 @@ namespace Aspose
             end += this.mOffset;
             start += this.mOffset;
 
-            for (int next = start + 8 - (start & 0x7);; start = next, next += 8)
+            for (int next = start + 8 - (start & 0x7); ; start = next, next += 8)
             {
                 uint v;
                 if (next == 8)

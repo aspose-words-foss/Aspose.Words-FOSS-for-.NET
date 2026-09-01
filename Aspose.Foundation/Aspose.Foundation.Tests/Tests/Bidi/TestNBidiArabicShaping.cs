@@ -77,7 +77,7 @@ namespace Aspose.Tests.Bidi
                 "original: \"{0}\"\noriginal as chars: {1}\nresult as chars:   {2}\nexpected as chars: {3}",
                 orig, AsCharArray(orig), AsCharArray(res), AsCharArray(exp)));
         }
-            
+
         [Test]
         public void Test06ArabicShapingTashkil()
         {

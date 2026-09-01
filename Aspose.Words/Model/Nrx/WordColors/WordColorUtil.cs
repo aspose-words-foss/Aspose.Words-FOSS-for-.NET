@@ -39,7 +39,7 @@ namespace Aspose.Words.Nrx
                 Word97Color bestWord97Color = Word97Color.Black;
                 for (int i = 0; i < gWord97ColorMap.Length; i++)
                 {
-                    double curDelta = ColorDiff(gWord97ColorMap[i], wordXPColor);
+                    double curDelta = HSLColor.ColorDiff(gWord97ColorMap[i], wordXPColor);
                     if (curDelta <= bestDelta)
                     {
                         bestWord97Color = (Word97Color)i;
@@ -48,39 +48,6 @@ namespace Aspose.Words.Nrx
                 }
                 return bestWord97Color;
             }
-        }
-
-        /// <summary>
-        /// HSL based color difference. 
-        /// </summary>
-        /// <remarks>
-        /// AM. After some experiments I found that HSL model gives more exactly color matching results. 
-        /// </remarks>
-        private static double ColorDiff(int colorA, int colorB)
-        {
-            int ar = (colorA & 0x000000FF);
-            int ag = ((colorA & 0x0000FF00) >> 8);
-            int ab = ((colorA & 0x00FF0000) >> 16);
-
-            int br = (colorB & 0x000000FF);
-            int bg = ((colorB & 0x0000FF00) >> 8);
-            int bb = ((colorB & 0x00FF0000) >> 16);
-
-            HSLColor hsla = new HSLColor(DrColor.FromArgb(ar, ag, ab));
-            HSLColor hslb = new HSLColor(DrColor.FromArgb(br, bg, bb));
-
-            double diff = System.Math.Abs(hsla.Sat - hslb.Sat) + System.Math.Abs(hsla.Lum - hslb.Lum);
-
-            // Hue is undefined for achromatic color so skip component from calculation.
-            if (!(IsAchromatic(ar, ag, ab) || IsAchromatic(br, bg, bb)))
-                diff += System.Math.Abs(hsla.Hue - hslb.Hue);
-
-            return diff;
-        }
-
-        private static bool IsAchromatic(int r, int g, int b)
-        {
-            return (r == g) && (g == b);
         }
 
         /// <summary>

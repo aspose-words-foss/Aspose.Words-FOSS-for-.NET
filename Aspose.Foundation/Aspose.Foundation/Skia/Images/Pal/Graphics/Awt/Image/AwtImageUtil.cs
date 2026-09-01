@@ -2,9 +2,8 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
-using Aspose.Images.Pal.Graphics.Decoder.Tiff;
 using System.IO;
 
 namespace Aspose.Images.Pal.Graphics.Awt.Image

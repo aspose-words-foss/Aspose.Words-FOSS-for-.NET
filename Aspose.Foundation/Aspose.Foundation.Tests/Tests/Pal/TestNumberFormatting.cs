@@ -28,23 +28,23 @@ namespace Aspose.Tests.Pal
                 double value = 123.456;
                 CultureInfo[] cultures =
                     {
-                        new CultureInfo("ru-RU", false), 
-                        new CultureInfo("en-US", false), 
-                        new CultureInfo("de-DE", false), 
-                        new CultureInfo("sv-SE", false), 
-                        new CultureInfo("ja-JP", false) 
+                        new CultureInfo("ru-RU", false),
+                        new CultureInfo("en-US", false),
+                        new CultureInfo("de-DE", false),
+                        new CultureInfo("sv-SE", false),
+                        new CultureInfo("ja-JP", false)
                     };
 
                 // C
-                string[] specifier = new string[] {"C", "C2", "C3", "C10"};
-                string[] precisionResults = new string[] {"$123.46", "$123.46", "$123.456", "$123.4560000000"};
+                string[] specifier = new string[] { "C", "C2", "C3", "C10" };
+                string[] precisionResults = new string[] { "$123.46", "$123.46", "$123.456", "$123.4560000000" };
 #if JAVA
                 //JAVA specific results. No ruble currency symbol yet.
                 String[] cultureSpecificResults = new String[] { "123,46 руб.", "$123.46", "123,46 €", "123,46 kr", "￥123" }; 
-#elif NETSTANDARD
+#elif NETSTANDARD || NET
                 string[] cultureSpecificResults = new string[] { "123,46₽", "$123.46", "123,46 €", "123,46 kr", "￥123" };
 #else
-                string[] cultureSpecificResults = new string[] {"123,46₽", "$123.46", "123,46 €", "123,46 kr", "¥123"};
+                string[] cultureSpecificResults = new string[] { "123,46₽", "$123.46", "123,46 €", "123,46 kr", "¥123" };
 #endif
 
 #if !JAVA
@@ -57,60 +57,60 @@ namespace Aspose.Tests.Pal
 
                 // D
                 int valueInt = -123; //Supported by: Integral types only.
-                specifier = new string[] {"D", "D5"};
-#if NETSTANDARD
+                specifier = new string[] { "D", "D5" };
+#if NETSTANDARD || NET
                 precisionResults = new string[] { "-123", "-00123" };
                 cultureSpecificResults = new string[] { "-123", "-123", "-123", "−123", "-123" };
 #else
-                precisionResults = new string[] {"-123", "-00123"};
-                cultureSpecificResults = new string[] {"-123", "-123", "-123", "-123", "-123"};
+                precisionResults = new string[] { "-123", "-00123" };
+                cultureSpecificResults = new string[] { "-123", "-123", "-123", "-123", "-123" };
 #endif
                 VerifyFormat(specifier, valueInt, precisionResults, cultures, cultureSpecificResults);
 
                 // E
-                specifier = new string[] {"e", "e2"};
-                precisionResults = new string[] {"1.234560e+002", "1.23e+002"};
+                specifier = new string[] { "e", "e2" };
+                precisionResults = new string[] { "1.234560e+002", "1.23e+002" };
                 cultureSpecificResults = new string[]
                     {"1,234560e+002", "1.234560e+002", "1,234560e+002", "1,234560e+002", "1.234560e+002"};
                 VerifyFormat(specifier, value, precisionResults, cultures, cultureSpecificResults);
 
                 // F
-                specifier = new string[] {"F1", "F4"};
-                precisionResults = new string[] {"123.5", "123.4560"};
-                cultureSpecificResults = new string[] {"123,5", "123.5", "123,5", "123,5", "123.5"};
+                specifier = new string[] { "F1", "F4" };
+                precisionResults = new string[] { "123.5", "123.4560" };
+                cultureSpecificResults = new string[] { "123,5", "123.5", "123,5", "123,5", "123.5" };
                 VerifyFormat(specifier, value, precisionResults, cultures, cultureSpecificResults);
 
                 // G
-                specifier = new string[] {"G", "G4"};
+                specifier = new string[] { "G", "G4" };
 #if JAVA
                 //JAVA specific rounding. 
                 precisionResults =       new String[] { "123.456", "123.456" }; 
 #else
-                precisionResults = new string[] {"123.456", "123.5"};
+                precisionResults = new string[] { "123.456", "123.5" };
 #endif
-                cultureSpecificResults = new string[] {"123,456", "123.456", "123,456", "123,456", "123.456"};
+                cultureSpecificResults = new string[] { "123,456", "123.456", "123,456", "123,456", "123.456" };
                 VerifyFormat(specifier, value, precisionResults, cultures, cultureSpecificResults);
 
                 // N
                 double valueDouble = 123456.789;
-                specifier = new string[] {"N", "N3"};
-#if NETSTANDARD
+                specifier = new string[] { "N", "N3" };
+#if NETSTANDARD || NET
                 precisionResults = new string[] { "123,456.789", "123,456.789" };
                 cultureSpecificResults = new string[] { "123 456,789", "123,456.789", "123.456,789", "123 456,789", "123,456.789" };
 #else
-                precisionResults = new string[] {"123,456.79", "123,456.789"};
-                cultureSpecificResults = new string[] {"123 456,79", "123,456.79", "123.456,79", "123 456,79", "123,456.79"};
+                precisionResults = new string[] { "123,456.79", "123,456.789" };
+                cultureSpecificResults = new string[] { "123 456,79", "123,456.79", "123.456,79", "123 456,79", "123,456.79" };
 #endif
                 VerifyFormat(specifier, valueDouble, precisionResults, cultures, cultureSpecificResults);
 
                 // P
                 double persentValue = 1.789;
-                specifier = new string[] {"P", "P2"};
+                specifier = new string[] { "P", "P2" };
 #if JAVA
                 // JAVA-changed
                 precisionResults =       new String[] { "178.90%", "178.90%" }; 
                 cultureSpecificResults = new String[] { "178,90%", "178.90%", "178,90%", "178,90 %", "178.90%" };
-#elif NETSTANDARD
+#elif NETSTANDARD || NET
                 precisionResults = new string[] { "178.900%", "178.90%" };
                 cultureSpecificResults = new string[] { "178,900 %", "178.900%", "178,900 %", "178,900 %", "178.900%" };
 #else
@@ -122,17 +122,17 @@ namespace Aspose.Tests.Pal
                 // R
                 double roundValue = 3.14159265358979323846;
                 //Supported by: Single, Double, and BigInteger.Precision specifier: Ignored.
-                specifier = new string[] {"R"};
+                specifier = new string[] { "R" };
 
 #if JAVA
                 //JAVA specific rounding.
                 precisionResults =       new String[] { "3.1415926535897930" }; 
                 cultureSpecificResults = new String[] { "3,1415926535897930", "3.1415926535897930", "3,1415926535897930", "3,1415926535897930", "3.1415926535897930" };
-#elif NETSTANDARD
+#elif NETSTANDARD || NET
                 precisionResults = new String[] { "3.141592653589793" };
                 cultureSpecificResults = new String[] { "3,141592653589793", "3.141592653589793", "3,141592653589793", "3,141592653589793", "3.141592653589793" };
 #else
-                precisionResults = new string[] {"3.1415926535897931"};
+                precisionResults = new string[] { "3.1415926535897931" };
                 cultureSpecificResults = new string[]
                     {
                         "3,1415926535897931", "3.1415926535897931", "3,1415926535897931", "3,1415926535897931",
@@ -143,9 +143,9 @@ namespace Aspose.Tests.Pal
 
                 // X
                 int hexValue = 1463; //Supported by: Integral types only.
-                specifier = new string[] {"X", "X6"};
-                precisionResults = new string[] {"5B7", "0005B7"};
-                cultureSpecificResults = new string[] {"5B7", "5B7", "5B7", "5B7", "5B7"};
+                specifier = new string[] { "X", "X6" };
+                precisionResults = new string[] { "5B7", "0005B7" };
+                cultureSpecificResults = new string[] { "5B7", "5B7", "5B7", "5B7", "5B7" };
                 VerifyFormat(specifier, hexValue, precisionResults, cultures, cultureSpecificResults);
             }
             finally

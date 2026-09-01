@@ -10,14 +10,14 @@ namespace NUnit.Framework
     [JavaDelete("Autoported directly to Java's TestNG analog. No need in Java.")]
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
     public class NetStandardIgnoreAttribute :
-#if NETSTANDARD
+#if NETSTANDARD || NET
         IgnoreAttribute
 #else
         Attribute
 #endif
     {
         public NetStandardIgnoreAttribute(string reason)
-#if NETSTANDARD
+#if NETSTANDARD || NET
             : base(reason)
 #endif
         { }

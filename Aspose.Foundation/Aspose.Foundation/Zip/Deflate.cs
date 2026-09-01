@@ -85,15 +85,15 @@ namespace Aspose.Zip
     public enum FlushType
     {
         /// <summary>No flush at all.</summary>
-        None=0,
-        
+        None = 0,
+
         /// <summary>Closes the current block, but doesn't flush it to
         /// the output. Used internally only in hypothetical
         /// scenarios.  This was supposed to be removed by Zlib, but it is
         /// still in use in some edge cases. 
         /// </summary>
         Partial,
-        
+
         /// <summary>
         /// Use this during compression to specify that all pending output should be
         /// flushed to the output buffer and the output should be aligned on a byte
@@ -104,7 +104,7 @@ namespace Aspose.Zip
         /// degrade compression and so it should be used only when necessary.
         /// </summary>
         Sync,
-        
+
         /// <summary>
         /// Use this during compression to specify that all output should be flushed, as
         /// with <c>FlushType.Sync</c>, but also, the compression state should be reset
@@ -113,7 +113,7 @@ namespace Aspose.Zip
         /// <c>FlushType.Full</c> too often can significantly degrade the compression.
         /// </summary>
         Full,
-        
+
         /// <summary>Signals the end of the compression/decompression stream.</summary>
         Finish,
     }
@@ -142,7 +142,7 @@ namespace Aspose.Zip
         private const int MEM_LEVEL_DEFAULT = 8;
 
         internal delegate BlockState CompressFunc(FlushType flush);
-        
+
         internal class Config
         {
             // Use a faster search when the previous match is longer than this
@@ -175,10 +175,10 @@ namespace Aspose.Zip
 
             public static Config Lookup(CompressionLevel level)
             {
-                return Table[(int) level];
+                return Table[(int)level];
             }
 
-            
+
             static Config()
             {
                 Table = new Config[] {
@@ -276,9 +276,9 @@ namespace Aspose.Zip
         internal int w_size; // LZ77 window size (32K by default)
         internal int w_bits; // log2(w_size)  (8..16)
         internal int w_mask; // w_size - 1
-        
+
         internal byte[] window;
-        
+
         // Sliding window. Input bytes are read into the second half of the window,
         // and move to the first half later to keep a dictionary of at least wSize
         // bytes. With this organization, matches are limited to a distance of
@@ -350,7 +350,7 @@ namespace Aspose.Zip
 
         internal int heap_len; // number of elements in the heap
         internal int heap_max; // element of largest frequency
-        
+
         // The sons of heap[n] are heap[2*n] and heap[2*n+1]. heap[0] is not used.
         // The same heap array is used to build all trees.
 
@@ -400,7 +400,7 @@ namespace Aspose.Zip
         // are always zero.
         internal int bi_valid;
 
-        
+
         internal DeflateManager()
         {
             dyn_ltree = new short[HEAP_SIZE * 2];
@@ -408,14 +408,15 @@ namespace Aspose.Zip
             bl_tree = new short[(2 * BL_CODES + 1) * 2]; // Huffman tree for bit lengths
         }
 
-        
+
         // lm_init
         private void _InitializeLazyMatch()
         {
             window_size = 2 * w_size;
 
             // clear the hash
-            for (int i = 0; i < hash_size; i++) head[i] = 0;
+            for (int i = 0; i < hash_size; i++)
+                head[i] = 0;
 
             config = Config.Lookup(compressionLevel);
             DeflateMethod = config.Flavor;
@@ -483,7 +484,8 @@ namespace Aspose.Zip
                     break;
 
                 // Exchange v with the smallest son
-                heap[k] = heap[j]; k = j;
+                heap[k] = heap[j];
+                k = j;
                 // And continue down the tree, setting j to the left son of k
                 j <<= 1;
             }
@@ -497,7 +499,7 @@ namespace Aspose.Zip
             return (tn2 < tm2 || (tn2 == tm2 && depth[n] <= depth[m]));
         }
 
-        
+
         // Scan a literal or distance tree to determine the frequencies of the codes
         // in the bit length tree.
         internal void scan_tree(short[] tree, int max_code)
@@ -512,13 +514,15 @@ namespace Aspose.Zip
 
             if (nextlen == 0)
             {
-                max_count = 138; min_count = 3;
+                max_count = 138;
+                min_count = 3;
             }
             tree[(max_code + 1) * 2 + 1] = (short)0x7fff; // guard //??
 
             for (n = 0; n <= max_code; n++)
             {
-                curlen = nextlen; nextlen = (int)tree[(n + 1) * 2 + 1];
+                curlen = nextlen;
+                nextlen = (int)tree[(n + 1) * 2 + 1];
                 if (++count < max_count && curlen == nextlen)
                 {
                     continue;
@@ -541,18 +545,22 @@ namespace Aspose.Zip
                 {
                     bl_tree[REPZ_11_138 * 2]++;
                 }
-                count = 0; prevlen = curlen;
+                count = 0;
+                prevlen = curlen;
                 if (nextlen == 0)
                 {
-                    max_count = 138; min_count = 3;
+                    max_count = 138;
+                    min_count = 3;
                 }
                 else if (curlen == nextlen)
                 {
-                    max_count = 6; min_count = 3;
+                    max_count = 6;
+                    min_count = 3;
                 }
                 else
                 {
-                    max_count = 7; min_count = 4;
+                    max_count = 7;
+                    min_count = 4;
                 }
             }
         }
@@ -619,12 +627,14 @@ namespace Aspose.Zip
 
             if (nextlen == 0)
             {
-                max_count = 138; min_count = 3;
+                max_count = 138;
+                min_count = 3;
             }
 
             for (n = 0; n <= max_code; n++)
             {
-                curlen = nextlen; nextlen = tree[(n + 1) * 2 + 1];
+                curlen = nextlen;
+                nextlen = tree[(n + 1) * 2 + 1];
                 if (++count < max_count && curlen == nextlen)
                 {
                     continue;
@@ -641,7 +651,8 @@ namespace Aspose.Zip
                 {
                     if (curlen != prevlen)
                     {
-                        send_code(curlen, bl_tree); count--;
+                        send_code(curlen, bl_tree);
+                        count--;
                     }
                     send_code(REP_3_6, bl_tree);
                     send_bits(count - 3, 2);
@@ -656,18 +667,22 @@ namespace Aspose.Zip
                     send_code(REPZ_11_138, bl_tree);
                     send_bits(count - 11, 7);
                 }
-                count = 0; prevlen = curlen;
+                count = 0;
+                prevlen = curlen;
                 if (nextlen == 0)
                 {
-                    max_count = 138; min_count = 3;
+                    max_count = 138;
+                    min_count = 3;
                 }
                 else if (curlen == nextlen)
                 {
-                    max_count = 6; min_count = 3;
+                    max_count = 6;
+                    min_count = 3;
                 }
                 else
                 {
-                    max_count = 7; min_count = 4;
+                    max_count = 7;
+                    min_count = 4;
                 }
             }
         }
@@ -800,7 +815,7 @@ namespace Aspose.Zip
         }
 
 
-        
+
         // Send the block data compressed using the given Huffman trees
         internal void send_compressed_block(short[] ltree, short[] dtree)
         {
@@ -815,9 +830,9 @@ namespace Aspose.Zip
                 do
                 {
                     int ix = _distanceOffset + lx * 2;
-                    distance = ((pending[ix] << 8) & 0xff00) | 
+                    distance = ((pending[ix] << 8) & 0xff00) |
                         (pending[ix + 1] & 0xff);
-                    lc = (pending[_lengthOffset + lx]) & 0xff; 
+                    lc = (pending[_lengthOffset + lx]) & 0xff;
                     lx++;
 
                     if (distance == 0)
@@ -837,14 +852,14 @@ namespace Aspose.Zip
                         {
                             // send the extra length bits
                             lc -= Tree.LengthBase[code];
-                            send_bits(lc, extra); 
+                            send_bits(lc, extra);
                         }
                         distance--; // dist is now the match distance - 1
                         code = Tree.DistanceCode(distance);
 
                         // send the distance code
                         send_code(code, dtree);
-                        
+
                         extra = Tree.ExtraDistanceBits[code];
                         if (extra != 0)
                         {
@@ -852,7 +867,7 @@ namespace Aspose.Zip
                             distance -= Tree.DistanceBase[code];
                             send_bits(distance, extra);
                         }
-                        }
+                    }
 
                     // Check that the overlay between pending and d_buf+l_buf is ok:
                 }
@@ -864,7 +879,7 @@ namespace Aspose.Zip
         }
 
 
-        
+
         // Set the data type to ASCII or BINARY, using a crude approximation:
         // binary if more than 20% of the bytes are <= 6 or >= 128, ascii otherwise.
         // IN assertion: the fields freq of dyn_ltree are set and the total of all
@@ -876,21 +891,24 @@ namespace Aspose.Zip
             int bin_freq = 0;
             while (n < 7)
             {
-                bin_freq += dyn_ltree[n * 2]; n++;
+                bin_freq += dyn_ltree[n * 2];
+                n++;
             }
             while (n < 128)
             {
-                ascii_freq += dyn_ltree[n * 2]; n++;
+                ascii_freq += dyn_ltree[n * 2];
+                n++;
             }
             while (n < LITERALS)
             {
-                bin_freq += dyn_ltree[n * 2]; n++;
+                bin_freq += dyn_ltree[n * 2];
+                n++;
             }
             data_type = (sbyte)(bin_freq > (SharedUtils.URShift(ascii_freq, 2)) ? Z_BINARY : Z_ASCII);
         }
 
 
-        
+
         // Flush the bit buffer, keeping at most 7 bits in it.
         internal void bi_flush()
         {
@@ -1257,7 +1275,7 @@ namespace Aspose.Zip
                             strstart++;
 
                             ins_h = ((ins_h << hash_shift) ^ (window[(strstart) + (MIN_MATCH - 1)] & 0xff)) & hash_mask;
-                            
+
                             hash_head = (head[ins_h] & 0xffff);
                             prev[strstart & w_mask] = head[ins_h];
                             head[ins_h] = unchecked((short)strstart);
@@ -1328,7 +1346,7 @@ namespace Aspose.Zip
                     _fillWindow();
                     if (lookahead < MIN_LOOKAHEAD && flush == FlushType.None)
                         return BlockState.NeedMore;
-        
+
                     if (lookahead == 0)
                         break; // flush the current block
                 }
@@ -1339,18 +1357,18 @@ namespace Aspose.Zip
                 if (lookahead >= MIN_MATCH)
                 {
                     ins_h = (((ins_h) << hash_shift) ^ (window[(strstart) + (MIN_MATCH - 1)] & 0xff)) & hash_mask;
-                    
+
                     hash_head = (head[ins_h] & 0xffff);
                     prev[strstart & w_mask] = head[ins_h];
                     head[ins_h] = unchecked((short)strstart);
                 }
 
                 // Find the longest match, discarding those <= prev_length.
-                prev_length = match_length; 
+                prev_length = match_length;
                 prev_match = match_start;
                 match_length = MIN_MATCH - 1;
 
-                if (hash_head != 0 && prev_length < config.MaxLazy && 
+                if (hash_head != 0 && prev_length < config.MaxLazy &&
                     ((strstart - hash_head) & 0xffff) <= w_size - MIN_LOOKAHEAD)
                 {
                     // To simplify the code, we prevent matches with the string
@@ -1393,7 +1411,7 @@ namespace Aspose.Zip
                         if (++strstart <= max_insert)
                         {
                             ins_h = (((ins_h) << hash_shift) ^ (window[(strstart) + (MIN_MATCH - 1)] & 0xff)) & hash_mask;
-                    
+
                             hash_head = (head[ins_h] & 0xffff);
                             prev[strstart & w_mask] = head[ins_h];
                             head[ins_h] = unchecked((short)strstart);
@@ -1507,7 +1525,8 @@ namespace Aspose.Zip
                 // It is not necessary to compare scan[2] and match[2] since they
                 // are always equal when the other bytes match, given that
                 // the hash keys are equal and that HASH_BITS >= 8.
-                scan += 2; match++;
+                scan += 2;
+                match++;
 
                 // We check for insufficient lookahead only every 8th comparison
                 // the 256th check will be made at strstart+258.
@@ -1597,7 +1616,7 @@ namespace Aspose.Zip
             head = new short[hash_size];
 
             // for memLevel==8, this will be 16384, 16k
-            lit_bufsize = 1 << (memLevel + 6); 
+            lit_bufsize = 1 << (memLevel + 6);
 
             // Use a single array as the buffer for data pending compression,
             // the output distance codes, and the output length codes (aka tree).  
@@ -1614,7 +1633,7 @@ namespace Aspose.Zip
 
             this.compressionLevel = level;
             this.compressionStrategy = strategy;
-            
+
             Reset();
             return ZlibConstants.Z_OK;
         }
@@ -1725,7 +1744,7 @@ namespace Aspose.Zip
         {
             int old_flush;
 
-            if (_codec.OutputBuffer == null || 
+            if (_codec.OutputBuffer == null ||
                 (_codec.InputBuffer == null && _codec.AvailableBytesIn != 0) ||
                 (status == FINISH_STATE && flush != FlushType.Finish))
             {
@@ -1786,8 +1805,8 @@ namespace Aspose.Zip
                 // flushes. For repeated and useless calls with Z_FINISH, we keep
                 // returning Z_STREAM_END instead of Z_BUFF_ERROR.
             }
-            else if (_codec.AvailableBytesIn == 0 && 
-                     (int) flush <= old_flush && 
+            else if (_codec.AvailableBytesIn == 0 &&
+                     (int)flush <= old_flush &&
                      flush != FlushType.Finish)
             {
                 return ZlibConstants.Z_OK;
@@ -1809,16 +1828,16 @@ namespace Aspose.Zip
 
                 switch (DeflateMethod)
                 {
-                case DeflateFlavor.Store: 
-                    bstate = DeflateNone(flush);
-                    break;
-                case DeflateFlavor.Fast: 
-                    bstate = DeflateFast(flush);
-                    break;
-                case DeflateFlavor.Slow:
-                default:
+                    case DeflateFlavor.Store:
+                        bstate = DeflateNone(flush);
+                        break;
+                    case DeflateFlavor.Fast:
+                        bstate = DeflateFast(flush);
+                        break;
+                    case DeflateFlavor.Slow:
+                    default:
                         bstate = DeflateSlow(flush);
-                    break;
+                        break;
                 }
 
 

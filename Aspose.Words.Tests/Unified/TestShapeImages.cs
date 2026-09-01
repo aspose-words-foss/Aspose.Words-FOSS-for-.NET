@@ -19,7 +19,7 @@ using Aspose.Words.Drawing.Core.Dml.Diagrams;
 using Aspose.Words.Drawing.Core.Dml.Fills;
 using Aspose.Words.Loading;
 using NUnit.Framework;
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using Image = SkiaSharp.SKBitmap;
 #endif
 
@@ -531,13 +531,13 @@ namespace Aspose.Words.Tests.Unified
             Image image = null;
             try
             {
-#if NETSTANDARD
+#if NETSTANDARD || NET
                 image = BitmapPal.LoadNativeImage(TestUtil.BuildTestFileName(@"Model\Shape\Image\TestJira12462.gif"));
 #else
                 // For some reason if use BitmapPal.LoadNativeImage (Image.FromStream) GDI+ exception occurs. So keep using Image.FromFile in this test.
                 image = Image.FromFile(TestUtil.BuildTestFileName(@"Model\Shape\Image\TestJira12462.gif"));
 #endif
-#if JAVA || NETSTANDARD
+#if NETSTANDARD || NET || JAVA
                 //JAVA-changed: java's BufferedImage hasn't Resolution.
                 double imageHeight = image.Height;
                 double imageWidth = image.Width;

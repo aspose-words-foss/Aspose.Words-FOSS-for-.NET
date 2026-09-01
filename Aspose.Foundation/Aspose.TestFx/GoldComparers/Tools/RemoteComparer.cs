@@ -21,7 +21,7 @@ namespace Aspose.TestFx.GoldComparers.Format
             httpParameters.Add("TYPE", ((int)mType).ToString());
             HttpClientPal.DoPost(gServerUrl, httpParameters);
         }
-        
+
         public override void VerifyConformance(ComparerParams comparerParams)
         {
             StringToStringDictionary httpParameters = comparerParams.ToParamMap();
@@ -36,7 +36,7 @@ namespace Aspose.TestFx.GoldComparers.Format
             return false;
         }
 
-        private static readonly string gServerUrl = "http://" + TestEnvironment.GetRemoteComparerIP() + 
+        private static readonly string gServerUrl = "http://" + TestEnvironment.GetRemoteComparerIP() +
                                                     ":" + TestEnvironment.GetRemoteComparerPort();
     }
 }

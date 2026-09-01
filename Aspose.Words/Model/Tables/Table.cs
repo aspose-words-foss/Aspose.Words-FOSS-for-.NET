@@ -1527,6 +1527,22 @@ namespace Aspose.Words.Tables
         }
 
         /// <summary>
+        /// Returns True if recalculation of the table width is necessary.
+        /// </summary>
+        private bool TableWidthRecalculationNeeded()
+        {
+            if (!PreferredWidth.IsFixed || (PreferredWidth.Value == 0))
+                return true;
+
+            for (Row row = FirstRow; row != null; row = row.NextRow)
+                for (Cell cell = row.FirstCell; cell != null; cell = cell.NextCell)
+                    if (cell.CellPr.Width > PreferredWidth.Value)
+                        return true;
+
+            return false;
+        }
+
+        /// <summary>
         /// Updates the preferred width of each cell in the table to a percentage of the table's width.
         /// </summary>
         /// <remarks>
@@ -1541,9 +1557,9 @@ namespace Aspose.Words.Tables
                 return;
 
             // If the preferred width is fixed, use its value; otherwise, calculate the table width.
-            double tableWidth = PreferredWidth.IsFixed && (PreferredWidth.Value > 0)
-                ? PreferredWidth.Value
-                : CalculateTableWidth();
+            double tableWidth = TableWidthRecalculationNeeded()
+                ? CalculateTableWidth()
+                : PreferredWidth.Value;
 
             for (Row row = FirstRow; row != null; row = row.NextRow)
             {

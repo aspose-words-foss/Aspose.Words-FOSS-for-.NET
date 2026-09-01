@@ -24,8 +24,9 @@
 //
 
 using System;
-
+#if !NET8_0_OR_GREATER
 using System.Runtime.Serialization;
+#endif
 using Aspose.Common;
 
 using Aspose.JavaAttributes;

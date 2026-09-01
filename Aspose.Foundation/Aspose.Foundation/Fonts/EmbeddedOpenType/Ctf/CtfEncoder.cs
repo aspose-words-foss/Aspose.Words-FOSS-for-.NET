@@ -50,12 +50,12 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                     switch (tag)
                     {
                         case OpenTypeTableTag.Hdmx:
-                            {
-                                byte[] hdmx = fontTablesReader.ReadTable(tag);
-                                byte[] hdmxEncoded = EncodeHdmxTable(hdmx, maxp.NumGlyphs, head.UnitsPerEm, hmtx);
-                                builder.AddTable(tag, hdmxEncoded);
-                                break;
-                            }
+                        {
+                            byte[] hdmx = fontTablesReader.ReadTable(tag);
+                            byte[] hdmxEncoded = EncodeHdmxTable(hdmx, maxp.NumGlyphs, head.UnitsPerEm, hmtx);
+                            builder.AddTable(tag, hdmxEncoded);
+                            break;
+                        }
                         case OpenTypeTableTag.Vdmx:
                             builder.AddTable(tag, EncodeVdmxTable(fontTablesReader.ReadTable(tag)));
                             break;
@@ -65,14 +65,14 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                         case OpenTypeTableTag.Loca:
                             // 'loca' table will be constructed from the 'glyf' table in decoder,
                             // but it must be written with zero length.
-                            builder.AddTable(tag, new byte[]{});
+                            builder.AddTable(tag, new byte[] { });
                             break;
                         case OpenTypeTableTag.Glyf:
-                            {
-                                ctfEncodedData = CtfGlyphEncoder.EncodeGlyphData(fontTablesReader, head.IsLocaShort);
-                                builder.AddTable(tag, ctfEncodedData.FontTable);
-                                break;
-                            }
+                        {
+                            ctfEncodedData = CtfGlyphEncoder.EncodeGlyphData(fontTablesReader, head.IsLocaShort);
+                            builder.AddTable(tag, ctfEncodedData.FontTable);
+                            break;
+                        }
                         default:
                             // All other tables should be added not encoded.
                             builder.AddTable(tag, fontTablesReader.ReadTable(tag));
@@ -85,69 +85,69 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
             }
         }
 
-      /// <summary>
-      /// Encodes cvt table.
-      /// </summary>
-      /// <remarks>
-      /// See http://www.w3.org/Submission/2008/SUBM-MTX-20080305/#CVTTable for more info.
-      /// </remarks>
-      internal static byte[] EncodeCvtTable(byte[] tableData)
-      {
-          using (MemoryStream inStream = new MemoryStream(tableData))
-          {
-              BigEndianBinaryReader reader = new BigEndianBinaryReader(inStream);
+        /// <summary>
+        /// Encodes cvt table.
+        /// </summary>
+        /// <remarks>
+        /// See http://www.w3.org/Submission/2008/SUBM-MTX-20080305/#CVTTable for more info.
+        /// </remarks>
+        internal static byte[] EncodeCvtTable(byte[] tableData)
+        {
+            using (MemoryStream inStream = new MemoryStream(tableData))
+            {
+                BigEndianBinaryReader reader = new BigEndianBinaryReader(inStream);
 
-              using (MemoryStream outStream = new MemoryStream())
-              {
-                  BigEndianBinaryWriter writer = new BigEndianBinaryWriter(outStream);
+                using (MemoryStream outStream = new MemoryStream())
+                {
+                    BigEndianBinaryWriter writer = new BigEndianBinaryWriter(outStream);
 
-                  int cvtLength = tableData.Length / 2;
-                  writer.WriteInt16(cvtLength);
+                    int cvtLength = tableData.Length / 2;
+                    writer.WriteInt16(cvtLength);
 
-                  int previousValue = 0;
-                  for (int i = 0; i < cvtLength; i++)
-                  {
-                      int value = reader.ReadInt16();
-                      int difference = value - previousValue;
-                      previousValue = value;
+                    int previousValue = 0;
+                    for (int i = 0; i < cvtLength; i++)
+                    {
+                        int value = reader.ReadInt16();
+                        int difference = value - previousValue;
+                        previousValue = value;
 
-                      bool isNegative = (difference < 0);
-                      int positiveDifference = (isNegative) ? 0x00 - difference : difference;
+                        bool isNegative = (difference < 0);
+                        int positiveDifference = (isNegative) ? 0x00 - difference : difference;
 
-                      int index = positiveDifference / CtfCoderUtil.CvtLowestCode;
+                        int index = positiveDifference / CtfCoderUtil.CvtLowestCode;
 
-                      if ((index <= 8) && (difference != -32768))
-                      {
-                          if (isNegative)
-                          {
-                              int code = CtfCoderUtil.CvtNegative0 + index;
-                              writer.WriteByte((byte)code);
-                              positiveDifference = (positiveDifference - index * CtfCoderUtil.CvtLowestCode);
-                              writer.WriteByte((byte)positiveDifference);
-                          }
-                          else
-                          {
-                              if (index > 0)
-                              {
-                                  int code = CtfCoderUtil.CvtPositive1 + index - 1;
-                                  writer.WriteByte((byte)code);
-                                  positiveDifference = positiveDifference - index * CtfCoderUtil.CvtLowestCode;
-                              }
+                        if ((index <= 8) && (difference != -32768))
+                        {
+                            if (isNegative)
+                            {
+                                int code = CtfCoderUtil.CvtNegative0 + index;
+                                writer.WriteByte((byte)code);
+                                positiveDifference = (positiveDifference - index * CtfCoderUtil.CvtLowestCode);
+                                writer.WriteByte((byte)positiveDifference);
+                            }
+                            else
+                            {
+                                if (index > 0)
+                                {
+                                    int code = CtfCoderUtil.CvtPositive1 + index - 1;
+                                    writer.WriteByte((byte)code);
+                                    positiveDifference = positiveDifference - index * CtfCoderUtil.CvtLowestCode;
+                                }
 
-                              writer.WriteByte((byte)positiveDifference);
-                          }
-                      }
-                      else
-                      {
-                          writer.WriteByte((byte)CtfCoderUtil.CvtLowestCode);
-                          writer.WriteInt16(difference);
-                      }
-                  }
+                                writer.WriteByte((byte)positiveDifference);
+                            }
+                        }
+                        else
+                        {
+                            writer.WriteByte((byte)CtfCoderUtil.CvtLowestCode);
+                            writer.WriteInt16(difference);
+                        }
+                    }
 
-                  return outStream.ToArray();
-              }
-          }
-      }
+                    return outStream.ToArray();
+                }
+            }
+        }
 
         /// <summary>
         /// Encodes hdmx table.
@@ -198,7 +198,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                                 return CtfCoderUtil.CloneWithVersion(tableData, (ushort)(0xFFFF - hdmx.Version));
                             }
 
-                            bitsOffset += magnitudeWriter.WriteValue((short) predictionError);
+                            bitsOffset += magnitudeWriter.WriteValue((short)predictionError);
                         }
                     }
                     magnitudeWriter.Flush();

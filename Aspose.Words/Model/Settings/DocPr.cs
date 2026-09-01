@@ -22,7 +22,7 @@ namespace Aspose.Words.Settings
         internal DocPr Clone()
         {
             DocPr lhs = (DocPr)MemberwiseClone();
-            
+
             lhs.ActiveWritingStyle = ActiveWritingStyle.Clone();
             lhs.MailMergeSettings = MailMergeSettings.Clone();
             lhs.DocumentProtection = DocumentProtection.Clone();
@@ -50,7 +50,7 @@ namespace Aspose.Words.Settings
             EmbedSystemFonts = fontInfos.EmbedSystemFonts;
             SaveSubsetFonts = fontInfos.SaveSubsetFonts;
         }
-        
+
         /// <summary>
         /// Specifies presence of footnotes in document. Used only in Word95.
         /// </summary>
@@ -156,7 +156,9 @@ namespace Aspose.Words.Settings
         /// </remarks>
         internal bool IsGutterSide
         {
-            get { return !GutterAtTop
+            get
+            {
+                return !GutterAtTop
                 || (MultiplePages == MultiplePagesType.MirrorMargins)
                 || (MultiplePages == MultiplePagesType.BookFoldPrinting)
                 || (MultiplePages == MultiplePagesType.BookFoldPrintingReverse)
@@ -323,7 +325,7 @@ namespace Aspose.Words.Settings
                 ShowInkAnnotations = value;
             }
         }
-        
+
         /// <summary>
         /// Helps prevent unintentional changes to all or part of an online form or document, as specified 
         /// (Protect Document option).
@@ -470,7 +472,7 @@ namespace Aspose.Words.Settings
         /// </summary>
         internal bool OptimizeForBrowser;
 
-        #if !CPP_DOC
+#if !CPP_DOC
         /// <summary>
         /// Specifies that the web page produced by this document should be optimized for specific output target
         /// (web option).
@@ -479,7 +481,7 @@ namespace Aspose.Words.Settings
         /// true somewhere after document is loaded if the WebTarget is set to 
         /// <see cref="Settings.WebTarget.XhtmlPlusCss1"/>, or <see cref="Settings.WebTarget.XhtmlPlusCss2"/>
         /// </remarks>
-        #else
+#else
         /// <summary>
         /// Specifies that the web page produced by this document should be optimized for specific output target
         /// (web option).
@@ -488,9 +490,9 @@ namespace Aspose.Words.Settings
         /// true somewhere after document is loaded if the WebTarget is set to 
         /// <see cref="Settings.WebTarget.XhtmlPlusCss1"/>, or <see cref="Settings.WebTarget.XhtmlPlusCss2"/>
         /// </remarks> -->
-        #endif
+#endif
         internal WebTarget WebTarget = WebTarget.None;
-        
+
         /// <summary>
         /// Specifies whether to rely on Vector Markup Language (VML) for displaying graphics in browsers (Web option).
         /// // web
@@ -803,7 +805,7 @@ namespace Aspose.Words.Settings
         /// </summary>
         internal bool NoFitText;
 
-#endregion Properties available in DOC only.
+        #endregion Properties available in DOC only.
 
 
         // RK: *** Default values constants.
@@ -815,32 +817,32 @@ namespace Aspose.Words.Settings
         /// </summary>
         [CppConstexpr]
         internal const int StylePaneSortMethodNames = 0;
-        
+
         /// <summary>
         /// 1 - Specifies that visible styles should be sorted by the default sorting of the host application.
         /// </summary>
         [CppConstexpr]
         internal const int StylePaneSortMethodDefault = 1;
-        
+
         /// <summary>
         /// 2    Specifies that visible styles should be sorted by the font for which they apply.
         /// </summary>
         [CppConstexpr]
         internal const int StylePaneSortMethodFont = 2;
-        
+
         /// <summary>
         /// 3    Specifies that visible styles should be sorted by the style on which they are based.
         /// </summary>
         [CppConstexpr]
         internal const int StylePaneSortMethodStyle = 3;
-        
+
         /// <summary>
         /// 4    Specifies that visible styles should be sorted by their style types (e.g., character, linked, paragraph).
         /// Any other value    Undefined. Shall not be used.
         /// </summary>
         [CppConstexpr]
         internal const int StylePaneSortMethodType = 4;
-            
+
         [CppConstexpr]
         internal const int DefaultTabStopDefault = 720;
         [CppConstexpr]

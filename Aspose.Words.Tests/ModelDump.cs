@@ -186,19 +186,19 @@ namespace Aspose.Words.Tests
                             break;
 
                         case PropTagType.Unicode:
-                            {
-                                int size = reader.ReadInt16();
-                                byte[] unicode = reader.ReadBytes(size);
-                                value = System.Text.Encoding.Unicode.GetString(unicode);
-                                break;
-                            }
+                        {
+                            int size = reader.ReadInt16();
+                            byte[] unicode = reader.ReadBytes(size);
+                            value = System.Text.Encoding.Unicode.GetString(unicode);
+                            break;
+                        }
 
                         case PropTagType.Binary:
-                            {
-                                int size = reader.ReadInt16();
-                                value = reader.ReadBytes(size);
-                                break;
-                            }
+                        {
+                            int size = reader.ReadInt16();
+                            value = reader.ReadBytes(size);
+                            break;
+                        }
 
                         default:
                             throw new InvalidOperationException();
@@ -272,7 +272,7 @@ namespace Aspose.Words.Tests
     {
         void IWarningCallback.Warning(WarningInfo info)
         {
-            foreach(WarningInfo item in mItems)
+            foreach (WarningInfo item in mItems)
             {
                 if ((item.WarningType == info.WarningType) &&
                     (item.Source == info.Source) &&
@@ -350,18 +350,18 @@ namespace Aspose.Words.Tests
             if (JoinRuns)
                 JoinRunsWithSameFormatting(doc);
 
-            if(ShowListLabels)
+            if (ShowListLabels)
                 doc.UpdateListLabels();
 
-            if(NoIstdInStyles)
+            if (NoIstdInStyles)
                 foreach (Style style in doc.Styles)
                 {
                     style.RunPr.Remove(FontAttr.Istd);
                     style.ParaPr.Remove(ParaAttr.Istd);
                 }
 
-            if(GlobalTableAttributes)
-                foreach(Table table in doc.GetChildNodes(NodeType.Table, true))
+            if (GlobalTableAttributes)
+                foreach (Table table in doc.GetChildNodes(NodeType.Table, true))
                     ExtractGlobalTableAttrs(table);
 
             if (UnifyToggles)
@@ -371,6 +371,24 @@ namespace Aspose.Words.Tests
             {
                 FontInfoCollection fonts = doc.FontInfos;
 
+                foreach (FontInfo fontInfo in fonts)
+                {
+                    if (StringUtil.HasChars(fontInfo.AltName))
+                        continue;
+
+                    // Well-known CJK fonts.
+                    switch (fontInfo.Name)
+                    {
+                        case "宋体":
+                            fontInfo.AltName = "SimSun";
+                            break;
+
+                        case "黑体":
+                            fontInfo.AltName = "SimHei";
+                            break;
+                    }
+                }
+
                 DoLocalizeFontNames(doc.Styles.DefaultRunPr, fonts);
                 foreach (Style style in doc.Styles)
                     DoLocalizeFontNames(style.RunPr, fonts);
@@ -378,7 +396,7 @@ namespace Aspose.Words.Tests
                 DoLocalizeFontNames(doc, doc.FontInfos);
             }
 
-            if(LocalizeStyleNames)
+            if (LocalizeStyleNames)
                 DoLocalizeStyleNames(doc);
 
             Refine(doc);
@@ -443,16 +461,16 @@ namespace Aspose.Words.Tests
                 if (font == null)
                     continue;
 
-                if(font.IsThemeFont)
+                if (font.IsThemeFont)
                     continue;
 
                 string fontName = font.Name;
-                if(IsAscii(fontName))
+                if (IsAscii(fontName))
                     continue;
 
                 FontInfo fontInfo = fonts[fontName];
 
-                foreach(string altName in fontInfo.GetAltNameList())
+                foreach (string altName in fontInfo.GetAltNameList())
                     if (IsAscii(altName))
                     {
                         runPr[key] = ComplexFontName.FromName(altName);
@@ -493,7 +511,7 @@ namespace Aspose.Words.Tests
         /// </summary>
         private static bool IsAscii(string text)
         {
-            foreach(char c in text)
+            foreach (char c in text)
                 if (((int)c) > 255)
                     return false;
 
@@ -506,10 +524,10 @@ namespace Aspose.Words.Tests
                 return;
 
             // Convert base style first.
-            if(style.GetBaseStyle() != null)
+            if (style.GetBaseStyle() != null)
                 ConvertToggles(style.GetBaseStyle(), alreadyProcessed);
 
-            foreach(int key in gToggleAttrs)
+            foreach (int key in gToggleAttrs)
             {
                 if (style.RunPr.Contains(key))
                 {
@@ -531,7 +549,7 @@ namespace Aspose.Words.Tests
 
         private static void ConvertToggles(IInline inline)
         {
-            foreach(int key in gToggleAttrs)
+            foreach (int key in gToggleAttrs)
             {
                 if (inline.RunPr_IInline.Contains(key))
                 {
@@ -551,7 +569,7 @@ namespace Aspose.Words.Tests
 
         private static void ConvertToggles(Paragraph para)
         {
-            foreach(int key in gToggleAttrs)
+            foreach (int key in gToggleAttrs)
             {
                 if (!para.ParagraphBreakRunPr.Contains(key))
                     continue;
@@ -572,14 +590,14 @@ namespace Aspose.Words.Tests
         private static void ConvertToggles(Document doc)
         {
             HashSetGeneric<Style> alreadyProcessed = new HashSetGeneric<Style>();
-            foreach(Style style in doc.Styles)
+            foreach (Style style in doc.Styles)
                 ConvertToggles(style, alreadyProcessed);
 
             foreach (Node node in doc.GetChildNodes(NodeType.Any, true))
             {
                 IInline inline = node as IInline;
 
-                if(inline != null)
+                if (inline != null)
                     ConvertToggles(inline);
                 else if (node.NodeType == NodeType.Paragraph)
                 {
@@ -599,7 +617,7 @@ namespace Aspose.Words.Tests
                     headerFooter.Remove();
                 }
 
-                for(int i = 0; i < sortedHeadersFooters.Count; i++)
+                for (int i = 0; i < sortedHeadersFooters.Count; i++)
                 {
                     HeaderFooter headerFooter = sortedHeadersFooters.GetByIndex(i);
                     section.InsertBefore(headerFooter, section.Body);
@@ -626,7 +644,7 @@ namespace Aspose.Words.Tests
 
             Write(string.Format("  [Colors: {0}]", theme.Colors.Name));
 
-            foreach(ThemeColor themeColor in gAllThemeColors)
+            foreach (ThemeColor themeColor in gAllThemeColors)
                 DumpThemeColor(theme, themeColor);
 
         }
@@ -647,7 +665,7 @@ namespace Aspose.Words.Tests
             if (dmlColor == null)
                 return;
 
-            if(dmlColor.ColorType == DmlColorType.HexRgbColor)
+            if (dmlColor.ColorType == DmlColorType.HexRgbColor)
             {
                 DmlHexRgbColor hexRgb = (DmlHexRgbColor)dmlColor;
                 Write(string.Format("    {{{0}: '{1}'}}", colorName, hexRgb.Value));
@@ -662,11 +680,11 @@ namespace Aspose.Words.Tests
         private static void DumpSupplementalFonts(IDictionary<string, ThemeSupplementalFont> table)
         {
             SortedStringListGeneric<object> sortedKeys = new SortedStringListGeneric<object>();
-            foreach(string script in table.Keys)
+            foreach (string script in table.Keys)
                 sortedKeys.Add(script, null);
 
             StringBuilder sb = new StringBuilder();
-            for(int i = 0; i < sortedKeys.Count; i++)
+            for (int i = 0; i < sortedKeys.Count; i++)
             {
                 string key = sortedKeys.GetKey(i);
                 ThemeSupplementalFont supplementalFont = table.GetValueOrNull(key);
@@ -680,7 +698,7 @@ namespace Aspose.Words.Tests
             if (childValue is IExpandableAttr)
             {
                 // Reverse merge the tab stop collection.
-                ((IExpandableAttr) childValue).Collapse((IExpandableAttr) baseValue);
+                ((IExpandableAttr)childValue).Collapse((IExpandableAttr)baseValue);
             }
         }
 
@@ -731,7 +749,7 @@ namespace Aspose.Words.Tests
                 if ((tableNormal != null) && (tablePr.Istd == tableNormal.Istd))
                 {
                     Collapse(tableNormal.TablePr, tablePr);
-                    if (tablePr.HasFormatRevision && ((TablePr) tablePr.FormatRevision.RevPr).Istd == tableNormal.Istd)
+                    if (tablePr.HasFormatRevision && ((TablePr)tablePr.FormatRevision.RevPr).Istd == tableNormal.Istd)
                     {
                         Collapse(tableNormal.TablePr, tablePr.FormatRevision.RevPr);
                     }
@@ -773,9 +791,9 @@ namespace Aspose.Words.Tests
             Write("");
             Write("[Package Custom Parts]");
 
-            foreach(CustomPart part in doc.PackageCustomParts)
+            foreach (CustomPart part in doc.PackageCustomParts)
             {
-                Write(string.Format("  ['{0}'{1}]", part.Name, part.IsExternal ? ", External": ""));
+                Write(string.Format("  ['{0}'{1}]", part.Name, part.IsExternal ? ", External" : ""));
                 Write(string.Format("    {{ParentName: '{0}'}}", part.ParentPartName));
                 Write(string.Format("    {{RelationshipType: '{0}'}}", part.RelationshipType));
                 Write(string.Format("    {{ContentType: {0}}}", part.ContentType));
@@ -1074,40 +1092,74 @@ namespace Aspose.Words.Tests
         {
             switch (codepage)
             {
-                case 1252: return "ANSI";
-                case 1250: return "EastEurope";
-                case 1251: return "Cyrillic";
-                case 1253: return "Greek";
-                case 1254: return "Turkish";
-                case 1255: return "Hebrew";
-                case 1256: return "Arabic";
-                case 1257: return "Baltic";
-                case 1258: return "Vietnamese";
-                case 874: return "Thai";
-                case 932: return "ShiftJIS";
-                case 936: return "Chinese Simplified";
-                case 949: return "Korean Wansung";
-                case 869: return "IBM Greek";
-                case 866: return "MS-DOS Russian";
-                case 865: return "MS-DOS Nordic";
-                case 864: return "Arabic";
-                case 863: return "MS-DOS Canadian French";
-                case 862: return "Hebrew";
-                case 861: return "MS-DOS Icelandic";
-                case 860: return "MS-DOS Portuguese";
-                case 857: return "IBM Turkish";
-                case 855: return "IBM Cyrillic";
-                case 852: return "Latin 2";
-                case 775: return "MS-DOS Baltic";
-                case 737: return "Greek; former 437 G";
-                case 708: return "Arabic; ASMO 708";
-                case 850: return "WE/Latin 1";
-                case 437: return "US";
-                case 0: return "Default";
-                case 950: return "ChineseBig5";
-                case 1361: return "Korean (Johab)";
-                case 2: return "Symbol";
-                default: throw new InvalidOperationException(string.Format("Codepage: {0}", codepage));
+                case 1252:
+                    return "ANSI";
+                case 1250:
+                    return "EastEurope";
+                case 1251:
+                    return "Cyrillic";
+                case 1253:
+                    return "Greek";
+                case 1254:
+                    return "Turkish";
+                case 1255:
+                    return "Hebrew";
+                case 1256:
+                    return "Arabic";
+                case 1257:
+                    return "Baltic";
+                case 1258:
+                    return "Vietnamese";
+                case 874:
+                    return "Thai";
+                case 932:
+                    return "ShiftJIS";
+                case 936:
+                    return "Chinese Simplified";
+                case 949:
+                    return "Korean Wansung";
+                case 869:
+                    return "IBM Greek";
+                case 866:
+                    return "MS-DOS Russian";
+                case 865:
+                    return "MS-DOS Nordic";
+                case 864:
+                    return "Arabic";
+                case 863:
+                    return "MS-DOS Canadian French";
+                case 862:
+                    return "Hebrew";
+                case 861:
+                    return "MS-DOS Icelandic";
+                case 860:
+                    return "MS-DOS Portuguese";
+                case 857:
+                    return "IBM Turkish";
+                case 855:
+                    return "IBM Cyrillic";
+                case 852:
+                    return "Latin 2";
+                case 775:
+                    return "MS-DOS Baltic";
+                case 737:
+                    return "Greek; former 437 G";
+                case 708:
+                    return "Arabic; ASMO 708";
+                case 850:
+                    return "WE/Latin 1";
+                case 437:
+                    return "US";
+                case 0:
+                    return "Default";
+                case 950:
+                    return "ChineseBig5";
+                case 1361:
+                    return "Korean (Johab)";
+                case 2:
+                    return "Symbol";
+                default:
+                    throw new InvalidOperationException(string.Format("Codepage: {0}", codepage));
             }
         }
 
@@ -1116,8 +1168,10 @@ namespace Aspose.Words.Tests
             if (index >= 10)
                 return "?";
 
-            if (value == 0) return "Any";
-            if(value == 1) return "No fit";
+            if (value == 0)
+                return "Any";
+            if (value == 1)
+                return "No fit";
             value -= 2; // -Any -NoFit
 
             string[] familyStrings = { "Text and Display", "Script", "Decorative", "Pictorial" };
@@ -1131,7 +1185,7 @@ namespace Aspose.Words.Tests
             string[] midlineStrings = { "Standard/Trimmed", "Standard/Pointed", "Standard/Serifed", "High/Trimmed", "High/Pointed", "High/Serifed", "Constant/Trimmed", "Constant/Pointed", "Constant/Serifed", " Low/Trimmed", "Low/Pointed", "Low/Serifed" };
             string[] xheightStrings = { "Constant/Small", "Constant/Standard", "Constant/Large", "Ducking/Small", "Ducking/Standard", "Ducking/Large" };
 
-            string[][] allStrings = {familyStrings, serifStrings, weightStrings, proportionStrings, contrastStrings, strokeStrings, armStrings, letterformStrings, midlineStrings, xheightStrings};
+            string[][] allStrings = { familyStrings, serifStrings, weightStrings, proportionStrings, contrastStrings, strokeStrings, armStrings, letterformStrings, midlineStrings, xheightStrings };
 
             string[] strings = allStrings[index];
             return (value < strings.Length) ? strings[value] : "?";
@@ -1147,96 +1201,155 @@ namespace Aspose.Words.Tests
             Write("");
             Write("[Properties]");
 
-            if (docPr.RemovePersonalInformation) Write(fmt, "RemovePersonalInformation");
-            if (docPr.PrintPostScriptOverText) Write(fmt, "PrintPostScriptOverText");
-            if (docPr.PrintFractionalCharacterWidth) Write(fmt, "PrintFractionalCharacterWidth");
-            if (docPr.PrintFormsData) Write(fmt, "PrintFormsData");
-            if (docPr.EmbedTrueTypeFonts) Write(fmt, "EmbedTrueTypeFonts");
-            if (docPr.EmbedSystemFonts) Write(fmt, "EmbedSystemFonts");
-            if (docPr.SaveSubsetFonts) Write(fmt, "SaveSubsetFonts");
-            if (docPr.SaveFormsData) Write(fmt, "SaveFormsData");
-            if (docPr.MultiplePages == MultiplePagesType.MirrorMargins) Write(fmt, "MirrorMargins");
-            if (docPr.AlignBordersAndEdges) Write(fmt, "AlignBordersAndEdges");
-            if (docPr.BordersDoNotSurroundHeader) Write(fmt, "BordersDoNotSurroundHeader");
-            if (docPr.BordersDoNotSurroundFooter) Write(fmt, "BordersDoNotSurroundFooter");
-            if (docPr.GutterAtTop) Write(fmt, "GutterAtTop");
-            if (docPr.IsGutterSide) Write(fmt, "IsGutterSide");
+            if (docPr.RemovePersonalInformation)
+                Write(fmt, "RemovePersonalInformation");
+            if (docPr.PrintPostScriptOverText)
+                Write(fmt, "PrintPostScriptOverText");
+            if (docPr.PrintFractionalCharacterWidth)
+                Write(fmt, "PrintFractionalCharacterWidth");
+            if (docPr.PrintFormsData)
+                Write(fmt, "PrintFormsData");
+            if (docPr.EmbedTrueTypeFonts)
+                Write(fmt, "EmbedTrueTypeFonts");
+            if (docPr.EmbedSystemFonts)
+                Write(fmt, "EmbedSystemFonts");
+            if (docPr.SaveSubsetFonts)
+                Write(fmt, "SaveSubsetFonts");
+            if (docPr.SaveFormsData)
+                Write(fmt, "SaveFormsData");
+            if (docPr.MultiplePages == MultiplePagesType.MirrorMargins)
+                Write(fmt, "MirrorMargins");
+            if (docPr.AlignBordersAndEdges)
+                Write(fmt, "AlignBordersAndEdges");
+            if (docPr.BordersDoNotSurroundHeader)
+                Write(fmt, "BordersDoNotSurroundHeader");
+            if (docPr.BordersDoNotSurroundFooter)
+                Write(fmt, "BordersDoNotSurroundFooter");
+            if (docPr.GutterAtTop)
+                Write(fmt, "GutterAtTop");
+            if (docPr.IsGutterSide)
+                Write(fmt, "IsGutterSide");
             Write(fmt, string.Format("ActiveWritingStyle: '{0}', {1}, {2}, {3}, {4}",
                 docPr.ActiveWritingStyle.Lang, docPr.ActiveWritingStyle.DllVersion, docPr.ActiveWritingStyle.VendorId,
                                      docPr.ActiveWritingStyle.NlCheck, docPr.ActiveWritingStyle.OptionSet));
             Write(fmt, string.Format("ProofStateSpelling: {0}", docPr.ProofStateSpelling));
             Write(fmt, string.Format("AttachedTemplate: '{0}'", docPr.AttachedTemplate));
-            if (docPr.LinkStyles) Write(fmt, "LinkStyles");
-            if (docPr.StyleLockQuickFormatSet) Write(fmt, "StyleLockQuickFormatSet");
-            if (docPr.StyleLockTheme) Write(fmt, "StyleLockTheme");
-            if (docPr.StyleLockQuickFormatSet) Write(fmt, "StyleLockQuickFormatSet");
+            if (docPr.LinkStyles)
+                Write(fmt, "LinkStyles");
+            if (docPr.StyleLockQuickFormatSet)
+                Write(fmt, "StyleLockQuickFormatSet");
+            if (docPr.StyleLockTheme)
+                Write(fmt, "StyleLockTheme");
+            if (docPr.StyleLockQuickFormatSet)
+                Write(fmt, "StyleLockQuickFormatSet");
             Write(fmt, string.Format("StylePaneFormatFilterSettings: {0}", FormatStylePaneFilterSettings(docPr.StylePaneFormatFilterSettings)));
             Write(fmt, string.Format("StylePaneSortMethod: {0}", docPr.StylePaneSortMethod));
-            if (docPr.DoNotTrackFormatting) Write(fmt, "DoNotTrackFormatting");
-            if (docPr.DoNotTrackMoves) Write(fmt, "DoNotTrackMoves");
+            if (docPr.DoNotTrackFormatting)
+                Write(fmt, "DoNotTrackFormatting");
+            if (docPr.DoNotTrackMoves)
+                Write(fmt, "DoNotTrackMoves");
             Write(fmt, string.Format("DocumentType: {0}", docPr.DocumentType));
-            if (docPr.TrackRevisions) Write(fmt, "TrackRevisions");
-            if (docPr.ShowMarkup) Write(fmt, "ShowMarkup");
-            if (docPr.ShowAnnotations) Write(fmt, "ShowAnnotations");
-            if (docPr.ShowInsertionsDeletions) Write(fmt, "ShowInsertionsDeletions");
-            if (docPr.ShowFormatting) Write(fmt, "ShowFormatting");
-            if (docPr.ShowInkAnnotations) Write(fmt, "ShowInkAnnotations");
+            if (docPr.TrackRevisions)
+                Write(fmt, "TrackRevisions");
+            if (docPr.ShowMarkup)
+                Write(fmt, "ShowMarkup");
+            if (docPr.ShowAnnotations)
+                Write(fmt, "ShowAnnotations");
+            if (docPr.ShowInsertionsDeletions)
+                Write(fmt, "ShowInsertionsDeletions");
+            if (docPr.ShowFormatting)
+                Write(fmt, "ShowFormatting");
+            if (docPr.ShowInkAnnotations)
+                Write(fmt, "ShowInkAnnotations");
             Write(fmt, string.Format("DocumentProtection: {0}", DocumentProtectionToString(docPr.DocumentProtection)));
             Write(fmt, string.Format("WriteProtection: {0}", WriteProtectionToString(docPr.WriteProtection)));
             Write(fmt, string.Format("DefaultTabStop: {0}", docPr.DefaultTabStop));
             HyphenationOptions hyphenationOptions = docPr.HyphenationOptions;
-            if (hyphenationOptions.AutoHyphenation) Write(fmt, "AutoHyphenation");
+            if (hyphenationOptions.AutoHyphenation)
+                Write(fmt, "AutoHyphenation");
             Write(fmt, string.Format("ConsecutiveHyphenLimit: {0}", hyphenationOptions.ConsecutiveHyphenLimit));
             Write(fmt, string.Format("HyphenationZone: {0}", hyphenationOptions.HyphenationZone));
-            if (!hyphenationOptions.HyphenateCaps) Write(fmt, "DoNotHyphenateCaps");
-            if (docPr.ShowEnvelope) Write(fmt, "ShowEnvelope");
-            if (docPr.ReadingModeInkLockDown) Write(fmt, "ReadingModeInkLockDown");
-            if (docPr.RemoveDateAndTime) Write(fmt, "RemoveDateAndTime");
+            if (!hyphenationOptions.HyphenateCaps)
+                Write(fmt, "DoNotHyphenateCaps");
+            if (docPr.ShowEnvelope)
+                Write(fmt, "ShowEnvelope");
+            if (docPr.ReadingModeInkLockDown)
+                Write(fmt, "ReadingModeInkLockDown");
+            if (docPr.RemoveDateAndTime)
+                Write(fmt, "RemoveDateAndTime");
             Write(fmt, string.Format("ClickTypeParaStyleIstd: 0x{0:x2}", docPr.ClickTypeParaStyleIstd));
             Write(fmt, string.Format("DefaultTableStyleIstd: 0x{0:x2}", docPr.DefaultTableStyleIstd));
-            if (docPr.EvenAndOddHeaders) Write(fmt, "EvenAndOddHeaders");
-            if (docPr.MultiplePages == MultiplePagesType.BookFoldPrintingReverse) Write(fmt, "BookFoldRevPrinting");
-            if (docPr.MultiplePages == MultiplePagesType.BookFoldPrinting) Write(fmt, "BookFoldPrinting");
+            if (docPr.EvenAndOddHeaders)
+                Write(fmt, "EvenAndOddHeaders");
+            if (docPr.MultiplePages == MultiplePagesType.BookFoldPrintingReverse)
+                Write(fmt, "BookFoldRevPrinting");
+            if (docPr.MultiplePages == MultiplePagesType.BookFoldPrinting)
+                Write(fmt, "BookFoldPrinting");
             Write(fmt, string.Format("BookFoldPrintingSheets: {0}", docPr.BookFoldPrintingSheets));
             Write(fmt, string.Format("DrawingGridHorizontalSpacing: {0}", docPr.DrawingGridHorizontalSpacing));
             Write(fmt, string.Format("DrawingGridVerticalSpacing: {0}", docPr.DrawingGridVerticalSpacing));
             Write(fmt, string.Format("DisplayHorizontalDrawingGridEvery: {0}", docPr.DisplayHorizontalDrawingGridEvery));
             Write(fmt, string.Format("DisplayVerticalDrawingGridEvery: {0}", docPr.DisplayVerticalDrawingGridEvery));
-            if (docPr.UseMarginsForDrawingGridOrigin) Write(fmt, "UseMarginsForDrawingGridOrigin");
+            if (docPr.UseMarginsForDrawingGridOrigin)
+                Write(fmt, "UseMarginsForDrawingGridOrigin");
             Write(fmt, string.Format("DrawingGridHorizontalOrigin: {0}", docPr.DrawingGridHorizontalOrigin));
             Write(fmt, string.Format("DrawingGridVerticalOrigin: {0}", docPr.DrawingGridVerticalOrigin));
-            if (docPr.DoNotShadeFormData) Write(fmt, "DoNotShadeFormData");
-            if (docPr.PunctuationKerning) Write(fmt, "PunctuationKerning");
+            if (docPr.DoNotShadeFormData)
+                Write(fmt, "DoNotShadeFormData");
+            if (docPr.PunctuationKerning)
+                Write(fmt, "PunctuationKerning");
             Write(fmt, string.Format("CharacterSpacingType: {0}", docPr.CharacterSpacingType));
-            if (docPr.MultiplePages == MultiplePagesType.TwoPagesPerSheet) Write(fmt, "PrintTwoOnOne");
-            if (docPr.StrictFirstAndLastChars) Write(fmt, "StrictFirstAndLastChars");
+            if (docPr.MultiplePages == MultiplePagesType.TwoPagesPerSheet)
+                Write(fmt, "PrintTwoOnOne");
+            if (docPr.StrictFirstAndLastChars)
+                Write(fmt, "StrictFirstAndLastChars");
             Write(fmt, string.Format("NoLineBreaksAfter: {0}", docPr.NoLineBreaksAfter));
             Write(fmt, string.Format("NoLineBreaksBefore: {0}", docPr.NoLineBreaksBefore));
             Write(fmt, string.Format("WebPageEncoding: {0}", docPr.WebPageEncoding));
-            if (docPr.OptimizeForBrowser) Write(fmt, "OptimizeForBrowser");
+            if (docPr.OptimizeForBrowser)
+                Write(fmt, "OptimizeForBrowser");
             Write(fmt, string.Format("WebTarget: {0}", docPr.WebTarget));
-            if (docPr.RelyOnVml) Write(fmt, "RelyOnVml");
-            if (docPr.AllowPng) Write(fmt, "AllowPng");
-            if (docPr.DoNotRelyOnCss) Write(fmt, "DoNotRelyOnCss");
-            if (docPr.DoNotSaveWebPagesAsSingleFile) Write(fmt, "DoNotSaveWebPagesAsSingleFile");
-            if (docPr.DoNotOrganizeInFolder) Write(fmt, "DoNotOrganizeInFolder");
-            if (docPr.DoNotUseLongFileNames) Write(fmt, "DoNotUseLongFileNames");
+            if (docPr.RelyOnVml)
+                Write(fmt, "RelyOnVml");
+            if (docPr.AllowPng)
+                Write(fmt, "AllowPng");
+            if (docPr.DoNotRelyOnCss)
+                Write(fmt, "DoNotRelyOnCss");
+            if (docPr.DoNotSaveWebPagesAsSingleFile)
+                Write(fmt, "DoNotSaveWebPagesAsSingleFile");
+            if (docPr.DoNotOrganizeInFolder)
+                Write(fmt, "DoNotOrganizeInFolder");
+            if (docPr.DoNotUseLongFileNames)
+                Write(fmt, "DoNotUseLongFileNames");
             Write(fmt, string.Format("PixelsPerInch: {0}", docPr.PixelsPerInch));
             Write(fmt, string.Format("TargetScreenSize: {0}", docPr.TargetScreenSize));
-            if (docPr.ValidateAgainstSchema) Write(fmt, "ValidateAgainstSchema");
-            if (docPr.SaveInvalidXml) Write(fmt, "SaveInvalidXml");
-            if (docPr.SaveXmlDataOnly) Write(fmt, "SaveXmlDataOnly");
-            if (docPr.ShowXmlTags) Write(fmt, "ShowXmlTags");
-            if (docPr.IgnoreMixedContent) Write(fmt, "IgnoreMixedContent");
-            if (docPr.AlwaysShowPlaceholderText) Write(fmt, "AlwaysShowPlaceholderText");
-            if (docPr.DoNotUnderlineInvalidXml) Write(fmt, "DoNotUnderlineInvalidXml");
-            if (docPr.UseXsltWhenSaving) Write(fmt, "UseXsltWhenSaving");
+            if (docPr.ValidateAgainstSchema)
+                Write(fmt, "ValidateAgainstSchema");
+            if (docPr.SaveInvalidXml)
+                Write(fmt, "SaveInvalidXml");
+            if (docPr.SaveXmlDataOnly)
+                Write(fmt, "SaveXmlDataOnly");
+            if (docPr.ShowXmlTags)
+                Write(fmt, "ShowXmlTags");
+            if (docPr.IgnoreMixedContent)
+                Write(fmt, "IgnoreMixedContent");
+            if (docPr.AlwaysShowPlaceholderText)
+                Write(fmt, "AlwaysShowPlaceholderText");
+            if (docPr.DoNotUnderlineInvalidXml)
+                Write(fmt, "DoNotUnderlineInvalidXml");
+            if (docPr.UseXsltWhenSaving)
+                Write(fmt, "UseXsltWhenSaving");
             Write(fmt, string.Format("SaveThroughXslt: {0}", docPr.SaveThroughXslt));
-            if (docPr.AlwaysMergeEmptyNamespace) Write(fmt, "AlwaysMergeEmptyNamespace");
-            if (docPr.DoNotEmbedSmartTags) Write(fmt, "DoNotEmbedSmartTags");
-            if (docPr.SaveSmartTagsAsXml) Write(fmt, "SaveSmartTagsAsXml");
-            if (docPr.DoNotIncludeSubDocsInStats) Write(fmt, "DoNotIncludeSubDocsInStats");
-            if (docPr.NoFitText) Write(fmt, "NoFitText");
+            if (docPr.AlwaysMergeEmptyNamespace)
+                Write(fmt, "AlwaysMergeEmptyNamespace");
+            if (docPr.DoNotEmbedSmartTags)
+                Write(fmt, "DoNotEmbedSmartTags");
+            if (docPr.SaveSmartTagsAsXml)
+                Write(fmt, "SaveSmartTagsAsXml");
+            if (docPr.DoNotIncludeSubDocsInStats)
+                Write(fmt, "DoNotIncludeSubDocsInStats");
+            if (docPr.NoFitText)
+                Write(fmt, "NoFitText");
 
             if (!NoRsids)
             {
@@ -1284,44 +1397,68 @@ namespace Aspose.Words.Tests
             if (docPr.XmlSchemaReferences.Count > 0)
             {
                 StringBuilder sb2 = new StringBuilder();
-                foreach(XmlSchemaReference xmlSchemaReference in docPr.XmlSchemaReferences)
+                foreach (XmlSchemaReference xmlSchemaReference in docPr.XmlSchemaReferences)
                     sb2.Append(string.Format("('{0}', '{1}'), ", xmlSchemaReference.Uri, xmlSchemaReference.Location));
                 Write(fmt, string.Format("XmlSchemaReferences: {0}", sb2.ToString().Trim(gListSeparatorChars)));
             }
 
             Write(fmt, string.Format("ShowOutlineLevels: {0}", docPr.ShowOutlineLevels));
-            if (docPr.ShowHidden) Write(fmt, "ShowHidden");
-            if (docPr.ShowFieldResults) Write(fmt, "ShowFieldResults");
-            if (docPr.PrintRevisions) Write(fmt, "PrintRevisions");
-            if (docPr.HtmlDoc) Write(fmt, "HtmlDoc");
-            if (docPr.WidowControl) Write(fmt, "WidowControl");
-            if (docPr.ShowGrid) Write(fmt, "ShowGrid");
-            if (docPr.HideLastVersion) Write(fmt, "HideLastVersion");
-            if (docPr.HasVersions) Write(fmt, "HasVersions");
-            if (docPr.AutoVersion) Write(fmt, "AutoVersion");
+            if (docPr.ShowHidden)
+                Write(fmt, "ShowHidden");
+            if (docPr.ShowFieldResults)
+                Write(fmt, "ShowFieldResults");
+            if (docPr.PrintRevisions)
+                Write(fmt, "PrintRevisions");
+            if (docPr.HtmlDoc)
+                Write(fmt, "HtmlDoc");
+            if (docPr.WidowControl)
+                Write(fmt, "WidowControl");
+            if (docPr.ShowGrid)
+                Write(fmt, "ShowGrid");
+            if (docPr.HideLastVersion)
+                Write(fmt, "HideLastVersion");
+            if (docPr.HasVersions)
+                Write(fmt, "HasVersions");
+            if (docPr.AutoVersion)
+                Write(fmt, "AutoVersion");
         }
 
         private static string FormatStylePaneFilterSettings(StylePaneFormatFilterSettings settings)
         {
             StringBuilder sb = new StringBuilder();
 
-            if (settings.AllStyles) sb.Append("AllStyles ");
-            if (settings.AlternateStyleNames) sb.Append("AlternateStyleNames ");
-            if (settings.ClearFormatting) sb.Append("ClearFormatting ");
-            if (settings.CustomStyles) sb.Append("CustomStyles ");
+            if (settings.AllStyles)
+                sb.Append("AllStyles ");
+            if (settings.AlternateStyleNames)
+                sb.Append("AlternateStyleNames ");
+            if (settings.ClearFormatting)
+                sb.Append("ClearFormatting ");
+            if (settings.CustomStyles)
+                sb.Append("CustomStyles ");
 
-            if (settings.DirectFormattingOnNumbering) sb.Append("DirectFormattingOnNumbering ");
-            if (settings.DirectFormattingOnParagraphs) sb.Append("DirectFormattingOnParagraphs ");
-            if (settings.DirectFormattingOnRuns) sb.Append("DirectFormattingOnRuns ");
-            if (settings.DirectFormattingOnTables) sb.Append("DirectFormattingOnTables ");
+            if (settings.DirectFormattingOnNumbering)
+                sb.Append("DirectFormattingOnNumbering ");
+            if (settings.DirectFormattingOnParagraphs)
+                sb.Append("DirectFormattingOnParagraphs ");
+            if (settings.DirectFormattingOnRuns)
+                sb.Append("DirectFormattingOnRuns ");
+            if (settings.DirectFormattingOnTables)
+                sb.Append("DirectFormattingOnTables ");
 
-            if (settings.HeadingStyles) sb.Append("HeadingStyles ");
-            if (settings.LatentStyles) sb.Append("LatentStyles ");
-            if (settings.NumberingStyles) sb.Append("NumberingStyles ");
-            if (settings.StylesInUse) sb.Append("StylesInUse ");
-            if (settings.TableStyles) sb.Append("TableStyles ");
-            if (settings.Top3HeadingStyles) sb.Append("Top3HeadingStyles ");
-            if (settings.VisibleStyles) sb.Append("VisibleStyles ");
+            if (settings.HeadingStyles)
+                sb.Append("HeadingStyles ");
+            if (settings.LatentStyles)
+                sb.Append("LatentStyles ");
+            if (settings.NumberingStyles)
+                sb.Append("NumberingStyles ");
+            if (settings.StylesInUse)
+                sb.Append("StylesInUse ");
+            if (settings.TableStyles)
+                sb.Append("TableStyles ");
+            if (settings.Top3HeadingStyles)
+                sb.Append("Top3HeadingStyles ");
+            if (settings.VisibleStyles)
+                sb.Append("VisibleStyles ");
 
             return sb.ToString().Trim();
         }
@@ -1405,81 +1542,148 @@ namespace Aspose.Words.Tests
             Write("");
             Write("[Compatibility]");
 
-            if (co.AdjustLineHeightInTable) Write(coFmt, "AdjustLineHeightInTable");
-            if (co.AlignTablesRowByRow) Write(coFmt, "AlignTablesRowByRow");
-            if (co.AllowSpaceOfSameStyleInTable) Write(coFmt, "AllowSpaceOfSameStyleInTable");
-            if (co.ApplyBreakingRules) Write(coFmt, "ApplyBreakingRules");
-            if (co.AutofitToFirstFixedWidthCell) Write(coFmt, "AutofitToFirstFixedWidthCell");
-            if (co.AutoSpaceLikeWord95) Write(coFmt, "AutoSpaceLikeWord95");
-            if (co.BalanceSingleByteDoubleByteWidth) Write(coFmt, "BalanceSingleByteDoubleByteWidth");
-            if (co.CachedColBalance) Write(coFmt, "CachedColBalance");
-            if (co.ConvMailMergeEsc) Write(coFmt, "ConvMailMergeEsc");
-            if (co.DisplayHangulFixedWidth) Write(coFmt, "DisplayHangulFixedWidth");
-            if (co.DoNotAutofitConstrainedTables) Write(coFmt, "DoNotAutofitConstrainedTables");
-            if (co.DoNotBreakConstrainedForcedTable) Write(coFmt, "DoNotBreakConstrainedForcedTable");
-            if (co.DoNotBreakWrappedTables) Write(coFmt, "DoNotBreakWrappedTables");
-            if (co.DoNotExpandShiftReturn) Write(coFmt, "DoNotExpandShiftReturn");
-            if (co.DoNotLeaveBackslashAlone) Write(coFmt, "DoNotLeaveBackslashAlone");
-            if (co.DoNotSnapToGridInCell) Write(coFmt, "DoNotSnapToGridInCell");
-            if (co.DoNotSuppressIndentation) Write(coFmt, "DoNotSuppressIndentation");
-            if (co.DoNotSuppressParagraphBorders) Write(coFmt, "DoNotSuppressParagraphBorders");
-            if (co.DoNotUseEastAsianBreakRules) Write(coFmt, "DoNotUseEastAsianBreakRules");
-            if (co.DoNotUseHTMLParagraphAutoSpacing) Write(coFmt, "DoNotUseHTMLParagraphAutoSpacing");
-            if (co.DoNotUseIndentAsNumberingTabStop) Write(coFmt, "DoNotUseIndentAsNumberingTabStop");
-            if (co.DoNotVertAlignCellWithSp) Write(coFmt, "DoNotVertAlignCellWithSp");
-            if (co.DoNotVertAlignInTxbx) Write(coFmt, "DoNotVertAlignInTxbx");
-            if (co.DoNotWrapTextWithPunct) Write(coFmt, "DoNotWrapTextWithPunct");
-            if (co.FootnoteLayoutLikeWW8) Write(coFmt, "FootnoteLayoutLikeWW8");
-            if (co.ForgetLastTabAlignment) Write(coFmt, "ForgetLastTabAlignment");
-            if (co.GrowAutofit) Write(coFmt, "GrowAutofit");
-            if (co.LayoutRawTableWidth) Write(coFmt, "LayoutRawTableWidth");
-            if (co.LayoutTableRowsApart) Write(coFmt, "LayoutTableRowsApart");
-            if (co.LineWrapLikeWord6) Write(coFmt, "LineWrapLikeWord6");
-            if (co.MWSmallCaps) Write(coFmt, "MWSmallCaps");
-            if (co.NoColumnBalance) Write(coFmt, "NoColumnBalance");
-            if (co.NoExtraLineSpacing) Write(coFmt, "NoExtraLineSpacing");
-            if (co.NoLeading) Write(coFmt, "NoLeading");
-            if (co.NoSpaceRaiseLower) Write(coFmt, "NoSpaceRaiseLower");
-            if (co.NoTabHangInd) Write(coFmt, "NoTabHangInd");
-            if (co.PrintBodyTextBeforeHeader) Write(coFmt, "PrintBodyTextBeforeHeader");
-            if (co.PrintColBlack) Write(coFmt, "PrintColBlack");
-            if (co.SelectFldWithFirstOrLastChar) Write(coFmt, "SelectFldWithFirstOrLastChar");
-            if (co.ShapeLayoutLikeWW8) Write(coFmt, "ShapeLayoutLikeWW8");
-            if (co.ShowBreaksInFrames) Write(coFmt, "ShowBreaksInFrames");
-            if (co.SpaceForUL) Write(coFmt, "SpaceForUL");
-            if (co.SpacingInWholePoints) Write(coFmt, "SpacingInWholePoints");
-            if (co.SplitPgBreakAndParaMark) Write(coFmt, "SplitPgBreakAndParaMark");
-            if (co.SubFontBySize) Write(coFmt, "SubFontBySize");
-            if (co.SuppressBottomSpacing) Write(coFmt, "SuppressBottomSpacing");
-            if (co.SuppressSpacingAtTopOfPage) Write(coFmt, "SuppressSpacingAtTopOfPage");
-            if (co.SuppressSpBfAfterPgBrk) Write(coFmt, "SuppressSpBfAfterPgBrk");
-            if (co.SuppressTopSpacing) Write(coFmt, "SuppressTopSpacing");
-            if (co.SuppressTopSpacingWP) Write(coFmt, "SuppressTopSpacingWP");
-            if (co.SwapBordersFacingPgs) Write(coFmt, "SwapBordersFacingPgs");
-            if (co.TransparentMetafiles) Write(coFmt, "TransparentMetafiles");
-            if (co.TruncateFontHeightsLikeWP6) Write(coFmt, "TruncateFontHeightsLikeWP6");
-            if (co.UICompat97To2003) Write(coFmt, "UICompat97To2003");
-            if (co.UlTrailSpace) Write(coFmt, "UlTrailSpace");
-            if (co.UnderlineTabInNumList) Write(coFmt, "UnderlineTabInNumList");
-            if (co.UseAltKinsokuLineBreakRules) Write(coFmt, "UseAltKinsokuLineBreakRules");
-            if (co.UseAnsiKerningPairs) Write(coFmt, "UseAnsiKerningPairs");
-            if (co.UseFELayout) Write(coFmt, "UseFELayout");
-            if (co.UseNormalStyleForList) Write(coFmt, "UseNormalStyleForList");
-            if (co.UsePrinterMetrics) Write(coFmt, "UsePrinterMetrics");
-            if (co.UseSingleBorderforContiguousCells) Write(coFmt, "UseSingleBorderforContiguousCells");
-            if (co.UseWord2002TableStyleRules) Write(coFmt, "UseWord2002TableStyleRules");
-            if (co.UseWord97LineBreakRules) Write(coFmt, "UseWord97LineBreakRules");
-            if (co.WPJustification) Write(coFmt, "WPJustification");
-            if (co.WPSpaceWidth) Write(coFmt, "WPSpaceWidth");
-            if (co.WrapTrailSpaces) Write(coFmt, "WrapTrailSpaces");
+            if (co.AdjustLineHeightInTable)
+                Write(coFmt, "AdjustLineHeightInTable");
+            if (co.AlignTablesRowByRow)
+                Write(coFmt, "AlignTablesRowByRow");
+            if (co.AllowSpaceOfSameStyleInTable)
+                Write(coFmt, "AllowSpaceOfSameStyleInTable");
+            if (co.ApplyBreakingRules)
+                Write(coFmt, "ApplyBreakingRules");
+            if (co.AutofitToFirstFixedWidthCell)
+                Write(coFmt, "AutofitToFirstFixedWidthCell");
+            if (co.AutoSpaceLikeWord95)
+                Write(coFmt, "AutoSpaceLikeWord95");
+            if (co.BalanceSingleByteDoubleByteWidth)
+                Write(coFmt, "BalanceSingleByteDoubleByteWidth");
+            if (co.CachedColBalance)
+                Write(coFmt, "CachedColBalance");
+            if (co.ConvMailMergeEsc)
+                Write(coFmt, "ConvMailMergeEsc");
+            if (co.DisplayHangulFixedWidth)
+                Write(coFmt, "DisplayHangulFixedWidth");
+            if (co.DoNotAutofitConstrainedTables)
+                Write(coFmt, "DoNotAutofitConstrainedTables");
+            if (co.DoNotBreakConstrainedForcedTable)
+                Write(coFmt, "DoNotBreakConstrainedForcedTable");
+            if (co.DoNotBreakWrappedTables)
+                Write(coFmt, "DoNotBreakWrappedTables");
+            if (co.DoNotExpandShiftReturn)
+                Write(coFmt, "DoNotExpandShiftReturn");
+            if (co.DoNotLeaveBackslashAlone)
+                Write(coFmt, "DoNotLeaveBackslashAlone");
+            if (co.DoNotSnapToGridInCell)
+                Write(coFmt, "DoNotSnapToGridInCell");
+            if (co.DoNotSuppressIndentation)
+                Write(coFmt, "DoNotSuppressIndentation");
+            if (co.DoNotSuppressParagraphBorders)
+                Write(coFmt, "DoNotSuppressParagraphBorders");
+            if (co.DoNotUseEastAsianBreakRules)
+                Write(coFmt, "DoNotUseEastAsianBreakRules");
+            if (co.DoNotUseHTMLParagraphAutoSpacing)
+                Write(coFmt, "DoNotUseHTMLParagraphAutoSpacing");
+            if (co.DoNotUseIndentAsNumberingTabStop)
+                Write(coFmt, "DoNotUseIndentAsNumberingTabStop");
+            if (co.DoNotVertAlignCellWithSp)
+                Write(coFmt, "DoNotVertAlignCellWithSp");
+            if (co.DoNotVertAlignInTxbx)
+                Write(coFmt, "DoNotVertAlignInTxbx");
+            if (co.DoNotWrapTextWithPunct)
+                Write(coFmt, "DoNotWrapTextWithPunct");
+            if (co.FootnoteLayoutLikeWW8)
+                Write(coFmt, "FootnoteLayoutLikeWW8");
+            if (co.ForgetLastTabAlignment)
+                Write(coFmt, "ForgetLastTabAlignment");
+            if (co.GrowAutofit)
+                Write(coFmt, "GrowAutofit");
+            if (co.LayoutRawTableWidth)
+                Write(coFmt, "LayoutRawTableWidth");
+            if (co.LayoutTableRowsApart)
+                Write(coFmt, "LayoutTableRowsApart");
+            if (co.LineWrapLikeWord6)
+                Write(coFmt, "LineWrapLikeWord6");
+            if (co.MWSmallCaps)
+                Write(coFmt, "MWSmallCaps");
+            if (co.NoColumnBalance)
+                Write(coFmt, "NoColumnBalance");
+            if (co.NoExtraLineSpacing)
+                Write(coFmt, "NoExtraLineSpacing");
+            if (co.NoLeading)
+                Write(coFmt, "NoLeading");
+            if (co.NoSpaceRaiseLower)
+                Write(coFmt, "NoSpaceRaiseLower");
+            if (co.NoTabHangInd)
+                Write(coFmt, "NoTabHangInd");
+            if (co.PrintBodyTextBeforeHeader)
+                Write(coFmt, "PrintBodyTextBeforeHeader");
+            if (co.PrintColBlack)
+                Write(coFmt, "PrintColBlack");
+            if (co.SelectFldWithFirstOrLastChar)
+                Write(coFmt, "SelectFldWithFirstOrLastChar");
+            if (co.ShapeLayoutLikeWW8)
+                Write(coFmt, "ShapeLayoutLikeWW8");
+            if (co.ShowBreaksInFrames)
+                Write(coFmt, "ShowBreaksInFrames");
+            if (co.SpaceForUL)
+                Write(coFmt, "SpaceForUL");
+            if (co.SpacingInWholePoints)
+                Write(coFmt, "SpacingInWholePoints");
+            if (co.SplitPgBreakAndParaMark)
+                Write(coFmt, "SplitPgBreakAndParaMark");
+            if (co.SubFontBySize)
+                Write(coFmt, "SubFontBySize");
+            if (co.SuppressBottomSpacing)
+                Write(coFmt, "SuppressBottomSpacing");
+            if (co.SuppressSpacingAtTopOfPage)
+                Write(coFmt, "SuppressSpacingAtTopOfPage");
+            if (co.SuppressSpBfAfterPgBrk)
+                Write(coFmt, "SuppressSpBfAfterPgBrk");
+            if (co.SuppressTopSpacing)
+                Write(coFmt, "SuppressTopSpacing");
+            if (co.SuppressTopSpacingWP)
+                Write(coFmt, "SuppressTopSpacingWP");
+            if (co.SwapBordersFacingPgs)
+                Write(coFmt, "SwapBordersFacingPgs");
+            if (co.TransparentMetafiles)
+                Write(coFmt, "TransparentMetafiles");
+            if (co.TruncateFontHeightsLikeWP6)
+                Write(coFmt, "TruncateFontHeightsLikeWP6");
+            if (co.UICompat97To2003)
+                Write(coFmt, "UICompat97To2003");
+            if (co.UlTrailSpace)
+                Write(coFmt, "UlTrailSpace");
+            if (co.UnderlineTabInNumList)
+                Write(coFmt, "UnderlineTabInNumList");
+            if (co.UseAltKinsokuLineBreakRules)
+                Write(coFmt, "UseAltKinsokuLineBreakRules");
+            if (co.UseAnsiKerningPairs)
+                Write(coFmt, "UseAnsiKerningPairs");
+            if (co.UseFELayout)
+                Write(coFmt, "UseFELayout");
+            if (co.UseNormalStyleForList)
+                Write(coFmt, "UseNormalStyleForList");
+            if (co.UsePrinterMetrics)
+                Write(coFmt, "UsePrinterMetrics");
+            if (co.UseSingleBorderforContiguousCells)
+                Write(coFmt, "UseSingleBorderforContiguousCells");
+            if (co.UseWord2002TableStyleRules)
+                Write(coFmt, "UseWord2002TableStyleRules");
+            if (co.UseWord97LineBreakRules)
+                Write(coFmt, "UseWord97LineBreakRules");
+            if (co.WPJustification)
+                Write(coFmt, "WPJustification");
+            if (co.WPSpaceWidth)
+                Write(coFmt, "WPSpaceWidth");
+            if (co.WrapTrailSpaces)
+                Write(coFmt, "WrapTrailSpaces");
 
-            foreach(CustomCompatibilitySetting ccs in co.CustomCompatibilitySettings)
+            foreach (CustomCompatibilitySetting ccs in co.CustomCompatibilitySettings)
                 Write(coFmt, string.Format("{0}, '{1}', {2}", ccs.Name, ccs.Value, ccs.Uri));
         }
 
         private static void DumpWarnings()
         {
-            if(NoWarnings)
+            if (NoWarnings)
                 return;
 
             if ((gWarningCallback != null) && (gWarningCallback is UniqueWarningCollection))
@@ -1497,7 +1701,7 @@ namespace Aspose.Words.Tests
 
         private static void DumpFootnoteSeparators(FootnoteSeparatorCollection footnoteSeparators)
         {
-            foreach(FootnoteSeparator footnoteSeparator in footnoteSeparators)
+            foreach (FootnoteSeparator footnoteSeparator in footnoteSeparators)
             {
                 Write("");
                 Write(string.Format("[{0}]", footnoteSeparator.SeparatorType));
@@ -1535,7 +1739,7 @@ namespace Aspose.Words.Tests
             }
 
             IndentLevel++;
-            foreach(VbaModule vbaModule in doc.VbaProject.Modules)
+            foreach (VbaModule vbaModule in doc.VbaProject.Modules)
             {
                 Write(string.Format("[{0}]", vbaModule.Name));
 
@@ -1559,10 +1763,10 @@ namespace Aspose.Words.Tests
 
         private static bool IsGoBackBookmarkNode(Node node)
         {
-            if(node.NodeType == NodeType.BookmarkStart)
+            if (node.NodeType == NodeType.BookmarkStart)
             {
                 BookmarkStart bookmarkStart = (BookmarkStart)node;
-                if(bookmarkStart.Name == "_GoBack")
+                if (bookmarkStart.Name == "_GoBack")
                     return true;
             }
 
@@ -1581,7 +1785,7 @@ namespace Aspose.Words.Tests
             if (NoGoBackBookmark && IsGoBackBookmarkNode(node))
                 return true;
 
-            switch(node.NodeType)
+            switch (node.NodeType)
             {
                 case NodeType.BookmarkStart:
                 case NodeType.BookmarkEnd:
@@ -1717,230 +1921,230 @@ namespace Aspose.Words.Tests
             switch (node.NodeType)
             {
                 case NodeType.Document:
+                {
+                    DumpWarnings();
+
+                    Document doc = (Document)node;
+
+                    DumpInternManager(doc);
+
+                    DumpMsoEnvelope(doc);
+
+                    DumpStatistics(doc);
+
+                    if (!NoDocumentProperties)
                     {
-                        DumpWarnings();
-
-                        Document doc = (Document)node;
-
-                        DumpInternManager(doc);
-
-                        DumpMsoEnvelope(doc);
-
-                        DumpStatistics(doc);
-
-                        if (!NoDocumentProperties)
-                        {
-                            DumpCompatibility(doc);
-                            DumpDocPr(doc);
-                            DumpCustomization(doc);
-                        }
-
-                        DumpBuiltinDocumentProperties(doc);
-                        DumpCustomDocumentProperties(doc);
-                        DumpVariables(doc);
-
-                        DumpCustomXmlParts(doc.CustomXmlParts);
-
-                        DumpPackageCustomParts(doc);
-                        DumpMailMerge(doc);
-
-                        if (doc.VbaProject != null)
-                            DumpVbaProject(doc);
-
-                        DumpFontInfoCollection(doc);
-                        DumpHtmlBlockCollection(doc);
-
-                        DumpBackground(doc);
-                        DumpSignatures(doc);
-
-                        if (doc.GetThemeInternal() != null)
-                            DumpTheme(doc.GetThemeInternal());
-
-                        DumpStyles(doc);
-                        DumpLists(doc);
-
-                        DumpFootnoteSeparators(doc.FootnoteSeparators);
-
-                        if (doc.GlossaryDocument != null)
-                        {
-                            Write("");
-                            DumpNode(doc.GlossaryDocument);
-                        }
-
-                        break;
+                        DumpCompatibility(doc);
+                        DumpDocPr(doc);
+                        DumpCustomization(doc);
                     }
+
+                    DumpBuiltinDocumentProperties(doc);
+                    DumpCustomDocumentProperties(doc);
+                    DumpVariables(doc);
+
+                    DumpCustomXmlParts(doc.CustomXmlParts);
+
+                    DumpPackageCustomParts(doc);
+                    DumpMailMerge(doc);
+
+                    if (doc.VbaProject != null)
+                        DumpVbaProject(doc);
+
+                    DumpFontInfoCollection(doc);
+                    DumpHtmlBlockCollection(doc);
+
+                    DumpBackground(doc);
+                    DumpSignatures(doc);
+
+                    if (doc.GetThemeInternal() != null)
+                        DumpTheme(doc.GetThemeInternal());
+
+                    DumpStyles(doc);
+                    DumpLists(doc);
+
+                    DumpFootnoteSeparators(doc.FootnoteSeparators);
+
+                    if (doc.GlossaryDocument != null)
+                    {
+                        Write("");
+                        DumpNode(doc.GlossaryDocument);
+                    }
+
+                    break;
+                }
                 case NodeType.BookmarkStart:
-                    {
-                        BookmarkStart bkmkStart = (BookmarkStart)node;
+                {
+                    BookmarkStart bkmkStart = (BookmarkStart)node;
 
-                        if (bkmkStart.IsColumn)
-                        {
-                            Write(string.Format("  {{First column: '{0}'}}", bkmkStart.FirstColumn));
-                            Write(string.Format("  {{Last column: '{0}'}}", bkmkStart.LastColumn));
-                        }
-                        break;
+                    if (bkmkStart.IsColumn)
+                    {
+                        Write(string.Format("  {{First column: '{0}'}}", bkmkStart.FirstColumn));
+                        Write(string.Format("  {{Last column: '{0}'}}", bkmkStart.LastColumn));
                     }
+                    break;
+                }
                 case NodeType.HeaderFooter:
-                    {
-                        HeaderFooter hf = (HeaderFooter)node;
-                        Write(string.Format("  {{Type: '{0}'}}", hf.HeaderFooterType));
-                        Write(string.Format("  {{IsLinkedToPrevious: '{0}'}}", hf.IsLinkedToPrevious));
-                        break;
-                    }
+                {
+                    HeaderFooter hf = (HeaderFooter)node;
+                    Write(string.Format("  {{Type: '{0}'}}", hf.HeaderFooterType));
+                    Write(string.Format("  {{IsLinkedToPrevious: '{0}'}}", hf.IsLinkedToPrevious));
+                    break;
+                }
                 case NodeType.BuildingBlock:
-                    {
-                        BuildingBlock block = (BuildingBlock) node;
-                        Write(string.Format("  {{Name: '{0}'}}", block.Name));
-                        Write(string.Format("  {{Decorated: {0}}}", block.Decorated));
-                        Write(string.Format("  {{Guid: {0}}}", block.Guid));
-                        Write(string.Format("  {{Description: '{0}'}}", block.Description));
-                        Write(string.Format("  {{Gallery: {0}}}", block.Gallery));
-                        Write(string.Format("  {{Category: '{0}'}}", block.Category));
-                        Write(string.Format("  {{Behavior: {0}}}", block.Behavior));
-                        Write(string.Format("  {{Style: '{0}'}}", block.Style));
-                        Write(string.Format("  {{Type: {0}}}", block.Type));
-                        break;
-                    }
+                {
+                    BuildingBlock block = (BuildingBlock)node;
+                    Write(string.Format("  {{Name: '{0}'}}", block.Name));
+                    Write(string.Format("  {{Decorated: {0}}}", block.Decorated));
+                    Write(string.Format("  {{Guid: {0}}}", block.Guid));
+                    Write(string.Format("  {{Description: '{0}'}}", block.Description));
+                    Write(string.Format("  {{Gallery: {0}}}", block.Gallery));
+                    Write(string.Format("  {{Category: '{0}'}}", block.Category));
+                    Write(string.Format("  {{Behavior: {0}}}", block.Behavior));
+                    Write(string.Format("  {{Style: '{0}'}}", block.Style));
+                    Write(string.Format("  {{Type: {0}}}", block.Type));
+                    break;
+                }
 
                 case NodeType.OfficeMath:
+                {
+                    OfficeMath officeMath = (OfficeMath)node;
+
+                    Write(string.Format("  {{Type: {0}}}", officeMath.MathObject.MathObjectType));
+
+                    MathObject mathObject = officeMath.MathObject;
+                    DumpPr(mathObject);
+
+                    if (!NoRunAttributes)
+                        DumpPr(((OfficeMath)node).RunPr);
+
+                    if (mathObject.MathObjectType == MathObjectType.Matrix)
                     {
-                        OfficeMath officeMath = (OfficeMath)node;
-
-                        Write(string.Format("  {{Type: {0}}}", officeMath.MathObject.MathObjectType));
-
-                        MathObject mathObject = officeMath.MathObject;
-                        DumpPr(mathObject);
-
-                        if (!NoRunAttributes)
-                            DumpPr(((OfficeMath)node).RunPr);
-
-                        if (mathObject.MathObjectType == MathObjectType.Matrix)
+                        MathObjectMatrix matrix = (MathObjectMatrix)mathObject;
+                        for (int i = 0; i < matrix.ColumnPrCollection.Count; i++)
                         {
-                            MathObjectMatrix matrix = (MathObjectMatrix) mathObject;
-                            for (int i = 0; i < matrix.ColumnPrCollection.Count; i++)
-                            {
-                                MathMatrixColumnPr columnPr = matrix.ColumnPrCollection[i];
-                                Write(string.Format("  {{Column {0}: {1}}}", i, columnPr.HorizontalAlignment));
-                            }
+                            MathMatrixColumnPr columnPr = matrix.ColumnPrCollection[i];
+                            Write(string.Format("  {{Column {0}: {1}}}", i, columnPr.HorizontalAlignment));
                         }
-                        break;
                     }
+                    break;
+                }
 
                 case NodeType.FieldStart:
                     {
                         FieldStart fieldStart = (FieldStart)node;
 
-                        if(fieldStart.FieldData != null)
-                            Write(string.Format("  {{FieldData: {0}}}", ByteArrayToString(fieldStart.FieldData)));
+                    if (fieldStart.FieldData != null)
+                        Write(string.Format("  {{FieldData: {0}}}", ByteArrayToString(fieldStart.FieldData)));
 
-                        if (!NoRunAttributes)
-                            DumpPr(fieldStart.RunPr);
-                        break;
-                    }
+                    if (!NoRunAttributes)
+                        DumpPr(fieldStart.RunPr);
+                    break;
+                }
 
                 case NodeType.FieldSeparator:
-                    {
-                        if (!NoRunAttributes)
-                            DumpPr(((FieldSeparator)node).RunPr);
-                        break;
-                    }
+                {
+                    if (!NoRunAttributes)
+                        DumpPr(((FieldSeparator)node).RunPr);
+                    break;
+                }
 
                 case NodeType.FieldEnd:
                 {
-                        if (!NoRunAttributes)
-                            DumpPr(((FieldEnd)node).RunPr);
-                        break;
-                    }
+                    if (!NoRunAttributes)
+                        DumpPr(((FieldEnd)node).RunPr);
+                    break;
+                }
 
                 case NodeType.SmartTag:
+                {
+                    SmartTag smartTag = (SmartTag)node;
+                    foreach (CustomXmlProperty property in smartTag.Properties)
                     {
-                        SmartTag smartTag = (SmartTag)node;
-                        foreach(CustomXmlProperty property in smartTag.Properties)
-                        {
-                            Write(string.Format("  {{Property: {0}:{1}}}", property.Name, property.Value));
-                        }
-                        break;
+                        Write(string.Format("  {{Property: {0}:{1}}}", property.Name, property.Value));
                     }
+                    break;
+                }
                 case NodeType.EditableRangeStart:
-                    {
-                        EditableRangeStart erStart = (EditableRangeStart)node;
-                        Write(string.Format("  {{Id: {0}}}", erStart.Id));
-                        Write(string.Format("  {{EditorGroup: '{0}'}}", erStart.EditorGroup));
-                        break;
-                    }
+                {
+                    EditableRangeStart erStart = (EditableRangeStart)node;
+                    Write(string.Format("  {{Id: {0}}}", erStart.Id));
+                    Write(string.Format("  {{EditorGroup: '{0}'}}", erStart.EditorGroup));
+                    break;
+                }
                 case NodeType.EditableRangeEnd:
-                    {
-                        EditableRangeEnd erEnd = (EditableRangeEnd)node;
-                        Write(string.Format("  {{Id: {0}}}", erEnd.Id));
-                        break;
-                    }
+                {
+                    EditableRangeEnd erEnd = (EditableRangeEnd)node;
+                    Write(string.Format("  {{Id: {0}}}", erEnd.Id));
+                    break;
+                }
                 case NodeType.StructuredDocumentTag:
                 {
-                    DumpSdt((StructuredDocumentTag) node);
+                    DumpSdt((StructuredDocumentTag)node);
                     break;
                 }
                 case NodeType.StructuredDocumentTagRangeStart:
                 {
-                    DumpSdt(((StructuredDocumentTagRangeStart) node).InternalSdt);
+                    DumpSdt(((StructuredDocumentTagRangeStart)node).InternalSdt);
                     break;
                 }
                 case NodeType.Paragraph:
+                {
+                    Paragraph para = (Paragraph)node;
+
+                    if (ShowListLabels && (para.IsListItemOriginal || para.IsListItemFinal))
+                        Write(string.Format("  {{ListLabel: '{0}' -> '{1}'}}",
+                            GetPrintableText(para.ListLabel.LabelStringOriginal),
+                            GetPrintableText(para.ListLabel.LabelStringFinal)));
+
+                    if (ShowFloating)
                     {
-                        Paragraph para = (Paragraph)node;
+                        bool direct = para.ParaPr.IsFloating;
+                        bool inherited = para.GetExpandedParaPr(ParaPrExpandFlags.Layout).IsFloating;
 
-                        if (ShowListLabels && (para.IsListItemOriginal || para.IsListItemFinal))
-                            Write(string.Format("  {{ListLabel: '{0}' -> '{1}'}}",
-                                GetPrintableText(para.ListLabel.LabelStringOriginal),
-                                GetPrintableText(para.ListLabel.LabelStringFinal)));
-
-                        if (ShowFloating)
-                        {
-                            bool direct = para.ParaPr.IsFloating;
-                            bool inherited = para.GetExpandedParaPr(ParaPrExpandFlags.Layout).IsFloating;
-
-                            if(inherited && !direct)
-                                Write("  {Floating: Inherited}");
-                            else if(direct)
-                                Write("  {Floating: Direct}");
-                        }
-
-                        if (ShowParaId)
-                        {
-                            if (para.ParaId != 0)
-                                Write(string.Format("  {{ParaId: {0}}}", string.Format("0x{0:x8}", para.ParaId)));
-
-                            if (para.TextId != 0)
-                                Write(string.Format("  {{TextId: {0}}}", string.Format("0x{0:x8}", para.TextId)));
-                        }
-
-                        if (!NoParagraphAttributes)
-                        {
-                            DumpPr(para.ParaPr, para);
-
-                            if (ShowExpanded)
-                            {
-                                Write("  >>");
-                                DumpPr(para.GetExpandedParaPr(ParaPrExpandFlags.Layout), para);
-                            }
-
-                            if (!NoAttributes && HasAttrs(para.ParagraphBreakRunPr, para))
-                            {
-                                Write(".");
-                                DumpPr(para.ParagraphBreakRunPr, para);
-                            }
-                        }
-
-                        IndentLevel++;
-                        if (NoParagraphContent)
-                            Write(node.GetText());
-                        IndentLevel--;
-
-                        break;
+                        if (inherited && !direct)
+                            Write("  {Floating: Inherited}");
+                        else if (direct)
+                            Write("  {Floating: Direct}");
                     }
+
+                    if (ShowParaId)
+                    {
+                        if (para.ParaId != 0)
+                            Write(string.Format("  {{ParaId: {0}}}", string.Format("0x{0:x8}", para.ParaId)));
+
+                        if (para.TextId != 0)
+                            Write(string.Format("  {{TextId: {0}}}", string.Format("0x{0:x8}", para.TextId)));
+                    }
+
+                    if (!NoParagraphAttributes)
+                    {
+                        DumpPr(para.ParaPr, para);
+
+                        if (ShowExpanded)
+                        {
+                            Write("  >>");
+                            DumpPr(para.GetExpandedParaPr(ParaPrExpandFlags.Layout), para);
+                        }
+
+                        if (!NoAttributes && HasAttrs(para.ParagraphBreakRunPr, para))
+                        {
+                            Write(".");
+                            DumpPr(para.ParagraphBreakRunPr, para);
+                        }
+                    }
+
+                    IndentLevel++;
+                    if (NoParagraphContent)
+                        Write(node.GetText());
+                    IndentLevel--;
+
+                    break;
+                }
                 case NodeType.Run:
                     if (!NoRunAttributes)
                     {
-                        Run run = (Run) node;
+                        Run run = (Run)node;
 
                         if (ShowCharacterCategory)
                         {
@@ -1984,8 +2188,8 @@ namespace Aspose.Words.Tests
                     }
                     break;
                 case NodeType.Table:
-                    DumpPr(((Table) node).TablePr);
-                    if(DumpCellerData)
+                    DumpPr(((Table)node).TablePr);
+                    if (DumpCellerData)
                         DumpCeller((Table)node);
                     break;
                 case NodeType.Row:
@@ -2016,7 +2220,7 @@ namespace Aspose.Words.Tests
                         }
 
                         Write(string.Format("  {{TotalWidth: {0}}}", totalWidth));
-                        if(allFixed)
+                        if (allFixed)
                             Write(string.Format("  {{TotalPreferredWidth: {0}}}", totalPreferredWidth));
 
                         DumpPr(row.TablePr, row);
@@ -2028,7 +2232,7 @@ namespace Aspose.Words.Tests
                     if (!NoCellAttributes)
                         DumpPr(cell.CellPr, node);
 
-                    if(DumpCellerData)
+                    if (DumpCellerData)
                         DumpCeller(cell);
 
                     break;
@@ -2069,15 +2273,15 @@ namespace Aspose.Words.Tests
                     break;
                 }
                 case NodeType.Footnote:
-                    {
-                        Footnote footnote = (Footnote) node;
+                {
+                    Footnote footnote = (Footnote)node;
 
-                        Write(string.Format("  {{{0}, {1}}}",
-                                            footnote.FootnoteType,
-                                            footnote.IsAuto ? "Auto" : string.Format("Custom: '{0}'", GetPrintableText(footnote.ReferenceMark))));
-                        DumpPr(footnote.RunPr);
-                        break;
-                    }
+                    Write(string.Format("  {{{0}, {1}}}",
+                                        footnote.FootnoteType,
+                                        footnote.IsAuto ? "Auto" : string.Format("Custom: '{0}'", GetPrintableText(footnote.ReferenceMark))));
+                    DumpPr(footnote.RunPr);
+                    break;
+                }
                 case NodeType.SpecialChar:
                 {
                     IndentLevel++;
@@ -2144,7 +2348,7 @@ namespace Aspose.Words.Tests
             {
                 if (!((node.NodeType == NodeType.Paragraph) && NoParagraphContent))
                 {
-                    foreach (Node child in ((CompositeNode) node).GetChildNodes(NodeType.Any, false))
+                    foreach (Node child in ((CompositeNode)node).GetChildNodes(NodeType.Any, false))
                     {
                         if (NoTableBody && (node.NodeType == NodeType.Table))
                             continue;
@@ -2224,7 +2428,7 @@ namespace Aspose.Words.Tests
         {
             CellerTable celler = new CellerTable(cell.ParentTable, CellerTableOptions.GotoMergedCells);
 
-            for(int i = 0; i < cell.RowIndex; i++)
+            for (int i = 0; i < cell.RowIndex; i++)
                 celler.GotoNextRow();
 
             celler.GotoFirstCell();
@@ -2297,14 +2501,22 @@ namespace Aspose.Words.Tests
         private static void DumpDmlChartSpace(DmlChartSpace chartSpace)
         {
             StringBuilder sb = new StringBuilder();
-            if (chartSpace.AspectRatioLocked) sb.Append("AspectRatioLocked, ");
-            if (chartSpace.AutoUpdate) sb.Append("AutoUpdate, ");
-            if (chartSpace.Date1904) sb.Append("Date1904, ");
-            if (chartSpace.Hidden) sb.Append("Hidden, ");
-            if (chartSpace.IsChartEx) sb.Append("IsChartEx, ");
-            if (chartSpace.IsWord2007OrLower) sb.Append("IsWord2007OrLower, ");
-            if (chartSpace.RoundedCorners) sb.Append("RoundedCorners, ");
-            if (chartSpace.UseWord2010Style) sb.Append("UseWord2010Style, ");
+            if (chartSpace.AspectRatioLocked)
+                sb.Append("AspectRatioLocked, ");
+            if (chartSpace.AutoUpdate)
+                sb.Append("AutoUpdate, ");
+            if (chartSpace.Date1904)
+                sb.Append("Date1904, ");
+            if (chartSpace.Hidden)
+                sb.Append("Hidden, ");
+            if (chartSpace.IsChartEx)
+                sb.Append("IsChartEx, ");
+            if (chartSpace.IsWord2007OrLower)
+                sb.Append("IsWord2007OrLower, ");
+            if (chartSpace.RoundedCorners)
+                sb.Append("RoundedCorners, ");
+            if (chartSpace.UseWord2010Style)
+                sb.Append("UseWord2010Style, ");
             Write("{{DmlChartSpace: {0}}}", sb.ToString().Trim(gListSeparatorChars));
 
             IndentLevel++;
@@ -2315,10 +2527,14 @@ namespace Aspose.Words.Tests
         private static void DumpDmlChartFormat(DmlChartFormat chartFormat)
         {
             StringBuilder sb = new StringBuilder();
-            if (chartFormat.AutoTitleDeleted) sb.Append("AutoTitleDeleted, ");
-            if (chartFormat.PlotVisOnly) sb.Append("PlotVisOnly, ");
-            if (chartFormat.ShowDLblsOverMax) sb.Append("ShowDLblsOverMax, ");
-            if (chartFormat.TitleDeleted) sb.Append("TitleDeleted, ");
+            if (chartFormat.AutoTitleDeleted)
+                sb.Append("AutoTitleDeleted, ");
+            if (chartFormat.PlotVisOnly)
+                sb.Append("PlotVisOnly, ");
+            if (chartFormat.ShowDLblsOverMax)
+                sb.Append("ShowDLblsOverMax, ");
+            if (chartFormat.TitleDeleted)
+                sb.Append("TitleDeleted, ");
             Write("{{DmlChartFormat: {0}}}", sb.ToString().Trim(gListSeparatorChars));
 
             IndentLevel++;
@@ -2362,10 +2578,14 @@ namespace Aspose.Words.Tests
         private static void DumpPlotArea(DmlChartPlotArea plotArea)
         {
             StringBuilder sb = new StringBuilder();
-            if (plotArea.HasAxis) sb.Append("HasAxis, ");
-            if (plotArea.IsInner) sb.Append("IsInner, ");
-            if (plotArea.IsSurface3D) sb.Append("HaIsSurface3DsAxis, ");
-            if (plotArea.RenderLegendForDataPoints) sb.Append("RenderLegendForDataPoints, ");
+            if (plotArea.HasAxis)
+                sb.Append("HasAxis, ");
+            if (plotArea.IsInner)
+                sb.Append("IsInner, ");
+            if (plotArea.IsSurface3D)
+                sb.Append("HaIsSurface3DsAxis, ");
+            if (plotArea.RenderLegendForDataPoints)
+                sb.Append("RenderLegendForDataPoints, ");
             Write("{{DmlChartPlotArea: {0}}}", sb.ToString().Trim(gListSeparatorChars));
 
             foreach (DmlChart dmlChart in plotArea.Charts)
@@ -2379,39 +2599,61 @@ namespace Aspose.Words.Tests
         private static void DumpDmlChart(DmlChart dmlChart)
         {
             StringBuilder sb = new StringBuilder();
-            if (dmlChart.Is3D) sb.Append("Is3D, ");
-            if ((dmlChart is DmlBubbleChart) && ((DmlBubbleChart)dmlChart).Bubble3D) sb.Append("IsBubble3D, ");
-            if (dmlChart.IsRadarChart) sb.Append("IsRadarChart, ");
-            if (dmlChart.HasAxis) sb.Append("HasAxis, ");
-            if (dmlChart.RenderLegendForDataPoints) sb.Append("RenderLegendForDataPoints, ");
-            if (dmlChart.VaryColors) sb.Append("VaryColors, ");
+            if (dmlChart.Is3D)
+                sb.Append("Is3D, ");
+            if ((dmlChart is DmlBubbleChart) && ((DmlBubbleChart)dmlChart).Bubble3D)
+                sb.Append("IsBubble3D, ");
+            if (dmlChart.IsRadarChart)
+                sb.Append("IsRadarChart, ");
+            if (dmlChart.HasAxis)
+                sb.Append("HasAxis, ");
+            if (dmlChart.RenderLegendForDataPoints)
+                sb.Append("RenderLegendForDataPoints, ");
+            if (dmlChart.VaryColors)
+                sb.Append("VaryColors, ");
             Write(string.Format("{{DmlChart: {0}, {1}}}", dmlChart.ChartType, sb.ToString().Trim(gListSeparatorChars)));
 
             IndentLevel++;
             ChartDataLabelCollection dataLabels = dmlChart.DataLabels;
             sb = new StringBuilder();
-            if (dataLabels.ShowCategoryName) sb.Append("ShowCategoryName, ");
-            if (dataLabels.ShowBubbleSize) sb.Append("ShowBubbleSize, ");
-            if (dataLabels.ShowDataLabelsRange) sb.Append("ShowDataLabelsRange, ");
-            if (dataLabels.ShowLeaderLines) sb.Append("ShowLeaderLines, ");
-            if (dataLabels.ShowLegendKey) sb.Append("ShowLegendKey, ");
-            if (dataLabels.ShowPercentage) sb.Append("ShowPercentage, ");
-            if (dataLabels.ShowSeriesName) sb.Append("ShowSeriesName, ");
-            if (dataLabels.ShowValue) sb.Append("ShowValue, ");
+            if (dataLabels.ShowCategoryName)
+                sb.Append("ShowCategoryName, ");
+            if (dataLabels.ShowBubbleSize)
+                sb.Append("ShowBubbleSize, ");
+            if (dataLabels.ShowDataLabelsRange)
+                sb.Append("ShowDataLabelsRange, ");
+            if (dataLabels.ShowLeaderLines)
+                sb.Append("ShowLeaderLines, ");
+            if (dataLabels.ShowLegendKey)
+                sb.Append("ShowLegendKey, ");
+            if (dataLabels.ShowPercentage)
+                sb.Append("ShowPercentage, ");
+            if (dataLabels.ShowSeriesName)
+                sb.Append("ShowSeriesName, ");
+            if (dataLabels.ShowValue)
+                sb.Append("ShowValue, ");
             Write("{{ChartDataLabelCollection: {0}}}", sb.ToString().Trim(gListSeparatorChars));
 
             IndentLevel++;
             foreach (ChartDataLabel dataLabel in dataLabels)
             {
                 sb = new StringBuilder();
-                if (dataLabel.ShowCategoryName) sb.Append("ShowCategoryName, ");
-                if (dataLabel.ShowBubbleSize) sb.Append("ShowBubbleSize, ");
-                if (dataLabel.ShowDataLabelsRange) sb.Append("ShowDataLabelsRange, ");
-                if (dataLabel.ShowLeaderLines) sb.Append("ShowLeaderLines, ");
-                if (dataLabel.ShowLegendKey) sb.Append("ShowLegendKey, ");
-                if (dataLabel.ShowPercentage) sb.Append("ShowPercentage, ");
-                if (dataLabel.ShowSeriesName) sb.Append("ShowSeriesName, ");
-                if (dataLabel.ShowValue) sb.Append("ShowValue, ");
+                if (dataLabel.ShowCategoryName)
+                    sb.Append("ShowCategoryName, ");
+                if (dataLabel.ShowBubbleSize)
+                    sb.Append("ShowBubbleSize, ");
+                if (dataLabel.ShowDataLabelsRange)
+                    sb.Append("ShowDataLabelsRange, ");
+                if (dataLabel.ShowLeaderLines)
+                    sb.Append("ShowLeaderLines, ");
+                if (dataLabel.ShowLegendKey)
+                    sb.Append("ShowLegendKey, ");
+                if (dataLabel.ShowPercentage)
+                    sb.Append("ShowPercentage, ");
+                if (dataLabel.ShowSeriesName)
+                    sb.Append("ShowSeriesName, ");
+                if (dataLabel.ShowValue)
+                    sb.Append("ShowValue, ");
                 Write("{{ChartDataLabel: {0}}}", sb.ToString().Trim(gListSeparatorChars));
             }
             IndentLevel--;
@@ -2419,12 +2661,18 @@ namespace Aspose.Words.Tests
             foreach (ChartSeries series in dmlChart.Series)
             {
                 sb = new StringBuilder();
-                if(series.HasPoints) sb.Append("HasValues, ");
-                if(series.Hidden) sb.Append("Hidden, ");
-                if(series.InvertIfNegative) sb.Append("InvertIfNegative, ");
-                if(series.Bubble3D) sb.Append("Bubble3D, ");
-                if(series.Smooth) sb.Append("Smooth, ");
-                if(series.SmoothExplicitlySet) sb.Append("SmoothExplicitlySet, ");
+                if (series.HasPoints)
+                    sb.Append("HasValues, ");
+                if (series.Hidden)
+                    sb.Append("Hidden, ");
+                if (series.InvertIfNegative)
+                    sb.Append("InvertIfNegative, ");
+                if (series.Bubble3D)
+                    sb.Append("Bubble3D, ");
+                if (series.Smooth)
+                    sb.Append("Smooth, ");
+                if (series.SmoothExplicitlySet)
+                    sb.Append("SmoothExplicitlySet, ");
                 Write("{{ChartSeries: {0}}}", sb.ToString().Trim(gListSeparatorChars));
 
                 IndentLevel++;
@@ -2439,8 +2687,10 @@ namespace Aspose.Words.Tests
         private static void DumpDmlChartDataSource(DmlChartDimensionData dimensionData, string name)
         {
             StringBuilder sb = new StringBuilder();
-            if(dimensionData.IsEmpty) sb.Append("HasValues, ");
-            if(dimensionData.IsDate) sb.Append("IsDate, ");
+            if (dimensionData.IsEmpty)
+                sb.Append("HasValues, ");
+            if (dimensionData.IsDate)
+                sb.Append("IsDate, ");
             Write(string.Format("{{DmlChartDimensionData.{0}: {1}}}", name, sb.ToString().Trim(gListSeparatorChars)));
 
             if (dimensionData.Data != null)
@@ -2453,9 +2703,12 @@ namespace Aspose.Words.Tests
                     if (dmlChartValue != null)
                     {
                         sb = new StringBuilder();
-                        if (dmlChartValue.IsVisible) sb.Append("IsVisible, ");
-                        if (dmlChartValue.IsDate) sb.Append("IsDate, ");
-                        if (dmlChartValue.IsNaN) sb.Append("IsNaN, ");
+                        if (dmlChartValue.IsVisible)
+                            sb.Append("IsVisible, ");
+                        if (dmlChartValue.IsDate)
+                            sb.Append("IsDate, ");
+                        if (dmlChartValue.IsNaN)
+                            sb.Append("IsNaN, ");
                         Write(
                             string.Format(
                                 "{{DmlChartValue: {0}; {1}; {2}}}",
@@ -2563,7 +2816,7 @@ namespace Aspose.Words.Tests
                     break;
 
                 case DmlNodeType.Picture:
-                    DmlPicture dmlPicture = (DmlPicture) dmlNode;
+                    DmlPicture dmlPicture = (DmlPicture)dmlNode;
                     Write(string.Format("{{Id: {0}}}", dmlPicture.NonVisualPr.NvDrawingProperties.Id));
                     Write(string.Format("{{Name: {0}}}", dmlPicture.NonVisualPr.NvDrawingProperties.Name));
                     Write(string.Format("{{BlipFill.ImageBytes: {0}}}", ImageBytesToString(dmlPicture.BlipFill.ImageBytes)));
@@ -2678,13 +2931,13 @@ namespace Aspose.Words.Tests
 
             sortedList.Sort(new CustomXmlPartComparer());
 
-            foreach(CustomXmlPart xmlPart in sortedList)
+            foreach (CustomXmlPart xmlPart in sortedList)
             {
                 Write(string.Format("\n[CustomXmlPart: {0}]", xmlPart.Id));
 
                 IndentLevel++;
-                foreach(string schema in xmlPart.Schemas)
-                    if(StringUtil.HasChars(schema))
+                foreach (string schema in xmlPart.Schemas)
+                    if (StringUtil.HasChars(schema))
                         Write(string.Format("{{Schema: '{0}'}}", schema));
 
                 Write(string.Format("{{Data: {0}}}", ByteArrayToString(xmlPart.Data)));
@@ -2926,7 +3179,7 @@ namespace Aspose.Words.Tests
 
         private static void ExtractGlobalTableAttrs(Table table)
         {
-            foreach(Row row in table.Rows)
+            foreach (Row row in table.Rows)
             {
                 TablePr tablePr = row.ParentTable.TablePr;
                 TablePr rowPr = row.TablePr;
@@ -2959,7 +3212,7 @@ namespace Aspose.Words.Tests
 
                 NodeCollection sdts = doc.GetChildNodes(NodeType.StructuredDocumentTag, true);
                 foreach (StructuredDocumentTag sdt in sdts)
-                    if(sdt.Level == MarkupLevel.Inline)
+                    if (sdt.Level == MarkupLevel.Inline)
                         joinCount += JoinRunsWithSameFormatting(sdt, sb);
 
                 return joinCount;
@@ -3201,7 +3454,7 @@ namespace Aspose.Words.Tests
 
             foreach (ListDef listDef in doc.Lists.ListDefs)
             {
-                int listId = GetFirstListId(listDef , doc.Lists);
+                int listId = GetFirstListId(listDef, doc.Lists);
 
                 if (listId == int.MaxValue)
                 {
@@ -3236,8 +3489,10 @@ namespace Aspose.Words.Tests
                 {
                     ListLevelOverride lo = list.Overrides[i];
                     StringBuilder sb = new StringBuilder();
-                    if (lo.IsStartAt) sb.AppendFormat("StartAt, ");
-                    if (lo.IsFormatting) sb.AppendFormat("Formatting, ");
+                    if (lo.IsStartAt)
+                        sb.AppendFormat("StartAt, ");
+                    if (lo.IsFormatting)
+                        sb.AppendFormat("Formatting, ");
                     sb.AppendFormat("{0}, 0x{1:x8}/0x{2:x8}", lo.ListLevel.LevelNumber, lo.StartAtRaw, lo.StartAtReal);
 
                     Write(string.Format("[List Level Override ({0})]", sb));
@@ -3281,18 +3536,23 @@ namespace Aspose.Words.Tests
         private static void DumpListLevel(ListLevel level)
         {
             StringBuilder sb = new StringBuilder();
-            if(level.ParaStyleIstd != StyleIndex.Nil)
+            if (level.ParaStyleIstd != StyleIndex.Nil)
                 sb.AppendFormat("linked style: 0x{0:x2}, ", level.ParaStyleIstd);
             sb.AppendFormat("{0}, ", level.StartAt);
             sb.AppendFormat("{0}, ", level.NumberStyle);
             sb.AppendFormat("'{0}', ", GetPrintableText(level.NumberFormat));
             sb.AppendFormat("{0}, ", level.Alignment);
 
-            if (level.IsLegal) sb.Append("Legal, ");
-            if (level.LegacyPrev) sb.Append("LegacyPrev, ");
-            if (level.LegacyPrevSpace) sb.Append("LegacyPrevSpace, ");
-            if (level.Legacy) sb.Append("Legacy, ");
-            if (level.IsTentative) sb.Append("Tentative, ");
+            if (level.IsLegal)
+                sb.Append("Legal, ");
+            if (level.LegacyPrev)
+                sb.Append("LegacyPrev, ");
+            if (level.LegacyPrevSpace)
+                sb.Append("LegacyPrevSpace, ");
+            if (level.Legacy)
+                sb.Append("Legacy, ");
+            if (level.IsTentative)
+                sb.Append("Tentative, ");
 
             sb.AppendFormat("{0}, ", level.TrailingCharacter);
             sb.AppendFormat("{0}, ", level.LegacySpace);
@@ -3332,7 +3592,7 @@ namespace Aspose.Words.Tests
         {
             Write("\n[Custom Document Properties]");
 
-            foreach(DocumentProperty docProperty in doc.CustomDocumentProperties)
+            foreach (DocumentProperty docProperty in doc.CustomDocumentProperties)
                 Write(string.Format("  {{'{0}'({1}) = '{2}'{3}{4}}}", docProperty.Name, docProperty.Type,
                     docProperty.Value.ToString(),
                     // Write printable version if different.
@@ -3371,10 +3631,14 @@ namespace Aspose.Words.Tests
                 const string lsFmt = "  {{{0}}}";
                 LatentStyles ls = doc.Styles.LatentStyles;
 
-                if (ls.DefaultLockedState) Write(lsFmt, "DefaultLockedState");
-                if (ls.DefaultQuickFormat) Write(lsFmt, "DefaultQuickFormat");
-                if (ls.DefaultSemiHidden) Write(lsFmt, "DefaultSemiHidden");
-                if (ls.DefaultUnhideWhenUsed) Write(lsFmt, "DefaultUnhideWhenUsed");
+                if (ls.DefaultLockedState)
+                    Write(lsFmt, "DefaultLockedState");
+                if (ls.DefaultQuickFormat)
+                    Write(lsFmt, "DefaultQuickFormat");
+                if (ls.DefaultSemiHidden)
+                    Write(lsFmt, "DefaultSemiHidden");
+                if (ls.DefaultUnhideWhenUsed)
+                    Write(lsFmt, "DefaultUnhideWhenUsed");
                 Write(lsFmt, string.Format("DefaultUIPriority: 0x{0:x2}", ls.DefaultUIPriority));
 
                 IndentLevel++;
@@ -3384,10 +3648,14 @@ namespace Aspose.Words.Tests
 
                     StringBuilder sb = new StringBuilder();
 
-                    if (latentStyle.Locked) sb.Append(" Locked");
-                    if (latentStyle.QuickStyle) sb.Append(" QuickFormat");
-                    if (latentStyle.SemiHidden) sb.Append(" SemiHidden");
-                    if (latentStyle.UnhideWhenUsed) sb.Append(" UnhideWhenUsed");
+                    if (latentStyle.Locked)
+                        sb.Append(" Locked");
+                    if (latentStyle.QuickStyle)
+                        sb.Append(" QuickFormat");
+                    if (latentStyle.SemiHidden)
+                        sb.Append(" SemiHidden");
+                    if (latentStyle.UnhideWhenUsed)
+                        sb.Append(" UnhideWhenUsed");
 
                     Write(string.Format("{0:x2}, {1}, Priority: 0x{2:x2}{3}",
                         (int)latentStyle.StyleIdentifier, latentStyle.StyleIdentifier, latentStyle.UIPriority, (sb.Length > 0 ? string.Format(" ({0}) ", sb.ToString().Trim()) : "")));
@@ -3401,17 +3669,20 @@ namespace Aspose.Words.Tests
                 istds.Add(style.Istd);
             istds.Sort();
 
-            for(int i = 0; i < istds.Count; i++)
+            for (int i = 0; i < istds.Count; i++)
             {
                 Style style = doc.Styles.GetByIstd(istds[i], false);
 
                 StringBuilder sb = new StringBuilder();
 
-                if (style.Locked) sb.Append(" Locked");
-                if (style.IsQuickStyle) sb.Append(" QuickFormat");
+                if (style.Locked)
+                    sb.Append(" Locked");
+                if (style.IsQuickStyle)
+                    sb.Append(" QuickFormat");
                 if (style.SemiHidden)
                     sb.Append(" SemiHidden");
-                if (style.UnhideWhenUsed) sb.Append(" UnhideWhenUsed");
+                if (style.UnhideWhenUsed)
+                    sb.Append(" UnhideWhenUsed");
 
                 string styleOptions = string.Format("0x{0:x2}{1}", style.Priority,
                     sb.Length > 0 ? string.Format(" ({0})", sb.ToString().Trim()) : "");
@@ -3423,7 +3694,7 @@ namespace Aspose.Words.Tests
                                     style.Type,
                                     GetPrintableText(doc.Styles.GetAliases(style, true)),
                                     style.BasedOnIstd != StyleIndex.Nil
-                                        ? string.Format(", based on '{0}'", style.GetBaseStyle().Name): "",
+                                        ? string.Format(", based on '{0}'", style.GetBaseStyle().Name) : "",
                                     style.NextIstd != StyleIndex.Nil
                                         ? string.Format(", followed by '{0}'", style.GetNextStyle().Name) : "",
                                     style.LinkedIstd != StyleIndex.Nil
@@ -3454,34 +3725,34 @@ namespace Aspose.Words.Tests
                         break;
 
                     case StyleType.Table:
+                    {
+                        TableStyle tableStyle = (TableStyle)style;
+                        DumpPr(tableStyle.TablePr);
+                        DumpPr(tableStyle.RowPr);
+                        DumpPr(tableStyle.CellPr);
+                        DumpPr(tableStyle.ParaPr);
+                        DumpPr(tableStyle.RunPr);
+                        IndentLevel++;
+
+                        SortedStringListGeneric<ConditionalStyle> sortedList =
+                            new SortedStringListGeneric<ConditionalStyle>();
+                        foreach (ConditionalStyle conditionalStyle in tableStyle.ConditionalStyles.DefinedStyles)
+                            sortedList.Add(conditionalStyle.OverrideType.ToString(), conditionalStyle);
+
+                        for (int k = 0; k < sortedList.Count; k++)
                         {
-                            TableStyle tableStyle = (TableStyle) style;
-                            DumpPr(tableStyle.TablePr);
-                            DumpPr(tableStyle.RowPr);
-                            DumpPr(tableStyle.CellPr);
-                            DumpPr(tableStyle.ParaPr);
-                            DumpPr(tableStyle.RunPr);
-                            IndentLevel++;
+                            ConditionalStyle conditionalStyle = sortedList.GetByIndex(k);
 
-                            SortedStringListGeneric<ConditionalStyle> sortedList =
-                                new SortedStringListGeneric<ConditionalStyle>();
-                            foreach (ConditionalStyle conditionalStyle in tableStyle.ConditionalStyles.DefinedStyles)
-                                sortedList.Add(conditionalStyle.OverrideType.ToString(), conditionalStyle);
-
-                            for(int k = 0; k < sortedList.Count; k++)
-                            {
-                                ConditionalStyle conditionalStyle = sortedList.GetByIndex(k);
-
-                                Write(string.Format("[{0}]", conditionalStyle.OverrideType));
-                                DumpPr(conditionalStyle.TablePr);
-                                DumpPr(conditionalStyle.RowPr);
-                                DumpPr(conditionalStyle.CellPr);
-                                DumpPr(conditionalStyle.ParaPr);
-                                DumpPr(conditionalStyle.RunPr);
-                            }
-                            IndentLevel--;
-                            break;
+                            Write(string.Format("[{0}]", conditionalStyle.OverrideType));
+                            DumpPr(conditionalStyle.TablePr);
+                            DumpPr(conditionalStyle.RowPr);
+                            DumpPr(conditionalStyle.CellPr);
+                            DumpPr(conditionalStyle.ParaPr);
+                            DumpPr(conditionalStyle.RunPr);
                         }
+                        IndentLevel--;
+                        break;
+                    }
 
                     default:
                         throw new InvalidOperationException(string.Format("Invalid StyleType value {0}.", style.Type));
@@ -3587,11 +3858,11 @@ namespace Aspose.Words.Tests
 
         internal static string BorderToString(Border border)
         {
-            if(border.Equals(Border.Empty))
+            if (border.Equals(Border.Empty))
                 return "(empty)";
 
-            if(border.IsNil)
-                return  "(nil)";
+            if (border.IsNil)
+                return "(nil)";
 
             StringBuilder sb = new StringBuilder();
 
@@ -3879,7 +4150,7 @@ namespace Aspose.Words.Tests
                 case TableAttr.Sys_TableGridForNewAlgorithm:
                     return string.Format(fmt, "_TableGridForNewAlgorithm", Int32ListToString(((TableGridColumnsAttr)value).GridColumns));
                 case TableAttr.Sys_Cells:
-                    return string.Format(fmt, "_Cells", ArrayListToString((CellPrCollection) value));
+                    return string.Format(fmt, "_Cells", ArrayListToString((CellPrCollection)value));
                 case TableAttr.Sys_TableGrid:
                     return string.Format(fmt, "_TableGrid", Int32ListToString((IntList)value));
                 case TableAttr.Sys_GridBefore:
@@ -3899,7 +4170,7 @@ namespace Aspose.Words.Tests
                 //////////////////////
                 case RevisionAttr.InsertRevision:
                 case RevisionAttr.DeleteRevision:
-                    return string.Format(fmt, ((EditRevision) value).Type, EditRevisionToString((EditRevision) value));
+                    return string.Format(fmt, ((EditRevision)value).Type, EditRevisionToString((EditRevision)value));
                 case RevisionAttr.MoveFromRevision:
                     return string.Format(fmt, ((MoveRevision)value).Type, MoveRevisionToString((MoveRevision)value));
                 case RevisionAttr.MoveToRevision:
@@ -3990,17 +4261,17 @@ namespace Aspose.Words.Tests
                 case FontAttr.Spacing:
                     return string.Format(fmt, "Spacing", value);
                 case FontAttr.SpecialHidden:
-                    return string.Format(fmt, "SpecialHidden", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "SpecialHidden", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.Bold:
-                    return string.Format(fmt, "Bold", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "Bold", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.Italic:
-                    return string.Format(fmt, "Italic", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "Italic", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.ItalicBi:
-                    return string.Format(fmt, "ItalicBi", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "ItalicBi", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.SmallCaps:
-                    return string.Format(fmt, "SmallCaps", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "SmallCaps", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.BoldBi:
-                    return string.Format(fmt, "BoldBi", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "BoldBi", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.NameAscii:
                     return string.Format(fmt, "NameAscii", value);
                 case FontAttr.NameFarEast:
@@ -4010,21 +4281,21 @@ namespace Aspose.Words.Tests
                 case FontAttr.NameBi:
                     return string.Format(fmt, "NameBi", value);
                 case FontAttr.CharacterCategoryHint:
-                    return string.Format(fmt, "CharacterCategoryHint", (CharacterCategory) value);
+                    return string.Format(fmt, "CharacterCategoryHint", (CharacterCategory)value);
                 case FontAttr.Bidi:
-                    return string.Format(fmt, "BiDi", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "BiDi", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.ComplexScript:
-                    return string.Format(fmt, "ComplexScript", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "ComplexScript", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.RsidR:
                     return string.Format(fmt, "RsidR", string.Format("0x{0:x8}", value));
                 case FontAttr.RsidRPr:
                     return string.Format(fmt, "RsidRPr", string.Format("0x{0:x8}", value));
                 case FontAttr.LocaleIdBi:
-                    return string.Format(fmt, "LocaleIdBi", (Language) value);
+                    return string.Format(fmt, "LocaleIdBi", (Language)value);
                 case FontAttr.LocaleId:
-                    return string.Format(fmt, "LocaleId", (Language) value);
+                    return string.Format(fmt, "LocaleId", (Language)value);
                 case FontAttr.LocaleIdFarEast:
-                    return string.Format(fmt, "LocaleIdFarEast", (Language) value);
+                    return string.Format(fmt, "LocaleIdFarEast", (Language)value);
                 case FontAttr.Size:
                     return string.Format(fmt, "Size", value);
                 case FontAttr.SizeBi:
@@ -4034,11 +4305,11 @@ namespace Aspose.Words.Tests
                 case FontAttr.ThemeColor:
                     return string.Format(fmt, "ThemeColor", value);
                 case FontAttr.NoProofing:
-                    return string.Format(fmt, "NoProofing", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "NoProofing", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.Shadow:
-                    return string.Format(fmt, "Shadow", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "Shadow", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.AllCaps:
-                    return string.Format(fmt, "AllCaps", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "AllCaps", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.Color:
                     return string.Format(fmt, "Color", value);
                 case FontAttr.Underline:
@@ -4050,7 +4321,7 @@ namespace Aspose.Words.Tests
                 case FontAttr.Position:
                     return string.Format(fmt, "Position", value);
                 case FontAttr.SnapToGrid:
-                    return string.Format(fmt, "SnapToGrid", AttrBoolExToString((AttrBoolEx) value));
+                    return string.Format(fmt, "SnapToGrid", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.Hidden:
                     return string.Format(fmt, "Hidden", AttrBoolExToString((AttrBoolEx)value));
                 case FontAttr.WebHidden:
@@ -4060,7 +4331,7 @@ namespace Aspose.Words.Tests
                 case FontAttr.HighlightColor:
                     return string.Format(fmt, "HighlightColor", value);
                 case FontAttr.Shading:
-                    return string.Format(fmt, "Shading", ShadingToString((Shading) value));
+                    return string.Format(fmt, "Shading", ShadingToString((Shading)value));
                 case FontAttr.Scaling:
                     return string.Format(fmt, "Scaling", value);
                 case FontAttr.FitText:
@@ -4099,7 +4370,7 @@ namespace Aspose.Words.Tests
                 case ParaAttr.RsidP:
                     return string.Format(fmt, "RsidP", string.Format("0x{0:x8}", value));
                 case ParaAttr.Shading:
-                    return string.Format(fmt, "Shading", ShadingToString((Shading) value));
+                    return string.Format(fmt, "Shading", ShadingToString((Shading)value));
                 case ParaAttr.FrameVerticalDistanceFromText:
                     return string.Format(fmt, "FrameVerticalDistanceFromText", value);
                 case ParaAttr.FrameHorizontalDistanceFromText:
@@ -4109,9 +4380,9 @@ namespace Aspose.Words.Tests
                 case ParaAttr.NoSpaceBetweenSameStyle:
                     return string.Format(fmt, "NoSpaceBetweenSameStyle", value);
                 case ParaAttr.SpaceBefore:
-                    return string.Format(fmt, "SpaceBefore", (int) value);
+                    return string.Format(fmt, "SpaceBefore", (int)value);
                 case ParaAttr.SpaceAfter:
-                    return string.Format(fmt, "SpaceAfter", (int) value);
+                    return string.Format(fmt, "SpaceAfter", (int)value);
                 case ParaAttr.Alignment:
                     return string.Format(fmt, "Alignment", value);
                 case ParaAttr.Sys_LeftIndent97:
@@ -4123,17 +4394,17 @@ namespace Aspose.Words.Tests
                 case ParaAttr.Sys_RightIndent97:
                     return string.Format(fmt, "_RightIndent97", value);
                 case ParaAttr.TabStops:
-                    return string.Format(fmt, "TabStops", TabStopCollectionToString((TabStopCollection) value));
+                    return string.Format(fmt, "TabStops", TabStopCollectionToString((TabStopCollection)value));
                 case ParaAttr.Istd:
                     return string.Format(fmt, "Istd", string.Format("0x{0:x2}", value));
                 case ParaAttr.AutoAdjustRightIndent:
-                    return string.Format(fmt, "AutoAdjustRightIndent", (bool) value);
+                    return string.Format(fmt, "AutoAdjustRightIndent", (bool)value);
                 case ParaAttr.WidowControl:
-                    return string.Format(fmt, "WidowControl", (bool) value);
+                    return string.Format(fmt, "WidowControl", (bool)value);
                 case ParaAttr.AddSpaceBetweenFarEastAndAlpha:
-                    return string.Format(fmt, "AddSpaceBetweenFarEastAndAlpha", (bool) value);
+                    return string.Format(fmt, "AddSpaceBetweenFarEastAndAlpha", (bool)value);
                 case ParaAttr.AddSpaceBetweenFarEastAndDigit:
-                    return string.Format(fmt, "AddSpaceBetweenFarEastAndDigit", (bool) value);
+                    return string.Format(fmt, "AddSpaceBetweenFarEastAndDigit", (bool)value);
                 case ParaAttr.ListLevel:
                     return string.Format(fmt, "ListLevel", value);
                 case ParaAttr.ListId:
@@ -4212,23 +4483,23 @@ namespace Aspose.Words.Tests
                     return string.Format(fmt, "BorderBetween", BorderToString((Border)value));
                 case ParaAttr.HtmlBlockId:
                     return string.Format(fmt, "HtmlBlockId", string.Format("0x{0:x8}", value));
-                    //////////////////////
+                //////////////////////
                 case CellAttr.Sys_CellSpan:
                     return string.Format(fmt, "_CellSpan", value);
                 case CellAttr.HideMark:
                     return string.Format(fmt, "HideMark", value);
                 case CellAttr.BorderBottom:
-                    return string.Format(fmt, "BorderBottom", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderBottom", BorderToString((Border)value));
                 case CellAttr.BorderTop:
-                    return string.Format(fmt, "BorderTop", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderTop", BorderToString((Border)value));
                 case CellAttr.BorderLeft:
-                    return string.Format(fmt, "BorderLeft", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderLeft", BorderToString((Border)value));
                 case CellAttr.BorderRight:
-                    return string.Format(fmt, "BorderRight", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderRight", BorderToString((Border)value));
                 case CellAttr.BorderDiagonalDown:
-                    return string.Format(fmt, "BorderDiagonalDown", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderDiagonalDown", BorderToString((Border)value));
                 case CellAttr.BorderDiagonalUp:
-                    return string.Format(fmt, "BorderDiagonalUp", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderDiagonalUp", BorderToString((Border)value));
                 case CellAttr.Width:
                     return string.Format(fmt, "Width", value);
                 case CellAttr.PreferredWidth:
@@ -4254,12 +4525,12 @@ namespace Aspose.Words.Tests
                 case CellAttr.Orientation:
                     return string.Format(fmt, "Orientation", value);
                 case CellAttr.Shading:
-                    return string.Format(fmt, "Shading", ShadingToString((Shading) value));
+                    return string.Format(fmt, "Shading", ShadingToString((Shading)value));
                 case CellAttr.BorderHorizontal:
                     return string.Format(fmt, "BorderHorizontal", BorderToString((Border)value));
                 case CellAttr.BorderVertical:
                     return string.Format(fmt, "BorderVertical", BorderToString((Border)value));
-                    //////////////////////
+                //////////////////////
                 case TableAttr.HtmlBlockId:
                     return string.Format(fmt, "DivId", value);
                 case TableAttr.FrameLeft:
@@ -4269,37 +4540,37 @@ namespace Aspose.Words.Tests
                 case TableAttr.Hidden:
                     return string.Format(fmt, "Hidden", value);
                 case TableAttr.Shading:
-                    return string.Format(fmt, "Shading", ShadingToString((Shading) value));
+                    return string.Format(fmt, "Shading", ShadingToString((Shading)value));
                 case TableAttr.Istd:
                     return string.Format(fmt, "Istd", string.Format("0x{0:x2}", value));
                 case TableAttr.RowHeight:
                     return string.Format(fmt, "RowHeight", HeightToString((Height)value));
                 case TableAttr.BorderTop:
-                    return string.Format(fmt, "BorderTop", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderTop", BorderToString((Border)value));
                 case TableAttr.BorderBottom:
-                    return string.Format(fmt, "BorderBottom", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderBottom", BorderToString((Border)value));
                 case TableAttr.BorderLeft:
-                    return string.Format(fmt, "BorderLeft", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderLeft", BorderToString((Border)value));
                 case TableAttr.BorderRight:
-                    return string.Format(fmt, "BorderRight", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderRight", BorderToString((Border)value));
                 case TableAttr.LeftPadding:
-                    return string.Format(fmt, "LeftPadding", (int) value);
+                    return string.Format(fmt, "LeftPadding", (int)value);
                 case TableAttr.TopPadding:
-                    return string.Format(fmt, "TopPadding", (int) value);
+                    return string.Format(fmt, "TopPadding", (int)value);
                 case TableAttr.RightPadding:
-                    return string.Format(fmt, "RightPadding", (int) value);
+                    return string.Format(fmt, "RightPadding", (int)value);
                 case TableAttr.BottomPadding:
-                    return string.Format(fmt, "BottomPadding", (int) value);
+                    return string.Format(fmt, "BottomPadding", (int)value);
                 case TableAttr.LeftIndent:
-                    return string.Format(fmt, "LeftIndent", (int) value);
+                    return string.Format(fmt, "LeftIndent", (int)value);
                 case TableAttr.WidthBefore:
-                    return string.Format(fmt, "WidthBefore", (PreferredWidth) value);
+                    return string.Format(fmt, "WidthBefore", (PreferredWidth)value);
                 case TableAttr.WidthAfter:
-                    return string.Format(fmt, "WidthAfter", (PreferredWidth) value);
+                    return string.Format(fmt, "WidthAfter", (PreferredWidth)value);
                 case TableAttr.BorderHorizontal:
-                    return string.Format(fmt, "BorderHorizontal", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderHorizontal", BorderToString((Border)value));
                 case TableAttr.BorderVertical:
-                    return string.Format(fmt, "BorderVertical", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderVertical", BorderToString((Border)value));
                 case TableAttr.AllowBreakAcrossPages:
                     return string.Format(fmt, "AllowBreakAcrossPages", value);
                 case TableAttr.StyleOptions:
@@ -4344,7 +4615,7 @@ namespace Aspose.Words.Tests
                     return string.Format(fmt, "FrameDistanceFromBottom", value);
                 case TableAttr.Sys_CalculatedTableGrid:
                     return string.Format(fmt, "_CalculatedTableGrid", "TODO");
-                    //////////////////////
+                //////////////////////
                 case SectAttr.RtlGutter:
                     return string.Format(fmt, "RtlGutter", value);
                 case SectAttr.ColumnsEvenlySpaced:
@@ -4430,13 +4701,13 @@ namespace Aspose.Words.Tests
                 case SectAttr.Orientation:
                     return string.Format(fmt, "Orientation", value);
                 case SectAttr.BorderTop:
-                    return string.Format(fmt, "BorderTop", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderTop", BorderToString((Border)value));
                 case SectAttr.BorderBottom:
-                    return string.Format(fmt, "BorderBottom", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderBottom", BorderToString((Border)value));
                 case SectAttr.BorderRight:
-                    return string.Format(fmt, "BorderRight", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderRight", BorderToString((Border)value));
                 case SectAttr.BorderLeft:
-                    return string.Format(fmt, "BorderLeft", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderLeft", BorderToString((Border)value));
                 case SectAttr.PageNumberStyle:
                     return string.Format(fmt, "PageNumberStyle", value);
                 case SectAttr.CharSpace:
@@ -4603,7 +4874,8 @@ namespace Aspose.Words.Tests
                 case Forms2Attr.GroupName:
                     return string.Format(fmt, "GroupName", string.Format("'{0}'", value));
 
-                default: return string.Format(fmt, key, value);
+                default:
+                    return string.Format(fmt, key, value);
             }
         }
 
@@ -5054,19 +5326,19 @@ namespace Aspose.Words.Tests
                 case ShapeAttr.ImageBytes:
                     return string.Format(fmt, "ImageBytes", ImageBytesToString((byte[])value));
                 case ShapeAttr.InkData:
-                    return string.Format(fmt, "InkData", ByteArrayToString((byte[]) value));
+                    return string.Format(fmt, "InkData", ByteArrayToString((byte[])value));
                 case ShapeAttr.FillImageBytes:
                     return string.Format(fmt, "FillImageBytes", ImageBytesToString((byte[])value));
                 case ShapeAttr.LineImageBytes:
                     return string.Format(fmt, "LineImageBytes", ImageBytesToString((byte[])value));
                 case ShapeAttr.BorderTop:
-                    return string.Format(fmt, "BorderTop", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderTop", BorderToString((Border)value));
                 case ShapeAttr.BorderBottom:
-                    return string.Format(fmt, "BorderBottom", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderBottom", BorderToString((Border)value));
                 case ShapeAttr.BorderLeft:
-                    return string.Format(fmt, "BorderLeft", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderLeft", BorderToString((Border)value));
                 case ShapeAttr.BorderRight:
-                    return string.Format(fmt, "BorderRight", BorderToString((Border) value));
+                    return string.Format(fmt, "BorderRight", BorderToString((Border)value));
                 case ShapeAttr.LineOn:
                     return string.Format(fmt, "LineOn", value);
                 case ShapeAttr.ImageTitle:
@@ -5138,7 +5410,8 @@ namespace Aspose.Words.Tests
                 case ShapeAttr.GfxData:
                     return string.Format(fmt, "GfxData", ByteArrayToString((byte[])value));
 
-                default: return string.Format(fmt, key, value);
+                default:
+                    return string.Format(fmt, key, value);
             }
         }
 
@@ -5230,7 +5503,7 @@ namespace Aspose.Words.Tests
             if (attrs.InternState == InternState.Interned)
             {
                 string id = string.Format("0x{0:x4}", attrs.PoolItem.Id);
-                if(ShowIntern)
+                if (ShowIntern)
                     Write(string.Format("  {{Interned: {0}}}", id));
                 attrs = attrs.PoolItem.Pr;
             }
@@ -5249,7 +5522,7 @@ namespace Aspose.Words.Tests
                 if (key == RevisionAttr.FormatRevision)
                 {
                     FormatRevision formatRevision = (FormatRevision)value;
-                    if(NoRevisionDetails)
+                    if (NoRevisionDetails)
                         Write("+ (-)");
                     else
                         Write(string.Format("+ ({0}, {1})", formatRevision.Author, formatRevision.DateTime));
@@ -5373,7 +5646,7 @@ namespace Aspose.Words.Tests
                 {
                     if (key == RevisionAttr.FormatRevision)
                     {
-                        FormatRevision formatRevision = (FormatRevision) value;
+                        FormatRevision formatRevision = (FormatRevision)value;
                         sb.AppendFormat("+ {0} {1}", formatRevision.Author, formatRevision.DateTime);
                         sb.Append(attrSeparator);
                         PrToString(formatRevision.RevPr, attrSeparator);
@@ -5557,11 +5830,11 @@ namespace Aspose.Words.Tests
                 else if (c == '\\')
                     sb.Append(@"\\");
                 else if (c < 0x20)
-                    sb.AppendFormat("\\x{0:x2}", (int) c);
+                    sb.AppendFormat("\\x{0:x2}", (int)c);
                 else if ((c < 0x80) || char.IsLetterOrDigit(c))
                     sb.Append(c);
                 else
-                    sb.AppendFormat("\\x{0:x4}", (int) c);
+                    sb.AppendFormat("\\x{0:x4}", (int)c);
             }
 
             return sb.ToString();
@@ -5579,7 +5852,7 @@ namespace Aspose.Words.Tests
 
         private static void Write(string text)
         {
-            for (int i = 0; i < IndentLevel*4; i++)
+            for (int i = 0; i < IndentLevel * 4; i++)
                 Writer.Write(' ');
 
             Writer.WriteLine(text);
@@ -5664,7 +5937,7 @@ namespace Aspose.Words.Tests
 
         private static string FileName = @"";
 
-        private static readonly char[] gListSeparatorChars = new char[] {',', ' '};
+        private static readonly char[] gListSeparatorChars = new char[] { ',', ' ' };
 
         private static readonly int[] gSysAttrs = new int[]
             { ParaAttr.Sys_Alignment97, ParaAttr.Sys_LeftIndent97, ParaAttr.Sys_RightIndent97, ParaAttr.Sys_FirstLineIndent97 };
@@ -5738,7 +6011,7 @@ namespace Aspose.Words.Tests
                 3, /* FooterFirst */
             };
 
-         private static readonly string[] gPanoseStrings =
-            new string[] { "FamilyType", "SerifStyle", "Weight", "Proportion", "Contrast", "StrokeVariation", "ArmStyle", "Letterform", "Midline", "XHeight" };
+        private static readonly string[] gPanoseStrings =
+           new string[] { "FamilyType", "SerifStyle", "Weight", "Proportion", "Contrast", "StrokeVariation", "ArmStyle", "Letterform", "Midline", "XHeight" };
     }
 }

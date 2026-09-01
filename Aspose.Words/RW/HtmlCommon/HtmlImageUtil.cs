@@ -10,9 +10,6 @@ using Aspose.IO;
 using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Core;
 using Aspose.Words.Saving;
-#if NETSTANDARD
-using Image = SkiaSharp.SKBitmap;
-#endif
 
 namespace Aspose.Words.RW.HtmlCommon
 {

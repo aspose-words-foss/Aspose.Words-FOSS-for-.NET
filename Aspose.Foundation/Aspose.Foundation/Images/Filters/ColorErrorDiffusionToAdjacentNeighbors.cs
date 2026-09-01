@@ -61,7 +61,7 @@ namespace Aspose.Images.Filters
                 if (X + jI >= Width)
                     break;
 
-                ed =bytes[ptr+jI] + (error * coefficientsRow[jC]) / mCoefficientsSum;
+                ed = bytes[ptr + jI] + (error * coefficientsRow[jC]) / mCoefficientsSum;
                 ed = (ed < 0) ? 0 : ((ed > 255) ? 255 : ed);
                 bytes[ptr + jI] = (byte)ed;
             }

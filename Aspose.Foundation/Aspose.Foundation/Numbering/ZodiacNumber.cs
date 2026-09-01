@@ -66,7 +66,7 @@ namespace Aspose.Numbering
         /// These are characters of Ideograph Traditional Format.
         /// They mean digits 1-10.
         /// </summary>
-        private static readonly char[] gIdeographTraditional = {'甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'};
+        private static readonly char[] gIdeographTraditional = { '甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸' };
 
         /// <summary>
         /// These are characters of Zodiac Ideograph Format.

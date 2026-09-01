@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 21/12/2015 by Alexander Zhiltsov
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 namespace Aspose.Images.Pal
 {

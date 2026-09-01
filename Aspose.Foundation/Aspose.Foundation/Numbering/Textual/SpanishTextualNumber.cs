@@ -19,9 +19,9 @@ namespace Aspose.Numbering
             AppendWord(builder, isCardinal ? gCardinalHundreds[hundreds - 1] : gOrdinalHundreds[hundreds - 1], true);
         }
 
-        protected override bool MergeOrdinalThousands (int thousand)
+        protected override bool MergeOrdinalThousands(int thousand)
         {
-           return true;
+            return true;
         }
 
         protected override string ThousandsOrdinalSuffix
@@ -59,8 +59,8 @@ namespace Aspose.Numbering
             }
             else // 20, 30-99
             {
-                int tens = value/10;
-                value -= 10*tens;
+                int tens = value / 10;
+                value -= 10 * tens;
 
                 if (value == 0)
                 {

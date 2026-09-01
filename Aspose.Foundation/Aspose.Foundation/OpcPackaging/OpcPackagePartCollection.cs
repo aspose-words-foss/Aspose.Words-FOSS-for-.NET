@@ -29,7 +29,7 @@ namespace Aspose.OpcPackaging
             get { return mItems.Count; }
         }
 
-        public void Add(OpcPackagePart part) 
+        public void Add(OpcPackagePart part)
         {
             mItems.Add(part.Name, part);
         }

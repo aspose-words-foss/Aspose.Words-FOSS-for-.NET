@@ -80,7 +80,7 @@ namespace Aspose.Crypto
         ///            </code>
         ///        </para>
         /// </remarks>
-        internal static readonly uint [] smallPrimes = {
+        internal static readonly uint[] smallPrimes = {
             2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
             73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151,
             157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233,
@@ -164,20 +164,20 @@ namespace Aspose.Crypto
 
         #region Constructors
 
-        internal BigInteger ()
+        internal BigInteger()
         {
-            data = new uint [DEFAULT_LEN];
+            data = new uint[DEFAULT_LEN];
             this.length = DEFAULT_LEN;
         }
 
         // TODO sign never used.
-        internal BigInteger (Sign sign, uint len)
+        internal BigInteger(Sign sign, uint len)
         {
-            this.data = new uint [len];
+            this.data = new uint[len];
             this.length = len;
         }
 
-        internal BigInteger (BigInteger bi)
+        internal BigInteger(BigInteger bi)
         {
             this.data = new uint[bi.data.Length];
             bi.data.CopyTo(this.data, 0);
@@ -185,13 +185,13 @@ namespace Aspose.Crypto
             this.length = bi.length;
         }
 
-        internal BigInteger (BigInteger bi, uint len)
+        internal BigInteger(BigInteger bi, uint len)
         {
 
-            this.data = new uint [len];
+            this.data = new uint[len];
 
             for (uint i = 0; i < bi.length; i++)
-                this.data [i] = bi.data [i];
+                this.data[i] = bi.data[i];
 
             this.length = bi.length;
         }
@@ -200,7 +200,7 @@ namespace Aspose.Crypto
 
         #region Conversions
 
-        public BigInteger (byte [] inData)
+        public BigInteger(byte[] inData)
         {
             unchecked
             {
@@ -208,98 +208,107 @@ namespace Aspose.Crypto
                 int leftOver = inData.Length & 0x3;
 
                 // length not multiples of 4
-                if (leftOver != 0) length++;
+                if (leftOver != 0)
+                    length++;
 
-                data = new uint [length];
+                data = new uint[length];
 
                 for (int i = inData.Length - 1, j = 0; i >= 3; i -= 4, j++)
                 {
-                    data [j] = (uint)(
-                        (inData [i-3] << (3*8)) |
-                        (inData [i-2] << (2*8)) |
-                        (inData [i-1] << (1*8)) |
-                        (inData [i]));
+                    data[j] = (uint)(
+                        (inData[i - 3] << (3 * 8)) |
+                        (inData[i - 2] << (2 * 8)) |
+                        (inData[i - 1] << (1 * 8)) |
+                        (inData[i]));
                 }
 
                 switch (leftOver)
                 {
-                    case 1: data [length-1] = (uint)inData [0]; break;
-                    case 2: data [length-1] = (uint)((inData [0] << 8) | inData [1]); break;
-                    case 3: data [length-1] = (uint)((inData [0] << 16) | (inData [1] << 8) | inData [2]); break;
+                    case 1:
+                        data[length - 1] = (uint)inData[0];
+                        break;
+                    case 2:
+                        data[length - 1] = (uint)((inData[0] << 8) | inData[1]);
+                        break;
+                    case 3:
+                        data[length - 1] = (uint)((inData[0] << 16) | (inData[1] << 8) | inData[2]);
+                        break;
                 }
 
-                this.Normalize ();
+                this.Normalize();
             }
         }
 
-        internal BigInteger (uint [] inData)
+        internal BigInteger(uint[] inData)
         {
             length = (uint)inData.Length;
 
-            data = new uint [length];
+            data = new uint[length];
 
             for (int i = (int)length - 1, j = 0; i >= 0; i--, j++)
-                data [j] = inData [i];
+                data[j] = inData[i];
 
-            this.Normalize ();
+            this.Normalize();
         }
 
-        internal BigInteger (uint ui)
+        internal BigInteger(uint ui)
         {
-            data = new uint [] {ui};
+            data = new uint[] { ui };
         }
 
-        internal BigInteger (ulong ul)
+        internal BigInteger(ulong ul)
         {
-            data = new uint [2] { (uint)ul, (uint)(ul >> 32)};
+            data = new uint[2] { (uint)ul, (uint)(ul >> 32) };
             length = 2;
 
-            this.Normalize ();
+            this.Normalize();
         }
 
-        public static implicit operator BigInteger (uint value)
+        public static implicit operator BigInteger(uint value)
         {
-            return (new BigInteger (value));
+            return (new BigInteger(value));
         }
 
-        public static implicit operator BigInteger (int value)
+        public static implicit operator BigInteger(int value)
         {
-            if (value < 0) throw new ArgumentOutOfRangeException ("value");
-            return (new BigInteger ((uint)value));
+            if (value < 0)
+                throw new ArgumentOutOfRangeException("value");
+            return (new BigInteger((uint)value));
         }
 
-        public static implicit operator BigInteger (ulong value)
+        public static implicit operator BigInteger(ulong value)
         {
-            return (new BigInteger (value));
+            return (new BigInteger(value));
         }
 
         public static implicit operator BigInteger(long value)
         {
-            if (value < 0) throw new ArgumentOutOfRangeException("value");
+            if (value < 0)
+                throw new ArgumentOutOfRangeException("value");
             return (new BigInteger((ulong)value));
         }
 
-        internal static BigInteger Parse (string number)
+        internal static BigInteger Parse(string number)
         {
             if (number == null)
-                throw new ArgumentNullException ("number");
+                throw new ArgumentNullException("number");
 
             int i = 0, len = number.Length;
             char c;
             bool digits_seen = false;
-            BigInteger val = new BigInteger ((uint)0); // casting for C++
-            if (number [i] == '+')
+            BigInteger val = new BigInteger((uint)0); // casting for C++
+            if (number[i] == '+')
             {
                 i++;
             }
-            else if (number [i] == '-')
+            else if (number[i] == '-')
             {
                 throw new ArgumentException(WouldReturnNegVal);
             }
 
             for (; i < len; i++)
             {
-                c = number [i];
+                c = number[i];
                 if (c == '\0')
                 {
                     i = len;
@@ -312,21 +321,21 @@ namespace Aspose.Crypto
                 }
                 else
                 {
-                    if (Char.IsWhiteSpace (c))
+                    if (Char.IsWhiteSpace(c))
                     {
                         for (i++; i < len; i++)
                         {
-                            if (!Char.IsWhiteSpace (number [i]))
-                                throw new FormatException ();
+                            if (!Char.IsWhiteSpace(number[i]))
+                                throw new FormatException();
                         }
                         break;
                     }
                     else
-                        throw new FormatException ();
+                        throw new FormatException();
                 }
             }
             if (!digits_seen)
-                throw new FormatException ();
+                throw new FormatException();
             return val;
         }
 
@@ -334,106 +343,112 @@ namespace Aspose.Crypto
 
         #region Operators
 
-        public static BigInteger operator + (BigInteger bi1, BigInteger bi2)
+        public static BigInteger operator +(BigInteger bi1, BigInteger bi2)
         {
             if (bi1 == 0)
-                return new BigInteger (bi2);
+                return new BigInteger(bi2);
             else if (bi2 == 0)
-                return new BigInteger (bi1);
+                return new BigInteger(bi1);
             else
-                return Kernel.AddSameSign (bi1, bi2);
+                return Kernel.AddSameSign(bi1, bi2);
         }
 
-        public static BigInteger operator - (BigInteger bi1, BigInteger bi2)
+        public static BigInteger operator -(BigInteger bi1, BigInteger bi2)
         {
             if (bi2 == 0)
-                return new BigInteger (bi1);
+                return new BigInteger(bi1);
 
             if (bi1 == 0)
-                throw new ArithmeticException (WouldReturnNegVal);
+                throw new ArithmeticException(WouldReturnNegVal);
 
-            switch (Kernel.Compare (bi1, bi2))
+            switch (Kernel.Compare(bi1, bi2))
             {
 
                 case Sign.Zero:
                     return 0;
 
                 case Sign.Positive:
-                    return Kernel.Subtract (bi1, bi2);
+                    return Kernel.Subtract(bi1, bi2);
 
                 case Sign.Negative:
-                    throw new ArithmeticException (WouldReturnNegVal);
+                    throw new ArithmeticException(WouldReturnNegVal);
                 default:
-                    throw new InvalidOperationException ();
+                    throw new InvalidOperationException();
             }
         }
 
-        public static int operator % (BigInteger bi, int i)
+        public static int operator %(BigInteger bi, int i)
         {
             if (i > 0)
-                return (int)Kernel.DwordMod (bi, (uint)i);
+                return (int)Kernel.DwordMod(bi, (uint)i);
             else
-                return -(int)Kernel.DwordMod (bi, (uint)-i);
+                return -(int)Kernel.DwordMod(bi, (uint)-i);
         }
 
-        public static uint operator % (BigInteger bi, uint ui)
+        public static uint operator %(BigInteger bi, uint ui)
         {
-            return Kernel.DwordMod (bi, (uint)ui);
+            return Kernel.DwordMod(bi, (uint)ui);
         }
 
-        public static BigInteger operator % (BigInteger bi1, BigInteger bi2)
+        public static BigInteger operator %(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.multiByteDivide (bi1, bi2)[1];
+            return Kernel.multiByteDivide(bi1, bi2)[1];
         }
 
-        public static BigInteger operator / (BigInteger bi, int i)
+        public static BigInteger operator /(BigInteger bi, int i)
         {
             if (i > 0)
-                return Kernel.DwordDiv (bi, (uint)i);
+                return Kernel.DwordDiv(bi, (uint)i);
 
-            throw new ArithmeticException (WouldReturnNegVal);
+            throw new ArithmeticException(WouldReturnNegVal);
         }
 
-        public static BigInteger operator / (BigInteger bi1, BigInteger bi2)
+        public static BigInteger operator /(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.multiByteDivide (bi1, bi2)[0];
+            return Kernel.multiByteDivide(bi1, bi2)[0];
         }
 
-        public static BigInteger operator * (BigInteger bi1, BigInteger bi2)
+        public static BigInteger operator *(BigInteger bi1, BigInteger bi2)
         {
-            if (bi1 == 0 || bi2 == 0) return 0;
+            if (bi1 == 0 || bi2 == 0)
+                return 0;
 
             //
             // Validate pointers
             //
-            if (bi1.data.Length < bi1.length) throw new ArgumentOutOfRangeException ("bi1 out of range");
-            if (bi2.data.Length < bi2.length) throw new ArgumentOutOfRangeException("bi2 out of range");
+            if (bi1.data.Length < bi1.length)
+                throw new ArgumentOutOfRangeException("bi1 out of range");
+            if (bi2.data.Length < bi2.length)
+                throw new ArgumentOutOfRangeException("bi2 out of range");
 
-            BigInteger ret = new BigInteger (Sign.Positive, bi1.length + bi2.length);
+            BigInteger ret = new BigInteger(Sign.Positive, bi1.length + bi2.length);
 
-            Kernel.Multiply (bi1.data, 0, bi1.length, bi2.data, 0, bi2.length, ret.data, 0);
+            Kernel.Multiply(bi1.data, 0, bi1.length, bi2.data, 0, bi2.length, ret.data, 0);
 
-            ret.Normalize ();
+            ret.Normalize();
             return ret;
         }
 
-        public static BigInteger operator * (BigInteger bi, int i)
+        public static BigInteger operator *(BigInteger bi, int i)
         {
-            if (i < 0) throw new ArithmeticException (WouldReturnNegVal);
-            if (i == 0) return 0;
-            if (i == 1) return new BigInteger (bi);
+            if (i < 0)
+                throw new ArithmeticException(WouldReturnNegVal);
+            if (i == 0)
+                return 0;
+            if (i == 1)
+                return new BigInteger(bi);
 
-            return Kernel.MultiplyByDword (bi, (uint)i);
+            return Kernel.MultiplyByDword(bi, (uint)i);
         }
 
-        public static BigInteger operator << (BigInteger bi1, int shiftVal)
+        public static BigInteger operator <<(BigInteger bi1, int shiftVal)
         {
-            return Kernel.LeftShift (bi1, shiftVal);
+            return Kernel.LeftShift(bi1, shiftVal);
         }
 
-        public static BigInteger operator >> (BigInteger bi1, int shiftVal)
+        public static BigInteger operator >>(BigInteger bi1, int shiftVal)
         {
-            return Kernel.RightShift (bi1, shiftVal);
+            return Kernel.RightShift(bi1, shiftVal);
         }
 
         #endregion
@@ -442,47 +457,47 @@ namespace Aspose.Crypto
 
         // with names suggested by FxCop 1.30
 
-        internal static BigInteger Add (BigInteger bi1, BigInteger bi2)
+        internal static BigInteger Add(BigInteger bi1, BigInteger bi2)
         {
             return (bi1 + bi2);
         }
 
-        internal static BigInteger Subtract (BigInteger bi1, BigInteger bi2)
+        internal static BigInteger Subtract(BigInteger bi1, BigInteger bi2)
         {
             return (bi1 - bi2);
         }
 
-        internal static int Modulus (BigInteger bi, int i)
+        internal static int Modulus(BigInteger bi, int i)
         {
             return (bi % i);
         }
 
-        internal static uint Modulus (BigInteger bi, uint ui)
+        internal static uint Modulus(BigInteger bi, uint ui)
         {
             return (bi % ui);
         }
 
-        internal static BigInteger Modulus (BigInteger bi1, BigInteger bi2)
+        internal static BigInteger Modulus(BigInteger bi1, BigInteger bi2)
         {
             return (bi1 % bi2);
         }
 
-        internal static BigInteger Divid (BigInteger bi, int i)
+        internal static BigInteger Divid(BigInteger bi, int i)
         {
             return (bi / i);
         }
 
-        internal static BigInteger Divid (BigInteger bi1, BigInteger bi2)
+        internal static BigInteger Divid(BigInteger bi1, BigInteger bi2)
         {
             return (bi1 / bi2);
         }
 
-        internal static BigInteger Multiply (BigInteger bi1, BigInteger bi2)
+        internal static BigInteger Multiply(BigInteger bi1, BigInteger bi2)
         {
             return (bi1 * bi2);
         }
 
-        internal static BigInteger Multiply (BigInteger bi, int i)
+        internal static BigInteger Multiply(BigInteger bi, int i)
         {
             return (bi * i);
         }
@@ -491,11 +506,11 @@ namespace Aspose.Crypto
 
         #region Bitwise
 
-        public int BitCount ()
+        public int BitCount()
         {
-            this.Normalize ();
+            this.Normalize();
 
-            uint value = data [length - 1];
+            uint value = data[length - 1];
             uint mask = 0x80000000;
             uint bits = 32;
 
@@ -514,37 +529,38 @@ namespace Aspose.Crypto
         /// </summary>
         /// <param name="bitNum">The bit to test. The least significant bit is 0.</param>
         /// <returns>True if bitNum is set to 1, else false.</returns>
-        internal bool TestBit (uint bitNum)
+        internal bool TestBit(uint bitNum)
         {
             uint bytePos = bitNum >> 5;             // divide by 32
             byte bitPos = (byte)(bitNum & 0x1F);    // get the lowest 5 bits
 
             uint mask = (uint)1 << bitPos;
-            return ((this.data [bytePos] & mask) != 0);
+            return ((this.data[bytePos] & mask) != 0);
         }
 
-        internal bool TestBit (int bitNum)
+        internal bool TestBit(int bitNum)
         {
-            if (bitNum < 0) throw new ArgumentOutOfRangeException ("bitNum out of range");
+            if (bitNum < 0)
+                throw new ArgumentOutOfRangeException("bitNum out of range");
 
             uint bytePos = (uint)bitNum >> 5;             // divide by 32
             byte bitPos = (byte)(bitNum & 0x1F);    // get the lowest 5 bits
 
             uint mask = (uint)1 << bitPos;
-            return ((this.data [bytePos] | mask) == this.data [bytePos]);
+            return ((this.data[bytePos] | mask) == this.data[bytePos]);
         }
 
-        internal void SetBit (uint bitNum)
+        internal void SetBit(uint bitNum)
         {
-            SetBit (bitNum, true);
+            SetBit(bitNum, true);
         }
 
-        internal void ClearBit (uint bitNum)
+        internal void ClearBit(uint bitNum)
         {
-            SetBit (bitNum, false);
+            SetBit(bitNum, false);
         }
 
-        internal void SetBit (uint bitNum, bool value)
+        internal void SetBit(uint bitNum, bool value)
         {
             uint bytePos = bitNum >> 5;             // divide by 32
 
@@ -552,41 +568,45 @@ namespace Aspose.Crypto
             {
                 uint mask = (uint)1 << (int)(bitNum & 0x1F);
                 if (value)
-                    this.data [bytePos] |= mask;
+                    this.data[bytePos] |= mask;
                 else
-                    this.data [bytePos] &= ~mask;
+                    this.data[bytePos] &= ~mask;
             }
         }
 
-        internal int LowestSetBit ()
+        internal int LowestSetBit()
         {
-            if (this == 0) return -1;
+            if (this == 0)
+                return -1;
             int i = 0;
-            while (!TestBit (i)) i++;
+            while (!TestBit(i))
+                i++;
             return i;
         }
 
-        internal byte[] GetBytes ()
+        internal byte[] GetBytes()
         {
-            if (this == 0) return new byte [1];
+            if (this == 0)
+                return new byte[1];
 
-            int numBits = BitCount ();
+            int numBits = BitCount();
             int numBytes = numBits >> 3;
             if ((numBits & 0x7) != 0)
                 numBytes++;
 
-            byte [] result = new byte [numBytes];
+            byte[] result = new byte[numBytes];
 
             int numBytesInWord = numBytes & 0x3;
-            if (numBytesInWord == 0) numBytesInWord = 4;
+            if (numBytesInWord == 0)
+                numBytesInWord = 4;
 
             int pos = 0;
             for (int i = (int)length - 1; i >= 0; i--)
             {
-                uint val = data [i];
+                uint val = data[i];
                 for (int j = numBytesInWord - 1; j >= 0; j--)
                 {
-                    result [pos+j] = (byte)(val & 0xFF);
+                    result[pos + j] = (byte)(val & 0xFF);
                     val >>= 8;
                 }
                 pos += numBytesInWord;
@@ -604,90 +624,94 @@ namespace Aspose.Crypto
 
         #region Compare
 
-        public static bool operator == (BigInteger bi1, uint ui)
+        public static bool operator ==(BigInteger bi1, uint ui)
         {
-            if (bi1.length != 1) bi1.Normalize ();
-            return bi1.length == 1 && bi1.data [0] == ui;
+            if (bi1.length != 1)
+                bi1.Normalize();
+            return bi1.length == 1 && bi1.data[0] == ui;
         }
 
-        public static bool operator != (BigInteger bi1, uint ui)
+        public static bool operator !=(BigInteger bi1, uint ui)
         {
-            if (bi1.length != 1) bi1.Normalize ();
-            return !(bi1.length == 1 && bi1.data [0] == ui);
+            if (bi1.length != 1)
+                bi1.Normalize();
+            return !(bi1.length == 1 && bi1.data[0] == ui);
         }
 
-        public static bool operator == (BigInteger bi1, BigInteger bi2)
+        public static bool operator ==(BigInteger bi1, BigInteger bi2)
         {
             // we need to compare with null
             if ((bi1 as object) == (bi2 as object))
                 return true;
             if (null == bi1 || null == bi2)
                 return false;
-            return Kernel.Compare (bi1, bi2) == 0;
+            return Kernel.Compare(bi1, bi2) == 0;
         }
 
-        public static bool operator != (BigInteger bi1, BigInteger bi2)
+        public static bool operator !=(BigInteger bi1, BigInteger bi2)
         {
             // we need to compare with null
             if ((bi1 as object) == (bi2 as object))
                 return false;
             if (null == bi1 || null == bi2)
                 return true;
-            return Kernel.Compare (bi1, bi2) != 0;
+            return Kernel.Compare(bi1, bi2) != 0;
         }
 
-        public static bool operator > (BigInteger bi1, BigInteger bi2)
+        public static bool operator >(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.Compare (bi1, bi2) > 0;
+            return Kernel.Compare(bi1, bi2) > 0;
         }
 
-        public static bool operator < (BigInteger bi1, BigInteger bi2)
+        public static bool operator <(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.Compare (bi1, bi2) < 0;
+            return Kernel.Compare(bi1, bi2) < 0;
         }
 
-        public static bool operator >= (BigInteger bi1, BigInteger bi2)
+        public static bool operator >=(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.Compare (bi1, bi2) >= 0;
+            return Kernel.Compare(bi1, bi2) >= 0;
         }
 
-        public static bool operator <= (BigInteger bi1, BigInteger bi2)
+        public static bool operator <=(BigInteger bi1, BigInteger bi2)
         {
-            return Kernel.Compare (bi1, bi2) <= 0;
+            return Kernel.Compare(bi1, bi2) <= 0;
         }
 
-        internal Sign Compare (BigInteger bi)
+        internal Sign Compare(BigInteger bi)
         {
-            return Kernel.Compare (this, bi);
+            return Kernel.Compare(this, bi);
         }
 
         #endregion
 
         #region Formatting
 
-        internal string ToString (uint radix)
+        internal string ToString(uint radix)
         {
-            return ToString (radix, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+            return ToString(radix, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         }
 
-        internal string ToString (uint radix, string characterSet)
+        internal string ToString(uint radix, string characterSet)
         {
             if (characterSet.Length < radix)
-                throw new ArgumentException ("charSet length less than radix", "characterSet");
+                throw new ArgumentException("charSet length less than radix", "characterSet");
             if (radix == 1)
-                throw new ArgumentException ("There is no such thing as radix one notation", "radix");
+                throw new ArgumentException("There is no such thing as radix one notation", "radix");
 
-            if (this == 0) return "0";
-            if (this == 1) return "1";
+            if (this == 0)
+                return "0";
+            if (this == 1)
+                return "1";
 
             string result = "";
 
-            BigInteger a = new BigInteger (this);
+            BigInteger a = new BigInteger(this);
 
             while (a != 0)
             {
-                uint rem = Kernel.SingleByteDivideInPlace (a, radix);
-                result = characterSet [(int) rem] + result;
+                uint rem = Kernel.SingleByteDivideInPlace(a, radix);
+                result = characterSet[(int)rem] + result;
             }
 
             return result;
@@ -702,67 +726,70 @@ namespace Aspose.Crypto
         ///     uints used in data and by setting the sign to Sign.Zero if the
         ///     value of this is 0.
         /// </summary>
-        private void Normalize ()
+        private void Normalize()
         {
             // Normalize length
-            while (length > 0 && data [length-1] == 0) length--;
+            while (length > 0 && data[length - 1] == 0)
+                length--;
 
             // Check for zero
             if (length == 0)
                 length++;
         }
 
-        internal void Clear ()
+        internal void Clear()
         {
-            for (int i=0; i < length; i++)
-                data [i] = 0x00;
+            for (int i = 0; i < length; i++)
+                data[i] = 0x00;
         }
 
         #endregion
 
         #region Object Impl
 
-        public override int GetHashCode ()
+        public override int GetHashCode()
         {
             uint val = 0;
 
             for (uint i = 0; i < this.length; i++)
-                val ^= this.data [i];
+                val ^= this.data[i];
 
             return (int)val;
         }
 
-        public override string ToString ()
+        public override string ToString()
         {
-            return ToString (10);
+            return ToString(10);
         }
 
-        public override bool Equals (object obj)
+        public override bool Equals(object obj)
         {
-            if (obj == null) return false;
-            if (obj is int) return (int)obj >= 0 && this == (uint)obj;
+            if (obj == null)
+                return false;
+            if (obj is int)
+                return (int)obj >= 0 && this == (uint)obj;
 
-            return Kernel.Compare (this, (BigInteger)obj) == 0;
+            return Kernel.Compare(this, (BigInteger)obj) == 0;
         }
 
         #endregion
 
         #region Number Theory
 
-        internal BigInteger GCD (BigInteger bi)
+        internal BigInteger GCD(BigInteger bi)
         {
-            return Kernel.gcd (this, bi);
+            return Kernel.gcd(this, bi);
         }
 
-        internal BigInteger ModInverse (BigInteger modulus)
+        internal BigInteger ModInverse(BigInteger modulus)
         {
-            return Kernel.modInverse (this, modulus);
+            return Kernel.modInverse(this, modulus);
         }
 
-        internal BigInteger ModPow (BigInteger exp, BigInteger n)
+        internal BigInteger ModPow(BigInteger exp, BigInteger n)
         {
-            ModulusRing mr = new ModulusRing (n);
-            return mr.Pow (this, exp);
+            ModulusRing mr = new ModulusRing(n);
+            return mr.Pow(this, exp);
         }
 
         #endregion
@@ -776,43 +803,45 @@ namespace Aspose.Crypto
 
             private BigInteger mod, constant;
 
-            internal ModulusRing (BigInteger modulus)
+            internal ModulusRing(BigInteger modulus)
             {
                 this.mod = modulus;
 
                 // calculate constant = b^ (2k) / m
                 uint i = mod.length << 1;
 
-                constant = new BigInteger (Sign.Positive, i + 1);
-                constant.data [i] = 0x00000001;
+                constant = new BigInteger(Sign.Positive, i + 1);
+                constant.data[i] = 0x00000001;
 
                 constant = constant / mod;
             }
 
-            internal void BarrettReduction (BigInteger x)
+            internal void BarrettReduction(BigInteger x)
             {
                 BigInteger n = mod;
                 uint k = n.length,
-                    kPlusOne = k+1,
-                    kMinusOne = k-1;
+                    kPlusOne = k + 1,
+                    kMinusOne = k - 1;
 
                 // x < mod, so nothing to do.
-                if (x.length < k) return;
+                if (x.length < k)
+                    return;
 
                 BigInteger q3;
 
                 //
                 // Validate pointers
                 //
-                if (x.data.Length < x.length) throw new ArgumentOutOfRangeException("x out of range");
+                if (x.data.Length < x.length)
+                    throw new ArgumentOutOfRangeException("x out of range");
 
                 // q1 = x / b^ (k-1)
                 // q2 = q1 * constant
                 // q3 = q2 / b^ (k+1), Needs to be accessed with an offset of kPlusOne
 
                 // TODO: We should the method in HAC p 604 to do this (14.45)
-                q3 = new BigInteger (Sign.Positive, x.length - kMinusOne + constant.length);
-                Kernel.Multiply (x.data, kMinusOne, x.length - kMinusOne, constant.data, 0, constant.length, q3.data, 0);
+                q3 = new BigInteger(Sign.Positive, x.length - kMinusOne + constant.length);
+                Kernel.Multiply(x.data, kMinusOne, x.length - kMinusOne, constant.data, 0, constant.length, q3.data, 0);
 
                 // r1 = x mod b^ (k+1)
                 // i.e. keep the lowest (k+1) words
@@ -820,36 +849,37 @@ namespace Aspose.Crypto
                 uint lengthToCopy = (x.length > kPlusOne) ? kPlusOne : x.length;
 
                 x.length = lengthToCopy;
-                x.Normalize ();
+                x.Normalize();
 
                 // r2 = (q3 * n) mod b^ (k+1)
                 // partial multiplication of q3 and n
 
-                BigInteger r2 = new BigInteger (Sign.Positive, kPlusOne);
-                Kernel.MultiplyMod2p32pmod (q3.data, (int)kPlusOne, (int)q3.length - (int)kPlusOne, n.data, 0, (int)n.length, r2.data, 0, (int)kPlusOne);
+                BigInteger r2 = new BigInteger(Sign.Positive, kPlusOne);
+                Kernel.MultiplyMod2p32pmod(q3.data, (int)kPlusOne, (int)q3.length - (int)kPlusOne, n.data, 0, (int)n.length, r2.data, 0, (int)kPlusOne);
 
-                r2.Normalize ();
+                r2.Normalize();
 
                 if (r2 <= x)
                 {
-                    Kernel.MinusEq (x, r2);
+                    Kernel.MinusEq(x, r2);
                 }
                 else
                 {
-                    BigInteger val = new BigInteger (Sign.Positive, kPlusOne + 1);
-                    val.data [kPlusOne] = 0x00000001;
+                    BigInteger val = new BigInteger(Sign.Positive, kPlusOne + 1);
+                    val.data[kPlusOne] = 0x00000001;
 
-                    Kernel.MinusEq (val, r2);
-                    Kernel.PlusEq (x, val);
+                    Kernel.MinusEq(val, r2);
+                    Kernel.PlusEq(x, val);
                 }
 
                 while (x >= n)
-                    Kernel.MinusEq (x, n);
+                    Kernel.MinusEq(x, n);
             }
 
-            internal BigInteger Multiply (BigInteger a, BigInteger b)
+            internal BigInteger Multiply(BigInteger a, BigInteger b)
             {
-                if (a == 0 || b == 0) return 0;
+                if (a == 0 || b == 0)
+                    return 0;
 
                 if (a.length >= mod.length << 1)
                     a %= mod;
@@ -858,20 +888,20 @@ namespace Aspose.Crypto
                     b %= mod;
 
                 if (a.length >= mod.length)
-                    BarrettReduction (a);
+                    BarrettReduction(a);
 
                 if (b.length >= mod.length)
-                    BarrettReduction (b);
+                    BarrettReduction(b);
 
-                BigInteger ret = new BigInteger (a * b);
-                BarrettReduction (ret);
+                BigInteger ret = new BigInteger(a * b);
+                BarrettReduction(ret);
 
                 return ret;
             }
 
-            internal BigInteger Difference (BigInteger a, BigInteger b)
+            internal BigInteger Difference(BigInteger a, BigInteger b)
             {
-                Sign cmp = Kernel.Compare (a, b);
+                Sign cmp = Kernel.Compare(a, b);
                 BigInteger diff;
 
                 switch (cmp)
@@ -879,11 +909,13 @@ namespace Aspose.Crypto
                     case Sign.Zero:
                         return 0;
                     case Sign.Positive:
-                        diff = a - b; break;
+                        diff = a - b;
+                        break;
                     case Sign.Negative:
-                        diff = b - a; break;
+                        diff = b - a;
+                        break;
                     default:
-                        throw new InvalidOperationException ();
+                        throw new InvalidOperationException();
                 }
 
                 if (diff >= mod)
@@ -891,46 +923,48 @@ namespace Aspose.Crypto
                     if (diff.length >= mod.length << 1)
                         diff %= mod;
                     else
-                        BarrettReduction (diff);
+                        BarrettReduction(diff);
                 }
                 if (cmp == Sign.Negative)
                     diff = mod - diff;
                 return diff;
             }
 
-            internal BigInteger Pow (BigInteger b, BigInteger exp)
+            internal BigInteger Pow(BigInteger b, BigInteger exp)
             {
-                if ((mod.data [0] & 1) == 1) return OddPow (b, exp);
-                else return EvenPow (b, exp);
+                if ((mod.data[0] & 1) == 1)
+                    return OddPow(b, exp);
+                else
+                    return EvenPow(b, exp);
             }
 
-            internal BigInteger EvenPow (BigInteger b, BigInteger exp)
+            internal BigInteger EvenPow(BigInteger b, BigInteger exp)
             {
-                BigInteger resultNum = new BigInteger ((BigInteger)1, mod.length << 1);
-                BigInteger tempNum = new BigInteger (b % mod, mod.length << 1);  // ensures (tempNum * tempNum) < b^ (2k)
+                BigInteger resultNum = new BigInteger((BigInteger)1, mod.length << 1);
+                BigInteger tempNum = new BigInteger(b % mod, mod.length << 1);  // ensures (tempNum * tempNum) < b^ (2k)
 
-                uint totalBits = (uint)exp.BitCount ();
+                uint totalBits = (uint)exp.BitCount();
 
-                uint [] wkspace = new uint [mod.length << 1];
+                uint[] wkspace = new uint[mod.length << 1];
 
                 // perform squaring and multiply exponentiation
                 for (uint pos = 0; pos < totalBits; pos++)
                 {
-                    if (exp.TestBit (pos))
+                    if (exp.TestBit(pos))
                     {
 
-                        Array.Clear (wkspace, 0, wkspace.Length);
-                        Kernel.Multiply (resultNum.data, 0, resultNum.length, tempNum.data, 0, tempNum.length, wkspace, 0);
+                        Array.Clear(wkspace, 0, wkspace.Length);
+                        Kernel.Multiply(resultNum.data, 0, resultNum.length, tempNum.data, 0, tempNum.length, wkspace, 0);
                         resultNum.length += tempNum.length;
-                        uint [] t = wkspace;
+                        uint[] t = wkspace;
                         wkspace = resultNum.data;
                         resultNum.data = t;
 
-                        BarrettReduction (resultNum);
+                        BarrettReduction(resultNum);
                     }
 
-                    Kernel.SquarePositive (tempNum, ref wkspace);
-                    BarrettReduction (tempNum);
+                    Kernel.SquarePositive(tempNum, ref wkspace);
+                    BarrettReduction(tempNum);
 
                     if (tempNum == 1)
                     {
@@ -941,36 +975,36 @@ namespace Aspose.Crypto
                 return resultNum;
             }
 
-            private BigInteger OddPow (BigInteger b, BigInteger exp)
+            private BigInteger OddPow(BigInteger b, BigInteger exp)
             {
-                BigInteger resultNum = new BigInteger (Montgomery.ToMont (1, mod), mod.length << 1);
-                BigInteger tempNum = new BigInteger (Montgomery.ToMont (b, mod), mod.length << 1);  // ensures (tempNum * tempNum) < b^ (2k)
-                uint mPrime = Montgomery.Inverse (mod.data [0]);
-                uint totalBits = (uint)exp.BitCount ();
+                BigInteger resultNum = new BigInteger(Montgomery.ToMont(1, mod), mod.length << 1);
+                BigInteger tempNum = new BigInteger(Montgomery.ToMont(b, mod), mod.length << 1);  // ensures (tempNum * tempNum) < b^ (2k)
+                uint mPrime = Montgomery.Inverse(mod.data[0]);
+                uint totalBits = (uint)exp.BitCount();
 
-                uint [] wkspace = new uint [mod.length << 1];
+                uint[] wkspace = new uint[mod.length << 1];
 
                 // perform squaring and multiply exponentiation
                 for (uint pos = 0; pos < totalBits; pos++)
                 {
-                    if (exp.TestBit (pos))
+                    if (exp.TestBit(pos))
                     {
 
-                        Array.Clear (wkspace, 0, wkspace.Length);
-                        Kernel.Multiply (resultNum.data, 0, resultNum.length, tempNum.data, 0, tempNum.length, wkspace, 0);
+                        Array.Clear(wkspace, 0, wkspace.Length);
+                        Kernel.Multiply(resultNum.data, 0, resultNum.length, tempNum.data, 0, tempNum.length, wkspace, 0);
                         resultNum.length += tempNum.length;
-                        uint [] t = wkspace;
+                        uint[] t = wkspace;
                         wkspace = resultNum.data;
                         resultNum.data = t;
 
-                        Montgomery.Reduce (resultNum, mod, mPrime);
+                        Montgomery.Reduce(resultNum, mod, mPrime);
                     }
 
-                    Kernel.SquarePositive (tempNum, ref wkspace);
-                    Montgomery.Reduce (tempNum, mod, mPrime);
+                    Kernel.SquarePositive(tempNum, ref wkspace);
+                    Montgomery.Reduce(tempNum, mod, mPrime);
                 }
 
-                Montgomery.Reduce (resultNum, mod, mPrime);
+                Montgomery.Reduce(resultNum, mod, mPrime);
                 return resultNum;
             }
 
@@ -978,15 +1012,15 @@ namespace Aspose.Crypto
 
             private BigInteger OddPow (uint b, BigInteger exp)
             {
-                exp.Normalize ();
-                uint [] wkspace = new uint [mod.length << 1 + 1];
+                exp.Normalize();
+                uint[] wkspace = new uint[mod.length << 1 + 1];
 
-                BigInteger resultNum = Montgomery.ToMont ((BigInteger)b, this.mod);
-                resultNum = new BigInteger (resultNum, mod.length << 1 +1);
+                BigInteger resultNum = Montgomery.ToMont((BigInteger)b, this.mod);
+                resultNum = new BigInteger(resultNum, mod.length << 1 + 1);
 
-                uint mPrime = Montgomery.Inverse (mod.data [0]);
+                uint mPrime = Montgomery.Inverse(mod.data[0]);
 
-                uint pos = (uint)exp.BitCount () - 2;
+                uint pos = (uint)exp.BitCount() - 2;
 
                 do
                 {
@@ -1001,8 +1035,8 @@ namespace Aspose.Crypto
 
                         do
                         {
-                            mc += (ulong)u [i] * (ulong)b;
-                            u [i] = (uint)mc;
+                            mc += (ulong)u[i] * (ulong)b;
+                            u[i] = (uint)mc;
                             mc >>= 32;
                         } while (++i < resultNum.length);
 
@@ -1010,10 +1044,10 @@ namespace Aspose.Crypto
                         {
                             if (mc != 0)
                             {
-                                u [i] = (uint)mc;
+                                u[i] = (uint)mc;
                                 resultNum.length++;
                                 while (resultNum >= mod)
-                                    Kernel.MinusEq (resultNum, mod);
+                                    Kernel.MinusEq(resultNum, mod);
                             }
                         }
                         else if (mc != 0)
@@ -1030,16 +1064,16 @@ namespace Aspose.Crypto
                             // We would rather have this estimate overshoot,
                             // so we add one to the divisor
                             uint divEstimate;
-                            if (mod.data [mod.length - 1] < UInt32.MaxValue)
+                            if (mod.data[mod.length - 1] < UInt32.MaxValue)
                             {
-                                divEstimate = (uint) ((((ulong)cc << 32) | (ulong) u [i -1]) /
-                                    (mod.data [mod.length-1] + 1));
+                                divEstimate = (uint)((((ulong)cc << 32) | (ulong)u[i - 1]) /
+                                    (mod.data[mod.length - 1] + 1));
                             }
                             else
                             {
                                 // guess but don't divide by 0
-                                divEstimate = (uint) ((((ulong)cc << 32) | (ulong) u [i -1]) /
-                                    (mod.data [mod.length-1]));
+                                divEstimate = (uint)((((ulong)cc << 32) | (ulong)u[i - 1]) /
+                                    (mod.data[mod.length - 1]));
                             }
 
                             uint t;
@@ -1048,11 +1082,12 @@ namespace Aspose.Crypto
                             mc = 0;
                             do
                             {
-                                mc += (ulong)mod.data [i] * (ulong)divEstimate;
-                                t = u [i];
-                                u [i] -= (uint)mc;
+                                mc += (ulong)mod.data[i] * (ulong)divEstimate;
+                                t = u[i];
+                                u[i] -= (uint)mc;
                                 mc >>= 32;
-                                if (u [i] > t) mc++;
+                                if (u[i] > t)
+                                    mc++;
                                 i++;
                             } while (i < resultNum.length);
                             cc -= (uint)mc;
@@ -1061,39 +1096,41 @@ namespace Aspose.Crypto
                             {
 
                                 uint sc = 0, j = 0;
-                                uint [] s = mod.data;
+                                uint[] s = mod.data;
                                 do
                                 {
-                                    uint a = s [j];
-                                    if (((a += sc) < sc) | ((u [j] -= a) > ~a)) sc = 1;
-                                    else sc = 0;
+                                    uint a = s[j];
+                                    if (((a += sc) < sc) | ((u[j] -= a) > ~a))
+                                        sc = 1;
+                                    else
+                                        sc = 0;
                                     j++;
                                 } while (j < resultNum.length);
                                 cc -= sc;
                             }
                             while (resultNum >= mod)
-                                Kernel.MinusEq (resultNum, mod);
+                                Kernel.MinusEq(resultNum, mod);
                         }
                         else
                         {
                             while (resultNum >= mod)
-                                Kernel.MinusEq (resultNum, mod);
+                                Kernel.MinusEq(resultNum, mod);
                         }
                     }
                 } while (pos-- > 0);
 
-                resultNum = Montgomery.Reduce (resultNum, mod, mPrime);
+                resultNum = Montgomery.Reduce(resultNum, mod, mPrime);
                 return resultNum;
 
             }
 
-            private BigInteger EvenPow (uint b, BigInteger exp)
+            private BigInteger EvenPow(uint b, BigInteger exp)
             {
-                exp.Normalize ();
-                uint [] wkspace = new uint [mod.length << 1 + 1];
-                BigInteger resultNum = new BigInteger ((BigInteger)b, mod.length << 1 + 1);
+                exp.Normalize();
+                uint[] wkspace = new uint[mod.length << 1 + 1];
+                BigInteger resultNum = new BigInteger((BigInteger)b, mod.length << 1 + 1);
 
-                uint pos = (uint)exp.BitCount () - 2;
+                uint pos = (uint)exp.BitCount() - 2;
 
                 //
                 // We know that the first itr will make the val b
@@ -1104,11 +1141,11 @@ namespace Aspose.Crypto
                     //
                     // r = r ^ 2 % m
                     //
-                    Kernel.SquarePositive (resultNum, ref wkspace);
+                    Kernel.SquarePositive(resultNum, ref wkspace);
                     if (resultNum.length >= mod.length)
-                        BarrettReduction (resultNum);
+                        BarrettReduction(resultNum);
 
-                    if (exp.TestBit (pos))
+                    if (exp.TestBit(pos))
                     {
                         uint[] u = resultNum.data;
                         uint i = 0;
@@ -1116,8 +1153,8 @@ namespace Aspose.Crypto
 
                         do
                         {
-                            mc += (ulong)u [i] * (ulong)b;
-                            u [i] = (uint)mc;
+                            mc += (ulong)u[i] * (ulong)b;
+                            u[i] = (uint)mc;
                             mc >>= 32;
                         } while (++i < resultNum.length);
 
@@ -1125,10 +1162,10 @@ namespace Aspose.Crypto
                         {
                             if (mc != 0)
                             {
-                                u [i] = (uint)mc;
+                                u[i] = (uint)mc;
                                 resultNum.length++;
                                 while (resultNum >= mod)
-                                    Kernel.MinusEq (resultNum, mod);
+                                    Kernel.MinusEq(resultNum, mod);
                             }
                         }
                         else if (mc != 0)
@@ -1144,8 +1181,8 @@ namespace Aspose.Crypto
 
                             // We would rather have this estimate overshoot,
                             // so we add one to the divisor
-                            uint divEstimate = (uint) ((((ulong)cc << 32) | (ulong) u [i -1]) /
-                                (mod.data [mod.length-1] + 1));
+                            uint divEstimate = (uint)((((ulong)cc << 32) | (ulong)u[i - 1]) /
+                                (mod.data[mod.length - 1] + 1));
 
                             uint t;
 
@@ -1153,11 +1190,12 @@ namespace Aspose.Crypto
                             mc = 0;
                             do
                             {
-                                mc += (ulong)mod.data [i] * (ulong)divEstimate;
-                                t = u [i];
-                                u [i] -= (uint)mc;
+                                mc += (ulong)mod.data[i] * (ulong)divEstimate;
+                                t = u[i];
+                                u[i] -= (uint)mc;
                                 mc >>= 32;
-                                if (u [i] > t) mc++;
+                                if (u[i] > t)
+                                    mc++;
                                 i++;
                             } while (i < resultNum.length);
                             cc -= (uint)mc;
@@ -1166,23 +1204,25 @@ namespace Aspose.Crypto
                             {
 
                                 uint sc = 0, j = 0;
-                                uint [] s = mod.data;
+                                uint[] s = mod.data;
                                 do
                                 {
-                                    uint a = s [j];
-                                    if (((a += sc) < sc) | ((u [j] -= a) > ~a)) sc = 1;
-                                    else sc = 0;
+                                    uint a = s[j];
+                                    if (((a += sc) < sc) | ((u[j] -= a) > ~a))
+                                        sc = 1;
+                                    else
+                                        sc = 0;
                                     j++;
                                 } while (j < resultNum.length);
                                 cc -= sc;
                             }
                             while (resultNum >= mod)
-                                Kernel.MinusEq (resultNum, mod);
+                                Kernel.MinusEq(resultNum, mod);
                         }
                         else
                         {
                             while (resultNum >= mod)
-                                Kernel.MinusEq (resultNum, mod);
+                                Kernel.MinusEq(resultNum, mod);
                         }
                     }
                 } while (pos-- > 0);
@@ -1196,7 +1236,7 @@ namespace Aspose.Crypto
         internal static class Montgomery
         {
 
-            internal static uint Inverse (uint n)
+            internal static uint Inverse(uint n)
             {
                 unchecked
                 {
@@ -1209,11 +1249,12 @@ namespace Aspose.Crypto
                 }
             }
 
-            internal static BigInteger ToMont (BigInteger n, BigInteger m)
+            internal static BigInteger ToMont(BigInteger n, BigInteger m)
             {
                 unchecked
                 {
-                    n.Normalize (); m.Normalize ();
+                    n.Normalize();
+                    m.Normalize();
 
                     n <<= (int)m.length * 32;
                     n %= m;
@@ -1231,7 +1272,7 @@ namespace Aspose.Crypto
                     {
                         // The mod here is taken care of by the CPU,
                         // since the multiply will overflow.
-                        uint u_i = a [0] * mPrime /* % 2^32 */;
+                        uint u_i = a[0] * mPrime /* % 2^32 */;
 
                         uint mP = 0, aSP = 0, aDP = 0;
 
@@ -1254,7 +1295,8 @@ namespace Aspose.Crypto
                             c += a[aSP++];
                             a[aDP++] = (uint)c;
                             c >>= 32;
-                            if (c == 0) {j++; break;}
+                            if (c == 0)
+                            { j++; break; }
                         }
                         // Copy the rest
                         for (; j < A.length; j++)
@@ -1264,9 +1306,11 @@ namespace Aspose.Crypto
 
                         a[aDP++] = (uint)c;
                     }
-                    while (A.length > 1 && a [A.length-1] == 0) A.length--;
+                    while (A.length > 1 && a[A.length - 1] == 0)
+                        A.length--;
 
-                    if (A >= m) Kernel.MinusEq (A, m);
+                    if (A >= m)
+                        Kernel.MinusEq(A, m);
 
                     return A;
                 }
@@ -1287,11 +1331,11 @@ namespace Aspose.Crypto
             /// <param name="bi1">A BigInteger</param>
             /// <param name="bi2">A BigInteger</param>
             /// <returns>bi1 + bi2</returns>
-            internal static BigInteger AddSameSign (BigInteger bi1, BigInteger bi2)
+            internal static BigInteger AddSameSign(BigInteger bi1, BigInteger bi2)
             {
                 unchecked
                 {
-                    uint [] x, y;
+                    uint[] x, y;
                     uint yMax, xMax, i = 0;
 
                     // x should be bigger
@@ -1310,17 +1354,17 @@ namespace Aspose.Crypto
                         yMax = bi2.length;
                     }
 
-                    BigInteger result = new BigInteger (Sign.Positive, xMax + 1);
+                    BigInteger result = new BigInteger(Sign.Positive, xMax + 1);
 
-                    uint [] r = result.data;
+                    uint[] r = result.data;
 
                     ulong sum = 0;
 
                     // Add common parts of both numbers
                     do
                     {
-                        sum = ((ulong)x [i]) + ((ulong)y [i]) + sum;
-                        r [i] = (uint)sum;
+                        sum = ((ulong)x[i]) + ((ulong)y[i]) + sum;
+                        r[i] = (uint)sum;
                         sum >>= 32;
                     } while (++i < yMax);
 
@@ -1333,13 +1377,13 @@ namespace Aspose.Crypto
                         if (i < xMax)
                         {
                             do
-                                carry = ((r [i] = x [i] + 1) == 0);
+                                carry = ((r[i] = x[i] + 1) == 0);
                             while (++i < xMax && carry);
                         }
 
                         if (carry)
                         {
-                            r [i] = 1;
+                            r[i] = 1;
                             result.length = ++i;
                             return result;
                         }
@@ -1349,86 +1393,90 @@ namespace Aspose.Crypto
                     if (i < xMax)
                     {
                         do
-                            r [i] = x [i];
+                            r[i] = x[i];
                         while (++i < xMax);
                     }
 
-                    result.Normalize ();
+                    result.Normalize();
                     return result;
                 }
             }
 
-            internal static BigInteger Subtract (BigInteger big, BigInteger small)
+            internal static BigInteger Subtract(BigInteger big, BigInteger small)
             {
                 unchecked
                 {
-                    BigInteger result = new BigInteger (Sign.Positive, big.length);
+                    BigInteger result = new BigInteger(Sign.Positive, big.length);
 
-                    uint [] r = result.data, b = big.data, s = small.data;
+                    uint[] r = result.data, b = big.data, s = small.data;
                     uint i = 0, c = 0;
 
                     do
                     {
 
-                        uint x = s [i];
-                        if (((x += c) < c) | ((r [i] = b [i] - x) > ~x))
+                        uint x = s[i];
+                        if (((x += c) < c) | ((r[i] = b[i] - x) > ~x))
                             c = 1;
                         else
                             c = 0;
 
                     } while (++i < small.length);
 
-                    if (i == big.length) goto fixup;
+                    if (i == big.length)
+                        goto fixup;
 
                     if (c == 1)
                     {
                         do
-                            r [i] = b [i] - 1;
-                        while (b [i++] == 0 && i < big.length);
+                            r[i] = b[i] - 1;
+                        while (b[i++] == 0 && i < big.length);
 
-                        if (i == big.length) goto fixup;
+                        if (i == big.length)
+                            goto fixup;
                     }
 
                     do
-                        r [i] = b [i];
+                        r[i] = b[i];
                     while (++i < big.length);
 
-                fixup:
+fixup:
 
-                    result.Normalize ();
+                    result.Normalize();
                     return result;
                 }
             }
 
-            internal static void MinusEq (BigInteger big, BigInteger small)
+            internal static void MinusEq(BigInteger big, BigInteger small)
             {
                 unchecked
                 {
-                    uint [] b = big.data, s = small.data;
+                    uint[] b = big.data, s = small.data;
                     uint i = 0, c = 0;
 
                     do
                     {
-                        uint x = s [i];
-                        if (((x += c) < c) | ((b [i] -= x) > ~x))
+                        uint x = s[i];
+                        if (((x += c) < c) | ((b[i] -= x) > ~x))
                             c = 1;
                         else
                             c = 0;
                     } while (++i < small.length);
 
-                    if (i == big.length) goto fixup;
+                    if (i == big.length)
+                        goto fixup;
 
                     if (c == 1)
                     {
                         do
-                            b [i]--;
-                        while (b [i++] == 0 && i < big.length);
+                            b[i]--;
+                        while (b[i++] == 0 && i < big.length);
                     }
 
-                fixup:
+fixup:
 
-                    // Normalize length
-                    while (big.length > 0 && big.data [big.length-1] == 0) big.length--;
+// Normalize length
+                    while (big.length > 0 && big.data[big.length - 1] == 0)
+                        big.length--;
 
                     // Check for zero
                     if (big.length == 0)
@@ -1436,11 +1484,11 @@ namespace Aspose.Crypto
                 }
             }
 
-            internal static void PlusEq (BigInteger bi1, BigInteger bi2)
+            internal static void PlusEq(BigInteger bi1, BigInteger bi2)
             {
                 unchecked
                 {
-                    uint [] x, y;
+                    uint[] x, y;
                     uint yMax, xMax, i = 0;
                     bool flag = false;
 
@@ -1461,15 +1509,15 @@ namespace Aspose.Crypto
                         yMax = bi2.length;
                     }
 
-                    uint [] r = bi1.data;
+                    uint[] r = bi1.data;
 
                     ulong sum = 0;
 
                     // Add common parts of both numbers
                     do
                     {
-                        sum += ((ulong)x [i]) + ((ulong)y [i]);
-                        r [i] = (uint)sum;
+                        sum += ((ulong)x[i]) + ((ulong)y[i]);
+                        r[i] = (uint)sum;
                         sum >>= 32;
                     } while (++i < yMax);
 
@@ -1482,13 +1530,13 @@ namespace Aspose.Crypto
                         if (i < xMax)
                         {
                             do
-                                carry = ((r [i] = x [i] + 1) == 0);
+                                carry = ((r[i] = x[i] + 1) == 0);
                             while (++i < xMax && carry);
                         }
 
                         if (carry)
                         {
-                            r [i] = 1;
+                            r[i] = 1;
                             bi1.length = ++i;
                             return;
                         }
@@ -1498,12 +1546,12 @@ namespace Aspose.Crypto
                     if (flag && i < xMax - 1)
                     {
                         do
-                            r [i] = x [i];
+                            r[i] = x[i];
                         while (++i < xMax);
                     }
 
                     bi1.length = xMax + 1;
-                    bi1.Normalize ();
+                    bi1.Normalize();
                 }
             }
 
@@ -1517,22 +1565,27 @@ namespace Aspose.Crypto
             /// <param name="bi1">A BigInteger</param>
             /// <param name="bi2">A BigInteger</param>
             /// <returns>The sign of bi1 - bi2</returns>
-            internal static Sign Compare (BigInteger bi1, BigInteger bi2)
+            internal static Sign Compare(BigInteger bi1, BigInteger bi2)
             {
                 //
                 // Step 1. Compare the lengths
                 //
                 uint l1 = bi1.length, l2 = bi2.length;
 
-                while (l1 > 0 && bi1.data [l1-1] == 0) l1--;
-                while (l2 > 0 && bi2.data [l2-1] == 0) l2--;
+                while (l1 > 0 && bi1.data[l1 - 1] == 0)
+                    l1--;
+                while (l2 > 0 && bi2.data[l2 - 1] == 0)
+                    l2--;
 
-                if (l1 == 0 && l2 == 0) return Sign.Zero;
+                if (l1 == 0 && l2 == 0)
+                    return Sign.Zero;
 
                 // bi1 len < bi2 len
-                if (l1 < l2) return Sign.Negative;
-                    // bi1 len > bi2 len
-                else if (l1 > l2) return Sign.Positive;
+                if (l1 < l2)
+                    return Sign.Negative;
+                // bi1 len > bi2 len
+                else if (l1 > l2)
+                    return Sign.Positive;
 
                 //
                 // Step 2. Compare the bits
@@ -1540,11 +1593,12 @@ namespace Aspose.Crypto
 
                 uint pos = l1 - 1;
 
-                while (pos != 0 && bi1.data [pos] == bi2.data [pos]) pos--;
+                while (pos != 0 && bi1.data[pos] == bi2.data[pos])
+                    pos--;
 
-                if (bi1.data [pos] < bi2.data [pos])
+                if (bi1.data[pos] < bi2.data[pos])
                     return Sign.Negative;
-                else if (bi1.data [pos] > bi2.data [pos])
+                else if (bi1.data[pos] > bi2.data[pos])
                     return Sign.Positive;
                 else
                     return Sign.Zero;
@@ -1562,7 +1616,7 @@ namespace Aspose.Crypto
             /// <param name="n">A BigInteger, upon exit this will hold n / d</param>
             /// <param name="d">The divisor</param>
             /// <returns>n % d</returns>
-            internal static uint SingleByteDivideInPlace (BigInteger n, uint d)
+            internal static uint SingleByteDivideInPlace(BigInteger n, uint d)
             {
                 ulong r = 0;
                 uint i = n.length;
@@ -1570,16 +1624,16 @@ namespace Aspose.Crypto
                 while (i-- > 0)
                 {
                     r <<= 32;
-                    r |= n.data [i];
-                    n.data [i] = (uint)(r / d);
+                    r |= n.data[i];
+                    n.data[i] = (uint)(r / d);
                     r %= d;
                 }
-                n.Normalize ();
+                n.Normalize();
 
                 return (uint)r;
             }
 
-            internal static uint DwordMod (BigInteger n, uint d)
+            internal static uint DwordMod(BigInteger n, uint d)
             {
                 ulong r = 0;
                 uint i = n.length;
@@ -1587,16 +1641,16 @@ namespace Aspose.Crypto
                 while (i-- > 0)
                 {
                     r <<= 32;
-                    r |= n.data [i];
+                    r |= n.data[i];
                     r %= d;
                 }
 
                 return (uint)r;
             }
 
-            internal static BigInteger DwordDiv (BigInteger n, uint d)
+            internal static BigInteger DwordDiv(BigInteger n, uint d)
             {
-                BigInteger ret = new BigInteger (Sign.Positive, n.length);
+                BigInteger ret = new BigInteger(Sign.Positive, n.length);
 
                 ulong r = 0;
                 uint i = n.length;
@@ -1604,18 +1658,18 @@ namespace Aspose.Crypto
                 while (i-- > 0)
                 {
                     r <<= 32;
-                    r |= n.data [i];
-                    ret.data [i] = (uint)(r / d);
+                    r |= n.data[i];
+                    ret.data[i] = (uint)(r / d);
                     r %= d;
                 }
-                ret.Normalize ();
+                ret.Normalize();
 
                 return ret;
             }
 
-            internal static BigInteger [] DwordDivMod (BigInteger n, uint d)
+            internal static BigInteger[] DwordDivMod(BigInteger n, uint d)
             {
-                BigInteger ret = new BigInteger (Sign.Positive , n.length);
+                BigInteger ret = new BigInteger(Sign.Positive, n.length);
 
                 ulong r = 0;
                 uint i = n.length;
@@ -1623,62 +1677,64 @@ namespace Aspose.Crypto
                 while (i-- > 0)
                 {
                     r <<= 32;
-                    r |= n.data [i];
-                    ret.data [i] = (uint)(r / d);
+                    r |= n.data[i];
+                    ret.data[i] = (uint)(r / d);
                     r %= d;
                 }
-                ret.Normalize ();
+                ret.Normalize();
 
                 BigInteger rem = (uint)r;
 
-                return new BigInteger [] {ret, rem};
+                return new BigInteger[] { ret, rem };
             }
 
             #endregion
 
             #region BigNum
 
-            internal static BigInteger [] multiByteDivide (BigInteger bi1, BigInteger bi2)
+            internal static BigInteger[] multiByteDivide(BigInteger bi1, BigInteger bi2)
             {
                 unchecked
                 {
-                    if (Kernel.Compare (bi1, bi2) == Sign.Negative)
-                        return new BigInteger [2] { 0, new BigInteger (bi1) };
+                    if (Kernel.Compare(bi1, bi2) == Sign.Negative)
+                        return new BigInteger[2] { 0, new BigInteger(bi1) };
 
-                    bi1.Normalize (); bi2.Normalize ();
+                    bi1.Normalize();
+                    bi2.Normalize();
 
                     if (bi2.length == 1)
-                        return DwordDivMod (bi1, bi2.data [0]);
+                        return DwordDivMod(bi1, bi2.data[0]);
 
                     uint remainderLen = bi1.length + 1;
                     int divisorLen = (int)bi2.length + 1;
 
                     uint mask = 0x80000000;
-                    uint val = bi2.data [bi2.length - 1];
+                    uint val = bi2.data[bi2.length - 1];
                     int shift = 0;
                     int resultPos = (int)bi1.length - (int)bi2.length;
 
                     while (mask != 0 && (val & mask) == 0)
                     {
-                        shift++; mask >>= 1;
+                        shift++;
+                        mask >>= 1;
                     }
 
-                    BigInteger quot = new BigInteger (Sign.Positive, bi1.length - bi2.length + 1);
+                    BigInteger quot = new BigInteger(Sign.Positive, bi1.length - bi2.length + 1);
                     BigInteger rem = (bi1 << shift);
 
-                    uint [] remainder = rem.data;
+                    uint[] remainder = rem.data;
 
                     bi2 = bi2 << shift;
 
                     int j = (int)(remainderLen - bi2.length);
                     int pos = (int)remainderLen - 1;
 
-                    uint firstDivisorByte = bi2.data [bi2.length-1];
-                    ulong secondDivisorByte = bi2.data [bi2.length-2];
+                    uint firstDivisorByte = bi2.data[bi2.length - 1];
+                    ulong secondDivisorByte = bi2.data[bi2.length - 2];
 
                     while (j > 0)
                     {
-                        ulong dividend = ((ulong)remainder [pos] << 32) + (ulong)remainder [pos-1];
+                        ulong dividend = ((ulong)remainder[pos] << 32) + (ulong)remainder[pos - 1];
 
                         ulong q_hat = dividend / (ulong)firstDivisorByte;
                         ulong r_hat = dividend % (ulong)firstDivisorByte;
@@ -1712,12 +1768,14 @@ namespace Aspose.Crypto
                         uint uint_q_hat = (uint)q_hat;
                         do
                         {
-                            mc += (ulong)bi2.data [dPos] * (ulong)uint_q_hat;
-                            t = remainder [nPos];
-                            remainder [nPos] -= (uint)mc;
+                            mc += (ulong)bi2.data[dPos] * (ulong)uint_q_hat;
+                            t = remainder[nPos];
+                            remainder[nPos] -= (uint)mc;
                             mc >>= 32;
-                            if (remainder [nPos] > t) mc++;
-                            dPos++; nPos++;
+                            if (remainder[nPos] > t)
+                                mc++;
+                            dPos++;
+                            nPos++;
                         } while (dPos < divisorLen);
 
                         nPos = pos - divisorLen + 1;
@@ -1731,26 +1789,27 @@ namespace Aspose.Crypto
 
                             do
                             {
-                                sum = ((ulong)remainder [nPos]) + ((ulong)bi2.data [dPos]) + sum;
-                                remainder [nPos] = (uint)sum;
+                                sum = ((ulong)remainder[nPos]) + ((ulong)bi2.data[dPos]) + sum;
+                                remainder[nPos] = (uint)sum;
                                 sum >>= 32;
-                                dPos++; nPos++;
+                                dPos++;
+                                nPos++;
                             } while (dPos < divisorLen);
 
                         }
 
-                        quot.data [resultPos--] = (uint)uint_q_hat;
+                        quot.data[resultPos--] = (uint)uint_q_hat;
 
                         pos--;
                         j--;
                     }
 
-                    quot.Normalize ();
-                    rem.Normalize ();
-                    BigInteger [] ret = new BigInteger [2] { quot, rem };
+                    quot.Normalize();
+                    rem.Normalize();
+                    BigInteger[] ret = new BigInteger[2] { quot, rem };
 
                     if (shift != 0)
-                        ret [1] >>= shift;
+                        ret[1] >>= shift;
 
                     return ret;
                 }
@@ -1761,14 +1820,15 @@ namespace Aspose.Crypto
             #endregion
 
             #region Shift
-            internal static BigInteger LeftShift (BigInteger bi, int n)
+            internal static BigInteger LeftShift(BigInteger bi, int n)
             {
-                if (n == 0) return new BigInteger (bi, bi.length + 1);
+                if (n == 0)
+                    return new BigInteger(bi, bi.length + 1);
 
                 int w = n >> 5;
                 n &= ((1 << 5) - 1);
 
-                BigInteger ret = new BigInteger (Sign.Positive, bi.length + 1 + (uint)w);
+                BigInteger ret = new BigInteger(Sign.Positive, bi.length + 1 + (uint)w);
 
                 uint i = 0, l = bi.length;
                 if (n != 0)
@@ -1776,34 +1836,35 @@ namespace Aspose.Crypto
                     uint x, carry = 0;
                     while (i < l)
                     {
-                        x = bi.data [i];
-                        ret.data [i + w] = (x << n) | carry;
+                        x = bi.data[i];
+                        ret.data[i + w] = (x << n) | carry;
                         carry = x >> (32 - n);
                         i++;
                     }
-                    ret.data [i + w] = carry;
+                    ret.data[i + w] = carry;
                 }
                 else
                 {
                     while (i < l)
                     {
-                        ret.data [i + w] = bi.data [i];
+                        ret.data[i + w] = bi.data[i];
                         i++;
                     }
                 }
 
-                ret.Normalize ();
+                ret.Normalize();
                 return ret;
             }
 
-            internal static BigInteger RightShift (BigInteger bi, int n)
+            internal static BigInteger RightShift(BigInteger bi, int n)
             {
-                if (n == 0) return new BigInteger (bi);
+                if (n == 0)
+                    return new BigInteger(bi);
 
                 int w = n >> 5;
                 int s = n & ((1 << 5) - 1);
 
-                BigInteger ret = new BigInteger (Sign.Positive, bi.length - (uint)w + 1);
+                BigInteger ret = new BigInteger(Sign.Positive, bi.length - (uint)w + 1);
                 uint l = (uint)ret.data.Length - 1;
 
                 if (s != 0)
@@ -1813,18 +1874,18 @@ namespace Aspose.Crypto
 
                     while (l-- > 0)
                     {
-                        x = bi.data [l + w];
-                        ret.data [l] = (x >> n) | carry;
+                        x = bi.data[l + w];
+                        ret.data[l] = (x >> n) | carry;
                         carry = x << (32 - n);
                     }
                 }
                 else
                 {
                     while (l-- > 0)
-                        ret.data [l] = bi.data [l + w];
+                        ret.data[l] = bi.data[l + w];
 
                 }
-                ret.Normalize ();
+                ret.Normalize();
                 return ret;
             }
 
@@ -1832,21 +1893,21 @@ namespace Aspose.Crypto
 
             #region Multiply
 
-            internal static BigInteger MultiplyByDword (BigInteger n, uint f)
+            internal static BigInteger MultiplyByDword(BigInteger n, uint f)
             {
-                BigInteger ret = new BigInteger (Sign.Positive, n.length + 1);
+                BigInteger ret = new BigInteger(Sign.Positive, n.length + 1);
 
                 uint i = 0;
                 ulong c = 0;
 
                 do
                 {
-                    c += (ulong)n.data [i] * (ulong)f;
-                    ret.data [i] = (uint)c;
+                    c += (ulong)n.data[i] * (ulong)f;
+                    ret.data[i] = (uint)c;
                     c >>= 32;
                 } while (++i < n.length);
-                ret.data [i] = (uint)c;
-                ret.Normalize ();
+                ret.data[i] = (uint)c;
+                ret.Normalize();
                 return ret;
 
             }
@@ -1872,7 +1933,8 @@ namespace Aspose.Crypto
                     for (; xP < xE; xP++, dB++)
                     {
 
-                        if (x[xP] == 0) continue;
+                        if (x[xP] == 0)
+                            continue;
 
                         ulong mcarry = 0;
 
@@ -1913,7 +1975,8 @@ namespace Aspose.Crypto
 
                     for (; xP < xE; xP++, dB++)
                     {
-                        if (x[xP] == 0) continue;
+                        if (x[xP] == 0)
+                            continue;
 
                         ulong mcarry = 0;
                         uint dP = dB;
@@ -1935,9 +1998,9 @@ namespace Aspose.Crypto
             {
                 unchecked
                 {
-                    uint [] t = wkSpace;
+                    uint[] t = wkSpace;
                     wkSpace = bi.data;
-                    uint [] d = bi.data;
+                    uint[] d = bi.data;
                     uint dl = bi.length;
                     bi.data = t;
 
@@ -1950,7 +2013,8 @@ namespace Aspose.Crypto
 
                     for (uint i = 0; i < dl; i++, dP++)
                     {
-                        if (d[dP] == 0) continue;
+                        if (d[dP] == 0)
+                            continue;
 
                         ulong mcarry = 0;
                         uint bi1val = d[dP];
@@ -2003,7 +2067,7 @@ namespace Aspose.Crypto
 
                     bi.length <<= 1;
 
-                    while (t[bi.length-1] == 0 && bi.length > 1)
+                    while (t[bi.length - 1] == 0 && bi.length > 1)
                         bi.length--;
                 }
             }
@@ -2012,7 +2076,7 @@ namespace Aspose.Crypto
 
             #region Number Theory
 
-            internal static BigInteger gcd (BigInteger a, BigInteger b)
+            internal static BigInteger gcd(BigInteger a, BigInteger b)
             {
                 unchecked
                 {
@@ -2028,7 +2092,8 @@ namespace Aspose.Crypto
                         y = g;
 
                     }
-                    if (x == 0) return g;
+                    if (x == 0)
+                        return g;
 
                     // TODO: should we have something here if we can convert to long?
 
@@ -2037,19 +2102,23 @@ namespace Aspose.Crypto
                     // as it should be faster.
                     //
 
-                    uint yy = x.data [0];
+                    uint yy = x.data[0];
                     uint xx = y % yy;
 
                     int t = 0;
 
                     while (((xx | yy) & 1) == 0)
                     {
-                        xx >>= 1; yy >>= 1; t++;
+                        xx >>= 1;
+                        yy >>= 1;
+                        t++;
                     }
                     while (xx != 0)
                     {
-                        while ((xx & 1) == 0) xx >>= 1;
-                        while ((yy & 1) == 0) yy >>= 1;
+                        while ((xx & 1) == 0)
+                            xx >>= 1;
+                        while ((yy & 1) == 0)
+                            yy >>= 1;
                         if (xx >= yy)
                             xx = (xx - yy) >> 1;
                         else
@@ -2060,7 +2129,7 @@ namespace Aspose.Crypto
                 }
             }
 
-            internal static uint modInverse (BigInteger bi, uint modulus)
+            internal static uint modInverse(BigInteger bi, uint modulus)
             {
                 unchecked
                 {
@@ -2077,7 +2146,7 @@ namespace Aspose.Crypto
                         if (a == 0)
                             break;
                         if (a == 1)
-                            return modulus-p0;
+                            return modulus - p0;
 
                         p1 += (b / a) * p0;
                         b %= a;
@@ -2087,22 +2156,23 @@ namespace Aspose.Crypto
                 }
             }
 
-            internal static BigInteger modInverse (BigInteger bi, BigInteger modulus)
+            internal static BigInteger modInverse(BigInteger bi, BigInteger modulus)
             {
                 unchecked
                 {
-                    if (modulus.length == 1) return modInverse (bi, modulus.data [0]);
+                    if (modulus.length == 1)
+                        return modInverse(bi, modulus.data[0]);
 
-                    BigInteger [] p = { 0, 1 };
-                    BigInteger [] q = new BigInteger [2];    // quotients
-                    BigInteger [] r = { 0, 0 };             // remainders
+                    BigInteger[] p = { 0, 1 };
+                    BigInteger[] q = new BigInteger[2];    // quotients
+                    BigInteger[] r = { 0, 0 };             // remainders
 
                     int step = 0;
 
                     BigInteger a = modulus;
                     BigInteger b = bi;
 
-                    ModulusRing mr = new ModulusRing (modulus);
+                    ModulusRing mr = new ModulusRing(modulus);
 
                     while (b != 0)
                     {
@@ -2110,24 +2180,27 @@ namespace Aspose.Crypto
                         if (step > 1)
                         {
 
-                            BigInteger pval = mr.Difference (p [0], p [1] * q [0]);
-                            p [0] = p [1]; p [1] = pval;
+                            BigInteger pval = mr.Difference(p[0], p[1] * q[0]);
+                            p[0] = p[1];
+                            p[1] = pval;
                         }
 
-                        BigInteger [] divret = multiByteDivide (a, b);
+                        BigInteger[] divret = multiByteDivide(a, b);
 
-                        q [0] = q [1]; q [1] = divret [0];
-                        r [0] = r [1]; r [1] = divret [1];
+                        q[0] = q[1];
+                        q[1] = divret[0];
+                        r[0] = r[1];
+                        r[1] = divret[1];
                         a = b;
-                        b = divret [1];
+                        b = divret[1];
 
                         step++;
                     }
 
-                    if (r [0] != 1)
-                        throw (new ArithmeticException ("No inverse!"));
+                    if (r[0] != 1)
+                        throw (new ArithmeticException("No inverse!"));
 
-                    return mr.Difference (p [0], p [1] * q [0]);
+                    return mr.Difference(p[0], p[1] * q[0]);
                 }
             }
             #endregion

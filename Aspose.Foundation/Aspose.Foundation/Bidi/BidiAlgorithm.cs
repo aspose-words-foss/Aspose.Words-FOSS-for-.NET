@@ -33,7 +33,7 @@ namespace Aspose.Bidi
         /// <returns>The text split into an array of runs by bidirectional embedding level.</returns>
         public static BidiRun[] Apply(string text, bool isRtlParagraph)
         {
-            return Apply(new BidiSourceRun[] {new BidiSourceRun(text)}, isRtlParagraph, false, false);
+            return Apply(new BidiSourceRun[] { new BidiSourceRun(text) }, isRtlParagraph, false, false);
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace Aspose.Bidi
             // If text is in visual order, its runs are also in visual order.
             // To convert visually ordered text of an RTL paragraph to logical order, we need to reverse the order of the runs.
             bool reverseRunOrder = (mConvertVisualToLogicalOrder && isRtlParagraph);
- 
+
             Initialize(sourceRuns, reverseRunOrder);
         }
 
@@ -351,7 +351,7 @@ namespace Aspose.Bidi
             return (mData[index] & gFieldMasks[fieldIndex]) >>> G_FIELD_SHIFTS[fieldIndex];
 #else
             // Emulation of unsigned right shift.
-            return (long) (((ulong)(mData[index] & gFieldMasks[fieldIndex])) >> gFieldShifts[fieldIndex]);
+            return (long)(((ulong)(mData[index] & gFieldMasks[fieldIndex])) >> gFieldShifts[fieldIndex]);
 #endif
         }
 
@@ -366,7 +366,7 @@ namespace Aspose.Bidi
             long newFieldValue = (value << gFieldShifts[fieldIndex]) & gFieldMasks[fieldIndex];
             // Re-pack data. Merge the masked value with other fields. The code is taken from here:
             // https://graphics.stanford.edu/~seander/bithacks.html#MaskedMerge
-            mData[index] = oldValue ^ ((oldValue ^ newFieldValue) & gFieldMasks[fieldIndex]); 
+            mData[index] = oldValue ^ ((oldValue ^ newFieldValue) & gFieldMasks[fieldIndex]);
         }
 
         /// <summary>
@@ -381,7 +381,7 @@ namespace Aspose.Bidi
                 return;
             }
 
-#region rules X1 - X9
+            #region rules X1 - X9
             // X1
             int lastCharEmbeddingLevel = mParagraphEmbeddingLevel;
             int embeddingLevel = mParagraphEmbeddingLevel;
@@ -392,7 +392,7 @@ namespace Aspose.Bidi
             {
                 BidiCharacterType bidiType = GetBidiType(i);
 
-#region rules X2 - X5
+                #region rules X2 - X5
                 // X2. With each RLE, compute the least greater odd embedding level.
                 // X4. With each RLO, compute the least greater odd embedding level.
                 if ((bidiType == BidiCharacterType.RLE) || (bidiType == BidiCharacterType.RLO))
@@ -429,9 +429,9 @@ namespace Aspose.Bidi
                             : DirectionalOverrideStatus.LTR;
                     }
                 }
-#endregion
+                #endregion
 
-#region rule X6
+                #region rule X6
                 // X6. For all types besides RLE, LRE, RLO, LRO, and PDF: (...)
                 // Added From Revision #23 
                 // For all types besides BN, RLE, LRE, RLO, LRO, and PDF: (...)
@@ -460,9 +460,9 @@ namespace Aspose.Bidi
                     }
                 }
 
-#endregion
+                #endregion
 
-#region rule X7
+                #region rule X7
                 //Terminating Embeddings and Overrides
                 // X7. With each PDF, determine the matching embedding or override code.
                 // If there was a valid matching code, restore (pop) the last remembered (pushed)
@@ -473,7 +473,7 @@ namespace Aspose.Bidi
                     elStack.RemoveAt(elStack.Count - 1);
                     dos = (DirectionalOverrideStatus)(dosStack.Pop());
                 }
-#endregion
+                #endregion
 
                 // X8. All explicit directional embeddings and overrides are completely
                 // terminated at the end of each paragraph. Paragraph separators are not
@@ -487,7 +487,7 @@ namespace Aspose.Bidi
                     dosStack.Clear();
                 }
             }
-#endregion
+            #endregion
 
             // X10. The remaining rules are applied to each sequence of characters at the same level.
             List<Sequence> sequences = new List<Sequence>();
@@ -559,7 +559,7 @@ namespace Aspose.Bidi
         {
             int i;
 
-#region rule W1
+            #region rule W1
             // W1. Examine each nonspacing mark (NSM) in the level run, and change the type of the NSM
             // to the type of the previous character. If the NSM is at the start of the level run, it will get the type of sor.
             if (mHasNsm)
@@ -578,9 +578,9 @@ namespace Aspose.Bidi
                     }
                 }
             }
-#endregion
+            #endregion
 
-#region rule W2
+            #region rule W2
             // W2. Search backward from each instance of a European number until the first strong type (R, L, AL, or sor)
             // is found. If an AL is found, change the type of the European number to Arabic number.
 
@@ -595,9 +595,9 @@ namespace Aspose.Bidi
                 else if (bidiType == BidiCharacterType.EN)
                     SetBidiType(i, t_w2);
             }
-#endregion
+            #endregion
 
-#region rule #3
+            #region rule #3
             // W3. Change all ALs to R.
             if (mHasArabic)
             {
@@ -607,9 +607,9 @@ namespace Aspose.Bidi
                         SetBidiType(i, BidiCharacterType.R);
                 }
             }
-#endregion
+            #endregion
 
-#region rule W4
+            #region rule W4
             // W4. A single European separator between two European numbers changes to a European number.
             // A single common separator between two numbers of the same type changes to that type.
 
@@ -691,9 +691,9 @@ namespace Aspose.Bidi
                     }
                 }
             }
-#endregion
+            #endregion
 
-#region rule W5
+            #region rule W5
             // W5. A sequence of European terminators adjacent to European numbers changes to all European numbers.
             i = sequence.Start;
             while (i < sequence.Limit)
@@ -742,9 +742,9 @@ namespace Aspose.Bidi
 
                 ++i;
             }
-#endregion
+            #endregion
 
-#region rule W6
+            #region rule W6
             // W6. Otherwise, separators and terminators change to Other Neutral.
             for (i = sequence.Start; i < sequence.Limit; ++i)
             {
@@ -773,9 +773,9 @@ namespace Aspose.Bidi
                     }
                 }
             }
-#endregion
+            #endregion
 
-#region rule W7
+            #region rule W7
             // W7. Search backward from each instance of a European number until the first strong type (R, L, or sor) is found.
             //     If an L is found, then change the type of the European number to L.
 
@@ -792,7 +792,7 @@ namespace Aspose.Bidi
                 else if (bidiType == BidiCharacterType.EN)
                     SetBidiType(i, t_w7);
             }
-#endregion
+            #endregion
         }
 
         /// <summary>
@@ -1216,7 +1216,7 @@ namespace Aspose.Bidi
                 {
                     if (rangeText.Length > 0)
                     {
-                        BidiRun newRun = new BidiRun(rangeText.ToString(), GetEmbeddingLevel(rangeStartIndex), 
+                        BidiRun newRun = new BidiRun(rangeText.ToString(), GetEmbeddingLevel(rangeStartIndex),
                             GetSourceRunIndex(rangeStartIndex));
 
                         newRun.BidiCharacterType = GetBidiType(rangeStartIndex);
@@ -1325,7 +1325,7 @@ namespace Aspose.Bidi
         {
             Debug.Assert(start >= 0);
             Debug.Assert(start < runs.Length);
-            
+
             if (length <= 1)
             {
                 // Nothing to reverse.
@@ -1515,7 +1515,7 @@ namespace Aspose.Bidi
         private const int EmbeddingLevelFieldIndex = 3;
         private const int UseHebrewSeparatorsFieldIndex = 4;
         private const int SourceRunIndexFieldIndex = 5;
-        
+
 
         /// <summary>
         /// Characters and related information used by the algorithm. Use the corresponding getter and setter methods to access
@@ -1529,7 +1529,7 @@ namespace Aspose.Bidi
         /// </remarks>
         /// JAVA-changed from unsigned long to (signed) long for autoportability to Java.
         private long[] mData;
-        
+
         private readonly int mParagraphEmbeddingLevel;
         private readonly bool mConvertVisualToLogicalOrder;
         private readonly bool mConvertToMsWordOrder;

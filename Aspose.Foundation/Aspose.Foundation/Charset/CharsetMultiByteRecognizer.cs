@@ -102,7 +102,7 @@ namespace Aspose.Charset
             //  No match if there are too many characters that don't fit the encoding scheme.
             //    (should we have zero tolerance for these?)
             //
-            if ((double)badCharCount/totalCharCount > BadCharsThreshold)
+            if ((double)badCharCount / totalCharCount > BadCharsThreshold)
             {
                 confidence = 0;
                 return confidence;
@@ -113,7 +113,7 @@ namespace Aspose.Charset
                 // We have no statistics on frequently occuring characters.
                 // Assess confidence purely on having a reasonable number of
                 // multi-byte characters (the more the better
-                confidence = 30 + doubleByteCharCount - 20*badCharCount;
+                confidence = 30 + doubleByteCharCount - 20 * badCharCount;
                 if (confidence > 100)
                     confidence = 100;
             }
@@ -122,9 +122,9 @@ namespace Aspose.Charset
                 //
                 // Frequency of occurence statistics exist.
                 //
-                double maxVal = Math.Log((float) doubleByteCharCount/4);
-                double scaleFactor = 90.0/maxVal;
-                confidence = (int) (Math.Log(commonCharCount + 1)*scaleFactor + 10);
+                double maxVal = Math.Log((float)doubleByteCharCount / 4);
+                double scaleFactor = 90.0 / maxVal;
+                confidence = (int)(Math.Log(commonCharCount + 1) * scaleFactor + 10);
                 confidence = Math.Min(confidence, 100);
             }
 
@@ -167,7 +167,7 @@ namespace Aspose.Charset
                     done = true;
                     return -1;
                 }
-                int byteValue = (int) det.GetRawInput()[nextIndex++] & 0x00ff;
+                int byteValue = (int)det.GetRawInput()[nextIndex++] & 0x00ff;
                 return byteValue;
             }
         }
@@ -212,7 +212,7 @@ namespace Aspose.Charset
             it.index = it.nextIndex;
             it.error = false;
             it.charValue = it.NextByte(det);
-            
+
             int firstByte = it.charValue;
             if (firstByte < 0)
                 return false;
@@ -239,12 +239,12 @@ namespace Aspose.Charset
                     return false;
 
                 it.charValue = (firstByte << 8) | secondByte;
-                
+
                 // Check either second byte is correct.
                 if ((secondByte >= 0x40 && secondByte <= 0x7E) || (secondByte >= 0x80 && secondByte <= 0xFC))
                     return true;
             }
-            
+
             it.error = true;
             return true;
         }

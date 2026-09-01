@@ -24,7 +24,7 @@ namespace Aspose.Words
             {
                 // WORDSNET-5054 Document contains definition (both incomplete) for two columns but column count is set to 1.
                 // First step is to remove extra columns.
-                while((ColumnsCount > Columns.Count) && (Columns.Count > 0))
+                while ((ColumnsCount > Columns.Count) && (Columns.Count > 0))
                 {
                     // Remove extra columns.
                     Columns.RemoveAt(Columns.Count - 1);
@@ -332,7 +332,7 @@ namespace Aspose.Words
             return availableWidth;
         }
 
-        internal int GetContentWidthTwips (bool countGutter)
+        internal int GetContentWidthTwips(bool countGutter)
         {
             int gutter = countGutter ? Gutter : 0;
 
@@ -596,7 +596,7 @@ namespace Aspose.Words
         {
             // Do not clone to avoid duplicating of the object with reference type.
             for (int i = 0; i < gDefaults.Count; i++)
-              attrs.Add(gDefaults.GetKey(i), gDefaults.GetByIndex(i));
+                attrs.Add(gDefaults.GetKey(i), gDefaults.GetByIndex(i));
 
             // Fill culture depended attributes.
             LocaleDefaults.Margins margins = GetDefaultPageMargins(lcid);

@@ -50,8 +50,10 @@ namespace Aspose.TestFx
                     for (var i = 0; i < attached.Length; i++)
                     {
                         // null and empty values are stored as empty strings
-                        if (attached[i] == null) attached[i] = string.Empty;
-                        if (attached[i].Length > 0) attached[i] = ";" + attached[i];
+                        if (attached[i] == null)
+                            attached[i] = string.Empty;
+                        if (attached[i].Length > 0)
+                            attached[i] = ";" + attached[i];
                     }
 
                     v = TestSetting.Create(index, key, value, attached);
@@ -76,7 +78,7 @@ namespace Aspose.TestFx
             {
                 ArgumentUtil.CheckHasChars(id, "id");
                 Init();
-#if !NETSTANDARD && !CPLUSPLUS
+#if NETFRAMEWORK && !CPLUSPLUS
                 TestUtilPal.ShowTestSettingsFormIfNeeded();
 #endif
                 TestSetting v = gValues.GetValueOrNull(id);
@@ -133,7 +135,7 @@ namespace Aspose.TestFx
         /// </summary>
         public static string[] Labels
         {
-            get { return Get(S_LABELS).AsString.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries); }
+            get { return Get(S_LABELS).AsString.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries); }
             set { Set(S_LABELS, value); }
         }
 
@@ -154,7 +156,7 @@ namespace Aspose.TestFx
         /// </summary>
         public static bool PassWhenImagesBinaryEqual
         {
-            get{ return Get(A_COMPAREIMAGES).AsArray[0] != I_COMPAREIMAGES_DONT; }
+            get { return Get(A_COMPAREIMAGES).AsArray[0] != I_COMPAREIMAGES_DONT; }
         }
 
         /// <summary>
@@ -374,9 +376,15 @@ namespace Aspose.TestFx
                     string mimeType = response.ContentType.ToLower();
                     switch (mimeType)
                     {
-                        case "image/jpeg" : extension = "jpg"; break;
-                        case "image/gif" : extension = "gif"; break;
-                        case "image/png" : extension = "png"; break;
+                        case "image/jpeg":
+                            extension = "jpg";
+                            break;
+                        case "image/gif":
+                            extension = "gif";
+                            break;
+                        case "image/png":
+                            extension = "png";
+                            break;
                         default:
                             // Sometimes response could be success with html or json payload saying it was an error.
                             // We should not cache these apparently. But the error is misleading still.
@@ -414,7 +422,7 @@ namespace Aspose.TestFx
                     HttpWebResponse wp = (HttpWebResponse)wq.GetResponse();
                     return new Response { Success = true, ContentType = wp.ContentType, StatusCode = wp.StatusCode, Stream = wp.GetResponseStream() };
                 }
-                public HttpStatusCode StatusCode { get; private set;}
+                public HttpStatusCode StatusCode { get; private set; }
                 public bool Success { get; private set; }
                 public Stream Stream { get; private set; }
                 public string ContentType { get; private set; }
@@ -428,7 +436,7 @@ namespace Aspose.TestFx
                     {
                         int pos = line.IndexOf(' ');
                         Debug.Assert(pos > 0);
-                        string key = line.Substring(pos+1);
+                        string key = line.Substring(pos + 1);
                         string value = line.Substring(0, pos);
                         result.Add(key, value);
                     }
@@ -638,7 +646,7 @@ namespace Aspose.TestFx
         private const string B_USELOCALGOLDS = "uselocalgolds";
         private const string B_CLOSEDOC = "closedoc";
 
-        private const string B_ENABLEPROGRESSESTIMATION="enableprogressestimation";
+        private const string B_ENABLEPROGRESSESTIMATION = "enableprogressestimation";
 
         private const string B_ROUNDXPS = "roundxps";
         private const string B_PROXYWEB = "proxyweb";
@@ -660,9 +668,9 @@ namespace Aspose.TestFx
         private const string LABEL_PASS_MINOR = "label-pass-minor";
         private const string LABEL_PASS_NONE = "label-pass-none";
         private const string LABEL_PASS_NOISE = "label-pass-noise";
-        private const string LABEL_PASS_CLIP= "label-pass-clip";
+        private const string LABEL_PASS_CLIP = "label-pass-clip";
 
-        private const string B_COMPARELOGICAL="comparelogical";
+        private const string B_COMPARELOGICAL = "comparelogical";
 
         private const string A_COMPAREIMAGES = "compareimages";
         private const string I_COMPAREIMAGES_DONT = "Do not compare";
@@ -700,13 +708,15 @@ namespace Aspose.TestFx
         private static string GetUserProfileDir()
         {
 #if JAVA
+            // Use Java system property to get the home directory
             return System.getProperty("user.home");
-#else
-#if NET30
-            return Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-#else
+#elif NET35
+            // In .NET 3.5, SpecialFolder.UserProfile is not available. Falling back to SpecialFolder.Personal (My Documents) as the closest alternative.
             return Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-#endif
+#else
+            // For .NET 4.6.1, 4.6.2, NetStandard, and .NET 6.0 through 10.0:
+            // SpecialFolder.UserProfile is the standard way to get the root user directory across Windows, Linux, and macOS.
+            return Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 #endif
         }
 

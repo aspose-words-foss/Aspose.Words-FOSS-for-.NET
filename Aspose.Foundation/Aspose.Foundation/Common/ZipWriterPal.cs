@@ -17,7 +17,7 @@ namespace Aspose.Common
     public sealed class ZipWriterPal : IDisposable
     {
         public ZipWriterPal(Stream dstStream)
-            : this (dstStream, DefaultCompressionLevel, DefaultZip64Mode)
+            : this(dstStream, DefaultCompressionLevel, DefaultZip64Mode)
         {
         }
 

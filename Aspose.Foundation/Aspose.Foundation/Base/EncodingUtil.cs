@@ -9,7 +9,7 @@ namespace Aspose
     {
         public static void RegisterEncodings()
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             try
             {
                 Encoding.GetEncoding(1252);
@@ -27,7 +27,7 @@ namespace Aspose
         /// <summary>Returns the encoding associated with the specified code page identifier.</summary>
         public static Encoding GetEncoding(int codepage)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             if (codepage == gUtf7CodePage)
 #pragma warning disable SYSLIB0001 // Type or member is obsolete
                 return Encoding.UTF7;
@@ -40,7 +40,7 @@ namespace Aspose
         /// <summary>Returns the encoding associated with the specified code page name.</summary>
         public static Encoding GetEncoding(string name)
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             if (name == gUtf7EncodingName)
 #pragma warning disable SYSLIB0001 // Type or member is obsolete
                 return Encoding.UTF7;
@@ -50,7 +50,7 @@ namespace Aspose
             return Encoding.GetEncoding(name);
         }
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         private static readonly int gUtf7CodePage = 65000;
         private static readonly string gUtf7EncodingName = "UTF-7";
 #endif

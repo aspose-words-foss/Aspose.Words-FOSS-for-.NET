@@ -148,7 +148,7 @@ namespace Aspose.Words.Validation
             // After the SDT has been updated restore the list by adding all actual nesting markup back to the list.
 
             // Do not use enumerator here, list will be modified inside loop.
-            for(int i = 0; i < sdtList.Count; i++)
+            for (int i = 0; i < sdtList.Count; i++)
             {
                 Node sdtNode = sdtList[i];
 
@@ -766,7 +766,8 @@ namespace Aspose.Words.Validation
                 // to not affect Border.IsInherited flag.
                 border.RawDistanceFromText = (int)border.DistanceFromText & Border.MaxDistanceFromText;
                 if (border.LineWidth > Border.MaxLineWidth)
-                    border.SetLineWidthSafe(Border.MaxLineWidth);; // WORDSNET-21911
+                    border.SetLineWidthSafe(Border.MaxLineWidth);
+                ; // WORDSNET-21911
             }
         }
 
@@ -1886,6 +1887,7 @@ namespace Aspose.Words.Validation
             gSaveActions.Add(SaveFormat.Emf, DocumentValidatorActions.Rendering);
             gSaveActions.Add(SaveFormat.Jpeg, DocumentValidatorActions.Rendering);
             gSaveActions.Add(SaveFormat.Gif, DocumentValidatorActions.Rendering);
+            gSaveActions.Add(SaveFormat.Eps, DocumentValidatorActions.Rendering);
 #if NETSTANDARD || NET462_OR_GREATER || JAVA
             gSaveActions.Add(SaveFormat.WebP, DocumentValidatorActions.Rendering);
 #endif

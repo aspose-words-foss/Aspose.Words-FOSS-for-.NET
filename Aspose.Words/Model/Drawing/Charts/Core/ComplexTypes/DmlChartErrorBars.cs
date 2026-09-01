@@ -154,7 +154,7 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
         /// <returns>The calculated error</returns>
         private double GetStackedErrorValue(double error, double stackedMaximum)
         {
-            return IsPercentStacked  ? (error / stackedMaximum) : error;
+            return IsPercentStacked ? (error / stackedMaximum) : error;
         }
 
         /// <summary>

@@ -28,9 +28,7 @@
 using System;
 using System.Security.Permissions;
 using System.Text.RegularExpressions;
-
 using Aspose.Common;
-
 using Aspose.Crypto;
 using Aspose.JavaAttributes;
 
@@ -118,8 +116,8 @@ namespace Aspose.Zip
             if (pathName.Length < 2)
                 return pathName.Replace('\\', '/');
 
-            return (((pathName[1] == ':') && (pathName[2] == '\\')) 
-                ? pathName.Substring(3) 
+            return (((pathName[1] == ':') && (pathName[2] == '\\'))
+                ? pathName.Substring(3)
                 : pathName).Replace('\\', '/');
         }
 
@@ -201,7 +199,7 @@ namespace Aspose.Zip
             byte[] batch = new byte[BATCH_SIZE];
             int n;
             bool success = false;
-            
+
             while (true)
             {
                 n = stream.Read(batch, 0, batch.Length);
@@ -477,7 +475,7 @@ namespace Aspose.Zip
                 }
                 catch (System.IO.IOException ioexc1)
                 {
-#if !NETSTANDARD
+#if NETFRAMEWORK
                     // Check if we can call GetHRForException, 
                     // which makes unmanaged code calls.
                     SecurityPermission p = new SecurityPermission(SecurityPermissionFlag.UnmanagedCode);
@@ -486,20 +484,20 @@ namespace Aspose.Zip
                         uint hresult = _HRForException(ioexc1);
                         if (hresult != 0x80070021)  // ERROR_LOCK_VIOLATION
 #else
-                        // In Xamarin.Android SecurityPermissionFlag.UnmanagedCode is obsolete, so do not use it,
-                        // instead use Exception.HResult to check ERROR_LOCK_VIOLATION
-                        long hresult = ioexc1.HResult &0xffff;
-                        if (hresult != 0x21)  // ERROR_LOCK_VIOLATION
+                    // In Xamarin.Android SecurityPermissionFlag.UnmanagedCode is obsolete, so do not use it,
+                    // instead use Exception.HResult to check ERROR_LOCK_VIOLATION
+                    long hresult = ioexc1.HResult & 0xffff;
+                    if (hresult != 0x21)  // ERROR_LOCK_VIOLATION
 #endif
-                            throw new System.IO.IOException(String.Format("Cannot read file {0}", FileName), ioexc1);
-                        retries++;
-                        if (retries > 10)
-                            throw new System.IO.IOException(String.Format("Cannot read file {0}, at offset 0x{1:X8} after 10 retries", FileName, offset), ioexc1);
+                        throw new System.IO.IOException(String.Format("Cannot read file {0}", FileName), ioexc1);
+                    retries++;
+                    if (retries > 10)
+                        throw new System.IO.IOException(String.Format("Cannot read file {0}, at offset 0x{1:X8} after 10 retries", FileName, offset), ioexc1);
 
-                        // max time waited on last retry = 250 + 10*550 = 5.75s
-                        // aggregate time waited after 10 retries: 250 + 55*550 = 30.5s
-                        System.Threading.Thread.Sleep(250 + retries * 550);
-#if !NETSTANDARD
+                    // max time waited on last retry = 250 + 10*550 = 5.75s
+                    // aggregate time waited after 10 retries: 250 + 55*550 = 30.5s
+                    System.Threading.Thread.Sleep(250 + retries * 550);
+#if NETFRAMEWORK
                     }
                     else
                     {

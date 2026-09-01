@@ -201,7 +201,7 @@ namespace Aspose.Collections
 
             return true;
         }
-        
+
         /// <summary>
         /// Serves as the default hash function.
         /// </summary>

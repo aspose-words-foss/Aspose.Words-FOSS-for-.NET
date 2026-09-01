@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 01/11/2013 by Sergey Merkulov
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System;
 using System.Drawing;
@@ -133,7 +133,7 @@ namespace Aspose.Images.Filters
             int rc = (int)(0x10000 * mRedCoefficient);
             int gc = (int)(0x10000 * mGreenCoefficient);
             int bc = (int)(0x10000 * mBlueCoefficient);
-            
+
             int sourcePointer = 0;
             int destPointer = 0;
 

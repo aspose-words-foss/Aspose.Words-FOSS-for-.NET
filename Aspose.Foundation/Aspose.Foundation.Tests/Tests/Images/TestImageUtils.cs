@@ -15,7 +15,7 @@ using NUnit.Framework;
 namespace Aspose.Tests.Images
 {
     [TestFixture]
-    public class TestImageUtil
+    public class TestImageUtils
     {
         [TestCase("CMYK\\TestCMYKImages_8.jpeg", true)]
         [TestCase("TestWrongHeight.jpg", true)]
@@ -329,7 +329,7 @@ namespace Aspose.Tests.Images
         {
             string testImageFileName = TestFxUtil.BuildTestFileName(imageFileName);
 
-#if !NETSTANDARD && !JAVA && !CPLUSPLUS // Test using GDI+ to make sure the expected values are correct.
+#if NETFRAMEWORK && !JAVA && !CPLUSPLUS // Test using GDI+ to make sure the expected values are correct.
             using (Bitmap bmp = new Bitmap(testImageFileName))
             {
                 Assert.That(BitmapPal.IsCmykPixelFormat(bmp), Is.EqualTo(expectedValue));

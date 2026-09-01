@@ -8,10 +8,6 @@ using Aspose.Words.Drawing.Ole.Core;
 using Aspose.Words.RW.Html.Css;
 using Aspose.Words.RW.Html.Parser;
 using Aspose.Words.RW.HtmlCommon;
-#if NETSTANDARD
-using Image = SkiaSharp.SKBitmap;
-#else
-#endif
 
 namespace Aspose.Words.RW.Html.Reader
 {

@@ -60,14 +60,14 @@ namespace Aspose.TestFx
             if (string.IsNullOrWhiteSpace(result))
                 throw new Exception("server replied with empty response");  // we waited for pipe name, but nothing came back
             if (!char.IsLetter(result[0]))  // if there is an error the results will start with non-letter (by design)
-                throw new Exception("server replied with error --->\r\n"+ result.Substring(1));
+                throw new Exception("server replied with error --->\r\n" + result.Substring(1));
 
             // Now wait for a response over the dedicated pipe
             // Set longer timeout to allow time for the server to generate results
             result = PipeChat(result, null, 60);
 
             if (!string.IsNullOrEmpty(result) && result.StartsWith("$", StringComparison.OrdinalIgnoreCase))
-                throw new Exception("server replied with error --->\r\n"+ result.Substring(1));
+                throw new Exception("server replied with error --->\r\n" + result.Substring(1));
 
             return result;
         }
@@ -89,22 +89,24 @@ namespace Aspose.TestFx
                 foreach (var p in parameters)
                 {
                     int wi = workItemIndex;
-                    pool.Enqueue(delegate {
+                    pool.Enqueue(delegate
                     {
-                        try
                         {
-                            string result = PostServerJobGetResults(mutex, pipe, serverPath, envVariable, p);
-                            Monitor.Enter(dict);
-                            dict.Add(wi, result);
-                            Monitor.Exit(dict);
+                            try
+                            {
+                                string result = PostServerJobGetResults(mutex, pipe, serverPath, envVariable, p);
+                                Monitor.Enter(dict);
+                                dict.Add(wi, result);
+                                Monitor.Exit(dict);
+                            }
+                            catch (Exception e)
+                            {
+                                Monitor.Enter(dict);
+                                dict.Add(wi, e);
+                                Monitor.Exit(dict);
+                            }
                         }
-                        catch (Exception e)
-                        {
-                            Monitor.Enter(dict);
-                            dict.Add(wi, e);
-                            Monitor.Exit(dict);
-                        }
-                    }});
+                    });
                     workItemIndex++;
                 }
                 pool.WaitForIdle();
@@ -138,12 +140,12 @@ namespace Aspose.TestFx
         /// Opens pipe, optionally writes request to it, and reads response
         /// </summary>
         [CodePorting.Translator.Cs2Cpp.CppSkipDefinition(false)]
-        private  static string PipeChat(string pipeName, string request = null, int timeoutSeconds = 10)
+        private static string PipeChat(string pipeName, string request = null, int timeoutSeconds = 10)
         {
             PipeDirection direction = (request == null ? PipeDirection.In : PipeDirection.InOut);
-            using(var stream = new NamedPipeClientStream(".", pipeName, direction))
+            using (var stream = new NamedPipeClientStream(".", pipeName, direction))
             {
-                stream.Connect(timeoutSeconds*1000);
+                stream.Connect(timeoutSeconds * 1000);
 
                 if (request != null)
                 {

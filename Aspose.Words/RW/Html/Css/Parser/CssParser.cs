@@ -674,9 +674,9 @@ namespace Aspose.Words.RW.Html.Css
                 return null;
             }
 
+            CssListRulePrelude listRulePrelude = new CssListRulePrelude(listDefName, listLevelName, lfoName);
             CssDeclarationCollection declarations = ConsumeDeclarationList(new CssListTokenSource(blockTokens), false);
-
-            return new CssListRule(listDefName, listLevelName, lfoName, declarations);
+            return new CssListRule(listRulePrelude, declarations);
         }
 
         private static CssPageSelector ParsePageSelector(CssTokenSource tokenSource)

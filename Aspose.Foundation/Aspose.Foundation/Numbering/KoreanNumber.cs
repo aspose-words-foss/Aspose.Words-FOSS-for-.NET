@@ -27,7 +27,7 @@ namespace Aspose.Numbering
             // from the set above, and that sequence of character is repeated the number of times the
             // size of the set was subtracted from the original value.
             // However, the Word does not repeat the digit, but just displays the single remainder digit.
-            int index = (int) ((value - 1) % 14);
+            int index = (int)((value - 1) % 14);
             return gGanadaDigits[index];
         }
 

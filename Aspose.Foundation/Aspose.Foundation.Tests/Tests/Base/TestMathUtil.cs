@@ -40,7 +40,7 @@ namespace Aspose.Tests.Base
             Assert.That(MathUtil.NormalizeZero(input).ToString("F1", CultureInfo.InvariantCulture), Is.EqualTo(formatted));
         }
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         // Starting with .NET Framework 4.5, the formatting of the number -0.0 is 
         // preserved when converting it to a string. In earlier versions, -0.0 was 
         // formatted as "0.0".

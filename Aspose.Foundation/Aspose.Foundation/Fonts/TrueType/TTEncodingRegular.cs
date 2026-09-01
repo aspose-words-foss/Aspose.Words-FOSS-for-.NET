@@ -14,12 +14,12 @@ namespace Aspose.Fonts.TrueType
         {
             mEncoding = encoding;
         }
-        
+
         public override string GetString(byte[] bytes)
         {
             return mEncoding.GetString(bytes);
         }
-        
+
         private readonly Encoding mEncoding;
     }
 }

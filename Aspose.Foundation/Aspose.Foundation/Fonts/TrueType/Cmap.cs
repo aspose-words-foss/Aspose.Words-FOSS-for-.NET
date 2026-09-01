@@ -165,7 +165,7 @@ namespace Aspose.Fonts.TrueType
             {
                 int charCode = CharMap.GetKey(i);
                 int glyphIndex = CharMap.GetByIndex(i);
-                if(glyphIndex >= 0  && glyphIndex < numGlyphs)
+                if (glyphIndex >= 0 && glyphIndex < numGlyphs)
                     result.AddCharCodeMapping(charCode, glyphIndex);
             }
 
@@ -200,7 +200,7 @@ namespace Aspose.Fonts.TrueType
             writer.WriteInt16(0);  // version
             writer.WriteInt16(subtables.Length);  // tableCount
 
-            int currentSubtabelOffset = 4 + 8*subtables.Length;
+            int currentSubtabelOffset = 4 + 8 * subtables.Length;
             for (int i = 0; i < subtables.Length; i++)
             {
                 // Write encoding table record.

@@ -36,7 +36,7 @@ namespace Aspose.Fonts.TrueType
             for (int i = 0; i < count; i++)
             {
                 TTFontNameRecord record = TTFontNameRecord.Read(reader, tableStart, stringStorageOffset);
-                if(record == null)
+                if (record == null)
                     continue;
 
                 switch (record.NameId)

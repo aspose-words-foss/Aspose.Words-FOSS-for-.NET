@@ -212,7 +212,7 @@ namespace Aspose.Numbering
 
         protected override string[] OrdinalFirst19
         {
-            get {throw new InvalidOperationException(); }
+            get { throw new InvalidOperationException(); }
         }
 
         protected override string[] CardinalFirst19

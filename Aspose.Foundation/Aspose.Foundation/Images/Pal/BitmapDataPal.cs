@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 13/12/2016 by Alexey Butalov
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
@@ -71,7 +71,7 @@ namespace Aspose.Images.Pal
         {
             i *= 4;
             mArgbData[i + 3] = a;
-            mArgbData[i + 2] = r;   
+            mArgbData[i + 2] = r;
             mArgbData[i + 1] = g;
             mArgbData[i + 0] = b;
         }

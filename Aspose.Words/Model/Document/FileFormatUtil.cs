@@ -370,7 +370,7 @@ namespace Aspose.Words
         internal static bool IsFixedFormat(SaveFormat saveFormat)
         {
             return saveFormat == SaveFormat.Pdf
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
                 || saveFormat == SaveFormat.WebP
 #endif
                 || saveFormat == SaveFormat.Emf
@@ -395,7 +395,7 @@ namespace Aspose.Words
         internal static bool IsImageFormat(SaveFormat saveFormat)
         {
             return saveFormat == SaveFormat.Emf
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
                 || saveFormat == SaveFormat.WebP
 #endif
                 || saveFormat == SaveFormat.Tiff
@@ -504,7 +504,7 @@ namespace Aspose.Words
             AddMap(FileFormat.Eps, SaveFormat.Eps, LoadFormat.Unknown, ImageType.Eps);
             AddMap(FileFormat.Xlsx, SaveFormat.Xlsx, LoadFormat.Unknown, ImageType.Unknown);
             AddMap(FileFormat.Docling, SaveFormat.Docling, LoadFormat.Unknown, ImageType.Unknown);
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
             AddMap(FileFormat.WebP, SaveFormat.WebP, LoadFormat.Unknown, ImageType.WebP);
 #endif
             AddMap(FileFormat.MsWorks, SaveFormat.Unknown, LoadFormat.MsWorks, ImageType.Unknown);

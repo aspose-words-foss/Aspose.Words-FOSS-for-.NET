@@ -2,7 +2,7 @@
 // 25/05/2011 by Alexey Titov
 
 using Aspose.IO;
-using NUnit.Framework; 
+using NUnit.Framework;
 
 namespace Aspose.Tests.Base
 {

@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -82,7 +82,8 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
 
         public override int GetAlpha(int pixel)
         {
-            if (!mSupportsAlpha) return 255;
+            if (!mSupportsAlpha)
+                return 255;
             int a = ((pixel & mMaskArray[3]) >> mMaskOffsets[3]);
             if (mScaleFactors[3] != 1.0f)
                 a = (int)(a * mScaleFactors[3] + 0.5f);
@@ -174,7 +175,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
 
             return c;
         }
-        
+
         private float[] GetDefaultRgbComponents(int pixel)
         {
             int[] components = GetComponents(pixel, null, 0);

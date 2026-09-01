@@ -56,10 +56,12 @@ namespace Aspose.TestFx.Pal
                 dataStream.Write(requestData, 0, requestData.Length);
             }
 
-            try { 
-            // response
-#if !CPLUSPLUS && !NETSTANDARD
-                if (!request.HaveResponse) return;
+            try
+            {
+                // response
+#if NETFRAMEWORK && !CPLUSPLUS
+                if (!request.HaveResponse)
+                    return;
 #endif
                 using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
                 {

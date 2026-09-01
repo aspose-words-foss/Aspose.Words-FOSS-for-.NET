@@ -53,7 +53,7 @@ namespace Aspose.Fonts.Sfnt
         /// </summary>
         public byte[] WriteFileToByteArray()
         {
-            using(MemoryStream stream = new MemoryStream())
+            using (MemoryStream stream = new MemoryStream())
             {
                 WriteFileToStream(stream);
                 return stream.ToArray();

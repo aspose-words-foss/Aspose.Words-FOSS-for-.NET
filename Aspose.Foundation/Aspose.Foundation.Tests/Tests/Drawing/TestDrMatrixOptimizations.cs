@@ -24,7 +24,7 @@ namespace Aspose.Tests.Drawing
     [TestFixture]
     public class TestDrMatrixOptimizations
     {
-#if !ANDROID && !NETSTANDARD
+#if NETFRAMEWORK && !ANDROID
         #region default (Prepend) order
 
         [Test]
@@ -181,7 +181,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestShearTranslate()
         {
@@ -203,7 +203,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestRotate()
         {
@@ -225,7 +225,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestRotateAt()
         {
@@ -406,7 +406,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestAppendShearTranslate()
         {
@@ -428,7 +428,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestAppendRotate()
         {
@@ -450,7 +450,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestAppendRotateAt()
         {
@@ -631,7 +631,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestPrependShearTranslate()
         {
@@ -653,7 +653,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestPrependRotate()
         {
@@ -675,7 +675,7 @@ namespace Aspose.Tests.Drawing
                 }
             }
         }
-        
+
         [Test]
         public void TestPrependRotateAt()
         {
@@ -735,7 +735,7 @@ namespace Aspose.Tests.Drawing
             }
         }
 
-        private static readonly string[] AllTypes = new string[] 
+        private static readonly string[] AllTypes = new string[]
         {
             "Identity",
             "Scale",

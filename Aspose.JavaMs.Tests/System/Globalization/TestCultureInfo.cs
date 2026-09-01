@@ -39,14 +39,12 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             Assert.That(CultureInfo.CreateSpecificCulture("xyz").DisplayName, Is.EqualTo("Invariant Language (Invariant Country)"));
         }
 
-#if NET40
         [Test]
         [ExpectedException(typeof(CultureNotFoundException))]
         public void TestCreateSpecificCultureRandomLongLanguage()
         {
             CultureInfo culture = CultureInfo.CreateSpecificCulture("abcd");
         }
-#endif
 
         [Test]
         public void TestCreateSpecificCulture()
@@ -102,14 +100,12 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             AssertRuRuCulture(CultureInfo.GetCultureInfo("ru-RU"));
         }
 
-#if NET40
         [Test]
         [ExpectedException(typeof(CultureNotFoundException))]
         public void TestGetCultureInfoByCultureNonExistingID()
         {
             CultureInfo.GetCultureInfo(70000);
         }
-#endif
 
         [Test]
         public void TestGetCultureInfoByCultureID()
@@ -138,14 +134,12 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             AssertRuRuCulture(new CultureInfo(1049));
         }
 
-#if NET40
         [Test]
         [ExpectedException(typeof(CultureNotFoundException))]
         public void TestCreateNewCultureInfoByCultureNonExistingID()
         {
             new CultureInfo(70000);
         }
-#endif
 
         private void AssertHiInCulture(CultureInfo candidate)
         {
@@ -248,7 +242,7 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             AssertCulture(candidate, 1034, "es-ES", "Spanish (Spain)", "Spanish (Spain, Traditional Sort)",
                 "español (España, alfabetización tradicional)", "es-ES", "spa", "ESP", "es");
         }
-        
+
         private void AssertCulture(int lcid, int ansiCodePage, string name, string displayName, string englishName, string nativeName, CultureInfo culture)
         {
             AssertCulture(lcid, ansiCodePage, name, displayName, englishName, nativeName, null, null, null, null, culture);
@@ -281,9 +275,9 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             Assert.That(culture.LCID, Is.EqualTo(lcid));
 
             string actual = string.Join(";", names);
-            
+
             string[] expectedArray = new string[] {
-                culture.Name, culture.DisplayName, culture.EnglishName, culture.NativeName, culture.IetfLanguageTag, 
+                culture.Name, culture.DisplayName, culture.EnglishName, culture.NativeName, culture.IetfLanguageTag,
                 culture.ThreeLetterISOLanguageName, culture.ThreeLetterWindowsLanguageName, culture.TwoLetterISOLanguageName
             };
             string expected = string.Join(";", expectedArray);

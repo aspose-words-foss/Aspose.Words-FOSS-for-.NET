@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Xml;
 using Aspose.Common;
@@ -35,8 +36,7 @@ namespace Aspose.Words.Tests.Model.Markup
     /// </summary>
     /// <remarks>
     /// 1. Additional tests related to roundtrip of Sdt are placed in the ImportDocx testing area here <see cref="TestImportDocxSdt"/>
-    /// 2. Tests containing UC abbreviation in summary relate to Approved Use-cases defined in Project Wiki at the address below
-    /// https://auckland.dynabic.com/wiki/display/orgArchive/SDT+Approved+Use+Cases+for+V1
+    /// 2. Tests containing UC abbreviation in summary relate to Approved Use-cases defined in the project wiki,
     /// they are marked as UC1:, UC2:, etc.
     /// </remarks>
     [TestFixture]

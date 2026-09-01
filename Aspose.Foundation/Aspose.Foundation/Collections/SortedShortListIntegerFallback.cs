@@ -9,7 +9,7 @@ namespace Aspose.Collections
     /// This is a copy of <see cref="SortedIntegerList" /> but short[] array is used for keys instead of int[] 
     /// to reduce memory consumption. Fallback is added for cases when we try to put the key that greater than 
     /// short.MaxValue: the keys are switched from short[] to int[].
-    /// See https://auckland.dynabic.com/jira/browse/WORDSJAVA-1184 and MailMergePerf.TimeMergeField()
+    /// See MailMergePerf.TimeMergeField().
     /// </summary>
     [System.Diagnostics.DebuggerStepThrough]
     public class SortedShortListIntegerFallback
@@ -104,12 +104,12 @@ namespace Aspose.Collections
 
         public int Capacity
         {
-            get 
+            get
             {
                 if (mValues == null)
                     return 0;
 
-                return mKeys != null ? mKeys.Length : mShortKeys.Length; 
+                return mKeys != null ? mKeys.Length : mShortKeys.Length;
             }
             set
             {
@@ -262,14 +262,16 @@ namespace Aspose.Collections
         private void EnsureCapacityInt(int min)
         {
             int newCapacity = mKeys.Length == 0 ? 16 : mKeys.Length * 2;
-            if (newCapacity < min) newCapacity = min;
+            if (newCapacity < min)
+                newCapacity = min;
             SetCapacityInt(newCapacity);
         }
 
         private void EnsureCapacityShort(int min)
         {
             int newCapacity = mShortKeys.Length == 0 ? 16 : mShortKeys.Length * 2;
-            if (newCapacity < min) newCapacity = min;
+            if (newCapacity < min)
+                newCapacity = min;
             SetCapacityShort(newCapacity);
         }
 
@@ -353,9 +355,9 @@ namespace Aspose.Collections
             if (mKeys != null)
                 ret = ArrayUtil.BinarySearch(mKeys, 0, mSize, key);
             else
-                ret = (key > short.MaxValue) ? -1 : ArrayUtil.BinarySearch(mShortKeys, 0, mSize, (short) key);
+                ret = (key > short.MaxValue) ? -1 : ArrayUtil.BinarySearch(mShortKeys, 0, mSize, (short)key);
 
-            return ret >=0 ? ret : -1;
+            return ret >= 0 ? ret : -1;
         }
 
         public virtual int IndexOfValue(Object value)
@@ -370,7 +372,8 @@ namespace Aspose.Collections
         {
             Init();
 
-            if (mSize == mKeys.Length) EnsureCapacityInt(mSize + 1);
+            if (mSize == mKeys.Length)
+                EnsureCapacityInt(mSize + 1);
             if (index < mSize)
             {
                 Array.Copy(mKeys, index, mKeys, index + 1, mSize - index);
@@ -385,7 +388,8 @@ namespace Aspose.Collections
         {
             Init();
 
-            if (mSize == mShortKeys.Length) EnsureCapacityShort(mSize + 1);
+            if (mSize == mShortKeys.Length)
+                EnsureCapacityShort(mSize + 1);
             if (index < mSize)
             {
                 Array.Copy(mShortKeys, index, mShortKeys, index + 1, mSize - index);

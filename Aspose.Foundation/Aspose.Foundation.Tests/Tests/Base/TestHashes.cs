@@ -13,7 +13,7 @@ namespace Aspose.Tests.Base
     [TestFixture]
     public class TestHashes
     {
-        
+
         [Test]
         public void TestSha1()
         {

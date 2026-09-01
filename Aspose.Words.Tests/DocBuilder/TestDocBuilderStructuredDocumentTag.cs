@@ -773,5 +773,45 @@ namespace Aspose.Words.Tests.DocBuilder
             StructuredDocumentTag sdt = doc.Range.StructuredDocumentTags[0] as StructuredDocumentTag;
             Assert.That(sdt.GetText(), Is.EqualTo("Click here to enter text.\rLorem ipsum dolor sit amet,\r pretium.\f"));
         }
+        /// <summary>
+        /// WORDSNET-29077 Unexpected DocumentBuilder behavior when moving inside SDT.
+        /// Improved "last paragraph of last SDT" condition.
+        /// </summary>
+        [Test]
+        public void Test29077()
+        {
+            Document doc = TestUtil.Open(@"Model\Markup\Test29077.docx");
+            DocumentBuilder builder = new DocumentBuilder(doc);
+
+            StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
+            sdt.RemoveAllChildren();
+
+            for (int i = 0; i < 3; i++)
+            {
+                Paragraph para = new Paragraph(doc);
+                para.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+                para.AppendChild(new Run(doc, "TOPIC " + i));
+                sdt.AppendChild(para);
+
+                para = new Paragraph(doc);
+                para.ParagraphFormat.Style = doc.Styles["Text"];
+                para.AppendChild(new Run(doc, "my description"));
+                sdt.AppendChild(para);
+
+                builder.MoveTo(para); // moves to end of Paragraph in content element
+                builder.Writeln();
+
+                for (int itemNo = 0; itemNo < 4; itemNo++)
+                {
+                    builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+                    builder.Writeln("Item " + itemNo);
+                    builder.ParagraphFormat.Style = doc.Styles["Text"];
+                    builder.Writeln("Item description");
+                }
+            }
+
+            Assert.That(sdt.GetChildNodes(NodeType.Any, false).Count, Is.EqualTo(33));
+            Assert.That(sdt.GetText(), Does.EndWith("Item 3\rItem description\r\r"));
+        }
     }
 }

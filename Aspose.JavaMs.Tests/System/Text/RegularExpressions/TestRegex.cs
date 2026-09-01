@@ -50,7 +50,8 @@ namespace Aspose.JavaMs.Tests.System.Text.RegularExpressions
             Assert.That("", Is.EqualTo(Regex.Escape("")));
         }
 
-        [Test][ExpectedException(typeof(ArgumentNullException))] 
+        [Test]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void TestRegexEscapeNull()
         {
             Assert.That("", Is.EqualTo(Regex.Escape(null)));
@@ -71,7 +72,7 @@ namespace Aspose.JavaMs.Tests.System.Text.RegularExpressions
         {
             string regexStr = "\\w+";
             string input = "Лозунг";
-            
+
             Regex regex = new Regex(regexStr);
             Match match = regex.Match(input);
             string value = match.Value;

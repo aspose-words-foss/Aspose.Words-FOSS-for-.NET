@@ -174,7 +174,7 @@ namespace Aspose.Tests.Collections.Auto
         {
             StringToCharDictionary dictionary = new StringToCharDictionary();
             dictionary.Add(gFirstKey, gFirstValue);
-            
+
             StringToCharDictionary.Enumerator enumerator = dictionary.GetEnumerator();
             bool isMoved = enumerator.MoveNext();
             Assert.That(isMoved, Is.True);

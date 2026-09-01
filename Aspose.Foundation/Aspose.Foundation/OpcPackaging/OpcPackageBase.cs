@@ -32,7 +32,7 @@ namespace Aspose.OpcPackaging
         /// Load relationship data from package.
         /// </summary>
         internal void LoadRelationships()
-        {           
+        {
             // WORDSNET-13471 Resilience fix to avoid exception upon loading when original part in package
             // is missing while relationship part exists.            
             foreach (OpcPackagePart part in mParts)
@@ -51,9 +51,9 @@ namespace Aspose.OpcPackaging
                 // Some created parts have only folder path in the name and do not contain data. 
                 // As example check test "TestDmlTextBox.TestDmlListsBulletFont".
                 else if (StringUtil.HasChars(oPartName))
-                {                   
+                {
                     // Append "/_rels" and ".rels" and we end up with the name of the relationship part.
-                    string rPartName = part.Name.Replace(oPartName, gRelPathR + oPartName + gRelExtF); 
+                    string rPartName = part.Name.Replace(oPartName, gRelPathR + oPartName + gRelExtF);
 
                     if (mParts.Contains(rPartName))
                     {
@@ -61,7 +61,7 @@ namespace Aspose.OpcPackaging
                         ReadRelationships(rPart, part.Rels);
                     }
                 }
-            }            
+            }
         }
 
         /// <summary>
@@ -77,45 +77,45 @@ namespace Aspose.OpcPackaging
                 switch (partReader.LocalName)
                 {
                     case "Relationship":
-                        {
-                            // Example:
-                            //   <Relationship Id="rId1" Type="http://.../attachedTemplate" Target="file:///C:\...\template1.dot" TargetMode="External"/>
-                            string id = null;
-                            string type = null;
-                            string target = null;
-                            bool isExternal = false;
+                    {
+                        // Example:
+                        //   <Relationship Id="rId1" Type="http://.../attachedTemplate" Target="file:///C:\...\template1.dot" TargetMode="External"/>
+                        string id = null;
+                        string type = null;
+                        string target = null;
+                        bool isExternal = false;
 
-                            while (partReader.MoveToNextAttribute())
-                            {
-                                switch (partReader.LocalName)
-                                {
-                                    case "Id":
-                                        id = partReader.Value;
-                                        break;
-                                    case "Type":
-                                        type = partReader.Value;
-                                        break;
-                                    case "Target":
-                                        target = partReader.Value;
-                                        break;
-                                    case "TargetMode":
-                                        isExternal = (partReader.Value == "External");
-                                        break;
-                                    default:
-                                        // Ignore.
-                                        break;
-                                }
-                            }
-                            // WORDSNET-9113 Ignore relationships with an empty target.
-                            if (StringUtil.HasChars(target))
-                                rels.Add(id, type, target, isExternal);
-                            break;
-                        }
-                    default:
+                        while (partReader.MoveToNextAttribute())
                         {
-                            partReader.IgnoreElement();
-                            break;
+                            switch (partReader.LocalName)
+                            {
+                                case "Id":
+                                    id = partReader.Value;
+                                    break;
+                                case "Type":
+                                    type = partReader.Value;
+                                    break;
+                                case "Target":
+                                    target = partReader.Value;
+                                    break;
+                                case "TargetMode":
+                                    isExternal = (partReader.Value == "External");
+                                    break;
+                                default:
+                                    // Ignore.
+                                    break;
+                            }
                         }
+                        // WORDSNET-9113 Ignore relationships with an empty target.
+                        if (StringUtil.HasChars(target))
+                            rels.Add(id, type, target, isExternal);
+                        break;
+                    }
+                    default:
+                    {
+                        partReader.IgnoreElement();
+                        break;
+                    }
                 }
             }
         }
@@ -359,6 +359,6 @@ namespace Aspose.OpcPackaging
         private const string StepUpSegment = "../";
         private static readonly string gRelExtF = string.Format(".{0}", RelExt);
         private static readonly string gRelPathL = string.Format("{0}_{1}", RootPartName, RelExt);
-        private static readonly string gRelPathR = string.Format("_{0}{1}", RelExt, RootPartName); 
+        private static readonly string gRelPathR = string.Format("_{0}{1}", RelExt, RootPartName);
     }
 }

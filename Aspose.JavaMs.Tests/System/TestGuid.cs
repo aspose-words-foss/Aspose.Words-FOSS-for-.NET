@@ -38,7 +38,7 @@ namespace Aspose.JavaMs.Tests.System
             }
         }
 
-        [Test, ExpectedException(typeof (ArgumentNullException))]
+        [Test, ExpectedException(typeof(ArgumentNullException))]
         public void TestCtorByteArr1()
         {
             byte[] bytes = null;
@@ -46,7 +46,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(guid, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (ArgumentException))]
+        [Test, ExpectedException(typeof(ArgumentException))]
         public void TestCtorByteArr2()
         {
             byte[] bytes = new byte[0];
@@ -54,7 +54,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(guid, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (ArgumentException))]
+        [Test, ExpectedException(typeof(ArgumentException))]
         public void TestCtorByteArr3()
         {
             byte[] bytes = new byte[177];
@@ -148,7 +148,7 @@ namespace Aspose.JavaMs.Tests.System
 
             guid = new Guid(10, 11, 12, (int)0, (int)1, (int)2, (int)3, (int)4, (int)5, (int)6, (int)7);
             Assert.That("0000000a-000b-000c-0001-020304050607", Is.EqualTo(guid.ToString()));
-            
+
             guid = new Guid(0, 0, 0, (int)0, (int)0, (int)0, (int)0, (int)0, (int)0, (int)0, (int)0);
             Assert.That("00000000-0000-0000-0000-000000000000", Is.EqualTo(guid.ToString()));
 
@@ -205,8 +205,8 @@ namespace Aspose.JavaMs.Tests.System
                 j = (short)rand.Next(byteMaxValue);
                 k = (short)rand.Next(byteMaxValue);
                 gTest = new Guid((uint)a, (ushort)b, (ushort)c, (byte)d, (byte)e, (byte)f, (byte)g, (byte)h, (byte)i, (byte)j, (byte)k);
-                string expected = FormatterPal.Int64ToStrX8(a) + "-" + 
-                                  FormatterPal.IntToStrX8(b).Substring(4) + "-" + 
+                string expected = FormatterPal.Int64ToStrX8(a) + "-" +
+                                  FormatterPal.IntToStrX8(b).Substring(4) + "-" +
                                   FormatterPal.IntToStrX8(c).Substring(4) + "-" +
                                   FormatterPal.IntToStrX8(d).Substring(6) +
                                   FormatterPal.IntToStrX8(e).Substring(6) + "-" +
@@ -237,77 +237,77 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(0x41D47C9, Is.EqualTo(guid2.GetHashCode()));
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString2()
         {
             Guid guid2 = new Guid("123456Ab 1629-11d2-8879-00c04fb990b0");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString3()
         {
             Guid guid2 = new Guid("123456A-1629-11d2-8879-00c04fb990b0");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString4()
         {
             Guid guid2 = new Guid("123456Az-1629-11d2-8879-00c04fb990b0");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString5()
         {
             Guid guid2 = new Guid("123456123445");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString6()
         {
             Guid guid2 = new Guid("{00000000-0000-0000-0000-000000000000");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString7()
         {
             Guid guid2 = new Guid("{00000000-0000-0000-0000-000000000000}0");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString8()
         {
             Guid guid2 = new Guid("00000000-0000-0000-0000-0000000000000");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString9()
         {
             Guid guid2 = new Guid("0000000-00000-0000-0000-000000000000");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString10()
         {
             Guid guid2 = new Guid("00000000-00000-000-0000-000000000000");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString11()
         {
             Guid guid2 = new Guid("00000000-0000-00000-000-000000000000");
             Assert.That(guid2, IsNot.Null()); // Just a stub to prevent an unused variable hint.
         }
 
-        [Test, ExpectedException(typeof (FormatException))]
+        [Test, ExpectedException(typeof(FormatException))]
         public void TestCtorString12()
         {
             Guid guid2 = new Guid("00000000-0000-0000-0000-00L000000000");
@@ -343,7 +343,7 @@ namespace Aspose.JavaMs.Tests.System
         public void TestToString1()
         {
             Guid guid = new Guid("a4434021-80db-4b65-aadd-f138e53e0e07");
-            string[] formats = {"d", "D", "n", "N", "p", "P", "b", "B"};
+            string[] formats = { "d", "D", "n", "N", "p", "P", "b", "B" };
 
             foreach (string format in formats)
             {
@@ -384,7 +384,7 @@ namespace Aspose.JavaMs.Tests.System
         public void TestToString2()
         {
             Guid emptyGuid = Guid.Empty;
-            string[] formats = {"d", "D", "n", "N", "p", "P", "b", "B"};
+            string[] formats = { "d", "D", "n", "N", "p", "P", "b", "B" };
 
             foreach (string format in formats)
             {
@@ -426,7 +426,7 @@ namespace Aspose.JavaMs.Tests.System
         {
             Guid guid1 = Guid.Empty;
             string retValue;
-            string[] formats = {"d", "D", "n", "N", "p", "P", "b", "B"};
+            string[] formats = { "d", "D", "n", "N", "p", "P", "b", "B" };
 
             foreach (string format in formats)
             {
@@ -467,7 +467,7 @@ namespace Aspose.JavaMs.Tests.System
         public void TestToString4()
         {
             Guid guid1 = Guid.NewGuid();
-            string[] exceptionFormats = { "g", "G", "c", "C", "e", "E", "#", "0", "####.####", "000.000", "%###", "##E+0", "{{"};
+            string[] exceptionFormats = { "g", "G", "c", "C", "e", "E", "#", "0", "####.####", "000.000", "%###", "##E+0", "{{" };
 
             foreach (string exp in exceptionFormats)
             {
@@ -489,7 +489,7 @@ namespace Aspose.JavaMs.Tests.System
         {
             byte[] bytes = new byte[16];
             for (int i = 0; i < bytes.Length; i++)
-                bytes[i] = (byte) i;
+                bytes[i] = (byte)i;
 
             Guid guid1 = new Guid(bytes);
             Guid guid2 = new Guid(bytes);
@@ -499,7 +499,7 @@ namespace Aspose.JavaMs.Tests.System
 
             bytes = new byte[16];
             for (int i = 0, j = 16; i < bytes.Length; i++, j--)
-                bytes[i] = (byte) j;
+                bytes[i] = (byte)j;
 
             guid2 = new Guid(bytes);
             Assert.That(guid1.CompareTo(guid2) < 0, Is.True);

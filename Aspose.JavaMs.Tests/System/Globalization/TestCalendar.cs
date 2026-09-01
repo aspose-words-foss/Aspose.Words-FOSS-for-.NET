@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace Aspose.JavaMs.Tests.System.Globalization
 {
     [TestFixture]
-    public class TestCalendar 
+    public class TestCalendar
     {
 
         [Test, Ignore("TestEras")]
@@ -33,7 +33,7 @@ namespace Aspose.JavaMs.Tests.System.Globalization
             GregorianCalendar gregorianCalendar = new GregorianCalendar();
             int[] ints = gregorianCalendar.Eras;
 
-            DateTimeFormatInfo dateTimeFormatInfo = new DateTimeFormatInfo(); 
+            DateTimeFormatInfo dateTimeFormatInfo = new DateTimeFormatInfo();
         }
     }
 }

@@ -75,11 +75,11 @@ namespace Aspose.Words.Tests.Unified
             Assert.That(odso.FirstRowContainsColumnNames, Is.EqualTo(true));
             Assert.That(odso.TableName, Is.EqualTo("Contacts"));
 
-             // This cuts to the "common size" and converts "OLK58DD.tmp" to "OLK.tmp" so it can always compare ok.
+            // This cuts to the "common size" and converts "OLK58DD.tmp" to "OLK.tmp" so it can always compare ok.
             string udl = odso.UdlConnectString.Substring(0, 255).Remove(224, 4);
             Assert.That(//                "Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=\"\";Jet OLEDB:" + 
-//                "Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;" +
-//                "Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False;Jet OLEDB:Support Complex Data=False",
+                        //                "Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;" +
+                        //                "Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False;Jet OLEDB:Support Complex Data=False",
                 udl, Is.EqualTo("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=\"\";Mode=Share Deny None;Extended " +
                 "Properties=\"Outlook 9.0;MAPILEVEL=Personal Folders|;TABLETYPE=0;DATABASE=C:\\Users\\romeok\\AppData" +
                 "\\Local\\Temp\\OfficeMMergeTempDir\\OLK.tmp;COLSETVERSION=12.0\";Je"));
@@ -111,7 +111,7 @@ namespace Aspose.Words.Tests.Unified
             OdsoRecipientData recipient = recipientDatas[0];
             Assert.That(recipient.Active, Is.EqualTo(true));
             Assert.That(recipient.Column, Is.EqualTo(62));
-            Assert.That(ArrayUtil.CompareBytes(new byte[] {0x56, 0x2e, 0x9f, 0x0b}, recipient.UniqueTag, 4), Is.True);
+            Assert.That(ArrayUtil.CompareBytes(new byte[] { 0x56, 0x2e, 0x9f, 0x0b }, recipient.UniqueTag, 4), Is.True);
 
             // Check an inactive recipient.
             recipient = recipientDatas[2];

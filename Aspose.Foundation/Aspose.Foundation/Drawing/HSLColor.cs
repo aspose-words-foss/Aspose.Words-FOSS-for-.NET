@@ -44,13 +44,13 @@ namespace Aspose.Drawing
             {
                 double d = max - min;
                 mSat = (mLum > 0.5) ? d / (2.0 - max - min) : d / (max + min);
-                
+
                 if (r == max)
-                    mHue = (g - b)/d + (g < b ? 6 : 0);
+                    mHue = (g - b) / d + (g < b ? 6 : 0);
                 else if (g == max)
-                    mHue = (b - r)/d + 2;
+                    mHue = (b - r) / d + 2;
                 else if (b == max)
-                    mHue = (r - g)/d + 4;
+                    mHue = (r - g) / d + 4;
             }
             mHue /= 6.0;
         }
@@ -77,36 +77,36 @@ namespace Aspose.Drawing
             int cMax = Math.Max(Math.Max(r, g), b);
             int cMin = Math.Min(Math.Min(r, g), b);
 
-            l = ( ((cMax+cMin)*HslMax) + RgbMax )/(2*RgbMax);
+            l = (((cMax + cMin) * HslMax) + RgbMax) / (2 * RgbMax);
 
-            if (cMax == cMin) 
-            {           
+            if (cMax == cMin)
+            {
                 // r=g=b --> achromatic case
 
                 s = 0;                     // saturation
                 h = UndefinedHue;          // hue
             }
-            else 
-            {   
+            else
+            {
                 // chromatic case
-                
+
                 // saturation
-                if (l <= (HslMax/2))
-                    s = (((cMax-cMin)*HslMax) + ((cMax+cMin)/2)) / (cMax+cMin);
+                if (l <= (HslMax / 2))
+                    s = (((cMax - cMin) * HslMax) + ((cMax + cMin) / 2)) / (cMax + cMin);
                 else
-                    s = (((cMax-cMin)*HslMax) + ((2*RgbMax-cMax-cMin)/2)) / (2*RgbMax-cMax-cMin);
+                    s = (((cMax - cMin) * HslMax) + ((2 * RgbMax - cMax - cMin) / 2)) / (2 * RgbMax - cMax - cMin);
 
                 // hue
-                int deltaR = (((cMax-r)*(HslMax/6)) + ((cMax-cMin)/2)) / (cMax-cMin);
-                int deltaG = (((cMax-g)*(HslMax/6)) + ((cMax-cMin)/2)) / (cMax-cMin);
-                int deltaB = (((cMax-b)*(HslMax/6)) + ((cMax-cMin)/2)) / (cMax-cMin);
+                int deltaR = (((cMax - r) * (HslMax / 6)) + ((cMax - cMin) / 2)) / (cMax - cMin);
+                int deltaG = (((cMax - g) * (HslMax / 6)) + ((cMax - cMin) / 2)) / (cMax - cMin);
+                int deltaB = (((cMax - b) * (HslMax / 6)) + ((cMax - cMin) / 2)) / (cMax - cMin);
 
                 if (r == cMax)
                     h = deltaB - deltaG;
                 else if (g == cMax)
-                    h = (HslMax/3) + deltaR - deltaB;
+                    h = (HslMax / 3) + deltaR - deltaB;
                 else // B == cMax
-                    h = ((2*HslMax)/3) + deltaG - deltaR;
+                    h = ((2 * HslMax) / 3) + deltaG - deltaR;
 
                 if (h < 0)
                     h += HslMax;
@@ -120,7 +120,7 @@ namespace Aspose.Drawing
 
         public DrColor ToDrColor()
         {
-            return ToDrColor(Hue,Sat,Lum);
+            return ToDrColor(Hue, Sat, Lum);
         }
 
         /// <summary>
@@ -161,6 +161,39 @@ namespace Aspose.Drawing
             }
 
             return DrColor.FromArgb((int)(255 * r), (int)(255 * g), (int)(255 * b));
+        }
+
+        /// <summary>
+        /// HSL based color difference. 
+        /// </summary>
+        /// <remarks>
+        /// AM. After some experiments I found that HSL model gives more exactly color matching results. 
+        /// </remarks>
+        public static double ColorDiff(int colorA, int colorB)
+        {
+            int ar = (colorA & 0x000000FF);
+            int ag = ((colorA & 0x0000FF00) >> 8);
+            int ab = ((colorA & 0x00FF0000) >> 16);
+
+            int br = (colorB & 0x000000FF);
+            int bg = ((colorB & 0x0000FF00) >> 8);
+            int bb = ((colorB & 0x00FF0000) >> 16);
+
+            HSLColor hsla = new HSLColor(DrColor.FromArgb(ar, ag, ab));
+            HSLColor hslb = new HSLColor(DrColor.FromArgb(br, bg, bb));
+
+            double diff = System.Math.Abs(hsla.Sat - hslb.Sat) + System.Math.Abs(hsla.Lum - hslb.Lum);
+
+            // Hue is undefined for achromatic color so skip component from calculation.
+            if (!(IsAchromatic(ar, ag, ab) || IsAchromatic(br, bg, bb)))
+                diff += System.Math.Abs(hsla.Hue - hslb.Hue);
+
+            return diff;
+        }
+
+        private static bool IsAchromatic(int r, int g, int b)
+        {
+            return (r == g) && (g == b);
         }
 
         /// <summary>

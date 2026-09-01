@@ -62,63 +62,63 @@ namespace Aspose.Zip
 
         #region public properties
 
-            /// <summary>
-            /// Indicates whether to perform a full scan of the zip file when reading it. 
-            /// </summary>
-            ///
-            /// <remarks>
-            ///
-            /// <para>
-            /// When reading a zip file, if this flag is <c>true</c> (<c>True</c> in
-            /// VB), the entire zip archive will be scanned and searched for entries.
-            /// For large archives, this can take a very, long time. The much more
-            /// efficient default behavior is to read the zip directory, at the end of
-            /// the zip file. However, in some cases the directory is corrupted and it
-            /// is desirable to perform a full scan of the zip file to determine the
-            /// contents of the zip file.
-            /// </para>
-            ///
-            /// <para>
-            /// If you want to track progress, you can set the ReadProgress event. 
-            /// </para>
-            ///
-            /// <para>
-            /// This flag is effective only when calling Initialize.  The Initialize
-            /// method may take a long time to run for large zip files, when
-            /// <c>Fullscan</c> is true.
-            /// </para>
-            ///
-            /// </remarks>
-            ///
-            /// <example>
-            /// This example shows how to read a zip file using the full scan approach,
-            /// and then save it, thereby producing a corrected zip file. 
-            /// <code lang="C#">
-            /// using (var zip = new ZipFile())
-            /// {
-            ///     zip.FullScan = true;
-            ///     zip.Initialize(zipFileName);
-            ///     zip.Save(newName);
-            /// }
-            /// </code>
-            ///
-            /// <code lang="VB">
-            /// Using zip As New ZipFile
-            ///     zip.FullScan = True
-            ///     zip.Initialize(zipFileName)
-            ///     zip.Save(newName)
-            /// End Using
-            /// </code>
-            /// </example>
-            ///
-            public bool FullScan
+        /// <summary>
+        /// Indicates whether to perform a full scan of the zip file when reading it. 
+        /// </summary>
+        ///
+        /// <remarks>
+        ///
+        /// <para>
+        /// When reading a zip file, if this flag is <c>true</c> (<c>True</c> in
+        /// VB), the entire zip archive will be scanned and searched for entries.
+        /// For large archives, this can take a very, long time. The much more
+        /// efficient default behavior is to read the zip directory, at the end of
+        /// the zip file. However, in some cases the directory is corrupted and it
+        /// is desirable to perform a full scan of the zip file to determine the
+        /// contents of the zip file.
+        /// </para>
+        ///
+        /// <para>
+        /// If you want to track progress, you can set the ReadProgress event. 
+        /// </para>
+        ///
+        /// <para>
+        /// This flag is effective only when calling Initialize.  The Initialize
+        /// method may take a long time to run for large zip files, when
+        /// <c>Fullscan</c> is true.
+        /// </para>
+        ///
+        /// </remarks>
+        ///
+        /// <example>
+        /// This example shows how to read a zip file using the full scan approach,
+        /// and then save it, thereby producing a corrected zip file. 
+        /// <code lang="C#">
+        /// using (var zip = new ZipFile())
+        /// {
+        ///     zip.FullScan = true;
+        ///     zip.Initialize(zipFileName);
+        ///     zip.Save(newName);
+        /// }
+        /// </code>
+        ///
+        /// <code lang="VB">
+        /// Using zip As New ZipFile
+        ///     zip.FullScan = True
+        ///     zip.Initialize(zipFileName)
+        ///     zip.Save(newName)
+        /// End Using
+        /// </code>
+        /// </example>
+        ///
+        public bool FullScan
         {
             get { return _FullScan; }
             set { _FullScan = value; }
         }
 
         private bool _FullScan;
-        
+
         /// <summary>
         /// Size of the IO buffer used while saving.
         /// </summary>
@@ -172,7 +172,7 @@ namespace Aspose.Zip
         /// }
         /// </code>
         /// </example>
-        
+
         public int BufferSize
         {
             get { return _BufferSize; }
@@ -201,7 +201,7 @@ namespace Aspose.Zip
         }
 
         private bool _FlattenFoldersOnExtract;
-    
+
         /// <summary>
         /// The compression strategy to use for all entries.
         /// </summary>
@@ -420,7 +420,7 @@ namespace Aspose.Zip
             }
             set
             {
-                _emitNtfsTimes= value;
+                _emitNtfsTimes = value;
             }
         }
 
@@ -495,13 +495,13 @@ namespace Aspose.Zip
             }
             set
             {
-                _emitUnixTimes= value;
+                _emitUnixTimes = value;
             }
         }
 
 
-                
-        #if LEGACY
+
+#if LEGACY
         /// <summary>
             /// When this is set, any volume name (eg C:) is trimmed 
             /// from fully-qualified pathnames on any ZipEntry, before writing the 
@@ -526,7 +526,7 @@ namespace Aspose.Zip
                 get { return _TrimVolumeFromFullyQualifiedPaths; }
                 set { _TrimVolumeFromFullyQualifiedPaths = value; }
             }
-        #endif
+#endif
 
         /// <summary>
         /// Indicates whether verbose output is sent to the StatusMessageTextWriter during
@@ -851,12 +851,14 @@ namespace Aspose.Zip
 
                 // If the <c>ZipFile</c> has not been saved or if the contents have changed, then
                 // it is not known if ZIP64 is required.
-                if (!_hasBeenSaved || _contentsChanged) return NullableBool.NotDefined;
+                if (!_hasBeenSaved || _contentsChanged)
+                    return NullableBool.NotDefined;
 
                 // Whether ZIP64 is required is knowable.
                 foreach (ZipEntry e in _entries)
                 {
-                    if (e.RequiresZip64 == NullableBool.True) return NullableBool.True;
+                    if (e.RequiresZip64 == NullableBool.True)
+                        return NullableBool.True;
                 }
 
                 return NullableBool.False;
@@ -1213,7 +1215,8 @@ namespace Aspose.Zip
             set
             {
                 _TempFileFolder = value;
-                if (value == null) return;
+                if (value == null)
+                    return;
 
                 if (!Directory.Exists(value))
                     throw new FileNotFoundException(String.Format("That directory ({0}) does not exist.", value));
@@ -1544,7 +1547,7 @@ namespace Aspose.Zip
             {
                 if (value == EncryptionAlgorithm.Unsupported)
                     throw new InvalidOperationException("You may not set Encryption to that value.");
-                _Encryption= value;
+                _Encryption = value;
             }
         }
 
@@ -1737,10 +1740,10 @@ namespace Aspose.Zip
         /// <returns>a string representation of the instance.</returns>
         public override String ToString()
         {
-            return String.Format ("ZipFile/{0}", Name);
+            return String.Format("ZipFile/{0}", Name);
         }
 
-        
+
 
         /// <summary>
         /// Returns the version number on the DotNetZip assembly.
@@ -2313,7 +2316,7 @@ namespace Aspose.Zip
             // workitem 6402
             get
             {
-                return (ZipEntry) _entries[ix];
+                return (ZipEntry)_entries[ix];
             }
 
             set
@@ -2321,7 +2324,7 @@ namespace Aspose.Zip
                 if (value != null)
                     throw new ZipException("You may not set this to a non-null ZipEntry value.",
                                            new ArgumentException("this[int]"));
-                RemoveEntry((ZipEntry) _entries[ix]);
+                RemoveEntry((ZipEntry)_entries[ix]);
             }
         }
 
@@ -2414,39 +2417,51 @@ namespace Aspose.Zip
                     if (CaseSensitiveRetrieval)
                     {
                         // check for the file match with a case-sensitive comparison.
-                        if (e.FileName == fileName) return e;
+                        if (e.FileName == fileName)
+                            return e;
                         // also check for equivalence
-                        if (fileName.Replace("\\", "/") == e.FileName) return e;
-                        if (e.FileName.Replace("\\", "/") == fileName) return e;
+                        if (fileName.Replace("\\", "/") == e.FileName)
+                            return e;
+                        if (e.FileName.Replace("\\", "/") == fileName)
+                            return e;
 
                         // check for a difference only in trailing slash
                         if (e.FileName.EndsWith("/", StringComparison.Ordinal))
                         {
                             string fileNameNoSlash = e.FileName.Trim("/".ToCharArray());
-                            if (fileNameNoSlash == fileName) return e;
+                            if (fileNameNoSlash == fileName)
+                                return e;
                             // also check for equivalence
-                            if (fileName.Replace("\\", "/") == fileNameNoSlash) return e;
-                            if (fileNameNoSlash.Replace("\\", "/") == fileName) return e;
+                            if (fileName.Replace("\\", "/") == fileNameNoSlash)
+                                return e;
+                            if (fileNameNoSlash.Replace("\\", "/") == fileName)
+                                return e;
                         }
 
                     }
                     else
                     {
                         // check for the file match in a case-insensitive manner.
-                        if (StringUtil.EqualsIgnoreCase(e.FileName, fileName)) return e;
+                        if (StringUtil.EqualsIgnoreCase(e.FileName, fileName))
+                            return e;
                         // also check for equivalence
-                        if (StringUtil.EqualsIgnoreCase(fileName.Replace("\\", "/"), e.FileName)) return e;
-                        if (StringUtil.EqualsIgnoreCase(e.FileName.Replace("\\", "/"), fileName)) return e;
+                        if (StringUtil.EqualsIgnoreCase(fileName.Replace("\\", "/"), e.FileName))
+                            return e;
+                        if (StringUtil.EqualsIgnoreCase(e.FileName.Replace("\\", "/"), fileName))
+                            return e;
 
                         // check for a difference only in trailing slash
                         if (e.FileName.EndsWith("/", StringComparison.Ordinal))
                         {
                             string fileNameNoSlash = e.FileName.Trim("/".ToCharArray());
 
-                            if (StringUtil.EqualsIgnoreCase(fileNameNoSlash, fileName)) return e;
+                            if (StringUtil.EqualsIgnoreCase(fileNameNoSlash, fileName))
+                                return e;
                             // also check for equivalence
-                            if (StringUtil.EqualsIgnoreCase(fileName.Replace("\\", "/"), fileNameNoSlash)) return e;
-                            if (StringUtil.EqualsIgnoreCase(fileNameNoSlash.Replace("\\", "/"), fileName)) return e;
+                            if (StringUtil.EqualsIgnoreCase(fileName.Replace("\\", "/"), fileNameNoSlash))
+                                return e;
+                            if (StringUtil.EqualsIgnoreCase(fileNameNoSlash.Replace("\\", "/"), fileName))
+                                return e;
 
                         }
 
@@ -2646,30 +2661,8 @@ namespace Aspose.Zip
                 throw new ArgumentException("The entry you specified does not exist in the zip archive.");
 
             _entries.Remove(entry);
-
-#if NOTNEEDED
-            if (_direntries != null)
-            {
-                bool FoundAndRemovedDirEntry = false;
-                foreach (ZipDirEntry de1 in _direntries)
-                {
-                    if (entry.FileName == de1.FileName)
-                    {
-                        _direntries.Remove(de1);
-                        FoundAndRemovedDirEntry = true;
-                        break;
-                    }
-                }
-
-                if (!FoundAndRemovedDirEntry)
-                    throw new BadStateException("The entry to be removed was not found in the directory.");
-            }
-#endif
             _contentsChanged = true;
         }
-
-
-
 
         /// <summary>
         /// Removes the <c>ZipEntry</c> with the given filename from the zip archive.  
@@ -2890,7 +2883,7 @@ namespace Aspose.Zip
         private bool _emitNtfsTimes = true;
         private bool _emitUnixTimes;
         private Aspose.Zip.CompressionStrategy _Strategy = CompressionStrategy.Default;
-        private long _originPosition; 
+        private long _originPosition;
         private bool _fileAlreadyExists;
         private string _temporaryFileName;
         private bool _contentsChanged;
@@ -2909,7 +2902,7 @@ namespace Aspose.Zip
         private System.Text.Encoding _provisionalAlternateEncoding = System.Text.Encoding.GetEncoding("IBM437"); // default = IBM437
 
         private int _BufferSize = 8192;
-        
+
         internal Zip64Option _zip64 = Zip64Option.Default;
 
         #endregion
@@ -3083,7 +3076,7 @@ namespace Aspose.Zip
         {
             if (File.Exists(fileOrDirectoryName))
                 return AddFile(fileOrDirectoryName, directoryPathInArchive);
-            
+
             if (Directory.Exists(fileOrDirectoryName))
                 return AddDirectory(fileOrDirectoryName, directoryPathInArchive);
 
@@ -3290,7 +3283,8 @@ namespace Aspose.Zip
             ze.Password = _Password;
             ze.EmitTimesInWindowsFormatWhenSaving = _emitNtfsTimes;
             ze.EmitTimesInUnixFormatWhenSaving = _emitUnixTimes;
-            if (Verbose) StatusMessageTextWriter.WriteLine("adding {0}...", fileName);
+            if (Verbose)
+                StatusMessageTextWriter.WriteLine("adding {0}...", fileName);
             InsureUniqueEntry(ze);
             _entries.Add(ze);
             AfterAddEntry(ze);
@@ -4105,7 +4099,8 @@ namespace Aspose.Zip
             ze.Password = _Password;
             ze.EmitTimesInWindowsFormatWhenSaving = _emitNtfsTimes;
             ze.EmitTimesInUnixFormatWhenSaving = _emitUnixTimes;
-            if (Verbose) StatusMessageTextWriter.WriteLine("adding {0}...", fileName);
+            if (Verbose)
+                StatusMessageTextWriter.WriteLine("adding {0}...", fileName);
             InsureUniqueEntry(ze);
             _entries.Add(ze);
             AfterAddEntry(ze);
@@ -4267,12 +4262,13 @@ namespace Aspose.Zip
         /// <returns>The <c>ZipEntry</c> added.</returns>
         public ZipEntry AddEntry(string fileName, string directoryPathInArchive, byte[] byteContent)
         {
-            if (byteContent == null) throw new ArgumentException("bad argument", "byteContent");
+            if (byteContent == null)
+                throw new ArgumentException("bad argument", "byteContent");
             MemoryStream ms = new MemoryStream(byteContent);
             return AddEntry(fileName, directoryPathInArchive, ms);
         }
 
-        
+
         /// <summary>
         /// Updates the given entry in the <c>ZipFile</c>, using the given byte array as
         /// content for the entry.
@@ -4310,7 +4306,7 @@ namespace Aspose.Zip
             return AddEntry(fileName, directoryPathInArchive, byteContent);
         }
 
-        
+
         private void InsureUniqueEntry(ZipEntry ze1)
         {
             foreach (ZipEntry ze2 in _entries)
@@ -4496,12 +4492,13 @@ namespace Aspose.Zip
 
         private ZipEntry AddOrUpdateDirectoryImpl(string directoryName, string rootDirectoryPathInArchive, AddOrUpdateAction action, int level)
         {
-            if (Verbose) StatusMessageTextWriter.WriteLine("{0} {1}...",
+            if (Verbose)
+                StatusMessageTextWriter.WriteLine("{0} {1}...",
                                                            (action == AddOrUpdateAction.AddOnly) ? "adding" : "Adding or updating", directoryName);
 
             if (level == 0)
                 OnAddStarted();
-            
+
             string dirForEntries = rootDirectoryPathInArchive;
             ZipEntry baseDir = null;
 
@@ -4554,11 +4551,11 @@ namespace Aspose.Zip
 
             if (level == 0)
                 OnAddCompleted();
-            
+
             return baseDir;
         }
 
-#endregion
+        #endregion
 
         #region Check
 
@@ -4704,8 +4701,10 @@ namespace Aspose.Zip
             }
             finally
             {
-                if (zip1 != null) zip1.Dispose();
-                if (zip2 != null) zip2.Dispose();
+                if (zip1 != null)
+                    zip1.Dispose();
+                if (zip2 != null)
+                    zip2.Dispose();
             }
             messages = notes; // may or may not be empty
             return isOk;
@@ -4744,7 +4743,7 @@ namespace Aspose.Zip
             }
         }
 
-#endregion
+        #endregion
 
         #region Events
 
@@ -5377,7 +5376,8 @@ namespace Aspose.Zip
                         FileInfo fi = new FileInfo(_name);
                         _lengthOfReadStream = fi.Length;
                     }
-                    else _lengthOfReadStream = -1;
+                    else
+                        _lengthOfReadStream = -1;
                 }
                 return _lengthOfReadStream;
             }
@@ -5602,7 +5602,7 @@ namespace Aspose.Zip
                 lock (LOCK)
                 {
                     ExtractProgressEventArgs e = ExtractProgressEventArgs.ExtractAllCompleted(ArchiveNameForEvent,
-                         path );
+                         path);
                     ExtractProgress(this, e);
                 }
             }
@@ -5616,7 +5616,7 @@ namespace Aspose.Zip
                 lock (LOCK)
                 {
                     ExtractProgressEventArgs e = ExtractProgressEventArgs.ExtractAllStarted(ArchiveNameForEvent,
-                         path );
+                         path);
                     ExtractProgress(this, e);
                 }
             }
@@ -5719,7 +5719,7 @@ namespace Aspose.Zip
         #endregion
 
 
-        
+
         #region Error
         /// <summary>
         /// An event handler invoked when an error occurs during open or read of files
@@ -5762,7 +5762,7 @@ namespace Aspose.Zip
         }
         #endregion
 
-#endregion
+        #endregion
 
         #region Extract
 
@@ -5997,11 +5997,11 @@ namespace Aspose.Zip
                         string outputFile = (e.FileName.StartsWith("/", StringComparison.Ordinal))
                             ? Path.Combine(path, e.FileName.Substring(1))
                             : Path.Combine(path, e.FileName);
-                        
+
                         e._SetTimes(outputFile, false);
                     }
                 }
-                
+
                 OnExtractAllCompleted(path);
             }
             finally
@@ -6011,7 +6011,7 @@ namespace Aspose.Zip
             }
         }
 
-#endregion
+        #endregion
 
         #region Read
 
@@ -6415,7 +6415,8 @@ namespace Aspose.Zip
             if (readProgress != null)
                 zf.ReadProgress = readProgress;
 
-            if (zf.Verbose) zf._StatusMessageTextWriter.WriteLine("reading from {0}...", fileName);
+            if (zf.Verbose)
+                zf._StatusMessageTextWriter.WriteLine("reading from {0}...", fileName);
 
             try
             {
@@ -6844,7 +6845,8 @@ namespace Aspose.Zip
             zf._StatusMessageTextWriter = statusMessageWriter;
             zf._readstream = zipStream;
             zf._ReadStreamIsOurs = false;
-            if (zf.Verbose) zf._StatusMessageTextWriter.WriteLine("reading from stream...");
+            if (zf.Verbose)
+                zf._StatusMessageTextWriter.WriteLine("reading from stream...");
 
             ReadIntoInstance(zf);
             return zf;
@@ -6956,7 +6958,8 @@ namespace Aspose.Zip
             zf._provisionalAlternateEncoding = encoding;
             zf._readstream = new MemoryStream(buffer);
             zf._ReadStreamIsOurs = true;
-            if (zf.Verbose) zf._StatusMessageTextWriter.WriteLine("reading from byte[]...");
+            if (zf.Verbose)
+                zf._StatusMessageTextWriter.WriteLine("reading from byte[]...");
 
             ReadIntoInstance(zf);
             return zf;
@@ -7010,7 +7013,8 @@ namespace Aspose.Zip
                         // NOT WORK. So rather than seek a negative offset, we seek
                         // from SeekOrigin.Begin using a smaller number.
                         posn -= (32 * (nTries + 1) * nTries); // increasingly larger
-                        if (posn < 0) posn = 0;  // BOF
+                        if (posn < 0)
+                            posn = 0;  // BOF
                     }
                 }
                 while (!success && posn > maxSeekback);
@@ -7169,7 +7173,8 @@ namespace Aspose.Zip
                     if (e1.FileName == de.FileName)
                     {
                         e1._Comment = de.Comment;
-                        if (de.AttributesIndicateDirectory) e1.MarkAsDirectory();
+                        if (de.AttributesIndicateDirectory)
+                            e1.MarkAsDirectory();
                         break;
                     }
                 }
@@ -7292,10 +7297,12 @@ namespace Aspose.Zip
 
         private static bool BlocksAreEqual(byte[] a, byte[] b)
         {
-            if (a.Length != b.Length) return false;
+            if (a.Length != b.Length)
+                return false;
             for (int i = 0; i < a.Length; i++)
             {
-                if (a[i] != b[i]) return false;
+                if (a[i] != b[i])
+                    return false;
             }
             return true;
         }
@@ -7375,7 +7382,8 @@ namespace Aspose.Zip
             bool result = false;
             try
             {
-                if (!File.Exists(fileName)) return false;
+                if (!File.Exists(fileName))
+                    return false;
 
                 using (FileStream s = File.Open(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
@@ -7432,7 +7440,8 @@ namespace Aspose.Zip
             bool result = false;
             try
             {
-                if (!stream.CanRead) return false;
+                if (!stream.CanRead)
+                    return false;
 
                 Stream bitBucket = Stream.Null;
 
@@ -7458,7 +7467,7 @@ namespace Aspose.Zip
             return result;
         }
 
-#endregion
+        #endregion
 
         #region Save
 
@@ -7522,11 +7531,13 @@ namespace Aspose.Zip
 
                 if (_name != null && _name.EndsWith(".exe", StringComparison.Ordinal))
                     throw new BadStateException("You specified an EXE for a plain zip file.");
-                
+
                 // check if modified, before saving. 
-                if (!_contentsChanged) return;
-                
-                if (Verbose) StatusMessageTextWriter.WriteLine("saving....");
+                if (!_contentsChanged)
+                    return;
+
+                if (Verbose)
+                    StatusMessageTextWriter.WriteLine("saving....");
 
                 // validate the number of entries
                 if (_entries.Count >= 0xFFFF && _zip64 == Zip64Option.Never)
@@ -7861,11 +7872,12 @@ namespace Aspose.Zip
             // may have been skipped.
             int count = 0;
             foreach (ZipEntry entry in _entries)
-                if (entry.IncludedInMostRecentSave) count++;
+                if (entry.IncludedInMostRecentSave)
+                    count++;
             return count;
         }
 
-        
+
         private void WriteZip64EndOfCentralDirectory(Stream s,
                                                      long StartOfCentralDirectory,
                                                      long EndOfCentralDirectory)
@@ -7878,8 +7890,8 @@ namespace Aspose.Zip
             // signature
             byte[] sig = BitConverter.GetBytes(ZipConstants.Zip64EndOfCentralDirectoryRecordSignature);
             Array.Copy(sig, 0, bytes, i, 4);
-            i+=4;
-            
+            i += 4;
+
             // There is a possibility to include "Extensible" data in the zip64
             // end-of-central-dir record.  I cannot figure out what it might be used to
             // store, so the size of this record is always fixed.  Maybe it is used for
@@ -7916,8 +7928,8 @@ namespace Aspose.Zip
             // signature
             sig = BitConverter.GetBytes(ZipConstants.Zip64EndOfCentralDirectoryLocatorSignature);
             Array.Copy(sig, 0, bytes, i, 4);
-            i+=4;
-            
+            i += 4;
+
             // number of the disk with the zip64 eocd
             bytes[i++] = 0x00;
             bytes[i++] = 0x00;
@@ -7960,8 +7972,8 @@ namespace Aspose.Zip
             // signature
             byte[] sig = BitConverter.GetBytes(ZipConstants.EndOfCentralDirectorySignature);
             Array.Copy(sig, 0, bytes, i, 4);
-            i+=4;
-            
+            i += 4;
+
             // number of this disk
             bytes[i++] = 0;
             bytes[i++] = 0;
@@ -8025,7 +8037,8 @@ namespace Aspose.Zip
             else
             {
                 // the size of our buffer defines the max length of the comment we can write
-                if (commentLength + i + 2 > bytes.Length) commentLength = (Int16)(bytes.Length - i - 2);
+                if (commentLength + i + 2 > bytes.Length)
+                    commentLength = (Int16)(bytes.Length - i - 2);
                 bytes[i++] = (byte)(commentLength & 0x00FF);
                 bytes[i++] = (byte)((commentLength & 0xFF00) >> 8);
 
@@ -8043,13 +8056,13 @@ namespace Aspose.Zip
             s.Write(bytes, 0, i);
         }
 
-#endregion
+        #endregion
 
-       #region Selector
+        #region Selector
 
-#endregion
+        #endregion
 
-       #region IEnumerable
+        #region IEnumerable
 
         IEnumerator<ZipEntry> IEnumerable<ZipEntry>.GetEnumerator()
         {
@@ -8080,7 +8093,7 @@ namespace Aspose.Zip
             return _entries.GetEnumerator();
         }
 
-#endregion
+        #endregion
 
     }
 }

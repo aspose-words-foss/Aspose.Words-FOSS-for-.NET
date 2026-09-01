@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 25/05/2017 by Konstantin Sidorenko
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 
 using System;
 using Aspose.Common;

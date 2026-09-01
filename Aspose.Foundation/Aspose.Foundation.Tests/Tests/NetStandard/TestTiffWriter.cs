@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 31/01/2024 by Denis Panov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 using System;
 using System.Drawing.Imaging;
 using System.IO;
@@ -137,19 +137,19 @@ namespace Aspose.Tests.Xamarin
 
             using (FileStream outputFS = File.Create(tiffFile))
             using (TiffWriterPal tiffWriter = new TiffWriterPal())
-            for (int i = 0; i < pageFiles.Length; i++)
-            {
-                using (FileStream inputFS = File.OpenRead(TestFxUtil.BuildTestFileName(pageFiles[i])))
-                using (BitmapPal bmp = new BitmapPal(inputFS))
+                for (int i = 0; i < pageFiles.Length; i++)
                 {
-                    if (i == 0)
-                        tiffWriter.SaveFirstFrame(outputFS, compression, binarizationMethod, 0, PixelFormat.Format32bppArgb, bmp, false);
-                    else
-                        tiffWriter.SaveIntermediateFrame(bmp);
+                    using (FileStream inputFS = File.OpenRead(TestFxUtil.BuildTestFileName(pageFiles[i])))
+                    using (BitmapPal bmp = new BitmapPal(inputFS))
+                    {
+                        if (i == 0)
+                            tiffWriter.SaveFirstFrame(outputFS, compression, binarizationMethod, 0, PixelFormat.Format32bppArgb, bmp, false);
+                        else
+                            tiffWriter.SaveIntermediateFrame(bmp);
 
-                    tiffWriter.FlushMultiframe();
+                        tiffWriter.FlushMultiframe();
+                    }
                 }
-            }
         }
         #endregion
     }

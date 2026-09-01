@@ -47,7 +47,7 @@ namespace Aspose.Words.Saving
             get { return mDoc; }
         }
 
-        #if !CPP_DOC
+#if !CPP_DOC
         /// <summary>
         /// Gets or sets the file name (without path) where the resource will be saved to.
         /// </summary>
@@ -70,7 +70,7 @@ namespace Aspose.Words.Saving
         /// <i>Aspose.Words.&lt;document guid&gt;.&lt;image number&gt;.&lt;extension&gt;</i>.</p>
         ///
         /// </remarks>
-        #else
+#else
         /// <summary>
         /// Gets or sets the file name (without path) where the resource will be saved to.
         /// </summary>
@@ -98,7 +98,7 @@ namespace Aspose.Words.Saving
         ///
         /// <seealso cref="ResourceStream"/>
         /// </remarks>
-        #endif
+#endif
         public string ResourceFileName
         {
             get { return mResourceFileName; }
@@ -111,7 +111,7 @@ namespace Aspose.Words.Saving
             }
         }
 
-        #if !CPP_DOC
+#if !CPP_DOC
         /// <summary>
         /// Gets or sets the uniform resource identifier (URI) used to reference the resource file from the document.
         /// </summary>
@@ -130,7 +130,7 @@ namespace Aspose.Words.Saving
         /// <see cref="MarkdownSaveOptions.ImagesFolder"/>
         /// <see cref="MarkdownSaveOptions.ImagesFolderAlias"/>
         /// </remarks>
-        #else
+#else
         /// <summary>
         /// Gets or sets the uniform resource identifier (URI) used to reference the resource file from the document.
         /// </summary>
@@ -145,7 +145,7 @@ namespace Aspose.Words.Saving
         /// <para>When the event is fired, this property contains the URI that was generated
         /// by Aspose.Words. You can change the value of this property to provide a custom URI for the resource file.</para>
         /// </remarks>
-        #endif
+#endif
         public string ResourceFileUri
         {
             get { return mResourceFileUri; }

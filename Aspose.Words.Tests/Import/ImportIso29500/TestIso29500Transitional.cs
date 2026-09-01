@@ -270,7 +270,7 @@ namespace Aspose.Words.Tests.Import.ImportIso29500
             Assert.That(clonedFallBackShape, IsNot.SameAs(originalFallBackShape));
         }
 
-#if (!JAVA) && WORD2010   // This uses automation to open documents in MS Word. We don't want this in Java.
+#if !JAVA && WORD2010 // This uses automation to open documents in MS Word. We don't want this in Java.
         /// <summary>
         /// Verify that all test input and output files generated in this suite are opened ok in MSWord 2010.
         /// </summary>

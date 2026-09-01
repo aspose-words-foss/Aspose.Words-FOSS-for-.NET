@@ -72,7 +72,7 @@ namespace Aspose.Words.Replacing
         internal int Replace()
         {
             using (new SuspendTrackRevisionsDocument(mDoc, SuspendedRevisionTypes.Move))
-              using (new SuspendMappedCustomXmlUpdateDocument(mDoc))
+            using (new SuspendMappedCustomXmlUpdateDocument(mDoc))
                 return ReplaceCore(mRootNode);
         }
 
@@ -500,7 +500,7 @@ namespace Aspose.Words.Replacing
         {
             RunPr runPr = mRunPr.Clone();
 
-           // WORDSNET-15621 It seems that we need to set BiDi for strong RTL replacement text.
+            // WORDSNET-15621 It seems that we need to set BiDi for strong RTL replacement text.
             if (IsStrongRtlOrWhiteSpaces(text))
                 runPr.SetAttr(FontAttr.Bidi, AttrBoolEx.True);
 
@@ -883,7 +883,7 @@ namespace Aspose.Words.Replacing
 
                 case FindReplaceIndexer.ShapeChar:
                     // Do nothing.
-                break;
+                    break;
 
                 default:
                     // Unexpected special character.
@@ -989,7 +989,8 @@ namespace Aspose.Words.Replacing
                 switch (c)
                 {
                     case '&':
-                        if (amp) sb.Append('&');
+                        if (amp)
+                            sb.Append('&');
                         amp = !amp;
                         break;
 
@@ -1002,7 +1003,8 @@ namespace Aspose.Words.Replacing
                         break;
 
                     default:
-                        if (amp) sb.Append('&');
+                        if (amp)
+                            sb.Append('&');
                         sb.Append(c);
                         amp = false;
                         break;
@@ -1010,7 +1012,8 @@ namespace Aspose.Words.Replacing
             }
 
             // Add trailing ampersand.
-            if (amp) sb.Append('&');
+            if (amp)
+                sb.Append('&');
 
             return sb.ToString();
         }
@@ -1102,7 +1105,7 @@ namespace Aspose.Words.Replacing
         /// <summary>
         /// Gets a boolean value indicating either to move forward.
         /// </summary>
-        private bool  IsForward
+        private bool IsForward
         {
             get { return ((mOptions == null) || (mOptions.Direction == FindReplaceDirection.Forward)); }
         }

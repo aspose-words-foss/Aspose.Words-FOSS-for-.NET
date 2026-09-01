@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 15/11/2017 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 namespace Aspose.Images.Pal.Graphics.Encoder.Bmp
 {

@@ -18,7 +18,7 @@ namespace Aspose.Words.Tests.Import.Txt
         [SetUp]
         public void SetUp()
         {
-#if NETSTANDARD
+#if NETSTANDARD || NET
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 #endif
         }

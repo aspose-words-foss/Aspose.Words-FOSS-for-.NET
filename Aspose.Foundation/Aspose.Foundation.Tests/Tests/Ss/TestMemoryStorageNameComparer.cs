@@ -18,13 +18,13 @@ namespace Aspose.Tests.Ss
             Assert.That(comparer.Compare("1Table", "1Table"), Is.EqualTo(0));
             Assert.That(comparer.Compare("1table", "1Table"), Is.EqualTo(0));
             Assert.That(comparer.Compare("Item", "Properties"), Is.EqualTo(-1));
-            
+
             // String.Compare() incorrectly compares some special characters like 0x01, 0x03 and 0x05 that occur in stream names.
             Assert.That(comparer.Compare("\x0001CompObj", "\x0001COMPObj"), Is.EqualTo(0));
             Assert.That(comparer.Compare("\x0001CompObj", "\x0003CompObj"), Is.EqualTo(-2));
             Assert.That(comparer.Compare("\x0001CompObj", "MsoDataStore"), Is.EqualTo(-1));
             Assert.That(comparer.Compare("\x0001\x0003\x0005", "\x0001\x0005\x0003"), Is.EqualTo(-2));
-            
+
             // The underscore character is treated as greater than all alpha (latin only) chars.
             Assert.That(comparer.Compare("_a", "a_"), Is.EqualTo(30));
 

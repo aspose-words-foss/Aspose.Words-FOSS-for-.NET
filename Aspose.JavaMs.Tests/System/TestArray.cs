@@ -286,7 +286,7 @@ namespace Aspose.JavaMs.Tests.System
         [Test]
         public void TestJiraJ1734()
         {
-            string [] list = new string[]
+            string[] list = new string[]
             {
                 "a",
                 "TOC",

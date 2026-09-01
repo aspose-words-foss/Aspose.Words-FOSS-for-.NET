@@ -442,7 +442,7 @@ namespace Aspose.Collections
                 get
                 {
                     EnsureIndex();
-                    return mDictionary.mKeys[mIndex]; 
+                    return mDictionary.mKeys[mIndex];
                 }
             }
 

@@ -250,7 +250,7 @@ namespace Aspose.Words.Markup
         /// <returns>True if content was updated successfully.</returns>
         private static bool UpdateDataBoundContent(StructuredDocumentTag sdt, XmlMappingContext ctx)
         {
-            if(!sdt.CanBeUpdated)
+            if (!sdt.CanBeUpdated)
                 return true;
 
             // No data binding - treat update as successful.
@@ -354,7 +354,7 @@ namespace Aspose.Words.Markup
                 else
                 {
                     // WORDSNET-21979 Update SDT with the default content when mapped value is empty.
-                    if(!sdt.IsShowingPlaceholderText)
+                    if (!sdt.IsShowingPlaceholderText)
                         SdtContentHelper.InsertDefaultContent(sdt, true);
 
                     return true;
@@ -596,7 +596,7 @@ namespace Aspose.Words.Markup
 
             Shape contentShape = (Shape)sdt.GetChild(NodeType.Shape, 0, true);
 
-            if(contentShape == null)
+            if (contentShape == null)
                 return false;
 
             contentShape.ImageData.SetImage(stream);
@@ -647,7 +647,7 @@ namespace Aspose.Words.Markup
             bool newChecked = (value == "1") || (value == "true");
 
             // WORDSNET-24036 Word updates checkbox content only when value is changed.
-            if(sdt.Checked != newChecked)
+            if (sdt.Checked != newChecked)
                 sdt.Checked = newChecked;
 
             return true;
@@ -698,7 +698,7 @@ namespace Aspose.Words.Markup
                     }
                 }
 
-                if(part != null)
+                if (part != null)
                 {
                     // Seems MS Word updates StoreItemId with part identifier if missing but lets postpone.
 

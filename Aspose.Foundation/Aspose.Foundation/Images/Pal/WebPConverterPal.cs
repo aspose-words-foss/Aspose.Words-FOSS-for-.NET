@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 05/03/2023 by Denis Panov
 
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -98,7 +98,7 @@ namespace Aspose.Images.Pal
 
         private static object CreateSKCodec(Stream stream)
         {
-            MethodInfo createMethod = skCodecType.GetMethod("Create",  new Type[] { typeof(Stream) });
+            MethodInfo createMethod = skCodecType.GetMethod("Create", new Type[] { typeof(Stream) });
             return createMethod.Invoke(null, new object[] { stream });
         }
 

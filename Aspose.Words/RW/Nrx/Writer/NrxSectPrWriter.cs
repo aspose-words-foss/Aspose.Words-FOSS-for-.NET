@@ -108,7 +108,7 @@ namespace Aspose.Words.RW.Nrx.Writer
         private static SectPr CalculateBeforeChangesDelta(SectPr before, SectPr after)
         {
             SectPr newSectPr = new SectPr();
-            int[] keys = new []
+            int[] keys = new[]
                 {
                     SectAttr.SectionStart,
                     SectAttr.Orientation,

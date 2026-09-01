@@ -1,8 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 03/04/2025 by Alexey Noskov
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
-using System;
 using System.Collections.Generic;
 using System.IO;
 using Aspose.Images.Pal.Graphics.Decoder.Tiff;

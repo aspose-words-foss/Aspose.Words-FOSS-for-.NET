@@ -20,7 +20,7 @@ namespace Aspose
             {
                 Random r = new Random(Environment.TickCount);
                 for (int i = 0; i < folder.Length; i++)
-                    folder[i] = (char)r.Next('a', 'z'+1);
+                    folder[i] = (char)r.Next('a', 'z' + 1);
                 string target = Path.Combine(temp, new string(folder));
                 if (File.Exists(target) || Directory.Exists(target))
                     continue;

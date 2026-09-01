@@ -30,7 +30,7 @@ namespace Aspose.JavaMs.Tests.System.Drawing
 #else
             // .Net does not contain value for None color, enumeration starts from ActiveBorder = 1.
             int length = Enum.GetValues(typeof(KnownColor)).Length;
-            length++; 
+            length++;
 #endif
             Assert.That(gKnownColorNames.Length, Is.EqualTo(length));
             Assert.That(gKnownColorValues.Length, Is.EqualTo(length));
@@ -48,12 +48,12 @@ namespace Aspose.JavaMs.Tests.System.Drawing
                 string colorName = KnownColor.get(gKnownColorNames[ordinal]).name();
                 int colorValue = KnownColor.get(colorName).value();
 #else
-                string colorName = ((KnownColor) ordinal).ToString();
+                string colorName = ((KnownColor)ordinal).ToString();
                 int colorValue = Color.FromName(colorName).ToArgb();
 #endif
                 try
                 {
-                    Assert.That(gKnownColorNames[ordinal], Is.EqualTo(colorName ));
+                    Assert.That(gKnownColorNames[ordinal], Is.EqualTo(colorName));
                     Assert.That((int)gKnownColorValues[ordinal], Is.EqualTo(colorValue));
                 }
                 catch (AssertionException)

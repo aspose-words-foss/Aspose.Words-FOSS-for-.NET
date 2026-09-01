@@ -88,7 +88,7 @@ namespace Aspose.Tests.Base
             systemResult = Directory.GetFiles(folder, "*", SearchOption.AllDirectories);
             Assert.That(miscUtilResult.Count, Is.EqualTo(systemResult.Length));
 
-#if !NETSTANDARD // SystemPal.GetWindowsFontsFolder() does not work on Android device
+#if NETFRAMEWORK // SystemPal.GetWindowsFontsFolder() does not work on Android device
             folder = SystemPal.GetWindowsFontsFolder();
             miscUtilResult = FsPathUtil.GetFilesFromFolder(folder, true);
             systemResult = Directory.GetFiles(folder, "*", SearchOption.AllDirectories);
@@ -220,7 +220,7 @@ namespace Aspose.Tests.Base
         public void TestZipRandomGenerator()
         {
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 #endif
             bool has0 = false;
@@ -299,7 +299,7 @@ namespace Aspose.Tests.Base
             string schemeName;
             uriIndex = UriUtil.FindUriScheme(uri, out schemeName);
             Assert.That(schemeName, Is.EqualTo(expectedSchemeName));
-            Assert.That(uriIndex, Is.EqualTo(expectedSchemeName=="" ? -1 : 0));
+            Assert.That(uriIndex, Is.EqualTo(expectedSchemeName == "" ? -1 : 0));
         }
 
         /// <summary>

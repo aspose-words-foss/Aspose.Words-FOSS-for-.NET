@@ -101,7 +101,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(uintValue << 48, Is.EqualTo(4294901760));
             Assert.That(uintValue << 56, Is.EqualTo(4278190080));
             Assert.That(uintValue >> 4, Is.EqualTo(268435455));
-            
+
             Assert.That(uintValue << sbytes[1], Is.EqualTo(4294967292));
             Assert.That(uintValue << bytes[1], Is.EqualTo(4294967292));
             Assert.That(uintValue << shorts[1], Is.EqualTo(4294967292));

@@ -556,10 +556,10 @@ namespace Aspose.Zip
         public FileAttributes Attributes
         {
             // workitem 7071
-            get { return (FileAttributes) _ExternalFileAttrs; }
+            get { return (FileAttributes)_ExternalFileAttrs; }
             set
             {
-                _ExternalFileAttrs = (int) value;
+                _ExternalFileAttrs = (int)value;
                 // Since the application is explicitly setting the attributes, overwriting
                 // whatever was there, we will explicitly set the Version made by field.
                 // workitem 7926 - "version made by" OS should be zero for compat with WinZip
@@ -2069,7 +2069,7 @@ namespace Aspose.Zip
                 // workitem 7071
                 // can only get attributes on files that exist.
                 if (File.Exists(filename) || Directory.Exists(filename))
-                    entry._ExternalFileAttrs = (int) File.GetAttributes(filename);
+                    entry._ExternalFileAttrs = (int)File.GetAttributes(filename);
                 // else ??
 
                 entry._ntfsTimesAreSet = true;
@@ -2181,8 +2181,8 @@ namespace Aspose.Zip
             // with the contents read from the central header.  We could, but don't need to.
             // So we won't.
 
-            Int16 filenameLength = (short) (block[26] + block[27] * 256);
-            Int16 extraFieldLength = (short) (block[28] + block[29] * 256);
+            Int16 filenameLength = (short)(block[26] + block[27] * 256);
+            Int16 extraFieldLength = (short)(block[28] + block[29] * 256);
 
             ArchiveStream.Seek(filenameLength + extraFieldLength, SeekOrigin.Current);
             _LengthOfHeader = 30 + extraFieldLength + filenameLength +
@@ -2308,7 +2308,7 @@ namespace Aspose.Zip
             get { return ((_InternalFileAttrs == 0) && ((_ExternalFileAttrs & 0x0010) == 0x0010)); }
         }
 
-//#if OPTIMIZE_WI6612
+        //#if OPTIMIZE_WI6612
         internal void ResetDirEntry()
         {
             // __FileDataPosition is the position of the file data for an entry.
@@ -2326,7 +2326,7 @@ namespace Aspose.Zip
             // set _LengthOfHeader to 0, to indicate we need to read later.
             _LengthOfHeader = 0;
         }
-//#endif
+        //#endif
 
         /// <summary>
         /// Reads one entry from the zip directory structure in the zip file.
@@ -2380,32 +2380,32 @@ namespace Aspose.Zip
 
             unchecked
             {
-                zde._VersionMadeBy = (short) (block[i++] + block[i++] * 256);
-                zde._VersionNeeded = (short) (block[i++] + block[i++] * 256);
-                zde._BitField = (short) (block[i++] + block[i++] * 256);
-                zde._CompressionMethod = (short) (block[i++] + block[i++] * 256);
+                zde._VersionMadeBy = (short)(block[i++] + block[i++] * 256);
+                zde._VersionNeeded = (short)(block[i++] + block[i++] * 256);
+                zde._BitField = (short)(block[i++] + block[i++] * 256);
+                zde._CompressionMethod = (short)(block[i++] + block[i++] * 256);
                 zde._TimeBlob = block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256;
                 zde._LastModified = SharedUtilities.PackedToDateTime(zde._TimeBlob);
                 zde._timestamp |= ZipEntryTimestamp.DOS;
 
                 zde._Crc32 = block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256;
                 zde._CompressedSize =
-                    (uint) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
+                    (uint)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
                 zde._UncompressedSize =
-                    (uint) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
+                    (uint)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
             }
 
-            zde._filenameLength = (short) (block[i++] + block[i++] * 256);
-            zde._extraFieldLength = (short) (block[i++] + block[i++] * 256);
-            zde._commentLength = (short) (block[i++] + block[i++] * 256);
+            zde._filenameLength = (short)(block[i++] + block[i++] * 256);
+            zde._extraFieldLength = (short)(block[i++] + block[i++] * 256);
+            zde._commentLength = (short)(block[i++] + block[i++] * 256);
             i += 2;
 
-            zde._InternalFileAttrs = (short) (block[i++] + block[i++] * 256);
+            zde._InternalFileAttrs = (short)(block[i++] + block[i++] * 256);
             zde._ExternalFileAttrs = block[i++] + block[i++] * 256 + block[i++] * 256 * 256 +
                                      block[i++] * 256 * 256 * 256;
 
             zde._RelativeOffsetOfLocalHeader =
-                (uint) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i] * 256 * 256 * 256);
+                (uint)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i] * 256 * 256 * 256);
 
             // workitem 7801
             zde.IsText = ((zde._InternalFileAttrs & 0x01) == 0x01);
@@ -3187,7 +3187,7 @@ namespace Aspose.Zip
                     // us from setting the time, etc.
                     // workitem 7926 - version made by OS can be zero (FAT) or 10 (NTFS)
                     if ((_VersionMadeBy & 0xFF00) == 0x0a00 || (_VersionMadeBy & 0xFF00) == 0x0000)
-                        File.SetAttributes(TargetFile, (FileAttributes) _ExternalFileAttrs);
+                        File.SetAttributes(TargetFile, (FileAttributes)_ExternalFileAttrs);
                 }
 
                 OnAfterExtract(baseDir);
@@ -3340,7 +3340,7 @@ namespace Aspose.Zip
                     // Casting LeftToRead down to an int is ok here in the else clause,
                     // because that only happens when it is less than bytes.Length,
                     // which is much less than MAX_INT.
-                    int len = (LeftToRead > bytes.Length) ? bytes.Length : (int) LeftToRead;
+                    int len = (LeftToRead > bytes.Length) ? bytes.Length : (int)LeftToRead;
                     int n = s1.Read(bytes, 0, len);
 
                     // must check data read - essential for detecting corrupt zip files
@@ -3510,7 +3510,7 @@ namespace Aspose.Zip
                 else
                     throw new ZipException(
                         String.Format("Cannot extract: Entry {0} uses an unsupported encryption algorithm ({1:X2})",
-                                      FileName, (int) Encryption));
+                                      FileName, (int)Encryption));
             }
         }
 
@@ -3617,8 +3617,8 @@ namespace Aspose.Zip
             StreamUtil.Read(ArchiveStream, block, 0, block.Length);
 
             int i = 26;
-            Int16 filenameLength = (short) (block[i++] + block[i++] * 256);
-            Int16 extraFieldLength = (short) (block[i++] + block[i] * 256);
+            Int16 filenameLength = (short)(block[i++] + block[i++] * 256);
+            Int16 extraFieldLength = (short)(block[i++] + block[i] * 256);
 
             // workitem 8098: ok (relative)
             ArchiveStream.Seek(filenameLength, SeekOrigin.Current);
@@ -3668,9 +3668,9 @@ namespace Aspose.Zip
             bytesRead += n;
 
             int i = 0;
-            ze._VersionNeeded = (short) (block[i++] + block[i++] * 256);
-            ze._BitField = (short) (block[i++] + block[i++] * 256);
-            ze._CompressionMethod = (short) (block[i++] + block[i++] * 256);
+            ze._VersionNeeded = (short)(block[i++] + block[i++] * 256);
+            ze._BitField = (short)(block[i++] + block[i++] * 256);
+            ze._CompressionMethod = (short)(block[i++] + block[i++] * 256);
             ze._TimeBlob = block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256;
             // transform the time data into something usable (a DateTime)
             ze._LastModified = SharedUtilities.PackedToDateTime(ze._TimeBlob);
@@ -3682,20 +3682,20 @@ namespace Aspose.Zip
             // the three amigos may contain marker values for ZIP64.  So we must read them.
             {
                 ze._Crc32 =
-                    (Int32) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
+                    (Int32)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
                 ze._CompressedSize =
-                    (uint) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
+                    (uint)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
                 ze._UncompressedSize =
-                    (uint) (block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
+                    (uint)(block[i++] + block[i++] * 256 + block[i++] * 256 * 256 + block[i++] * 256 * 256 * 256);
 
-                if ((uint) ze._CompressedSize == 0xFFFFFFFF ||
-                    (uint) ze._UncompressedSize == 0xFFFFFFFF)
+                if ((uint)ze._CompressedSize == 0xFFFFFFFF ||
+                    (uint)ze._UncompressedSize == 0xFFFFFFFF)
 
                     ze._InputUsesZip64 = true;
             }
 
-            Int16 filenameLength = (short) (block[i++] + block[i++] * 256);
-            Int16 extraFieldLength = (short) (block[i++] + block[i] * 256);
+            Int16 filenameLength = (short)(block[i++] + block[i++] * 256);
+            Int16 extraFieldLength = (short)(block[i++] + block[i] * 256);
 
             block = new byte[filenameLength];
             n = ze.ArchiveStream.Read(block, 0, block.Length);
@@ -3939,7 +3939,7 @@ namespace Aspose.Zip
         {
             // in some cases, the zip file begins with "PK00".  This is a throwback and is rare,
             // but we handle it anyway. We do not change behavior based on it.
-            uint datum = (uint) SharedUtilities.ReadInt(s);
+            uint datum = (uint)SharedUtilities.ReadInt(s);
             if (datum != ZipConstants.PackedToRemovableMedia)
             {
                 s.Seek(-4, SeekOrigin.Current); // unread the block
@@ -3955,7 +3955,7 @@ namespace Aspose.Zip
             //    by the compressed length and the uncompressed length (4 bytes for each
             //    of those three elements).  Need to check that here.
             //
-            uint datum = (uint) SharedUtilities.ReadInt(s);
+            uint datum = (uint)SharedUtilities.ReadInt(s);
             if (datum == entry._Crc32)
             {
                 int sz = SharedUtilities.ReadInt(s);
@@ -3996,8 +3996,8 @@ namespace Aspose.Zip
                 {
                     int start = j;
 
-                    UInt16 HeaderId = (UInt16) (Buffer[j] + Buffer[j + 1] * 256);
-                    Int16 DataSize = (short) (Buffer[j + 2] + Buffer[j + 3] * 256);
+                    UInt16 HeaderId = (UInt16)(Buffer[j] + Buffer[j + 1] * 256);
+                    Int16 DataSize = (short)(Buffer[j + 2] + Buffer[j + 3] * 256);
 
                     j += 4;
 
@@ -4056,7 +4056,7 @@ namespace Aspose.Zip
             //                               the Strong Encryption Specification)
             {
                 j += 2;
-                _UnsupportedAlgorithmId = (UInt16) (Buffer[j] + Buffer[j + 1] * 256);
+                _UnsupportedAlgorithmId = (UInt16)(Buffer[j] + Buffer[j + 1] * 256);
                 j += 2;
                 _Encryption = EncryptionAlgorithm.Unsupported;
 
@@ -4222,8 +4222,8 @@ namespace Aspose.Zip
                             DataSize, posn));
 
                 j += 4; // reserved
-                Int16 timetag = (Int16) (Buffer[j] + Buffer[j + 1] * 256);
-                Int16 addlsize = (Int16) (Buffer[j + 2] + Buffer[j + 3] * 256);
+                Int16 timetag = (Int16)(Buffer[j] + Buffer[j + 1] * 256);
+                Int16 addlsize = (Int16)(Buffer[j + 2] + Buffer[j + 3] * 256);
                 j += 4; // tag and size
 
                 if (timetag == 0x0001 && addlsize == 24)
@@ -4280,10 +4280,10 @@ namespace Aspose.Zip
             byte[] bytes = new byte[4096];
             int i = 0;
             // signature
-            bytes[i++] = (byte) (ZipConstants.ZipDirEntrySignature & 0x000000FF);
-            bytes[i++] = (byte) ((ZipConstants.ZipDirEntrySignature & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((ZipConstants.ZipDirEntrySignature & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((ZipConstants.ZipDirEntrySignature & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(ZipConstants.ZipDirEntrySignature & 0x000000FF);
+            bytes[i++] = (byte)((ZipConstants.ZipDirEntrySignature & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((ZipConstants.ZipDirEntrySignature & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((ZipConstants.ZipDirEntrySignature & 0xFF000000) >> 24);
 
             // Version Made By
             // workitem 7071
@@ -4296,8 +4296,8 @@ namespace Aspose.Zip
             // for Linux.  Therefore the VersionMadeBy for those entries must not be changed.
             // Only the entries that are actually created on Windows NTFS should get the
             // VersionMadeBy indicating Windows/NTFS.
-            bytes[i++] = (byte) (_VersionMadeBy & 0x00FF);
-            bytes[i++] = (byte) ((_VersionMadeBy & 0xFF00) >> 8);
+            bytes[i++] = (byte)(_VersionMadeBy & 0x00FF);
+            bytes[i++] = (byte)((_VersionMadeBy & 0xFF00) >> 8);
 
             // Apparently we want to duplicate the extra field here; we cannot
             // simply zero it out and assume tools and apps will use the right one.
@@ -4311,10 +4311,10 @@ namespace Aspose.Zip
             // These are all present in the local file header, but they may be zero values there.
             // So we cannot just copy them.
 
-            Int16 versionNeededToExtract = (Int16) (_OutputUsesZip64 == NullableBool.True ? 45 : 20);
+            Int16 versionNeededToExtract = (Int16)(_OutputUsesZip64 == NullableBool.True ? 45 : 20);
 
-            bytes[i++] = (byte) (versionNeededToExtract & 0x00FF);
-            bytes[i++] = (byte) ((versionNeededToExtract & 0xFF00) >> 8);
+            bytes[i++] = (byte)(versionNeededToExtract & 0x00FF);
+            bytes[i++] = (byte)((versionNeededToExtract & 0xFF00) >> 8);
             Int16 bf2 = _BitField;
             if (IsDirectory)
                 bf2 &= ~0x08; // unset bit 3
@@ -4323,20 +4323,20 @@ namespace Aspose.Zip
             if (IsDeflated)
                 bf2 |= CompressionFlags;
 
-            bytes[i++] = (byte) (bf2 & 0x00FF);
-            bytes[i++] = (byte) ((bf2 & 0xFF00) >> 8);
+            bytes[i++] = (byte)(bf2 & 0x00FF);
+            bytes[i++] = (byte)((bf2 & 0xFF00) >> 8);
 
-            bytes[i++] = (byte) (CompressionMethod & 0x00FF);
-            bytes[i++] = (byte) ((CompressionMethod & 0xFF00) >> 8);
+            bytes[i++] = (byte)(CompressionMethod & 0x00FF);
+            bytes[i++] = (byte)((CompressionMethod & 0xFF00) >> 8);
 
-            bytes[i++] = (byte) (_TimeBlob & 0x000000FF);
-            bytes[i++] = (byte) ((_TimeBlob & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((_TimeBlob & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((_TimeBlob & 0xFF000000) >> 24);
-            bytes[i++] = (byte) (_Crc32 & 0x000000FF);
-            bytes[i++] = (byte) ((_Crc32 & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((_Crc32 & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((_Crc32 & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(_TimeBlob & 0x000000FF);
+            bytes[i++] = (byte)((_TimeBlob & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((_TimeBlob & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((_TimeBlob & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(_Crc32 & 0x000000FF);
+            bytes[i++] = (byte)((_Crc32 & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((_Crc32 & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((_Crc32 & 0xFF000000) >> 24);
 
             int j = 0;
             if (_OutputUsesZip64 == NullableBool.True)
@@ -4347,29 +4347,29 @@ namespace Aspose.Zip
             }
             else
             {
-                bytes[i++] = (byte) (_CompressedSize & 0x000000FF);
-                bytes[i++] = (byte) ((_CompressedSize & 0x0000FF00) >> 8);
-                bytes[i++] = (byte) ((_CompressedSize & 0x00FF0000) >> 16);
-                bytes[i++] = (byte) ((_CompressedSize & 0xFF000000) >> 24);
+                bytes[i++] = (byte)(_CompressedSize & 0x000000FF);
+                bytes[i++] = (byte)((_CompressedSize & 0x0000FF00) >> 8);
+                bytes[i++] = (byte)((_CompressedSize & 0x00FF0000) >> 16);
+                bytes[i++] = (byte)((_CompressedSize & 0xFF000000) >> 24);
 
-                bytes[i++] = (byte) (_UncompressedSize & 0x000000FF);
-                bytes[i++] = (byte) ((_UncompressedSize & 0x0000FF00) >> 8);
-                bytes[i++] = (byte) ((_UncompressedSize & 0x00FF0000) >> 16);
-                bytes[i++] = (byte) ((_UncompressedSize & 0xFF000000) >> 24);
+                bytes[i++] = (byte)(_UncompressedSize & 0x000000FF);
+                bytes[i++] = (byte)((_UncompressedSize & 0x0000FF00) >> 8);
+                bytes[i++] = (byte)((_UncompressedSize & 0x00FF0000) >> 16);
+                bytes[i++] = (byte)((_UncompressedSize & 0xFF000000) >> 24);
             }
 
             byte[] FileNameBytes = _GetEncodedFileNameBytes();
-            Int16 filenameLength = (Int16) FileNameBytes.Length;
-            bytes[i++] = (byte) (filenameLength & 0x00FF);
-            bytes[i++] = (byte) ((filenameLength & 0xFF00) >> 8);
+            Int16 filenameLength = (Int16)FileNameBytes.Length;
+            bytes[i++] = (byte)(filenameLength & 0x00FF);
+            bytes[i++] = (byte)((filenameLength & 0xFF00) >> 8);
 
             // do this again because now we have real data
             _presumeZip64 = _OutputUsesZip64 == NullableBool.True;
             _Extra = ConsExtraField(true);
 
-            Int16 extraFieldLength = (Int16) ((_Extra == null) ? 0 : _Extra.Length);
-            bytes[i++] = (byte) (extraFieldLength & 0x00FF);
-            bytes[i++] = (byte) ((extraFieldLength & 0xFF00) >> 8);
+            Int16 extraFieldLength = (Int16)((_Extra == null) ? 0 : _Extra.Length);
+            bytes[i++] = (byte)(extraFieldLength & 0x00FF);
+            bytes[i++] = (byte)((extraFieldLength & 0xFF00) >> 8);
 
             // File (entry) Comment Length
             // the _CommentBytes private field was set during WriteHeader()
@@ -4378,8 +4378,8 @@ namespace Aspose.Zip
             // the size of our buffer defines the max length of the comment we can write
             if (commentLength + i > bytes.Length)
                 commentLength = bytes.Length - i;
-            bytes[i++] = (byte) (commentLength & 0x00FF);
-            bytes[i++] = (byte) ((commentLength & 0xFF00) >> 8);
+            bytes[i++] = (byte)(commentLength & 0x00FF);
+            bytes[i++] = (byte)((commentLength & 0xFF00) >> 8);
 
             // Disk number start
             bytes[i++] = 0;
@@ -4387,15 +4387,15 @@ namespace Aspose.Zip
 
             // internal file attrs
             // workitem 7801
-            bytes[i++] = (byte) ((_IsText) ? 1 : 0); // lo bit: filetype hint.  0=bin, 1=txt.
+            bytes[i++] = (byte)((_IsText) ? 1 : 0); // lo bit: filetype hint.  0=bin, 1=txt.
             bytes[i++] = 0;
 
             // external file attrs
             // workitem 7071
-            bytes[i++] = (byte) (_ExternalFileAttrs & 0x000000FF);
-            bytes[i++] = (byte) ((_ExternalFileAttrs & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((_ExternalFileAttrs & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((_ExternalFileAttrs & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(_ExternalFileAttrs & 0x000000FF);
+            bytes[i++] = (byte)((_ExternalFileAttrs & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((_ExternalFileAttrs & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((_ExternalFileAttrs & 0xFF000000) >> 24);
 
             // relative offset of local header
             if (_OutputUsesZip64 == NullableBool.True)
@@ -4406,10 +4406,10 @@ namespace Aspose.Zip
             }
             else
             {
-                bytes[i++] = (byte) (_RelativeOffsetOfLocalHeader & 0x000000FF);
-                bytes[i++] = (byte) ((_RelativeOffsetOfLocalHeader & 0x0000FF00) >> 8);
-                bytes[i++] = (byte) ((_RelativeOffsetOfLocalHeader & 0x00FF0000) >> 16);
-                bytes[i++] = (byte) ((_RelativeOffsetOfLocalHeader & 0xFF000000) >> 24);
+                bytes[i++] = (byte)(_RelativeOffsetOfLocalHeader & 0x000000FF);
+                bytes[i++] = (byte)((_RelativeOffsetOfLocalHeader & 0x0000FF00) >> 8);
+                bytes[i++] = (byte)((_RelativeOffsetOfLocalHeader & 0x00FF0000) >> 16);
+                bytes[i++] = (byte)((_RelativeOffsetOfLocalHeader & 0xFF000000) >> 24);
             }
 
             // actual filename
@@ -4485,7 +4485,7 @@ namespace Aspose.Zip
                 }
 
                 // DataSize
-                block[i++] = (byte) (sz - 4); // decimal 28 or 16  (workitem 7924)
+                block[i++] = (byte)(sz - 4); // decimal 28 or 16  (workitem 7924)
                 block[i++] = 0x00;
 
                 // The actual metadata - we may or may not have real values yet...
@@ -4583,21 +4583,21 @@ namespace Aspose.Zip
                 block[i++] = 0x54;
 
                 // data size
-                block[i++] = unchecked((byte) (len - 4));
+                block[i++] = unchecked((byte)(len - 4));
                 block[i++] = 0;
 
                 // flags
                 block[i++] = 0x07;
 
-                Int32 z = unchecked((int) ((_Mtime - _unixEpoch).TotalSeconds));
+                Int32 z = unchecked((int)((_Mtime - _unixEpoch).TotalSeconds));
                 Array.Copy(BitConverter.GetBytes(z), 0, block, i, 4);
                 i += 4;
                 if (!forCentralDirectory)
                 {
-                    z = unchecked((int) ((_Atime - _unixEpoch).TotalSeconds));
+                    z = unchecked((int)((_Atime - _unixEpoch).TotalSeconds));
                     Array.Copy(BitConverter.GetBytes(z), 0, block, i, 4);
                     i += 4;
-                    z = unchecked((int) ((_Ctime - _unixEpoch).TotalSeconds));
+                    z = unchecked((int)((_Ctime - _unixEpoch).TotalSeconds));
                     Array.Copy(BitConverter.GetBytes(z), 0, block, i, 4);
                 }
                 listOfBlocks.Add(block);
@@ -4773,7 +4773,7 @@ namespace Aspose.Zip
             {
                 _CompressionMethod = 0x0;
             }
-                // compression for directories = 0x00 (No Compression)
+            // compression for directories = 0x00 (No Compression)
             else if (IsDirectory)
             {
                 _CompressionMethod = 0x0;
@@ -4835,14 +4835,14 @@ namespace Aspose.Zip
 
                 if (WantCompression != null)
                 {
-                    _CompressionMethod = (short) (WantCompression(LocalFileName, _FileNameInArchive)
+                    _CompressionMethod = (short)(WantCompression(LocalFileName, _FileNameInArchive)
                                                       ? 0x08
                                                       : 0x00);
                     return;
                 }
 
                 // if there is no callback set, we use the default behavior.
-                _CompressionMethod = (short) (DefaultWantCompression()
+                _CompressionMethod = (short)(DefaultWantCompression()
                                                   ? 0x08
                                                   : 0x00);
             }
@@ -4864,13 +4864,13 @@ namespace Aspose.Zip
 
             int i = 0;
             // signature
-            bytes[i++] = (byte) (ZipConstants.ZipEntrySignature & 0x000000FF);
-            bytes[i++] = (byte) ((ZipConstants.ZipEntrySignature & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((ZipConstants.ZipEntrySignature & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((ZipConstants.ZipEntrySignature & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(ZipConstants.ZipEntrySignature & 0x000000FF);
+            bytes[i++] = (byte)((ZipConstants.ZipEntrySignature & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((ZipConstants.ZipEntrySignature & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((ZipConstants.ZipEntrySignature & 0xFF000000) >> 24);
 
             // validate the ZIP64 usage
-            if (_zipfile._zip64 == Zip64Option.Never && (uint) _RelativeOffsetOfLocalHeader >= 0xFFFFFFFF)
+            if (_zipfile._zip64 == Zip64Option.Never && (uint)_RelativeOffsetOfLocalHeader >= 0xFFFFFFFF)
                 throw new ZipException(
                     "Offset within the zip archive exceeds 0xFFFFFFFF. Consider setting the Zip64Mode save option.");
 
@@ -4925,16 +4925,16 @@ namespace Aspose.Zip
 
             _presumeZip64 = (_zipfile._zip64 == Zip64Option.Always ||
                              (_zipfile._zip64 == Zip64Option.AsNecessary && !s.CanSeek));
-            Int16 VersionNeededToExtract = (Int16) (_presumeZip64 ? 45 : 20);
+            Int16 VersionNeededToExtract = (Int16)(_presumeZip64 ? 45 : 20);
 
             // (i==4)
-            bytes[i++] = (byte) (VersionNeededToExtract & 0x00FF);
-            bytes[i++] = (byte) ((VersionNeededToExtract & 0xFF00) >> 8);
+            bytes[i++] = (byte)(VersionNeededToExtract & 0x00FF);
+            bytes[i++] = (byte)((VersionNeededToExtract & 0xFF00) >> 8);
 
             // get byte array including any encoding
             // workitem 6513
             byte[] FileNameBytes = _GetEncodedFileNameBytes();
-            Int16 filenameLength = (Int16) FileNameBytes.Length;
+            Int16 filenameLength = (Int16)FileNameBytes.Length;
 
             // general purpose bitfield
             // In the current implementation, this library uses only these bits
@@ -4944,7 +4944,7 @@ namespace Aspose.Zip
             //  bit 6 = strong encryption
             //  bit 11 = UTF-8 encoding is used in the comment and filename
 
-            _BitField = (Int16) ((UsesEncryption) ? 1 : 0);
+            _BitField = (Int16)((UsesEncryption) ? 1 : 0);
 
             // workitem 7941: WinZip does not set this when using AES.
             // this "Strong Encryption" is a PKWare Strong encryption thing.
@@ -4990,8 +4990,8 @@ namespace Aspose.Zip
             if (IsDeflated)
                 bf2 |= CompressionFlags;
 
-            bytes[i++] = (byte) (bf2 & 0x00FF);
-            bytes[i++] = (byte) ((bf2 & 0xFF00) >> 8);
+            bytes[i++] = (byte)(bf2 & 0x00FF);
+            bytes[i++] = (byte)((bf2 & 0xFF00) >> 8);
 
             // Here, we want to set values for Compressed Size, Uncompressed Size, and CRC.  If
             // we have __FileDataPosition as not -1 (zero is a valid FDP), then that means we
@@ -5011,24 +5011,24 @@ namespace Aspose.Zip
             }
 
             // (i==8) compression method
-            bytes[i++] = (byte) (CompressionMethod & 0x00FF);
-            bytes[i++] = (byte) ((CompressionMethod & 0xFF00) >> 8);
+            bytes[i++] = (byte)(CompressionMethod & 0x00FF);
+            bytes[i++] = (byte)((CompressionMethod & 0xFF00) >> 8);
 
             // LastMod
             _TimeBlob = SharedUtilities.DateTimeToPacked(LastModified);
 
             // (i==10) time blob
-            bytes[i++] = (byte) (_TimeBlob & 0x000000FF);
-            bytes[i++] = (byte) ((_TimeBlob & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((_TimeBlob & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((_TimeBlob & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(_TimeBlob & 0x000000FF);
+            bytes[i++] = (byte)((_TimeBlob & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((_TimeBlob & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((_TimeBlob & 0xFF000000) >> 24);
 
             // (i==14) CRC - if source==filesystem, this is zero now, actual value will be calculated later.
             // if source==archive, this is a bonafide value.
-            bytes[i++] = (byte) (_Crc32 & 0x000000FF);
-            bytes[i++] = (byte) ((_Crc32 & 0x0000FF00) >> 8);
-            bytes[i++] = (byte) ((_Crc32 & 0x00FF0000) >> 16);
-            bytes[i++] = (byte) ((_Crc32 & 0xFF000000) >> 24);
+            bytes[i++] = (byte)(_Crc32 & 0x000000FF);
+            bytes[i++] = (byte)((_Crc32 & 0x0000FF00) >> 8);
+            bytes[i++] = (byte)((_Crc32 & 0x00FF0000) >> 16);
+            bytes[i++] = (byte)((_Crc32 & 0xFF000000) >> 24);
 
             if (_presumeZip64)
             {
@@ -5041,28 +5041,28 @@ namespace Aspose.Zip
                 // (i==18) CompressedSize (Int32) - this value may or may not be bonafide.
                 // if source == filesystem, then it is zero, and we'll learn it after we compress.
                 // if source == archive, then it is bonafide data.
-                bytes[i++] = (byte) (_CompressedSize & 0x000000FF);
-                bytes[i++] = (byte) ((_CompressedSize & 0x0000FF00) >> 8);
-                bytes[i++] = (byte) ((_CompressedSize & 0x00FF0000) >> 16);
-                bytes[i++] = (byte) ((_CompressedSize & 0xFF000000) >> 24);
+                bytes[i++] = (byte)(_CompressedSize & 0x000000FF);
+                bytes[i++] = (byte)((_CompressedSize & 0x0000FF00) >> 8);
+                bytes[i++] = (byte)((_CompressedSize & 0x00FF0000) >> 16);
+                bytes[i++] = (byte)((_CompressedSize & 0xFF000000) >> 24);
 
                 // (i==22) UncompressedSize (Int32) - this value may or may not be bonafide.
-                bytes[i++] = (byte) (_UncompressedSize & 0x000000FF);
-                bytes[i++] = (byte) ((_UncompressedSize & 0x0000FF00) >> 8);
-                bytes[i++] = (byte) ((_UncompressedSize & 0x00FF0000) >> 16);
-                bytes[i++] = (byte) ((_UncompressedSize & 0xFF000000) >> 24);
+                bytes[i++] = (byte)(_UncompressedSize & 0x000000FF);
+                bytes[i++] = (byte)((_UncompressedSize & 0x0000FF00) >> 8);
+                bytes[i++] = (byte)((_UncompressedSize & 0x00FF0000) >> 16);
+                bytes[i++] = (byte)((_UncompressedSize & 0xFF000000) >> 24);
             }
 
             // (i==26) filename length (Int16)
-            bytes[i++] = (byte) (filenameLength & 0x00FF);
-            bytes[i++] = (byte) ((filenameLength & 0xFF00) >> 8);
+            bytes[i++] = (byte)(filenameLength & 0x00FF);
+            bytes[i++] = (byte)((filenameLength & 0xFF00) >> 8);
 
             _Extra = ConsExtraField(false);
 
             // (i==28) extra field length (short)
-            Int16 ExtraFieldLength = (Int16) ((_Extra == null) ? 0 : _Extra.Length);
-            bytes[i++] = (byte) (ExtraFieldLength & 0x00FF);
-            bytes[i++] = (byte) ((ExtraFieldLength & 0xFF00) >> 8);
+            Int16 ExtraFieldLength = (Int16)((_Extra == null) ? 0 : _Extra.Length);
+            bytes[i++] = (byte)(ExtraFieldLength & 0x00FF);
+            bytes[i++] = (byte)((ExtraFieldLength & 0xFF00) >> 8);
 
             // The filename written to the archive.
             // The buffer is already encoded; we just copy across the bytes.
@@ -5336,15 +5336,15 @@ namespace Aspose.Zip
                 _CompressedSize += 12; // 12 extra bytes for the encryption header
 
             int i = 8;
-            _EntryHeader[i++] = (byte) (CompressionMethod & 0x00FF);
-            _EntryHeader[i] = (byte) ((CompressionMethod & 0xFF00) >> 8);
+            _EntryHeader[i++] = (byte)(CompressionMethod & 0x00FF);
+            _EntryHeader[i] = (byte)((CompressionMethod & 0xFF00) >> 8);
 
             i = 14;
             // CRC - the correct value now
-            _EntryHeader[i++] = (byte) (_Crc32 & 0x000000FF);
-            _EntryHeader[i++] = (byte) ((_Crc32 & 0x0000FF00) >> 8);
-            _EntryHeader[i++] = (byte) ((_Crc32 & 0x00FF0000) >> 16);
-            _EntryHeader[i++] = (byte) ((_Crc32 & 0xFF000000) >> 24);
+            _EntryHeader[i++] = (byte)(_Crc32 & 0x000000FF);
+            _EntryHeader[i++] = (byte)((_Crc32 & 0x0000FF00) >> 8);
+            _EntryHeader[i++] = (byte)((_Crc32 & 0x00FF0000) >> 16);
+            _EntryHeader[i++] = (byte)((_Crc32 & 0xFF000000) >> 24);
 
             // zip64 housekeeping
             _entryRequiresZip64 =
@@ -5363,13 +5363,13 @@ namespace Aspose.Zip
                                    : NullableBool.False;
 
             // (i==26) filename length (Int16)
-            Int16 filenameLength = (short) (_EntryHeader[26] + _EntryHeader[27] * 256);
-            Int16 extraFieldLength = (short) (_EntryHeader[28] + _EntryHeader[29] * 256);
+            Int16 filenameLength = (short)(_EntryHeader[26] + _EntryHeader[27] * 256);
+            Int16 extraFieldLength = (short)(_EntryHeader[28] + _EntryHeader[29] * 256);
 
             if (_OutputUsesZip64 == NullableBool.True)
             {
                 // VersionNeededToExtract - set to 45 to indicate zip64
-                _EntryHeader[4] = (byte) (45 & 0x00FF);
+                _EntryHeader[4] = (byte)(45 & 0x00FF);
                 _EntryHeader[5] = 0x00;
 
                 // workitem 7924 - don't need bit 3
@@ -5398,21 +5398,21 @@ namespace Aspose.Zip
             else
             {
                 // VersionNeededToExtract - reset to 20 since no zip64
-                _EntryHeader[4] = (byte) (20 & 0x00FF);
+                _EntryHeader[4] = (byte)(20 & 0x00FF);
                 _EntryHeader[5] = 0x00;
 
                 // CompressedSize - the correct value now
                 i = 18;
-                _EntryHeader[i++] = (byte) (_CompressedSize & 0x000000FF);
-                _EntryHeader[i++] = (byte) ((_CompressedSize & 0x0000FF00) >> 8);
-                _EntryHeader[i++] = (byte) ((_CompressedSize & 0x00FF0000) >> 16);
-                _EntryHeader[i++] = (byte) ((_CompressedSize & 0xFF000000) >> 24);
+                _EntryHeader[i++] = (byte)(_CompressedSize & 0x000000FF);
+                _EntryHeader[i++] = (byte)((_CompressedSize & 0x0000FF00) >> 8);
+                _EntryHeader[i++] = (byte)((_CompressedSize & 0x00FF0000) >> 16);
+                _EntryHeader[i++] = (byte)((_CompressedSize & 0xFF000000) >> 24);
 
                 // UncompressedSize - the correct value now
-                _EntryHeader[i++] = (byte) (_UncompressedSize & 0x000000FF);
-                _EntryHeader[i++] = (byte) ((_UncompressedSize & 0x0000FF00) >> 8);
-                _EntryHeader[i++] = (byte) ((_UncompressedSize & 0x00FF0000) >> 16);
-                _EntryHeader[i] = (byte) ((_UncompressedSize & 0xFF000000) >> 24);
+                _EntryHeader[i++] = (byte)(_UncompressedSize & 0x000000FF);
+                _EntryHeader[i++] = (byte)((_UncompressedSize & 0x0000FF00) >> 8);
+                _EntryHeader[i++] = (byte)((_UncompressedSize & 0x00FF0000) >> 16);
+                _EntryHeader[i] = (byte)((_UncompressedSize & 0xFF000000) >> 24);
 
                 // The HeaderId in the extra field header, is already dummied out.
                 if (extraFieldLength != 0)
@@ -5423,7 +5423,7 @@ namespace Aspose.Zip
                     // _EntryHeader bytes, the HeaderId is not guaranteed to be any
                     // particular value.  So we determine if the first header is a putative zip64
                     // header by examining the datasize.
-                    Int16 DataSize = (short) (_EntryHeader[i + 2] + _EntryHeader[i + 3] * 256);
+                    Int16 DataSize = (short)(_EntryHeader[i + 2] + _EntryHeader[i + 3] * 256);
                     if (DataSize == 16)
                     {
                         // reset to Header Id to dummy value, effectively dummy-ing out the zip64 metadata
@@ -5482,16 +5482,16 @@ namespace Aspose.Zip
                 else
                 {
                     // CompressedSize - (lower 32 bits) the correct value now
-                    Descriptor[i++] = (byte) (_CompressedSize & 0x000000FF);
-                    Descriptor[i++] = (byte) ((_CompressedSize & 0x0000FF00) >> 8);
-                    Descriptor[i++] = (byte) ((_CompressedSize & 0x00FF0000) >> 16);
-                    Descriptor[i++] = (byte) ((_CompressedSize & 0xFF000000) >> 24);
+                    Descriptor[i++] = (byte)(_CompressedSize & 0x000000FF);
+                    Descriptor[i++] = (byte)((_CompressedSize & 0x0000FF00) >> 8);
+                    Descriptor[i++] = (byte)((_CompressedSize & 0x00FF0000) >> 16);
+                    Descriptor[i++] = (byte)((_CompressedSize & 0xFF000000) >> 24);
 
                     // UncompressedSize - (lower 32 bits) the correct value now
-                    Descriptor[i++] = (byte) (_UncompressedSize & 0x000000FF);
-                    Descriptor[i++] = (byte) ((_UncompressedSize & 0x0000FF00) >> 8);
-                    Descriptor[i++] = (byte) ((_UncompressedSize & 0x00FF0000) >> 16);
-                    Descriptor[i] = (byte) ((_UncompressedSize & 0xFF000000) >> 24);
+                    Descriptor[i++] = (byte)(_UncompressedSize & 0x000000FF);
+                    Descriptor[i++] = (byte)((_UncompressedSize & 0x0000FF00) >> 8);
+                    Descriptor[i++] = (byte)((_UncompressedSize & 0x00FF0000) >> 16);
+                    Descriptor[i] = (byte)((_UncompressedSize & 0xFF000000) >> 24);
                 }
 
                 // finally, write the trailing descriptor to the output stream
@@ -5682,7 +5682,7 @@ namespace Aspose.Zip
 
                     // Also, winzip insists on this!
                     _TimeBlob = SharedUtilities.DateTimeToPacked(LastModified);
-                    encryptionHeader[11] = (byte) ((_TimeBlob >> 8) & 0xff);
+                    encryptionHeader[11] = (byte)((_TimeBlob >> 8) & 0xff);
                 }
                 else
                 {
@@ -5691,7 +5691,7 @@ namespace Aspose.Zip
                     // around it: must read the stream in its entirety to compute the
                     // actual CRC before proceeding.
                     FigureCrc32();
-                    encryptionHeader[11] = (byte) ((_Crc32 >> 24) & 0xff);
+                    encryptionHeader[11] = (byte)((_Crc32 >> 24) & 0xff);
                 }
 
                 // Encrypt the random header, INCLUDING the final byte which is either
@@ -5775,7 +5775,7 @@ namespace Aspose.Zip
 
                 while (remaining > 0)
                 {
-                    int len = (remaining > bytes.Length) ? bytes.Length : (int) remaining;
+                    int len = (remaining > bytes.Length) ? bytes.Length : (int)remaining;
 
                     // read
                     n = input1.Read(bytes, 0, len);
@@ -5888,7 +5888,7 @@ namespace Aspose.Zip
             long remaining = _TotalEntrySize;
             while (remaining > 0)
             {
-                int len = (remaining > bytes.Length) ? bytes.Length : (int) remaining;
+                int len = (remaining > bytes.Length) ? bytes.Length : (int)remaining;
 
                 // read
                 n = input1.Read(bytes, 0, len);

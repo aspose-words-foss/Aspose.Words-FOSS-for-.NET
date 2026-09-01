@@ -24,9 +24,9 @@ namespace Aspose.Collections
         public int this[int key]
         {
             get { return TryGetValueDirect(key); }
-            set 
+            set
             {
-                mDirectMap[key] =  value;
+                mDirectMap[key] = value;
                 mIndirectMap[value] = key;
             }
         }

@@ -1,7 +1,9 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 11/07/2005 by Roman Korchagin
 
+using System.Collections.Generic;
 using System.Text;
+using Aspose.Drawing;
 using Aspose.JavaAttributes;
 using Aspose.Words.Drawing;
 using Aspose.Words.Fields;
@@ -700,7 +702,7 @@ namespace Aspose.Words
                 int key = mParaPr.GetKey(i);
 
                 // We don't want the style or list properties of the paragraph to change in the process,
-                // because resolution of inherited formatting depends these values.
+                // because resolution of inherited formatting depends on these values.
                 if ((key == ParaAttr.Istd) || (key == ParaAttr.ListId) || (key == ParaAttr.ListLevel))
                 {
                     continue;
@@ -1190,8 +1192,19 @@ namespace Aspose.Words
         /// <returns>Number of joins performed. When <b>N</b> adjacent runs are being joined they count as <b>N - 1</b> joins.</returns>
         public int JoinRunsWithSameFormatting()
         {
-            return JoinRunsWithSameFormatting(new StringBuilder());
+            return JoinRunsWithSameFormatting(new StringBuilder(), null);
         }
+
+        /// <summary>
+        /// Joins runs with the same formatting in the paragraph.
+        /// </summary>
+        /// <param name = "options" > Additional options</param>
+        /// <returns>Number of joins performed. When <b>N</b> adjacent runs are being joined they count as <b>N - 1</b> joins.</returns>
+        public int JoinRunsWithSameFormatting(JoinRunsOptions options)
+        {
+            return JoinRunsWithSameFormatting(new StringBuilder(), options);
+        }
+
 
         /// <summary>
         /// Returns true if the paragraph has list label in original revision.
@@ -1261,13 +1274,14 @@ namespace Aspose.Words
         /// Someday we can make override without parameters public and retain this one internal.
         /// </summary>
         /// <param name="sb">Utility StringBuilder</param>
+        /// <param name="options">Additional options</param>
         /// <returns>Number of joins performed</returns>
-        internal int JoinRunsWithSameFormatting(StringBuilder sb)
+        internal int JoinRunsWithSameFormatting(StringBuilder sb, JoinRunsOptions options)
         {
-            return JoinRunsSpecificParent(this, sb);
+            return JoinRunsSpecificParent(this, sb, options);
         }
 
-        private static int JoinRunsSpecificParent(CompositeNode parent, StringBuilder sb)
+        private static int JoinRunsSpecificParent(CompositeNode parent, StringBuilder sb, JoinRunsOptions options)
         {
             // Here we cannot use Runs collection because we should join only adjacent runs.
             // What is done in the loop:
@@ -1301,13 +1315,22 @@ namespace Aspose.Words
                         if (prevRunPrExp == null)
                             prevRunPrExp = prevRun.GetExpandedRunPr(expandFlags);
 
-                        if (RunPr.IsSameFormatting(curRunPrExp, prevRunPrExp))
+                        Run joinRun = PeekJoinRun(curRun, prevRun, curRunPrExp, prevRunPrExp, options);
+                        if (joinRun != null)
                         {
                             if (sb.Length == 0)
                                 sb.Append(prevRun.Text);
                             sb.Append(curRun.Text);
 
+                            if (joinRun == prevRun)
+                            {
+                                prevRun = curRun;
+                                curRun = joinRun;
+                                curNode = joinRun;
+                            }
+
                             ++joinCount;
+
                             parent.RemoveChild(prevRun);
                         }
                         else
@@ -1331,7 +1354,7 @@ namespace Aspose.Words
                 if (curNode.NodeType == NodeType.StructuredDocumentTag)
                 {
                     StructuredDocumentTag sdt = (StructuredDocumentTag)curNode;
-                    JoinRunsSpecificParent(sdt, sb);
+                    JoinRunsSpecificParent(sdt, sb, options);
                 }
             }
 
@@ -1340,6 +1363,141 @@ namespace Aspose.Words
             Debug.Assert(sb.Length == 0);
 
             return joinCount;
+        }
+
+        /// <summary>
+        /// Returns True if the specified attribute is to be ignored in IgnoreSpacing mode.
+        /// </summary>
+        private static bool IgnoreInIgnoreSpacing(int attr, bool containsOnlyWhitespaces)
+        {
+            return containsOnlyWhitespaces
+                ? ArrayUtil.Contains(Run.KeysToIgnoreInComparisonOnJoinIgnoreSpacing, attr)
+                : attr == FontAttr.Spacing;
+        }
+
+        /// <summary>
+        /// Returns True if the specified attribute is to be ignored in IgnoreRedundant mode.
+        /// </summary>
+        private static bool IgnoreInIgnoreRedundant(int attr, CharacterCategory charCategory, bool runContainsOnlyWhitespaces)
+        {
+            if (runContainsOnlyWhitespaces && ArrayUtil.Contains(Run.KeysToIgnoreInComparisonOnJoinIgnoreRedundantSpacing, attr))
+                return true;
+
+            if (!ArrayUtil.Contains(Run.KeysToIgnoreInComparisonOnJoinIgnoreRedundant, attr))
+                return false;
+
+
+            switch (charCategory)
+            {
+                case CharacterCategory.Other:
+                    return !ArrayUtil.Contains(Run.KeysToConsiderOnJoinIgnoreRedundantOther, attr);
+                case CharacterCategory.FarEast:
+                    return !ArrayUtil.Contains(Run.KeysToConsiderOnJoinIgnoreRedundantFarEast, attr);
+                case CharacterCategory.ComplexScript:
+                    return !ArrayUtil.Contains(Run.KeysToConsiderOnJoinIgnoreRedundantComplexScript, attr);
+            }
+
+            return !ArrayUtil.Contains(Run.KeysToConsiderOnJoinIgnoreRedundantAscii, attr);
+        }
+
+        /// <summary>
+        /// Returns True if the specified attribute is to be ignored in IgnoreInsignificant mode.
+        /// </summary>
+        private static bool IgnoreInIgnoreInsignificant(int attr, bool containsOnlyWhitespaces, object valA, object valB, string val1, string val2)
+        {
+            if (containsOnlyWhitespaces && ArrayUtil.Contains(Run.KeysToIgnoreInComparisonOnJoinInsignificantSpacing, attr))
+                return true;
+
+            switch (attr)
+            {
+                case FontAttr.Size:
+                case FontAttr.SizeBi:
+                    int sizeA = (int)valA;
+                    int sizeB = (int)valB;
+
+                    return System.Math.Abs(sizeB - sizeA) < 4;
+                case FontAttr.Color:
+                case FontAttr.HighlightColor:
+                case FontAttr.UnderlineColor:
+                    DrColor colorA = (DrColor)valA;
+                    DrColor colorB = (DrColor)valB;
+                    if ((colorA.IsEmpty && !colorB.IsEmpty) || (!colorA.IsEmpty && colorB.IsEmpty))
+                        return false;
+
+                    return HSLColor.ColorDiff(colorA.ToArgb(), colorB.ToArgb()) < 0.04;
+                case FontAttr.Spacing:
+                    int spacingA = (int)valA;
+                    int spacingB = (int)valB;
+
+                    return System.Math.Abs(spacingB - spacingA) < 12;
+                case FontAttr.NoProofing:
+                    return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Returns a suitable run into where the adjacent run may be joined.
+        /// Returns null if the runs cannot be joined.
+        /// </summary>
+        private static Run PeekJoinRun(Run runA, Run runB, RunPr runPrExpA, RunPr runPrExpB, JoinRunsOptions options)
+        {
+            Run result = null;
+
+            if (RunPr.IsSameFormatting(runPrExpA, runPrExpB))
+                return runA;
+
+            if (options == null)
+                return null;
+
+            bool runAContainsOnlyWhitespaces =  StringUtil.ContainsOnlyWhitespaces(runA.Text);
+            bool runBContainsOnlyWhitespaces = StringUtil.ContainsOnlyWhitespaces(runB.Text);
+            CharacterCategory charCategoryA = runA.Font.GetCharacterCategory();
+            CharacterCategory charCategoryB = runB.Font.GetCharacterCategory();
+
+            List<int> keysToIgnore = new List<int>();
+
+            foreach (int attr in Run.KeysToIgnoreInComparisonOnJoinAll)
+            {
+                if (options.IgnoreSpacing)
+                {
+                    if (IgnoreInIgnoreSpacing(attr, runAContainsOnlyWhitespaces || runBContainsOnlyWhitespaces))
+                    {
+                        keysToIgnore.Add(attr);
+                        continue;
+                    }
+                }
+
+                if (options.IgnoreRedundant)
+                {
+                    if (IgnoreInIgnoreRedundant(attr, charCategoryA, runAContainsOnlyWhitespaces) &&
+                        IgnoreInIgnoreRedundant(attr, charCategoryB, runBContainsOnlyWhitespaces))
+                    {
+                        keysToIgnore.Add(attr);
+                        continue;
+                    }
+                }
+
+                if (options.IgnoreInsignificant)
+                {
+                    
+                    if (IgnoreInIgnoreInsignificant(attr, runAContainsOnlyWhitespaces || runBContainsOnlyWhitespaces, runA.RunPr.FetchAttr(attr), runB.RunPr.FetchAttr(attr), runA.Text, runB.Text))
+                    {
+                        keysToIgnore.Add(attr);
+                        continue;
+                    }
+                }
+            }
+
+            if (RunPr.IsSameFormatting(runPrExpA, runPrExpB, keysToIgnore.ToArray()))
+            {
+                result = !StringUtil.ContainsOnlyWhitespaces(runA.Text)
+                    ? runA
+                    : runB;
+            }
+
+            return result;
         }
 
         /// <summary>

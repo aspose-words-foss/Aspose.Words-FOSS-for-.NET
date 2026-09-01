@@ -66,7 +66,7 @@ namespace Aspose.Words
         /// </summary>
         FlatOpcTemplateMacroEnabled = 27,
         /// <summary>
-        /// Saves the document in the RTF format.
+        /// Saves the document in the RTF format. 
         /// All characters above 7-bits are escaped as hexadecimal or Unicode characters.
         /// </summary>
         Rtf = 30,
@@ -192,7 +192,7 @@ namespace Aspose.Words
         /// Renders a page of the document and saves it as an EPS file.
         /// </summary>
         Eps = 106,
-#if NETSTANDARD || NET462_OR_GREATER || JAVA
+#if NETSTANDARD || NET || NET462_OR_GREATER || JAVA
         /// <summary>
         /// Renders a page of the document and saves it as a WebP file.
         /// </summary>

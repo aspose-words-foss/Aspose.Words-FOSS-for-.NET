@@ -18,7 +18,7 @@ namespace Aspose.Tests.Collections.Generic
             IntBigArray bigArray = new IntBigArray(length);
 
             // Setter.
-            for(int i = 0; i < length; ++i)
+            for (int i = 0; i < length; ++i)
                 bigArray[i] = i + 1;
 
             // Getter.

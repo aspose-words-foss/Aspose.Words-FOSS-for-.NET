@@ -23,8 +23,8 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
         internal DmlChartDataLabelPr(DmlChart chart) : this(null, chart)
         {
         }
-      
-        internal DmlChartDataLabelPr(DmlChartDataLabelPr parentBag , DmlChart chart) : 
+
+        internal DmlChartDataLabelPr(DmlChartDataLabelPr parentBag, DmlChart chart) :
             this(parentBag, ((chart == null) ? null : chart.Document),
                 ((chart != null) && (chart.ChartType == DmlChartType.ChartExChart)))
         {
@@ -65,7 +65,7 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
             if (leaderLines != null)
                 lhs.SetProperty(DmlChartDataLabelAttrs.LeaderLines, leaderLines.Clone());
 
-            StringToObjDictionary<DmlExtension> extensions = 
+            StringToObjDictionary<DmlExtension> extensions =
                 (StringToObjDictionary<DmlExtension>)GetDirectProperty(DmlChartDataLabelAttrs.Extensions);
             if (extensions != null)
                 lhs.SetProperty(DmlChartDataLabelAttrs.Extensions, DmlExtensionListSource.CloneExtensions(extensions));
@@ -97,8 +97,8 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
             // WORDSNET-16520 If a pie chart is used, and a separator is directly specified, the specified separator
             // must be used. The separator can be specified in the dLbls element or directly in the data label. 
             if (isPieChart &&
-                ShowCategoryAndPercentageOnly && 
-                !IsPropertySpecified(DmlChartDataLabelAttrs.Separator) && 
+                ShowCategoryAndPercentageOnly &&
+                !IsPropertySpecified(DmlChartDataLabelAttrs.Separator) &&
                 !IsParentPropertySpecified(DmlChartDataLabelAttrs.Separator))
                 return ControlChar.CrLf;
 
@@ -144,8 +144,8 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
         /// <returns>Specified property, if extension is set and extension properties is specified. Otherwise - null</returns>
         internal object GetExtensionProperty(DmlChartDataLabelAttrs attr)
         {
-            return (mPropertyBag.ExtensionProperties != null) 
-                ? mPropertyBag.ExtensionProperties.GetDirectProperty((int)attr) 
+            return (mPropertyBag.ExtensionProperties != null)
+                ? mPropertyBag.ExtensionProperties.GetDirectProperty((int)attr)
                 : null;
         }
 
@@ -397,7 +397,7 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
             string separator = (string)GetProperty(DmlChartDataLabelAttrs.Separator) + " ";
             DmlParagraph paragraph = reachText.Paragraphs[0];
             int runIndex = 0;
-            
+
             if ((bool)GetProperty(DmlChartDataLabelAttrs.ShowDataLabelsRange))
             {
                 if (!CheckTxRun(paragraph.Elements, runIndex, CellRangeFieldType, CellRangeFieldCode, separator))
@@ -480,12 +480,12 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
         private static bool HasRunProperties(DmlParagraphTextElementBase element)
         {
             DmlRunProperties properties = element.RunProperties;
-            return 
+            return
                 ((properties.Effects != null) && (properties.Effects.Count > 0)) ||
                 ((properties.Extensions != null) && (properties.Extensions.Count > 0)) ||
                 // Word may write these properties into chart XML, let's just ignore them for now.
                 properties.HasNonDefaultFormatting(
-                    new [] { (int)DmlRunPropertiesIds.Baseline, (int)DmlRunPropertiesIds.Language }) ||
+                    new[] { (int)DmlRunPropertiesIds.Baseline, (int)DmlRunPropertiesIds.Language }) ||
                 !MathUtil.AreEqual(properties.Baseline, 0);
         }
 
@@ -587,7 +587,7 @@ namespace Aspose.Words.Drawing.Charts.Core.ComplexTypes
                 IDmlHierarchicalPropertyBag extensionProperties = mPropertyBag.ExtensionProperties;
                 IDmlHierarchicalPropertyBag parentExtensionProperties =
                     mPropertyBag.ParentBagProvider.ParentBag.ExtensionProperties;
-                if ((extensionProperties != null) && 
+                if ((extensionProperties != null) &&
                     extensionProperties.HasNonDefaultFormatting(gExtensionAttributesToIgnore, parentExtensionProperties))
                     return true;
 

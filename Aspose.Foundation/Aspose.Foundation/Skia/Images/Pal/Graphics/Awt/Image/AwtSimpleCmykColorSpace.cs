@@ -2,13 +2,13 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
 namespace Aspose.Images.Pal.Graphics.Awt.Image
 {
-    internal class AwtSimpleCmykColorSpace: AwtColorSpace
+    internal class AwtSimpleCmykColorSpace : AwtColorSpace
     {
         private AwtSimpleCmykColorSpace() : base(AwtColorSpaceType.Cmyk, 4)
         {
@@ -44,7 +44,8 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
             {
                 float v = rgbvalue[i];
 
-                if (v < 0.0F) v = 0.0F;
+                if (v < 0.0F)
+                    v = 0.0F;
 
                 if (v < 0.0031308F)
                 {
@@ -52,7 +53,8 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
                 }
                 else
                 {
-                    if (v > 1.0F) v = 1.0F;
+                    if (v > 1.0F)
+                        v = 1.0F;
 
                     rgbvalue[i] = (float)(1.055 * Math.Pow(v, gPower1) - 0.055);
                 }

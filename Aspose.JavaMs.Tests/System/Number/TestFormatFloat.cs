@@ -34,7 +34,7 @@ namespace Aspose.JavaMs.Tests.System.Number
         public void TestFormatWithMixedZeroPositions()
         {
             string pattern = "[$-409]#,##0.0";
-            float[] input = 
+            float[] input =
             {
                 1f, 2f, 3f, 4f,
                 -1.3f, -9.4f, -8.3f,
@@ -42,7 +42,7 @@ namespace Aspose.JavaMs.Tests.System.Number
                 -6.6f, -0.1f, -8.8f, -1.6f
             };
 
-            string[] results = 
+            string[] results =
             {
                 "[$-409]0,001.0", "[$-409]0,002.0", "[$-409]0,003.0", "[$-409]0,004.0",
                 "-[$-409]0,001.3", "-[$-409]0,009.4", "-[$-409]0,008.3", "-[$-409]0,007.9",

@@ -226,9 +226,9 @@ namespace Aspose.Words.RW.Html.Css
             return m1;
         }
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
         /// <summary>
-        /// For netsstandard harcoded values are returned, since there are no SystemColors.
+        /// For .NET Standard, harcoded values are returned, since there are no SystemColors.
         /// </summary>
         private static DrColor ParseSystemColor(string value)
         {

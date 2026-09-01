@@ -71,12 +71,12 @@ namespace Aspose.Fonts.EmbeddedOpenType
                 int pushDataOffset = reader.ReadUInt24();
                 int instructionsOffset = reader.ReadUInt24();
 
-                if(pushDataOffset > instructionsOffset || instructionsOffset >= data.Length)
+                if (pushDataOffset > instructionsOffset || instructionsOffset >= data.Length)
                     throw new InvalidOperationException("The MTX data is not valid.");
 
-                byte[] lzcompEncodedFontTables = reader.ReadBytes(pushDataOffset - (int) stream.Position);
-                byte[] lzcompEncodedPushData = reader.ReadBytes(instructionsOffset - (int) stream.Position);
-                byte[] lzcompEncodedInstructions = reader.ReadBytes(data.Length - (int) stream.Position);
+                byte[] lzcompEncodedFontTables = reader.ReadBytes(pushDataOffset - (int)stream.Position);
+                byte[] lzcompEncodedPushData = reader.ReadBytes(instructionsOffset - (int)stream.Position);
+                byte[] lzcompEncodedInstructions = reader.ReadBytes(data.Length - (int)stream.Position);
 
                 byte[] lzcompDecodedFontTables = LzCompDecoder.UnpackData(lzcompEncodedFontTables);
                 byte[] lzcompDecodedPushData = LzCompDecoder.UnpackData(lzcompEncodedPushData);

@@ -230,7 +230,7 @@ namespace Aspose.Words
             switch (node.NodeType)
             {
                 case NodeType.Document:         // RK This is MF's code. I think it should probably be NodeType.Body.
-                    // MF No it should be Document because we need to skip over bodies to continue movements in main text.
+                                                // MF No it should be Document because we need to skip over bodies to continue movements in main text.
                 case NodeType.GlossaryDocument:
                 case NodeType.HeaderFooter:
                 case NodeType.Footnote:

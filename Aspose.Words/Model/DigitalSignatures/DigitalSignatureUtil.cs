@@ -54,7 +54,7 @@ namespace Aspose.Words.DigitalSignatures
         /// <param name="signOptions"><see cref="SignOptions"/> object with various signing options.</param>
         /// <javaName>void sign(java.io.InputStream srcStream,java.io.OutputStream dstStream,com.aspose.words.CertificateHolder certHolder,com.aspose.words.SignOptions signOptions)</javaName>
         [JavaUseSecondApiChangeMap("dstStream")]
-        public static void Sign([CppIOStreamWrapper(IOStreamType.IStream)]Stream srcStream,[CppIOStreamWrapper(IOStreamType.OStream)] Stream dstStream, CertificateHolder certHolder, SignOptions signOptions)
+        public static void Sign([CppIOStreamWrapper(IOStreamType.IStream)] Stream srcStream, [CppIOStreamWrapper(IOStreamType.OStream)] Stream dstStream, CertificateHolder certHolder, SignOptions signOptions)
         {
             ArgumentUtil.CheckNotNull(srcStream, "srcStream");
             ArgumentUtil.CheckNotNull(dstStream, "dstStream");
@@ -154,10 +154,10 @@ namespace Aspose.Words.DigitalSignatures
         /// <cpp>The certificate in holder MUST contain private keys.</cpp></param>
         /// <javaName>void sign(java.io.InputStream srcStream,java.io.OutputStream dstStream,com.aspose.words.CertificateHolder certHolder)</javaName>
         [JavaUseSecondApiChangeMap("dstStream")]
-        public static void Sign([CppIOStreamWrapper(IOStreamType.IStream)]Stream srcStream, [CppIOStreamWrapper(IOStreamType.OStream)]Stream dstStream, CertificateHolder certHolder)
-         {
-             Sign(srcStream, dstStream, certHolder, null);
-         }
+        public static void Sign([CppIOStreamWrapper(IOStreamType.IStream)] Stream srcStream, [CppIOStreamWrapper(IOStreamType.OStream)] Stream dstStream, CertificateHolder certHolder)
+        {
+            Sign(srcStream, dstStream, certHolder, null);
+        }
 
         /// <summary>
         /// Signs source document using given <see cref="CertificateHolder"/> with digital signature
@@ -220,7 +220,7 @@ namespace Aspose.Words.DigitalSignatures
         /// </summary>
         /// <javaName>void removeAllSignatures(java.io.InputStream srcStream,java.io.OutputStream dstStream)</javaName>
         [JavaUseSecondApiChangeMap("dstStream")]
-        public static void RemoveAllSignatures([CppIOStreamWrapper(IOStreamType.IStream)]Stream srcStream, [CppIOStreamWrapper(IOStreamType.OStream)]Stream dstStream)
+        public static void RemoveAllSignatures([CppIOStreamWrapper(IOStreamType.IStream)] Stream srcStream, [CppIOStreamWrapper(IOStreamType.OStream)] Stream dstStream)
         {
             FileFormatDetector detector = new FileFormatDetector();
             FileFormatInfo formatInfo = detector.Detect(srcStream);
@@ -229,53 +229,53 @@ namespace Aspose.Words.DigitalSignatures
             {
                 case LoadFormat.Doc:
                 case LoadFormat.Dot:
-                    {
-                        FileSystem fs = new FileSystem(srcStream);
+                {
+                    FileSystem fs = new FileSystem(srcStream);
 
-                        fs.Root.Remove(OfficeCryptoNames.XmlDsigSignatureStorageName);
-                        fs.Root.Remove(OfficeCryptoNames.CryptoApiSignatureStreamName);
+                    fs.Root.Remove(OfficeCryptoNames.XmlDsigSignatureStorageName);
+                    fs.Root.Remove(OfficeCryptoNames.CryptoApiSignatureStreamName);
 
-                        dstStream.Position = 0;
+                    dstStream.Position = 0;
 
-                        // Save file system to destination stream.
-                        fs.Save(dstStream);
+                    // Save file system to destination stream.
+                    fs.Save(dstStream);
 
-                        // Update stream length.
-                        dstStream.SetLength(dstStream.Position);
-                        break;
-                    }
+                    // Update stream length.
+                    dstStream.SetLength(dstStream.Position);
+                    break;
+                }
 
                 case LoadFormat.Docx:
                 case LoadFormat.Dotx:
                 case LoadFormat.Docm:
                 case LoadFormat.Dotm:
+                {
+                    OpcPackage package = new OpcPackage(srcStream);
+                    // Look for existing signatures.
+                    OpcPackagePart originPart = package.GetPartByRelationshipType(null, OpcRelationshipType.DigitalSignatureOrigin);
+
+                    if (originPart != null)
                     {
-                        OpcPackage package = new OpcPackage(srcStream);
-                        // Look for existing signatures.
-                        OpcPackagePart originPart = package.GetPartByRelationshipType(null, OpcRelationshipType.DigitalSignatureOrigin);
-
-                        if (originPart != null)
+                        foreach (OpcRelationship rel in originPart.Rels)
                         {
-                            foreach (OpcRelationship rel in originPart.Rels)
-                            {
-                                string signaturePartName = originPart.GetRelatedPartName(rel);
-                                package.Parts.Remove(signaturePartName);
-                            }
-
-                            package.Parts.Remove(originPart.Name);
-                            OpcRelationship originPartRel = package.Rels.GetFirstByType(OpcRelationshipType.DigitalSignatureOrigin);
-                            package.Rels.Remove(originPartRel.Id);
-                            package.UpdateRelationshipsAndContentTypes();
+                            string signaturePartName = originPart.GetRelatedPartName(rel);
+                            package.Parts.Remove(signaturePartName);
                         }
 
-                        dstStream.Position = 0;
-
-                        // Save package to destination stream.
-                        package.Save(dstStream);
-
-                        dstStream.SetLength(dstStream.Position);
-                        break;
+                        package.Parts.Remove(originPart.Name);
+                        OpcRelationship originPartRel = package.Rels.GetFirstByType(OpcRelationshipType.DigitalSignatureOrigin);
+                        package.Rels.Remove(originPartRel.Id);
+                        package.UpdateRelationshipsAndContentTypes();
                     }
+
+                    dstStream.Position = 0;
+
+                    // Save package to destination stream.
+                    package.Save(dstStream);
+
+                    dstStream.SetLength(dstStream.Position);
+                    break;
+                }
 
                 // WORDSNET-25043 Implemented signature removing in ODT.
                 // WORDSNET-25411 Added case for OTT.
@@ -304,7 +304,7 @@ namespace Aspose.Words.DigitalSignatures
         /// <param name="stream">Stream with the document.</param>
         /// <returns>Collection of digital signatures. Returns empty collection if file is not signed.</returns>
         /// <javaName>com.aspose.words.DigitalSignatureCollection loadSignatures(java.io.InputStream stream)</javaName>
-        public static DigitalSignatureCollection LoadSignatures([CppIOStreamWrapper(IOStreamType.IStream)]Stream stream)
+        public static DigitalSignatureCollection LoadSignatures([CppIOStreamWrapper(IOStreamType.IStream)] Stream stream)
         {
             FileFormatDetector detector = new FileFormatDetector();
             FileFormatInfo formatInfo = detector.Detect(stream);

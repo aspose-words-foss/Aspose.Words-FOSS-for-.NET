@@ -24,7 +24,7 @@ namespace Aspose
         public static int ToInt(double value)
         {
             // not changed in .Net.
-            return (int) value;
+            return (int)value;
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Aspose
         public static double Trim(double value, int digits)
         {
             double p = Math.Pow(10, digits);
-            return (Math.Truncate(value*p))/p;
+            return (Math.Truncate(value * p)) / p;
         }
 
         public static int GetHashCode(double value)

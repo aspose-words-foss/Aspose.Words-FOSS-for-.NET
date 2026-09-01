@@ -162,7 +162,7 @@ namespace Aspose.TestFx.GoldComparers
                 Invalid = 0xff
             }
 
-            public Kind Difference { get ;}
+            public Kind Difference { get; }
 
             public string Label { get; }
 
@@ -230,7 +230,7 @@ namespace Aspose.TestFx.GoldComparers
                                         index++;
 
                                 if (labels.Length > 0 && index >= 0 && index < labels.Length)
-                                        return true;
+                                    return true;
                             }
                         }
 

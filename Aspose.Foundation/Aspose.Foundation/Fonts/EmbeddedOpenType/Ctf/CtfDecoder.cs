@@ -239,7 +239,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                     writer.WriteUInt16(numRatios);
 
                     // Ratios and offsets are not encoded.
-                    writer.WriteBytes(reader.ReadBytes(numRatios*6));
+                    writer.WriteBytes(reader.ReadBytes(numRatios * 6));
 
                     for (int i = 0; i < numRecs; i++)
                     {
@@ -261,8 +261,8 @@ namespace Aspose.Fonts.EmbeddedOpenType.Ctf
                             short yMinError = magnitudeReader.ReadValue();
 
                             group.VTables[j].YPelHeight = (ushort)(predictedPpem + ppemError);
-                            int predictedYMax = (group.VTables[j].YPelHeight*yMaxMult + 1024)/2048;
-                            int predictedYMin = -(group.VTables[j].YPelHeight*yMinMult + 1024)/2048;
+                            int predictedYMax = (group.VTables[j].YPelHeight * yMaxMult + 1024) / 2048;
+                            int predictedYMin = -(group.VTables[j].YPelHeight * yMinMult + 1024) / 2048;
                             group.VTables[j].YMax = (short)(predictedYMax + yMaxError);
                             group.VTables[j].YMin = (short)(predictedYMin + yMinError);
 

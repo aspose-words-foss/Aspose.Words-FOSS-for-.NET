@@ -440,8 +440,8 @@ namespace Aspose.Words.RW.Markdown
                 (c == ControlChar.LineBreakChar) ||
                 (c == ControlChar.PageBreakChar) ||
                 (c == ControlChar.ParagraphBreakChar) ||
-                 // WORDSNET-18341 Also added SoftLineBreakChar as it actually
-                 // will be converted to some of the whitespace characters.
+                // WORDSNET-18341 Also added SoftLineBreakChar as it actually
+                // will be converted to some of the whitespace characters.
                 (c == SoftLineBreakChar));
         }
 
@@ -730,7 +730,7 @@ namespace Aspose.Words.RW.Markdown
                     }
 
                     if (isSkip)
-                            continue;
+                        continue;
                 }
 
                 if (c == SoftLineBreakChar)
@@ -787,7 +787,7 @@ namespace Aspose.Words.RW.Markdown
                     continue;
                 }
 
-                byte[] bytes = Encoding.UTF8.GetBytes(new char[] {c});
+                byte[] bytes = Encoding.UTF8.GetBytes(new char[] { c });
                 string hexCode = StringUtil.BytesToHex(bytes);
 
                 sb.Append("&#x").Append(hexCode).Append(';');
@@ -938,17 +938,17 @@ namespace Aspose.Words.RW.Markdown
         /// This should be the same characters as in gEscapableMarkupSymbols,
         /// but it is limited to the specified ones (bold and italic emphases delimiters) for a while.
         /// </remarks>
-        private static readonly char[] gEscapableMarkupCharacters = {'*', '_'};
+        private static readonly char[] gEscapableMarkupCharacters = { '*', '_' };
 
         /// <summary>
         /// Markup symbols for backslash-escaping.
         /// </summary>
-        private static readonly string[] gMarkupSymbolsForEscaping = {"(", ")", "<", ">"};
+        private static readonly string[] gMarkupSymbolsForEscaping = { "(", ")", "<", ">" };
 
         /// <summary>
         /// Square brackets.
         /// </summary>
-        private static readonly string[] gSquareBrackets = {"[", "]"};
+        private static readonly string[] gSquareBrackets = { "[", "]" };
 
         /// <summary>
         /// A Tab size in spaces.

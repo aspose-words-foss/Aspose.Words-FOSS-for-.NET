@@ -255,7 +255,7 @@ namespace Aspose.Words
         /// </summary>
         internal static readonly int[] KeysToIgnoreInComparisonOnJoinLtrRuns =
         {
-            FontAttr.RsidRPr, FontAttr.RsidR, FontAttr.BoldBi, FontAttr.ItalicBi, FontAttr.NameBi, FontAttr.LocaleIdBi,
+            FontAttr.RsidRPr, FontAttr.RsidR, FontAttr.Istd, FontAttr.BoldBi, FontAttr.ItalicBi, FontAttr.NameBi, FontAttr.LocaleIdBi,
             FontAttr.SizeBi
         };
 
@@ -266,9 +266,96 @@ namespace Aspose.Words
         /// </summary>
         internal static readonly int[] KeysToIgnoreInComparisonOnJoinRtlRuns =
         {
-            FontAttr.RsidRPr, FontAttr.RsidR, FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameAscii,
+            FontAttr.RsidRPr, FontAttr.RsidR, FontAttr.Istd, FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameAscii,
             FontAttr.NameFarEast, FontAttr.NameOther, FontAttr.LocaleId, FontAttr.LocaleIdFarEast
         };
+
+        /// <summary>
+        /// All possible attributes that can be added to the ignore set during join runs.
+        /// </summary>
+        internal static readonly int[] KeysToIgnoreInComparisonOnJoinAll =
+        {
+            FontAttr.HighlightColor, FontAttr.Bold, FontAttr.Italic, FontAttr.SmallCaps, FontAttr.AllCaps, FontAttr.Spacing,
+            FontAttr.Color, FontAttr.Emboss, FontAttr.Engrave, FontAttr.Size, FontAttr.Position, FontAttr.VerticalAlignment,
+            FontAttr.Kerning, FontAttr.NameAscii, FontAttr.NameFarEast, FontAttr.NameOther, FontAttr.BoldBi, FontAttr.ItalicBi,
+            FontAttr.Bidi, FontAttr.ComplexScript, FontAttr.NameBi, FontAttr.Scaling, FontAttr.LocaleIdBi, FontAttr.SizeBi,
+            FontAttr.LocaleId, FontAttr.LocaleIdFarEast, FontAttr.CharacterCategoryHint, FontAttr.NoProofing,
+            FontAttr.UnderlineColor, FontAttr.ThemeColor,  
+        };
+
+        /// <summary>
+        /// In IgnoreSpacing mode, if the run text contains only spaces, these attributes are ignored.
+        /// </summary>
+        internal static readonly int[] KeysToIgnoreInComparisonOnJoinIgnoreSpacing =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.SmallCaps, FontAttr.AllCaps, FontAttr.Spacing, FontAttr.Color, FontAttr.Emboss,
+            FontAttr.Engrave, FontAttr.Size, FontAttr.Position, FontAttr.VerticalAlignment, FontAttr.Kerning, FontAttr.NameAscii,
+            FontAttr.NameFarEast, FontAttr.NameOther, FontAttr.BoldBi, FontAttr.ItalicBi, FontAttr.ComplexScript, FontAttr.NameBi,
+            FontAttr.Scaling, FontAttr.LocaleIdBi, FontAttr.SizeBi, FontAttr.LocaleId, FontAttr.LocaleIdFarEast,
+            FontAttr.CharacterCategoryHint, FontAttr.NoProofing, FontAttr.UnderlineColor, FontAttr.ThemeColor
+        };
+
+        /// <summary>
+        /// In IgnoreInsignificant mode, if the run text contains only spaces, these attributes are ignored.
+        /// </summary>
+        internal static readonly int[] KeysToIgnoreInComparisonOnJoinInsignificantSpacing =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.SmallCaps, FontAttr.AllCaps, FontAttr.Color, FontAttr.Emboss, FontAttr.Engrave,
+            FontAttr.Position, FontAttr.VerticalAlignment, FontAttr.Kerning, FontAttr.NameAscii, FontAttr.NameFarEast, FontAttr.NameOther,
+            FontAttr.BoldBi, FontAttr.ItalicBi, FontAttr.ComplexScript, FontAttr.NameBi, FontAttr.LocaleIdBi, FontAttr.LocaleId,
+            FontAttr.LocaleIdFarEast, FontAttr.CharacterCategoryHint, FontAttr.NoProofing, FontAttr.UnderlineColor, FontAttr.ThemeColor
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode, if the run text contains only spaces, these attributes are ignored.
+        /// </summary>
+        internal static readonly int[] KeysToIgnoreInComparisonOnJoinIgnoreRedundantSpacing =
+        {
+            FontAttr.Color, FontAttr.VerticalAlignment, FontAttr.NoProofing, FontAttr.UnderlineColor, FontAttr.ThemeColor 
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode, only these attributes can be ignored.
+        /// </summary>
+        internal static readonly int[] KeysToIgnoreInComparisonOnJoinIgnoreRedundant =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameAscii, FontAttr.NameFarEast, FontAttr.NameOther, FontAttr.BoldBi,
+            FontAttr.ItalicBi, FontAttr.Bidi, FontAttr.ComplexScript, FontAttr.NameBi, FontAttr.LocaleIdBi, FontAttr.SizeBi,
+            FontAttr.LocaleId, FontAttr.LocaleIdFarEast, FontAttr.CharacterCategoryHint, FontAttr.NoProofing
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode and a specific Ascii character category, only the specified attributes are considered.
+        /// </summary>
+        internal static readonly int[] KeysToConsiderOnJoinIgnoreRedundantAscii =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameAscii, FontAttr.LocaleId
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode and a specific FarEast character category, only the specified attributes are considered.
+        /// </summary>
+        internal static readonly int[] KeysToConsiderOnJoinIgnoreRedundantFarEast =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameFarEast, FontAttr.LocaleIdFarEast, FontAttr.CharacterCategoryHint
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode and a specific ComplexScript character category, only the specified attributes are considered.
+        /// </summary>
+        internal static readonly int[] KeysToConsiderOnJoinIgnoreRedundantComplexScript =
+        {
+            FontAttr.BoldBi, FontAttr.ItalicBi, FontAttr.NameBi, FontAttr.LocaleIdBi, FontAttr.SizeBi
+        };
+
+        /// <summary>
+        /// In IgnoreRedundant mode and a specific Other character category, only the specified attributes are considered.
+        /// </summary>
+        internal static readonly int[] KeysToConsiderOnJoinIgnoreRedundantOther =
+        {
+            FontAttr.Bold, FontAttr.Italic, FontAttr.Size, FontAttr.NameOther, FontAttr.LocaleId
+        };
+
 
 #if DEBUG
         public override string ToString()

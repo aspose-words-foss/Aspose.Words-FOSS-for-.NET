@@ -12,7 +12,7 @@ namespace Aspose.Charset
     /// </summary>
     [CodePorting.Translator.Cs2Cpp.CppConstexpr]
     public static class CodePage
-    { 
+    {
 
         public const int SymbolCharSet = 2;
 
@@ -124,7 +124,7 @@ namespace Aspose.Charset
         /// </remarks>
         public static int LidToCodePage(int lid)
         {
-            switch ((Language) lid)
+            switch ((Language)lid)
             {
                 case Language.Hebrew:
                 case Language.HebrewIsrael:
@@ -208,7 +208,7 @@ namespace Aspose.Charset
             return ArrayUtil.EmptyByteArray;
         }
 
-        
+
         static CodePage()
         {
             // Source: Word2007RTFSpec1.9.1.docx
@@ -243,7 +243,7 @@ namespace Aspose.Charset
             gCharSetMap.Add(238, 1250); // Eastern European
             gCharSetMap.Add(254, DosLatinUSCodePage);  // PC 437
             gCharSetMap.Add(255, DosLatin1CodePage);  // OEM
-            gCharSetMap.Add(65535, CodePageUtf16); 
+            gCharSetMap.Add(65535, CodePageUtf16);
 
             // The following list is obtained using Encoding.GetEncodings() method.
             // Also the list of encodings with IsSinleByte flag available on MSDN 

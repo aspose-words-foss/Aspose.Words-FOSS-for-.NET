@@ -22,13 +22,13 @@ namespace Aspose.Bidi
         }
 
         public BidiSourceRun(string text, BidiLevelList levels)
-            : this (text, levels, true, false)
+            : this(text, levels, true, false)
         {
             // Empty constructor.
         }
 
         public BidiSourceRun(string text, bool hebrewScript, bool arabicScript)
-            : this (text, new BidiLevelList(), hebrewScript, arabicScript)
+            : this(text, new BidiLevelList(), hebrewScript, arabicScript)
         {
             // Empty constructor.
         }

@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 07/08/2017 by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using Aspose.Drawing;
 using SkiaSharp;
@@ -127,7 +127,7 @@ namespace Aspose.Images.Pal
                 return;
             }
 
-            mPixelData[i] = new SKColor((uint) argb);
+            mPixelData[i] = new SKColor((uint)argb);
         }
 
         public byte[] ArgbData

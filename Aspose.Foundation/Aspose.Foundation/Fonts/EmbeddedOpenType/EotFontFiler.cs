@@ -351,7 +351,7 @@ namespace Aspose.Fonts.EmbeddedOpenType
         /// </summary>
         public static int GetHeaderSize(byte[] eotFile)
         {
-            return  GetEotSize(eotFile) - GetFontDataSize(eotFile);
+            return GetEotSize(eotFile) - GetFontDataSize(eotFile);
         }
 
         /// <summary>
@@ -396,7 +396,7 @@ namespace Aspose.Fonts.EmbeddedOpenType
         /// </summary>
         private static EotVersion ParseVersion(int version)
         {
-            switch(version)
+            switch (version)
             {
                 case (int)EotVersion.Version10:
                     return EotVersion.Version10;

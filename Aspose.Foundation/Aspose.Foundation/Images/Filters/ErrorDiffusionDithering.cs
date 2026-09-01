@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 01/11/2013 by Sergey Merkulov
-#if !NETSTANDARD
+#if NETFRAMEWORK
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -45,14 +45,14 @@ namespace Aspose.Images.Filters
             // Create destination image.
             Bitmap destImage = new Bitmap(sourceImage.Width, sourceImage.Height, PixelFormat.Format1bppIndexed);
             destImage.SetResolution(sourceImage.HorizontalResolution, sourceImage.VerticalResolution);
-            
+
             // Lock destination image.
             BitmapData destData = destImage.LockBits(new Rectangle(0, 0, Width, Height),
                 ImageLockMode.WriteOnly, destImage.PixelFormat);
             // Prepare destination image bytes and BitWriter associated with it.
-            byte[] destBytes = new byte[Height*destData.Stride];
+            byte[] destBytes = new byte[Height * destData.Stride];
             BitWriter writer = new BitWriter(destBytes);
-            
+
             int ptr = 0;
             int offset = Stride - Width;
 
@@ -60,7 +60,7 @@ namespace Aspose.Images.Filters
             // For each line
             for (Y = 0; Y < Height; Y++)
             {
-                writer.ByteIndex = Y*destData.Stride;
+                writer.ByteIndex = Y * destData.Stride;
                 // For each pixel
                 for (X = 0; X < Width; X++, ptr++)
                 {
@@ -102,7 +102,7 @@ namespace Aspose.Images.Filters
             int v = bytes[ptr];
             // error value
             int error;
-            
+
             // fill the next destination pixel
             if (v >= mThreshold)
             {
@@ -116,14 +116,14 @@ namespace Aspose.Images.Filters
             }
 
             // Set correct bit in result 1bpp image.
-            if(bytes[ptr]==255)
+            if (bytes[ptr] == 255)
                 writer.WriteOneInCurrentBit();
             writer.MoveToNextBit();
 
             // do error diffusion
             Diffuse(error, bytes, ptr);
         }
-        
+
         private static void FinishProcess(Bitmap sourceImage, BitmapData sourceData, Bitmap destImage, BitmapData destData, byte[] destBytes)
         {
             sourceImage.UnlockBits(sourceData);

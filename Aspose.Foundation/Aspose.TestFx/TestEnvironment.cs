@@ -42,7 +42,7 @@ namespace Aspose.TestFx
         public static string GetUserHome() { return gUserHome; }
         public static string GetUserHome(string path) { return NormalizePath(gUserHome + path); }
         public static string GetLocalAppDataTmp() { return gLocalAppDataTmp; }
-        
+
         [CodePorting.Translator.Cs2Cpp.CppSkipDefinition(false)]
         public static string GetRemoteComparerIP() { return gRemoteComparerIP; }
         [CodePorting.Translator.Cs2Cpp.CppSkipDefinition(false)]
@@ -71,7 +71,7 @@ namespace Aspose.TestFx
 
         private static readonly string gUserHome;
         private static readonly bool gIsX64;
-        
+
         private static readonly string gLocalAppDataTmp;
         private static readonly string gLocalAppData;
         private const string gWindowsPathSeparator = "\\";
@@ -99,7 +99,7 @@ namespace Aspose.TestFx
 
 
             gDirAwnet = GetProp("dir.awnet", gRoot + "awnet\\");
-            gDirCsporter = GetProp("dir.csporter", gRoot + "csporter\\"); 
+            gDirCsporter = GetProp("dir.csporter", gRoot + "csporter\\");
 
             gDirAwcpp = GetProp("dir.awcpp", gRoot + "words-cpp\\");
 
@@ -108,11 +108,11 @@ namespace Aspose.TestFx
             gDirTestGoldLocal = GetProp("dir.test.gold.local", gRoot + "TestGoldLocal\\");
             gDirTestOut = GetProp("dir.test.out", gDirAwnet + "TestOut\\");
 
-            #if !CPLUSPLUS // Use cpp gold dir name for AWCPP
+#if !CPLUSPLUS // Use cpp gold dir name for AWCPP
             gGoldDirName = GetProp("dir.test.gold.name", "TestGoldJava");
-            #else
+#else
             gGoldDirName = GetProp("dir.test.gold.name", "TestGoldCpp");
-            #endif
+#endif
 
             gDirTestDataFoundation = GetProp("dir.test.data.foundation", gDirAwnet + "Aspose.Foundation\\TestData\\");
             gDirTestOutFoundation = GetProp("dir.test.out.foundation", gDirAwnet + "Aspose.Foundation\\TestOut\\");
@@ -120,7 +120,7 @@ namespace Aspose.TestFx
             gDirTools = GetProp("dir.tools", gDirAwnet + "Aspose.Foundation\\Tools\\");
             if (PlatformUtilPal.IsUnixLike())
             {
-                gUserHome = GetProp("HOME","");
+                gUserHome = GetProp("HOME", "");
                 if (!gUserHome.EndsWith("/"))
                 {
                     gUserHome += '/';
@@ -128,7 +128,7 @@ namespace Aspose.TestFx
             }
             else
             {
-                gUserHome = "C:\\Users\\user\\";                
+                gUserHome = "C:\\Users\\user\\";
             }
             gLocalAppData = GetEnv("LocalAppData", gUserHome);
             gLocalAppDataTmp = (gLocalAppData != null) ? Path.Combine(gLocalAppData, "temp") : string.Empty;

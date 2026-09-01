@@ -68,18 +68,18 @@ namespace Aspose.Fonts.TrueType
                 int idDelta = reader.ReadInt16();
                 int idRangeOffset = reader.ReadUInt16();
 
-                if(entryCount == 0)
+                if (entryCount == 0)
                     continue;
 
                 reader.BaseStream.Position += idRangeOffset - 2;
                 for (int secondByte = firstCode; secondByte < firstCode + entryCount; secondByte++)
                 {
                     int id = reader.ReadUInt16();
-                    if(id == 0)
+                    if (id == 0)
                         continue;
 
                     int glyphId = id + idDelta;
-                    AddGlyph(new byte[] {(byte)firstByte, (byte)secondByte}, glyphId, charMap, encoding);
+                    AddGlyph(new byte[] { (byte)firstByte, (byte)secondByte }, glyphId, charMap, encoding);
                 }
             }
 

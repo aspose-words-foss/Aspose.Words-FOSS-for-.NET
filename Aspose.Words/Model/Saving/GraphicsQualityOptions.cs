@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2001-2026 Aspose Pty Ltd. All Rights Reserved.
 // 27/10/2016 by Vyacheslav Durin
 
-#if !NETSTANDARD // Added after porting additional investigation is required.
+#if NETFRAMEWORK // Added after porting additional investigation is required.
 
 using System.Drawing;
 using System.Drawing.Drawing2D;

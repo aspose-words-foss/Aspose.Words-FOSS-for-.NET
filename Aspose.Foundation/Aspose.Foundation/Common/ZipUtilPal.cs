@@ -60,7 +60,7 @@ namespace Aspose.Common
 
             return dstStream.ToArray();
         }
-        
+
         /// <summary>
         /// Compresses a byte array using the Deflate or Zlib compression.
         /// </summary>

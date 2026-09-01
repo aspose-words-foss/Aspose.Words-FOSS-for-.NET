@@ -48,7 +48,7 @@ namespace Aspose.OpcPackaging
                         break;
                 }
             }
-            
+
             // Create the content types part.
             OpcPackagePart contentTypesPart = new OpcPackagePart("/[Content_Types].xml", "");
             opcPackage.Parts.Add(contentTypesPart);
@@ -56,7 +56,7 @@ namespace Aspose.OpcPackaging
             AnyXmlBuilder builder = new AnyXmlBuilder(contentTypesPart.Stream, isPrettyFormat);
             builder.StartDocument("Types");
             builder.WriteAttributeString("xmlns", "http://schemas.openxmlformats.org/package/2006/content-types");
-            
+
             // Write default content types.
             foreach (KeyValuePair<string, string> entry in defaultTypes)
                 WriteDefaultElement(entry.Key, entry.Value, builder);

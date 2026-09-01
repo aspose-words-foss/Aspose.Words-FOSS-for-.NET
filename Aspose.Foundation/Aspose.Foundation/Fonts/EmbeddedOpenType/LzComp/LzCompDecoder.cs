@@ -191,7 +191,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
             // First value is (symbol - 256)%8.
             // First 2 bits of the value is next 2 bits of length.
             // 3rd bit is stop bit.
-            int bits = (symbol - 256)%8;
+            int bits = (symbol - 256) % 8;
             int length = 0;
             while (true)
             {
@@ -209,7 +209,7 @@ namespace Aspose.Fonts.EmbeddedOpenType.LzComp
 
         private static int DecodeDistance(LzCompDecoderContext context, int symbol)
         {
-            int numberDistanceRanges = (symbol - 256)/8 + 1;
+            int numberDistanceRanges = (symbol - 256) / 8 + 1;
 
             int distance = 0;
             for (int i = 0; i < numberDistanceRanges; i++)

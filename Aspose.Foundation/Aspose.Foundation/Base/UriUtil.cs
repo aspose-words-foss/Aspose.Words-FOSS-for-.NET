@@ -198,7 +198,7 @@ namespace Aspose
         public static bool IsAbsoluteLocalFilePathWindows(string href)
         {
             // DOS/Windows: X:\MyFolder\MyFile.doc
-            return href.Length > 2 && IsDriveLetter(href[0]) && href[1] == ':' && (href[2] == '\\' || href[2] == '/') ;
+            return href.Length > 2 && IsDriveLetter(href[0]) && href[1] == ':' && (href[2] == '\\' || href[2] == '/');
         }
 
         [JavaAttributes.JavaThrows(false)]
@@ -555,7 +555,7 @@ namespace Aspose
 
             try
             {
-#if NETSTANDARD
+#if NETSTANDARD || NET
                 // For some reason Uri constructor does not like back slashes in uriString when run under Xamarin.Android.
                 // Replace them with forward slashes.
                 uriString = uriString.Replace('\\', '/');

@@ -38,7 +38,7 @@ namespace Aspose.JavaMs.Tests.System
             Assert.That(String.Format("Hello, '{0}'!", o1), Is.EqualTo("Hello, ''!"));
             Assert.That(String.Format("{0},{1}", o1, o2), Is.EqualTo(","));
             Assert.That(String.Format("{0},{1},{2}", o1, o2, o3), Is.EqualTo(",,"));
-            
+
         }
 
         [Test]

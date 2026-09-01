@@ -84,6 +84,6 @@ namespace Aspose.TestFx.GoldComparers
         {
             return fileName.EndsWith(".png");
         }
-        
+
     }
 }

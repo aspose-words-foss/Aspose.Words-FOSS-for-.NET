@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 namespace Aspose.Images.Pal.Graphics.Awt.Image
 {

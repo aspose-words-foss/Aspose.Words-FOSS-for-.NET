@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -180,51 +180,51 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
                 // Note: we do no clamping of the pixel data here - we
                 // assume that the data is scaled properly
                 case AwtDataBufferType.Short:
+                {
+                    short[] sdata = (short[])inData;
+                    float scalefactor = (float)((1 << precision) - 1);
+                    if (needAlpha)
                     {
-                        short[] sdata = (short[])inData;
-                        float scalefactor = (float)((1 << precision) - 1);
-                        if (needAlpha)
-                        {
-                            short s = sdata[mNumColorComponents];
-                            if (s != (short)0)
-                                return (int)((((float)sdata[idx]) / ((float)s)) * scalefactor + 0.5f);
+                        short s = sdata[mNumColorComponents];
+                        if (s != (short)0)
+                            return (int)((((float)sdata[idx]) / ((float)s)) * scalefactor + 0.5f);
 
-                            else
-                                return 0;
-                        }
                         else
-                            return (int)((sdata[idx] / 32767.0f) * scalefactor + 0.5f);
+                            return 0;
                     }
+                    else
+                        return (int)((sdata[idx] / 32767.0f) * scalefactor + 0.5f);
+                }
                 case AwtDataBufferType.Float:
+                {
+                    float[] fdata = (float[])inData;
+                    float scalefactor = (float)((1 << precision) - 1);
+                    if (needAlpha)
                     {
-                        float[] fdata = (float[])inData;
-                        float scalefactor = (float)((1 << precision) - 1);
-                        if (needAlpha)
-                        {
-                            float f = fdata[mNumColorComponents];
-                            if (f != 0.0f)
-                                return (int)(((fdata[idx] / f) * scalefactor) + 0.5f);
-                            else
-                                return 0;
-                        }
+                        float f = fdata[mNumColorComponents];
+                        if (f != 0.0f)
+                            return (int)(((fdata[idx] / f) * scalefactor) + 0.5f);
                         else
-                            return (int)(fdata[idx] * scalefactor + 0.5f);
+                            return 0;
                     }
+                    else
+                        return (int)(fdata[idx] * scalefactor + 0.5f);
+                }
                 case AwtDataBufferType.Double:
+                {
+                    double[] ddata = (double[])inData;
+                    double scalefactor = (double)((1 << precision) - 1);
+                    if (needAlpha)
                     {
-                        double[] ddata = (double[])inData;
-                        double scalefactor = (double)((1 << precision) - 1);
-                        if (needAlpha)
-                        {
-                            double d = ddata[mNumColorComponents];
-                            if (d != 0.0)
-                                return (int)(((ddata[idx] / d) * scalefactor) + 0.5);
-                            else
-                                return 0;
-                        }
+                        double d = ddata[mNumColorComponents];
+                        if (d != 0.0)
+                            return (int)(((ddata[idx] / d) * scalefactor) + 0.5);
                         else
-                            return (int)(ddata[idx] * scalefactor + 0.5);
+                            return 0;
                     }
+                    else
+                        return (int)(ddata[idx] * scalefactor + 0.5);
+                }
                 case AwtDataBufferType.Byte:
                     byte[] bdata = (byte[])inData;
                     comp = bdata[idx] & mask;
@@ -286,69 +286,69 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
             switch (mTransferType)
             {
                 case AwtDataBufferType.Byte:
-                    {
-                        byte[] bpixel = new byte[mNumComponents];
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            bpixel[i] = 0;
+                {
+                    byte[] bpixel = new byte[mNumComponents];
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        bpixel[i] = 0;
 
-                        if (mSupportsAlpha)
-                            bpixel[mNumColorComponents] = (byte)((1 << mNBits[mNumColorComponents]) - 1);
+                    if (mSupportsAlpha)
+                        bpixel[mNumColorComponents] = (byte)((1 << mNBits[mNumColorComponents]) - 1);
 
-                        lowVal = GetNormalizedComponents(bpixel, null, 0);
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            bpixel[i] = (byte)((1 << mNBits[i]) - 1);
+                    lowVal = GetNormalizedComponents(bpixel, null, 0);
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        bpixel[i] = (byte)((1 << mNBits[i]) - 1);
 
-                        highVal = GetNormalizedComponents(bpixel, null, 0);
-                    }
-                    break;
+                    highVal = GetNormalizedComponents(bpixel, null, 0);
+                }
+                break;
                 case AwtDataBufferType.Ushort:
-                    {
-                        short[] uspixel = new short[mNumComponents];
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            uspixel[i] = 0;
+                {
+                    short[] uspixel = new short[mNumComponents];
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        uspixel[i] = 0;
 
-                        if (mSupportsAlpha)
-                            uspixel[mNumColorComponents] = (short)((1 << mNBits[mNumColorComponents]) - 1);
+                    if (mSupportsAlpha)
+                        uspixel[mNumColorComponents] = (short)((1 << mNBits[mNumColorComponents]) - 1);
 
-                        lowVal = GetNormalizedComponents(uspixel, null, 0);
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            uspixel[i] = (short)((1 << mNBits[i]) - 1);
+                    lowVal = GetNormalizedComponents(uspixel, null, 0);
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        uspixel[i] = (short)((1 << mNBits[i]) - 1);
 
-                        highVal = GetNormalizedComponents(uspixel, null, 0);
-                    }
-                    break;
+                    highVal = GetNormalizedComponents(uspixel, null, 0);
+                }
+                break;
                 case AwtDataBufferType.Int:
-                    {
-                        int[] ipixel = new int[mNumComponents];
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            ipixel[i] = 0;
+                {
+                    int[] ipixel = new int[mNumComponents];
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        ipixel[i] = 0;
 
-                        if (mSupportsAlpha)
-                            ipixel[mNumColorComponents] = ((1 << mNBits[mNumColorComponents]) - 1);
+                    if (mSupportsAlpha)
+                        ipixel[mNumColorComponents] = ((1 << mNBits[mNumColorComponents]) - 1);
 
-                        lowVal = GetNormalizedComponents(ipixel, null, 0);
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            ipixel[i] = ((1 << mNBits[i]) - 1);
+                    lowVal = GetNormalizedComponents(ipixel, null, 0);
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        ipixel[i] = ((1 << mNBits[i]) - 1);
 
-                        highVal = GetNormalizedComponents(ipixel, null, 0);
-                    }
-                    break;
+                    highVal = GetNormalizedComponents(ipixel, null, 0);
+                }
+                break;
                 case AwtDataBufferType.Short:
-                    {
-                        short[] spixel = new short[mNumComponents];
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            spixel[i] = 0;
+                {
+                    short[] spixel = new short[mNumComponents];
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        spixel[i] = 0;
 
-                        if (mSupportsAlpha)
-                            spixel[mNumColorComponents] = 32767;
+                    if (mSupportsAlpha)
+                        spixel[mNumColorComponents] = 32767;
 
-                        lowVal = GetNormalizedComponents(spixel, null, 0);
-                        for (int i = 0; i < mNumColorComponents; i++)
-                            spixel[i] = 32767;
+                    lowVal = GetNormalizedComponents(spixel, null, 0);
+                    for (int i = 0; i < mNumColorComponents; i++)
+                        spixel[i] = 32767;
 
-                        highVal = GetNormalizedComponents(spixel, null, 0);
-                    }
-                    break;
+                    highVal = GetNormalizedComponents(spixel, null, 0);
+                }
+                break;
                 default:
                     throw new ArgumentException("Invalid AwtDataBufferType.");
             }
@@ -444,7 +444,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
             }
             return normComponents;
         }
-                
+
         private void SetupLUTs()
         {
             if (mIsSrgb)

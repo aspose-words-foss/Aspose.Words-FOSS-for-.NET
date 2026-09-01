@@ -12,71 +12,136 @@ namespace Aspose.Bidi
     {
         public static ArabicShapeJoiningType GetArabicShapeJoiningType(char c)
         {
-            if (c >= '\u0600' && c <= '\u0603') return ArabicShapeJoiningType.U;
-            if (c == '\u0608') return ArabicShapeJoiningType.U;
-            if (c == '\u060B') return ArabicShapeJoiningType.U;
-            if (c == '\u0621') return ArabicShapeJoiningType.U;
-            if (c >= '\u0622' && c <= '\u0625') return ArabicShapeJoiningType.R;
-            if (c == '\u0626') return ArabicShapeJoiningType.D;
-            if (c == '\u0627') return ArabicShapeJoiningType.R;
-            if (c == '\u0628') return ArabicShapeJoiningType.D;
-            if (c == '\u0629') return ArabicShapeJoiningType.R;
-            if (c >= '\u062A' && c <= '\u062E') return ArabicShapeJoiningType.D;
-            if (c >= '\u062F' && c <= '\u0632') return ArabicShapeJoiningType.R;
-            if (c >= '\u0633' && c <= '\u063F') return ArabicShapeJoiningType.D;
-            if (c == '\u0640') return ArabicShapeJoiningType.C;
-            if (c >= '\u0641' && c <= '\u0647') return ArabicShapeJoiningType.D;
-            if (c == '\u0648') return ArabicShapeJoiningType.R;
-            if (c >= '\u0649' && c <= '\u064A') return ArabicShapeJoiningType.D;
-            if (c >= '\u066E' && c <= '\u066F') return ArabicShapeJoiningType.D;
-            if (c >= '\u0671' && c <= '\u0673') return ArabicShapeJoiningType.R;
-            if (c == '\u0674') return ArabicShapeJoiningType.U;
-            if (c >= '\u0675' && c <= '\u0677') return ArabicShapeJoiningType.R;
-            if (c >= '\u0678' && c <= '\u0687') return ArabicShapeJoiningType.D;
-            if (c >= '\u0688' && c <= '\u0699') return ArabicShapeJoiningType.R;
-            if (c >= '\u069A' && c <= '\u06BF') return ArabicShapeJoiningType.D;
-            if (c == '\u06C0') return ArabicShapeJoiningType.R;
-            if (c >= '\u06C1' && c <= '\u06C2') return ArabicShapeJoiningType.D;
-            if (c >= '\u06C3' && c <= '\u06CB') return ArabicShapeJoiningType.R;
-            if (c == '\u06CC') return ArabicShapeJoiningType.D;
-            if (c == '\u06CD') return ArabicShapeJoiningType.R;
-            if (c == '\u06CE') return ArabicShapeJoiningType.D;
-            if (c == '\u06CF') return ArabicShapeJoiningType.R;
-            if (c >= '\u06D0' && c <= '\u06D1') return ArabicShapeJoiningType.D;
-            if (c >= '\u06D2' && c <= '\u06D3') return ArabicShapeJoiningType.R;
-            if (c == '\u06D5') return ArabicShapeJoiningType.R;
-            if (c == '\u06DD') return ArabicShapeJoiningType.U;
-            if (c >= '\u06EE' && c <= '\u06EF') return ArabicShapeJoiningType.R;
-            if (c >= '\u06FA' && c <= '\u06FC') return ArabicShapeJoiningType.D;
-            if (c == '\u06FF') return ArabicShapeJoiningType.D;
-            if (c == '\u0710') return ArabicShapeJoiningType.R;
-            if (c >= '\u0712' && c <= '\u0714') return ArabicShapeJoiningType.D;
-            if (c >= '\u0715' && c <= '\u0719') return ArabicShapeJoiningType.R;
-            if (c >= '\u071A' && c <= '\u071D') return ArabicShapeJoiningType.D;
-            if (c == '\u071E') return ArabicShapeJoiningType.R;
-            if (c >= '\u071F' && c <= '\u0727') return ArabicShapeJoiningType.D;
-            if (c == '\u0728') return ArabicShapeJoiningType.R;
-            if (c == '\u0729') return ArabicShapeJoiningType.D;
-            if (c == '\u072A') return ArabicShapeJoiningType.R;
-            if (c == '\u072B') return ArabicShapeJoiningType.D;
-            if (c == '\u072C') return ArabicShapeJoiningType.R;
-            if (c >= '\u072D' && c <= '\u072E') return ArabicShapeJoiningType.D;
-            if (c == '\u072F') return ArabicShapeJoiningType.R;
-            if (c == '\u074D') return ArabicShapeJoiningType.R;
-            if (c >= '\u074E' && c <= '\u0758') return ArabicShapeJoiningType.D;
-            if (c >= '\u0759' && c <= '\u075B') return ArabicShapeJoiningType.R;
-            if (c >= '\u075C' && c <= '\u076A') return ArabicShapeJoiningType.D;
-            if (c >= '\u076B' && c <= '\u076C') return ArabicShapeJoiningType.R;
-            if (c >= '\u076D' && c <= '\u0770') return ArabicShapeJoiningType.D;
-            if (c == '\u0771') return ArabicShapeJoiningType.R;
-            if (c == '\u0772') return ArabicShapeJoiningType.D;
-            if (c >= '\u0773' && c <= '\u0774') return ArabicShapeJoiningType.R;
-            if (c >= '\u0775' && c <= '\u0777') return ArabicShapeJoiningType.D;
-            if (c >= '\u0778' && c <= '\u0779') return ArabicShapeJoiningType.R;
-            if (c >= '\u077A' && c <= '\u077F') return ArabicShapeJoiningType.D;
-            if (c >= '\u07CA' && c <= '\u07EA') return ArabicShapeJoiningType.D;
-            if (c == '\u07FA') return ArabicShapeJoiningType.C;
-            if (c == '\u200D') return ArabicShapeJoiningType.C;
+            if (c >= '\u0600' && c <= '\u0603')
+                return ArabicShapeJoiningType.U;
+            if (c == '\u0608')
+                return ArabicShapeJoiningType.U;
+            if (c == '\u060B')
+                return ArabicShapeJoiningType.U;
+            if (c == '\u0621')
+                return ArabicShapeJoiningType.U;
+            if (c >= '\u0622' && c <= '\u0625')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u0626')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0627')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u0628')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0629')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u062A' && c <= '\u062E')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u062F' && c <= '\u0632')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u0633' && c <= '\u063F')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0640')
+                return ArabicShapeJoiningType.C;
+            if (c >= '\u0641' && c <= '\u0647')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0648')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u0649' && c <= '\u064A')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u066E' && c <= '\u066F')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0671' && c <= '\u0673')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u0674')
+                return ArabicShapeJoiningType.U;
+            if (c >= '\u0675' && c <= '\u0677')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u0678' && c <= '\u0687')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0688' && c <= '\u0699')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u069A' && c <= '\u06BF')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u06C0')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u06C1' && c <= '\u06C2')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u06C3' && c <= '\u06CB')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u06CC')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u06CD')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u06CE')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u06CF')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u06D0' && c <= '\u06D1')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u06D2' && c <= '\u06D3')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u06D5')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u06DD')
+                return ArabicShapeJoiningType.U;
+            if (c >= '\u06EE' && c <= '\u06EF')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u06FA' && c <= '\u06FC')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u06FF')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0710')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u0712' && c <= '\u0714')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0715' && c <= '\u0719')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u071A' && c <= '\u071D')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u071E')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u071F' && c <= '\u0727')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0728')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u0729')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u072A')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u072B')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u072C')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u072D' && c <= '\u072E')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u072F')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u074D')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u074E' && c <= '\u0758')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0759' && c <= '\u075B')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u075C' && c <= '\u076A')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u076B' && c <= '\u076C')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u076D' && c <= '\u0770')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u0771')
+                return ArabicShapeJoiningType.R;
+            if (c == '\u0772')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0773' && c <= '\u0774')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u0775' && c <= '\u0777')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u0778' && c <= '\u0779')
+                return ArabicShapeJoiningType.R;
+            if (c >= '\u077A' && c <= '\u077F')
+                return ArabicShapeJoiningType.D;
+            if (c >= '\u07CA' && c <= '\u07EA')
+                return ArabicShapeJoiningType.D;
+            if (c == '\u07FA')
+                return ArabicShapeJoiningType.C;
+            if (c == '\u200D')
+                return ArabicShapeJoiningType.C;
             UnicodeGeneralCategory ugc = UnicodeCharacterDataResolver.GetUnicodeGeneralCategory(c);
             if (ugc == UnicodeGeneralCategory.Mn ||
                 ugc == UnicodeGeneralCategory.Me ||

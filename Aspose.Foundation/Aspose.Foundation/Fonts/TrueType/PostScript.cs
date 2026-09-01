@@ -225,7 +225,7 @@ namespace Aspose.Fonts.TrueType
                 if ((oldNameIndex < StandardMacintoshGlyphCount) || (oldNameIndex > 32767))
                 {
                     // System or reserved value. Names for these are not stored in the file.
-                    newGlyphNameIndexes[newGlyphIndex] = (ushort) oldNameIndex;
+                    newGlyphNameIndexes[newGlyphIndex] = (ushort)oldNameIndex;
                     continue;
                 }
 
@@ -244,7 +244,7 @@ namespace Aspose.Fonts.TrueType
                 // Store the name and its index in the new array.
                 newNames.Add(name);
                 int newNameIndex = newNames.Count - 1;
-                newGlyphNameIndexes[newGlyphIndex] = (ushort) (newNameIndex + StandardMacintoshGlyphCount);
+                newGlyphNameIndexes[newGlyphIndex] = (ushort)(newNameIndex + StandardMacintoshGlyphCount);
             }
 
             NumberOfGlyphs = (ushort)usedGlyphs.Count;

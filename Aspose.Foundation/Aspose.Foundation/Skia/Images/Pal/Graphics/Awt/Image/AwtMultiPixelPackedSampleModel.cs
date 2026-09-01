@@ -2,7 +2,7 @@
 // 15/09/2017 by Vyacheslav Durin
 // Auto-ported from Java
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 
@@ -52,7 +52,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
         {
             return new AwtMultiPixelPackedSampleModel(mDataType, w, h, mPixelBitStride);
         }
-                
+
         public override int[] GetPixel(int x, int y, int[] iArray, AwtDataBuffer data)
         {
             if ((x < 0) || (y < 0) || (x >= mWidth) || (y >= mHeight))
@@ -214,7 +214,7 @@ namespace Aspose.Images.Pal.Graphics.Awt.Image
                 return sampleSize;
             }
         }
-                
+
         public override int NumDataElements
         {
             get { return 1; }

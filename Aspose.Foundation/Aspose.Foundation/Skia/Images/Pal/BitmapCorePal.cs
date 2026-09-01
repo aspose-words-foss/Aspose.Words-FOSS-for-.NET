@@ -2,7 +2,7 @@
 // 07/08/2017 by Vyacheslav Durin
 // Translation from Java by Alexey Noskov
 
-#if NETSTANDARD
+#if NETSTANDARD || NET
 
 using System;
 using System.Drawing;
