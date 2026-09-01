@@ -4,14 +4,59 @@ Open-source .NET library for Word documents, built from the genuine Aspose.Words
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+## At a Glance
+
+```mermaid
+flowchart TD
+  subgraph StartingPoints["Starting Points"]
+    direction TB
+    i1["An existing DOCX, DOCM, DOTX, or DOTM document"]
+    i2["A Flat OPC package"]
+    i3["A Markdown or plain text file"]
+  end
+  PRODUCT["Aspose.Words FOSS for .NET"]
+  subgraph Capabilities["Core Capabilities"]
+    direction LR
+    subgraph capl[" "]
+      direction TB
+      c1["Document creation from scratch and editing"]
+      c2["Text, styles, tables, lists, and sections"]
+      c3["Tracked-changes engine"]
+    end
+    subgraph capr[" "]
+      direction TB
+      c4["Field evaluation engine"]
+      c5["Document protection and signature verification"]
+      c6["DOCX, Markdown, and plain-text conversion"]
+    end
+  end
+  subgraph Outputs["Outputs"]
+    direction TB
+    o1["DOCX, DOCM, DOTX, or DOTM documents"]
+    o2["Flat OPC packages"]
+    o3["Markdown (.md)"]
+    o4["Plain text (.txt)"]
+  end
+  StartingPoints --> PRODUCT --> Capabilities --> Outputs
+```
+
 ## Navigation
 
-- [What it can do](#what-it-can-do) · [Supported formats](#supported-formats)
-- [Getting started](#getting-started) · [Dependencies](#dependencies) · [A quick example](#a-quick-example) · [Additional examples](#additional-examples)
+- [At a glance](#at-a-glance)
+- [What it can do](#what-it-can-do)
+- [Supported formats](#supported-formats)
+- [Getting started](#getting-started)
+- [Dependencies](#dependencies)
+- [A quick example](#a-quick-example)
+- [Additional examples](#additional-examples)
 - [API reference](#api-reference)
-- [What's not included](#whats-not-included-and-where-to-get-it) · [Development and testing](#development-and-testing)
-- [The story behind this code](#the-story-behind-this-code) · [Documentation & resources](#documentation--resources)
-- [Star it](#enjoying-it-star-it-) · [Contributing](#contributing) · [License](#license)
+- [What's not included](#whats-not-included-and-where-to-get-it)
+- [Development and testing](#development-and-testing)
+- [The story behind this code](#the-story-behind-this-code)
+- [Documentation & resources](#documentation--resources)
+- [Enjoying it? Star it](#enjoying-it-star-it-)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## What it can do
 
@@ -23,6 +68,7 @@ Open-source .NET library for Word documents, built from the genuine Aspose.Words
 - **Work with tracked changes**: inspect, accept, or reject revisions.
 - **Update fields**: the full field evaluation engine is included, though values that depend on page layout (such as page numbers in a TOC) come out as placeholders (see [what's not included](#whats-not-included-and-where-to-get-it)).
 - **Protect documents** and round-trip macro-enabled files (DOCM/DOTM) with their VBA projects intact.
+- **Inspect and adjust embedded charts**: series values, axes, legend, and data-label formatting through `Chart`, `ChartSeries`, `ChartAxis`, and `ChartDataLabel`. Chart data round-trips intact; rendering the chart to an image is not part of this edition.
 - **Verify digital signatures**: check whether a DOCX is signed and untampered, inspect the certificates, or remove signatures. (Creating new signatures is not included in this edition.)
 
 The library is managed C# shipping three targets — **.NET Framework 4.6.2, .NET Standard 2.0, and .NET 8** — so it runs on .NET Framework 4.6.2+, .NET 6/8/10, Windows, Linux, and macOS. No Office automation. On .NET Framework image handling uses the in-box GDI+; on the cross-platform targets it uses [SkiaSharp](https://github.com/mono/SkiaSharp) (on Linux, also add the [SkiaSharp.NativeAssets.Linux](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux) package).
